@@ -12,8 +12,12 @@ Otherwise, it might be impossible to type any Unicode character higher than "Bas
 
 ## For official releases, please see :
 
-**UltimateKEYS - Github : &nbsp;https://github.com/pieter-degroote/UltimateKEYS**
+**UltimateKEYS - GitHub : &nbsp;https://github.com/pieter-degroote/UltimateKEYS**
 
 **Releases : &nbsp;https://github.com/pieter-degroote/UltimateKEYS/releases**
 
 **Website : &nbsp;[ultimatekeys.info &nbsp;(pieter-degroote.info)](https://pieter-degroote.github.io/UltimateKEYS/)**
+
+## Testing Repository - Additional experimental versions :
+
+**GitHub : &nbsp;https://github.com/pieter-degroote/UltimateKEYS-testing**
