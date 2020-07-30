@@ -1286,64 +1286,78 @@ return
 >!6::
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkCircumflex.item(key)
+  key := ""  ; avoids leaking content via debug properties
 return
 >!+6::
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkCaron.item(key)
+  key := ""  ; avoids leaking content via debug properties
 return
 
 >!7::
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkRingDotAbove.item(key)
+  key := ""  ; avoids leaking content via debug properties
 return
 >!+7::
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkMacronStroke.item(key)
+  key := ""  ; avoids leaking content via debug properties
 return
 
 >!-::
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkCedillaOgonek.item(key)
+  key := ""  ; avoids leaking content via debug properties
 return
 >!_::
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkBreveSpecial.item(key)
+  key := ""  ; avoids leaking content via debug properties
 return
 
 >!'::
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkAcuteAccent.item(key)
+  key := ""  ; avoids leaking content via debug properties
 return
 >!"::
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkDiaeresis.item(key)
+  key := ""  ; avoids leaking content via debug properties
 return
 
 >!`::
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkGraveAccent.item(key)
+  key := ""  ; avoids leaking content via debug properties
 return
 >!~::
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkTilde.item(key)
+  key := ""  ; avoids leaking content via debug properties
 return
 
 >!\::
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkNotSign.item(key)
+  key := ""  ; avoids leaking content via debug properties
 return
 >!|::
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkBrokenBar.item(key)
+  key := ""  ; avoids leaking content via debug properties
 return
 
 >!m::
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkGreekAlphabet.item(key)
+  key := ""  ; avoids leaking content via debug properties
 return
 >!+m::
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkMathSymbols.item(key)
+  key := ""  ; avoids leaking content via debug properties
 return
 
 >!space::Send     ; (u+00a0) non-breaking space
