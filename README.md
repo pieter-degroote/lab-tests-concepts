@@ -1,8 +1,6 @@
 # Lab Tests
 Additional lab tests (mostly based on UltimateKEYS)
 
-## Use these lab tests at your own risk !
-
 ## Important - Security Warning :
 
 **=&gt; Win/Linux : &nbsp;Only use "BASIC LATIN" characters (codes 32 to 126) for the Windows, Microsoft Live and Linux passwords !**  
