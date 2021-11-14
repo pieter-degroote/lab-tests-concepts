@@ -1,4 +1,4 @@
-; UltimateKEYS SW (Scroll Lock, Caps Lock mod).ahk - 2021-11-14
+; UltimateKEYS SW (Scroll Lock, Caps Lock mod) - KBDUSX.ahk - 2021-11-14
 
 ; Created by :  Pieter Degroote
 
@@ -9,7 +9,7 @@
 
 ; Requirements :
 
-; Keyboard layout (on Windows OS) :  US QWERTY
+; Keyboard layout (on Windows OS) :  United States-International
 
 ; AutoHotkey v1.1 (https://www.autohotkey.com/)
 
@@ -72,7 +72,7 @@ dkCircumflex.item["&"] := "{u+21d6}"  ; (⇖) north west double arrow
 dkCircumflex.item["*"] := "{u+21d1}"  ; (⇑) upwards double arrow
 dkCircumflex.item["("] := "{u+21d7}"  ; (⇗) north east double arrow
 dkCircumflex.item[")"] := "{u+21d4}"  ; (⇔) left right double arrow
-dkCircumflex.item[" "] := "{^}"       ;     circumflex accent
+dkCircumflex.item[" "] := "{^} "      ;     circumflex accent
 
 
 ; Dead Key :  Caron
@@ -563,7 +563,7 @@ dkGraveAccent.item["("] := "{u+2007}"  ; figure space
 dkGraveAccent.item[")"] := "{u+200b}"  ; zero-width space
 dkGraveAccent.item["-"] := "{u+00a0}"  ; non-breaking space
 dkGraveAccent.item["="] := "{u+202f}"  ; narrow no-break space
-dkGraveAccent.item[" "] := "``"        ; grave accent
+dkGraveAccent.item[" "] := "`` "       ; grave accent
 
 
 ; Dead Key :  Tilde
@@ -595,7 +595,7 @@ dkTilde.item["1"] := "{u+2000}"  ; en quad
 dkTilde.item["2"] := "{u+2001}"  ; em quad
 dkTilde.item["!"] := "{u+2000}"  ; en quad
 dkTilde.item["@"] := "{u+2001}"  ; em quad
-dkTilde.item[" "] := "~"         ; tilde
+dkTilde.item[" "] := "~ "        ; tilde
 
 
 ; Dead Key :  General Symbols
@@ -964,7 +964,7 @@ fSendSecondChar(char) {
 }
 
 
-; Configuration :  Switch positions of symbols and digits with Scroll Lock
+; Configuration :  Switch positions of symbols and digits with Scroll Lock; no dead keys on standard layout
 
 $1::
   if GetKeyState("ScrollLock", "T")
@@ -1033,15 +1033,15 @@ $+5::
 
 $6::
   if GetKeyState("ScrollLock", "T")
-    Send {^}  ; circumflex accent
+    Send {^}{space}  ; circumflex accent
   else
-    Send 6    ; digit 6
+    Send 6           ; digit 6
   return
 $+6::
   if GetKeyState("ScrollLock", "T")
-    Send 6    ; digit 6
+    Send 6           ; digit 6
   else
-    Send {^}  ; circumflex accent
+    Send {^}{space}  ; circumflex accent
   return
 
 $7::
@@ -1096,593 +1096,506 @@ $+0::
     Send )  ; right parenthesis
   return
 
+$`::Send ``{space}  ; grave accent
+$~::Send ~{space}   ; tilde
 
-; Configuration :  'Right Alt' and 'Right Alt + Shift' on US QWERTY
+$'::Send '{space}   ; apostrophe
+$"::Send `"{space}  ; quotation mark
 
->!a::
+
+; Configuration :  'AltGr' and 'AltGr + Shift' on United States-International
+
+<^>!a::
   if GetKeyState("CapsLock", "T")
     Send {u+00c4}  ; (Ä) A with diaeresis
   else
     Send {u+00e4}  ; (ä) a with diaeresis
   return
->!+a::
+<^>!+a::
   if GetKeyState("CapsLock", "T")
     Send {u+00e4}  ; (ä) a with diaeresis
   else
     Send {u+00c4}  ; (Ä) A with diaeresis
-  Send {blind}{vkE8}  ; suppresses 'Right Alt + Shift' hotkey
   return
 
->!q::
+<^>!q::
   if GetKeyState("CapsLock", "T")
     Send {u+00c6}  ; (Æ) letter AE
   else
     Send {u+00e6}  ; (æ) letter ae
   return
->!+q::
+<^>!+q::
   if GetKeyState("CapsLock", "T")
     Send {u+00e6}  ; (æ) letter ae
   else
     Send {u+00c6}  ; (Æ) letter AE
-  Send {blind}{vkE8}  ; suppresses 'Right Alt + Shift' hotkey
   return
 
->!w::
+<^>!w::
   if GetKeyState("CapsLock", "T")
     Send {u+00c5}  ; (Å) A with ring above
   else
     Send {u+00e5}  ; (å) a with ring above
   return
->!+w::
+<^>!+w::
   if GetKeyState("CapsLock", "T")
     Send {u+00e5}  ; (å) a with ring above
   else
     Send {u+00c5}  ; (Å) A with ring above
-  Send {blind}{vkE8}
   return
 
->!z::
+<^>!z::
   if GetKeyState("CapsLock", "T")
     Send {u+00c0}  ; (À) A with grave
   else
     Send {u+00e0}  ; (à) a with grave
   return
->!+z::
+<^>!+z::
   if GetKeyState("CapsLock", "T")
     Send {u+00e0}  ; (à) a with grave
   else
     Send {u+00c0}  ; (À) A with grave
-  Send {blind}{vkE8}
   return
 
->!x::
+<^>!x::
   if GetKeyState("CapsLock", "T")
     Send {u+00c1}  ; (Á) A with acute
   else
     Send {u+00e1}  ; (á) a with acute
   return
->!+x::
+<^>!+x::
   if GetKeyState("CapsLock", "T")
     Send {u+00e1}  ; (á) a with acute
   else
     Send {u+00c1}  ; (Á) A with acute
-  Send {blind}{vkE8}
   return
 
->!d::
+<^>!d::
   if GetKeyState("CapsLock", "T")
     Send {u+00c2}  ; (Â) A with circumflex
   else
     Send {u+00e2}  ; (â) a with circumflex
   return
->!+d::
+<^>!+d::
   if GetKeyState("CapsLock", "T")
     Send {u+00e2}  ; (â) a with circumflex
   else
     Send {u+00c2}  ; (Â) A with circumflex
-  Send {blind}{vkE8}
   return
 
->!c::
+<^>!c::
   if GetKeyState("CapsLock", "T")
     Send {u+00c7}  ; (Ç) C with cedilla
   else
     Send {u+00e7}  ; (ç) c with cedilla
   return
->!+c::
+<^>!+c::
   if GetKeyState("CapsLock", "T")
     Send {u+00e7}  ; (ç) c with cedilla
   else
     Send {u+00c7}  ; (Ç) C with cedilla
-  Send {blind}{vkE8}
   return
 
->!e::
+<^>!e::
   if GetKeyState("CapsLock", "T")
     Send {u+00cb}  ; (Ë) E with diaeresis
   else
     Send {u+00eb}  ; (ë) e with diaeresis
   return
->!+e::
+<^>!+e::
   if GetKeyState("CapsLock", "T")
     Send {u+00eb}  ; (ë) e with diaeresis
   else
     Send {u+00cb}  ; (Ë) E with diaeresis
-  Send {blind}{vkE8}
   return
 
->!f::
+<^>!f::
   if GetKeyState("CapsLock", "T")
     Send {u+00c8}  ; (È) E with grave
   else
     Send {u+00e8}  ; (è) e with grave
   return
->!+f::
+<^>!+f::
   if GetKeyState("CapsLock", "T")
     Send {u+00e8}  ; (è) e with grave
   else
     Send {u+00c8}  ; (È) E with grave
-  Send {blind}{vkE8}
   return
 
->!g::
+<^>!g::
   if GetKeyState("CapsLock", "T")
     Send {u+00c9}  ; (É) E with acute
   else
     Send {u+00e9}  ; (é) e with acute
   return
->!+g::
+<^>!+g::
   if GetKeyState("CapsLock", "T")
     Send {u+00e9}  ; (é) e with acute
   else
     Send {u+00c9}  ; (É) E with acute
-  Send {blind}{vkE8}
   return
 
->!r::
+<^>!r::
   if GetKeyState("CapsLock", "T")
     Send {u+00ca}  ; (Ê) E with circumflex
   else
     Send {u+00ea}  ; (ê) e with circumflex
   return
->!+r::
+<^>!+r::
   if GetKeyState("CapsLock", "T")
     Send {u+00ea}  ; (ê) e with circumflex
   else
     Send {u+00ca}  ; (Ê) E with circumflex
-  Send {blind}{vkE8}
   return
 
->!i::
+<^>!i::
   if GetKeyState("CapsLock", "T")
     Send {u+00cf}  ; (Ï) I with diaeresis
   else
     Send {u+00ef}  ; (ï) i with diaeresis
   return
->!+i::
+<^>!+i::
   if GetKeyState("CapsLock", "T")
     Send {u+00ef}  ; (ï) i with diaeresis
   else
     Send {u+00cf}  ; (Ï) I with diaeresis
-  Send {blind}{vkE8}
   return
 
->!v::
+<^>!v::
   if GetKeyState("CapsLock", "T")
     Send {u+00cc}  ; (Ì) I with grave
   else
     Send {u+00ec}  ; (ì) i with grave
   return
->!+v::
+<^>!+v::
   if GetKeyState("CapsLock", "T")
     Send {u+00ec}  ; (ì) i with grave
   else
     Send {u+00cc}  ; (Ì) I with grave
-  Send {blind}{vkE8}
   return
 
->!b::
+<^>!b::
   if GetKeyState("CapsLock", "T")
     Send {u+00cd}  ; (Í) I with acute
   else
     Send {u+00ed}  ; (í) i with acute
   return
->!+b::
+<^>!+b::
   if GetKeyState("CapsLock", "T")
     Send {u+00ed}  ; (í) i with acute
   else
     Send {u+00cd}  ; (Í) I with acute
-  Send {blind}{vkE8}
   return
 
->!t::
+<^>!t::
   if GetKeyState("CapsLock", "T")
     Send {u+00ce}  ; (Î) I with circumflex
   else
     Send {u+00ee}  ; (î) i with circumflex
   return
->!+t::
+<^>!+t::
   if GetKeyState("CapsLock", "T")
     Send {u+00ee}  ; (î) i with circumflex
   else
     Send {u+00ce}  ; (Î) I with circumflex
-  Send {blind}{vkE8}
   return
 
->!n::
+<^>!n::
   if GetKeyState("CapsLock", "T")
     Send {u+00d1}  ; (Ñ) N with tilde
   else
     Send {u+00f1}  ; (ñ) n with tilde
   return
->!+n::
+<^>!+n::
   if GetKeyState("CapsLock", "T")
     Send {u+00f1}  ; (ñ) n with tilde
   else
     Send {u+00d1}  ; (Ñ) N with tilde
-  Send {blind}{vkE8}
   return
 
->!o::
+<^>!o::
   if GetKeyState("CapsLock", "T")
     Send {u+00d6}  ; (Ö) O with diaeresis
   else
     Send {u+00f6}  ; (ö) o with diaeresis
   return
->!+o::
+<^>!+o::
   if GetKeyState("CapsLock", "T")
     Send {u+00f6}  ; (ö) o with diaeresis
   else
     Send {u+00d6}  ; (Ö) O with diaeresis
-  Send {blind}{vkE8}
   return
 
->!k::
+<^>!k::
   if GetKeyState("CapsLock", "T")
     Send {u+0152}  ; (Œ) ligature OE
   else
     Send {u+0153}  ; (œ) ligature oe
   return
->!+k::
+<^>!+k::
   if GetKeyState("CapsLock", "T")
     Send {u+0153}  ; (œ) ligature oe
   else
     Send {u+0152}  ; (Œ) ligature OE
-  Send {blind}{vkE8}
   return
 
->!l::
+<^>!l::
   if GetKeyState("CapsLock", "T")
     Send {u+00d8}  ; (Ø) O with stroke
   else
     Send {u+00f8}  ; (ø) o with stroke
   return
->!+l::
+<^>!+l::
   if GetKeyState("CapsLock", "T")
     Send {u+00f8}  ; (ø) o with stroke
   else
     Send {u+00d8}  ; (Ø) O with stroke
-  Send {blind}{vkE8}
   return
 
->!,::
+<^>!,::
   if GetKeyState("CapsLock", "T")
     Send {u+00d2}  ; (Ò) O with grave
   else
     Send {u+00f2}  ; (ò) o with grave
   return
->!<::
+<^>!<::
   if GetKeyState("CapsLock", "T")
     Send {u+00f2}  ; (ò) o with grave
   else
     Send {u+00d2}  ; (Ò) O with grave
-  Send {blind}{vkE8}
   return
 
->!.::
+<^>!.::
   if GetKeyState("CapsLock", "T")
     Send {u+00d3}  ; (Ó) O with acute
   else
     Send {u+00f3}  ; (ó) o with acute
   return
->!>::
+<^>!>::
   if GetKeyState("CapsLock", "T")
     Send {u+00f3}  ; (ó) o with acute
   else
     Send {u+00d3}  ; (Ó) O with acute
-  Send {blind}{vkE8}
   return
 
->!p::
+<^>!p::
   if GetKeyState("CapsLock", "T")
     Send {u+00d4}  ; (Ô) O with circumflex
   else
     Send {u+00f4}  ; (ô) o with circumflex
   return
->!+p::
+<^>!+p::
   if GetKeyState("CapsLock", "T")
     Send {u+00f4}  ; (ô) o with circumflex
   else
     Send {u+00d4}  ; (Ô) O with circumflex
-  Send {blind}{vkE8}
   return
 
->!s::
+<^>!s::
   if GetKeyState("CapsLock", "T")
     Send {u+1e9e}  ; (ẞ) capital sharp S (capital Eszett)
   else
     Send {u+00df}  ; (ß) small sharp s (Eszett)
   return
->!+s::
+<^>!+s::
   if GetKeyState("CapsLock", "T")
     Send {u+00df}  ; (ß) small sharp s (Eszett)
   else
     Send {u+1e9e}  ; (ẞ) capital sharp S (capital Eszett)
-  Send {blind}{vkE8}
   return
 
->!u::
+<^>!u::
   if GetKeyState("CapsLock", "T")
     Send {u+00dc}  ; (Ü) U with diaeresis
   else
     Send {u+00fc}  ; (ü) u with diaeresis
   return
->!+u::
+<^>!+u::
   if GetKeyState("CapsLock", "T")
     Send {u+00fc}  ; (ü) u with diaeresis
   else
     Send {u+00dc}  ; (Ü) U with diaeresis
-  Send {blind}{vkE8}
   return
 
->!h::
+<^>!h::
   if GetKeyState("CapsLock", "T")
     Send {u+00d9}  ; (Ù) U with grave
   else
     Send {u+00f9}  ; (ù) u with grave
   return
->!+h::
+<^>!+h::
   if GetKeyState("CapsLock", "T")
     Send {u+00f9}  ; (ù) u with grave
   else
     Send {u+00d9}  ; (Ù) U with grave
-  Send {blind}{vkE8}
   return
 
->!j::
+<^>!j::
   if GetKeyState("CapsLock", "T")
     Send {u+00da}  ; (Ú) U with acute
   else
     Send {u+00fa}  ; (ú) u with acute
   return
->!+j::
+<^>!+j::
   if GetKeyState("CapsLock", "T")
     Send {u+00fa}  ; (ú) u with acute
   else
     Send {u+00da}  ; (Ú) U with acute
-  Send {blind}{vkE8}
   return
 
->!y::
+<^>!y::
   if GetKeyState("CapsLock", "T")
     Send {u+00db}  ; (Û) U with circumflex
   else
     Send {u+00fb}  ; (û) u with circumflex
   return
->!+y::
+<^>!+y::
   if GetKeyState("CapsLock", "T")
     Send {u+00fb}  ; (û) u with circumflex
   else
     Send {u+00db}  ; (Û) U with circumflex
-  Send {blind}{vkE8}
   return
 
->!-::
+<^>!-::
   if GetKeyState("CapsLock", "T")
     Send {u+00c3}  ; (Ã) A with tilde
   else
     Send {u+00e3}  ; (ã) a with tilde
   return
->!_::
+<^>!_::
   if GetKeyState("CapsLock", "T")
     Send {u+00e3}  ; (ã) a with tilde
   else
     Send {u+00c3}  ; (Ã) A with tilde
-  Send {blind}{vkE8}
   return
 
->!=::
+<^>!=::
   if GetKeyState("CapsLock", "T")
     Send {u+00d5}  ; (Õ) O with tilde
   else
     Send {u+00f5}  ; (õ) o with tilde
   return
->!+=::
+<^>!+=::
   if GetKeyState("CapsLock", "T")
     Send {u+00f5}  ; (õ) o with tilde
   else
     Send {u+00d5}  ; (Õ) O with tilde
-  Send {blind}{vkE8}
   return
 
->!1::Send {u+00a1}  ; (¡) inverted exclamation mark
->!+1::
-  Send {u+00b9}     ; (¹) superscript 1
-  Send {blind}{vkE8}  ; suppresses 'Right Alt + Shift' hotkey
-  return
+<^>!1::Send {u+00a1}   ; (¡) inverted exclamation mark
+<^>!+1::Send {u+00b9}  ; (¹) superscript 1
 
->!2::Send {u+00a9}  ; (©) copyright sign
->!+2::
-  Send {u+00b2}     ; (²) superscript 2
-  Send {blind}{vkE8}  ; suppresses 'Right Alt + Shift' hotkey
-  return
+<^>!2::Send {u+00a9}   ; (©) copyright sign
+<^>!+2::Send {u+00b2}  ; (²) superscript 2
 
->!3::Send {u+00a7}  ; (§) section sign
->!+3::
-  Send {u+00b3}     ; (³) superscript 3
-  Send {blind}{vkE8}
-  return
+<^>!3::Send {u+00a7}   ; (§) section sign
+<^>!+3::Send {u+00b3}  ; (³) superscript 3
 
->!4::Send {u+00a3}  ; (£) pound sign
->!+4::
-  Send {u+00a5}     ; (¥) yen sign
-  Send {blind}{vkE8}
-  return
+<^>!4::Send {u+00a3}   ; (£) pound sign
+<^>!+4::Send {u+00a5}  ; (¥) yen sign
 
->!5::Send {u+20ac}  ; (€) euro sign
->!+5::
-  Send {u+00a2}     ; (¢) cent sign (dollar)
-  Send {blind}{vkE8}
-  return
+<^>!5::Send {u+20ac}   ; (€) euro sign
+<^>!+5::Send {u+00a2}  ; (¢) cent sign (dollar)
 
->!9::Send {u+201c}  ; (“) left double quotation mark
->!+9::
-  Send {u+2018}     ; (‘) left single quotation mark
-  Send {blind}{vkE8}
-  return
+<^>!9::Send {u+201c}   ; (“) left double quotation mark
+<^>!+9::Send {u+2018}  ; (‘) left single quotation mark
 
->!0::Send {u+201d}  ; (”) right double quotation mark
->!+0::
-  Send {u+2019}     ; (’) right single quotation mark
-  Send {blind}{vkE8}
-  return
+<^>!0::Send {u+201d}   ; (”) right double quotation mark
+<^>!+0::Send {u+2019}  ; (’) right single quotation mark
 
->![::Send {u+00ab}  ; («) left-pointing double angle quotation mark
->!{::
-  Send {u+2039}     ; (‹) left-pointing single angle quotation mark
-  Send {blind}{vkE8}
-  return
+<^>![::Send {u+00ab}   ; («) left-pointing double angle quotation mark
+<^>!{::Send {u+2039}   ; (‹) left-pointing single angle quotation mark
 
->!]::Send {u+00bb}  ; (») right-pointing double angle quotation mark
->!}::
-  Send {u+203a}     ; (›) right-pointing single angle quotation mark
-  Send {blind}{vkE8}
-  return
+<^>!]::Send {u+00bb}   ; (») right-pointing double angle quotation mark
+<^>!}::Send {u+203a}   ; (›) right-pointing single angle quotation mark
 
->!;::Send {u+00b0}  ; (°) degree sign
->!+;::
-  Send {u+00b7}     ; (·) middle dot
-  Send {blind}{vkE8}
-  return
+<^>!;::Send {u+00b0}   ; (°) degree sign
+<^>!+;::Send {u+00b7}  ; (·) middle dot
 
->!/::Send {u+00bf}  ; (¿) inverted question mark
->!?::
-  Send {u+2026}     ; (…) horizontal ellipsis
-  Send {blind}{vkE8}
-  return
+<^>!/::Send {u+00bf}   ; (¿) inverted question mark
+<^>!?::Send {u+2026}   ; (…) horizontal ellipsis
 
->!space::Send {u+00a0}  ; non-breaking space
->!+space::
-  Send {u+00a0}         ; non-breaking space
-  Send {blind}{vkE8}
-  return
+<^>!space::Send {u+00a0}   ; non-breaking space
+<^>!+space::Send {u+00a0}  ; non-breaking space
 
 
-; Configuration :  Dead Keys on 'Right Alt' and 'Right Alt + Shift'
+; Configuration :  Dead Keys on 'AltGr' and 'AltGr + Shift'
 
->!6::
-  Send {blind}{vkE8}  ; suppresses circles around mouse pointer
+<^>!6::
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkCircumflex.item[fSendSecondChar(key)]
   key := ""  ; avoids leaking content via debug properties
-  Send {blind}{vkE8}  ; suppresses 'Right Alt + Shift' hotkey (for second character with 'Right Alt + Shift')
   return
->!+6::
-  Send {blind}{vkE8}  ; suppresses 'Right Alt + Shift' hotkey
+<^>!+6::
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkCaron.item[fSendSecondChar(key)]
   key := ""  ; avoids leaking content via debug properties
-  Send {blind}{vkE8}  ; suppresses 'Right Alt + Shift' hotkey (for second character with 'Right Alt + Shift')
   return
 
->!7::
-  Send {blind}{vkE8}
+<^>!7::
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkDotAbove.item[fSendSecondChar(key)]
   key := ""
-  Send {blind}{vkE8}
   return
->!+7::
-  Send {blind}{vkE8}
+<^>!+7::
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkMacronStroke.item[fSendSecondChar(key)]
   key := ""
-  Send {blind}{vkE8}
   return
 
->!8::
-  Send {blind}{vkE8}
+<^>!8::
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkCedillaOgonek.item[fSendSecondChar(key)]
   key := ""
-  Send {blind}{vkE8}
   return
->!+8::
-  Send {blind}{vkE8}
+<^>!+8::
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkBreveSpecial.item[fSendSecondChar(key)]
   key := ""
-  Send {blind}{vkE8}
   return
 
->!'::
-  Send {blind}{vkE8}
+<^>!'::
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkAcuteAccent.item[fSendSecondChar(key)]
   key := ""
-  Send {blind}{vkE8}
   return
->!"::
-  Send {blind}{vkE8}
+<^>!"::
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkDiaeresis.item[fSendSecondChar(key)]
   key := ""
-  Send {blind}{vkE8}
   return
 
->!`::
-  Send {blind}{vkE8}
+<^>!`::
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkGraveAccent.item[fSendSecondChar(key)]
   key := ""
-  Send {blind}{vkE8}
   return
->!~::
-  Send {blind}{vkE8}
+<^>!~::
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkTilde.item[fSendSecondChar(key)]
   key := ""
-  Send {blind}{vkE8}
   return
 
->!\::
-  Send {blind}{vkE8}
+<^>!\::
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkSymbols.item[fSendSecondChar(key)]
   key := ""
-  Send {blind}{vkE8}
   return
->!|::
-  Send {blind}{vkE8}
+<^>!|::
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkCurrency.item[fSendSecondChar(key)]
   key := ""
-  Send {blind}{vkE8}
   return
 
->!m::
-  Send {blind}{vkE8}
+<^>!m::
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkGreekAlphabet.item[fSendSecondChar(key)]
   key := ""
-  Send {blind}{vkE8}
   return
->!+m::
-  Send {blind}{vkE8}
+<^>!+m::
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkMathSymbols.item[fSendSecondChar(key)]
   key := ""
-  Send {blind}{vkE8}
   return
 
 
@@ -1691,4 +1604,4 @@ $+0::
 LShift & RShift::CapsLock  ; assigns 'Caps Lock' to 'Left Shift' and 'Right Shift'
 RShift & LShift::CapsLock  ; assigns 'Caps Lock' to 'Right Shift' and 'Left Shift'
 
-CapsLock::RAlt  ; assigns 'Right Alt' also to 'Caps Lock'
+CapsLock::vkA5  ; assigns 'AltGr' also to 'Caps Lock'
