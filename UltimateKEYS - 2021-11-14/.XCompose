@@ -673,10 +673,10 @@
 
 # Dead Key :  Currency
 
-<dead_currency> <a> : "₳"  U20B3  # Argentine austral
+<dead_currency> <a> : "֏"  U058F  # Armenian dram
 <dead_currency> <A> : "₳"  U20B3  # Argentine austral
 <dead_currency> <b> : "₿"  U20BF  # bitcoin
-<dead_currency> <B> : "₿"  U20BF  # bitcoin
+<dead_currency> <B> : "฿"  U0E3F  # Thai baht
 <dead_currency> <c> : "₡"  U20A1  # Costa Rican colón
 <dead_currency> <C> : "₵"  U20B5  # Ghanaian cedi
 <dead_currency> <d> : "₫"  U20AB  # Vietnamese dong
@@ -694,7 +694,7 @@
 <dead_currency> <m> : "₼"  U20BC  # Azerbaijani manat
 <dead_currency> <M> : "₥"  U20A5  # mill sign
 <dead_currency> <n> : "₦"  U20A6  # Nigerian naira
-<dead_currency> <N> : "₦"  U20A6  # Nigerian naira
+<dead_currency> <N> : "₻"  U20BB  # nordic mark
 <dead_currency> <p> : "₱"  U20B1  # Philippine peso
 <dead_currency> <P> : "₧"  U20A7  # Spanish pesetas
 <dead_currency> <r> : "₹"  U20B9  # Indian rupee
@@ -708,7 +708,7 @@
 <dead_currency> <x> : "¤"  U00A4  # currency sign
 <dead_currency> <X> : "¤"  U00A4  # currency sign
 <dead_currency> <ccedilla>    : "₢"  U20A2  # Brazilian cruzeiro
-<dead_currency> <Ccedilla>    : "₢"  U20A2  # Brazilian cruzeiro
+<dead_currency> <Ccedilla>    : "₠"  U20A0  # euro-currency sign
 <dead_currency> <oslash>      : "₤"  U20A4  # lira
 <dead_currency> <Ooblique>    : "₶"  U20B6  # livre tournois
 <dead_currency> <ecircumflex> : "₨"  U20A8  # rupee sign
