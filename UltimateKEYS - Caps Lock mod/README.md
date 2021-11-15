@@ -2,7 +2,7 @@
 
 These versions feature a 'second Right Alt' (AltGr) key via 'Caps Lock'.
 
-The 'Caps Lock' behavior can be triggered (or toggled) by pressing both Shift keys together.
+The classic 'Caps Lock' behavior can be triggered (or toggled) by pressing both Shift keys together.
 
 ## Added code at the end of the regular scripts
 
