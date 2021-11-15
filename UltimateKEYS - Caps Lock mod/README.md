@@ -1,12 +1,12 @@
 # UltimateKEYS - Caps Lock mod
 
-This version features a 'second Right Alt' (AltGr) key via the 'Caps Lock'.
+These versions feature a 'second Right Alt' (AltGr) key via 'Caps Lock'.
 
 The 'Caps Lock' behavior can be triggered (or toggled) by pressing both Shift keys together.
 
 ## Added code at the end of the regular scripts
 
-The following code has been added at the end of the regular scripts (identical for both AutoHotkey v1.1 and v2.0)&nbsp;:
+The following code can be added to the end of the regular scripts (identical for both AutoHotkey v1.1 and v2.0)&nbsp;:
 
     ; ==== Caps Lock mod ====
 
