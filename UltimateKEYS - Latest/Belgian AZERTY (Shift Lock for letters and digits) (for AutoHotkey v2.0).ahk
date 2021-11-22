@@ -1,17 +1,17 @@
 ; Belgian AZERTY (Shift Lock for letters and digits) (for AutoHotkey v2.0).ahk - 2021-10-26
 
-; Created by :  Pieter Degroote
+; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
-; License :     GNU General Public License Version 3
+; License :  GNU General Public License Version 3
 
-; GitHub :      https://github.com/pieter-degroote/UltimateKEYS
+; GitHub :   github.com/pieter-degroote/UltimateKEYS-testing
 
 
 ; Requirements :
 
-; Keyboard layout (on Windows OS) :  US QWERTY
+; Keyboard layout (on Windows) :  US QWERTY
 
-; AutoHotkey v2.0 (https://www.autohotkey.com/)
+; AutoHotkey v2.0 (www.autohotkey.com)
 
 
 
