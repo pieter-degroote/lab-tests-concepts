@@ -1,4 +1,4 @@
-# UltimateKEYS  (~/.XCompose) - 2021-11-22
+# UltimateKEYS  (~/.XCompose) - 2021-12-28
 
 # Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -607,6 +607,8 @@
 <dead_stroke> <E> : "✉"  U2709  # envelope
 <dead_stroke> <f> : "♀"  U2640  # Venus symbol (female)
 <dead_stroke> <F> : "♀"  U2640  # Venus symbol (female)
+<dead_stroke> <g> : "❀"  U2740  # white florette
+<dead_stroke> <G> : "✿"  U273F  # black florette
 <dead_stroke> <h> : "❦"  U2766  # floral heart
 <dead_stroke> <H> : "❧"  U2767  # rotated floral heart bullet
 <dead_stroke> <i> : "⋄"  U22C4  # diamond operator

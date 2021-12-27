@@ -1,4 +1,4 @@
-; UltimateKEYS SW (Scroll Lock).ahk - 2021-11-22
+; UltimateKEYS SW (Scroll Lock).ahk - 2021-12-28
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -619,6 +619,8 @@ dkSymbols.item["e"] := "{u+212e}"  ; (℮) estimated symbol
 dkSymbols.item["E"] := "{u+2709}"  ; (✉) envelope
 dkSymbols.item["f"] := "{u+2640}"  ; (♀) Venus symbol (female)
 dkSymbols.item["F"] := "{u+2640}"  ; (♀) Venus symbol (female)
+dkSymbols.item["g"] := "{u+2740}"  ; (❀) white florette
+dkSymbols.item["G"] := "{u+273f}"  ; (✿) black florette
 dkSymbols.item["h"] := "{u+2766}"  ; (❦) floral heart
 dkSymbols.item["H"] := "{u+2767}"  ; (❧) rotated floral heart bullet
 dkSymbols.item["i"] := "{u+22c4}"  ; (⋄) diamond operator

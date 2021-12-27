@@ -1,4 +1,4 @@
-; UltimateKEYS (for AutoHotkey v2.0).ahk - 2021-11-22
+; UltimateKEYS (for AutoHotkey v2.0).ahk - 2021-12-28
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -621,6 +621,8 @@ dkSymbols["e"] := "{u+212e}"  ; (℮) estimated symbol
 dkSymbols["E"] := "{u+2709}"  ; (✉) envelope
 dkSymbols["f"] := "{u+2640}"  ; (♀) Venus symbol (female)
 dkSymbols["F"] := "{u+2640}"  ; (♀) Venus symbol (female)
+dkSymbols["g"] := "{u+2740}"  ; (❀) white florette
+dkSymbols["G"] := "{u+273f}"  ; (✿) black florette
 dkSymbols["h"] := "{u+2766}"  ; (❦) floral heart
 dkSymbols["H"] := "{u+2767}"  ; (❧) rotated floral heart bullet
 dkSymbols["i"] := "{u+22c4}"  ; (⋄) diamond operator
