@@ -422,7 +422,7 @@ SendMode Event  ; allows chaining of customized key combinations (default)
 >!+6::Send {u+00b1}  ; (±) plus-minus sign
 
 >!7::Send {u+2265}   ; (≥) greater-than or equal to
->!+7::Send {u+00b6}  ; (¶) pilcrow sign
+>!+7::Send {u+2030}  ; (‰) per mille sign
 
 >!8::Send {u+201e}   ; („) double low-9 quotation mark
 >!+8::Send {u+201a}  ; (‚) single low-9 quotation mark

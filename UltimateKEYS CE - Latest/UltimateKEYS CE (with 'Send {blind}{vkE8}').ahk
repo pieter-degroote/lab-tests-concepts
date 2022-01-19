@@ -473,7 +473,7 @@ SendMode Event  ; allows chaining of customized key combinations (default)
 
 >!7::Send {u+2265}  ; (≥) greater-than or equal to
 >!+7::
-  Send {u+00b6}     ; (¶) pilcrow sign
+  Send {u+2030}     ; (‰) per mille sign
   Send {blind}{vkE8}
   return
 
