@@ -18,7 +18,7 @@
 ListLines Off   ; omits recently executed lines from history (for privacy and security)
 #KeyHistory 0   ; disables the key history (for privacy and security)
 
-SendMode Event  ; allows chaining of customized key combinations (default)
+SendMode Input  ; optimizes for faster and more reliable input
 
 
 ; Configuration :  'Right Alt' and 'Right Alt + Shift' on US QWERTY
