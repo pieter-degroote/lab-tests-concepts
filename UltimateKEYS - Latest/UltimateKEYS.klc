@@ -289,6 +289,8 @@ DEADKEY	00af	// Dead Key :  Macron/Stroke
 005a	01b5	// Z -> Ƶ    Z with stroke
 00e6	01e3	// æ -> ǣ    ae with macron
 00c6	01e2	// Æ -> Ǣ    AE with macron
+00f6	01ed	// ö -> ǭ    o with ogonek and macron
+00d6	01ec	// Ö -> Ǭ    O with ogonek and macron
 0031	21b2	// 1 -> ↲    downwards arrow with tip leftwards
 0032	21f5	// 2 -> ⇵    downwards arrow leftwards of upwards arrow
 0033	21b3	// 3 -> ↳    downwards arrow with tip rightwards
@@ -362,7 +364,6 @@ DEADKEY	00b8	// Dead Key :  Cedilla/Ogonek
 0028	2012	// ( -> ‒    figure dash
 0029	00ad	// ) -> ­    soft hyphen
 002d	2011	// - -> ‑    non-breaking hyphen
-002e	02db	// . -> ˛    ogonek
 0020	00b8	//   -> ¸    cedilla
 
 DEADKEY	02d8	// Dead Key :  Breve/Special

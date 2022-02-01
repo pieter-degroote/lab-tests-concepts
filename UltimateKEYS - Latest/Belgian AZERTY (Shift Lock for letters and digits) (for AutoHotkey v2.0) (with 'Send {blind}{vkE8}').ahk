@@ -1,4 +1,4 @@
-; Belgian AZERTY (Shift Lock for letters and digits) (for AutoHotkey v2.0).ahk - 2022-02-01
+; Belgian AZERTY (Shift Lock for letters and digits) (for AutoHotkey v2.0) (with 'Send {blind}{vkE8}').ahk - 2022-02-01
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -347,11 +347,13 @@ $/::Send "="    ; equals sign
 $?::Send "{+}"  ; plus sign
 
 >!/:: {
+  Send "{blind}{vkE8}"  ; suppresses circles around mouse pointer
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
   if dkTilde.Has(ih.Input)
     Send dkTilde[ih.Input]
+  Send "{blind}{vkE8}"  ; suppresses 'Right Alt + Shift' hotkey (for second character with 'Right Alt + Shift')
 }
 
 >!q:: {
@@ -365,6 +367,7 @@ $?::Send "{+}"  ; plus sign
     Send "{u+00e6}"  ; (æ) letter ae
   else
     Send "{u+00c6}"  ; (Æ) letter AE
+  Send "{blind}{vkE8}"
 }
 
 >!w:: {
@@ -378,6 +381,7 @@ $?::Send "{+}"  ; plus sign
     Send "{u+00e5}"  ; (å) a with ring above
   else
     Send "{u+00c5}"  ; (Å) A with ring above
+  Send "{blind}{vkE8}"
 }
 
 >!c:: {
@@ -391,6 +395,7 @@ $?::Send "{+}"  ; plus sign
     Send "{u+00e7}"  ; (ç) c with cedilla
   else
     Send "{u+00c7}"  ; (Ç) C with cedilla
+  Send "{blind}{vkE8}"
 }
 
 >!d:: {
@@ -404,6 +409,7 @@ $?::Send "{+}"  ; plus sign
     Send "{u+00f0}"  ; (ð) small letter eth
   else
     Send "{u+00d0}"  ; (Ð) capital letter eth
+  Send "{blind}{vkE8}"
 }
 
 >!n:: {
@@ -417,6 +423,7 @@ $?::Send "{+}"  ; plus sign
     Send "{u+00f1}"  ; (ñ) n with tilde
   else
     Send "{u+00d1}"  ; (Ñ) N with tilde
+  Send "{blind}{vkE8}"
 }
 
 >!k:: {
@@ -430,6 +437,7 @@ $?::Send "{+}"  ; plus sign
     Send "{u+0153}"  ; (œ) ligature oe
   else
     Send "{u+0152}"  ; (Œ) ligature OE
+  Send "{blind}{vkE8}"
 }
 
 >!l:: {
@@ -443,6 +451,7 @@ $?::Send "{+}"  ; plus sign
     Send "{u+00f8}"  ; (ø) o with stroke
   else
     Send "{u+00d8}"  ; (Ø) O with stroke
+  Send "{blind}{vkE8}"
 }
 
 >!s:: {
@@ -456,6 +465,7 @@ $?::Send "{+}"  ; plus sign
     Send "{u+00df}"  ; (ß) small sharp s (Eszett)
   else
     Send "{u+1e9e}"  ; (ẞ) capital sharp S (capital Eszett)
+  Send "{blind}{vkE8}"
 }
 
 >!t:: {
@@ -469,6 +479,7 @@ $?::Send "{+}"  ; plus sign
     Send "{u+00fe}"  ; (þ) small letter thorn
   else
     Send "{u+00de}"  ; (Þ) capital letter thorn
+  Send "{blind}{vkE8}"
 }
 
 >!e::Send "{u+20ac}"  ; (€) euro sign
@@ -477,11 +488,13 @@ $'::Send "{u+00f9}"  ; (ù) u with grave
 $"::Send "`%"        ; percent sign
 
 >!':: {
+  Send "{blind}{vkE8}"  ; suppresses circles around mouse pointer
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
   if dkAcuteAccent.Has(ih.Input)
     Send dkAcuteAccent[ih.Input]
+  Send "{blind}{vkE8}"  ; suppresses 'Right Alt + Shift' hotkey (for second character with 'Right Alt + Shift')
 }
 
 $[:: {
@@ -490,6 +503,7 @@ $[:: {
   ih.Wait()
   if dkCircumflex.Has(ih.Input)
     Send dkCircumflex[ih.Input]
+  Send "{blind}{vkE8}"
 }
 ${:: {
   ih := InputHook("L1", dkEndKeys)
@@ -497,6 +511,7 @@ ${:: {
   ih.Wait()
   if dkDiaeresis.Has(ih.Input)
     Send dkDiaeresis[ih.Input]
+  Send "{blind}{vkE8}"
 }
 
 >![::Send "["  ; left square bracket
@@ -510,11 +525,13 @@ $\::Send "{u+00b5}"  ; (µ) micro sign
 $|::Send "{u+00a3}"  ; (£) pound sign
 
 >!\:: {
+  Send "{blind}{vkE8}"
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
   if dkGraveAccent.Has(ih.Input)
     Send dkGraveAccent[ih.Input]
+  Send "{blind}{vkE8}"
 }
 
 $`::Send "{u+00b2}"  ; (²) superscript 2
@@ -524,5 +541,8 @@ sc056::Send "<"    ; less-than sign
 +sc056::Send ">"   ; greater-than sign
 >!sc056::Send "\"  ; reverse solidus (backslash)
 
->!space::Send "{u+00a0}"   ; non-breaking space
->!+space::Send "{u+00a0}"  ; non-breaking space
+>!space::Send "{u+00a0}"  ; non-breaking space
+>!+space:: {
+  Send "{u+00a0}"         ; non-breaking space
+  Send "{blind}{vkE8}"
+}

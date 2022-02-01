@@ -1,4 +1,4 @@
-; UltimateKEYS SW (Scroll Lock) (for AutoHotkey v2.0).ahk - 2022-01-30
+; UltimateKEYS (for AutoHotkey v2.0) (with 'Send {blind}{vkE8}').ahk - 2022-01-30
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -18,7 +18,7 @@
 ListLines False   ; omits recently executed lines from history (for privacy and security)
 KeyHistory 0      ; disables the key history (for privacy and security)
 
-SendMode "Event"  ; allows chaining of customized key combinations
+SendMode "Input"  ; optimizes for faster and more reliable input
 
 global dkEndKeys := "{bs}{del}{esc}{home}{end}"  ; ends dead key input on specific keys
 
@@ -260,10 +260,6 @@ dkMacronStroke["&"] := "{u+21b0}"  ; (↰) upwards arrow with tip leftwards
 dkMacronStroke["*"] := "{u+21c5}"  ; (⇅) upwards arrow leftwards of downwards arrow
 dkMacronStroke["("] := "{u+21b1}"  ; (↱) upwards arrow with tip rightwards
 dkMacronStroke[")"] := "{u+21b9}"  ; (↹) leftwards arrow to bar over rightwards arrow to bar
-dkMacronStroke[chr(0x00e6)] := "{u+01e3}"  ; (æ -> ǣ) ae with macron
-dkMacronStroke[chr(0x00c6)] := "{u+01e2}"  ; (Æ -> Ǣ) AE with macron
-dkMacronStroke[chr(0x00f6)] := "{u+01ed}"  ; (ö -> ǭ) o with ogonek and macron
-dkMacronStroke[chr(0x00d6)] := "{u+01ec}"  ; (Ö -> Ǭ) O with ogonek and macron
 dkMacronStroke[" "] := "{u+00af}"  ; (¯) macron
 
 
@@ -443,14 +439,6 @@ dkAcuteAccent["%"] := "{u+2606}"  ; (☆) white star
 dkAcuteAccent["^"] := "{u+273d}"  ; (✽) heavy teardrop-spoked asterisk
 dkAcuteAccent["&"] := "{u+273b}"  ; (✻) teardrop-spoked asterisk
 dkAcuteAccent["*"] := "{u+266a}"  ; (♪) eighth note
-dkAcuteAccent[chr(0x00e5)] := "{u+01fb}"  ; (å -> ǻ) a with ring above and acute
-dkAcuteAccent[chr(0x00c5)] := "{u+01fa}"  ; (Å -> Ǻ) A with ring above and acute
-dkAcuteAccent[chr(0x00e6)] := "{u+01fd}"  ; (æ -> ǽ) ae with acute
-dkAcuteAccent[chr(0x00c6)] := "{u+01fc}"  ; (Æ -> Ǽ) AE with acute
-dkAcuteAccent[chr(0x00f8)] := "{u+01ff}"  ; (ø -> ǿ) o with stroke and acute
-dkAcuteAccent[chr(0x00d8)] := "{u+01fe}"  ; (Ø -> Ǿ) O with stroke and acute
-dkAcuteAccent[chr(0x00e7)] := "{u+1e09}"  ; (ç -> ḉ) c with cedilla and acute
-dkAcuteAccent[chr(0x00c7)] := "{u+1e08}"  ; (Ç -> Ḉ) C with cedilla and acute
 dkAcuteAccent[" "] := "{u+00b4}"  ; (´) acute accent
 
 
@@ -791,7 +779,6 @@ dkGreekAlphabet[chr(34)] := "{u+208a}"  ; (₊) subscript +
 dkGreekAlphabet["{"] := "{u+208d}"  ; (₍) subscript (
 dkGreekAlphabet["}"] := "{u+208e}"  ; (₎) subscript )
 dkGreekAlphabet["."] := "{u+00b5}"  ; (µ) micro sign
-dkGreekAlphabet[chr(0x00df)] := "{u+03c2}"  ; (ß -> ς) small final sigma
 dkGreekAlphabet[" "] := "{u+03bc}"  ; (μ) small mu
 
 
@@ -886,191 +873,6 @@ dkMathSymbols["]"] := "{u+2057}"  ; (⁗) quadruple prime
 dkMathSymbols["\"] := "{u+2228}"  ; (∨) logical or
 dkMathSymbols["|"] := "{u+2228}"  ; (∨) logical or
 dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
-
-
-fSendSecondChar(char) {
-; function for keeping correct operation after dead key press when Scroll Lock is enabled
-
-  if GetKeyState("ScrollLock", "T") {
-    if (char == "1")
-      return "!"
-    else if (char == "2")
-      return "@"
-    else if (char == "3")
-      return "#"
-    else if (char == "4")
-      return "$"
-    else if (char == "5")
-      return "%"
-    else if (char == "6")
-      return "^"
-    else if (char == "7")
-      return "&"
-    else if (char == "8")
-      return "*"
-    else if (char == "9")
-      return "("
-    else if (char == "0")
-      return ")"
-    else if (char == "!")
-      return "1"
-    else if (char == "@")
-      return "2"
-    else if (char == "#")
-      return "3"
-    else if (char == "$")
-      return "4"
-    else if (char == "%")
-      return "5"
-    else if (char == "^")
-      return "6"
-    else if (char == "&")
-      return "7"
-    else if (char == "*")
-      return "8"
-    else if (char == "(")
-      return "9"
-    else if (char == ")")
-      return "0"
-    else
-      return char
-  }
-  else
-    return char
-}
-
-
-; Configuration :  Switch positions of symbols and digits with Scroll Lock
-
-$1:: {
-  if GetKeyState("ScrollLock", "T")
-    Send "{!}"  ; exclamation mark
-  else
-    Send "1"    ; digit 1
-}
-$+1:: {
-  if GetKeyState("ScrollLock", "T")
-    Send "1"    ; digit 1
-  else
-    Send "{!}"  ; exclamation mark
-}
-
-$2:: {
-  if GetKeyState("ScrollLock", "T")
-    Send "@"  ; at sign
-  else
-    Send "2"  ; digit 2
-}
-$+2:: {
-  if GetKeyState("ScrollLock", "T")
-    Send "2"  ; digit 2
-  else
-    Send "@"  ; at sign
-}
-
-$3:: {
-  if GetKeyState("ScrollLock", "T")
-    Send "{#}"  ; number sign
-  else
-    Send "3"    ; digit 3
-}
-$+3:: {
-  if GetKeyState("ScrollLock", "T")
-    Send "3"    ; digit 3
-  else
-    Send "{#}"  ; number sign
-}
-
-$4:: {
-  if GetKeyState("ScrollLock", "T")
-    Send "$"  ; dollar sign
-  else
-    Send "4"  ; digit 4
-}
-$+4:: {
-  if GetKeyState("ScrollLock", "T")
-    Send "4"  ; digit 4
-  else
-    Send "$"  ; dollar sign
-}
-
-$5:: {
-  if GetKeyState("ScrollLock", "T")
-    Send "`%"  ; percent sign
-  else
-    Send "5"   ; digit 5
-}
-$+5:: {
-  if GetKeyState("ScrollLock", "T")
-    Send "5"   ; digit 5
-  else
-    Send "`%"  ; percent sign
-}
-
-$6:: {
-  if GetKeyState("ScrollLock", "T")
-    Send "{^}"  ; circumflex accent
-  else
-    Send "6"    ; digit 6
-}
-$+6:: {
-  if GetKeyState("ScrollLock", "T")
-    Send "6"    ; digit 6
-  else
-    Send "{^}"  ; circumflex accent
-}
-
-$7:: {
-  if GetKeyState("ScrollLock", "T")
-    Send "&"  ; ampersand
-  else
-    Send "7"  ; digit 7
-}
-$+7:: {
-  if GetKeyState("ScrollLock", "T")
-    Send "7"  ; digit 7
-  else
-    Send "&"  ; ampersand
-}
-
-$8:: {
-  if GetKeyState("ScrollLock", "T")
-    Send "*"  ; asterisk
-  else
-    Send "8"  ; digit 8
-}
-$+8:: {
-  if GetKeyState("ScrollLock", "T")
-    Send "8"  ; digit 8
-  else
-    Send "*"  ; asterisk
-}
-
-$9:: {
-  if GetKeyState("ScrollLock", "T")
-    Send "("  ; left parenthesis
-  else
-    Send "9"  ; digit 9
-}
-$+9:: {
-  if GetKeyState("ScrollLock", "T")
-    Send "9"  ; digit 9
-  else
-    Send "("  ; left parenthesis
-}
-
-$0:: {
-  if GetKeyState("ScrollLock", "T")
-    Send ")"  ; right parenthesis
-  else
-    Send "0"  ; digit 0
-}
-$+0:: {
-  if GetKeyState("ScrollLock", "T")
-    Send "0"  ; digit 0
-  else
-    Send ")"  ; right parenthesis
-}
 
 
 ; Configuration :  'Right Alt' and 'Right Alt + Shift' on US QWERTY
@@ -1561,8 +1363,8 @@ $+0:: {
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkCircumflex.Has(fSendSecondChar(ih.Input))
-    Send dkCircumflex[fSendSecondChar(ih.Input)]
+  if dkCircumflex.Has(ih.Input)
+    Send dkCircumflex[ih.Input]
   Send "{blind}{vkE8}"  ; suppresses 'Right Alt + Shift' hotkey (for second character with 'Right Alt + Shift')
 }
 >!+6:: {
@@ -1570,8 +1372,8 @@ $+0:: {
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkCaron.Has(fSendSecondChar(ih.Input))
-    Send dkCaron[fSendSecondChar(ih.Input)]
+  if dkCaron.Has(ih.Input)
+    Send dkCaron[ih.Input]
   Send "{blind}{vkE8}"  ; suppresses 'Right Alt + Shift' hotkey (for second character with 'Right Alt + Shift')
 }
 
@@ -1580,8 +1382,8 @@ $+0:: {
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkDotAbove.Has(fSendSecondChar(ih.Input))
-    Send dkDotAbove[fSendSecondChar(ih.Input)]
+  if dkDotAbove.Has(ih.Input)
+    Send dkDotAbove[ih.Input]
   Send "{blind}{vkE8}"
 }
 >!+7:: {
@@ -1589,8 +1391,8 @@ $+0:: {
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkMacronStroke.Has(fSendSecondChar(ih.Input))
-    Send dkMacronStroke[fSendSecondChar(ih.Input)]
+  if dkMacronStroke.Has(ih.Input)
+    Send dkMacronStroke[ih.Input]
   Send "{blind}{vkE8}"
 }
 
@@ -1599,8 +1401,8 @@ $+0:: {
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkCedillaOgonek.Has(fSendSecondChar(ih.Input))
-    Send dkCedillaOgonek[fSendSecondChar(ih.Input)]
+  if dkCedillaOgonek.Has(ih.Input)
+    Send dkCedillaOgonek[ih.Input]
   Send "{blind}{vkE8}"
 }
 >!+8:: {
@@ -1608,8 +1410,8 @@ $+0:: {
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkBreveSpecial.Has(fSendSecondChar(ih.Input))
-    Send dkBreveSpecial[fSendSecondChar(ih.Input)]
+  if dkBreveSpecial.Has(ih.Input)
+    Send dkBreveSpecial[ih.Input]
   Send "{blind}{vkE8}"
 }
 
@@ -1618,8 +1420,8 @@ $+0:: {
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkAcuteAccent.Has(fSendSecondChar(ih.Input))
-    Send dkAcuteAccent[fSendSecondChar(ih.Input)]
+  if dkAcuteAccent.Has(ih.Input)
+    Send dkAcuteAccent[ih.Input]
   Send "{blind}{vkE8}"
 }
 >!":: {
@@ -1627,8 +1429,8 @@ $+0:: {
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkDiaeresis.Has(fSendSecondChar(ih.Input))
-    Send dkDiaeresis[fSendSecondChar(ih.Input)]
+  if dkDiaeresis.Has(ih.Input)
+    Send dkDiaeresis[ih.Input]
   Send "{blind}{vkE8}"
 }
 
@@ -1637,8 +1439,8 @@ $+0:: {
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkGraveAccent.Has(fSendSecondChar(ih.Input))
-    Send dkGraveAccent[fSendSecondChar(ih.Input)]
+  if dkGraveAccent.Has(ih.Input)
+    Send dkGraveAccent[ih.Input]
   Send "{blind}{vkE8}"
 }
 >!~:: {
@@ -1646,8 +1448,8 @@ $+0:: {
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkTilde.Has(fSendSecondChar(ih.Input))
-    Send dkTilde[fSendSecondChar(ih.Input)]
+  if dkTilde.Has(ih.Input)
+    Send dkTilde[ih.Input]
   Send "{blind}{vkE8}"
 }
 
@@ -1656,8 +1458,8 @@ $+0:: {
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkSymbols.Has(fSendSecondChar(ih.Input))
-    Send dkSymbols[fSendSecondChar(ih.Input)]
+  if dkSymbols.Has(ih.Input)
+    Send dkSymbols[ih.Input]
   Send "{blind}{vkE8}"
 }
 >!|:: {
@@ -1665,8 +1467,8 @@ $+0:: {
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkCurrency.Has(fSendSecondChar(ih.Input))
-    Send dkCurrency[fSendSecondChar(ih.Input)]
+  if dkCurrency.Has(ih.Input)
+    Send dkCurrency[ih.Input]
   Send "{blind}{vkE8}"
 }
 
@@ -1675,8 +1477,8 @@ $+0:: {
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkGreekAlphabet.Has(fSendSecondChar(ih.Input))
-    Send dkGreekAlphabet[fSendSecondChar(ih.Input)]
+  if dkGreekAlphabet.Has(ih.Input)
+    Send dkGreekAlphabet[ih.Input]
   Send "{blind}{vkE8}"
 }
 >!+m:: {
@@ -1684,7 +1486,7 @@ $+0:: {
   ih := InputHook("L1", dkEndKeys)
   ih.Start()
   ih.Wait()
-  if dkMathSymbols.Has(fSendSecondChar(ih.Input))
-    Send dkMathSymbols[fSendSecondChar(ih.Input)]
+  if dkMathSymbols.Has(ih.Input)
+    Send dkMathSymbols[ih.Input]
   Send "{blind}{vkE8}"
 }

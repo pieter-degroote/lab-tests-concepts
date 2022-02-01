@@ -1,4 +1,4 @@
-; Belgian AZERTY (Shift Lock for letters and digits).ahk - 2022-02-01
+; Belgian AZERTY (Shift Lock for letters and digits) (with 'Send {blind}{vkE8}').ahk - 2022-02-01
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -345,9 +345,11 @@ $/::Send {=}  ; equals sign
 $?::Send {+}  ; plus sign
 
 >!/::
+  Send {blind}{vkE8}  ; suppresses circles around mouse pointer
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkTilde.item[key]
   key := ""  ; avoids leaking content via debug properties
+  Send {blind}{vkE8}  ; suppresses 'Right Alt + Shift' hotkey (for second character with 'Right Alt + Shift')
   return
 
 >!q::
@@ -361,6 +363,7 @@ $?::Send {+}  ; plus sign
     Send {u+00e6}  ; (æ) letter ae
   else
     Send {u+00c6}  ; (Æ) letter AE
+  Send {blind}{vkE8}
   return
 
 >!w::
@@ -374,6 +377,7 @@ $?::Send {+}  ; plus sign
     Send {u+00e5}  ; (å) a with ring above
   else
     Send {u+00c5}  ; (Å) A with ring above
+  Send {blind}{vkE8}
   return
 
 >!c::
@@ -387,6 +391,7 @@ $?::Send {+}  ; plus sign
     Send {u+00e7}  ; (ç) c with cedilla
   else
     Send {u+00c7}  ; (Ç) C with cedilla
+  Send {blind}{vkE8}
   return
 
 >!d::
@@ -400,6 +405,7 @@ $?::Send {+}  ; plus sign
     Send {u+00f0}  ; (ð) small letter eth
   else
     Send {u+00d0}  ; (Ð) capital letter eth
+  Send {blind}{vkE8}
   return
 
 >!n::
@@ -413,6 +419,7 @@ $?::Send {+}  ; plus sign
     Send {u+00f1}  ; (ñ) n with tilde
   else
     Send {u+00d1}  ; (Ñ) N with tilde
+  Send {blind}{vkE8}
   return
 
 >!k::
@@ -426,6 +433,7 @@ $?::Send {+}  ; plus sign
     Send {u+0153}  ; (œ) ligature oe
   else
     Send {u+0152}  ; (Œ) ligature OE
+  Send {blind}{vkE8}
   return
 
 >!l::
@@ -439,6 +447,7 @@ $?::Send {+}  ; plus sign
     Send {u+00f8}  ; (ø) o with stroke
   else
     Send {u+00d8}  ; (Ø) O with stroke
+  Send {blind}{vkE8}
   return
 
 >!s::
@@ -452,6 +461,7 @@ $?::Send {+}  ; plus sign
     Send {u+00df}  ; (ß) small sharp s (Eszett)
   else
     Send {u+1e9e}  ; (ẞ) capital sharp S (capital Eszett)
+  Send {blind}{vkE8}
   return
 
 >!t::
@@ -465,6 +475,7 @@ $?::Send {+}  ; plus sign
     Send {u+00fe}  ; (þ) small letter thorn
   else
     Send {u+00de}  ; (Þ) capital letter thorn
+  Send {blind}{vkE8}
   return
 
 >!e::Send {u+20ac}  ; (€) euro sign
@@ -473,20 +484,24 @@ $'::Send {u+00f9}  ; (ù) u with grave
 $"::Send `%        ; percent sign
 
 >!'::
+  Send {blind}{vkE8}  ; suppresses circles around mouse pointer
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkAcuteAccent.item[key]
   key := ""  ; avoids leaking content via debug properties
+  Send {blind}{vkE8}  ; suppresses 'Right Alt + Shift' hotkey (for second character with 'Right Alt + Shift')
   return
 
 $[::
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkCircumflex.item[key]
   key := ""
+  Send {blind}{vkE8}
   return
 ${::
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkDiaeresis.item[key]
   key := ""
+  Send {blind}{vkE8}
   return
 
 >![::Send [  ; left square bracket
@@ -500,9 +515,11 @@ $\::Send {u+00b5}  ; (µ) micro sign
 $|::Send {u+00a3}  ; (£) pound sign
 
 >!\::
+  Send {blind}{vkE8}
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkGraveAccent.item[key]
   key := ""
+  Send {blind}{vkE8}
   return
 
 $`::Send {u+00b2}  ; (²) superscript 2
@@ -512,5 +529,8 @@ sc056::Send <    ; less-than sign
 +sc056::Send >   ; greater-than sign
 >!sc056::Send \  ; reverse solidus (backslash)
 
->!space::Send {u+00a0}   ; non-breaking space
->!+space::Send {u+00a0}  ; non-breaking space
+>!space::Send {u+00a0}  ; non-breaking space
+>!+space::
+  Send {u+00a0}         ; non-breaking space
+  Send {blind}{vkE8}  ; suppresses RAlt+Shift hotkey
+  return

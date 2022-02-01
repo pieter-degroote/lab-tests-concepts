@@ -248,6 +248,8 @@
 <dead_macron> <parenright>  : "↹"  U21B9  # leftwards arrow to bar over rightwards arrow to bar
 <dead_macron> <ae>          : "ǣ"  U01E3  # ae with macron
 <dead_macron> <AE>          : "Ǣ"  U01E2  # AE with macron
+<dead_macron> <odiaeresis>  : "ǭ"  U01ED  # o with ogonek and macron
+<dead_macron> <Odiaeresis>  : "Ǭ"  U01EC  # O with ogonek and macron
 <dead_macron> <space>       : "¯"  U00AF  # macron
 <dead_macron> <dead_macron> : "¯"  U00AF  # macron
 

@@ -258,6 +258,10 @@ dkMacronStroke.item["&"] := "{u+21b0}"  ; (↰) upwards arrow with tip leftwards
 dkMacronStroke.item["*"] := "{u+21c5}"  ; (⇅) upwards arrow leftwards of downwards arrow
 dkMacronStroke.item["("] := "{u+21b1}"  ; (↱) upwards arrow with tip rightwards
 dkMacronStroke.item[")"] := "{u+21b9}"  ; (↹) leftwards arrow to bar over rightwards arrow to bar
+dkMacronStroke.item[chr(0x00e6)] := "{u+01e3}"  ; (æ -> ǣ) ae with macron
+dkMacronStroke.item[chr(0x00c6)] := "{u+01e2}"  ; (Æ -> Ǣ) AE with macron
+dkMacronStroke.item[chr(0x00f6)] := "{u+01ed}"  ; (ö -> ǭ) o with ogonek and macron
+dkMacronStroke.item[chr(0x00d6)] := "{u+01ec}"  ; (Ö -> Ǭ) O with ogonek and macron
 dkMacronStroke.item[" "] := "{u+00af}"  ; (¯) macron
 
 
@@ -437,6 +441,15 @@ dkAcuteAccent.item["%"] := "{u+2606}"  ; (☆) white star
 dkAcuteAccent.item["^"] := "{u+273d}"  ; (✽) heavy teardrop-spoked asterisk
 dkAcuteAccent.item["&"] := "{u+273b}"  ; (✻) teardrop-spoked asterisk
 dkAcuteAccent.item["*"] := "{u+266a}"  ; (♪) eighth note
+dkAcuteAccent.item[chr(0x00e5)] := "{u+01fb}"  ; (å -> ǻ) a with ring above and acute
+dkAcuteAccent.item[chr(0x00c5)] := "{u+01fa}"  ; (Å -> Ǻ) A with ring above and acute
+dkAcuteAccent.item[chr(0x00e6)] := "{u+01fd}"  ; (æ -> ǽ) ae with acute
+dkAcuteAccent.item[chr(0x00c6)] := "{u+01fc}"  ; (Æ -> Ǽ) AE with acute
+dkAcuteAccent.item[chr(0x00f8)] := "{u+01ff}"  ; (ø -> ǿ) o with stroke and acute
+dkAcuteAccent.item[chr(0x00d8)] := "{u+01fe}"  ; (Ø -> Ǿ) O with stroke and acute
+dkAcuteAccent.item[chr(0x00e7)] := "{u+1e09}"  ; (ç -> ḉ) c with cedilla and acute
+dkAcuteAccent.item[chr(0x00c7)] := "{u+1e08}"  ; (Ç -> Ḉ) C with cedilla and acute
+
 dkAcuteAccent.item[" "] := "{u+00b4}"  ; (´) acute accent
 
 
@@ -777,6 +790,7 @@ dkGreekAlphabet.item[chr(34)] := "{u+208a}"  ; (₊) subscript +
 dkGreekAlphabet.item["{"] := "{u+208d}"  ; (₍) subscript (
 dkGreekAlphabet.item["}"] := "{u+208e}"  ; (₎) subscript )
 dkGreekAlphabet.item["."] := "{u+00b5}"  ; (µ) micro sign
+dkGreekAlphabet.item[chr(0x00df)] := "{u+03c2}"  ; (ß -> ς) small final sigma
 dkGreekAlphabet.item[" "] := "{u+03bc}"  ; (μ) small mu
 
 
