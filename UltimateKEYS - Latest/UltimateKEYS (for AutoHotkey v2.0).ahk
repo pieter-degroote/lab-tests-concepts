@@ -1,4 +1,4 @@
-; UltimateKEYS (for AutoHotkey v2.0).ahk - 2022-01-30
+; UltimateKEYS (for AutoHotkey v2.0).ahk - 2022-02-04
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -160,6 +160,7 @@ dkDotAbove["o"] := "{u+022f}"  ; (ȯ) o with dot above
 dkDotAbove["O"] := "{u+022e}"  ; (Ȯ) O with dot above
 dkDotAbove["p"] := "{u+1e57}"  ; (ṗ) p with dot above
 dkDotAbove["P"] := "{u+1e56}"  ; (Ṗ) P with dot above
+dkDotAbove["q"] := "{u+1e9b}"  ; (ẛ) long s with dot above
 dkDotAbove["r"] := "{u+1e59}"  ; (ṙ) r with dot above
 dkDotAbove["R"] := "{u+1e58}"  ; (Ṙ) R with dot above
 dkDotAbove["s"] := "{u+1e61}"  ; (ṡ) s with dot above

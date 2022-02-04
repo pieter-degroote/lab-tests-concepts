@@ -1,4 +1,4 @@
-; UltimateKEYS SW (Scroll Lock).ahk - 2022-01-30
+; UltimateKEYS SW (Scroll Lock).ahk - 2022-02-04
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -158,6 +158,7 @@ dkDotAbove.item["o"] := "{u+022f}"  ; (ȯ) o with dot above
 dkDotAbove.item["O"] := "{u+022e}"  ; (Ȯ) O with dot above
 dkDotAbove.item["p"] := "{u+1e57}"  ; (ṗ) p with dot above
 dkDotAbove.item["P"] := "{u+1e56}"  ; (Ṗ) P with dot above
+dkDotAbove.item["q"] := "{u+1e9b}"  ; (ẛ) long s with dot above
 dkDotAbove.item["r"] := "{u+1e59}"  ; (ṙ) r with dot above
 dkDotAbove.item["R"] := "{u+1e58}"  ; (Ṙ) R with dot above
 dkDotAbove.item["s"] := "{u+1e61}"  ; (ṡ) s with dot above
@@ -260,8 +261,6 @@ dkMacronStroke.item["("] := "{u+21b1}"  ; (↱) upwards arrow with tip rightward
 dkMacronStroke.item[")"] := "{u+21b9}"  ; (↹) leftwards arrow to bar over rightwards arrow to bar
 dkMacronStroke.item[chr(0x00e6)] := "{u+01e3}"  ; (æ -> ǣ) ae with macron
 dkMacronStroke.item[chr(0x00c6)] := "{u+01e2}"  ; (Æ -> Ǣ) AE with macron
-dkMacronStroke.item[chr(0x00f6)] := "{u+01ed}"  ; (ö -> ǭ) o with ogonek and macron
-dkMacronStroke.item[chr(0x00d6)] := "{u+01ec}"  ; (Ö -> Ǭ) O with ogonek and macron
 dkMacronStroke.item[" "] := "{u+00af}"  ; (¯) macron
 
 

@@ -1,4 +1,4 @@
-# UltimateKEYS  (~/.XCompose) - 2022-01-30
+# UltimateKEYS  (~/.XCompose) - 2022-02-04
 
 # Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -146,6 +146,7 @@
 <dead_abovedot> <O> : "Ȯ"  U022E  # O with dot above
 <dead_abovedot> <p> : "ṗ"  U1E57  # p with dot above
 <dead_abovedot> <P> : "Ṗ"  U1E56  # P with dot above
+<dead_abovedot> <q> : "ẛ"  U1E9B  # long s with dot above
 <dead_abovedot> <r> : "ṙ"  U1E59  # r with dot above
 <dead_abovedot> <R> : "Ṙ"  U1E58  # R with dot above
 <dead_abovedot> <s> : "ṡ"  U1E61  # s with dot above
@@ -248,8 +249,6 @@
 <dead_macron> <parenright>  : "↹"  U21B9  # leftwards arrow to bar over rightwards arrow to bar
 <dead_macron> <ae>          : "ǣ"  U01E3  # ae with macron
 <dead_macron> <AE>          : "Ǣ"  U01E2  # AE with macron
-<dead_macron> <odiaeresis>  : "ǭ"  U01ED  # o with ogonek and macron
-<dead_macron> <Odiaeresis>  : "Ǭ"  U01EC  # O with ogonek and macron
 <dead_macron> <space>       : "¯"  U00AF  # macron
 <dead_macron> <dead_macron> : "¯"  U00AF  # macron
 

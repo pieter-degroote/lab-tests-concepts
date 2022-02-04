@@ -1,4 +1,4 @@
-KBD	ultksw	"UltimateKEYS SW - 2022-01-30"
+KBD	ultksw	"UltimateKEYS SW - 2022-02-04"
 
 COPYRIGHT	"GNU General Public License Version 3"
 
@@ -209,6 +209,7 @@ DEADKEY	02d9	// Dead Key :  Dot Above
 004f	022e	// O -> Ȯ    O with dot above
 0070	1e57	// p -> ṗ    p with dot above
 0050	1e56	// P -> Ṗ    P with dot above
+0071	1e9b	// q -> ẛ    long s with dot above
 0072	1e59	// r -> ṙ    r with dot above
 0052	1e58	// R -> Ṙ    R with dot above
 0073	1e61	// s -> ṡ    s with dot above
@@ -289,8 +290,6 @@ DEADKEY	00af	// Dead Key :  Macron/Stroke
 005a	01b5	// Z -> Ƶ    Z with stroke
 00e6	01e3	// æ -> ǣ    ae with macron
 00c6	01e2	// Æ -> Ǣ    AE with macron
-00f6	01ed	// ö -> ǭ    o with ogonek and macron
-00d6	01ec	// Ö -> Ǭ    O with ogonek and macron
 0031	21b2	// 1 -> ↲    downwards arrow with tip leftwards
 0032	21f5	// 2 -> ⇵    downwards arrow leftwards of upwards arrow
 0033	21b3	// 3 -> ↳    downwards arrow with tip rightwards
