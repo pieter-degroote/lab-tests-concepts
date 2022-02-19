@@ -716,7 +716,7 @@ DEADKEY	00a4	// Dead Key :  Currency
 006d	20bc	// m -> ₼    Azerbaijani manat
 004d	20a5	// M -> ₥    mill sign
 006e	20a6	// n -> ₦    Nigerian naira
-004e	20bb	// N -> ₻    nordic mark
+004e	20bb	// N -> ₻    Nordic mark
 0070	20b1	// p -> ₱    Philippine peso
 0050	20a7	// P -> ₧    Spanish pesetas
 0072	20b9	// r -> ₹    Indian rupee

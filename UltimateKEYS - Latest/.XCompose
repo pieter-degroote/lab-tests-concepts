@@ -671,7 +671,7 @@
 <dead_currency> <m> : "₼"  U20BC  # Azerbaijani manat
 <dead_currency> <M> : "₥"  U20A5  # mill sign
 <dead_currency> <n> : "₦"  U20A6  # Nigerian naira
-<dead_currency> <N> : "₻"  U20BB  # nordic mark
+<dead_currency> <N> : "₻"  U20BB  # Nordic mark
 <dead_currency> <p> : "₱"  U20B1  # Philippine peso
 <dead_currency> <P> : "₧"  U20A7  # Spanish pesetas
 <dead_currency> <r> : "₹"  U20B9  # Indian rupee
