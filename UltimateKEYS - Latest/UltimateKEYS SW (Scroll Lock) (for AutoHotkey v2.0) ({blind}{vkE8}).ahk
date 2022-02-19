@@ -648,6 +648,8 @@ dkSymbols["="] := "{u+00d7}"  ; (×) multiplication sign
 dkSymbols["+"] := "{u+00f7}"  ; (÷) division sign
 dkSymbols[";"] := "{u+263a}"  ; (☺) white smiling face
 dkSymbols[":"] := "{u+263b}"  ; (☻) black smiling face
+dkSymbols[","] := "{u+201e}"  ; („) double low-9 quotation mark
+dkSymbols["<"] := "{u+201a}"  ; (‚) single low-9 quotation mark
 dkSymbols["."] := "{u+203c}"  ; (‼) double exclamation mark
 dkSymbols[">"] := "{u+2e2e}"  ; (⸮) reversed question mark
 dkSymbols["/"] := "{u+203d}"  ; (‽) interrobang

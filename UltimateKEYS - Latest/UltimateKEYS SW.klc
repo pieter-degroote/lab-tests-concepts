@@ -681,6 +681,8 @@ DEADKEY	00d7	// Dead Key :  General Symbols
 002b	00f7	// + -> ÷    division sign
 003b	263a	// ; -> ☺    white smiling face
 003a	263b	// : -> ☻    black smiling face
+002c	201e	// , -> „    double low-9 quotation mark
+003c	201a	// < -> ‚    single low-9 quotation mark
 002e	203c	// . -> ‼    double exclamation mark
 003e	2e2e	// > -> ⸮    reversed question mark
 002f	203d	// / -> ‽    interrobang

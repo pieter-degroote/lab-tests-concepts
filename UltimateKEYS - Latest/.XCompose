@@ -634,6 +634,8 @@
 <dead_stroke> <plus>        : "÷"  U00F7  # division sign
 <dead_stroke> <semicolon>   : "☺"  U263A  # white smiling face
 <dead_stroke> <colon>       : "☻"  U263B  # black smiling face
+<dead_stroke> <comma>       : "„"  U201E  # double low-9 quotation mark
+<dead_stroke> <less>        : "‚"  U201A  # single low-9 quotation mark
 <dead_stroke> <period>      : "‼"  U203C  # double exclamation mark
 <dead_stroke> <greater>     : "⸮"  U2E2E  # reversed question mark
 <dead_stroke> <slash>       : "‽"  U203D  # interrobang
