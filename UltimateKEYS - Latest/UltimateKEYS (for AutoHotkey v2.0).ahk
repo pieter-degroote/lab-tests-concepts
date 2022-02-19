@@ -1,4 +1,4 @@
-; UltimateKEYS (for AutoHotkey v2.0).ahk - 2022-02-04
+; UltimateKEYS (for AutoHotkey v2.0).ahk - 2022-02-19
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -454,13 +454,13 @@ dkDiaeresis["h"] := "{u+1e27}"  ; (ḧ) h with diaeresis
 dkDiaeresis["H"] := "{u+1e26}"  ; (Ḧ) H with diaeresis
 dkDiaeresis["i"] := "{u+00ef}"  ; (ï) i with diaeresis
 dkDiaeresis["I"] := "{u+00cf}"  ; (Ï) I with diaeresis
-dkDiaeresis["o"] := "{u+00f6}"  ; (ö) o with diaeresis
-dkDiaeresis["O"] := "{u+00d6}"  ; (Ö) O with diaeresis
+dkDiaeresis["o"] := "{u+01a1}"  ; (ơ) o with horn
+dkDiaeresis["O"] := "{u+01a0}"  ; (Ơ) O with horn
 dkDiaeresis["s"] := "{u+0283}"  ; (ʃ) small letter esh
 dkDiaeresis["S"] := "{u+01a9}"  ; (Ʃ) capital letter esh
 dkDiaeresis["t"] := "{u+1e97}"  ; (ẗ) t with diaeresis
-dkDiaeresis["u"] := "{u+00fc}"  ; (ü) u with diaeresis
-dkDiaeresis["U"] := "{u+00dc}"  ; (Ü) U with diaeresis
+dkDiaeresis["u"] := "{u+01b0}"  ; (ư) u with horn
+dkDiaeresis["U"] := "{u+01af}"  ; (Ư) U with horn
 dkDiaeresis["w"] := "{u+1e85}"  ; (ẅ) w with diaeresis
 dkDiaeresis["W"] := "{u+1e84}"  ; (Ẅ) W with diaeresis
 dkDiaeresis["x"] := "{u+1e8d}"  ; (ẍ) x with diaeresis

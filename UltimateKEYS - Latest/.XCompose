@@ -1,4 +1,4 @@
-# UltimateKEYS  (~/.XCompose) - 2022-02-04
+# UltimateKEYS  (~/.XCompose) - 2022-02-19
 
 # Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -450,13 +450,13 @@
 <dead_diaeresis> <H> : "Ḧ"  U1E26  # H with diaeresis
 <dead_diaeresis> <i> : "ï"  U00EF  # i with diaeresis
 <dead_diaeresis> <I> : "Ï"  U00CF  # I with diaeresis
-<dead_diaeresis> <o> : "ö"  U00F6  # o with diaeresis
-<dead_diaeresis> <O> : "Ö"  U00D6  # O with diaeresis
+<dead_diaeresis> <o> : "ơ"  U01A1  # o with horn
+<dead_diaeresis> <O> : "Ơ"  U01A0  # O with horn
 <dead_diaeresis> <s> : "ʃ"  U0283  # small letter esh
 <dead_diaeresis> <S> : "Ʃ"  U01A9  # capital letter esh
 <dead_diaeresis> <t> : "ẗ"  U1E97  # t with diaeresis
-<dead_diaeresis> <u> : "ü"  U00FC  # u with diaeresis
-<dead_diaeresis> <U> : "Ü"  U00DC  # U with diaeresis
+<dead_diaeresis> <u> : "ư"  U01B0  # u with horn
+<dead_diaeresis> <U> : "Ư"  U01AF  # U with horn
 <dead_diaeresis> <w> : "ẅ"  U1E85  # w with diaeresis
 <dead_diaeresis> <W> : "Ẅ"  U1E84  # W with diaeresis
 <dead_diaeresis> <x> : "ẍ"  U1E8D  # x with diaeresis
