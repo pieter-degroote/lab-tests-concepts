@@ -1,4 +1,4 @@
-# UltimateKEYS  (~/.XCompose) - 2022-05-14
+# UltimateKEYS  (~/.XCompose) - 2022-05-15
 
 # Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -297,6 +297,10 @@
 <Multi_key> <b> <T> : "Ț"  U021A  # T with comma below (Romanian)
 <Multi_key> <b> <u> : "ŭ"  U016D  # u with breve
 <Multi_key> <b> <U> : "Ŭ"  U016C  # U with breve
+<Multi_key> <b> <w> : "ƿ"  U01BF  # small letter wynn
+<Multi_key> <b> <W> : "Ƿ"  U01F7  # capital letter wynn
+<Multi_key> <b> <y> : "ȝ"  U021D  # small letter yogh
+<Multi_key> <b> <Y> : "Ȝ"  U021C  # capital letter yogh
 <Multi_key> <b> <3>          : "ʒ"  U0292  # small letter ezh
 <Multi_key> <b> <numbersign> : "Ʒ"  U01B7  # capital letter ezh
 <Multi_key> <b> <space>      : "˘"  U02D8  # breve
@@ -754,37 +758,21 @@
 <Multi_key> <A> <E> : "Æ"  U00C6  # letter AE
 <Multi_key> <d> <h> : "ð"  U00F0  # small letter eth
 <Multi_key> <D> <H> : "Ð"  U00D0  # capital letter eth
-<Multi_key> <f> <s> : "ſ"  U017F  # small long s
 <Multi_key> <i> <j> : "ĳ"  U0133  # ligature ij
 <Multi_key> <I> <J> : "Ĳ"  U0132  # ligature IJ
-<Multi_key> <n> <g> : "ŋ"  U014B  # small letter eng(ma)
-<Multi_key> <N> <G> : "Ŋ"  U014A  # capital letter eng(ma)
 <Multi_key> <o> <e> : "œ"  U0153  # ligature oe
 <Multi_key> <O> <E> : "Œ"  U0152  # ligature OE
 <Multi_key> <s> <s> : "ß"  U00DF  # small sharp s (Eszett)
 <Multi_key> <S> <S> : "ẞ"  U1E9E  # capital sharp S (capital Eszett)
 <Multi_key> <t> <h> : "þ"  U00FE  # small letter thorn
 <Multi_key> <T> <H> : "Þ"  U00DE  # capital letter thorn
-<Multi_key> <w> <y> : "ƿ"  U01BF  # small letter wynn
-<Multi_key> <W> <Y> : "Ƿ"  U01F7  # capital letter wynn
-<Multi_key> <y> <o> : "ȝ"  U021D  # small letter yogh
-<Multi_key> <Y> <O> : "Ȝ"  U021C  # capital letter yogh
-<Multi_key> <3> <3>                   : "ʒ"  U0292  # small letter ezh
-<Multi_key> <numbersign> <numbersign> : "Ʒ"  U01B7  # capital letter ezh
-# <Multi_key> <z> <3>                   : "ʒ"  U0292  # small letter ezh
-# <Multi_key> <z> <numbersign>          : "Ʒ"  U01B7  # capital letter ezh
 
 
 # General/Math Symbols
 
-<Multi_key> <a> <s> : "⅍"  U214D  # aktieselskab
-<Multi_key> <A> <S> : "⅍"  U214D  # aktieselskab
-<Multi_key> <C> <o> : "℅"  U2105  # care of
-<Multi_key> <C> <O> : "℅"  U2105  # care of
 <Multi_key> <d> <d> : "†"  U2020  # dagger
 <Multi_key> <D> <D> : "‡"  U2021  # double dagger
 <Multi_key> <d> <i> : "⌀"  U2300  # diameter sign
-<Multi_key> <e> <p> : "∎"  U220E  # end of proof
 <Multi_key> <m> <u> : "µ"  U00B5  # micro sign
 <Multi_key> <n> <o> : "№"  U2116  # numero sign
 <Multi_key> <N> <o> : "№"  U2116  # numero sign
@@ -794,12 +782,14 @@
 <Multi_key> <r> <2> : "√"  U221A  # square root
 <Multi_key> <r> <3> : "∛"  U221B  # cube root
 <Multi_key> <r> <4> : "∜"  U221C  # fourth root
-<Multi_key> <r> <x> : "℞"  U211E  # prescription take (Recipere)
-<Multi_key> <R> <x> : "℞"  U211E  # prescription take (Recipere)
 <Multi_key> <s> <m> : "℠"  U2120  # service mark
 <Multi_key> <s> <o> : "§"  U00A7  # section sign
 <Multi_key> <S> <o> : "§"  U00A7  # section sign
 <Multi_key> <t> <m> : "™"  U2122  # trademark symbol
+<Multi_key> <apostrophe> <1> : "′"  U2032  # prime
+<Multi_key> <apostrophe> <2> : "″"  U2033  # double prime
+<Multi_key> <apostrophe> <3> : "‴"  U2034  # triple prime
+<Multi_key> <apostrophe> <4> : "⁗"  U2057  # quadruple prime
 <Multi_key> <asterisk> <o>        : "°"  U00B0  # degree sign
 <Multi_key> <o> <asterisk>        : "°"  U00B0  # degree sign
 <Multi_key> <period> <b>          : "•"  U2022  # bullet
@@ -850,6 +840,7 @@
 <Multi_key> <s> <N> : "№"  U2116  # numero sign
 <Multi_key> <s> <p> : "℗"  U2117  # sound recording copyright
 <Multi_key> <s> <r> : "®"  U00AE  # registered sign
+<Multi_key> <s> <R> : "℞"  U211E  # prescription take (Recipere)
 <Multi_key> <s> <R> : "☙"  U2619  # reversed rotated floral heart bullet
 <Multi_key> <s> <t> : "™"  U2122  # trademark symbol
 <Multi_key> <s> <T> : "✆"  U2706  # telephone location sign
@@ -983,27 +974,10 @@
 <Multi_key> <m> <asterisk>     : "⊙"  U2299  # circled dot operator
 <Multi_key> <m> <9>            : "∟"  U221F  # right angle
 <Multi_key> <m> <0>            : "∡"  U2221  # measured angle
-<Multi_key> <m> <grave>        : "≈"  U2248  # almost equal to
-<Multi_key> <m> <asciitilde>   : "≈"  U2248  # almost equal to
-<Multi_key> <m> <comma>        : "≤"  U2264  # less-than or equal to
-<Multi_key> <m> <less>         : "≤"  U2264  # less-than or equal to
-<Multi_key> <m> <period>       : "≥"  U2265  # greater-than or equal to
-<Multi_key> <m> <greater>      : "≥"  U2265  # greater-than or equal to
-<Multi_key> <m> <minus>        : "±"  U00B1  # plus-minus sign
 <Multi_key> <m> <underscore>   : "⊖"  U2296  # circled minus
 <Multi_key> <m> <slash>        : "⊘"  U2298  # circled division slash
 <Multi_key> <m> <equal>        : "≝"  U225D  # equal to by definition
 <Multi_key> <m> <plus>         : "⊕"  U2295  # circled plus
 <Multi_key> <m> <semicolon>    : "∵"  U2235  # because sign
 <Multi_key> <m> <colon>        : "∴"  U2234  # therefore sign
-<Multi_key> <m> <apostrophe>   : "′"  U2032  # prime
-<Multi_key> <m> <quotedbl>     : "″"  U2033  # double prime
-<Multi_key> <m> <bracketleft>  : "‴"  U2034  # triple prime
-<Multi_key> <m> <bracketright> : "⁗"  U2057  # quadruple prime
 <Multi_key> <m> <bar>          : "∨"  U2228  # logical or
-<Multi_key> <m> <Odiaeresis>   : "⌀"  U2300  # diameter sign
-<Multi_key> <m> <ograve>       : "⩽"  U2A7D  # less-than or slanted equal to
-<Multi_key> <m> <Ograve>       : "⩽"  U2A7D  # less-than or slanted equal to
-<Multi_key> <m> <oacute>       : "⩾"  U2A7E  # greater-than or slanted equal to
-<Multi_key> <m> <Oacute>       : "⩾"  U2A7E  # greater-than or slanted equal to
-<Multi_key> <m> <space>        : "√"  U221A  # square root
