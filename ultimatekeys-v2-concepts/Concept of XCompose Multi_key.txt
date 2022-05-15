@@ -310,10 +310,10 @@
 <Multi_key> <B> <i> : "ɧ"  U0267  # small letter heng with hook
 <Multi_key> <B> <k> : "ĸ"  U0138  # small letter kra
 <Multi_key> <B> <s> : "ſ"  U017F  # small long s
-<Multi_key> <B> <o>  : "ơ"  U01A1  # o with horn
-<Multi_key> <B> <O>  : "Ơ"  U01A0  # O with horn
-<Multi_key> <B> <u>  : "ư"  U01B0  # u with horn
-<Multi_key> <B> <U>  : "Ư"  U01AF  # U with horn
+<Multi_key> <B> <o> : "ơ"  U01A1  # o with horn
+<Multi_key> <B> <O> : "Ơ"  U01A0  # O with horn
+<Multi_key> <B> <u> : "ư"  U01B0  # u with horn
+<Multi_key> <B> <U> : "Ư"  U01AF  # U with horn
 
 
 # Acute Accent
@@ -783,6 +783,7 @@
 <Multi_key> <C> <O> : "℅"  U2105  # care of
 <Multi_key> <d> <d> : "†"  U2020  # dagger
 <Multi_key> <D> <D> : "‡"  U2021  # double dagger
+<Multi_key> <d> <i> : "⌀"  U2300  # diameter sign
 <Multi_key> <e> <p> : "∎"  U220E  # end of proof
 <Multi_key> <m> <u> : "µ"  U00B5  # micro sign
 <Multi_key> <n> <o> : "№"  U2116  # numero sign
@@ -801,6 +802,8 @@
 <Multi_key> <t> <m> : "™"  U2122  # trademark symbol
 <Multi_key> <asterisk> <o>        : "°"  U00B0  # degree sign
 <Multi_key> <o> <asterisk>        : "°"  U00B0  # degree sign
+<Multi_key> <period> <b>          : "•"  U2022  # bullet
+<Multi_key> <period> <w>          : "◦"  U25E6  # white bullet
 <Multi_key> <period> <period>     : "·"  U00B7  # middle dot
 <Multi_key> <period> <space>      : "·"  U00B7  # middle dot
 <Multi_key> <period> <3>          : "…"  U2026  # horizontal ellipsis
@@ -825,13 +828,12 @@
 <Multi_key> <greater> <equal>         : "≥"  U2265  # greater-than or equal to
 <Multi_key> <less> <plus>             : "⩽"  U2A7D  # less-than or slanted equal to
 <Multi_key> <greater> <plus>          : "⩾"  U2A7E  # greater-than or slanted equal to
+<Multi_key> <less> <greater>          : "⋄"  U22C4  # diamond operator
 
 
 # Miscellaneous Symbols
 
 <Multi_key> <s> <a> : "⅍"  U214D  # aktieselskab
-<Multi_key> <period> <b> : "•"  U2022  # bullet
-<Multi_key> <period> <w> : "◦"  U25E6  # white bullet
 <Multi_key> <s> <c> : "℅"  U2105  # care of
 <Multi_key> <s> <d> : "⋄"  U22C4  # diamond operator
 <Multi_key> <s> <e> : "℮"  U212E  # estimated symbol
@@ -888,10 +890,10 @@
 
 <Multi_key> <S> <c> : "♣"  U2663  # black club suit
 <Multi_key> <S> <C> : "♧"  U2667  # white club suit
+<Multi_key> <S> <d> : "♦"  U2666  # black diamond suit
+<Multi_key> <S> <D> : "♢"  U2662  # white diamond suit
 <Multi_key> <S> <h> : "♥"  U2665  # black heart suit
 <Multi_key> <S> <H> : "♡"  U2661  # white heart suit
-<Multi_key> <S> <m> : "♦"  U2666  # black diamond suit
-<Multi_key> <S> <M> : "♢"  U2662  # white diamond suit
 <Multi_key> <S> <p> : "♠"  U2660  # black spade suit
 <Multi_key> <S> <P> : "♤"  U2664  # white spade suit
 
@@ -939,6 +941,8 @@
 <Multi_key> <m> <H> : "⊅"  U2285  # not a superset of
 <Multi_key> <m> <i> : "∞"  U221E  # infinity symbol
 <Multi_key> <m> <I> : "ℑ"  U2111  # imaginary numbers
+<Multi_key> <m> <j> : "≅"  U2245  # congruent to
+<Multi_key> <m> <J> : "≇"  U2247  # not congruent to
 <Multi_key> <m> <k> : "∋"  U220B  # contains as member
 <Multi_key> <m> <K> : "∌"  U220C  # does not contain as member
 <Multi_key> <m> <l> : "∥"  U2225  # parallel to
@@ -951,7 +955,7 @@
 <Multi_key> <m> <O> : "∅"  U2205  # empty set
 <Multi_key> <m> <p> : "∂"  U2202  # partial differential
 <Multi_key> <m> <P> : "ℙ"  U2119  # prime numbers
-<Multi_key> <m> <q> : "ℚ"  U211A  # rational numbers
+<Multi_key> <m> <q> : "⌀"  U2300  # diameter sign
 <Multi_key> <m> <Q> : "ℚ"  U211A  # rational numbers
 <Multi_key> <m> <r> : "√"  U221A  # square root
 <Multi_key> <m> <R> : "ℝ"  U211D  # real numbers
@@ -959,18 +963,16 @@
 <Multi_key> <m> <S> : "∫"  U222B  # integral symbol
 <Multi_key> <m> <u> : "∪"  U222A  # set union
 <Multi_key> <m> <U> : "∖"  U2216  # set minus
+<Multi_key> <m> <v> : "≡"  U2261  # identical to
+<Multi_key> <m> <V> : "≢"  U2262  # not identical to
 <Multi_key> <m> <w> : "℘"  U2118  # Weierstrass elliptic function
 <Multi_key> <m> <W> : "℘"  U2118  # Weierstrass elliptic function
 <Multi_key> <m> <z> : "↯"  U21AF  # downwards zigzag arrow
 <Multi_key> <m> <Z> : "ℤ"  U2124  # whole numbers
-<Multi_key> <m> <1>            : "≠"  U2260  # not equal to
 <Multi_key> <m> <exclam>       : "≠"  U2260  # not equal to
 <Multi_key> <m> <2>            : "√"  U221A  # square root
-<Multi_key> <m> <at>           : "√"  U221A  # square root
 <Multi_key> <m> <3>            : "∛"  U221B  # cube root
-<Multi_key> <m> <numbersign>   : "∛"  U221B  # cube root
 <Multi_key> <m> <4>            : "∜"  U221C  # fourth root
-<Multi_key> <m> <dollar>       : "∜"  U221C  # fourth root
 <Multi_key> <m> <5>            : "‰"  U2030  # per mille sign
 <Multi_key> <m> <percent>      : "‱"  U2031  # per ten thousand sign
 <Multi_key> <m> <6>            : "∠"  U2220  # angle symbol
@@ -980,9 +982,7 @@
 <Multi_key> <m> <8>            : "⊗"  U2297  # circled times
 <Multi_key> <m> <asterisk>     : "⊙"  U2299  # circled dot operator
 <Multi_key> <m> <9>            : "∟"  U221F  # right angle
-<Multi_key> <m> <parenleft>    : "∟"  U221F  # right angle
 <Multi_key> <m> <0>            : "∡"  U2221  # measured angle
-<Multi_key> <m> <parenright>   : "∡"  U2221  # measured angle
 <Multi_key> <m> <grave>        : "≈"  U2248  # almost equal to
 <Multi_key> <m> <asciitilde>   : "≈"  U2248  # almost equal to
 <Multi_key> <m> <comma>        : "≤"  U2264  # less-than or equal to
@@ -1000,16 +1000,10 @@
 <Multi_key> <m> <quotedbl>     : "″"  U2033  # double prime
 <Multi_key> <m> <bracketleft>  : "‴"  U2034  # triple prime
 <Multi_key> <m> <bracketright> : "⁗"  U2057  # quadruple prime
-<Multi_key> <m> <backslash>    : "∨"  U2228  # logical or
 <Multi_key> <m> <bar>          : "∨"  U2228  # logical or
-<Multi_key> <m> <ccedilla>     : "≅"  U2245  # congruent to
-<Multi_key> <m> <Ccedilla>     : "≇"  U2247  # not congruent to
-<Multi_key> <m> <odiaeresis>   : "⌀"  U2300  # diameter sign
 <Multi_key> <m> <Odiaeresis>   : "⌀"  U2300  # diameter sign
 <Multi_key> <m> <ograve>       : "⩽"  U2A7D  # less-than or slanted equal to
 <Multi_key> <m> <Ograve>       : "⩽"  U2A7D  # less-than or slanted equal to
 <Multi_key> <m> <oacute>       : "⩾"  U2A7E  # greater-than or slanted equal to
 <Multi_key> <m> <Oacute>       : "⩾"  U2A7E  # greater-than or slanted equal to
-<Multi_key> <m> <otilde>       : "≡"  U2261  # identical to
-<Multi_key> <m> <Otilde>       : "≢"  U2262  # not identical to
 <Multi_key> <m> <space>        : "√"  U221A  # square root
