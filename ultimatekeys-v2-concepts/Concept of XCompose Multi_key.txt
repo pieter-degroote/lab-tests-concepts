@@ -1,4 +1,4 @@
-# UltimateKEYS  (~/.XCompose) - 2022-05-15
+# UltimateKEYS  (~/.XCompose) - 2022-05-16
 
 # Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -277,8 +277,6 @@
 <Multi_key> <b> <G> : "Ğ"  U011E  # G with breve
 <Multi_key> <b> <i> : "ĭ"  U012D  # i with breve
 <Multi_key> <b> <I> : "Ĭ"  U012C  # I with breve
-<Multi_key> <b> <j> : "ĳ"  U0133  # ligature ij
-<Multi_key> <b> <J> : "Ĳ"  U0132  # ligature IJ
 <Multi_key> <b> <n> : "ŋ"  U014B  # small letter eng(ma)
 <Multi_key> <b> <N> : "Ŋ"  U014A  # capital letter eng(ma)
 <Multi_key> <b> <o> : "ŏ"  U014F  # o with breve
@@ -298,18 +296,20 @@
 <Multi_key> <b> <space>      : "˘"  U02D8  # breve
 
 
-# Special Letters (Additional)
+# Inverted Breve
 
-<Multi_key> <B> <g> : "ꬶ"  UAB36  # cross-tailed g
-<Multi_key> <B> <h> : "ꜧ"  UA727  # small letter heng
-<Multi_key> <B> <H> : "Ꜧ"  UA726  # capital letter heng
-<Multi_key> <B> <i> : "ɧ"  U0267  # small letter heng with hook
-<Multi_key> <B> <k> : "ĸ"  U0138  # small letter kra
-<Multi_key> <B> <s> : "ſ"  U017F  # small long s
-<Multi_key> <B> <o> : "ơ"  U01A1  # o with horn
-<Multi_key> <B> <O> : "Ơ"  U01A0  # O with horn
-<Multi_key> <B> <u> : "ư"  U01B0  # u with horn
-<Multi_key> <B> <U> : "Ư"  U01AF  # U with horn
+<Multi_key> <B> <a> : "ȃ"  U0203  # a with inverted breve
+<Multi_key> <B> <A> : "Ȃ"  U0202  # A with inverted breve
+<Multi_key> <B> <e> : "ȇ"  U0207  # e with inverted breve
+<Multi_key> <B> <E> : "Ȇ"  U0206  # E with inverted breve
+<Multi_key> <B> <i> : "ȋ"  U020B  # i with inverted breve
+<Multi_key> <B> <I> : "Ȋ"  U020A  # I with inverted breve
+<Multi_key> <B> <o> : "ȏ"  U020F  # o with inverted breve
+<Multi_key> <B> <O> : "Ȏ"  U020E  # O with inverted breve
+<Multi_key> <B> <r> : "ȓ"  U0213  # r with inverted breve
+<Multi_key> <B> <R> : "Ȓ"  U0212  # R with inverted breve
+<Multi_key> <B> <u> : "ȗ"  U0217  # u with inverted breve
+<Multi_key> <B> <U> : "Ȗ"  U0216  # U with inverted breve
 
 
 # Acute Accent
@@ -385,12 +385,26 @@
 <Multi_key> <quotedbl> <space> : "¨"  U00A8  # diaeresis
 
 
-# Double Acute Accent
+# Double Acute Accent and Special Letters
 
 <Multi_key> <equal> <o> : "ő"  U0151  # o with double acute
 <Multi_key> <equal> <O> : "Ő"  U0150  # O with double acute
 <Multi_key> <equal> <u> : "ű"  U0171  # u with double acute
 <Multi_key> <equal> <U> : "Ű"  U0170  # U with double acute
+<Multi_key> <equal> <h> : "ꜧ"  UA727  # small letter heng
+<Multi_key> <equal> <H> : "Ꜧ"  UA726  # capital letter heng
+
+
+# Horn and Special Letters (Additional)
+
+<Multi_key> <plus> <g> : "ꬶ"  UAB36  # cross-tailed g
+<Multi_key> <plus> <h> : "ɧ"  U0267  # small letter heng with hook
+<Multi_key> <plus> <k> : "ĸ"  U0138  # small letter kra
+<Multi_key> <plus> <s> : "ſ"  U017F  # small long s
+<Multi_key> <plus> <o> : "ơ"  U01A1  # o with horn
+<Multi_key> <plus> <O> : "Ơ"  U01A0  # O with horn
+<Multi_key> <plus> <u> : "ư"  U01B0  # u with horn
+<Multi_key> <plus> <U> : "Ư"  U01AF  # U with horn
 
 
 # Grave Accent
@@ -414,6 +428,22 @@
 <Multi_key> <grave> <y> : "ỳ"  U1EF3  # y with grave
 <Multi_key> <grave> <Y> : "Ỳ"  U1EF2  # Y with grave
 <Multi_key> <grave> <space>       : "ˋ"  U02CB  # grave accent (modifier)
+
+
+# Double Grave
+
+<Multi_key> <G> <a> : "ȁ"  U0201  # a with double grave
+<Multi_key> <G> <A> : "Ȁ"  U0200  # A with double grave
+<Multi_key> <G> <e> : "ȅ"  U0205  # e with double grave
+<Multi_key> <G> <E> : "Ȅ"  U0204  # E with double grave
+<Multi_key> <G> <i> : "ȉ"  U0209  # i with double grave
+<Multi_key> <G> <I> : "Ȉ"  U0208  # I with double grave
+<Multi_key> <G> <o> : "ȍ"  U020D  # o with double grave
+<Multi_key> <G> <O> : "Ȍ"  U020C  # O with double grave
+<Multi_key> <G> <r> : "ȑ"  U0211  # r with double grave
+<Multi_key> <G> <R> : "Ȑ"  U0210  # R with double grave
+<Multi_key> <G> <u> : "ȕ"  U0215  # u with double grave
+<Multi_key> <G> <U> : "Ȕ"  U0214  # U with double grave
 
 
 # Tilde
