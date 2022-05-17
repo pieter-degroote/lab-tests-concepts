@@ -1,4 +1,4 @@
-# UltimateKEYS  (~/.XCompose) - 2022-05-16
+# UltimateKEYS  (~/.XCompose) - 2022-05-17
 
 # Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -746,16 +746,6 @@
 <Multi_key> <a> <8> : "↑"  U2191  # upwards arrow
 <Multi_key> <a> <9> : "↗"  U2197  # north east arrow
 <Multi_key> <a> <0> : "↔"  U2194  # left right arrow
-<Multi_key> <A> <1> : "↲"  U21B2  # downwards arrow with tip leftwards
-<Multi_key> <A> <2> : "⇵"  U21F5  # downwards arrow leftwards of upwards arrow
-<Multi_key> <A> <3> : "↳"  U21B3  # downwards arrow with tip rightwards
-<Multi_key> <A> <4> : "⇆"  U21C6  # leftwards arrow over rightwards arrow
-<Multi_key> <A> <5> : "↨"  U21A8  # up down arrow with base
-<Multi_key> <A> <6> : "⇄"  U21C4  # rightwards arrow over leftwards arrow
-<Multi_key> <A> <7> : "↰"  U21B0  # upwards arrow with tip leftwards
-<Multi_key> <A> <8> : "⇅"  U21C5  # upwards arrow leftwards of downwards arrow
-<Multi_key> <A> <9> : "↱"  U21B1  # upwards arrow with tip rightwards
-<Multi_key> <A> <0> : "↹"  U21B9  # leftwards arrow to bar over rightwards arrow to bar
 <Multi_key> <equal> <1> : "⇙"  U21D9  # south west double arrow
 <Multi_key> <equal> <2> : "⇓"  U21D3  # downwards double arrow
 <Multi_key> <equal> <3> : "⇘"  U21D8  # south east double arrow
@@ -797,7 +787,7 @@
 <Multi_key> <d> <d> : "†"  U2020  # dagger
 <Multi_key> <D> <D> : "‡"  U2021  # double dagger
 <Multi_key> <d> <i> : "⌀"  U2300  # diameter sign
-<Multi_key> <m> <u> : "µ"  U00B5  # micro sign
+<Multi_key> <m> <i> : "µ"  U00B5  # micro sign
 <Multi_key> <n> <o> : "№"  U2116  # numero sign
 <Multi_key> <N> <o> : "№"  U2116  # numero sign
 <Multi_key> <o> <x> : "¤"  U00A4  # currency sign
@@ -955,7 +945,6 @@
 <Multi_key> <m> <G> : "⊄"  U2284  # not a subset of
 <Multi_key> <m> <h> : "⊃"  U2283  # superset of
 <Multi_key> <m> <H> : "⊅"  U2285  # not a superset of
-<Multi_key> <m> <i> : "∞"  U221E  # infinity symbol
 <Multi_key> <m> <I> : "ℑ"  U2111  # imaginary numbers
 <Multi_key> <m> <j> : "≅"  U2245  # congruent to
 <Multi_key> <m> <J> : "≇"  U2247  # not congruent to
