@@ -1,4 +1,4 @@
-# UltimateKEYS  (~/.XCompose) - 2022-05-17
+# UltimateKEYS  (~/.XCompose) - 2022-05-18
 
 # Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -257,10 +257,8 @@
 <Multi_key> <comma> <T> : "Ţ"  U0162  # T with cedilla
 <Multi_key> <comma> <u> : "ų"  U0173  # u with ogonek
 <Multi_key> <comma> <U> : "Ų"  U0172  # U with ogonek
-# <Multi_key> <comma> <period>     : "˛"  U02DB  # ogonek
-# <Multi_key> <comma> <q> : "ǭ"  U01ED  # o with ogonek and macron
-# <Multi_key> <comma> <Q> : "Ǭ"  U01EC  # O with ogonek and macron
-<Multi_key> <comma> <space>      : "¸"  U00B8  # cedilla
+<Multi_key> <comma> <period> : "˛"  U02DB  # ogonek
+<Multi_key> <comma> <space>  : "¸"  U00B8  # cedilla
 
 
 # Breve/Special
@@ -356,7 +354,7 @@
 <Multi_key> <apostrophe> <F> : "Ǽ"  U01FC  # AE with acute
 <Multi_key> <apostrophe> <q> : "ǿ"  U01FF  # o with stroke and acute
 <Multi_key> <apostrophe> <Q> : "Ǿ"  U01FE  # O with stroke and acute
-<Multi_key> <apostrophe> <space>       : "´"  U00B4  # acute accent
+<Multi_key> <apostrophe> <space> : "´"  U00B4  # acute accent
 
 
 # Diaeresis
@@ -393,6 +391,7 @@
 <Multi_key> <equal> <U> : "Ű"  U0170  # U with double acute
 <Multi_key> <equal> <h> : "ꜧ"  UA727  # small letter heng
 <Multi_key> <equal> <H> : "Ꜧ"  UA726  # capital letter heng
+<Multi_key> <equal> <space> : "˝"  U02DD  # double acute accent
 
 
 # Horn and Special Letters (Additional)
@@ -427,7 +426,7 @@
 <Multi_key> <grave> <W> : "Ẁ"  U1E80  # W with grave
 <Multi_key> <grave> <y> : "ỳ"  U1EF3  # y with grave
 <Multi_key> <grave> <Y> : "Ỳ"  U1EF2  # Y with grave
-<Multi_key> <grave> <space>       : "ˋ"  U02CB  # grave accent (modifier)
+<Multi_key> <grave> <space> : "ˋ"  U02CB  # grave accent (modifier)
 
 
 # Double Grave
@@ -708,7 +707,6 @@
 <Multi_key> <apostrophe> <greater>     : "›"  U203A  # right-pointing single angle quotation mark
 
 
-
 # Spacing Characters
 
 <Multi_key> <minus> <1> : "–"  U2013  # en dash
@@ -786,7 +784,6 @@
 
 <Multi_key> <d> <d> : "†"  U2020  # dagger
 <Multi_key> <D> <D> : "‡"  U2021  # double dagger
-<Multi_key> <d> <i> : "⌀"  U2300  # diameter sign
 <Multi_key> <m> <i> : "µ"  U00B5  # micro sign
 <Multi_key> <n> <o> : "№"  U2116  # numero sign
 <Multi_key> <N> <o> : "№"  U2116  # numero sign
@@ -800,6 +797,8 @@
 <Multi_key> <s> <o> : "§"  U00A7  # section sign
 <Multi_key> <S> <o> : "§"  U00A7  # section sign
 <Multi_key> <t> <m> : "™"  U2122  # trademark symbol
+<Multi_key> <x> <x> : "×"  U00D7  # multiplication sign
+<Multi_key> <colon> <minus>  : "÷"  U00F7  # division sign
 <Multi_key> <apostrophe> <1> : "′"  U2032  # prime
 <Multi_key> <apostrophe> <2> : "″"  U2033  # double prime
 <Multi_key> <apostrophe> <3> : "‴"  U2034  # triple prime
@@ -815,12 +814,12 @@
 <Multi_key> <o> <minus>           : "º"  U00BA  # masculine ordinal indicator (Spanish, Portuguese, Italian, Galician)
 <Multi_key> <exclam> <exclam>     : "¡"  U00A1  # inverted exclamation mark
 <Multi_key> <question> <question> : "¿"  U00BF  # inverted question mark
+<Multi_key> <o> <c>               : "©"  U00A9  # copyright sign
 <Multi_key> <parenleft> <c>       : "©"  U00A9  # copyright sign
-<Multi_key> <parenleft> <C>       : "©"  U00A9  # copyright sign
+<Multi_key> <o> <p>               : "℗"  U2117  # sound recording copyright
 <Multi_key> <parenleft> <p>       : "℗"  U2117  # sound recording copyright
-<Multi_key> <parenleft> <P>       : "℗"  U2117  # sound recording copyright
+<Multi_key> <o> <r>               : "®"  U00AE  # registered sign
 <Multi_key> <parenleft> <r>       : "®"  U00AE  # registered sign
-<Multi_key> <parenleft> <R>       : "®"  U00AE  # registered sign
 <Multi_key> <plus> <minus>        : "±"  U00B1  # plus-minus sign
 <Multi_key> <percent> <percent>   : "‰"  U2030  # per mille sign
 <Multi_key> <percent> <3>         : "‰"  U2030  # per mille sign
@@ -833,9 +832,12 @@
 <Multi_key> <greater> <equal>     : "≥"  U2265  # greater-than or equal to
 <Multi_key> <less> <plus>         : "⩽"  U2A7D  # less-than or slanted equal to
 <Multi_key> <greater> <plus>      : "⩾"  U2A7E  # greater-than or slanted equal to
-<Multi_key> <less> <greater>      : "⋄"  U22C4  # diamond operator
 <Multi_key> <asciitilde> <asciitilde> : "≈"  U2248  # almost equal to
-
+<Multi_key> <period> <minus>          : "⁃"  U2043  # hyphen bullet
+<Multi_key> <period> <equal>          : "‣"  U2023  # triangular bullet
+<Multi_key> <bracketleft> <bracketright> : "☐"  U2610  # ballot box
+<Multi_key> <bracketleft> <v>            : "☑"  U2611  # ballot box with check
+<Multi_key> <bracketleft> <x>            : "☒"  U2612  # ballot box with x
 
 # Miscellaneous Symbols
 
@@ -845,31 +847,23 @@
 <Multi_key> <s> <e> : "℮"  U212E  # estimated symbol
 <Multi_key> <s> <E> : "✉"  U2709  # envelope
 <Multi_key> <s> <f> : "♀"  U2640  # Venus symbol (female)
-<Multi_key> <s> <F> : "☙"  U2619  # reversed rotated floral heart bullet
 <Multi_key> <s> <g> : "❀"  U2740  # white florette
 <Multi_key> <s> <G> : "✿"  U273F  # black florette
 <Multi_key> <s> <h> : "❦"  U2766  # floral heart
 <Multi_key> <s> <H> : "❧"  U2767  # rotated floral heart bullet
-<Multi_key> <s> <j> : "Ω"  U2126  # ohm sign (backwards compatibility)
+<Multi_key> <s> <i> : "⌀"  U2300  # diameter sign
 <Multi_key> <s> <l> : "ℓ"  U2113  # script small l
 <Multi_key> <s> <L> : "ℒ"  U2112  # Laplace transform
 <Multi_key> <s> <m> : "♂"  U2642  # Mars symbol (male)
-<Multi_key> <s> <n> : "№"  U2116  # numero sign
-<Multi_key> <s> <N> : "№"  U2116  # numero sign
-<Multi_key> <s> <p> : "℗"  U2117  # sound recording copyright
-<Multi_key> <s> <r> : "®"  U00AE  # registered sign
+<Multi_key> <s> <q> : "Ω"  U2126  # ohm sign (backwards compatibility)
+<Multi_key> <s> <r> : "☙"  U2619  # reversed rotated floral heart bullet
 <Multi_key> <s> <R> : "℞"  U211E  # prescription take (Recipere)
-<Multi_key> <s> <t> : "™"  U2122  # trademark symbol
-<Multi_key> <s> <T> : "✆"  U2706  # telephone location sign
-<Multi_key> <bracketleft> <bracketright> : "☐"  U2610  # ballot box
-
+<Multi_key> <s> <t> : "✆"  U2706  # telephone location sign
 <Multi_key> <s> <v> : "✓"  U2713  # check mark
 <Multi_key> <s> <V> : "✔"  U2714  # heavy check mark
 <Multi_key> <s> <w> : "⚠"  U26A0  # warning sign
 <Multi_key> <s> <x> : "✗"  U2717  # ballot x
 <Multi_key> <s> <X> : "✘"  U2718  # heavy ballot x
-<Multi_key> <bracketleft> <v> : "☑"  U2611  # ballot box with check
-<Multi_key> <bracketleft> <x> : "☒"  U2612  # ballot box with x
 <Multi_key> <s> <2>           : "♫"  U266B  # beamed eighth notes
 <Multi_key> <s> <3>           : "⁂"  U2042  # asterism
 <Multi_key> <s> <5>           : "★"  U2605  # black star
@@ -877,19 +871,14 @@
 <Multi_key> <s> <6>           : "✽"  U273D  # heavy teardrop-spoked asterisk
 <Multi_key> <s> <asciicircum> : "✻"  U273B  # teardrop-spoked asterisk
 <Multi_key> <s> <8>           : "♪"  U266A  # eighth note
-<Multi_key> <period> <minus>        : "⁃"  U2043  # hyphen bullet
-<Multi_key> <period> <underscore>   : "‣"  U2023  # triangular bullet
-<Multi_key> <s> <equal>        : "×"  U00D7  # multiplication sign
-<Multi_key> <s> <plus>         : "÷"  U00F7  # division sign
-<Multi_key> <s> <semicolon>     : "☺"  U263A  # white smiling face
-<Multi_key> <s> <colon>         : "☻"  U263B  # black smiling face
-<Multi_key> <exclam> <2>        : "‼"  U203C  # double exclamation mark
-<Multi_key> <exclam> <question> : "‽"  U203D  # interrobang
-<Multi_key> <question> <exclam> : "‽"  U203D  # interrobang
-<Multi_key> <s> <backslash>    : "⁞"  U205E  # vertical four dots
-<Multi_key> <s> <bar>          : "¦"  U00A6  # broken bar
-<Multi_key> <s> <questiondown> : "⸘"  U2E18  # inverted interrobang
-<Multi_key> <s> <ellipsis>     : "⸮"  U2E2E  # reversed question mark
+<Multi_key> <s> <semicolon>   : "☺"  U263A  # white smiling face
+<Multi_key> <s> <colon>       : "☻"  U263B  # black smiling face
+<Multi_key> <s> <exclam>      : "‼"  U203C  # double exclamation mark
+<Multi_key> <s> <question>    : "‽"  U203D  # interrobang
+<Multi_key> <s> <backslash>   : "⁞"  U205E  # vertical four dots
+<Multi_key> <s> <bar>         : "¦"  U00A6  # broken bar
+<Multi_key> <s> <period>      : "⸘"  U2E18  # inverted interrobang
+<Multi_key> <s> <slash>       : "⸮"  U2E2E  # reversed question mark
 
 
 # Playing Card Suit Symbols
@@ -962,7 +951,6 @@
 <Multi_key> <m> <P> : "ℙ"  U2119  # prime numbers
 <Multi_key> <m> <q> : "⌀"  U2300  # diameter sign
 <Multi_key> <m> <Q> : "ℚ"  U211A  # rational numbers
-<Multi_key> <m> <r> : "√"  U221A  # square root
 <Multi_key> <m> <R> : "ℝ"  U211D  # real numbers
 <Multi_key> <m> <s> : "∩"  U2229  # set intersection
 <Multi_key> <m> <S> : "∫"  U222B  # integral symbol
@@ -971,15 +959,8 @@
 <Multi_key> <m> <v> : "≡"  U2261  # identical to
 <Multi_key> <m> <V> : "≢"  U2262  # not identical to
 <Multi_key> <m> <w> : "℘"  U2118  # Weierstrass elliptic function
-<Multi_key> <m> <W> : "℘"  U2118  # Weierstrass elliptic function
 <Multi_key> <m> <z> : "↯"  U21AF  # downwards zigzag arrow
 <Multi_key> <m> <Z> : "ℤ"  U2124  # whole numbers
-<Multi_key> <m> <exclam>      : "≠"  U2260  # not equal to
-<Multi_key> <m> <2>           : "√"  U221A  # square root
-<Multi_key> <m> <3>           : "∛"  U221B  # cube root
-<Multi_key> <m> <4>           : "∜"  U221C  # fourth root
-<Multi_key> <m> <5>           : "‰"  U2030  # per mille sign
-<Multi_key> <m> <percent>     : "‱"  U2031  # per ten thousand sign
 <Multi_key> <m> <6>           : "∠"  U2220  # angle symbol
 <Multi_key> <m> <asciicircum> : "∠"  U2220  # angle symbol
 <Multi_key> <m> <7>           : "∧"  U2227  # logical and
