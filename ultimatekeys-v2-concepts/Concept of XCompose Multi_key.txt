@@ -709,16 +709,16 @@
 
 # Spacing Characters
 
-<Multi_key> <minus> <1> : "–"  U2013  # en dash
-<Multi_key> <minus> <2> : "—"  U2014  # em dash
-<Multi_key> <minus> <3> : "―"  U2015  # horizontal bar
-<Multi_key> <minus> <4> : "‐"  U2010  # hyphen
+<Multi_key> <minus> <2> : "–"  U2013  # en dash
+<Multi_key> <minus> <3> : "—"  U2014  # em dash
+<Multi_key> <minus> <4> : "―"  U2015  # horizontal bar
+<Multi_key> <minus> <5> : "‐"  U2010  # hyphen
 <Multi_key> <minus> <9> : "‒"  U2012  # figure dash
 <Multi_key> <minus> <0> : "­"  U00AD  # soft hyphen
 <Multi_key> <minus> <minus> : "‑"  U2011  # non-breaking hyphen
-<Multi_key> <space> <1> : " "  U2002  # en space
-<Multi_key> <space> <2> : " "  U2003  # em space
-<Multi_key> <space> <3> : " "  U2004  # three-per-em space
+<Multi_key> <space> <2> : " "  U2002  # en space
+<Multi_key> <space> <3> : " "  U2003  # em space
+<Multi_key> <space> <1> : " "  U2004  # three-per-em space
 <Multi_key> <space> <4> : " "  U2005  # four-per-em space
 <Multi_key> <space> <5> : " "  U2008  # punctuation space
 <Multi_key> <space> <6> : " "  U2006  # six-per-em space
@@ -728,8 +728,8 @@
 <Multi_key> <space> <0> : "​"  U200B  # zero-width space
 <Multi_key> <space> <space>  : " "  U00A0  # non-breaking space
 <Multi_key> <space> <period> : " "  U202F  # narrow no-break space
-<Multi_key> <q> <1> : " "  U2000  # en quad
-<Multi_key> <q> <2> : " "  U2001  # em quad
+<Multi_key> <q> <2> : " "  U2000  # en quad
+<Multi_key> <q> <3> : " "  U2001  # em quad
 
 
 # Arrows and Pointers
