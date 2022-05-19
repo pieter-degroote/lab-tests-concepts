@@ -183,6 +183,8 @@
 
 # Macron/Stroke (Additional)
 
+<Multi_key> <underscore> <a> : "ǣ"  U01E3  # ae with macron
+<Multi_key> <underscore> <A> : "Ǣ"  U01E2  # AE with macron
 <Multi_key> <underscore> <g> : "ḡ"  U1E21  # g with macron
 <Multi_key> <underscore> <G> : "Ḡ"  U1E20  # G with macron
 <Multi_key> <underscore> <i> : "ɨ"  U0268  # i with stroke
@@ -340,6 +342,8 @@
 <Multi_key> <apostrophe> <S> : "Ś"  U015A  # S with acute
 <Multi_key> <apostrophe> <u> : "ú"  U00FA  # u with acute
 <Multi_key> <apostrophe> <U> : "Ú"  U00DA  # U with acute
+<Multi_key> <apostrophe> <v> : "ǘ"  U01D8  # u with diaeresis and acute
+<Multi_key> <apostrophe> <V> : "Ǘ"  U01D7  # U with diaeresis and acute
 <Multi_key> <apostrophe> <w> : "ẃ"  U1E83  # w with acute
 <Multi_key> <apostrophe> <W> : "Ẃ"  U1E82  # W with acute
 <Multi_key> <apostrophe> <y> : "ý"  U00FD  # y with acute
@@ -372,8 +376,6 @@
 <Multi_key> <quotedbl> <t> : "ẗ"  U1E97  # t with diaeresis
 <Multi_key> <quotedbl> <u> : "ü"  U00FC  # u with diaeresis
 <Multi_key> <quotedbl> <U> : "Ü"  U00DC  # U with diaeresis
-<Multi_key> <quotedbl> <v> : "ǘ"  U01D8  # u with diaeresis and acute
-<Multi_key> <quotedbl> <V> : "Ǘ"  U01D7  # U with diaeresis and acute
 <Multi_key> <quotedbl> <w> : "ẅ"  U1E85  # w with diaeresis
 <Multi_key> <quotedbl> <W> : "Ẅ"  U1E84  # W with diaeresis
 <Multi_key> <quotedbl> <x> : "ẍ"  U1E8D  # x with diaeresis
@@ -383,7 +385,7 @@
 <Multi_key> <quotedbl> <space> : "¨"  U00A8  # diaeresis
 
 
-# Double Acute Accent and Special Letters
+# Double Acute and Special Letters
 
 <Multi_key> <equal> <o> : "ő"  U0151  # o with double acute
 <Multi_key> <equal> <O> : "Ő"  U0150  # O with double acute
@@ -396,14 +398,14 @@
 
 # Horn and Special Letters (Additional)
 
-<Multi_key> <plus> <g> : "ꬶ"  UAB36  # cross-tailed g
-<Multi_key> <plus> <h> : "ɧ"  U0267  # small letter heng with hook
-<Multi_key> <plus> <k> : "ĸ"  U0138  # small letter kra
-<Multi_key> <plus> <s> : "ſ"  U017F  # small long s
 <Multi_key> <plus> <o> : "ơ"  U01A1  # o with horn
 <Multi_key> <plus> <O> : "Ơ"  U01A0  # O with horn
 <Multi_key> <plus> <u> : "ư"  U01B0  # u with horn
 <Multi_key> <plus> <U> : "Ư"  U01AF  # U with horn
+<Multi_key> <plus> <g> : "ꬶ"  UAB36  # cross-tailed g
+<Multi_key> <plus> <h> : "ɧ"  U0267  # small letter heng with hook
+<Multi_key> <plus> <k> : "ĸ"  U0138  # small letter kra
+<Multi_key> <plus> <s> : "ſ"  U017F  # small long s
 
 
 # Grave Accent
