@@ -1,4 +1,4 @@
-# UltimateKEYS  (~/.XCompose) - 2022-05-18
+# UltimateKEYS  (~/.XCompose) - 2022-05-19
 
 # Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -793,7 +793,6 @@
 <Multi_key> <r> <2> : "√"  U221A  # square root
 <Multi_key> <r> <3> : "∛"  U221B  # cube root
 <Multi_key> <r> <4> : "∜"  U221C  # fourth root
-<Multi_key> <s> <m> : "℠"  U2120  # service mark
 <Multi_key> <s> <o> : "§"  U00A7  # section sign
 <Multi_key> <S> <o> : "§"  U00A7  # section sign
 <Multi_key> <t> <m> : "™"  U2122  # trademark symbol
@@ -855,6 +854,7 @@
 <Multi_key> <s> <l> : "ℓ"  U2113  # script small l
 <Multi_key> <s> <L> : "ℒ"  U2112  # Laplace transform
 <Multi_key> <s> <m> : "♂"  U2642  # Mars symbol (male)
+<Multi_key> <s> <M> : "℠"  U2120  # service mark
 <Multi_key> <s> <q> : "Ω"  U2126  # ohm sign (backwards compatibility)
 <Multi_key> <s> <r> : "☙"  U2619  # reversed rotated floral heart bullet
 <Multi_key> <s> <R> : "℞"  U211E  # prescription take (Recipere)

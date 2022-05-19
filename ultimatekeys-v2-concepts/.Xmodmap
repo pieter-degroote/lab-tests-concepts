@@ -8,12 +8,12 @@
 
 
 keycode  10 = 1            exclam       exclamdown           onesuperior
-keycode  11 = 2            at           copyright            twosuperior
-keycode  12 = 3            numbersign   section              threesuperior
+keycode  11 = 2            at           endash               twosuperior
+keycode  12 = 3            numbersign   emdash               threesuperior
 keycode  13 = 4            dollar       sterling             yen
 keycode  14 = 5            percent      EuroSign             cent
-keycode  15 = 6            asciicircum  U2264                function
-keycode  16 = 7            ampersand    U2265                U2030
+keycode  15 = 6            asciicircum  U2264                U2260
+keycode  16 = 7            ampersand    U2265                U2248
 keycode  17 = 8            asterisk     doublelowquotemark   singlelowquotemark
 keycode  18 = 9            parenleft    leftdoublequotemark  leftsinglequotemark
 keycode  19 = 0            parenright   rightdoublequotemark rightsinglequotemark
@@ -43,14 +43,14 @@ keycode  46 = l            L            oslash               Ooblique
 keycode  47 = semicolon    colon        degree               periodcentered
 keycode  48 = apostrophe   quotedbl     multiply             division
 keycode  49 = grave        asciitilde   Multi_key            Multi_key
-keycode  51 = backslash    bar          U2260                U2248
+keycode  51 = backslash    bar          section              paragraph
 keycode  52 = z            Z            agrave               Agrave
 keycode  53 = x            X            aacute               Aacute
 keycode  54 = c            C            ccedilla             Ccedilla
 keycode  55 = v            V            igrave               Igrave
 keycode  56 = b            B            iacute               Iacute
 keycode  57 = n            N            ntilde               Ntilde
-keycode  58 = m            M            plusminus            radical
+keycode  58 = m            M            plusminus            U2030
 keycode  59 = comma        less         ograve               Ograve
 keycode  60 = period       greater      oacute               Oacute
 keycode  61 = slash        question     questiondown         ellipsis
