@@ -474,7 +474,7 @@ $?::Send "{+}"  ; plus sign
 >!e::Send "{u+20ac}"  ; (€) euro sign
 
 $'::Send "{u+00f9}"  ; (ù) u with grave
-$"::Send "`%"        ; percent sign
+$"::Send "%"         ; percent sign
 
 >!':: {
   ih := InputHook("L1", dkEndKeys)
