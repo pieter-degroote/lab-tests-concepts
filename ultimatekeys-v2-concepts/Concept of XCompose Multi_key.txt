@@ -1,4 +1,4 @@
-# UltimateKEYS  (~/.XCompose) - 2022-05-19
+# UltimateKEYS  (~/.XCompose) - 2022-05-20
 
 # Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -553,7 +553,7 @@
 <Multi_key> <dollar> <f> : "₣"  U20A3  # French franc
 <Multi_key> <dollar> <F> : "₣"  U20A3  # French franc
 <Multi_key> <dollar> <g> : "₲"  U20B2  # Paraguayan guaraní
-<Multi_key> <dollar> <G> : "₲"  U20B2  # Paraguayan guaraní
+<Multi_key> <dollar> <G> : "₾"  U20BE  # Georgian lari
 <Multi_key> <dollar> <h> : "₴"  U20B4  # Ukrainian hryvnia
 <Multi_key> <dollar> <H> : "₴"  U20B4  # Ukrainian hryvnia
 <Multi_key> <dollar> <i> : "₤"  U20A4  # lira
@@ -561,13 +561,12 @@
 <Multi_key> <dollar> <k> : "₭"  U20AD  # Laotian kip
 <Multi_key> <dollar> <K> : "₭"  U20AD  # Laotian kip
 <Multi_key> <dollar> <l> : "₺"  U20BA  # Turkish lira
-<Multi_key> <dollar> <L> : "₾"  U20BE  # Georgian lari
+<Multi_key> <dollar> <L> : "£"  U00A3  # pound sign
 <Multi_key> <dollar> <m> : "₼"  U20BC  # Azerbaijani manat
 <Multi_key> <dollar> <M> : "₥"  U20A5  # mill sign
 <Multi_key> <dollar> <n> : "₦"  U20A6  # Nigerian naira
-<Multi_key> <dollar> <N> : "₻"  U20BB  # nordic mark
+<Multi_key> <dollar> <N> : "₻"  U20BB  # Nordic mark
 <Multi_key> <dollar> <o> : "¢"  U00A2  # cent sign (dollar)
-<Multi_key> <dollar> <O> : "£"  U00A3  # pound sign
 <Multi_key> <dollar> <p> : "₱"  U20B1  # Philippine peso
 <Multi_key> <dollar> <P> : "₧"  U20A7  # Spanish pesetas
 <Multi_key> <dollar> <r> : "₹"  U20B9  # Indian rupee
@@ -656,9 +655,9 @@
 <Multi_key> <p> <9> : "⁹"  U2079  # superscript 9
 <Multi_key> <p> <0> : "⁰"  U2070  # superscript 0
 <Multi_key> <p> <n> : "ⁿ"  U207F  # superscript n
+<Multi_key> <p> <plus>       : "⁺"  U207A  # superscript +
 <Multi_key> <p> <minus>      : "⁻"  U207B  # superscript -
 <Multi_key> <p> <equal>      : "⁼"  U207C  # superscript =
-<Multi_key> <p> <plus>       : "⁺"  U207A  # superscript +
 <Multi_key> <p> <parenleft>  : "⁽"  U207D  # superscript (
 <Multi_key> <p> <parenright> : "⁾"  U207E  # superscript )
 
@@ -676,48 +675,15 @@
 <Multi_key> <u> <9> : "₉"  U2089  # subscript 9
 <Multi_key> <u> <0> : "₀"  U2080  # subscript 0
 <Multi_key> <u> <n> : "ₙ"  U2099  # subscript n
+<Multi_key> <u> <plus>       : "₊"  U208A  # subscript +
 <Multi_key> <u> <minus>      : "₋"  U208B  # subscript -
 <Multi_key> <u> <equal>      : "₌"  U208C  # subscript =
-<Multi_key> <u> <plus>       : "₊"  U208A  # subscript +
 <Multi_key> <u> <parenleft>  : "₍"  U208D  # subscript (
 <Multi_key> <u> <parenright> : "₎"  U208E  # subscript )
 
 
-# Quotation Marks
+# Spacing Characters and Dashes
 
-<Multi_key> <comma> <quotedbl>         : "„"  U201E  # double low-9 quotation mark
-<Multi_key> <quotedbl> <comma>         : "„"  U201E  # double low-9 quotation mark
-<Multi_key> <comma> <apostrophe>       : "‚"  U201A  # single low-9 quotation mark
-<Multi_key> <apostrophe> <comma>       : "‚"  U201A  # single low-9 quotation mark
-<Multi_key> <quotedbl> <bracketleft>   : "“"  U201C  # left double quotation mark
-<Multi_key> <bracketleft> <quotedbl>   : "“"  U201C  # left double quotation mark
-<Multi_key> <quotedbl> <bracketleft>   : "”"  U201D  # right double quotation mark
-<Multi_key> <bracketleft> <quotedbl>   : "”"  U201D  # right double quotation mark
-<Multi_key> <apostrophe> <bracketleft> : "‘"  U2018  # left single quotation mark
-<Multi_key> <bracketleft> <apostrophe> : "‘"  U2018  # left single quotation mark
-<Multi_key> <apostrophe> <bracketleft> : "’"  U2019  # right single quotation mark
-<Multi_key> <bracketleft> <apostrophe> : "’"  U2019  # right single quotation mark
-<Multi_key> <less> <less>              : "«"  U00AB  # left-pointing double angle quotation mark
-<Multi_key> <less> <quotedbl>          : "«"  U00AB  # left-pointing double angle quotation mark
-<Multi_key> <quotedbl> <less>          : "«"  U00AB  # left-pointing double angle quotation mark
-<Multi_key> <greater> <greater>        : "»"  U00BB  # right-pointing double angle quotation mark
-<Multi_key> <greater> <quotedbl>       : "»"  U00BB  # right-pointing double angle quotation mark
-<Multi_key> <quotedbl> <greater>       : "»"  U00BB  # right-pointing double angle quotation mark
-<Multi_key> <less> <apostrophe>        : "‹"  U2039  # left-pointing single angle quotation mark
-<Multi_key> <apostrophe> <less>        : "‹"  U2039  # left-pointing single angle quotation mark
-<Multi_key> <greater> <apostrophe>     : "›"  U203A  # right-pointing single angle quotation mark
-<Multi_key> <apostrophe> <greater>     : "›"  U203A  # right-pointing single angle quotation mark
-
-
-# Spacing Characters
-
-<Multi_key> <minus> <2> : "–"  U2013  # en dash
-<Multi_key> <minus> <3> : "—"  U2014  # em dash
-<Multi_key> <minus> <4> : "―"  U2015  # horizontal bar
-<Multi_key> <minus> <5> : "‐"  U2010  # hyphen
-<Multi_key> <minus> <9> : "‒"  U2012  # figure dash
-<Multi_key> <minus> <0> : "­"  U00AD  # soft hyphen
-<Multi_key> <minus> <minus> : "‑"  U2011  # non-breaking hyphen
 <Multi_key> <space> <2> : " "  U2002  # en space
 <Multi_key> <space> <3> : " "  U2003  # em space
 <Multi_key> <space> <1> : " "  U2004  # three-per-em space
@@ -730,6 +696,13 @@
 <Multi_key> <space> <0> : "​"  U200B  # zero-width space
 <Multi_key> <space> <space>  : " "  U00A0  # non-breaking space
 <Multi_key> <space> <period> : " "  U202F  # narrow no-break space
+<Multi_key> <minus> <2> : "–"  U2013  # en dash
+<Multi_key> <minus> <3> : "—"  U2014  # em dash
+<Multi_key> <minus> <4> : "―"  U2015  # horizontal bar
+<Multi_key> <minus> <5> : "‐"  U2010  # hyphen
+<Multi_key> <minus> <9> : "‒"  U2012  # figure dash
+<Multi_key> <minus> <0> : "­"  U00AD  # soft hyphen
+<Multi_key> <minus> <minus> : "‑"  U2011  # non-breaking hyphen
 <Multi_key> <q> <2> : " "  U2000  # en quad
 <Multi_key> <q> <3> : " "  U2001  # em quad
 
@@ -839,6 +812,33 @@
 <Multi_key> <bracketleft> <bracketright> : "☐"  U2610  # ballot box
 <Multi_key> <bracketleft> <v>            : "☑"  U2611  # ballot box with check
 <Multi_key> <bracketleft> <x>            : "☒"  U2612  # ballot box with x
+
+
+# Quotation Marks
+
+<Multi_key> <comma> <quotedbl>         : "„"  U201E  # double low-9 quotation mark
+<Multi_key> <quotedbl> <comma>         : "„"  U201E  # double low-9 quotation mark
+<Multi_key> <comma> <apostrophe>       : "‚"  U201A  # single low-9 quotation mark
+<Multi_key> <apostrophe> <comma>       : "‚"  U201A  # single low-9 quotation mark
+<Multi_key> <quotedbl> <bracketleft>   : "“"  U201C  # left double quotation mark
+<Multi_key> <bracketleft> <quotedbl>   : "“"  U201C  # left double quotation mark
+<Multi_key> <quotedbl> <bracketleft>   : "”"  U201D  # right double quotation mark
+<Multi_key> <bracketleft> <quotedbl>   : "”"  U201D  # right double quotation mark
+<Multi_key> <apostrophe> <bracketleft> : "‘"  U2018  # left single quotation mark
+<Multi_key> <bracketleft> <apostrophe> : "‘"  U2018  # left single quotation mark
+<Multi_key> <apostrophe> <bracketleft> : "’"  U2019  # right single quotation mark
+<Multi_key> <bracketleft> <apostrophe> : "’"  U2019  # right single quotation mark
+<Multi_key> <less> <less>              : "«"  U00AB  # left-pointing double angle quotation mark
+<Multi_key> <less> <quotedbl>          : "«"  U00AB  # left-pointing double angle quotation mark
+<Multi_key> <quotedbl> <less>          : "«"  U00AB  # left-pointing double angle quotation mark
+<Multi_key> <greater> <greater>        : "»"  U00BB  # right-pointing double angle quotation mark
+<Multi_key> <greater> <quotedbl>       : "»"  U00BB  # right-pointing double angle quotation mark
+<Multi_key> <quotedbl> <greater>       : "»"  U00BB  # right-pointing double angle quotation mark
+<Multi_key> <less> <apostrophe>        : "‹"  U2039  # left-pointing single angle quotation mark
+<Multi_key> <apostrophe> <less>        : "‹"  U2039  # left-pointing single angle quotation mark
+<Multi_key> <greater> <apostrophe>     : "›"  U203A  # right-pointing single angle quotation mark
+<Multi_key> <apostrophe> <greater>     : "›"  U203A  # right-pointing single angle quotation mark
+
 
 # Miscellaneous Symbols
 
@@ -951,7 +951,6 @@
 <Multi_key> <m> <O> : "∅"  U2205  # empty set
 <Multi_key> <m> <p> : "∂"  U2202  # partial differential
 <Multi_key> <m> <P> : "ℙ"  U2119  # prime numbers
-<Multi_key> <m> <q> : "⌀"  U2300  # diameter sign
 <Multi_key> <m> <Q> : "ℚ"  U211A  # rational numbers
 <Multi_key> <m> <R> : "ℝ"  U211D  # real numbers
 <Multi_key> <m> <s> : "∩"  U2229  # set intersection
@@ -963,18 +962,16 @@
 <Multi_key> <m> <w> : "℘"  U2118  # Weierstrass elliptic function
 <Multi_key> <m> <z> : "↯"  U21AF  # downwards zigzag arrow
 <Multi_key> <m> <Z> : "ℤ"  U2124  # whole numbers
-<Multi_key> <m> <6>           : "∠"  U2220  # angle symbol
-<Multi_key> <m> <asciicircum> : "∠"  U2220  # angle symbol
-<Multi_key> <m> <7>           : "∧"  U2227  # logical and
-<Multi_key> <m> <ampersand>   : "∧"  U2227  # logical and
-<Multi_key> <m> <8>           : "⊗"  U2297  # circled times
-<Multi_key> <m> <asterisk>    : "⊙"  U2299  # circled dot operator
-<Multi_key> <m> <9>           : "∟"  U221F  # right angle
-<Multi_key> <m> <0>           : "∡"  U2221  # measured angle
-<Multi_key> <m> <underscore>  : "⊖"  U2296  # circled minus
-<Multi_key> <m> <slash>       : "⊘"  U2298  # circled division slash
-<Multi_key> <m> <equal>       : "≝"  U225D  # equal to by definition
-<Multi_key> <m> <plus>        : "⊕"  U2295  # circled plus
-<Multi_key> <m> <semicolon>   : "∵"  U2235  # because sign
-<Multi_key> <m> <colon>       : "∴"  U2234  # therefore sign
-<Multi_key> <m> <bar>         : "∨"  U2228  # logical or
+<Multi_key> <m> <6>         : "∠"  U2220  # angle symbol
+<Multi_key> <m> <ampersand> : "∧"  U2227  # logical and
+<Multi_key> <m> <8>         : "⊗"  U2297  # circled times
+<Multi_key> <m> <asterisk>  : "⊙"  U2299  # circled dot operator
+<Multi_key> <m> <9>         : "∟"  U221F  # right angle
+<Multi_key> <m> <0>         : "∡"  U2221  # measured angle
+<Multi_key> <m> <plus>      : "⊕"  U2295  # circled plus
+<Multi_key> <m> <minus>     : "⊖"  U2296  # circled minus
+<Multi_key> <m> <slash>     : "⊘"  U2298  # circled division slash
+<Multi_key> <m> <equal>     : "≝"  U225D  # equal to by definition
+<Multi_key> <m> <semicolon> : "∵"  U2235  # because sign
+<Multi_key> <m> <colon>     : "∴"  U2234  # therefore sign
+<Multi_key> <m> <bar>       : "∨"  U2228  # logical or
