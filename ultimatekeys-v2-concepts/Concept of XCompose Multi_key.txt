@@ -396,18 +396,6 @@
 <Multi_key> <equal> <space> : "˝"  U02DD  # double acute accent
 
 
-# Horn and Special Letters (Additional)
-
-<Multi_key> <plus> <o> : "ơ"  U01A1  # o with horn
-<Multi_key> <plus> <O> : "Ơ"  U01A0  # O with horn
-<Multi_key> <plus> <u> : "ư"  U01B0  # u with horn
-<Multi_key> <plus> <U> : "Ư"  U01AF  # U with horn
-<Multi_key> <plus> <g> : "ꬶ"  UAB36  # cross-tailed g
-<Multi_key> <plus> <h> : "ɧ"  U0267  # small letter heng with hook
-<Multi_key> <plus> <k> : "ĸ"  U0138  # small letter kra
-<Multi_key> <plus> <s> : "ſ"  U017F  # small long s
-
-
 # Grave Accent
 
 <Multi_key> <grave> <a> : "à"  U00E0  # a with grave
@@ -524,6 +512,18 @@
 <Multi_key> <h> <S> : "Ʃ"  U01A9  # capital letter esh
 <Multi_key> <h> <u> : "ʊ"  U028A  # latin small letter upsilon
 <Multi_key> <h> <U> : "Ʊ"  U01B1  # latin capital letter upsilon
+
+
+# Horn and Special Letters
+
+<Multi_key> <H> <o> : "ơ"  U01A1  # o with horn
+<Multi_key> <H> <O> : "Ơ"  U01A0  # O with horn
+<Multi_key> <H> <u> : "ư"  U01B0  # u with horn
+<Multi_key> <H> <U> : "Ư"  U01AF  # U with horn
+<Multi_key> <H> <g> : "ꬶ"  UAB36  # cross-tailed g
+<Multi_key> <H> <h> : "ɧ"  U0267  # small letter heng with hook
+<Multi_key> <H> <k> : "ĸ"  U0138  # small letter kra
+<Multi_key> <H> <s> : "ſ"  U017F  # small long s
 
 
 # Turned Letters
@@ -757,6 +757,10 @@
 
 # General/Math Symbols
 
+<Multi_key> <B> <b> : "•"  U2022  # bullet
+<Multi_key> <B> <h> : "⁃"  U2043  # hyphen bullet
+<Multi_key> <B> <t> : "‣"  U2023  # triangular bullet
+<Multi_key> <B> <w> : "◦"  U25E6  # white bullet
 <Multi_key> <d> <d> : "†"  U2020  # dagger
 <Multi_key> <D> <D> : "‡"  U2021  # double dagger
 <Multi_key> <m> <i> : "µ"  U00B5  # micro sign
@@ -773,14 +777,13 @@
 <Multi_key> <t> <m> : "™"  U2122  # trademark symbol
 <Multi_key> <x> <x> : "×"  U00D7  # multiplication sign
 <Multi_key> <colon> <minus>  : "÷"  U00F7  # division sign
+<Multi_key> <minus> <colon>  : "÷"  U00F7  # division sign
 <Multi_key> <apostrophe> <1> : "′"  U2032  # prime
 <Multi_key> <apostrophe> <2> : "″"  U2033  # double prime
 <Multi_key> <apostrophe> <3> : "‴"  U2034  # triple prime
 <Multi_key> <apostrophe> <4> : "⁗"  U2057  # quadruple prime
 <Multi_key> <asterisk> <o>        : "°"  U00B0  # degree sign
 <Multi_key> <o> <asterisk>        : "°"  U00B0  # degree sign
-<Multi_key> <period> <b>          : "•"  U2022  # bullet
-<Multi_key> <period> <w>          : "◦"  U25E6  # white bullet
 <Multi_key> <period> <period>     : "·"  U00B7  # middle dot
 <Multi_key> <period> <space>      : "·"  U00B7  # middle dot
 <Multi_key> <period> <3>          : "…"  U2026  # horizontal ellipsis
@@ -807,8 +810,6 @@
 <Multi_key> <less> <plus>         : "⩽"  U2A7D  # less-than or slanted equal to
 <Multi_key> <greater> <plus>      : "⩾"  U2A7E  # greater-than or slanted equal to
 <Multi_key> <asciitilde> <asciitilde> : "≈"  U2248  # almost equal to
-<Multi_key> <period> <minus>          : "⁃"  U2043  # hyphen bullet
-<Multi_key> <period> <equal>          : "‣"  U2023  # triangular bullet
 <Multi_key> <bracketleft> <bracketright> : "☐"  U2610  # ballot box
 <Multi_key> <bracketleft> <v>            : "☑"  U2611  # ballot box with check
 <Multi_key> <bracketleft> <x>            : "☒"  U2612  # ballot box with x
@@ -816,28 +817,28 @@
 
 # Quotation Marks
 
-<Multi_key> <comma> <quotedbl>         : "„"  U201E  # double low-9 quotation mark
-<Multi_key> <quotedbl> <comma>         : "„"  U201E  # double low-9 quotation mark
-<Multi_key> <comma> <apostrophe>       : "‚"  U201A  # single low-9 quotation mark
-<Multi_key> <apostrophe> <comma>       : "‚"  U201A  # single low-9 quotation mark
-<Multi_key> <quotedbl> <bracketleft>   : "“"  U201C  # left double quotation mark
-<Multi_key> <bracketleft> <quotedbl>   : "“"  U201C  # left double quotation mark
-<Multi_key> <quotedbl> <bracketleft>   : "”"  U201D  # right double quotation mark
-<Multi_key> <bracketleft> <quotedbl>   : "”"  U201D  # right double quotation mark
-<Multi_key> <apostrophe> <bracketleft> : "‘"  U2018  # left single quotation mark
-<Multi_key> <bracketleft> <apostrophe> : "‘"  U2018  # left single quotation mark
-<Multi_key> <apostrophe> <bracketleft> : "’"  U2019  # right single quotation mark
-<Multi_key> <bracketleft> <apostrophe> : "’"  U2019  # right single quotation mark
-<Multi_key> <less> <less>              : "«"  U00AB  # left-pointing double angle quotation mark
-<Multi_key> <less> <quotedbl>          : "«"  U00AB  # left-pointing double angle quotation mark
-<Multi_key> <quotedbl> <less>          : "«"  U00AB  # left-pointing double angle quotation mark
-<Multi_key> <greater> <greater>        : "»"  U00BB  # right-pointing double angle quotation mark
-<Multi_key> <greater> <quotedbl>       : "»"  U00BB  # right-pointing double angle quotation mark
-<Multi_key> <quotedbl> <greater>       : "»"  U00BB  # right-pointing double angle quotation mark
-<Multi_key> <less> <apostrophe>        : "‹"  U2039  # left-pointing single angle quotation mark
-<Multi_key> <apostrophe> <less>        : "‹"  U2039  # left-pointing single angle quotation mark
-<Multi_key> <greater> <apostrophe>     : "›"  U203A  # right-pointing single angle quotation mark
-<Multi_key> <apostrophe> <greater>     : "›"  U203A  # right-pointing single angle quotation mark
+<Multi_key> <comma> <quotedbl>          : "„"  U201E  # double low-9 quotation mark
+<Multi_key> <quotedbl> <comma>          : "„"  U201E  # double low-9 quotation mark
+<Multi_key> <comma> <apostrophe>        : "‚"  U201A  # single low-9 quotation mark
+<Multi_key> <apostrophe> <comma>        : "‚"  U201A  # single low-9 quotation mark
+<Multi_key> <quotedbl> <bracketleft>    : "“"  U201C  # left double quotation mark
+<Multi_key> <bracketleft> <quotedbl>    : "“"  U201C  # left double quotation mark
+<Multi_key> <quotedbl> <bracketright>   : "”"  U201D  # right double quotation mark
+<Multi_key> <bracketright> <quotedbl>   : "”"  U201D  # right double quotation mark
+<Multi_key> <apostrophe> <bracketleft>  : "‘"  U2018  # left single quotation mark
+<Multi_key> <bracketleft> <apostrophe>  : "‘"  U2018  # left single quotation mark
+<Multi_key> <apostrophe> <bracketright> : "’"  U2019  # right single quotation mark
+<Multi_key> <bracketright> <apostrophe> : "’"  U2019  # right single quotation mark
+<Multi_key> <less> <less>               : "«"  U00AB  # left-pointing double angle quotation mark
+<Multi_key> <less> <quotedbl>           : "«"  U00AB  # left-pointing double angle quotation mark
+<Multi_key> <quotedbl> <less>           : "«"  U00AB  # left-pointing double angle quotation mark
+<Multi_key> <greater> <greater>         : "»"  U00BB  # right-pointing double angle quotation mark
+<Multi_key> <greater> <quotedbl>        : "»"  U00BB  # right-pointing double angle quotation mark
+<Multi_key> <quotedbl> <greater>        : "»"  U00BB  # right-pointing double angle quotation mark
+<Multi_key> <less> <apostrophe>         : "‹"  U2039  # left-pointing single angle quotation mark
+<Multi_key> <apostrophe> <less>         : "‹"  U2039  # left-pointing single angle quotation mark
+<Multi_key> <greater> <apostrophe>      : "›"  U203A  # right-pointing single angle quotation mark
+<Multi_key> <apostrophe> <greater>      : "›"  U203A  # right-pointing single angle quotation mark
 
 
 # Miscellaneous Symbols

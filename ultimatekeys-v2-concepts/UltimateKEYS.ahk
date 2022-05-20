@@ -215,6 +215,31 @@ dkMacronStrokeAdd.item["Y"] := "{u+024e}"  ; (Ɏ) Y with stroke
 dkMacronStrokeAdd.item[" "] := "{u+00af}"  ; (¯) macron
 
 
+; Dead Key :  Stroke (/)
+
+dkStroke.item["a"] := "{u+2c65}"  ; (ⱥ) a with stroke
+dkStroke.item["A"] := "{u+023a}"  ; (Ⱥ) A with stroke
+dkStroke.item["c"] := "{u+023c}"  ; (ȼ) c with stroke
+dkStroke.item["C"] := "{u+023b}"  ; (Ȼ) C with stroke
+dkStroke.item["e"] := "{u+0247}"  ; (ɇ) e with stroke
+dkStroke.item["E"] := "{u+0246}"  ; (Ɇ) E with stroke
+dkStroke.item["f"] := "{u+1e9c}"  ; (ẜ) long s with diagonal stroke
+dkStroke.item["g"] := "{u+a7a1}"  ; (ꞡ) g with oblique stroke
+dkStroke.item["G"] := "{u+a7a0}"  ; (Ꞡ) G with oblique stroke
+dkStroke.item["k"] := "{u+a7a3}"  ; (ꞣ) k with oblique stroke
+dkStroke.item["K"] := "{u+a7a2}"  ; (Ꞣ) K with oblique stroke
+dkStroke.item["n"] := "{u+a7a5}"  ; (ꞥ) n oblique with stroke
+dkStroke.item["N"] := "{u+a7a4}"  ; (Ꞥ) N oblique with stroke
+dkStroke.item["o"] := "{u+00f8}"  ; (ø) o with stroke
+dkStroke.item["O"] := "{u+00d8}"  ; (Ø) O with stroke
+dkStroke.item["r"] := "{u+a7a7}"  ; (ꞧ) r with oblique stroke
+dkStroke.item["R"] := "{u+a7a6}"  ; (Ꞧ) R with oblique stroke
+dkStroke.item["s"] := "{u+a7a9}"  ; (ꞩ) s with oblique stroke
+dkStroke.item["S"] := "{u+a7a8}"  ; (Ꞩ) S with oblique stroke
+dkStroke.item["t"] := "{u+2c66}"  ; (ⱦ) t with stroke
+dkStroke.item["T"] := "{u+023e}"  ; (Ⱦ) T with stroke
+
+
 ; Dead Key :  Cedilla/Ogonek (,)
 
 dkCedillaOgonek := ComObjCreate("Scripting.Dictionary")
@@ -391,20 +416,6 @@ dkDoubleAcute.item["H"] := "{u+a726}"  ; (Ꜧ) capital letter heng
 dkDoubleAcute.item[" "] := "{u+02dd}"  ; (˝) double acute accent
 
 
-; Dead Key :  Horn and Special Letters (Additional) (+)
-
-dkHorn := ComObjCreate("Scripting.Dictionary")
-dkHorn.item["o"] := "{u+01a1}"  ; (ơ) o with horn
-dkHorn.item["O"] := "{u+01a0}"  ; (Ơ) O with horn
-dkHorn.item["u"] := "{u+01b0}"  ; (ư) u with horn
-dkHorn.item["U"] := "{u+01af}"  ; (Ư) U with horn
-dkHorn.item["g"] := "{u+ab36}"  ; (ꬶ) cross-tailed g
-dkHorn.item["h"] := "{u+0267}"  ; (ɧ) small letter heng with hook
-dkHorn.item["k"] := "{u+0138}"  ; (ĸ) small letter kra
-dkHorn.item["s"] := "{u+0283}"  ; (ʃ) small letter esh
-dkHorn.item["S"] := "{u+01a9}"  ; (Ʃ) capital letter esh
-
-
 ; Dead Key :  Grave Accent (`)
 
 dkGraveAccent := ComObjCreate("Scripting.Dictionary")
@@ -519,6 +530,20 @@ dkHook.item["s"] := "{u+0283}"  ; (ʃ) small letter esh
 dkHook.item["S"] := "{u+01a9}"  ; (Ʃ) capital letter esh
 dkHook.item["u"] := "{u+028a}"  ; (ʊ) latin small letter upsilon
 dkHook.item["U"] := "{u+01b1}"  ; (Ʊ) latin capital letter upsilon
+
+
+; Dead Key :  Horn and Special Letters (H)
+
+dkHorn := ComObjCreate("Scripting.Dictionary")
+dkHorn.item["o"] := "{u+01a1}"  ; (ơ) o with horn
+dkHorn.item["O"] := "{u+01a0}"  ; (Ơ) O with horn
+dkHorn.item["u"] := "{u+01b0}"  ; (ư) u with horn
+dkHorn.item["U"] := "{u+01af}"  ; (Ư) U with horn
+dkHorn.item["g"] := "{u+ab36}"  ; (ꬶ) cross-tailed g
+dkHorn.item["h"] := "{u+0267}"  ; (ɧ) small letter heng with hook
+dkHorn.item["k"] := "{u+0138}"  ; (ĸ) small letter kra
+dkHorn.item["s"] := "{u+0283}"  ; (ʃ) small letter esh
+dkHorn.item["S"] := "{u+01a9}"  ; (Ʃ) capital letter esh
 
 
 ; Dead Key :  Turned Letters (t)
@@ -893,9 +918,127 @@ dkMathSymbols.item["|"] := "{u+2228}"  ; (∨) logical or
 
 ; Dead Key :  Special Letters/Characters
 
+dkCapitalA := ComObjCreate("Scripting.Dictionary")
+dkSmallD := ComObjCreate("Scripting.Dictionary")
+dkCapitalD := ComObjCreate("Scripting.Dictionary")
+dkSmallI := ComObjCreate("Scripting.Dictionary")
+dkCapitalI := ComObjCreate("Scripting.Dictionary")
+dkCapitalO := ComObjCreate("Scripting.Dictionary")
+dkCapitalT := ComObjCreate("Scripting.Dictionary")
+dkArrow.item["e"] := "{u+00e6}"            ; (æ) letter ae
+dkCapitalA.item["E"] := "{u+00c6}"         ; (Æ) letter AE
+dkSmallD.item["h"] := "{u+00f0}"           ; (ð) small letter eth
+dkCapitalD.item["H"] := "{u+00d0}"         ; (Ð) capital letter eth
+dkSmallI.item["j"] := "{u+0133}"           ; (ĳ) ligature ij
+dkCapitalI.item["J"] := "{u+0132}"         ; (Ĳ) ligature IJ
+dkRingAbove.item["e"] := "{u+0153}"        ; (œ) ligature oe
+dkCapitalO.item["E"] := "{u+0152}"         ; (Œ) ligature OE
+dkSymbols.item["s"] := "{u+00df}"          ; (ß) small sharp s (Eszett)
+dkPlayingCardSuit.item["S"] := "{u+1e9e}"  ; (ẞ) capital sharp S (capital Eszett)
+dkTurned.item["h"] := "{u+00fe}"           ; (þ) small letter thorn
+dkCapitalT.item["H"] := "{u+00de}"         ; (Þ) capital letter thorn
+
 
 ; Dead Key :  General/Math Symbols
 
+dkSmallN := ComObjCreate("Scripting.Dictionary")
+dkCapitalN := ComObjCreate("Scripting.Dictionary")
+dkSmallP := ComObjCreate("Scripting.Dictionary")
+dkCapitalP := ComObjCreate("Scripting.Dictionary")
+dkSmallR := ComObjCreate("Scripting.Dictionary")
+dkColon := ComObjCreate("Scripting.Dictionary")
+dkAsterisk := ComObjCreate("Scripting.Dictionary")
+dkExclam := ComObjCreate("Scripting.Dictionary")
+dkQuestion := ComObjCreate("Scripting.Dictionary")
+dkParenLeft := ComObjCreate("Scripting.Dictionary")
+dkPlus := ComObjCreate("Scripting.Dictionary")
+dkPercent := ComObjCreate("Scripting.Dictionary")
+dkEight := ComObjCreate("Scripting.Dictionary")
+dkLessThan := ComObjCreate("Scripting.Dictionary")
+dkGreaterThan := ComObjCreate("Scripting.Dictionary")
+dkBracketLeft := ComObjCreate("Scripting.Dictionary")
+dkInvertedBreve.item["b"] := "{u+2022}"    ; (•) bullet
+dkInvertedBreve.item["t"] := "{u+2023}"    ; (‣) triangular bullet
+dkInvertedBreve.item["h"] := "{u+2043}"    ; (⁃) hyphen bullet
+dkInvertedBreve.item["w"] := "{u+25e6}"    ; (◦) white bullet
+dkSmallD.item["d"] := "{u+2020}"           ; (†) dagger
+dkCapitalD.item["D"] := "{u+2021}"         ; (‡) double dagger
+dkMathSymbols.item["i"] := "{u+00b5}"      ; (µ) micro sign
+dkSmallN.item["o"] := "{u+2116}"           ; (№) numero sign
+dkCapitalN.item["o"] := "{u+2116}"         ; (№) numero sign
+dkRingAbove.item["x"] := "{u+00a4}"        ; (¤) currency sign
+dkSmallP.item["p"] := "{u+00b6}"           ; (¶) pilcrow sign
+dkCapitalP.item["P"] := "{u+00b6}"         ; (¶) pilcrow sign
+dkSmallR.item["2"] := "{u+221a}"           ; (√) square root
+dkSmallR.item["3"] := "{u+221b}"           ; (∛) cube root
+dkSmallR.item["4"] := "{u+221c}"           ; (∜) fourth root
+dkSymbols.item["o"] := "{u+00a7}"          ; (§) section sign
+dkPlayingCardSuit.item["o"] := "{u+00a7}"  ; (§) section sign
+dkTurned.item["m"] := "{u+2122}"           ; (™) trademark symbol
+dkMacronStroke.item[":"] := "{u+00f7}"     ; (÷) division sign
+dkColon.item["-"] := "{u+00f7}"            ; (÷) division sign
+dkAcuteAccent.item["1"] := "{u+2032}"      ; (′) prime
+dkAcuteAccent.item["2"] := "{u+2033}"      ; (″) double prime
+dkAcuteAccent.item["3"] := "{u+2034}"      ; (‴) triple prime
+dkAcuteAccent.item["4"] := "{u+2057}"      ; (⁗) quadruple prime
+dkAsterisk.item["o"] := "{u+00b0}"         ; (°) degree sign
+dkRingAbove.item["*"] := "{u+00b0}"        ; (°) degree sign
+dkDotAbove.item["."] := "{u+00b7}"         ; (·) middle dot
+dkDotAbove.item[" "] := "{u+00b7}"         ; (·) middle dot
+dkDotAbove.item["3"] := "{u+2026}"         ; (…) horizontal ellipsis
+dkArrow.item["-"] := "{u+00aa}"            ; (ª) feminine ordinal indicator (Spanish, Portuguese, Italian, Galician)
+dkRingAbove.item["-"] := "{u+00ba}"        ; (º) masculine ordinal indicator (Spanish, Portuguese, Italian, Galician)
+dkExclam.item["!"] := "{u+00a1}"           ; (¡) inverted exclamation mark
+dkQuestion.item["?"] := "{u+00bf}"         ; (¿) inverted question mark
+dkRingAbove.item["c"] := "{u+00a9}"        ; (©) copyright sign
+dkParenLeft.item["c"] := "{u+00a9}"        ; (©) copyright sign
+dkRingAbove.item["p"] := "{u+2117}"        ; (℗) sound recording copyright
+dkParenLeft.item["p"] := "{u+2117}"        ; (℗) sound recording copyright
+dkRingAbove.item["r"] := "{u+00ae}"        ; (®) registered sign
+dkParenLeft.item["r"] := "{u+00ae}"        ; (®) registered sign
+dkPlus.item["-"] := "{u+00b1}"             ; (±) plus-minus sign
+dkPercent.item["%"] := "{u+2030}"          ; (‰) per mille sign
+dkPercent.item["3"] := "{u+2030}"          ; (‰) per mille sign
+dkPercent.item["4"] := "{u+2031}"          ; (‱) per ten thousand sign
+dkEight.item["8"] := "{u+221e}"            ; (∞) infinity symbol
+dkExclam.item["="] := "{u+2260}"           ; (≠) not equal to
+dkDoubleAcute.item["/"] := "{u+2260}"      ; (≠) not equal to
+dkStroke.item["="] := "{u+2260}"           ; (≠) not equal to
+dkLessThan.item["="] := "{u+2264}"         ; (≤) less-than or equal to
+dkGreaterThan.item["="] := "{u+2265}"      ; (≥) greater-than or equal to
+dkLessThan.item["+"] := "{u+2a7d}"         ; (⩽) less-than or slanted equal to
+dkGreaterThan.item["+"] := "{u+2a7e}"      ; (⩾) greater-than or slanted equal to
+dkTilde.item["~"] := "{u+2248}"            ; (≈) almost equal to
+dkBracketLeft.item["]"] := "{u+2610}"      ; (☐) ballot box
+dkBracketLeft.item["v"] := "{u+2611}"      ; (☑) ballot box with check
+dkBracketLeft.item["x"] := "{u+2612}"      ; (☒) ballot box with x
+
+
+; Dead Key :  Quotation Marks
+
+dkBracketRight := ComObjCreate("Scripting.Dictionary")
+dkCedillaOgonek.item[chr(34)] := "{u+201e}"  ; („) double low-9 quotation mark
+dkDiaeresis.item[","] := "{u+201e}"          ; („) double low-9 quotation mark
+dkCedillaOgonek.item["'"] := "{u+201a}"      ; (‚) single low-9 quotation mark
+dkAcuteAccent.item[","] := "{u+201a}"        ; (‚) single low-9 quotation mark
+dkDiaeresis.item["["] := "{u+201c}"          ; (“) left double quotation mark
+dkBracketLeft.item[chr(34)] := "{u+201c}"    ; (“) left double quotation mark
+dkDiaeresis.item["]"] := "{u+201d}"          ; (”) right double quotation mark
+dkBracketRight.item[chr(34)] := "{u+201d}"   ; (”) right double quotation mark
+dkAcuteAccent.item["["] := "{u+2018}"        ; (‘) left single quotation mark
+dkBracketLeft.item["'"] := "{u+2018}"        ; (‘) left single quotation mark
+dkAcuteAccent.item["]"] := "{u+2019}"        ; (’) right single quotation mark
+dkBracketRight.item["'"] := "{u+2019}"       ; (’) right single quotation mark
+dkLessThan.item["<"] := "{u+00ab}"           ; («) left-pointing double angle quotation mark
+dkLessThan.item[chr(34)] := "{u+00ab}"       ; («) left-pointing double angle quotation mark
+dkDiaeresis.item["<"] := "{u+00ab}"          ; («) left-pointing double angle quotation mark
+dkGreaterThan.item[">"] := "{u+00bb}"        ; (») right-pointing double angle quotation mark
+dkGreaterThan.item[chr(34)] := "{u+00bb}"    ; (») right-pointing double angle quotation mark
+dkDiaeresis.item[">"] := "{u+00bb}"          ; (») right-pointing double angle quotation mark
+dkLessThan.item["'"] := "{u+2039}"           ; (‹) left-pointing single angle quotation mark
+dkAcuteAccent.item["<"] := "{u+2039}"        ; (‹) left-pointing single angle quotation mark
+dkGreaterThan.item["'"] := "{u+203a}"        ; (›) right-pointing single angle quotation mark
+dkAcuteAccent.item[">"] := "{u+203a}"        ; (›) right-pointing single angle quotation mark
 
 
 ; Configuration :  'Right Alt' and 'Right Alt + Shift' on US QWERTY
@@ -1349,6 +1492,8 @@ dkMathSymbols.item["|"] := "{u+2228}"  ; (∨) logical or
     Send % dkMacronStroke.item[keyB]
   else if (keyA == "_")
     Send % dkMacronStrokeAdd.item[keyB]
+  else if (keyA == "/")
+    Send % dkStroke.item[keyB]
   else if (keyA == ",")
     Send % dkCedillaOgonek.item[keyB]
   else if (keyA == "b")
@@ -1361,8 +1506,6 @@ dkMathSymbols.item["|"] := "{u+2228}"  ; (∨) logical or
     Send % dkDiaeresis.item[keyB]
   else if (keyA == "=")
     Send % dkDoubleAcute.item[keyB]
-  else if (keyA == "+")
-    Send % dkHorn.item[keyB]
   else if (keyA == "``")
     Send % dkGraveAccent.item[keyB]
   else if (keyA == "G")
@@ -1371,6 +1514,8 @@ dkMathSymbols.item["|"] := "{u+2228}"  ; (∨) logical or
     Send % dkTilde.item[keyB]
   else if (keyA == "h")
     Send % dkHook.item[keyB]
+  else if (keyA == "H")
+    Send % dkHorn.item[keyB]
   else if (keyA == "t")
     Send % dkTurned.item[keyB]
   else if (keyA == "$")
@@ -1407,6 +1552,54 @@ dkMathSymbols.item["|"] := "{u+2228}"  ; (∨) logical or
     Send % dkZero.item[keyB]
   else if (keyA == "m")
     Send % dkMathSymbols.item[keyB]
+  else if (keyA == "A")
+    Send % dkCapitalA.item[keyB]
+  else if (keyA == "d")
+    Send % dkSmallD.item[keyB]
+  else if (keyA == "D")
+    Send % dkCapitalD.item[keyB]
+  else if (keyA == "i")
+    Send % dkSmallI.item[keyB]
+  else if (keyA == "I")
+    Send % dkCapitalI.item[keyB]
+  else if (keyA == "O")
+    Send % dkCapitalO.item[keyB]
+  else if (keyA == "T")
+    Send % dkCapitalT.item[keyB]
+  else if (keyA == "n")
+    Send % dkSmallN.item[keyB]
+  else if (keyA == "N")
+    Send % dkCapitalN.item[keyB]
+  else if (keyA == "p")
+    Send % dkSmallIP.item[keyB]
+  else if (keyA == "P")
+    Send % dkCapitalP.item[keyB]
+  else if (keyA == "r")
+    Send % dkSmallR.item[keyB]
+  else if (keyA == ":")
+    Send % dkColon.item[keyB]
+  else if (keyA == "*")
+    Send % dkAsterisk.item[keyB]
+  else if (keyA == "!")
+    Send % dkExclam.item[keyB]
+  else if (keyA == "?")
+    Send % dkQuestion.item[keyB]
+  else if (keyA == "(")
+    Send % dkParenLeft.item[keyB]
+  else if (keyA == "+")
+    Send % dkPlus.item[keyB]
+  else if (keyA == "%")
+    Send % dkPercent.item[keyB]
+  else if (keyA == "8")
+    Send % dkEight.item[keyB]
+  else if (keyA == "<")
+    Send % dkLessThan.item[keyB]
+  else if (keyA == ">")
+    Send % dkGreaterThan.item[keyB]
+  else if (keyA == "[")
+    Send % dkBracketLeft.item[keyB]
+  else if (keyA == "]")
+    Send % dkBracketRight.item[keyB]
 
   keyA := ""  ; avoids leaking content via debug properties
   keyB := ""  ; avoids leaking content via debug properties
