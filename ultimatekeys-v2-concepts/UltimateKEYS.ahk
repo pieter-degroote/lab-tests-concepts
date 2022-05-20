@@ -217,6 +217,7 @@ dkMacronStrokeAdd.item[" "] := "{u+00af}"  ; (¯) macron
 
 ; Dead Key :  Stroke (/)
 
+dkStroke := ComObjCreate("Scripting.Dictionary")
 dkStroke.item["a"] := "{u+2c65}"  ; (ⱥ) a with stroke
 dkStroke.item["A"] := "{u+023a}"  ; (Ⱥ) A with stroke
 dkStroke.item["c"] := "{u+023c}"  ; (ȼ) c with stroke
@@ -228,8 +229,8 @@ dkStroke.item["g"] := "{u+a7a1}"  ; (ꞡ) g with oblique stroke
 dkStroke.item["G"] := "{u+a7a0}"  ; (Ꞡ) G with oblique stroke
 dkStroke.item["k"] := "{u+a7a3}"  ; (ꞣ) k with oblique stroke
 dkStroke.item["K"] := "{u+a7a2}"  ; (Ꞣ) K with oblique stroke
-dkStroke.item["n"] := "{u+a7a5}"  ; (ꞥ) n oblique with stroke
-dkStroke.item["N"] := "{u+a7a4}"  ; (Ꞥ) N oblique with stroke
+dkStroke.item["n"] := "{u+a7a5}"  ; (ꞥ) n with oblique stroke
+dkStroke.item["N"] := "{u+a7a4}"  ; (Ꞥ) N with oblique stroke
 dkStroke.item["o"] := "{u+00f8}"  ; (ø) o with stroke
 dkStroke.item["O"] := "{u+00d8}"  ; (Ø) O with stroke
 dkStroke.item["r"] := "{u+a7a7}"  ; (ꞧ) r with oblique stroke
@@ -882,7 +883,7 @@ dkMathSymbols.item["l"] := "{u+2225}"  ; (∥) parallel to
 dkMathSymbols.item["L"] := "{u+2226}"  ; (∦) not parallel to
 dkMathSymbols.item["m"] := "{u+2208}"  ; (∈) element of
 dkMathSymbols.item["M"] := "{u+2209}"  ; (∉) not an element of
-dkMathSymbols.item["n"] := "{u+207f}"  ; (ⁿ) superscript n
+dkMathSymbols.item["n"] := "{u+00ac}"  ; (¬) not sign
 dkMathSymbols.item["N"] := "{u+2115}"  ; (ℕ) natural numbers
 dkMathSymbols.item["o"] := "{u+2218}"  ; (∘) ring operator
 dkMathSymbols.item["O"] := "{u+2205}"  ; (∅) empty set
@@ -892,12 +893,10 @@ dkMathSymbols.item["Q"] := "{u+211a}"  ; (ℚ) rational numbers
 dkMathSymbols.item["R"] := "{u+211d}"  ; (ℝ) real numbers
 dkMathSymbols.item["s"] := "{u+2229}"  ; (∩) set intersection
 dkMathSymbols.item["S"] := "{u+222b}"  ; (∫) integral symbol
-dkMathSymbols.item["t"] := "{u+2300}"  ; (⌀) diameter sign
-dkMathSymbols.item["T"] := "{u+2300}"  ; (⌀) diameter sign
+dkMathSymbols.item["t"] := "{u+2261}"  ; (≡) identical to
+dkMathSymbols.item["T"] := "{u+2262}"  ; (≢) not identical to
 dkMathSymbols.item["u"] := "{u+222a}"  ; (∪) set union
 dkMathSymbols.item["U"] := "{u+2216}"  ; (∖) set minus
-dkMathSymbols.item["v"] := "{u+2261}"  ; (≡) identical to
-dkMathSymbols.item["V"] := "{u+2262}"  ; (≢) not identical to
 dkMathSymbols.item["w"] := "{u+2118}"  ; (℘) Weierstrass elliptic function
 dkMathSymbols.item["z"] := "{u+21af}"  ; (↯) downwards zigzag arrow
 dkMathSymbols.item["Z"] := "{u+2124}"  ; (ℤ) whole numbers
@@ -946,7 +945,6 @@ dkCapitalN := ComObjCreate("Scripting.Dictionary")
 dkSmallP := ComObjCreate("Scripting.Dictionary")
 dkCapitalP := ComObjCreate("Scripting.Dictionary")
 dkSmallR := ComObjCreate("Scripting.Dictionary")
-dkColon := ComObjCreate("Scripting.Dictionary")
 dkAsterisk := ComObjCreate("Scripting.Dictionary")
 dkExclam := ComObjCreate("Scripting.Dictionary")
 dkQuestion := ComObjCreate("Scripting.Dictionary")
@@ -975,12 +973,12 @@ dkSmallR.item["4"] := "{u+221c}"           ; (∜) fourth root
 dkSymbols.item["o"] := "{u+00a7}"          ; (§) section sign
 dkPlayingCardSuit.item["o"] := "{u+00a7}"  ; (§) section sign
 dkTurned.item["m"] := "{u+2122}"           ; (™) trademark symbol
-dkMacronStroke.item[":"] := "{u+00f7}"     ; (÷) division sign
-dkColon.item["-"] := "{u+00f7}"            ; (÷) division sign
 dkAcuteAccent.item["1"] := "{u+2032}"      ; (′) prime
 dkAcuteAccent.item["2"] := "{u+2033}"      ; (″) double prime
 dkAcuteAccent.item["3"] := "{u+2034}"      ; (‴) triple prime
 dkAcuteAccent.item["4"] := "{u+2057}"      ; (⁗) quadruple prime
+dkAsterisk.item["*"] := "{u+00d7}"         ; (×) multiplication sign
+dkStroke.item["/"] := "{u+00f7}"           ; (÷) division sign
 dkAsterisk.item["o"] := "{u+00b0}"         ; (°) degree sign
 dkRingAbove.item["*"] := "{u+00b0}"        ; (°) degree sign
 dkDotAbove.item["."] := "{u+00b7}"         ; (·) middle dot
@@ -1576,8 +1574,6 @@ dkAcuteAccent.item[">"] := "{u+203a}"        ; (›) right-pointing single angle
     Send % dkCapitalP.item[keyB]
   else if (keyA == "r")
     Send % dkSmallR.item[keyB]
-  else if (keyA == ":")
-    Send % dkColon.item[keyB]
   else if (keyA == "*")
     Send % dkAsterisk.item[keyB]
   else if (keyA == "!")

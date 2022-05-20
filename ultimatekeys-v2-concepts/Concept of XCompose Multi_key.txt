@@ -213,8 +213,8 @@
 <Multi_key> <slash> <G> : "Ꞡ"  UA7A0  # G with oblique stroke
 <Multi_key> <slash> <k> : "ꞣ"  UA7A3  # k with oblique stroke
 <Multi_key> <slash> <K> : "Ꞣ"  UA7A2  # K with oblique stroke
-<Multi_key> <slash> <n> : "ꞥ"  UA7A5  # n oblique with stroke
-<Multi_key> <slash> <N> : "Ꞥ"  UA7A4  # N oblique with stroke
+<Multi_key> <slash> <n> : "ꞥ"  UA7A5  # n with oblique stroke
+<Multi_key> <slash> <N> : "Ꞥ"  UA7A4  # N with oblique stroke
 <Multi_key> <slash> <o> : "ø"  U00F8  # o with stroke
 <Multi_key> <slash> <O> : "Ø"  U00D8  # O with stroke
 <Multi_key> <slash> <r> : "ꞧ"  UA7A7  # r with oblique stroke
@@ -775,13 +775,12 @@
 <Multi_key> <s> <o> : "§"  U00A7  # section sign
 <Multi_key> <S> <o> : "§"  U00A7  # section sign
 <Multi_key> <t> <m> : "™"  U2122  # trademark symbol
-<Multi_key> <x> <x> : "×"  U00D7  # multiplication sign
-<Multi_key> <colon> <minus>  : "÷"  U00F7  # division sign
-<Multi_key> <minus> <colon>  : "÷"  U00F7  # division sign
 <Multi_key> <apostrophe> <1> : "′"  U2032  # prime
 <Multi_key> <apostrophe> <2> : "″"  U2033  # double prime
 <Multi_key> <apostrophe> <3> : "‴"  U2034  # triple prime
 <Multi_key> <apostrophe> <4> : "⁗"  U2057  # quadruple prime
+<Multi_key> <asterisk> <asterisk> : "×"  U00D7  # multiplication sign
+<Multi_key> <slash> <slash>       : "÷"  U00F7  # division sign
 <Multi_key> <asterisk> <o>        : "°"  U00B0  # degree sign
 <Multi_key> <o> <asterisk>        : "°"  U00B0  # degree sign
 <Multi_key> <period> <period>     : "·"  U00B7  # middle dot
@@ -956,10 +955,10 @@
 <Multi_key> <m> <R> : "ℝ"  U211D  # real numbers
 <Multi_key> <m> <s> : "∩"  U2229  # set intersection
 <Multi_key> <m> <S> : "∫"  U222B  # integral symbol
+<Multi_key> <m> <t> : "≡"  U2261  # identical to
+<Multi_key> <m> <T> : "≢"  U2262  # not identical to
 <Multi_key> <m> <u> : "∪"  U222A  # set union
 <Multi_key> <m> <U> : "∖"  U2216  # set minus
-<Multi_key> <m> <v> : "≡"  U2261  # identical to
-<Multi_key> <m> <V> : "≢"  U2262  # not identical to
 <Multi_key> <m> <w> : "℘"  U2118  # Weierstrass elliptic function
 <Multi_key> <m> <z> : "↯"  U21AF  # downwards zigzag arrow
 <Multi_key> <m> <Z> : "ℤ"  U2124  # whole numbers
