@@ -1,4 +1,4 @@
-; UltimateKEYS.ahk - 2022-05-20
+; UltimateKEYS.ahk - 2022-05-22
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -543,8 +543,8 @@ dkHorn.item["U"] := "{u+01af}"  ; (Ư) U with horn
 dkHorn.item["g"] := "{u+ab36}"  ; (ꬶ) cross-tailed g
 dkHorn.item["h"] := "{u+0267}"  ; (ɧ) small letter heng with hook
 dkHorn.item["k"] := "{u+0138}"  ; (ĸ) small letter kra
-dkHorn.item["s"] := "{u+0283}"  ; (ʃ) small letter esh
-dkHorn.item["S"] := "{u+01a9}"  ; (Ʃ) capital letter esh
+dkHorn.item["s"] := "{u+017f}"  ; (ſ) small long s
+dkHorn.item["S"] := "{u+1e9b}"  ; (ẛ) small long s with dot above
 
 
 ; Dead Key :  Turned Letters (t)
@@ -711,6 +711,7 @@ dkSubscript.item[")"] := "{u+208e}"  ; (₎) subscript )
 ; Dead Key :  Spacing Characters and Dashes
 
 dkSpace := ComObjCreate("Scripting.Dictionary")
+dkQuad := ComObjCreate("Scripting.Dictionary")
 dkSpace.item["2"] := "{u+2002}"  ; en space
 dkSpace.item["3"] := "{u+2003}"  ; em space
 dkSpace.item["1"] := "{u+2004}"  ; three-per-em space
@@ -730,7 +731,6 @@ dkMacronStroke.item["5"] := "{u+2010}"  ; (‐) hyphen
 dkMacronStroke.item["9"] := "{u+2012}"  ; (‒) figure dash
 dkMacronStroke.item["0"] := "{u+00ad}"  ; (­) soft hyphen
 dkMacronStroke.item["-"] := "{u+2011}"  ; (‑) non-breaking hyphen
-dkQuad := ComObjCreate("Scripting.Dictionary")
 dkQuad.item["2"] := "{u+2000}"  ; en quad
 dkQuad.item["3"] := "{u+2001}"  ; em quad
 
@@ -1569,7 +1569,7 @@ dkAcuteAccent.item[">"] := "{u+203a}"        ; (›) right-pointing single angle
   else if (keyA == "N")
     Send % dkCapitalN.item[keyB]
   else if (keyA == "p")
-    Send % dkSmallIP.item[keyB]
+    Send % dkSmallP.item[keyB]
   else if (keyA == "P")
     Send % dkCapitalP.item[keyB]
   else if (keyA == "r")
