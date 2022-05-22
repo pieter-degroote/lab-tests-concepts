@@ -1,4 +1,4 @@
-; UltimateKEYS.ahk - 2022-05-20
+; UltimateKEYS.ahk - 2022-05-22
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -87,8 +87,6 @@ dkCaron.item["t"] := "{u+0165}"  ; (ť) t with caron
 dkCaron.item["T"] := "{u+0164}"  ; (Ť) T with caron
 dkCaron.item["u"] := "{u+01d4}"  ; (ǔ) u with caron
 dkCaron.item["U"] := "{u+01d3}"  ; (Ǔ) U with caron
-dkCaron.item["v"] := "{u+01da}"  ; (ǚ) u with diaeresis and caron
-dkCaron.item["V"] := "{u+01d9}"  ; (Ǚ) U with diaeresis and caron
 dkCaron.item["z"] := "{u+017e}"  ; (ž) z with caron
 dkCaron.item["Z"] := "{u+017d}"  ; (Ž) Z with caron
 dkCaron.item["3"] := "{u+01ef}"  ; (ǯ) small letter ezh with caron
@@ -186,8 +184,6 @@ dkMacronStroke.item["t"] := "{u+0167}"  ; (ŧ) t with stroke
 dkMacronStroke.item["T"] := "{u+0166}"  ; (Ŧ) T with stroke
 dkMacronStroke.item["u"] := "{u+016b}"  ; (ū) u with macron
 dkMacronStroke.item["U"] := "{u+016a}"  ; (Ū) U with macron
-dkMacronStroke.item["v"] := "{u+01d6}"  ; (ǖ) u with diaeresis and macron
-dkMacronStroke.item["V"] := "{u+01d5}"  ; (Ǖ) U with diaeresis and macron
 dkMacronStroke.item["y"] := "{u+0233}"  ; (ȳ) y with macron
 dkMacronStroke.item["Y"] := "{u+0232}"  ; (Ȳ) Y with macron
 dkMacronStroke.item["z"] := "{u+01b6}"  ; (ƶ) z with stroke
@@ -362,8 +358,6 @@ dkAcuteAccent.item["s"] := "{u+015b}"  ; (ś) s with acute
 dkAcuteAccent.item["S"] := "{u+015a}"  ; (Ś) S with acute
 dkAcuteAccent.item["u"] := "{u+00fa}"  ; (ú) u with acute
 dkAcuteAccent.item["U"] := "{u+00da}"  ; (Ú) U with acute
-dkAcuteAccent.item["v"] := "{u+01d8}"  ; (ǘ) u with diaeresis and acute
-dkAcuteAccent.item["V"] := "{u+01d7}"  ; (Ǘ) U with diaeresis and acute
 dkAcuteAccent.item["w"] := "{u+1e83}"  ; (ẃ) w with acute
 dkAcuteAccent.item["W"] := "{u+1e82}"  ; (Ẃ) W with acute
 dkAcuteAccent.item["y"] := "{u+00fd}"  ; (ý) y with acute
@@ -432,8 +426,6 @@ dkGraveAccent.item["o"] := "{u+00f2}"  ; (ò) o with grave
 dkGraveAccent.item["O"] := "{u+00d2}"  ; (Ò) O with grave
 dkGraveAccent.item["u"] := "{u+00f9}"  ; (ù) u with grave
 dkGraveAccent.item["U"] := "{u+00d9}"  ; (Ù) U with grave
-dkGraveAccent.item["v"] := "{u+01dc}"  ; (ǜ) u with diaeresis and grave
-dkGraveAccent.item["V"] := "{u+01db}"  ; (Ǜ) U with diaeresis and grave
 dkGraveAccent.item["w"] := "{u+1e81}"  ; (ẁ) w with grave
 dkGraveAccent.item["W"] := "{u+1e80}"  ; (Ẁ) W with grave
 dkGraveAccent.item["y"] := "{u+1ef3}"  ; (ỳ) y with grave
@@ -543,8 +535,8 @@ dkHorn.item["U"] := "{u+01af}"  ; (Ư) U with horn
 dkHorn.item["g"] := "{u+ab36}"  ; (ꬶ) cross-tailed g
 dkHorn.item["h"] := "{u+0267}"  ; (ɧ) small letter heng with hook
 dkHorn.item["k"] := "{u+0138}"  ; (ĸ) small letter kra
-dkHorn.item["s"] := "{u+0283}"  ; (ʃ) small letter esh
-dkHorn.item["S"] := "{u+01a9}"  ; (Ʃ) capital letter esh
+dkHorn.item["s"] := "{u+017f}"  ; (ſ) small long s
+dkHorn.item["S"] := "{u+1e9b}"  ; (ẛ) small long s with dot above
 
 
 ; Dead Key :  Turned Letters (t)
@@ -1037,6 +1029,29 @@ dkLessThan.item["'"] := "{u+2039}"           ; (‹) left-pointing single angle 
 dkAcuteAccent.item["<"] := "{u+2039}"        ; (‹) left-pointing single angle quotation mark
 dkGreaterThan.item["'"] := "{u+203a}"        ; (›) right-pointing single angle quotation mark
 dkAcuteAccent.item[">"] := "{u+203a}"        ; (›) right-pointing single angle quotation mark
+
+
+; Dead Key :  Letters with Two Accents
+
+dkCapitalU := ComObjCreate("Scripting.Dictionary")
+dkArrow.item[chr(34)] := "{u+01df}"      ; (ǟ) a with diaeresis and macron
+dkCapitalA.item[chr(34)] := "{u+01de}"   ; (Ǟ) A with diaeresis and macron
+dkArrow.item["."] := "{u+01e1}"          ; (ǡ) a with dot above and macron
+dkCapitalA.item["."] := "{u+01e0}"       ; (Ǡ) A with dot above and macron
+dkRingAbove.item[chr(34)] := "{u+022b}"  ; (ȫ) o with diaeresis and macron
+dkCapitalO.item[chr(34)] := "{u+022a}"   ; (Ȫ) O with diaeresis and macron
+dkRingAbove.item["~"] := "{u+022d}"      ; (ȭ) o with tilde and macron
+dkCapitalO.item["~"] := "{u+022c}"       ; (Ȭ) O with tilde and macron
+dkRingAbove.item["."] := "{u+0231}"      ; (ȱ) o with dot above and macron
+dkCapitalO.item["."] := "{u+0230}"       ; (Ȱ) O with dot above and macron
+dkSubscript.item["-"] := "{u+01d6}"      ; (ǖ) u with diaeresis and macron
+dkCapitalU.item["-"] := "{u+01d5}"       ; (Ǖ) U with diaeresis and macron
+dkSubscript.item["'"] := "{u+01d8}"      ; (ǘ) u with diaeresis and acute
+dkCapitalU.item["'"] := "{u+01d7}"       ; (Ǘ) U with diaeresis and acute
+dkSubscript.item["v"] := "{u+01da}"      ; (ǚ) u with diaeresis and caron
+dkCapitalU.item["v"] := "{u+01d9}"       ; (Ǚ) U with diaeresis and caron
+dkSubscript.item["``"] := "{u+01dc}"     ; (ǜ) u with diaeresis and grave
+dkCapitalU.item["``"] := "{u+01db}"      ; (Ǜ) U with diaeresis and grave
 
 
 ; Configuration :  'Right Alt' and 'Right Alt + Shift' on US QWERTY
@@ -1596,6 +1611,8 @@ dkAcuteAccent.item[">"] := "{u+203a}"        ; (›) right-pointing single angle
     Send % dkBracketLeft.item[keyB]
   else if (keyA == "]")
     Send % dkBracketRight.item[keyB]
+  else if (keyA == "U")
+    Send % dkCapitalU.item[keyB]
 
   keyA := ""  ; avoids leaking content via debug properties
   keyB := ""  ; avoids leaking content via debug properties

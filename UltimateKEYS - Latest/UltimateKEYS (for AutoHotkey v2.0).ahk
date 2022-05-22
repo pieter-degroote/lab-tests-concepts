@@ -1,4 +1,4 @@
-; UltimateKEYS (for AutoHotkey v2.0).ahk - 2022-05-20
+; UltimateKEYS (for AutoHotkey v2.0).ahk - 2022-05-22
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -545,8 +545,8 @@ dkHorn["U"] := "{u+01af}"  ; (Ư) U with horn
 dkHorn["g"] := "{u+ab36}"  ; (ꬶ) cross-tailed g
 dkHorn["h"] := "{u+0267}"  ; (ɧ) small letter heng with hook
 dkHorn["k"] := "{u+0138}"  ; (ĸ) small letter kra
-dkHorn["s"] := "{u+0283}"  ; (ʃ) small letter esh
-dkHorn["S"] := "{u+01a9}"  ; (Ʃ) capital letter esh
+dkHorn["s"] := "{u+017f}"  ; (ſ) small long s
+dkHorn["S"] := "{u+1e9b}"  ; (ẛ) small long s with dot above
 
 
 ; Dead Key :  Turned Letters (t)
@@ -1039,6 +1039,29 @@ dkLessThan["'"] := "{u+2039}"           ; (‹) left-pointing single angle quota
 dkAcuteAccent["<"] := "{u+2039}"        ; (‹) left-pointing single angle quotation mark
 dkGreaterThan["'"] := "{u+203a}"        ; (›) right-pointing single angle quotation mark
 dkAcuteAccent[">"] := "{u+203a}"        ; (›) right-pointing single angle quotation mark
+
+
+; Dead Key :  Letters with Two Accents
+
+global dkCapitalU := Map()
+dkArrow[chr(34)] := "{u+01df}"      ; (ǟ) a with diaeresis and macron
+dkCapitalA[chr(34)] := "{u+01de}"   ; (Ǟ) A with diaeresis and macron
+dkArrow["."] := "{u+01e1}"          ; (ǡ) a with dot above and macron
+dkCapitalA["."] := "{u+01e0}"       ; (Ǡ) A with dot above and macron
+dkRingAbove[chr(34)] := "{u+022b}"  ; (ȫ) o with diaeresis and macron
+dkCapitalO[chr(34)] := "{u+022a}"   ; (Ȫ) O with diaeresis and macron
+dkRingAbove["~"] := "{u+022d}"      ; (ȭ) o with tilde and macron
+dkCapitalO["~"] := "{u+022c}"       ; (Ȭ) O with tilde and macron
+dkRingAbove["."] := "{u+0231}"      ; (ȱ) o with dot above and macron
+dkCapitalO["."] := "{u+0230}"       ; (Ȱ) O with dot above and macron
+dkSubscript["-"] := "{u+01d6}"      ; (ǖ) u with diaeresis and macron
+dkCapitalU["-"] := "{u+01d5}"       ; (Ǖ) U with diaeresis and macron
+dkSubscript["'"] := "{u+01d8}"      ; (ǘ) u with diaeresis and acute
+dkCapitalU["'"] := "{u+01d7}"       ; (Ǘ) U with diaeresis and acute
+dkSubscript["v"] := "{u+01da}"      ; (ǚ) u with diaeresis and caron
+dkCapitalU["v"] := "{u+01d9}"       ; (Ǚ) U with diaeresis and caron
+dkSubscript["``"] := "{u+01dc}"     ; (ǜ) u with diaeresis and grave
+dkCapitalU["``"] := "{u+01db}"      ; (Ǜ) U with diaeresis and grave
 
 
 ; Configuration :  'Right Alt' and 'Right Alt + Shift' on US QWERTY
@@ -1720,5 +1743,9 @@ dkAcuteAccent[">"] := "{u+203a}"        ; (›) right-pointing single angle quot
   else if (ihA.Input == "]") {
     if dkBracketRight.Has(ihB.Input)
       Send dkBracketRight[ihB.Input]
+  }
+  else if (ihA.Input == "U") {
+    if dkCapitalU.Has(ihB.Input)
+      Send dkCapitalU[ihB.Input]
   }
 }

@@ -1,4 +1,4 @@
-# UltimateKEYS  (~/.XCompose) - 2022-05-20
+# UltimateKEYS  (~/.XCompose) - 2022-05-22
 
 # Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -74,8 +74,6 @@
 <Multi_key> <v> <T> : "Ť"  U0164  # T with caron
 <Multi_key> <v> <u> : "ǔ"  U01D4  # u with caron
 <Multi_key> <v> <U> : "Ǔ"  U01D3  # U with caron
-<Multi_key> <v> <v> : "ǚ"  U01DA  # u with diaeresis and caron
-<Multi_key> <v> <V> : "Ǚ"  U01D9  # U with diaeresis and caron
 <Multi_key> <v> <z> : "ž"  U017E  # z with caron
 <Multi_key> <v> <Z> : "Ž"  U017D  # Z with caron
 <Multi_key> <v> <3>           : "ǯ"  U01EF  # small letter ezh with caron
@@ -172,8 +170,6 @@
 <Multi_key> <minus> <T> : "Ŧ"  U0166  # T with stroke
 <Multi_key> <minus> <u> : "ū"  U016B  # u with macron
 <Multi_key> <minus> <U> : "Ū"  U016A  # U with macron
-<Multi_key> <minus> <v> : "ǖ"  U01D6  # u with diaeresis and macron
-<Multi_key> <minus> <V> : "Ǖ"  U01D5  # U with diaeresis and macron
 <Multi_key> <minus> <y> : "ȳ"  U0233  # y with macron
 <Multi_key> <minus> <Y> : "Ȳ"  U0232  # Y with macron
 <Multi_key> <minus> <z> : "ƶ"  U01B6  # z with stroke
@@ -342,8 +338,6 @@
 <Multi_key> <apostrophe> <S> : "Ś"  U015A  # S with acute
 <Multi_key> <apostrophe> <u> : "ú"  U00FA  # u with acute
 <Multi_key> <apostrophe> <U> : "Ú"  U00DA  # U with acute
-<Multi_key> <apostrophe> <v> : "ǘ"  U01D8  # u with diaeresis and acute
-<Multi_key> <apostrophe> <V> : "Ǘ"  U01D7  # U with diaeresis and acute
 <Multi_key> <apostrophe> <w> : "ẃ"  U1E83  # w with acute
 <Multi_key> <apostrophe> <W> : "Ẃ"  U1E82  # W with acute
 <Multi_key> <apostrophe> <y> : "ý"  U00FD  # y with acute
@@ -410,8 +404,6 @@
 <Multi_key> <grave> <O> : "Ò"  U00D2  # O with grave
 <Multi_key> <grave> <u> : "ù"  U00F9  # u with grave
 <Multi_key> <grave> <U> : "Ù"  U00D9  # U with grave
-<Multi_key> <grave> <v> : "ǜ"  U01DC  # u with diaeresis and grave
-<Multi_key> <grave> <V> : "Ǜ"  U01DB  # U with diaeresis and grave
 <Multi_key> <grave> <w> : "ẁ"  U1E81  # w with grave
 <Multi_key> <grave> <W> : "Ẁ"  U1E80  # W with grave
 <Multi_key> <grave> <y> : "ỳ"  U1EF3  # y with grave
@@ -455,10 +447,6 @@
 <Multi_key> <asciitilde> <V> : "Ṽ"  U1E7C  # V with tilde
 <Multi_key> <asciitilde> <y> : "ỹ"  U1EF9  # y with tilde
 <Multi_key> <asciitilde> <Y> : "Ỹ"  U1EF8  # Y with tilde
-<Multi_key> <asciitilde> <g> : "ꬶ"  UAB36  # cross-tailed g
-<Multi_key> <asciitilde> <h> : "ɧ"  U0267  # small letter heng with hook
-<Multi_key> <asciitilde> <k> : "ĸ"  U0138  # small letter kra
-<Multi_key> <asciitilde> <s> : "ſ"  U017F  # small long s
 <Multi_key> <asciitilde> <space>  : "˜"  U02DC  # small tilde
 
 
@@ -524,6 +512,7 @@
 <Multi_key> <H> <h> : "ɧ"  U0267  # small letter heng with hook
 <Multi_key> <H> <k> : "ĸ"  U0138  # small letter kra
 <Multi_key> <H> <s> : "ſ"  U017F  # small long s
+<Multi_key> <H> <S> : "ẛ"  U1E9B  # small long s with dot above
 
 
 # Turned Letters
@@ -536,6 +525,28 @@
 <Multi_key> <t> <Q> : "Ɒ"  U2C70  # latin capital letter turned alpha
 <Multi_key> <t> <v> : "ʌ"  U028C  # latin small letter turned v
 <Multi_key> <t> <V> : "Ʌ"  U0245  # latin capital letter turned V
+
+
+# Letters with Two Accents
+
+<Multi_key> <a> <diaeresis>  : "ǟ"  U01DF  # a with diaeresis and macron
+<Multi_key> <A> <diaeresis>  : "Ǟ"  U01DE  # A with diaeresis and macron
+<Multi_key> <a> <period>     : "ǡ"  U01E1  # a with dot above and macron
+<Multi_key> <A> <period>     : "Ǡ"  U01E0  # A with dot above and macron
+<Multi_key> <o> <diaeresis>  : "ȫ"  U022B  # o with diaeresis and macron
+<Multi_key> <O> <diaeresis>  : "Ȫ"  U022A  # O with diaeresis and macron
+<Multi_key> <o> <tilde>      : "ȭ"  U022D  # o with tilde and macron
+<Multi_key> <O> <tilde>      : "Ȭ"  U022C  # O with tilde and macron
+<Multi_key> <o> <period>     : "ȱ"  U0231  # o with dot above and macron
+<Multi_key> <O> <period>     : "Ȱ"  U0230  # O with dot above and macron
+<Multi_key> <u> <minus>      : "ǖ"  U01D6  # u with diaeresis and macron
+<Multi_key> <U> <minus>      : "Ǖ"  U01D5  # U with diaeresis and macron
+<Multi_key> <u> <apostrophe> : "ǘ"  U01D8  # u with diaeresis and acute
+<Multi_key> <U> <apostrophe> : "Ǘ"  U01D7  # U with diaeresis and acute
+<Multi_key> <u> <v>          : "ǚ"  U01DA  # u with diaeresis and caron
+<Multi_key> <U> <v>          : "Ǚ"  U01D9  # U with diaeresis and caron
+<Multi_key> <u> <grave>      : "ǜ"  U01DC  # u with diaeresis and grave
+<Multi_key> <U> <grave>      : "Ǜ"  U01DB  # U with diaeresis and grave
 
 
 # Currency Symbols
