@@ -1443,8 +1443,8 @@ dkCapitalU["``"] := "{u+01db}"      ; (Ǜ) U with diaeresis and grave
     Send "{u+00d5}"  ; (Õ) O with tilde
 }
 
->!m::Send "{u+00b1}"   ; (±) plus-minus sign
->!+m::Send "{u+2030}"  ; (‰) per mille sign
+>!m::Send "{u+00b5}"   ; (µ) micro sign
+>!+m::Send "{u+00b1}"  ; (±) plus-minus sign
 
 >!1::Send "{u+00a1}"   ; (¡) inverted exclamation mark
 >!+1::Send "{u+00b9}"  ; (¹) superscript 1
@@ -1468,7 +1468,7 @@ dkCapitalU["``"] := "{u+01db}"      ; (Ǜ) U with diaeresis and grave
 >!+7::Send "{u+2248}"  ; (≈) almost equal to
 
 >!8::Send "{u+201e}"   ; („) double low-9 quotation mark
->!+8::Send "{u+201a}"  ; (‚) single low-9 quotation mark
+>!+8::Send "{u+2030}"  ; (‰) per mille sign
 
 >!9::Send "{u+201c}"   ; (“) left double quotation mark
 >!+9::Send "{u+2018}"  ; (‘) left single quotation mark
