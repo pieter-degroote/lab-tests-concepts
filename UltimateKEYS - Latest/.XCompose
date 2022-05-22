@@ -535,8 +535,8 @@
 <Multi_key> <A> <period>     : "Ǡ"  U01E0  # A with dot above and macron
 <Multi_key> <o> <diaeresis>  : "ȫ"  U022B  # o with diaeresis and macron
 <Multi_key> <O> <diaeresis>  : "Ȫ"  U022A  # O with diaeresis and macron
-<Multi_key> <o> <tilde>      : "ȭ"  U022D  # o with tilde and macron
-<Multi_key> <O> <tilde>      : "Ȭ"  U022C  # O with tilde and macron
+<Multi_key> <o> <asciitilde> : "ȭ"  U022D  # o with tilde and macron
+<Multi_key> <O> <asciitilde> : "Ȭ"  U022C  # O with tilde and macron
 <Multi_key> <o> <period>     : "ȱ"  U0231  # o with dot above and macron
 <Multi_key> <O> <period>     : "Ȱ"  U0230  # O with dot above and macron
 <Multi_key> <u> <minus>      : "ǖ"  U01D6  # u with diaeresis and macron
