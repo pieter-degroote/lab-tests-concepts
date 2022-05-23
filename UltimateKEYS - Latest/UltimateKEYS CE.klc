@@ -32,7 +32,7 @@ LAYOUT
 06	5		0	5	0025	-1	20ac	00a2		// 5, %, €, ¢    digit 5, percent sign, euro sign, cent sign (dollar)
 07	6		0	6	005e	-1	2264	2260		// 6, ^, ≤, ≠    digit 6, circumflex accent, less-than or equal to, not equal to
 08	7		0	7	0026	-1	2265	2248		// 7, &, ≥, ≈    digit 7, ampersand, greater-than or equal to, almost equal to
-09	8		0	8	002a	-1	201e	2030		// 8, *, „, ‰    digit 8, asterisk, double low-9 quotation mark, per mille sign
+09	8		0	8	002a	-1	201e	201a		// 8, *, „, ‚    digit 8, asterisk, double low-9 quotation mark, single low-9 quotation mark
 0a	9		0	9	0028	-1	201c	2018		// 9, (, “, ‘    digit 9, left parenthesis, left double quotation mark, left single quotation mark
 0b	0		0	0	0029	-1	201d	2019		// 0, ), ”, ’    digit 0, right parenthesis, right double quotation mark, right single quotation mark
 0c	OEM_MINUS	4	002d	005f	-1	00e3	00c3		// -, _, ã, Ã    hyphen-minus, underscore, a with tilde, A with tilde
@@ -61,7 +61,7 @@ LAYOUT
 27	OEM_1		0	003b	003a	-1	00b0	00b7		// ;, :, °, ·    semicolon, colon, degree sign, middle dot
 28	OEM_7		0	0027	0022	-1	00d7	00f7		// ', ", ×, ÷    apostrophe, quotation mark, multiplication sign, division sign
 29	OEM_3		0	0060	007e	-1	2020	2021		// `, ~, †, ‡    grave accent, tilde, dagger, double dagger
-2b	OEM_5		0	005c	007c	001c	00a7	00b6		// \, |, §, ¶    reverse solidus (backslash), vertical line, section sign, pilcrow sign    information separator four (001c)
+2b	OEM_5		0	005c	007c	001c	00a7	2030		// \, |, §, ‰    reverse solidus (backslash), vertical line, section sign, per mille sign    information separator four (001c)
 2c	Z		5	z	Z	-1	00e0	00c0		// z, Z, à, À    letter z, letter Z, a with grave, A with grave
 2d	X		5	x	X	-1	00e1	00c1		// x, X, á, Á    letter x, letter X, a with acute, A with acute
 2e	C		5	c	C	-1	00e7	00c7		// c, C, ç, Ç    letter c, letter C, c with cedilla, C with cedilla

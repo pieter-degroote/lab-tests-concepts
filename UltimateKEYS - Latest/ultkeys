@@ -52,12 +52,12 @@ xkb_symbols "basic" {
     key <AE05> { [ 5,            percent,      EuroSign,             cent                 ] };
     key <AE06> { [ 6,            asciicircum,  U2264,                U2260                ] };
     key <AE07> { [ 7,            ampersand,    U2265,                U2248                ] };
-    key <AE08> { [ 8,            asterisk,     doublelowquotemark,   U2030                ] };
+    key <AE08> { [ 8,            asterisk,     doublelowquotemark,   singlelowquotemark   ] };
     key <AE09> { [ 9,            parenleft,    leftdoublequotemark,  leftsinglequotemark  ] };
     key <AE10> { [ 0,            parenright,   rightdoublequotemark, rightsinglequotemark ] };
     key <AE11> { [ minus,        underscore,   atilde,               Atilde               ] };
     key <AE12> { [ equal,        plus,         otilde,               Otilde               ] };
-    key <BKSL> { [ backslash,    bar,          section,              paragraph            ] };
+    key <BKSL> { [ backslash,    bar,          section,              U2030                ] };
     key <LSGT> { [ backslash,    bar,          backslash,            bar                  ] };
     key <SPCE> { [ space,        space,        nobreakspace,         nobreakspace         ] };
     key <TLDE> { [ grave,        asciitilde,   Multi_key,            Multi_key            ] };

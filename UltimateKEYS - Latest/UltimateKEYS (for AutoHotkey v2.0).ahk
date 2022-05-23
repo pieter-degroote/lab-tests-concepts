@@ -1,4 +1,4 @@
-; UltimateKEYS (for AutoHotkey v2.0).ahk - 2022-05-22
+; UltimateKEYS (for AutoHotkey v2.0).ahk - 2022-05-23
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -1468,7 +1468,7 @@ dkCapitalU["``"] := "{u+01db}"      ; (Ǜ) U with diaeresis and grave
 >!+7::Send "{u+2248}"  ; (≈) almost equal to
 
 >!8::Send "{u+201e}"   ; („) double low-9 quotation mark
->!+8::Send "{u+2030}"  ; (‰) per mille sign
+>!+8::Send "{u+201a}"  ; (‚) single low-9 quotation mark
 
 >!9::Send "{u+201c}"   ; (“) left double quotation mark
 >!+9::Send "{u+2018}"  ; (‘) left single quotation mark
@@ -1489,7 +1489,7 @@ dkCapitalU["``"] := "{u+01db}"      ; (Ǜ) U with diaeresis and grave
 >!+'::Send "{u+00f7}"  ; (÷) division sign
 
 >!\::Send "{u+00a7}"   ; (§) section sign
->!|::Send "{u+00b6}"   ; (¶) pilcrow sign
+>!|::Send "{u+2030}"   ; (‰) per mille sign
 
 >!/::Send "{u+00bf}"   ; (¿) inverted question mark
 >!?::Send "{u+2026}"   ; (…) horizontal ellipsis
