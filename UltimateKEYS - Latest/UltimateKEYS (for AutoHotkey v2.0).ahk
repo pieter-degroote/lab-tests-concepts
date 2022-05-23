@@ -1498,6 +1498,8 @@ cmpCapitalU["``"] := "{u+01db}"      ; (Ǜ) U with diaeresis and grave
 >!+space::Send "{u+00a0}"  ; non-breaking space
 
 
+; Compose Key Selector
+
 >!`::
 >!~:: {
   ihA := InputHook("L1", dkEndKeys)
