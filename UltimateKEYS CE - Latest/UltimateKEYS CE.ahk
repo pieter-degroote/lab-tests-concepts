@@ -449,7 +449,7 @@ SendMode Input  ; optimizes for faster and more reliable input
 >!"::Send {u+2021}   ; (‡) double dagger
 
 >!\::Send {u+00d7}   ; (×) multiplication sign
->!|::Send {u+00f7}   ; (÷) division sig
+>!|::Send {u+00f7}   ; (÷) division sign
 
 >!/::Send {u+00bf}   ; (¿) inverted question mark
 >!?::Send {u+2026}   ; (…) horizontal ellipsis

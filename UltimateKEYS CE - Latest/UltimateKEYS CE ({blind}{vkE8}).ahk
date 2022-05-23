@@ -527,7 +527,7 @@ SendMode Input  ; optimizes for faster and more reliable input
 
 >!\::Send {u+00d7}  ; (×) multiplication sign
 >!|::
-  Send {u+00f7}     ; (÷) division sig
+  Send {u+00f7}     ; (÷) division sign
   Send {blind}{vkE8}
   return
 
