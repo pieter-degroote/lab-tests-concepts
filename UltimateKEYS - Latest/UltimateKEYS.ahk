@@ -1,4 +1,4 @@
-; UltimateKEYS.ahk - 2022-05-28
+; UltimateKEYS.ahk - 2022-05-29
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -985,6 +985,7 @@ cmpPlus.item["-"] := "{u+00b1}"             ; (±) plus-minus sign
 cmpPercent.item["%"] := "{u+2030}"          ; (‰) per mille sign
 cmpPercent.item["3"] := "{u+2030}"          ; (‰) per mille sign
 cmpPercent.item["4"] := "{u+2031}"          ; (‱) per ten thousand sign
+cmpSmallI.item["i"] := "{u+221e}"           ; (∞) infinity symbol
 cmpEight.item["8"] := "{u+221e}"            ; (∞) infinity symbol
 cmpExclam.item["="] := "{u+2260}"           ; (≠) not equal to
 cmpDoubleAcute.item["/"] := "{u+2260}"      ; (≠) not equal to

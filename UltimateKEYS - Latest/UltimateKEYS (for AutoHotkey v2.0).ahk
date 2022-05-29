@@ -1,4 +1,4 @@
-; UltimateKEYS (for AutoHotkey v2.0).ahk - 2022-05-28
+; UltimateKEYS (for AutoHotkey v2.0).ahk - 2022-05-29
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -987,6 +987,7 @@ cmpPlus["-"] := "{u+00b1}"             ; (±) plus-minus sign
 cmpPercent["%"] := "{u+2030}"          ; (‰) per mille sign
 cmpPercent["3"] := "{u+2030}"          ; (‰) per mille sign
 cmpPercent["4"] := "{u+2031}"          ; (‱) per ten thousand sign
+cmpSmallI["i"] := "{u+221e}"           ; (∞) infinity symbol
 cmpEight["8"] := "{u+221e}"            ; (∞) infinity symbol
 cmpExclam["="] := "{u+2260}"           ; (≠) not equal to
 cmpDoubleAcute["/"] := "{u+2260}"      ; (≠) not equal to
