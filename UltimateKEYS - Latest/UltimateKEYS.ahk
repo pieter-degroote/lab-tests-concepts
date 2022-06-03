@@ -1,4 +1,4 @@
-; UltimateKEYS.ahk - 2022-06-02
+; UltimateKEYS.ahk - 2022-06-04
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -403,6 +403,15 @@ cmpDoubleAcute.item["U"] := "{u+0170}"  ; (Ű) U with double acute
 cmpDoubleAcute.item[" "] := "{u+02dd}"  ; (˝) double acute accent
 
 
+; Compose :  Horn (+)
+
+cmpHorn := ComObjCreate("Scripting.Dictionary")
+cmpHorn.item["o"] := "{u+01a1}"  ; (ơ) o with horn
+cmpHorn.item["O"] := "{u+01a0}"  ; (Ơ) O with horn
+cmpHorn.item["u"] := "{u+01b0}"  ; (ư) u with horn
+cmpHorn.item["U"] := "{u+01af}"  ; (Ư) U with horn
+
+
 ; Compose :  Grave Accent (`)
 
 cmpGraveAccent := ComObjCreate("Scripting.Dictionary")
@@ -466,7 +475,7 @@ cmpTilde.item["Y"] := "{u+1ef8}"  ; (Ỹ) Y with tilde
 cmpTilde.item[" "] := "{u+02dc}"  ; (˜) small tilde
 
 
-; Compose :  Hook and Latin Greek Letters (h)
+; Compose :  Hook (h)
 
 cmpHook := ComObjCreate("Scripting.Dictionary")
 cmpHook.item["b"] := "{u+0253}"  ; (ɓ) b with hook
@@ -481,6 +490,7 @@ cmpHook.item["g"] := "{u+0260}"  ; (ɠ) g with hook
 cmpHook.item["G"] := "{u+0193}"  ; (Ɠ) G with hook
 cmpHook.item["h"] := "{u+0266}"  ; (ɦ) h with hook
 cmpHook.item["H"] := "{u+a7aa}"  ; (Ɦ) H with hook
+cmpHook.item["j"] := "{u+0267}"  ; (ɧ) small letter heng with hook
 cmpHook.item["k"] := "{u+0199}"  ; (ƙ) k with hook
 cmpHook.item["K"] := "{u+0198}"  ; (Ƙ) K with hook
 cmpHook.item["m"] := "{u+0271}"  ; (ɱ) m with hook
@@ -503,36 +513,31 @@ cmpHook.item["y"] := "{u+01b4}"  ; (ƴ) y with hook
 cmpHook.item["Y"] := "{u+01b3}"  ; (Ƴ) Y with hook
 cmpHook.item["z"] := "{u+0225}"  ; (ȥ) z with hook
 cmpHook.item["Z"] := "{u+0224}"  ; (Ȥ) Z with hook
-cmpHook.item["a"] := "{u+0251}"  ; (ɑ) latin small letter alpha
-cmpHook.item["A"] := "{u+2c6d}"  ; (Ɑ) latin capital letter alpha
-cmpHook.item["e"] := "{u+025b}"  ; (ɛ) small open e (latin small epsilon)
-cmpHook.item["E"] := "{u+0190}"  ; (Ɛ) capital open E (latin capital epsilon)
-cmpHook.item["i"] := "{u+0269}"  ; (ɩ) latin small letter iota
-cmpHook.item["I"] := "{u+0196}"  ; (Ɩ) latin capital letter iota
-cmpHook.item["j"] := "{u+0263}"  ; (ɣ) latin small gamma
-cmpHook.item["J"] := "{u+0194}"  ; (Ɣ) latin capital gamma
-cmpHook.item["o"] := "{u+0254}"  ; (ɔ) small open o
-cmpHook.item["O"] := "{u+0186}"  ; (Ɔ) capital open O
-cmpHook.item["s"] := "{u+0283}"  ; (ʃ) small letter esh
-cmpHook.item["S"] := "{u+01a9}"  ; (Ʃ) capital letter esh
-cmpHook.item["u"] := "{u+028a}"  ; (ʊ) latin small letter upsilon
-cmpHook.item["U"] := "{u+01b1}"  ; (Ʊ) latin capital letter upsilon
 
 
-; Compose :  Horn and Other Letters (H)
+; Compose :  Latin Greek Letters (l)
 
-cmpHorn := ComObjCreate("Scripting.Dictionary")
-cmpHorn.item["o"] := "{u+01a1}"  ; (ơ) o with horn
-cmpHorn.item["O"] := "{u+01a0}"  ; (Ơ) O with horn
-cmpHorn.item["u"] := "{u+01b0}"  ; (ư) u with horn
-cmpHorn.item["U"] := "{u+01af}"  ; (Ư) U with horn
-cmpHorn.item["g"] := "{u+ab36}"  ; (ꬶ) cross-tailed g
-cmpHorn.item["h"] := "{u+0267}"  ; (ɧ) small letter heng with hook
-cmpHorn.item["j"] := "{u+a727}"  ; (ꜧ) small letter heng
-cmpHorn.item["J"] := "{u+a726}"  ; (Ꜧ) capital letter heng
-cmpHorn.item["k"] := "{u+0138}"  ; (ĸ) small letter kra
-cmpHorn.item["s"] := "{u+017f}"  ; (ſ) small long s
-cmpHorn.item["S"] := "{u+1e9b}"  ; (ẛ) small long s with dot above
+cmpLatinGreek := ComObjCreate("Scripting.Dictionary")
+cmpLatinGreek.item["a"] := "{u+0251}"  ; (ɑ) latin small letter alpha
+cmpLatinGreek.item["A"] := "{u+2c6d}"  ; (Ɑ) latin capital letter alpha
+cmpLatinGreek.item["c"] := "{u+ab36}"  ; (ꬶ) cross-tailed g
+cmpLatinGreek.item["e"] := "{u+025b}"  ; (ɛ) small open e (latin small epsilon)
+cmpLatinGreek.item["E"] := "{u+0190}"  ; (Ɛ) capital open E (latin capital epsilon)
+cmpLatinGreek.item["f"] := "{u+017f}"  ; (ſ) small long s
+cmpLatinGreek.item["F"] := "{u+1e9b}"  ; (ẛ) small long s with dot above
+cmpLatinGreek.item["g"] := "{u+0263}"  ; (ɣ) latin small gamma
+cmpLatinGreek.item["G"] := "{u+0194}"  ; (Ɣ) latin capital gamma
+cmpLatinGreek.item["h"] := "{u+a727}"  ; (ꜧ) small letter heng
+cmpLatinGreek.item["H"] := "{u+a726}"  ; (Ꜧ) capital letter heng
+cmpLatinGreek.item["i"] := "{u+0269}"  ; (ɩ) latin small letter iota
+cmpLatinGreek.item["I"] := "{u+0196}"  ; (Ɩ) latin capital letter iota
+cmpLatinGreek.item["k"] := "{u+0138}"  ; (ĸ) small letter kra
+cmpLatinGreek.item["o"] := "{u+0254}"  ; (ɔ) small open o
+cmpLatinGreek.item["O"] := "{u+0186}"  ; (Ɔ) capital open O
+cmpLatinGreek.item["s"] := "{u+0283}"  ; (ʃ) small letter esh
+cmpLatinGreek.item["S"] := "{u+01a9}"  ; (Ʃ) capital letter esh
+cmpLatinGreek.item["u"] := "{u+028a}"  ; (ʊ) latin small letter upsilon
+cmpLatinGreek.item["U"] := "{u+01b1}"  ; (Ʊ) latin capital letter upsilon
 
 
 ; Compose :  Turned Letters (t)
@@ -726,7 +731,6 @@ cmpQuad.item["3"] := "{u+2001}"  ; em quad
 ; Compose :  Arrows and Pointers
 
 cmpArrow := ComObjCreate("Scripting.Dictionary")
-cmpPlus := ComObjCreate("Scripting.Dictionary")
 cmpArrow.item["1"] := "{u+2199}"  ; (↙) south west arrow
 cmpArrow.item["2"] := "{u+2193}"  ; (↓) downwards arrow
 cmpArrow.item["3"] := "{u+2198}"  ; (↘) south east arrow
@@ -747,14 +751,14 @@ cmpDoubleAcute.item["7"] := "{u+21d6}"  ; (⇖) north west double arrow
 cmpDoubleAcute.item["8"] := "{u+21d1}"  ; (⇑) upwards double arrow
 cmpDoubleAcute.item["9"] := "{u+21d7}"  ; (⇗) north east double arrow
 cmpDoubleAcute.item["0"] := "{u+21d4}"  ; (⇔) left right double arrow
-cmpPlus.item["2"] := "{u+25bc}"  ; (▼) black down-pointing triangle
-cmpPlus.item["@"] := "{u+25bd}"  ; (▽) white down-pointing triangle
-cmpPlus.item["4"] := "{u+25c0}"  ; (◀) black left-pointing triangle
-cmpPlus.item["$"] := "{u+25c1}"  ; (◁) white left-pointing triangle
-cmpPlus.item["6"] := "{u+25b6}"  ; (▶) black right-pointing triangle
-cmpPlus.item["^"] := "{u+25b7}"  ; (▷) white right-pointing triangle
-cmpPlus.item["8"] := "{u+25b2}"  ; (▲) black up-pointing triangle
-cmpPlus.item["*"] := "{u+25b3}"  ; (△) white up-pointing triangle
+cmpHorn.item["2"] := "{u+25bc}"  ; (▼) black down-pointing triangle
+cmpHorn.item["@"] := "{u+25bd}"  ; (▽) white down-pointing triangle
+cmpHorn.item["4"] := "{u+25c0}"  ; (◀) black left-pointing triangle
+cmpHorn.item["$"] := "{u+25c1}"  ; (◁) white left-pointing triangle
+cmpHorn.item["6"] := "{u+25b6}"  ; (▶) black right-pointing triangle
+cmpHorn.item["^"] := "{u+25b7}"  ; (▷) white right-pointing triangle
+cmpHorn.item["8"] := "{u+25b2}"  ; (▲) black up-pointing triangle
+cmpHorn.item["*"] := "{u+25b3}"  ; (△) white up-pointing triangle
 
 
 ; Compose :  Miscellaneous Symbols (s)
@@ -987,7 +991,7 @@ cmpRingAbove.item["p"] := "{u+2117}"        ; (℗) sound recording copyright
 cmpParenLeft.item["p"] := "{u+2117}"        ; (℗) sound recording copyright
 cmpRingAbove.item["r"] := "{u+00ae}"        ; (®) registered sign
 cmpParenLeft.item["r"] := "{u+00ae}"        ; (®) registered sign
-cmpPlus.item["-"] := "{u+00b1}"             ; (±) plus-minus sign
+cmpHorn.item["-"] := "{u+00b1}"             ; (±) plus-minus sign
 cmpPercent.item["%"] := "{u+2030}"          ; (‰) per mille sign
 cmpPercent.item["3"] := "{u+2030}"          ; (‰) per mille sign
 cmpPercent.item["4"] := "{u+2031}"          ; (‱) per ten thousand sign
@@ -1536,6 +1540,8 @@ cmpCapitalU.item["``"] := "{u+01db}"      ; (Ǜ) U with diaeresis and grave
     Send % cmpDiaeresis.item[keyB]
   else if (keyA == "=")
     Send % cmpDoubleAcute.item[keyB]
+  else if (keyA == "+")
+    Send % cmpHorn.item[keyB]
   else if (keyA == "``")
     Send % cmpGraveAccent.item[keyB]
   else if (keyA == "G")
@@ -1544,8 +1550,8 @@ cmpCapitalU.item["``"] := "{u+01db}"      ; (Ǜ) U with diaeresis and grave
     Send % cmpTilde.item[keyB]
   else if (keyA == "h")
     Send % cmpHook.item[keyB]
-  else if (keyA == "H")
-    Send % cmpHorn.item[keyB]
+  else if (keyA == "l")
+    Send % cmpLatinGreek.item[keyB]
   else if (keyA == "t")
     Send % cmpTurned.item[keyB]
   else if (keyA == "$")
@@ -1562,8 +1568,6 @@ cmpCapitalU.item["``"] := "{u+01db}"      ; (Ǜ) U with diaeresis and grave
     Send % cmpQuad.item[keyB]
   else if (keyA == "a")
     Send % cmpArrow.item[keyB]
-  else if (keyA == "+")
-    Send % cmpPlus.item[keyB]
   else if (keyA == "s")
     Send % cmpSymbols.item[keyB]
   else if (keyA == "S")
