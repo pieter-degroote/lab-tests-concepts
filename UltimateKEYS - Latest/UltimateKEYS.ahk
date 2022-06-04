@@ -510,7 +510,7 @@ cmpHook.item["z"] := "{u+0225}"  ; (ȥ) z with hook
 cmpHook.item["Z"] := "{u+0224}"  ; (Ȥ) Z with hook
 
 
-; Compose :  Latin Greek Letters (l)
+; Compose :  Latin Greek Letters and Variations (l)
 
 cmpLatinGreek := ComObjCreate("Scripting.Dictionary")
 cmpLatinGreek.item["a"] := "{u+0251}"  ; (ɑ) latin small letter alpha

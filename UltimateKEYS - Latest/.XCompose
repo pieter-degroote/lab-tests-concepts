@@ -482,7 +482,7 @@
 <Multi_key> <h> <Z> : "Ȥ"  U0224  # Z with hook
 
 
-# Latin Greek Letters
+# Latin Greek Letters and Variations
 
 <Multi_key> <l> <a> : "ɑ"  U0251  # latin small letter alpha
 <Multi_key> <l> <A> : "Ɑ"  U2C6D  # latin capital letter alpha

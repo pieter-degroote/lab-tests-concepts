@@ -512,7 +512,7 @@ cmpHook["z"] := "{u+0225}"  ; (ȥ) z with hook
 cmpHook["Z"] := "{u+0224}"  ; (Ȥ) Z with hook
 
 
-; Compose :  Latin Greek Letters (l)
+; Compose :  Latin Greek Letters and Variations (l)
 
 global cmpLatinGreek := Map()
 cmpLatinGreek["a"] := "{u+0251}"  ; (ɑ) latin small letter alpha
