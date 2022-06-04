@@ -405,15 +405,6 @@ cmpDoubleAcute["U"] := "{u+0170}"  ; (Ű) U with double acute
 cmpDoubleAcute[" "] := "{u+02dd}"  ; (˝) double acute accent
 
 
-; Compose :  Horn (+)
-
-global cmpHorn := Map()
-cmpHorn["o"] := "{u+01a1}"  ; (ơ) o with horn
-cmpHorn["O"] := "{u+01a0}"  ; (Ơ) O with horn
-cmpHorn["u"] := "{u+01b0}"  ; (ư) u with horn
-cmpHorn["U"] := "{u+01af}"  ; (Ư) U with horn
-
-
 ; Compose :  Grave Accent (`)
 
 global cmpGraveAccent := Map()
@@ -477,7 +468,7 @@ cmpTilde["Y"] := "{u+1ef8}"  ; (Ỹ) Y with tilde
 cmpTilde[" "] := "{u+02dc}"  ; (˜) small tilde
 
 
-; Compose :  Hook (h)
+; Compose :  Hook and Horn (h)
 
 global cmpHook := Map()
 cmpHook["b"] := "{u+0253}"  ; (ɓ) b with hook
@@ -499,6 +490,8 @@ cmpHook["m"] := "{u+0271}"  ; (ɱ) m with hook
 cmpHook["M"] := "{u+2c6e}"  ; (Ɱ) M with hook
 cmpHook["n"] := "{u+0272}"  ; (ɲ) n with left hook
 cmpHook["N"] := "{u+019d}"  ; (Ɲ) N with left hook
+cmpHook["o"] := "{u+01a1}"  ; (ơ) o with horn
+cmpHook["O"] := "{u+01a0}"  ; (Ơ) O with horn
 cmpHook["p"] := "{u+01a5}"  ; (ƥ) p with hook
 cmpHook["P"] := "{u+01a4}"  ; (Ƥ) P with hook
 cmpHook["q"] := "{u+024b}"  ; (ɋ) q with hook tail
@@ -507,6 +500,8 @@ cmpHook["r"] := "{u+027d}"  ; (ɽ) r with tail
 cmpHook["R"] := "{u+2c64}"  ; (Ɽ) R with tail
 cmpHook["t"] := "{u+01ad}"  ; (ƭ) t with hook
 cmpHook["T"] := "{u+01ac}"  ; (Ƭ) T with hook
+cmpHook["u"] := "{u+01b0}"  ; (ư) u with horn
+cmpHook["U"] := "{u+01af}"  ; (Ư) U with horn
 cmpHook["v"] := "{u+028b}"  ; (ʋ) v with hook
 cmpHook["V"] := "{u+01b2}"  ; (Ʋ) V with hook
 cmpHook["w"] := "{u+2c73}"  ; (ⱳ) w with hook
@@ -733,6 +728,7 @@ cmpQuad["3"] := "{u+2001}"  ; em quad
 ; Compose :  Arrows and Pointers
 
 global cmpArrow := Map()
+global cmpPlus := Map()
 cmpArrow["1"] := "{u+2199}"  ; (↙) south west arrow
 cmpArrow["2"] := "{u+2193}"  ; (↓) downwards arrow
 cmpArrow["3"] := "{u+2198}"  ; (↘) south east arrow
@@ -753,14 +749,14 @@ cmpDoubleAcute["7"] := "{u+21d6}"  ; (⇖) north west double arrow
 cmpDoubleAcute["8"] := "{u+21d1}"  ; (⇑) upwards double arrow
 cmpDoubleAcute["9"] := "{u+21d7}"  ; (⇗) north east double arrow
 cmpDoubleAcute["0"] := "{u+21d4}"  ; (⇔) left right double arrow
-cmpHorn["2"] := "{u+25bc}"  ; (▼) black down-pointing triangle
-cmpHorn["@"] := "{u+25bd}"  ; (▽) white down-pointing triangle
-cmpHorn["4"] := "{u+25c0}"  ; (◀) black left-pointing triangle
-cmpHorn["$"] := "{u+25c1}"  ; (◁) white left-pointing triangle
-cmpHorn["6"] := "{u+25b6}"  ; (▶) black right-pointing triangle
-cmpHorn["^"] := "{u+25b7}"  ; (▷) white right-pointing triangle
-cmpHorn["8"] := "{u+25b2}"  ; (▲) black up-pointing triangle
-cmpHorn["*"] := "{u+25b3}"  ; (△) white up-pointing triangle
+cmpPlus["2"] := "{u+25bc}"  ; (▼) black down-pointing triangle
+cmpPlus["@"] := "{u+25bd}"  ; (▽) white down-pointing triangle
+cmpPlus["4"] := "{u+25c0}"  ; (◀) black left-pointing triangle
+cmpPlus["$"] := "{u+25c1}"  ; (◁) white left-pointing triangle
+cmpPlus["6"] := "{u+25b6}"  ; (▶) black right-pointing triangle
+cmpPlus["^"] := "{u+25b7}"  ; (▷) white right-pointing triangle
+cmpPlus["8"] := "{u+25b2}"  ; (▲) black up-pointing triangle
+cmpPlus["*"] := "{u+25b3}"  ; (△) white up-pointing triangle
 
 
 ; Compose :  Miscellaneous Symbols (s)
@@ -993,7 +989,7 @@ cmpRingAbove["p"] := "{u+2117}"        ; (℗) sound recording copyright
 cmpParenLeft["p"] := "{u+2117}"        ; (℗) sound recording copyright
 cmpRingAbove["r"] := "{u+00ae}"        ; (®) registered sign
 cmpParenLeft["r"] := "{u+00ae}"        ; (®) registered sign
-cmpHorn["-"] := "{u+00b1}"             ; (±) plus-minus sign
+cmpPlus["-"] := "{u+00b1}"             ; (±) plus-minus sign
 cmpPercent["%"] := "{u+2030}"          ; (‰) per mille sign
 cmpPercent["3"] := "{u+2030}"          ; (‰) per mille sign
 cmpPercent["4"] := "{u+2031}"          ; (‱) per ten thousand sign
@@ -1454,7 +1450,7 @@ cmpCapitalU["``"] := "{u+01db}"      ; (Ǜ) U with diaeresis and grave
     Send "{u+00d5}"  ; (Õ) O with tilde
 }
 
->!m::Send "{u+2030}"   ; (‰) per mille sign
+>!m::Send "{u+00b5}"   ; (µ) micro sign
 >!+m::Send "{u+00b1}"  ; (±) plus-minus sign
 
 >!1::Send "{u+00a1}"   ; (¡) inverted exclamation mark
@@ -1573,10 +1569,6 @@ cmpCapitalU["``"] := "{u+01db}"      ; (Ǜ) U with diaeresis and grave
     if cmpDoubleAcute.Has(ihB.Input)
       Send cmpDoubleAcute[ihB.Input]
   }
-  else if (ihA.Input == "+") {
-    if cmpHorn.Has(ihB.Input)
-      Send cmpHorn[ihB.Input]
-  }
   else if (ihA.Input == "``") {
     if cmpGraveAccent.Has(ihB.Input)
       Send cmpGraveAccent[ihB.Input]
@@ -1628,6 +1620,10 @@ cmpCapitalU["``"] := "{u+01db}"      ; (Ǜ) U with diaeresis and grave
   else if (ihA.Input == "a") {
     if cmpArrow.Has(ihB.Input)
       Send cmpArrow[ihB.Input]
+  }
+  else if (ihA.Input == "+") {
+    if cmpPlus.Has(ihB.Input)
+      Send cmpPlus[ihB.Input]
   }
   else if (ihA.Input == "s") {
     if cmpSymbols.Has(ihB.Input)

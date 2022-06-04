@@ -403,15 +403,6 @@ cmpDoubleAcute.item["U"] := "{u+0170}"  ; (Ű) U with double acute
 cmpDoubleAcute.item[" "] := "{u+02dd}"  ; (˝) double acute accent
 
 
-; Compose :  Horn (+)
-
-cmpHorn := ComObjCreate("Scripting.Dictionary")
-cmpHorn.item["o"] := "{u+01a1}"  ; (ơ) o with horn
-cmpHorn.item["O"] := "{u+01a0}"  ; (Ơ) O with horn
-cmpHorn.item["u"] := "{u+01b0}"  ; (ư) u with horn
-cmpHorn.item["U"] := "{u+01af}"  ; (Ư) U with horn
-
-
 ; Compose :  Grave Accent (`)
 
 cmpGraveAccent := ComObjCreate("Scripting.Dictionary")
@@ -475,7 +466,7 @@ cmpTilde.item["Y"] := "{u+1ef8}"  ; (Ỹ) Y with tilde
 cmpTilde.item[" "] := "{u+02dc}"  ; (˜) small tilde
 
 
-; Compose :  Hook (h)
+; Compose :  Hook and Horn (h)
 
 cmpHook := ComObjCreate("Scripting.Dictionary")
 cmpHook.item["b"] := "{u+0253}"  ; (ɓ) b with hook
@@ -497,6 +488,8 @@ cmpHook.item["m"] := "{u+0271}"  ; (ɱ) m with hook
 cmpHook.item["M"] := "{u+2c6e}"  ; (Ɱ) M with hook
 cmpHook.item["n"] := "{u+0272}"  ; (ɲ) n with left hook
 cmpHook.item["N"] := "{u+019d}"  ; (Ɲ) N with left hook
+cmpHook.item["o"] := "{u+01a1}"  ; (ơ) o with horn
+cmpHook.item["O"] := "{u+01a0}"  ; (Ơ) O with horn
 cmpHook.item["p"] := "{u+01a5}"  ; (ƥ) p with hook
 cmpHook.item["P"] := "{u+01a4}"  ; (Ƥ) P with hook
 cmpHook.item["q"] := "{u+024b}"  ; (ɋ) q with hook tail
@@ -505,6 +498,8 @@ cmpHook.item["r"] := "{u+027d}"  ; (ɽ) r with tail
 cmpHook.item["R"] := "{u+2c64}"  ; (Ɽ) R with tail
 cmpHook.item["t"] := "{u+01ad}"  ; (ƭ) t with hook
 cmpHook.item["T"] := "{u+01ac}"  ; (Ƭ) T with hook
+cmpHook.item["u"] := "{u+01b0}"  ; (ư) u with horn
+cmpHook.item["U"] := "{u+01af}"  ; (Ư) U with horn
 cmpHook.item["v"] := "{u+028b}"  ; (ʋ) v with hook
 cmpHook.item["V"] := "{u+01b2}"  ; (Ʋ) V with hook
 cmpHook.item["w"] := "{u+2c73}"  ; (ⱳ) w with hook
@@ -731,6 +726,7 @@ cmpQuad.item["3"] := "{u+2001}"  ; em quad
 ; Compose :  Arrows and Pointers
 
 cmpArrow := ComObjCreate("Scripting.Dictionary")
+cmpPlus := ComObjCreate("Scripting.Dictionary")
 cmpArrow.item["1"] := "{u+2199}"  ; (↙) south west arrow
 cmpArrow.item["2"] := "{u+2193}"  ; (↓) downwards arrow
 cmpArrow.item["3"] := "{u+2198}"  ; (↘) south east arrow
@@ -751,14 +747,14 @@ cmpDoubleAcute.item["7"] := "{u+21d6}"  ; (⇖) north west double arrow
 cmpDoubleAcute.item["8"] := "{u+21d1}"  ; (⇑) upwards double arrow
 cmpDoubleAcute.item["9"] := "{u+21d7}"  ; (⇗) north east double arrow
 cmpDoubleAcute.item["0"] := "{u+21d4}"  ; (⇔) left right double arrow
-cmpHorn.item["2"] := "{u+25bc}"  ; (▼) black down-pointing triangle
-cmpHorn.item["@"] := "{u+25bd}"  ; (▽) white down-pointing triangle
-cmpHorn.item["4"] := "{u+25c0}"  ; (◀) black left-pointing triangle
-cmpHorn.item["$"] := "{u+25c1}"  ; (◁) white left-pointing triangle
-cmpHorn.item["6"] := "{u+25b6}"  ; (▶) black right-pointing triangle
-cmpHorn.item["^"] := "{u+25b7}"  ; (▷) white right-pointing triangle
-cmpHorn.item["8"] := "{u+25b2}"  ; (▲) black up-pointing triangle
-cmpHorn.item["*"] := "{u+25b3}"  ; (△) white up-pointing triangle
+cmpPlus.item["2"] := "{u+25bc}"  ; (▼) black down-pointing triangle
+cmpPlus.item["@"] := "{u+25bd}"  ; (▽) white down-pointing triangle
+cmpPlus.item["4"] := "{u+25c0}"  ; (◀) black left-pointing triangle
+cmpPlus.item["$"] := "{u+25c1}"  ; (◁) white left-pointing triangle
+cmpPlus.item["6"] := "{u+25b6}"  ; (▶) black right-pointing triangle
+cmpPlus.item["^"] := "{u+25b7}"  ; (▷) white right-pointing triangle
+cmpPlus.item["8"] := "{u+25b2}"  ; (▲) black up-pointing triangle
+cmpPlus.item["*"] := "{u+25b3}"  ; (△) white up-pointing triangle
 
 
 ; Compose :  Miscellaneous Symbols (s)
@@ -991,7 +987,7 @@ cmpRingAbove.item["p"] := "{u+2117}"        ; (℗) sound recording copyright
 cmpParenLeft.item["p"] := "{u+2117}"        ; (℗) sound recording copyright
 cmpRingAbove.item["r"] := "{u+00ae}"        ; (®) registered sign
 cmpParenLeft.item["r"] := "{u+00ae}"        ; (®) registered sign
-cmpHorn.item["-"] := "{u+00b1}"             ; (±) plus-minus sign
+cmpPlus.item["-"] := "{u+00b1}"             ; (±) plus-minus sign
 cmpPercent.item["%"] := "{u+2030}"          ; (‰) per mille sign
 cmpPercent.item["3"] := "{u+2030}"          ; (‰) per mille sign
 cmpPercent.item["4"] := "{u+2031}"          ; (‱) per ten thousand sign
@@ -1452,7 +1448,7 @@ cmpCapitalU.item["``"] := "{u+01db}"      ; (Ǜ) U with diaeresis and grave
     Send {u+00d5}  ; (Õ) O with tilde
   return
 
->!m::Send {u+2030}   ; (‰) per mille sign
+>!m::Send {u+00b5}   ; (µ) micro sign
 >!+m::Send {u+00b1}  ; (±) plus-minus sign
 
 >!1::Send {u+00a1}   ; (¡) inverted exclamation mark
@@ -1540,8 +1536,6 @@ cmpCapitalU.item["``"] := "{u+01db}"      ; (Ǜ) U with diaeresis and grave
     Send % cmpDiaeresis.item[keyB]
   else if (keyA == "=")
     Send % cmpDoubleAcute.item[keyB]
-  else if (keyA == "+")
-    Send % cmpHorn.item[keyB]
   else if (keyA == "``")
     Send % cmpGraveAccent.item[keyB]
   else if (keyA == "G")
@@ -1568,6 +1562,8 @@ cmpCapitalU.item["``"] := "{u+01db}"      ; (Ǜ) U with diaeresis and grave
     Send % cmpQuad.item[keyB]
   else if (keyA == "a")
     Send % cmpArrow.item[keyB]
+  else if (keyA == "+")
+    Send % cmpPlus.item[keyB]
   else if (keyA == "s")
     Send % cmpSymbols.item[keyB]
   else if (keyA == "S")

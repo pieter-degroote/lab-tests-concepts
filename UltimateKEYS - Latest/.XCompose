@@ -379,14 +379,6 @@
 <Multi_key> <equal> <space> : "˝"  U02DD  # double acute accent
 
 
-# Horn
-
-<Multi_key> <plus> <o> : "ơ"  U01A1  # o with horn
-<Multi_key> <plus> <O> : "Ơ"  U01A0  # O with horn
-<Multi_key> <plus> <u> : "ư"  U01B0  # u with horn
-<Multi_key> <plus> <U> : "Ư"  U01AF  # U with horn
-
-
 # Grave Accent
 
 <Multi_key> <grave> <a> : "à"  U00E0  # a with grave
@@ -447,7 +439,7 @@
 <Multi_key> <asciitilde> <space>  : "˜"  U02DC  # small tilde
 
 
-# Hook
+# Hook and Horn
 
 <Multi_key> <h> <b> : "ɓ"  U0253  # b with hook
 <Multi_key> <h> <B> : "Ɓ"  U0181  # B with hook
@@ -468,6 +460,8 @@
 <Multi_key> <h> <M> : "Ɱ"  U2C6E  # M with hook
 <Multi_key> <h> <n> : "ɲ"  U0272  # n with left hook
 <Multi_key> <h> <N> : "Ɲ"  U019D  # N with left hook
+<Multi_key> <h> <o> : "ơ"  U01A1  # o with horn
+<Multi_key> <h> <O> : "Ơ"  U01A0  # O with horn
 <Multi_key> <h> <p> : "ƥ"  U01A5  # p with hook
 <Multi_key> <h> <P> : "Ƥ"  U01A4  # P with hook
 <Multi_key> <h> <q> : "ɋ"  U024B  # q with hook tail
@@ -476,6 +470,8 @@
 <Multi_key> <h> <R> : "Ɽ"  U2C64  # R with tail
 <Multi_key> <h> <t> : "ƭ"  U01AD  # t with hook
 <Multi_key> <h> <T> : "Ƭ"  U01AC  # T with hook
+<Multi_key> <h> <u> : "ư"  U01B0  # u with horn
+<Multi_key> <h> <U> : "Ư"  U01AF  # U with horn
 <Multi_key> <h> <v> : "ʋ"  U028B  # v with hook
 <Multi_key> <h> <V> : "Ʋ"  U01B2  # V with hook
 <Multi_key> <h> <w> : "ⱳ"  U2C73  # w with hook
