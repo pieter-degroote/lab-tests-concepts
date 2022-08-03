@@ -210,7 +210,7 @@ cmpMacronStrokeAdd.item["y"] := "{u+024f}"  ; (ɏ) y with stroke
 cmpMacronStrokeAdd.item["Y"] := "{u+024e}"  ; (Ɏ) Y with stroke
 
 
-; Compose :  Stroke (/)
+; Compose :  Oblique/Diagonal Stroke (/)
 
 cmpStroke := ComObjCreate("Scripting.Dictionary")
 cmpStroke.item["a"] := "{u+2c65}"  ; (ⱥ) a with stroke
@@ -519,7 +519,7 @@ cmpLatinGreek.item["c"] := "{u+ab36}"  ; (ꬶ) small letter script g with crosse
 cmpLatinGreek.item["e"] := "{u+025b}"  ; (ɛ) small letter open e (latin small epsilon)
 cmpLatinGreek.item["E"] := "{u+0190}"  ; (Ɛ) capital letter open E (latin capital epsilon)
 cmpLatinGreek.item["f"] := "{u+017f}"  ; (ſ) small letter long s
-cmpLatinGreek.item["F"] := "{u+1e9b}"  ; (ẛ) small letter long s with dot above
+cmpLatinGreek.item["F"] := "{u+1e9b}"  ; (ẛ) long s with dot above
 cmpLatinGreek.item["g"] := "{u+0263}"  ; (ɣ) latin small letter gamma
 cmpLatinGreek.item["G"] := "{u+0194}"  ; (Ɣ) latin capital letter gamma
 cmpLatinGreek.item["h"] := "{u+a727}"  ; (ꜧ) small letter heng
