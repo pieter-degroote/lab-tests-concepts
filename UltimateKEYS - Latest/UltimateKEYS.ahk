@@ -765,19 +765,15 @@ cmpSymbols.item["a"] := "{u+214d}"  ; (⅍) aktieselskab
 cmpSymbols.item["c"] := "{u+2105}"  ; (℅) care of
 cmpSymbols.item["d"] := "{u+22c4}"  ; (⋄) diamond operator
 cmpSymbols.item["e"] := "{u+212e}"  ; (℮) estimated symbol
-cmpSymbols.item["E"] := "{u+2709}"  ; (✉) envelope
 cmpSymbols.item["f"] := "{u+2640}"  ; (♀) Venus symbol (female)
-cmpSymbols.item["g"] := "{u+2740}"  ; (❀) white florette
-cmpSymbols.item["G"] := "{u+273f}"  ; (✿) black florette
-cmpSymbols.item["h"] := "{u+2766}"  ; (❦) floral heart
-cmpSymbols.item["H"] := "{u+2767}"  ; (❧) rotated floral heart bullet
 cmpSymbols.item["i"] := "{u+2300}"  ; (⌀) diameter sign
 cmpSymbols.item["l"] := "{u+2113}"  ; (ℓ) script small l
 cmpSymbols.item["L"] := "{u+2112}"  ; (ℒ) Laplace transform
 cmpSymbols.item["m"] := "{u+2642}"  ; (♂) Mars symbol (male)
 cmpSymbols.item["M"] := "{u+2120}"  ; (℠) service mark
+cmpSymbols.item["n"] := "{u+2709}"  ; (✉) envelope
 cmpSymbols.item["q"] := "{u+2126}"  ; (Ω) ohm sign (backwards compatibility)
-cmpSymbols.item["r"] := "{u+2619}"  ; (☙) reversed rotated floral heart bullet
+cmpSymbols.item["r"] := "{u+211e}"  ; (℞) prescription take (Recipere)
 cmpSymbols.item["R"] := "{u+211e}"  ; (℞) prescription take (Recipere)
 cmpSymbols.item["t"] := "{u+2706}"  ; (✆) telephone location sign
 cmpSymbols.item["v"] := "{u+2713}"  ; (✓) check mark
@@ -802,6 +798,18 @@ cmpSymbols.item["\"] := "{u+205e}"  ; (⁞) vertical four dots
 cmpSymbols.item["|"] := "{u+00a6}"  ; (¦) broken bar
 cmpSymbols.item["."] := "{u+2e18}"  ; (⸘) inverted interrobang
 cmpSymbols.item["/"] := "{u+2e2e}"  ; (⸮) reversed question mark
+
+
+; Compose :  Florette and Floral Heart Symbols (f)
+
+cmpFlorette := ComObjCreate("Scripting.Dictionary")
+cmpFlorette.item["r"] := "{u+2619}"  ; (☙) reversed rotated floral heart bullet
+cmpFlorette.item["6"] := "{u+273e}"  ; (✾) six petalled black and white florette
+cmpFlorette.item["b"] := "{u+273f}"  ; (✿) black florette
+cmpFlorette.item["w"] := "{u+2740}"  ; (❀) white florette
+cmpFlorette.item["8"] := "{u+2741}"  ; (❁) eight petalled outlined black florette
+cmpFlorette.item["f"] := "{u+2766}"  ; (❦) floral heart
+cmpFlorette.item["h"] := "{u+2767}"  ; (❧) rotated floral heart bullet
 
 
 ; Compose :  Playing Card Suit Symbols (S)
@@ -1567,6 +1575,8 @@ cmpCapitalU.item["``"] := "{u+01db}"      ; (Ǜ) U with diaeresis and grave
     Send % cmpPlus.item[keyB]
   else if (keyA == "s")
     Send % cmpSymbols.item[keyB]
+  else if (keyA == "f")
+    Send % cmpFlorette.item[keyB]
   else if (keyA == "S")
     Send % cmpPlayingCardSuit.item[keyB]
   else if (keyA == "1")

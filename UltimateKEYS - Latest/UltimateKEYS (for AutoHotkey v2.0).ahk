@@ -20,7 +20,7 @@ KeyHistory 0      ; disables the key history (for privacy and security)
 
 SendMode "Input"  ; optimizes for faster and more reliable input
 
-global dkEndKeys := "{bs}{del}{esc}{home}{end}"  ; ends dead key input on specific keys
+global gEndKeys := "{bs}{del}{esc}{home}{end}"  ; ends dead key input on specific keys
 
 
 ; Compose :  Circumflex Accent (c)
@@ -767,19 +767,15 @@ cmpSymbols["a"] := "{u+214d}"  ; (⅍) aktieselskab
 cmpSymbols["c"] := "{u+2105}"  ; (℅) care of
 cmpSymbols["d"] := "{u+22c4}"  ; (⋄) diamond operator
 cmpSymbols["e"] := "{u+212e}"  ; (℮) estimated symbol
-cmpSymbols["E"] := "{u+2709}"  ; (✉) envelope
 cmpSymbols["f"] := "{u+2640}"  ; (♀) Venus symbol (female)
-cmpSymbols["g"] := "{u+2740}"  ; (❀) white florette
-cmpSymbols["G"] := "{u+273f}"  ; (✿) black florette
-cmpSymbols["h"] := "{u+2766}"  ; (❦) floral heart
-cmpSymbols["H"] := "{u+2767}"  ; (❧) rotated floral heart bullet
 cmpSymbols["i"] := "{u+2300}"  ; (⌀) diameter sign
 cmpSymbols["l"] := "{u+2113}"  ; (ℓ) script small l
 cmpSymbols["L"] := "{u+2112}"  ; (ℒ) Laplace transform
 cmpSymbols["m"] := "{u+2642}"  ; (♂) Mars symbol (male)
 cmpSymbols["M"] := "{u+2120}"  ; (℠) service mark
+cmpSymbols["n"] := "{u+2709}"  ; (✉) envelope
 cmpSymbols["q"] := "{u+2126}"  ; (Ω) ohm sign (backwards compatibility)
-cmpSymbols["r"] := "{u+2619}"  ; (☙) reversed rotated floral heart bullet
+cmpSymbols["r"] := "{u+211e}"  ; (℞) prescription take (Recipere)
 cmpSymbols["R"] := "{u+211e}"  ; (℞) prescription take (Recipere)
 cmpSymbols["t"] := "{u+2706}"  ; (✆) telephone location sign
 cmpSymbols["v"] := "{u+2713}"  ; (✓) check mark
@@ -804,6 +800,18 @@ cmpSymbols["\"] := "{u+205e}"  ; (⁞) vertical four dots
 cmpSymbols["|"] := "{u+00a6}"  ; (¦) broken bar
 cmpSymbols["."] := "{u+2e18}"  ; (⸘) inverted interrobang
 cmpSymbols["/"] := "{u+2e2e}"  ; (⸮) reversed question mark
+
+
+; Compose :  Florette and Floral Heart Symbols (f)
+
+global cmpFlorette := Map()
+cmpFlorette["r"] := "{u+2619}"  ; (☙) reversed rotated floral heart bullet
+cmpFlorette["6"] := "{u+273e}"  ; (✾) six petalled black and white florette
+cmpFlorette["b"] := "{u+273f}"  ; (✿) black florette
+cmpFlorette["w"] := "{u+2740}"  ; (❀) white florette
+cmpFlorette["8"] := "{u+2741}"  ; (❁) eight petalled outlined black florette
+cmpFlorette["f"] := "{u+2766}"  ; (❦) floral heart
+cmpFlorette["h"] := "{u+2767}"  ; (❧) rotated floral heart bullet
 
 
 ; Compose :  Playing Card Suit Symbols (S)
@@ -1510,11 +1518,11 @@ cmpCapitalU["``"] := "{u+01db}"      ; (Ǜ) U with diaeresis and grave
 
 >!`::
 >!~:: {
-  ihA := InputHook("L1", dkEndKeys)
+  ihA := InputHook("L1", gEndKeys)
   ihA.Start()
   ihA.Wait()
 
-  ihB := InputHook("L1", dkEndKeys)
+  ihB := InputHook("L1", gEndKeys)
   ihB.Start()
   ihB.Wait()
 
@@ -1629,6 +1637,10 @@ cmpCapitalU["``"] := "{u+01db}"      ; (Ǜ) U with diaeresis and grave
   else if (ihA.Input == "s") {
     if cmpSymbols.Has(ihB.Input)
       Send cmpSymbols[ihB.Input]
+  }
+  else if (ihA.Input == "f") {
+    if cmpFlorette.Has(ihB.Input)
+      Send cmpFlorette[ihB.Input]
   }
   else if (ihA.Input == "S") {
     if cmpPlayingCardSuit.Has(ihB.Input)

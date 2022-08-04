@@ -863,19 +863,15 @@
 <Multi_key> <s> <c> : "℅"  U2105  # care of
 <Multi_key> <s> <d> : "⋄"  U22C4  # diamond operator
 <Multi_key> <s> <e> : "℮"  U212E  # estimated symbol
-<Multi_key> <s> <E> : "✉"  U2709  # envelope
 <Multi_key> <s> <f> : "♀"  U2640  # Venus symbol (female)
-<Multi_key> <s> <g> : "❀"  U2740  # white florette
-<Multi_key> <s> <G> : "✿"  U273F  # black florette
-<Multi_key> <s> <h> : "❦"  U2766  # floral heart
-<Multi_key> <s> <H> : "❧"  U2767  # rotated floral heart bullet
 <Multi_key> <s> <i> : "⌀"  U2300  # diameter sign
 <Multi_key> <s> <l> : "ℓ"  U2113  # script small l
 <Multi_key> <s> <L> : "ℒ"  U2112  # Laplace transform
 <Multi_key> <s> <m> : "♂"  U2642  # Mars symbol (male)
 <Multi_key> <s> <M> : "℠"  U2120  # service mark
+<Multi_key> <s> <n> : "✉"  U2709  # envelope
 <Multi_key> <s> <q> : "Ω"  U2126  # ohm sign (backwards compatibility)
-<Multi_key> <s> <r> : "☙"  U2619  # reversed rotated floral heart bullet
+<Multi_key> <s> <r> : "℞"  U211E  # prescription take (Recipere)
 <Multi_key> <s> <R> : "℞"  U211E  # prescription take (Recipere)
 <Multi_key> <s> <t> : "✆"  U2706  # telephone location sign
 <Multi_key> <s> <v> : "✓"  U2713  # check mark
@@ -900,6 +896,17 @@
 <Multi_key> <s> <bar>         : "¦"  U00A6  # broken bar
 <Multi_key> <s> <period>      : "⸘"  U2E18  # inverted interrobang
 <Multi_key> <s> <slash>       : "⸮"  U2E2E  # reversed question mark
+
+
+# Florette and Floral Heart Symbols
+
+<Multi_key> <f> <r> : "☙"  U2619  # reversed rotated floral heart bullet
+<Multi_key> <f> <6> : "✾"  U273E  # six petalled black and white florette
+<Multi_key> <f> <b> : "✿"  U273F  # black florette
+<Multi_key> <f> <w> : "❀"  U2740  # white florette
+<Multi_key> <f> <8> : "❁"  U2741  # eight petalled outlined black florette
+<Multi_key> <f> <f> : "❦"  U2766  # floral heart
+<Multi_key> <f> <h> : "❧"  U2767  # rotated floral heart bullet
 
 
 # Playing Card Suit Symbols
