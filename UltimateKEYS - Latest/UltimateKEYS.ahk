@@ -1007,7 +1007,7 @@ cmpBracketLeft.item["y"] := "{u+2611}"      ; (☑) ballot box with check
 cmpBracketLeft.item["x"] := "{u+2612}"      ; (☒) ballot box with x
 
 
-; Compose :  Bullets and Arrowheads
+; Compose :  Bullets and Arrowheads (;)
 
 cmpSemicolon := ComObjCreate("Scripting.Dictionary")
 cmpSemicolon.item["a"] := "{u+27a4}" ; (➤) black rightwards arrowhead
@@ -1022,8 +1022,8 @@ cmpSemicolon.item["r"] := "{u+27a1}" ; (➡) black rightwards arrow
 cmpSemicolon.item["t"] := "{u+2023}" ; (‣) triangular bullet
 cmpSemicolon.item["u"] := "{u+27a6}" ; (➦) heavy black curved upwards and rightwards arrow
 cmpSemicolon.item["w"] := "{u+25e6}" ; (◦) white bullet
-cmpSemicolon.item["3"] := "{u+27a2}" ; (➢) three-d top-lighted rightwards arrowhead
-cmpSemicolon.item["#"] := "{u+27a3}" ; (➣) three-d bottom-lighted rightwards arrowhead
+cmpSemicolon.item["3"] := "{u+27a2}" ; (➢) 3d top-lighted rightwards arrowhead
+cmpSemicolon.item["#"] := "{u+27a3}" ; (➣) 3d bottom-lighted rightwards arrowhead
 
 
 ; Compose :  Quotation Marks
