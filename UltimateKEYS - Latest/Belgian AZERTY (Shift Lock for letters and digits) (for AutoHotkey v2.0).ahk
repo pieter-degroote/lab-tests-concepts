@@ -20,7 +20,7 @@ KeyHistory 0      ; disables the key history (for privacy and security)
 
 SendMode "Event"  ; allows chaining of customized key combinations
 
-global dkEndKeys := "{bs}{del}{esc}{home}{end}"  ; ends dead key input on specific keys
+global gEndKeys := "{bs}{del}{esc}{home}{end}"  ; ends dead key input on specific keys
 
 
 ; Dead Key :  Circumflex Accent
@@ -347,7 +347,7 @@ $/::Send "="    ; equals sign
 $?::Send "{+}"  ; plus sign
 
 >!/:: {
-  ih := InputHook("L1", dkEndKeys)
+  ih := InputHook("L1", gEndKeys)
   ih.Start()
   ih.Wait()
   if dkTilde.Has(ih.Input)
@@ -477,7 +477,7 @@ $'::Send "{u+00f9}"  ; (ù) u with grave
 $"::Send "%"         ; percent sign
 
 >!':: {
-  ih := InputHook("L1", dkEndKeys)
+  ih := InputHook("L1", gEndKeys)
   ih.Start()
   ih.Wait()
   if dkAcuteAccent.Has(ih.Input)
@@ -485,14 +485,14 @@ $"::Send "%"         ; percent sign
 }
 
 $[:: {
-  ih := InputHook("L1", dkEndKeys)
+  ih := InputHook("L1", gEndKeys)
   ih.Start()
   ih.Wait()
   if dkCircumflex.Has(ih.Input)
     Send dkCircumflex[ih.Input]
 }
 ${:: {
-  ih := InputHook("L1", dkEndKeys)
+  ih := InputHook("L1", gEndKeys)
   ih.Start()
   ih.Wait()
   if dkDiaeresis.Has(ih.Input)
@@ -510,7 +510,7 @@ $\::Send "{u+00b5}"  ; (µ) micro sign
 $|::Send "{u+00a3}"  ; (£) pound sign
 
 >!\:: {
-  ih := InputHook("L1", dkEndKeys)
+  ih := InputHook("L1", gEndKeys)
   ih.Start()
   ih.Wait()
   if dkGraveAccent.Has(ih.Input)
