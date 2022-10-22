@@ -1613,7 +1613,7 @@ cmpCapitalV.item["``"] := "{u+01db}"      ; (Ǜ) U with diaeresis and grave
   else if (keyA == "$")
     Send % cmpCurrency.item[keyB]
   else if (keyA == "g")
-    Send % cmpGreekAlphabet.item[keyB]
+    Send % cmpGreek.item[keyB]
   else if (keyA == "p")
     Send % cmpSuperscript.item[keyB]
   else if (keyA == "u")

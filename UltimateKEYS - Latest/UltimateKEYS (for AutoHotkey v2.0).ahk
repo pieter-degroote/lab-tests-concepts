@@ -1660,8 +1660,8 @@ cmpCapitalV["``"] := "{u+01db}"      ; (Ǜ) U with diaeresis and grave
       Send cmpCurrency[ihB.Input]
   }
   else if (ihA.Input == "g") {
-    if cmpGreekAlphabet.Has(ihB.Input)
-      Send cmpGreekAlphabet[ihB.Input]
+    if cmpGreek.Has(ihB.Input)
+      Send cmpGreek[ihB.Input]
   }
   else if (ihA.Input == "p") {
     if cmpSuperscript.Has(ihB.Input)
