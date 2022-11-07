@@ -1,4 +1,4 @@
-# UltimateKEYS - 2022-11-04  (~/.XCompose)
+# UltimateKEYS - 2022-11-07  (~/.XCompose)
 
 # Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -187,6 +187,8 @@
 <Multi_key> <underscore> <I> : "Ɨ"  U0197  # I with stroke
 <Multi_key> <underscore> <l> : "ƚ"  U019A  # l with bar
 <Multi_key> <underscore> <L> : "Ƚ"  U023D  # L with bar
+<Multi_key> <underscore> <o> : "ɵ"  U0275  # barred o
+<Multi_key> <underscore> <O> : "Ɵ"  U019F  # O with middle tilde
 <Multi_key> <underscore> <u> : "ʉ"  U0289  # u with bar
 <Multi_key> <underscore> <U> : "Ʉ"  U0244  # U with bar
 <Multi_key> <underscore> <y> : "ɏ"  U024F  # y with stroke
@@ -489,15 +491,19 @@
 <Multi_key> <l> <E> : "Ɛ"  U0190  # capital letter open E (Latin capital epsilon)
 <Multi_key> <l> <f> : "ſ"  U017F  # small letter long s
 <Multi_key> <l> <F> : "ẛ"  U1E9B  # long s with dot above
-<Multi_key> <l> <g> : "ɣ"  U0263  # Latin small letter gamma
-<Multi_key> <l> <G> : "Ɣ"  U0194  # Latin capital letter gamma
+<Multi_key> <l> <g> : "ɡ"  U0261  # small letter script g
+<Multi_key> <l> <G> : "Ɡ"  UA7AC  # capital letter script G
 <Multi_key> <l> <h> : "ꜧ"  UA727  # small letter heng
 <Multi_key> <l> <H> : "Ꜧ"  UA726  # capital letter heng
 <Multi_key> <l> <i> : "ɩ"  U0269  # Latin small letter iota
 <Multi_key> <l> <I> : "Ɩ"  U0196  # Latin capital letter iota
+<Multi_key> <l> <j> : "ɣ"  U0263  # Latin small letter gamma
+<Multi_key> <l> <J> : "Ɣ"  U0194  # Latin capital letter gamma
 <Multi_key> <l> <k> : "ĸ"  U0138  # small letter kra
 <Multi_key> <l> <o> : "ɔ"  U0254  # small letter open o
 <Multi_key> <l> <O> : "Ɔ"  U0186  # capital letter open O
+<Multi_key> <l> <q> : "ƣ"  U01A3  # small letter gha
+<Multi_key> <l> <Q> : "Ƣ"  U01A2  # capital letter gha
 <Multi_key> <l> <s> : "ʃ"  U0283  # small letter esh
 <Multi_key> <l> <S> : "Ʃ"  U01A9  # capital letter esh
 <Multi_key> <l> <u> : "ʊ"  U028A  # Latin small letter upsilon
@@ -506,15 +512,24 @@
 
 # Turned Letters
 
-<Multi_key> <t> <a> : "ɐ"  U0250  # Latin small letter turned a
-<Multi_key> <t> <A> : "Ɐ"  U2C6F  # Latin capital letter turned A
-<Multi_key> <t> <e> : "ǝ"  U01DD  # Latin small letter turned e
-<Multi_key> <t> <E> : "Ǝ"  U018E  # Latin capital letter reversed E
-<Multi_key> <t> <q> : "ɒ"  U0252  # Latin small letter turned alpha
-<Multi_key> <t> <Q> : "Ɒ"  U2C70  # Latin capital letter turned alpha
-<Multi_key> <t> <v> : "ʌ"  U028C  # Latin small letter turned v
-<Multi_key> <t> <V> : "Ʌ"  U0245  # Latin capital letter turned V
-<Multi_key> <t> <y> : "ʎ"  U028E  # Latin small letter turned y
+<Multi_key> <r> <a> : "ɐ"  U0250  # Latin small letter turned a
+<Multi_key> <r> <A> : "Ɐ"  U2C6F  # Latin capital letter turned A
+<Multi_key> <r> <e> : "ǝ"  U01DD  # Latin small letter turned e
+<Multi_key> <r> <E> : "Ǝ"  U018E  # Latin capital letter reversed E
+<Multi_key> <r> <g> : "ᵷ"  U1D77  # Latin small letter turned g
+<Multi_key> <r> <G> : "⅁"  U2141  # Latin capital letter turned G
+<Multi_key> <r> <h> : "ɥ"  U0265  # Latin small letter turned h
+<Multi_key> <r> <H> : "Ɥ"  UA78D  # Latin capital letter turned H
+<Multi_key> <r> <k> : "ʞ"  U029E  # Latin small letter turned k
+<Multi_key> <r> <K> : "Ʞ"  UA7B0  # Latin capital letter turned K
+<Multi_key> <r> <m> : "ɯ"  U026F  # Latin small letter turned m
+<Multi_key> <r> <M> : "Ɯ"  U019C  # Latin capital letter turned M
+<Multi_key> <r> <o> : "ɤ"  U0264  # Latin small letter rams horn
+<Multi_key> <r> <q> : "ɒ"  U0252  # Latin small letter turned alpha
+<Multi_key> <r> <Q> : "Ɒ"  U2C70  # Latin capital letter turned alpha
+<Multi_key> <r> <v> : "ʌ"  U028C  # Latin small letter turned v
+<Multi_key> <r> <V> : "Ʌ"  U0245  # Latin capital letter turned V
+<Multi_key> <r> <y> : "ʎ"  U028E  # Latin small letter turned y
 
 
 # Letters with Two Diacritical Marks

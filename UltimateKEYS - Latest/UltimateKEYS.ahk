@@ -1,4 +1,4 @@
-; UltimateKEYS.ahk - 2022-11-04
+; UltimateKEYS.ahk - 2022-11-07
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -204,6 +204,8 @@ cmpMacronStrokeAdd.item["i"] := "{u+0268}"  ; (ɨ) i with stroke
 cmpMacronStrokeAdd.item["I"] := "{u+0197}"  ; (Ɨ) I with stroke
 cmpMacronStrokeAdd.item["l"] := "{u+019a}"  ; (ƚ) l with bar
 cmpMacronStrokeAdd.item["L"] := "{u+023d}"  ; (Ƚ) L with bar
+cmpMacronStrokeAdd.item["o"] := "{u+0275}"  ; (ɵ) barred o
+cmpMacronStrokeAdd.item["O"] := "{u+019f}"  ; (Ɵ) O with middle tilde
 cmpMacronStrokeAdd.item["u"] := "{u+0289}"  ; (ʉ) u with bar
 cmpMacronStrokeAdd.item["U"] := "{u+0244}"  ; (Ʉ) U with bar
 cmpMacronStrokeAdd.item["y"] := "{u+024f}"  ; (ɏ) y with stroke
@@ -518,33 +520,46 @@ cmpLatinGreek.item["e"] := "{u+025b}"  ; (ɛ) small letter open e (Latin small e
 cmpLatinGreek.item["E"] := "{u+0190}"  ; (Ɛ) capital letter open E (Latin capital epsilon)
 cmpLatinGreek.item["f"] := "{u+017f}"  ; (ſ) small letter long s
 cmpLatinGreek.item["F"] := "{u+1e9b}"  ; (ẛ) long s with dot above
-cmpLatinGreek.item["g"] := "{u+0263}"  ; (ɣ) Latin small letter gamma
-cmpLatinGreek.item["G"] := "{u+0194}"  ; (Ɣ) Latin capital letter gamma
+cmpLatinGreek.item["g"] := "{u+0261}"  ; (ɡ) small letter script g
+cmpLatinGreek.item["G"] := "{u+a7ac}"  ; (Ɡ) capital letter script G
 cmpLatinGreek.item["h"] := "{u+a727}"  ; (ꜧ) small letter heng
 cmpLatinGreek.item["H"] := "{u+a726}"  ; (Ꜧ) capital letter heng
 cmpLatinGreek.item["i"] := "{u+0269}"  ; (ɩ) Latin small letter iota
 cmpLatinGreek.item["I"] := "{u+0196}"  ; (Ɩ) Latin capital letter iota
+cmpLatinGreek.item["j"] := "{u+0263}"  ; (ɣ) Latin small letter gamma
+cmpLatinGreek.item["J"] := "{u+0194}"  ; (Ɣ) Latin capital letter gamma
 cmpLatinGreek.item["k"] := "{u+0138}"  ; (ĸ) small letter kra
 cmpLatinGreek.item["o"] := "{u+0254}"  ; (ɔ) small letter open o
 cmpLatinGreek.item["O"] := "{u+0186}"  ; (Ɔ) capital letter open O
+cmpLatinGreek.item["q"] := "{u+01a3}"  ; (ƣ) small letter gha
+cmpLatinGreek.item["Q"] := "{u+01a2}"  ; (Ƣ) capital letter gha
 cmpLatinGreek.item["s"] := "{u+0283}"  ; (ʃ) small letter esh
 cmpLatinGreek.item["S"] := "{u+01a9}"  ; (Ʃ) capital letter esh
 cmpLatinGreek.item["u"] := "{u+028a}"  ; (ʊ) Latin small letter upsilon
 cmpLatinGreek.item["U"] := "{u+01b1}"  ; (Ʊ) Latin capital letter upsilon
 
 
-; Compose :  Turned Letters (t)
+; Compose :  Turned Letters (r)
 
-cmpTurned := ComObjCreate("Scripting.Dictionary")
-cmpTurned.item["a"] := "{u+0250}"  ; (ɐ) Latin small letter turned a
-cmpTurned.item["A"] := "{u+2c6f}"  ; (Ɐ) Latin capital letter turned A
-cmpTurned.item["e"] := "{u+01dd}"  ; (ǝ) Latin small letter turned e
-cmpTurned.item["E"] := "{u+018e}"  ; (Ǝ) Latin capital letter reversed E
-cmpTurned.item["q"] := "{u+0252}"  ; (ɒ) Latin small letter turned alpha
-cmpTurned.item["Q"] := "{u+2c70}"  ; (Ɒ) Latin capital letter turned alpha
-cmpTurned.item["v"] := "{u+028c}"  ; (ʌ) Latin small letter turned v
-cmpTurned.item["V"] := "{u+0245}"  ; (Ʌ) Latin capital letter turned V
-cmpTurned.item["y"] := "{u+028e}"  ; (ʎ) Latin small letter turned y
+cmpSmallR := ComObjCreate("Scripting.Dictionary")
+cmpSmallR.item["a"] := "{u+0250}"  ; (ɐ) Latin small letter turned a
+cmpSmallR.item["A"] := "{u+2c6f}"  ; (Ɐ) Latin capital letter turned A
+cmpSmallR.item["e"] := "{u+01dd}"  ; (ǝ) Latin small letter turned e
+cmpSmallR.item["E"] := "{u+018e}"  ; (Ǝ) Latin capital letter reversed E
+cmpSmallR.item["g"] := "{u+1d77}"  ; (ᵷ) Latin small letter turned g
+cmpSmallR.item["G"] := "{u+2141}"  ; (⅁) Latin capital letter turned G
+cmpSmallR.item["h"] := "{u+0265}"  ; (ɥ) Latin small letter turned h
+cmpSmallR.item["H"] := "{u+a78d}"  ; (Ɥ) Latin capital letter turned H
+cmpSmallR.item["k"] := "{u+029e}"  ; (ʞ) Latin small letter turned k
+cmpSmallR.item["K"] := "{u+a7b0}"  ; (Ʞ) Latin capital letter turned K
+cmpSmallR.item["m"] := "{u+026f}"  ; (ɯ) Latin small letter turned m
+cmpSmallR.item["M"] := "{u+019c}"  ; (Ɯ) Latin capital letter turned M
+cmpSmallR.item["o"] := "{u+0264}"  ; (ɤ) Latin small letter rams horn
+cmpSmallR.item["q"] := "{u+0252}"  ; (ɒ) Latin small letter turned alpha
+cmpSmallR.item["Q"] := "{u+2c70}"  ; (Ɒ) Latin capital letter turned alpha
+cmpSmallR.item["v"] := "{u+028c}"  ; (ʌ) Latin small letter turned v
+cmpSmallR.item["V"] := "{u+0245}"  ; (Ʌ) Latin capital letter turned V
+cmpSmallR.item["y"] := "{u+028e}"  ; (ʎ) Latin small letter turned y
 
 
 ; Compose :  Currency Symbols ($)
@@ -876,6 +891,7 @@ cmpSmallN := ComObjCreate("Scripting.Dictionary")
 cmpCapitalN := ComObjCreate("Scripting.Dictionary")
 cmpCapitalO := ComObjCreate("Scripting.Dictionary")
 cmpCapitalS := ComObjCreate("Scripting.Dictionary")
+cmpSmallT := ComObjCreate("Scripting.Dictionary")
 cmpCapitalT := ComObjCreate("Scripting.Dictionary")
 cmpArrow.item["e"] := "{u+00e6}"      ; (æ) letter ae
 cmpCapitalA.item["E"] := "{u+00c6}"   ; (Æ) letter AE
@@ -889,7 +905,7 @@ cmpRingAbove.item["e"] := "{u+0153}"  ; (œ) ligature oe
 cmpCapitalO.item["E"] := "{u+0152}"   ; (Œ) ligature OE
 cmpSymbols.item["s"] := "{u+00df}"    ; (ß) small sharp s (Eszett)
 cmpCapitalS.item["S"] := "{u+1e9e}"   ; (ẞ) capital sharp S (capital Eszett)
-cmpTurned.item["h"] := "{u+00fe}"     ; (þ) small letter thorn
+cmpSmallT.item["h"] := "{u+00fe}"     ; (þ) small letter thorn
 cmpCapitalT.item["H"] := "{u+00de}"   ; (Þ) capital letter thorn
 
 
@@ -897,7 +913,6 @@ cmpCapitalT.item["H"] := "{u+00de}"   ; (Þ) capital letter thorn
 
 cmpDigitEight := ComObjCreate("Scripting.Dictionary")
 cmpCapitalP := ComObjCreate("Scripting.Dictionary")
-cmpSmallR := ComObjCreate("Scripting.Dictionary")
 cmpSemicolon := ComObjCreate("Scripting.Dictionary")
 cmpAsterisk := ComObjCreate("Scripting.Dictionary")
 cmpExclam := ComObjCreate("Scripting.Dictionary")
@@ -922,7 +937,7 @@ cmpSmallR.item["3"] := "{u+221b}"        ; (∛) cube root
 cmpSmallR.item["4"] := "{u+221c}"        ; (∜) fourth root
 cmpSymbols.item["o"] := "{u+00a7}"       ; (§) section sign
 cmpCapitalS.item["o"] := "{u+00a7}"      ; (§) section sign
-cmpTurned.item["m"] := "{u+2122}"        ; (™) trademark symbol
+cmpSmallT.item["m"] := "{u+2122}"        ; (™) trademark symbol
 cmpSemicolon.item["b"] := "{u+2022}"     ; (•) bullet
 cmpSemicolon.item[";"] := "{u+2022}"     ; (•) bullet
 cmpSemicolon.item["t"] := "{u+2023}"     ; (‣) triangular bullet
@@ -1774,8 +1789,8 @@ cmpSmallN.item["0"] := "{u+277f}"  ; (❿) dingbat negative circled digit 10
     Send % cmpHook.item[keyB]
   else if (keyA == "l")
     Send % cmpLatinGreek.item[keyB]
-  else if (keyA == "t")
-    Send % cmpTurned.item[keyB]
+  else if (keyA == "r")
+    Send % cmpSmallR.item[keyB]
   else if (keyA == "$")
     Send % cmpCurrency.item[keyB]
   else if (keyA == "g")
@@ -1812,12 +1827,12 @@ cmpSmallN.item["0"] := "{u+277f}"  ; (❿) dingbat negative circled digit 10
     Send % cmpCapitalO.item[keyB]
   else if (keyA == "S")
     Send % cmpCapitalS.item[keyB]
+  else if (keyA == "t")
+    Send % cmpSmallT.item[keyB]
   else if (keyA == "T")
     Send % cmpCapitalT.item[keyB]
   else if (keyA == "P")
     Send % cmpCapitalP.item[keyB]
-  else if (keyA == "r")
-    Send % cmpSmallR.item[keyB]
   else if (keyA == ";")
     Send % cmpSemicolon.item[keyB]
   else if (keyA == "*")
