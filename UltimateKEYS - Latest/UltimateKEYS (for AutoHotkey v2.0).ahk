@@ -1,4 +1,4 @@
-; UltimateKEYS (for AutoHotkey v2.0).ahk - 2022-11-07
+; UltimateKEYS (for AutoHotkey v2.0).ahk - 2022-11-08
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -544,24 +544,25 @@ cmpLatinGreek["U"] := "{u+01b1}"  ; (Ʊ) Latin capital letter upsilon
 ; Compose :  Turned Letters (r)
 
 global cmpSmallR := Map()
-cmpSmallR["a"] := "{u+0250}"  ; (ɐ) Latin small letter turned a
-cmpSmallR["A"] := "{u+2c6f}"  ; (Ɐ) Latin capital letter turned A
-cmpSmallR["e"] := "{u+01dd}"  ; (ǝ) Latin small letter turned e
-cmpSmallR["E"] := "{u+018e}"  ; (Ǝ) Latin capital letter reversed E
-cmpSmallR["g"] := "{u+1d77}"  ; (ᵷ) Latin small letter turned g
-cmpSmallR["G"] := "{u+2141}"  ; (⅁) Latin capital letter turned G
-cmpSmallR["h"] := "{u+0265}"  ; (ɥ) Latin small letter turned h
-cmpSmallR["H"] := "{u+a78d}"  ; (Ɥ) Latin capital letter turned H
-cmpSmallR["k"] := "{u+029e}"  ; (ʞ) Latin small letter turned k
-cmpSmallR["K"] := "{u+a7b0}"  ; (Ʞ) Latin capital letter turned K
-cmpSmallR["m"] := "{u+026f}"  ; (ɯ) Latin small letter turned m
-cmpSmallR["M"] := "{u+019c}"  ; (Ɯ) Latin capital letter turned M
-cmpSmallR["o"] := "{u+0264}"  ; (ɤ) Latin small letter rams horn
+cmpSmallR["a"] := "{u+0250}"  ; (ɐ) small letter turned a
+cmpSmallR["A"] := "{u+2c6f}"  ; (Ɐ) capital letter turned A
+cmpSmallR["e"] := "{u+01dd}"  ; (ǝ) small letter turned e
+cmpSmallR["E"] := "{u+018e}"  ; (Ǝ) capital letter reversed E
+cmpSmallR["f"] := "{u+025c}"  ; (ɜ) small letter reversed open e
+cmpSmallR["g"] := "{u+1d77}"  ; (ᵷ) small letter turned g
+cmpSmallR["G"] := "{u+2141}"  ; (⅁) capital letter turned G
+cmpSmallR["h"] := "{u+0265}"  ; (ɥ) small letter turned h
+cmpSmallR["H"] := "{u+a78d}"  ; (Ɥ) capital letter turned H
+cmpSmallR["k"] := "{u+029e}"  ; (ʞ) small letter turned k
+cmpSmallR["K"] := "{u+a7b0}"  ; (Ʞ) capital letter turned K
+cmpSmallR["m"] := "{u+026f}"  ; (ɯ) small letter turned m
+cmpSmallR["M"] := "{u+019c}"  ; (Ɯ) capital letter turned M
+cmpSmallR["o"] := "{u+0264}"  ; (ɤ) small letter rams horn
 cmpSmallR["q"] := "{u+0252}"  ; (ɒ) Latin small letter turned alpha
 cmpSmallR["Q"] := "{u+2c70}"  ; (Ɒ) Latin capital letter turned alpha
-cmpSmallR["v"] := "{u+028c}"  ; (ʌ) Latin small letter turned v
-cmpSmallR["V"] := "{u+0245}"  ; (Ʌ) Latin capital letter turned V
-cmpSmallR["y"] := "{u+028e}"  ; (ʎ) Latin small letter turned y
+cmpSmallR["v"] := "{u+028c}"  ; (ʌ) small letter turned v
+cmpSmallR["V"] := "{u+0245}"  ; (Ʌ) capital letter turned V
+cmpSmallR["y"] := "{u+028e}"  ; (ʎ) small letter turned y
 
 
 ; Compose :  Currency Symbols ($)
