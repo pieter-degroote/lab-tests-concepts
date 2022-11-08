@@ -448,6 +448,7 @@
 <Multi_key> <h> <C> : "Ƈ"  U0187  # C with hook
 <Multi_key> <h> <d> : "ɗ"  U0257  # d with hook
 <Multi_key> <h> <D> : "Ɗ"  U018A  # D with hook
+<Multi_key> <h> <e> : "ɚ"  U025A  # small letter schwa with hook
 <Multi_key> <h> <f> : "ƒ"  U0192  # f with hook
 <Multi_key> <h> <F> : "Ƒ"  U0191  # F with hook
 <Multi_key> <h> <g> : "ɠ"  U0260  # g with hook

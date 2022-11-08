@@ -476,6 +476,7 @@ cmpSmallH.item["c"] := "{u+0188}"  ; (ƈ) c with hook
 cmpSmallH.item["C"] := "{u+0187}"  ; (Ƈ) C with hook
 cmpSmallH.item["d"] := "{u+0257}"  ; (ɗ) d with hook
 cmpSmallH.item["D"] := "{u+018a}"  ; (Ɗ) D with hook
+cmpSmallH.item["e"] := "{u+025a}"  ; (ɚ) small letter schwa with hook
 cmpSmallH.item["f"] := "{u+0192}"  ; (ƒ) f with hook
 cmpSmallH.item["F"] := "{u+0191}"  ; (Ƒ) F with hook
 cmpSmallH.item["g"] := "{u+0260}"  ; (ɠ) g with hook
