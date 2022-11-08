@@ -541,14 +541,16 @@
 
 <Multi_key> <r> <a> : "ɐ"  U0250  # small letter turned a
 <Multi_key> <r> <A> : "Ɐ"  U2C6F  # capital letter turned A
+<Multi_key> <r> <c> : "ɜ"  U025C  # small letter reversed open e
 <Multi_key> <r> <d> : "ƍ"  U018D  # Latin small letter turned delta
 <Multi_key> <r> <e> : "ǝ"  U01DD  # small letter turned e
 <Multi_key> <r> <E> : "Ǝ"  U018E  # capital letter reversed E
-<Multi_key> <r> <f> : "ɜ"  U025C  # small letter reversed open e
+<Multi_key> <r> <f> : "ɘ"  U0258  # small letter reversed e
 <Multi_key> <r> <g> : "ᵷ"  U1D77  # small letter turned g
 <Multi_key> <r> <G> : "⅁"  U2141  # capital letter turned G
 <Multi_key> <r> <h> : "ɥ"  U0265  # small letter turned h
 <Multi_key> <r> <H> : "Ɥ"  UA78D  # capital letter turned H
+<Multi_key> <r> <i> : "ᴉ"  U1D09  # small letter turned i
 <Multi_key> <r> <k> : "ʞ"  U029E  # small letter turned k
 <Multi_key> <r> <K> : "Ʞ"  UA7B0  # capital letter turned K
 <Multi_key> <r> <m> : "ɯ"  U026F  # small letter turned m
