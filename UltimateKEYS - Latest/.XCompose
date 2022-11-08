@@ -292,22 +292,6 @@
 <Multi_key> <b> <space>      : "˘"  U02D8  # breve
 
 
-# Inverted Breve
-
-<Multi_key> <B> <a> : "ȃ"  U0203  # a with inverted breve
-<Multi_key> <B> <A> : "Ȃ"  U0202  # A with inverted breve
-<Multi_key> <B> <e> : "ȇ"  U0207  # e with inverted breve
-<Multi_key> <B> <E> : "Ȇ"  U0206  # E with inverted breve
-<Multi_key> <B> <i> : "ȋ"  U020B  # i with inverted breve
-<Multi_key> <B> <I> : "Ȋ"  U020A  # I with inverted breve
-<Multi_key> <B> <o> : "ȏ"  U020F  # o with inverted breve
-<Multi_key> <B> <O> : "Ȏ"  U020E  # O with inverted breve
-<Multi_key> <B> <r> : "ȓ"  U0213  # r with inverted breve
-<Multi_key> <B> <R> : "Ȓ"  U0212  # R with inverted breve
-<Multi_key> <B> <u> : "ȗ"  U0217  # u with inverted breve
-<Multi_key> <B> <U> : "Ȗ"  U0216  # U with inverted breve
-
-
 # Acute Accent
 
 <Multi_key> <apostrophe> <a> : "á"  U00E1  # a with acute
@@ -371,15 +355,6 @@
 <Multi_key> <quotedbl> <space> : "¨"  U00A8  # diaeresis
 
 
-# Double Acute Accent
-
-<Multi_key> <equal> <o> : "ő"  U0151  # o with double acute
-<Multi_key> <equal> <O> : "Ő"  U0150  # O with double acute
-<Multi_key> <equal> <u> : "ű"  U0171  # u with double acute
-<Multi_key> <equal> <U> : "Ű"  U0170  # U with double acute
-<Multi_key> <equal> <space> : "˝"  U02DD  # double acute accent
-
-
 # Grave Accent
 
 <Multi_key> <grave> <a> : "à"  U00E0  # a with grave
@@ -399,22 +374,6 @@
 <Multi_key> <grave> <y> : "ỳ"  U1EF3  # y with grave
 <Multi_key> <grave> <Y> : "Ỳ"  U1EF2  # Y with grave
 <Multi_key> <grave> <space> : "ˋ"  U02CB  # grave accent (modifier)
-
-
-# Double Grave Accent
-
-<Multi_key> <G> <a> : "ȁ"  U0201  # a with double grave
-<Multi_key> <G> <A> : "Ȁ"  U0200  # A with double grave
-<Multi_key> <G> <e> : "ȅ"  U0205  # e with double grave
-<Multi_key> <G> <E> : "Ȅ"  U0204  # E with double grave
-<Multi_key> <G> <i> : "ȉ"  U0209  # i with double grave
-<Multi_key> <G> <I> : "Ȉ"  U0208  # I with double grave
-<Multi_key> <G> <o> : "ȍ"  U020D  # o with double grave
-<Multi_key> <G> <O> : "Ȍ"  U020C  # O with double grave
-<Multi_key> <G> <r> : "ȑ"  U0211  # r with double grave
-<Multi_key> <G> <R> : "Ȑ"  U0210  # R with double grave
-<Multi_key> <G> <u> : "ȕ"  U0215  # u with double grave
-<Multi_key> <G> <U> : "Ȕ"  U0214  # U with double grave
 
 
 # Tilde
@@ -440,6 +399,47 @@
 <Multi_key> <asciitilde> <space> : "˜"  U02DC  # small tilde
 
 
+# Double Acute Accent
+
+<Multi_key> <equal> <o> : "ő"  U0151  # o with double acute
+<Multi_key> <equal> <O> : "Ő"  U0150  # O with double acute
+<Multi_key> <equal> <u> : "ű"  U0171  # u with double acute
+<Multi_key> <equal> <U> : "Ű"  U0170  # U with double acute
+<Multi_key> <equal> <space> : "˝"  U02DD  # double acute accent
+
+
+# Double Grave Accent
+
+<Multi_key> <G> <a> : "ȁ"  U0201  # a with double grave
+<Multi_key> <G> <A> : "Ȁ"  U0200  # A with double grave
+<Multi_key> <G> <e> : "ȅ"  U0205  # e with double grave
+<Multi_key> <G> <E> : "Ȅ"  U0204  # E with double grave
+<Multi_key> <G> <i> : "ȉ"  U0209  # i with double grave
+<Multi_key> <G> <I> : "Ȉ"  U0208  # I with double grave
+<Multi_key> <G> <o> : "ȍ"  U020D  # o with double grave
+<Multi_key> <G> <O> : "Ȍ"  U020C  # O with double grave
+<Multi_key> <G> <r> : "ȑ"  U0211  # r with double grave
+<Multi_key> <G> <R> : "Ȑ"  U0210  # R with double grave
+<Multi_key> <G> <u> : "ȕ"  U0215  # u with double grave
+<Multi_key> <G> <U> : "Ȕ"  U0214  # U with double grave
+
+
+# Inverted Breve
+
+<Multi_key> <B> <a> : "ȃ"  U0203  # a with inverted breve
+<Multi_key> <B> <A> : "Ȃ"  U0202  # A with inverted breve
+<Multi_key> <B> <e> : "ȇ"  U0207  # e with inverted breve
+<Multi_key> <B> <E> : "Ȇ"  U0206  # E with inverted breve
+<Multi_key> <B> <i> : "ȋ"  U020B  # i with inverted breve
+<Multi_key> <B> <I> : "Ȋ"  U020A  # I with inverted breve
+<Multi_key> <B> <o> : "ȏ"  U020F  # o with inverted breve
+<Multi_key> <B> <O> : "Ȏ"  U020E  # O with inverted breve
+<Multi_key> <B> <r> : "ȓ"  U0213  # r with inverted breve
+<Multi_key> <B> <R> : "Ȓ"  U0212  # R with inverted breve
+<Multi_key> <B> <u> : "ȗ"  U0217  # u with inverted breve
+<Multi_key> <B> <U> : "Ȗ"  U0216  # U with inverted breve
+
+
 # Hook and Horn
 
 <Multi_key> <h> <b> : "ɓ"  U0253  # b with hook
@@ -454,7 +454,6 @@
 <Multi_key> <h> <G> : "Ɠ"  U0193  # G with hook
 <Multi_key> <h> <h> : "ɦ"  U0266  # h with hook
 <Multi_key> <h> <H> : "Ɦ"  UA7AA  # H with hook
-<Multi_key> <h> <j> : "ɧ"  U0267  # small letter heng with hook
 <Multi_key> <h> <k> : "ƙ"  U0199  # k with hook
 <Multi_key> <h> <K> : "Ƙ"  U0198  # K with hook
 <Multi_key> <h> <m> : "ɱ"  U0271  # m with hook
@@ -469,6 +468,7 @@
 <Multi_key> <h> <Q> : "Ɋ"  U024A  # Q with hook tail
 <Multi_key> <h> <r> : "ɽ"  U027D  # r with tail
 <Multi_key> <h> <R> : "Ɽ"  U2C64  # R with tail
+<Multi_key> <h> <s> : "ʂ"  U0282  # s with hook
 <Multi_key> <h> <t> : "ƭ"  U01AD  # t with hook
 <Multi_key> <h> <T> : "Ƭ"  U01AC  # T with hook
 <Multi_key> <h> <u> : "ư"  U01B0  # u with horn
@@ -483,11 +483,34 @@
 <Multi_key> <h> <Z> : "Ȥ"  U0224  # Z with hook
 
 
+# Retroflex Hook, Crossed-Tail and Variations
+
+<Multi_key> <f> <a> : "ᶏ"  U1D8F  # a with retroflex hook
+<Multi_key> <f> <d> : "ᶑ"  U1D91  # d with hook and tail
+<Multi_key> <f> <e> : "ᶒ"  U1D92  # e with retroflex hook
+<Multi_key> <f> <f> : "ᶓ"  U1D93  # small letter open e with retroflex hook
+<Multi_key> <f> <g> : "ꬶ"  UAB36  # small letter script g with crossed-tail
+<Multi_key> <f> <h> : "ɧ"  U0267  # small letter heng with hook
+<Multi_key> <f> <i> : "ᶖ"  U1D96  # i with retroflex hook
+<Multi_key> <f> <j> : "ʝ"  U029D  # j with crossed-tail
+<Multi_key> <f> <l> : "ɭ"  U026D  # l with retroflex hook
+<Multi_key> <f> <n> : "ɳ"  U0273  # n with retroflex hook
+<Multi_key> <f> <o> : "ᶗ"  U1D97  # small letter open o with retroflex hook
+<Multi_key> <f> <q> : "ᶐ"  U1D90  # Latin small letter alpha with retroflex hook
+<Multi_key> <f> <r> : "ɾ"  U027E  # r with fishhook
+<Multi_key> <f> <t> : "ʈ"  U0288  # t with retroflex hook
+<Multi_key> <f> <T> : "Ʈ"  U01AE  # T with retroflex hook
+<Multi_key> <f> <u> : "ᶙ"  U1D99  # u with retroflex hook
+<Multi_key> <f> <v> : "ⱱ"  U2C71  # v with right hook
+<Multi_key> <f> <w> : "ⱳ"  U2C73  # w with right hook
+<Multi_key> <f> <W> : "Ⱳ"  U2C72  # W with right hook
+<Multi_key> <f> <z> : "ʐ"  U0290  # z with retroflex hook
+
+
 # Latin Greek Letters and Variations
 
 <Multi_key> <l> <a> : "ɑ"  U0251  # Latin small letter alpha
 <Multi_key> <l> <A> : "Ɑ"  U2C6D  # Latin capital letter alpha
-<Multi_key> <l> <c> : "ꬶ"  UAB36  # small letter script g with crossed-tail
 <Multi_key> <l> <d> : "ẟ"  U1E9F  # Latin small letter delta
 <Multi_key> <l> <e> : "ɛ"  U025B  # small letter open e (Latin small epsilon)
 <Multi_key> <l> <E> : "Ɛ"  U0190  # capital letter open E (Latin capital epsilon)

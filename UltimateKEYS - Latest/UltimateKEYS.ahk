@@ -312,23 +312,6 @@ cmpBreveSpecial.item["#"] := "{u+01b7}"  ; (Ʒ) capital letter ezh
 cmpBreveSpecial.item[" "] := "{u+02d8}"  ; (˘) breve
 
 
-; Compose :  Inverted Breve (B)
-
-cmpInvertedBreve := ComObjCreate("Scripting.Dictionary")
-cmpInvertedBreve.item["a"] := "{u+0203}"  ; (ȃ) a with inverted breve
-cmpInvertedBreve.item["A"] := "{u+0202}"  ; (Ȃ) A with inverted breve
-cmpInvertedBreve.item["e"] := "{u+0207}"  ; (ȇ) e with inverted breve
-cmpInvertedBreve.item["E"] := "{u+0206}"  ; (Ȇ) E with inverted breve
-cmpInvertedBreve.item["i"] := "{u+020b}"  ; (ȋ) i with inverted breve
-cmpInvertedBreve.item["I"] := "{u+020a}"  ; (Ȋ) I with inverted breve
-cmpInvertedBreve.item["o"] := "{u+020f}"  ; (ȏ) o with inverted breve
-cmpInvertedBreve.item["O"] := "{u+020e}"  ; (Ȏ) O with inverted breve
-cmpInvertedBreve.item["r"] := "{u+0213}"  ; (ȓ) r with inverted breve
-cmpInvertedBreve.item["R"] := "{u+0212}"  ; (Ȓ) R with inverted breve
-cmpInvertedBreve.item["u"] := "{u+0217}"  ; (ȗ) u with inverted breve
-cmpInvertedBreve.item["U"] := "{u+0216}"  ; (Ȗ) U with inverted breve
-
-
 ; Compose :  Acute Accent (')
 
 cmpAcuteAccent := ComObjCreate("Scripting.Dictionary")
@@ -394,16 +377,6 @@ cmpDiaeresis.item["Y"] := "{u+0178}"  ; (Ÿ) Y with diaeresis
 cmpDiaeresis.item[" "] := "{u+00a8}"  ; (¨) diaeresis
 
 
-; Compose :  Double Acute Accent (=)
-
-cmpDoubleAcute := ComObjCreate("Scripting.Dictionary")
-cmpDoubleAcute.item["o"] := "{u+0151}"  ; (ő) o with double acute
-cmpDoubleAcute.item["O"] := "{u+0150}"  ; (Ő) O with double acute
-cmpDoubleAcute.item["u"] := "{u+0171}"  ; (ű) u with double acute
-cmpDoubleAcute.item["U"] := "{u+0170}"  ; (Ű) U with double acute
-cmpDoubleAcute.item[" "] := "{u+02dd}"  ; (˝) double acute accent
-
-
 ; Compose :  Grave Accent (`)
 
 cmpGraveAccent := ComObjCreate("Scripting.Dictionary")
@@ -424,23 +397,6 @@ cmpGraveAccent.item["W"] := "{u+1e80}"  ; (Ẁ) W with grave
 cmpGraveAccent.item["y"] := "{u+1ef3}"  ; (ỳ) y with grave
 cmpGraveAccent.item["Y"] := "{u+1ef2}"  ; (Ỳ) Y with grave
 cmpGraveAccent.item[" "] := "{u+02cb}"  ; (ˋ) grave accent (modifier)
-
-
-; Compose :  Double Grave Accent (G)
-
-cmpDoubleGrave := ComObjCreate("Scripting.Dictionary")
-cmpDoubleGrave.item["a"] := "{u+0201}"  ; (ȁ) a with double grave
-cmpDoubleGrave.item["A"] := "{u+0200}"  ; (Ȁ) A with double grave
-cmpDoubleGrave.item["e"] := "{u+0205}"  ; (ȅ) e with double grave
-cmpDoubleGrave.item["E"] := "{u+0204}"  ; (Ȅ) E with double grave
-cmpDoubleGrave.item["i"] := "{u+0209}"  ; (ȉ) i with double grave
-cmpDoubleGrave.item["I"] := "{u+0208}"  ; (Ȉ) I with double grave
-cmpDoubleGrave.item["o"] := "{u+020d}"  ; (ȍ) o with double grave
-cmpDoubleGrave.item["O"] := "{u+020c}"  ; (Ȍ) O with double grave
-cmpDoubleGrave.item["r"] := "{u+0211}"  ; (ȑ) r with double grave
-cmpDoubleGrave.item["R"] := "{u+0210}"  ; (Ȑ) R with double grave
-cmpDoubleGrave.item["u"] := "{u+0215}"  ; (ȕ) u with double grave
-cmpDoubleGrave.item["U"] := "{u+0214}"  ; (Ȕ) U with double grave
 
 
 ; Compose :  Tilde (~)
@@ -467,80 +423,148 @@ cmpTilde.item["Y"] := "{u+1ef8}"  ; (Ỹ) Y with tilde
 cmpTilde.item[" "] := "{u+02dc}"  ; (˜) small tilde
 
 
+; Compose :  Double Acute Accent (=)
+
+cmpDoubleAcute := ComObjCreate("Scripting.Dictionary")
+cmpDoubleAcute.item["o"] := "{u+0151}"  ; (ő) o with double acute
+cmpDoubleAcute.item["O"] := "{u+0150}"  ; (Ő) O with double acute
+cmpDoubleAcute.item["u"] := "{u+0171}"  ; (ű) u with double acute
+cmpDoubleAcute.item["U"] := "{u+0170}"  ; (Ű) U with double acute
+cmpDoubleAcute.item[" "] := "{u+02dd}"  ; (˝) double acute accent
+
+
+; Compose :  Double Grave Accent (G)
+
+cmpDoubleGrave := ComObjCreate("Scripting.Dictionary")
+cmpDoubleGrave.item["a"] := "{u+0201}"  ; (ȁ) a with double grave
+cmpDoubleGrave.item["A"] := "{u+0200}"  ; (Ȁ) A with double grave
+cmpDoubleGrave.item["e"] := "{u+0205}"  ; (ȅ) e with double grave
+cmpDoubleGrave.item["E"] := "{u+0204}"  ; (Ȅ) E with double grave
+cmpDoubleGrave.item["i"] := "{u+0209}"  ; (ȉ) i with double grave
+cmpDoubleGrave.item["I"] := "{u+0208}"  ; (Ȉ) I with double grave
+cmpDoubleGrave.item["o"] := "{u+020d}"  ; (ȍ) o with double grave
+cmpDoubleGrave.item["O"] := "{u+020c}"  ; (Ȍ) O with double grave
+cmpDoubleGrave.item["r"] := "{u+0211}"  ; (ȑ) r with double grave
+cmpDoubleGrave.item["R"] := "{u+0210}"  ; (Ȑ) R with double grave
+cmpDoubleGrave.item["u"] := "{u+0215}"  ; (ȕ) u with double grave
+cmpDoubleGrave.item["U"] := "{u+0214}"  ; (Ȕ) U with double grave
+
+
+; Compose :  Inverted Breve (B)
+
+cmpInvertedBreve := ComObjCreate("Scripting.Dictionary")
+cmpInvertedBreve.item["a"] := "{u+0203}"  ; (ȃ) a with inverted breve
+cmpInvertedBreve.item["A"] := "{u+0202}"  ; (Ȃ) A with inverted breve
+cmpInvertedBreve.item["e"] := "{u+0207}"  ; (ȇ) e with inverted breve
+cmpInvertedBreve.item["E"] := "{u+0206}"  ; (Ȇ) E with inverted breve
+cmpInvertedBreve.item["i"] := "{u+020b}"  ; (ȋ) i with inverted breve
+cmpInvertedBreve.item["I"] := "{u+020a}"  ; (Ȋ) I with inverted breve
+cmpInvertedBreve.item["o"] := "{u+020f}"  ; (ȏ) o with inverted breve
+cmpInvertedBreve.item["O"] := "{u+020e}"  ; (Ȏ) O with inverted breve
+cmpInvertedBreve.item["r"] := "{u+0213}"  ; (ȓ) r with inverted breve
+cmpInvertedBreve.item["R"] := "{u+0212}"  ; (Ȓ) R with inverted breve
+cmpInvertedBreve.item["u"] := "{u+0217}"  ; (ȗ) u with inverted breve
+cmpInvertedBreve.item["U"] := "{u+0216}"  ; (Ȗ) U with inverted breve
+
+
 ; Compose :  Hook and Horn (h)
 
-cmpHook := ComObjCreate("Scripting.Dictionary")
-cmpHook.item["b"] := "{u+0253}"  ; (ɓ) b with hook
-cmpHook.item["B"] := "{u+0181}"  ; (Ɓ) B with hook
-cmpHook.item["c"] := "{u+0188}"  ; (ƈ) c with hook
-cmpHook.item["C"] := "{u+0187}"  ; (Ƈ) C with hook
-cmpHook.item["d"] := "{u+0257}"  ; (ɗ) d with hook
-cmpHook.item["D"] := "{u+018a}"  ; (Ɗ) D with hook
-cmpHook.item["f"] := "{u+0192}"  ; (ƒ) f with hook
-cmpHook.item["F"] := "{u+0191}"  ; (Ƒ) F with hook
-cmpHook.item["g"] := "{u+0260}"  ; (ɠ) g with hook
-cmpHook.item["G"] := "{u+0193}"  ; (Ɠ) G with hook
-cmpHook.item["h"] := "{u+0266}"  ; (ɦ) h with hook
-cmpHook.item["H"] := "{u+a7aa}"  ; (Ɦ) H with hook
-cmpHook.item["j"] := "{u+0267}"  ; (ɧ) small letter heng with hook
-cmpHook.item["k"] := "{u+0199}"  ; (ƙ) k with hook
-cmpHook.item["K"] := "{u+0198}"  ; (Ƙ) K with hook
-cmpHook.item["m"] := "{u+0271}"  ; (ɱ) m with hook
-cmpHook.item["M"] := "{u+2c6e}"  ; (Ɱ) M with hook
-cmpHook.item["n"] := "{u+0272}"  ; (ɲ) n with left hook
-cmpHook.item["N"] := "{u+019d}"  ; (Ɲ) N with left hook
-cmpHook.item["o"] := "{u+01a1}"  ; (ơ) o with horn
-cmpHook.item["O"] := "{u+01a0}"  ; (Ơ) O with horn
-cmpHook.item["p"] := "{u+01a5}"  ; (ƥ) p with hook
-cmpHook.item["P"] := "{u+01a4}"  ; (Ƥ) P with hook
-cmpHook.item["q"] := "{u+024b}"  ; (ɋ) q with hook tail
-cmpHook.item["Q"] := "{u+024a}"  ; (Ɋ) Q with hook tail
-cmpHook.item["r"] := "{u+027d}"  ; (ɽ) r with tail
-cmpHook.item["R"] := "{u+2c64}"  ; (Ɽ) R with tail
-cmpHook.item["t"] := "{u+01ad}"  ; (ƭ) t with hook
-cmpHook.item["T"] := "{u+01ac}"  ; (Ƭ) T with hook
-cmpHook.item["u"] := "{u+01b0}"  ; (ư) u with horn
-cmpHook.item["U"] := "{u+01af}"  ; (Ư) U with horn
-cmpHook.item["v"] := "{u+028b}"  ; (ʋ) v with hook
-cmpHook.item["V"] := "{u+01b2}"  ; (Ʋ) V with hook
-cmpHook.item["w"] := "{u+2c73}"  ; (ⱳ) w with hook
-cmpHook.item["W"] := "{u+2c72}"  ; (Ⱳ) W with hook
-cmpHook.item["y"] := "{u+01b4}"  ; (ƴ) y with hook
-cmpHook.item["Y"] := "{u+01b3}"  ; (Ƴ) Y with hook
-cmpHook.item["z"] := "{u+0225}"  ; (ȥ) z with hook
-cmpHook.item["Z"] := "{u+0224}"  ; (Ȥ) Z with hook
+cmpSmallH := ComObjCreate("Scripting.Dictionary")
+cmpSmallH.item["b"] := "{u+0253}"  ; (ɓ) b with hook
+cmpSmallH.item["B"] := "{u+0181}"  ; (Ɓ) B with hook
+cmpSmallH.item["c"] := "{u+0188}"  ; (ƈ) c with hook
+cmpSmallH.item["C"] := "{u+0187}"  ; (Ƈ) C with hook
+cmpSmallH.item["d"] := "{u+0257}"  ; (ɗ) d with hook
+cmpSmallH.item["D"] := "{u+018a}"  ; (Ɗ) D with hook
+cmpSmallH.item["f"] := "{u+0192}"  ; (ƒ) f with hook
+cmpSmallH.item["F"] := "{u+0191}"  ; (Ƒ) F with hook
+cmpSmallH.item["g"] := "{u+0260}"  ; (ɠ) g with hook
+cmpSmallH.item["G"] := "{u+0193}"  ; (Ɠ) G with hook
+cmpSmallH.item["h"] := "{u+0266}"  ; (ɦ) h with hook
+cmpSmallH.item["H"] := "{u+a7aa}"  ; (Ɦ) H with hook
+cmpSmallH.item["k"] := "{u+0199}"  ; (ƙ) k with hook
+cmpSmallH.item["K"] := "{u+0198}"  ; (Ƙ) K with hook
+cmpSmallH.item["m"] := "{u+0271}"  ; (ɱ) m with hook
+cmpSmallH.item["M"] := "{u+2c6e}"  ; (Ɱ) M with hook
+cmpSmallH.item["n"] := "{u+0272}"  ; (ɲ) n with left hook
+cmpSmallH.item["N"] := "{u+019d}"  ; (Ɲ) N with left hook
+cmpSmallH.item["o"] := "{u+01a1}"  ; (ơ) o with horn
+cmpSmallH.item["O"] := "{u+01a0}"  ; (Ơ) O with horn
+cmpSmallH.item["p"] := "{u+01a5}"  ; (ƥ) p with hook
+cmpSmallH.item["P"] := "{u+01a4}"  ; (Ƥ) P with hook
+cmpSmallH.item["q"] := "{u+024b}"  ; (ɋ) q with hook tail
+cmpSmallH.item["Q"] := "{u+024a}"  ; (Ɋ) Q with hook tail
+cmpSmallH.item["r"] := "{u+027d}"  ; (ɽ) r with tail
+cmpSmallH.item["R"] := "{u+2c64}"  ; (Ɽ) R with tail
+cmpSmallH.item["s"] := "{u+0282}"  ; (ʂ) s with hook
+cmpSmallH.item["t"] := "{u+01ad}"  ; (ƭ) t with hook
+cmpSmallH.item["T"] := "{u+01ac}"  ; (Ƭ) T with hook
+cmpSmallH.item["u"] := "{u+01b0}"  ; (ư) u with horn
+cmpSmallH.item["U"] := "{u+01af}"  ; (Ư) U with horn
+cmpSmallH.item["v"] := "{u+028b}"  ; (ʋ) v with hook
+cmpSmallH.item["V"] := "{u+01b2}"  ; (Ʋ) V with hook
+cmpSmallH.item["w"] := "{u+2c73}"  ; (ⱳ) w with hook
+cmpSmallH.item["W"] := "{u+2c72}"  ; (Ⱳ) W with hook
+cmpSmallH.item["y"] := "{u+01b4}"  ; (ƴ) y with hook
+cmpSmallH.item["Y"] := "{u+01b3}"  ; (Ƴ) Y with hook
+cmpSmallH.item["z"] := "{u+0225}"  ; (ȥ) z with hook
+cmpSmallH.item["Z"] := "{u+0224}"  ; (Ȥ) Z with hook
+
+
+; Compose :  Retroflex Hook, Crossed-Tail and Variations (f)
+
+cmpSmallF := ComObjCreate("Scripting.Dictionary")
+cmpSmallF.item["a"] := "{u+1d8f}"  ; (ᶏ) a with retroflex hook
+cmpSmallF.item["d"] := "{u+1d91}"  ; (ᶑ) d with hook and tail
+cmpSmallF.item["e"] := "{u+1d92}"  ; (ᶒ) e with retroflex hook
+cmpSmallF.item["f"] := "{u+1d93}"  ; (ᶓ) small letter open e with retroflex hook
+cmpSmallF.item["g"] := "{u+ab36}"  ; (ꬶ) small letter script g with crossed-tail
+cmpSmallF.item["h"] := "{u+0267}"  ; (ɧ) small letter heng with hook
+cmpSmallF.item["i"] := "{u+1d96}"  ; (ᶖ) i with retroflex hook
+cmpSmallF.item["j"] := "{u+029d}"  ; (ʝ) j with crossed-tail
+cmpSmallF.item["l"] := "{u+026d}"  ; (ɭ) l with retroflex hook
+cmpSmallF.item["n"] := "{u+0273}"  ; (ɳ) n with retroflex hook
+cmpSmallF.item["o"] := "{u+1d97}"  ; (ᶗ) small letter open o with retroflex hook
+cmpSmallF.item["q"] := "{u+1d90}"  ; (ᶐ) Latin small letter alpha with retroflex hook
+cmpSmallF.item["r"] := "{u+027e}"  ; (ɾ) r with fishhook
+cmpSmallF.item["t"] := "{u+0288}"  ; (ʈ) t with retroflex hook
+cmpSmallF.item["T"] := "{u+01ae}"  ; (Ʈ) T with retroflex hook
+cmpSmallF.item["u"] := "{u+1d99}"  ; (ᶙ) u with retroflex hook
+cmpSmallF.item["v"] := "{u+2c71}"  ; (ⱱ) v with right hook
+cmpSmallF.item["w"] := "{u+2c73}"  ; (ⱳ) w with right hook
+cmpSmallF.item["W"] := "{u+2c72}"  ; (Ⱳ) W with right hook
+cmpSmallF.item["z"] := "{u+0290}"  ; (ʐ) z with retroflex hook
 
 
 ; Compose :  Latin Greek Letters and Variations (l)
 
-cmpLatinGreek := ComObjCreate("Scripting.Dictionary")
-cmpLatinGreek.item["a"] := "{u+0251}"  ; (ɑ) Latin small letter alpha
-cmpLatinGreek.item["A"] := "{u+2c6d}"  ; (Ɑ) Latin capital letter alpha
-cmpLatinGreek.item["c"] := "{u+ab36}"  ; (ꬶ) small letter script g with crossed-tail
-cmpLatinGreek.item["d"] := "{u+1e9f}"  ; (ẟ) Latin small letter delta
-cmpLatinGreek.item["e"] := "{u+025b}"  ; (ɛ) small letter open e (Latin small epsilon)
-cmpLatinGreek.item["E"] := "{u+0190}"  ; (Ɛ) capital letter open E (Latin capital epsilon)
-cmpLatinGreek.item["f"] := "{u+017f}"  ; (ſ) small letter long s
-cmpLatinGreek.item["g"] := "{u+0261}"  ; (ɡ) small letter script g
-cmpLatinGreek.item["G"] := "{u+a7ac}"  ; (Ɡ) capital letter script G
-cmpLatinGreek.item["h"] := "{u+a727}"  ; (ꜧ) small letter heng
-cmpLatinGreek.item["H"] := "{u+a726}"  ; (Ꜧ) capital letter heng
-cmpLatinGreek.item["i"] := "{u+0269}"  ; (ɩ) Latin small letter iota
-cmpLatinGreek.item["I"] := "{u+0196}"  ; (Ɩ) Latin capital letter iota
-cmpLatinGreek.item["j"] := "{u+0263}"  ; (ɣ) Latin small letter gamma
-cmpLatinGreek.item["J"] := "{u+0194}"  ; (Ɣ) Latin capital letter gamma
-cmpLatinGreek.item["k"] := "{u+0138}"  ; (ĸ) small letter kra
-cmpLatinGreek.item["m"] := "{u+0270}"  ; (ɰ) small letter turned m with long leg
-cmpLatinGreek.item["n"] := "{u+019e}"  ; (ƞ) small letter n with long right leg
-cmpLatinGreek.item["N"] := "{u+0220}"  ; (Ƞ) capital letter N with long right leg
-cmpLatinGreek.item["o"] := "{u+0254}"  ; (ɔ) small letter open o
-cmpLatinGreek.item["O"] := "{u+0186}"  ; (Ɔ) capital letter open O
-cmpLatinGreek.item["q"] := "{u+01a3}"  ; (ƣ) small letter gha
-cmpLatinGreek.item["Q"] := "{u+01a2}"  ; (Ƣ) capital letter gha
-cmpLatinGreek.item["s"] := "{u+0283}"  ; (ʃ) small letter esh
-cmpLatinGreek.item["S"] := "{u+01a9}"  ; (Ʃ) capital letter esh
-cmpLatinGreek.item["u"] := "{u+028a}"  ; (ʊ) Latin small letter upsilon
-cmpLatinGreek.item["U"] := "{u+01b1}"  ; (Ʊ) Latin capital letter upsilon
+cmpSmallL := ComObjCreate("Scripting.Dictionary")
+cmpSmallL.item["a"] := "{u+0251}"  ; (ɑ) Latin small letter alpha
+cmpSmallL.item["A"] := "{u+2c6d}"  ; (Ɑ) Latin capital letter alpha
+cmpSmallL.item["d"] := "{u+1e9f}"  ; (ẟ) Latin small letter delta
+cmpSmallL.item["e"] := "{u+025b}"  ; (ɛ) small letter open e (Latin small epsilon)
+cmpSmallL.item["E"] := "{u+0190}"  ; (Ɛ) capital letter open E (Latin capital epsilon)
+cmpSmallL.item["f"] := "{u+017f}"  ; (ſ) small letter long s
+cmpSmallL.item["g"] := "{u+0261}"  ; (ɡ) small letter script g
+cmpSmallL.item["G"] := "{u+a7ac}"  ; (Ɡ) capital letter script G
+cmpSmallL.item["h"] := "{u+a727}"  ; (ꜧ) small letter heng
+cmpSmallL.item["H"] := "{u+a726}"  ; (Ꜧ) capital letter heng
+cmpSmallL.item["i"] := "{u+0269}"  ; (ɩ) Latin small letter iota
+cmpSmallL.item["I"] := "{u+0196}"  ; (Ɩ) Latin capital letter iota
+cmpSmallL.item["j"] := "{u+0263}"  ; (ɣ) Latin small letter gamma
+cmpSmallL.item["J"] := "{u+0194}"  ; (Ɣ) Latin capital letter gamma
+cmpSmallL.item["k"] := "{u+0138}"  ; (ĸ) small letter kra
+cmpSmallL.item["m"] := "{u+0270}"  ; (ɰ) small letter turned m with long leg
+cmpSmallL.item["n"] := "{u+019e}"  ; (ƞ) small letter n with long right leg
+cmpSmallL.item["N"] := "{u+0220}"  ; (Ƞ) capital letter N with long right leg
+cmpSmallL.item["o"] := "{u+0254}"  ; (ɔ) small letter open o
+cmpSmallL.item["O"] := "{u+0186}"  ; (Ɔ) capital letter open O
+cmpSmallL.item["q"] := "{u+01a3}"  ; (ƣ) small letter gha
+cmpSmallL.item["Q"] := "{u+01a2}"  ; (Ƣ) capital letter gha
+cmpSmallL.item["s"] := "{u+0283}"  ; (ʃ) small letter esh
+cmpSmallL.item["S"] := "{u+01a9}"  ; (Ʃ) capital letter esh
+cmpSmallL.item["u"] := "{u+028a}"  ; (ʊ) Latin small letter upsilon
+cmpSmallL.item["U"] := "{u+01b1}"  ; (Ʊ) Latin capital letter upsilon
 
 
 ; Compose :  Turned Letters (r)
@@ -1780,24 +1804,26 @@ cmpSmallN.item["0"] := "{u+277f}"  ; (❿) dingbat negative circled digit 10
     Send % cmpCedillaOgonek.item[keyB]
   else if (keyA == "b")
     Send % cmpBreveSpecial.item[keyB]
-  else if (keyA == "B")
-    Send % cmpInvertedBreve.item[keyB]
   else if (keyA == "'")
     Send % cmpAcuteAccent.item[keyB]
   else if (keyA == chr(34))
     Send % cmpDiaeresis.item[keyB]
-  else if (keyA == "=")
-    Send % cmpDoubleAcute.item[keyB]
   else if (keyA == "``")
     Send % cmpGraveAccent.item[keyB]
-  else if (keyA == "G")
-    Send % cmpDoubleGrave.item[keyB]
   else if (keyA == "~")
     Send % cmpTilde.item[keyB]
+  else if (keyA == "=")
+    Send % cmpDoubleAcute.item[keyB]
+  else if (keyA == "G")
+    Send % cmpDoubleGrave.item[keyB]
+  else if (keyA == "B")
+    Send % cmpInvertedBreve.item[keyB]
   else if (keyA == "h")
-    Send % cmpHook.item[keyB]
+    Send % cmpSmallH.item[keyB]
+  else if (keyA == "f")
+    Send % cmpSmallF.item[keyB]
   else if (keyA == "l")
-    Send % cmpLatinGreek.item[keyB]
+    Send % cmpSmallL.item[keyB]
   else if (keyA == "r")
     Send % cmpSmallR.item[keyB]
   else if (keyA == "$")
