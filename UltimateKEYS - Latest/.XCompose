@@ -277,7 +277,6 @@
 <Multi_key> <b> <I> : "Ĭ"  U012C  # I with breve
 <Multi_key> <b> <o> : "ŏ"  U014F  # o with breve
 <Multi_key> <b> <O> : "Ŏ"  U014E  # O with breve
-<Multi_key> <b> <q> : "ſ"  U017F  # small letter long s
 <Multi_key> <b> <s> : "ș"  U0219  # s with comma below (Romanian)
 <Multi_key> <b> <S> : "Ș"  U0218  # S with comma below (Romanian)
 <Multi_key> <b> <t> : "ț"  U021B  # t with comma below (Romanian)
@@ -832,6 +831,7 @@
 <Multi_key> <A> <E> : "Æ"  U00C6  # letter AE
 <Multi_key> <d> <h> : "ð"  U00F0  # small letter eth
 <Multi_key> <D> <H> : "Ð"  U00D0  # capital letter eth
+<Multi_key> <f> <s> : "ſ"  U017F  # small letter long s
 <Multi_key> <i> <j> : "ĳ"  U0133  # ligature ij
 <Multi_key> <I> <J> : "Ĳ"  U0132  # ligature IJ
 <Multi_key> <n> <g> : "ŋ"  U014B  # small letter eng(ma)
