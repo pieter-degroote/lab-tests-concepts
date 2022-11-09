@@ -204,7 +204,6 @@
 <Multi_key> <slash> <C> : "Ȼ"  U023B  # C with stroke
 <Multi_key> <slash> <e> : "ɇ"  U0247  # e with stroke
 <Multi_key> <slash> <E> : "Ɇ"  U0246  # E with stroke
-<Multi_key> <slash> <f> : "ẜ"  U1E9C  # long s with diagonal stroke
 <Multi_key> <slash> <g> : "ꞡ"  UA7A1  # g with oblique stroke
 <Multi_key> <slash> <G> : "Ꞡ"  UA7A0  # G with oblique stroke
 <Multi_key> <slash> <k> : "ꞣ"  UA7A3  # k with oblique stroke
@@ -215,6 +214,7 @@
 <Multi_key> <slash> <N> : "Ꞥ"  UA7A4  # N with oblique stroke
 <Multi_key> <slash> <o> : "ø"  U00F8  # o with stroke
 <Multi_key> <slash> <O> : "Ø"  U00D8  # O with stroke
+<Multi_key> <slash> <q> : "ẜ"  U1E9C  # long s with diagonal stroke
 <Multi_key> <slash> <r> : "ꞧ"  UA7A7  # r with oblique stroke
 <Multi_key> <slash> <R> : "Ꞧ"  UA7A6  # R with oblique stroke
 <Multi_key> <slash> <s> : "ꞩ"  UA7A9  # s with oblique stroke
@@ -277,6 +277,7 @@
 <Multi_key> <b> <I> : "Ĭ"  U012C  # I with breve
 <Multi_key> <b> <o> : "ŏ"  U014F  # o with breve
 <Multi_key> <b> <O> : "Ŏ"  U014E  # O with breve
+<Multi_key> <b> <q> : "ſ"  U017F  # small letter long s
 <Multi_key> <b> <s> : "ș"  U0219  # s with comma below (Romanian)
 <Multi_key> <b> <S> : "Ș"  U0218  # S with comma below (Romanian)
 <Multi_key> <b> <t> : "ț"  U021B  # t with comma below (Romanian)
@@ -515,7 +516,7 @@
 <Multi_key> <l> <d> : "ẟ"  U1E9F  # Latin small letter delta
 <Multi_key> <l> <e> : "ɛ"  U025B  # small letter open e (Latin small epsilon)
 <Multi_key> <l> <E> : "Ɛ"  U0190  # capital letter open E (Latin capital epsilon)
-<Multi_key> <l> <f> : "ſ"  U017F  # small letter long s
+<Multi_key> <l> <f> : "ɸ"  U0278  # Latin small letter phi
 <Multi_key> <l> <g> : "ɡ"  U0261  # small letter script g
 <Multi_key> <l> <G> : "Ɡ"  UA7AC  # capital letter script G
 <Multi_key> <l> <h> : "ꜧ"  UA727  # small letter heng
