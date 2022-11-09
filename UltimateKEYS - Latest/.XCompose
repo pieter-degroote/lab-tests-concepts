@@ -10,6 +10,90 @@
 # Compose key descriptions for UltimateKEYS
 
 
+# Acute Accent
+
+<Multi_key> <apostrophe> <a> : "á"  U00E1  # a with acute
+<Multi_key> <apostrophe> <A> : "Á"  U00C1  # A with acute
+<Multi_key> <apostrophe> <c> : "ć"  U0107  # c with acute
+<Multi_key> <apostrophe> <C> : "Ć"  U0106  # C with acute
+<Multi_key> <apostrophe> <e> : "é"  U00E9  # e with acute
+<Multi_key> <apostrophe> <E> : "É"  U00C9  # E with acute
+<Multi_key> <apostrophe> <g> : "ǵ"  U01F5  # g with acute
+<Multi_key> <apostrophe> <G> : "Ǵ"  U01F4  # G with acute
+<Multi_key> <apostrophe> <i> : "í"  U00ED  # i with acute
+<Multi_key> <apostrophe> <I> : "Í"  U00CD  # I with acute
+<Multi_key> <apostrophe> <k> : "ḱ"  U1E31  # k with acute
+<Multi_key> <apostrophe> <K> : "Ḱ"  U1E30  # K with acute
+<Multi_key> <apostrophe> <l> : "ĺ"  U013A  # l with acute
+<Multi_key> <apostrophe> <L> : "Ĺ"  U0139  # L with acute
+<Multi_key> <apostrophe> <m> : "ḿ"  U1E3F  # m with acute
+<Multi_key> <apostrophe> <M> : "Ḿ"  U1E3E  # M with acute
+<Multi_key> <apostrophe> <n> : "ń"  U0144  # n with acute
+<Multi_key> <apostrophe> <N> : "Ń"  U0143  # N with acute
+<Multi_key> <apostrophe> <o> : "ó"  U00F3  # o with acute
+<Multi_key> <apostrophe> <O> : "Ó"  U00D3  # O with acute
+<Multi_key> <apostrophe> <p> : "ṕ"  U1E55  # p with acute
+<Multi_key> <apostrophe> <P> : "Ṕ"  U1E54  # P with acute
+<Multi_key> <apostrophe> <r> : "ŕ"  U0155  # r with acute
+<Multi_key> <apostrophe> <R> : "Ŕ"  U0154  # R with acute
+<Multi_key> <apostrophe> <s> : "ś"  U015B  # s with acute
+<Multi_key> <apostrophe> <S> : "Ś"  U015A  # S with acute
+<Multi_key> <apostrophe> <u> : "ú"  U00FA  # u with acute
+<Multi_key> <apostrophe> <U> : "Ú"  U00DA  # U with acute
+<Multi_key> <apostrophe> <w> : "ẃ"  U1E83  # w with acute
+<Multi_key> <apostrophe> <W> : "Ẃ"  U1E82  # W with acute
+<Multi_key> <apostrophe> <y> : "ý"  U00FD  # y with acute
+<Multi_key> <apostrophe> <Y> : "Ý"  U00DD  # Y with acute
+<Multi_key> <apostrophe> <z> : "ź"  U017A  # z with acute
+<Multi_key> <apostrophe> <Z> : "Ź"  U0179  # Z with acute
+<Multi_key> <apostrophe> <space> : "´"  U00B4  # acute accent
+
+
+# Grave Accent
+
+<Multi_key> <grave> <a> : "à"  U00E0  # a with grave
+<Multi_key> <grave> <A> : "À"  U00C0  # A with grave
+<Multi_key> <grave> <e> : "è"  U00E8  # e with grave
+<Multi_key> <grave> <E> : "È"  U00C8  # E with grave
+<Multi_key> <grave> <i> : "ì"  U00EC  # i with grave
+<Multi_key> <grave> <I> : "Ì"  U00CC  # I with grave
+<Multi_key> <grave> <n> : "ǹ"  U01F9  # n with grave
+<Multi_key> <grave> <N> : "Ǹ"  U01F8  # N with grave
+<Multi_key> <grave> <o> : "ò"  U00F2  # o with grave
+<Multi_key> <grave> <O> : "Ò"  U00D2  # O with grave
+<Multi_key> <grave> <u> : "ù"  U00F9  # u with grave
+<Multi_key> <grave> <U> : "Ù"  U00D9  # U with grave
+<Multi_key> <grave> <w> : "ẁ"  U1E81  # w with grave
+<Multi_key> <grave> <W> : "Ẁ"  U1E80  # W with grave
+<Multi_key> <grave> <y> : "ỳ"  U1EF3  # y with grave
+<Multi_key> <grave> <Y> : "Ỳ"  U1EF2  # Y with grave
+<Multi_key> <grave> <space> : "ˋ"  U02CB  # grave accent (modifier)
+
+
+# Diaeresis
+
+<Multi_key> <quotedbl> <a> : "ä"  U00E4  # a with diaeresis
+<Multi_key> <quotedbl> <A> : "Ä"  U00C4  # A with diaeresis
+<Multi_key> <quotedbl> <e> : "ë"  U00EB  # e with diaeresis
+<Multi_key> <quotedbl> <E> : "Ë"  U00CB  # E with diaeresis
+<Multi_key> <quotedbl> <h> : "ḧ"  U1E27  # h with diaeresis
+<Multi_key> <quotedbl> <H> : "Ḧ"  U1E26  # H with diaeresis
+<Multi_key> <quotedbl> <i> : "ï"  U00EF  # i with diaeresis
+<Multi_key> <quotedbl> <I> : "Ï"  U00CF  # I with diaeresis
+<Multi_key> <quotedbl> <o> : "ö"  U00F6  # o with diaeresis
+<Multi_key> <quotedbl> <O> : "Ö"  U00D6  # O with diaeresis
+<Multi_key> <quotedbl> <t> : "ẗ"  U1E97  # t with diaeresis
+<Multi_key> <quotedbl> <u> : "ü"  U00FC  # u with diaeresis
+<Multi_key> <quotedbl> <U> : "Ü"  U00DC  # U with diaeresis
+<Multi_key> <quotedbl> <w> : "ẅ"  U1E85  # w with diaeresis
+<Multi_key> <quotedbl> <W> : "Ẅ"  U1E84  # W with diaeresis
+<Multi_key> <quotedbl> <x> : "ẍ"  U1E8D  # x with diaeresis
+<Multi_key> <quotedbl> <X> : "Ẍ"  U1E8C  # X with diaeresis
+<Multi_key> <quotedbl> <y> : "ÿ"  U00FF  # y with diaeresis
+<Multi_key> <quotedbl> <Y> : "Ÿ"  U0178  # Y with diaeresis
+<Multi_key> <quotedbl> <space> : "¨"  U00A8  # diaeresis
+
+
 # Circumflex Accent
 
 <Multi_key> <c> <a> : "â"  U00E2  # a with circumflex
@@ -39,6 +123,67 @@
 <Multi_key> <c> <z> : "ẑ"  U1E91  # z with circumflex
 <Multi_key> <c> <Z> : "Ẑ"  U1E90  # Z with circumflex
 <Multi_key> <c> <space> : "ˆ"  U02C6  # circumflex accent (modifier)
+
+
+# Tilde
+
+<Multi_key> <asciitilde> <a> : "ã"  U00E3  # a with tilde
+<Multi_key> <asciitilde> <A> : "Ã"  U00C3  # A with tilde
+<Multi_key> <asciitilde> <e> : "ẽ"  U1EBD  # e with tilde
+<Multi_key> <asciitilde> <E> : "Ẽ"  U1EBC  # E with tilde
+<Multi_key> <asciitilde> <i> : "ĩ"  U0129  # i with tilde
+<Multi_key> <asciitilde> <I> : "Ĩ"  U0128  # I with tilde
+<Multi_key> <asciitilde> <l> : "ɫ"  U026B  # l with middle tilde
+<Multi_key> <asciitilde> <L> : "Ɫ"  U2C62  # L with middle tilde
+<Multi_key> <asciitilde> <n> : "ñ"  U00F1  # n with tilde
+<Multi_key> <asciitilde> <N> : "Ñ"  U00D1  # N with tilde
+<Multi_key> <asciitilde> <o> : "õ"  U00F5  # o with tilde
+<Multi_key> <asciitilde> <O> : "Õ"  U00D5  # O with tilde
+<Multi_key> <asciitilde> <u> : "ũ"  U0169  # u with tilde
+<Multi_key> <asciitilde> <U> : "Ũ"  U0168  # U with tilde
+<Multi_key> <asciitilde> <v> : "ṽ"  U1E7D  # v with tilde
+<Multi_key> <asciitilde> <V> : "Ṽ"  U1E7C  # V with tilde
+<Multi_key> <asciitilde> <y> : "ỹ"  U1EF9  # y with tilde
+<Multi_key> <asciitilde> <Y> : "Ỹ"  U1EF8  # Y with tilde
+<Multi_key> <asciitilde> <space> : "˜"  U02DC  # small tilde
+
+
+# Cedilla and Ogonek
+
+<Multi_key> <comma> <a> : "ą"  U0105  # a with ogonek
+<Multi_key> <comma> <A> : "Ą"  U0104  # A with ogonek
+<Multi_key> <comma> <c> : "ç"  U00E7  # c with cedilla
+<Multi_key> <comma> <C> : "Ç"  U00C7  # C with cedilla
+<Multi_key> <comma> <d> : "ḑ"  U1E11  # d with cedilla
+<Multi_key> <comma> <D> : "Ḑ"  U1E10  # D with cedilla
+<Multi_key> <comma> <e> : "ę"  U0119  # e with ogonek
+<Multi_key> <comma> <E> : "Ę"  U0118  # E with ogonek
+<Multi_key> <comma> <f> : "ȩ"  U0229  # e with cedilla
+<Multi_key> <comma> <F> : "Ȩ"  U0228  # E with cedilla
+<Multi_key> <comma> <g> : "ģ"  U0123  # g with cedilla
+<Multi_key> <comma> <G> : "Ģ"  U0122  # G with cedilla
+<Multi_key> <comma> <h> : "ḩ"  U1E29  # h with cedilla
+<Multi_key> <comma> <H> : "Ḩ"  U1E28  # H with cedilla
+<Multi_key> <comma> <i> : "į"  U012F  # i with ogonek
+<Multi_key> <comma> <I> : "Į"  U012E  # I with ogonek
+<Multi_key> <comma> <k> : "ķ"  U0137  # k with cedilla
+<Multi_key> <comma> <K> : "Ķ"  U0136  # K with cedilla
+<Multi_key> <comma> <l> : "ļ"  U013C  # l with cedilla
+<Multi_key> <comma> <L> : "Ļ"  U013B  # L with cedilla
+<Multi_key> <comma> <n> : "ņ"  U0146  # n with cedilla
+<Multi_key> <comma> <N> : "Ņ"  U0145  # N with cedilla
+<Multi_key> <comma> <o> : "ǫ"  U01EB  # o with ogonek
+<Multi_key> <comma> <O> : "Ǫ"  U01EA  # O with ogonek
+<Multi_key> <comma> <r> : "ŗ"  U0157  # r with cedilla
+<Multi_key> <comma> <R> : "Ŗ"  U0156  # R with cedilla
+<Multi_key> <comma> <s> : "ş"  U015F  # s with cedilla
+<Multi_key> <comma> <S> : "Ş"  U015E  # S with cedilla
+<Multi_key> <comma> <t> : "ţ"  U0163  # t with cedilla
+<Multi_key> <comma> <T> : "Ţ"  U0162  # T with cedilla
+<Multi_key> <comma> <u> : "ų"  U0173  # u with ogonek
+<Multi_key> <comma> <U> : "Ų"  U0172  # U with ogonek
+<Multi_key> <comma> <period> : "˛"  U02DB  # ogonek
+<Multi_key> <comma> <space>  : "¸"  U00B8  # cedilla
 
 
 # Caron
@@ -223,44 +368,6 @@
 <Multi_key> <slash> <T> : "Ⱦ"  U023E  # T with stroke
 
 
-# Cedilla/Ogonek
-
-<Multi_key> <comma> <a> : "ą"  U0105  # a with ogonek
-<Multi_key> <comma> <A> : "Ą"  U0104  # A with ogonek
-<Multi_key> <comma> <c> : "ç"  U00E7  # c with cedilla
-<Multi_key> <comma> <C> : "Ç"  U00C7  # C with cedilla
-<Multi_key> <comma> <d> : "ḑ"  U1E11  # d with cedilla
-<Multi_key> <comma> <D> : "Ḑ"  U1E10  # D with cedilla
-<Multi_key> <comma> <e> : "ę"  U0119  # e with ogonek
-<Multi_key> <comma> <E> : "Ę"  U0118  # E with ogonek
-<Multi_key> <comma> <f> : "ȩ"  U0229  # e with cedilla
-<Multi_key> <comma> <F> : "Ȩ"  U0228  # E with cedilla
-<Multi_key> <comma> <g> : "ģ"  U0123  # g with cedilla
-<Multi_key> <comma> <G> : "Ģ"  U0122  # G with cedilla
-<Multi_key> <comma> <h> : "ḩ"  U1E29  # h with cedilla
-<Multi_key> <comma> <H> : "Ḩ"  U1E28  # H with cedilla
-<Multi_key> <comma> <i> : "į"  U012F  # i with ogonek
-<Multi_key> <comma> <I> : "Į"  U012E  # I with ogonek
-<Multi_key> <comma> <k> : "ķ"  U0137  # k with cedilla
-<Multi_key> <comma> <K> : "Ķ"  U0136  # K with cedilla
-<Multi_key> <comma> <l> : "ļ"  U013C  # l with cedilla
-<Multi_key> <comma> <L> : "Ļ"  U013B  # L with cedilla
-<Multi_key> <comma> <n> : "ņ"  U0146  # n with cedilla
-<Multi_key> <comma> <N> : "Ņ"  U0145  # N with cedilla
-<Multi_key> <comma> <o> : "ǫ"  U01EB  # o with ogonek
-<Multi_key> <comma> <O> : "Ǫ"  U01EA  # O with ogonek
-<Multi_key> <comma> <r> : "ŗ"  U0157  # r with cedilla
-<Multi_key> <comma> <R> : "Ŗ"  U0156  # R with cedilla
-<Multi_key> <comma> <s> : "ş"  U015F  # s with cedilla
-<Multi_key> <comma> <S> : "Ş"  U015E  # S with cedilla
-<Multi_key> <comma> <t> : "ţ"  U0163  # t with cedilla
-<Multi_key> <comma> <T> : "Ţ"  U0162  # T with cedilla
-<Multi_key> <comma> <u> : "ų"  U0173  # u with ogonek
-<Multi_key> <comma> <U> : "Ų"  U0172  # U with ogonek
-<Multi_key> <comma> <period> : "˛"  U02DB  # ogonek
-<Multi_key> <comma> <space>  : "¸"  U00B8  # cedilla
-
-
 # Breve and Special Letters
 
 <Multi_key> <b> <a> : "ă"  U0103  # a with breve
@@ -290,113 +397,6 @@
 <Multi_key> <b> <3>          : "ʒ"  U0292  # small letter ezh
 <Multi_key> <b> <numbersign> : "Ʒ"  U01B7  # capital letter ezh
 <Multi_key> <b> <space>      : "˘"  U02D8  # breve
-
-
-# Acute Accent
-
-<Multi_key> <apostrophe> <a> : "á"  U00E1  # a with acute
-<Multi_key> <apostrophe> <A> : "Á"  U00C1  # A with acute
-<Multi_key> <apostrophe> <c> : "ć"  U0107  # c with acute
-<Multi_key> <apostrophe> <C> : "Ć"  U0106  # C with acute
-<Multi_key> <apostrophe> <e> : "é"  U00E9  # e with acute
-<Multi_key> <apostrophe> <E> : "É"  U00C9  # E with acute
-<Multi_key> <apostrophe> <g> : "ǵ"  U01F5  # g with acute
-<Multi_key> <apostrophe> <G> : "Ǵ"  U01F4  # G with acute
-<Multi_key> <apostrophe> <i> : "í"  U00ED  # i with acute
-<Multi_key> <apostrophe> <I> : "Í"  U00CD  # I with acute
-<Multi_key> <apostrophe> <k> : "ḱ"  U1E31  # k with acute
-<Multi_key> <apostrophe> <K> : "Ḱ"  U1E30  # K with acute
-<Multi_key> <apostrophe> <l> : "ĺ"  U013A  # l with acute
-<Multi_key> <apostrophe> <L> : "Ĺ"  U0139  # L with acute
-<Multi_key> <apostrophe> <m> : "ḿ"  U1E3F  # m with acute
-<Multi_key> <apostrophe> <M> : "Ḿ"  U1E3E  # M with acute
-<Multi_key> <apostrophe> <n> : "ń"  U0144  # n with acute
-<Multi_key> <apostrophe> <N> : "Ń"  U0143  # N with acute
-<Multi_key> <apostrophe> <o> : "ó"  U00F3  # o with acute
-<Multi_key> <apostrophe> <O> : "Ó"  U00D3  # O with acute
-<Multi_key> <apostrophe> <p> : "ṕ"  U1E55  # p with acute
-<Multi_key> <apostrophe> <P> : "Ṕ"  U1E54  # P with acute
-<Multi_key> <apostrophe> <r> : "ŕ"  U0155  # r with acute
-<Multi_key> <apostrophe> <R> : "Ŕ"  U0154  # R with acute
-<Multi_key> <apostrophe> <s> : "ś"  U015B  # s with acute
-<Multi_key> <apostrophe> <S> : "Ś"  U015A  # S with acute
-<Multi_key> <apostrophe> <u> : "ú"  U00FA  # u with acute
-<Multi_key> <apostrophe> <U> : "Ú"  U00DA  # U with acute
-<Multi_key> <apostrophe> <w> : "ẃ"  U1E83  # w with acute
-<Multi_key> <apostrophe> <W> : "Ẃ"  U1E82  # W with acute
-<Multi_key> <apostrophe> <y> : "ý"  U00FD  # y with acute
-<Multi_key> <apostrophe> <Y> : "Ý"  U00DD  # Y with acute
-<Multi_key> <apostrophe> <z> : "ź"  U017A  # z with acute
-<Multi_key> <apostrophe> <Z> : "Ź"  U0179  # Z with acute
-<Multi_key> <apostrophe> <space> : "´"  U00B4  # acute accent
-
-
-# Diaeresis
-
-<Multi_key> <quotedbl> <a> : "ä"  U00E4  # a with diaeresis
-<Multi_key> <quotedbl> <A> : "Ä"  U00C4  # A with diaeresis
-<Multi_key> <quotedbl> <e> : "ë"  U00EB  # e with diaeresis
-<Multi_key> <quotedbl> <E> : "Ë"  U00CB  # E with diaeresis
-<Multi_key> <quotedbl> <h> : "ḧ"  U1E27  # h with diaeresis
-<Multi_key> <quotedbl> <H> : "Ḧ"  U1E26  # H with diaeresis
-<Multi_key> <quotedbl> <i> : "ï"  U00EF  # i with diaeresis
-<Multi_key> <quotedbl> <I> : "Ï"  U00CF  # I with diaeresis
-<Multi_key> <quotedbl> <o> : "ö"  U00F6  # o with diaeresis
-<Multi_key> <quotedbl> <O> : "Ö"  U00D6  # O with diaeresis
-<Multi_key> <quotedbl> <t> : "ẗ"  U1E97  # t with diaeresis
-<Multi_key> <quotedbl> <u> : "ü"  U00FC  # u with diaeresis
-<Multi_key> <quotedbl> <U> : "Ü"  U00DC  # U with diaeresis
-<Multi_key> <quotedbl> <w> : "ẅ"  U1E85  # w with diaeresis
-<Multi_key> <quotedbl> <W> : "Ẅ"  U1E84  # W with diaeresis
-<Multi_key> <quotedbl> <x> : "ẍ"  U1E8D  # x with diaeresis
-<Multi_key> <quotedbl> <X> : "Ẍ"  U1E8C  # X with diaeresis
-<Multi_key> <quotedbl> <y> : "ÿ"  U00FF  # y with diaeresis
-<Multi_key> <quotedbl> <Y> : "Ÿ"  U0178  # Y with diaeresis
-<Multi_key> <quotedbl> <space> : "¨"  U00A8  # diaeresis
-
-
-# Grave Accent
-
-<Multi_key> <grave> <a> : "à"  U00E0  # a with grave
-<Multi_key> <grave> <A> : "À"  U00C0  # A with grave
-<Multi_key> <grave> <e> : "è"  U00E8  # e with grave
-<Multi_key> <grave> <E> : "È"  U00C8  # E with grave
-<Multi_key> <grave> <i> : "ì"  U00EC  # i with grave
-<Multi_key> <grave> <I> : "Ì"  U00CC  # I with grave
-<Multi_key> <grave> <n> : "ǹ"  U01F9  # n with grave
-<Multi_key> <grave> <N> : "Ǹ"  U01F8  # N with grave
-<Multi_key> <grave> <o> : "ò"  U00F2  # o with grave
-<Multi_key> <grave> <O> : "Ò"  U00D2  # O with grave
-<Multi_key> <grave> <u> : "ù"  U00F9  # u with grave
-<Multi_key> <grave> <U> : "Ù"  U00D9  # U with grave
-<Multi_key> <grave> <w> : "ẁ"  U1E81  # w with grave
-<Multi_key> <grave> <W> : "Ẁ"  U1E80  # W with grave
-<Multi_key> <grave> <y> : "ỳ"  U1EF3  # y with grave
-<Multi_key> <grave> <Y> : "Ỳ"  U1EF2  # Y with grave
-<Multi_key> <grave> <space> : "ˋ"  U02CB  # grave accent (modifier)
-
-
-# Tilde
-
-<Multi_key> <asciitilde> <a> : "ã"  U00E3  # a with tilde
-<Multi_key> <asciitilde> <A> : "Ã"  U00C3  # A with tilde
-<Multi_key> <asciitilde> <e> : "ẽ"  U1EBD  # e with tilde
-<Multi_key> <asciitilde> <E> : "Ẽ"  U1EBC  # E with tilde
-<Multi_key> <asciitilde> <i> : "ĩ"  U0129  # i with tilde
-<Multi_key> <asciitilde> <I> : "Ĩ"  U0128  # I with tilde
-<Multi_key> <asciitilde> <l> : "ɫ"  U026B  # l with middle tilde
-<Multi_key> <asciitilde> <L> : "Ɫ"  U2C62  # L with middle tilde
-<Multi_key> <asciitilde> <n> : "ñ"  U00F1  # n with tilde
-<Multi_key> <asciitilde> <N> : "Ñ"  U00D1  # N with tilde
-<Multi_key> <asciitilde> <o> : "õ"  U00F5  # o with tilde
-<Multi_key> <asciitilde> <O> : "Õ"  U00D5  # O with tilde
-<Multi_key> <asciitilde> <u> : "ũ"  U0169  # u with tilde
-<Multi_key> <asciitilde> <U> : "Ũ"  U0168  # U with tilde
-<Multi_key> <asciitilde> <v> : "ṽ"  U1E7D  # v with tilde
-<Multi_key> <asciitilde> <V> : "Ṽ"  U1E7C  # V with tilde
-<Multi_key> <asciitilde> <y> : "ỹ"  U1EF9  # y with tilde
-<Multi_key> <asciitilde> <Y> : "Ỹ"  U1EF8  # Y with tilde
-<Multi_key> <asciitilde> <space> : "˜"  U02DC  # small tilde
 
 
 # Double Acute Accent
