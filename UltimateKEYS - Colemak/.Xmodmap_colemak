@@ -1,0 +1,61 @@
+! UltimateKEYS - Colemak (2x Backspace)  (~/.Xmodmap)
+
+! Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
+
+! License :  GNU General Public License Version 3
+
+! GitHub :   github.com/pieter-degroote
+
+
+keycode  10 = 1            exclam       exclamdown           onesuperior
+keycode  11 = 2            at           U2264                twosuperior
+keycode  12 = 3            numbersign   U2265                threesuperior
+keycode  13 = 4            dollar       sterling             yen
+keycode  14 = 5            percent      EuroSign             cent
+keycode  15 = 6            asciicircum  atilde               Atilde
+keycode  16 = 7            ampersand    otilde               Otilde
+keycode  17 = 8            asterisk     doublelowquotemark   section
+keycode  18 = 9            parenleft    leftdoublequotemark  leftsinglequotemark
+keycode  19 = 0            parenright   rightdoublequotemark rightsinglequotemark
+keycode  20 = minus        underscore   endash               emdash
+keycode  21 = equal        plus         multiply             division
+keycode  24 = q            Q            ae                   AE
+keycode  25 = w            W            aring                Aring
+keycode  26 = f            F            ediaeresis           Ediaeresis
+keycode  27 = p            P            ecircumflex          Ecircumflex
+keycode  28 = g            G            icircumflex          Icircumflex
+keycode  29 = j            J            ucircumflex          Ucircumflex
+keycode  30 = l            L            udiaeresis           Udiaeresis
+keycode  31 = u            U            idiaeresis           Idiaeresis
+keycode  32 = y            Y            odiaeresis           Odiaeresis
+keycode  33 = semicolon    colon        ocircumflex          Ocircumflex
+keycode  34 = bracketleft  braceleft    guillemotleft        U2039
+keycode  35 = bracketright braceright   guillemotright       U203A
+keycode  38 = a            A            adiaeresis           Adiaeresis
+keycode  39 = r            R            ssharp               U1E9E
+keycode  40 = s            S            acircumflex          Acircumflex
+keycode  41 = t            T            egrave               Egrave
+keycode  42 = d            D            eacute               Eacute
+keycode  43 = h            H            ugrave               Ugrave
+keycode  44 = n            N            uacute               Uacute
+keycode  45 = e            E            oe                   OE
+keycode  46 = i            I            oslash               Ooblique
+keycode  47 = o            O            degree               periodcentered
+keycode  48 = apostrophe   quotedbl     dagger               doubledagger
+keycode  49 = grave        asciitilde   Multi_key            Multi_key
+keycode  51 = backslash    bar          enspace              emspace
+keycode  52 = z            Z            agrave               Agrave
+keycode  53 = x            X            aacute               Aacute
+keycode  54 = c            C            ccedilla             Ccedilla
+keycode  55 = v            V            igrave               Igrave
+keycode  56 = b            B            iacute               Iacute
+keycode  57 = k            K            ntilde               Ntilde
+keycode  58 = m            M            mu                   plusminus
+keycode  59 = comma        less         ograve               Ograve
+keycode  60 = period       greater      oacute               Oacute
+keycode  61 = slash        question     questiondown         ellipsis
+keycode  65 = space        space        nobreakspace         nobreakspace
+keycode  66 = BackSpace    BackSpace    BackSpace            BackSpace
+keycode  91 = KP_Delete    KP_Decimal
+keycode  94 = backslash    bar          Multi_key            Multi_key
+keycode 108 = Mode_switch  Mode_switch
