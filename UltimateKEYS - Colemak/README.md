@@ -1,4 +1,4 @@
-# UltimateKEYS - Colemak (testing)
+# UltimateKEYS - Colemak Edition (testing)
 
 Colemak variant of UltimateKEYS - For AutoHotkey v1.1/v2.0 (Win) and XKB/Xmodmap (Linux)
 
