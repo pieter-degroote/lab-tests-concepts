@@ -4,7 +4,7 @@
 
 ; License :  GNU General Public License Version 3
 
-; GitHub :   github.com/pieter-degroote/UltimateKEYS
+; GitHub :   github.com/pieter-degroote
 
 
 ; Requirements :
@@ -18,7 +18,7 @@
 ListLines Off   ; omits recently executed lines from history (for privacy and security)
 #KeyHistory 0   ; disables the key history (for privacy and security)
 
-SendMode Event  ; allows chaining of customized key combinations (default)
+SendMode Event  ; allows chaining of customized key combinations
 
 
 ; Compose :  Acute Accent (')
