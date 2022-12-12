@@ -1371,9 +1371,12 @@ l::i
 n::k
 
 
-; Configuration :  Assign Backspace also to Caps Lock
+; Configuration :  Assign 'Caps Lock' to both 'Shift' keys and 'Backspace' also to 'Caps Lock'
 
-CapsLock::Backspace
+LShift & RShift::CapsLock  ; assigns 'Caps Lock' to 'Left Shift' and 'Right Shift'
+RShift & LShift::CapsLock  ; assigns 'Caps Lock' to 'Right Shift' and 'Left Shift'
+
+CapsLock::Backspace  ; assigns 'Backspace' also to 'Caps Lock'
 
 
 ; Configuration :  'Right Alt' and 'Right Alt + Shift' on US QWERTY
