@@ -1,6 +1,17 @@
 # Lab Tests and Concepts
 Additional lab tests and concepts (mostly based on UltimateKEYS)
 
+## Featured Keyboard Layouts (testing)
+
+**UltimateKEYS - Colemak Edition - Keyboard Layout Image&nbsp;:**
+
+![UltimateKEYS - Keyboard Layout Image](UltimateKEYS%20-%20Colemak/UltimateKEYS%20-%20Colemak%20(2x%20Backspace)%20-%20Keyboard%20Layout%20Image.png)
+
+**UltimateKEYS - Latest - Keyboard Layout Image&nbsp;:**
+
+![UltimateKEYS - Keyboard Layout Image](UltimateKEYS%20-%20Latest/UltimateKEYS%20-%20Keyboard%20Layout%20Image.png)
+
+
 ## Important - Security Warning :
 
 **=&gt; Win/Linux : &nbsp;Only use "BASIC LATIN" characters (codes 32 to 126) for the Windows, Microsoft Live and Linux passwords !**  
