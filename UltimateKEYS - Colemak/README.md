@@ -1,12 +1,12 @@
 # UltimateKEYS - Colemak Edition (testing)
 
-Colemak edition of UltimateKEYS - For AutoHotkey v1.1/v2.0 (Win) and XKB/Xmodmap (Linux)
+Colemak edition of UltimateKEYS - For AutoHotkey v2.0/v1.1 (Win) and XKB/Xmodmap (Linux)
 
 **Keyboard Layout Image&nbsp;:**
 
 ![UltimateKEYS - Colemak (2x Backspace) - Keyboard Layout Image](UltimateKEYS%20-%20Colemak%20(2x%20Backspace)%20-%20Keyboard%20Layout%20Image.png)
 
-Prerequisite (for AutoHotkey v1.1/v2.0 on Windows)&nbsp;:
+Prerequisite (for AutoHotkey v2.0/v1.1 on Windows)&nbsp;:
 
 The base keyboard layout has to be configured as US QWERTY.
 
