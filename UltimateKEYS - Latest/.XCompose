@@ -508,6 +508,7 @@
 
 <Multi_key> <l> <a> : "ɑ"  U0251  # Latin small letter alpha
 <Multi_key> <l> <A> : "Ɑ"  U2C6D  # Latin capital letter alpha
+<Multi_key> <l> <b> : "ɞ"  U025E  # small letter closed reversed open e
 <Multi_key> <l> <d> : "ẟ"  U1E9F  # Latin small letter delta
 <Multi_key> <l> <e> : "ɛ"  U025B  # small letter open e (Latin small epsilon)
 <Multi_key> <l> <E> : "Ɛ"  U0190  # capital letter open E (Latin capital epsilon)
@@ -538,8 +539,7 @@
 
 <Multi_key> <r> <a> : "ɐ"  U0250  # small letter turned a
 <Multi_key> <r> <A> : "Ɐ"  U2C6F  # capital letter turned A
-<Multi_key> <r> <b> : "ɞ"  U025E  # small letter closed reversed open e
-<Multi_key> <r> <c> : "ɜ"  U025C  # small letter reversed open e
+<Multi_key> <r> <b> : "ɜ"  U025C  # small letter reversed open e
 <Multi_key> <r> <d> : "ƍ"  U018D  # Latin small letter turned delta
 <Multi_key> <r> <e> : "ǝ"  U01DD  # small letter turned e
 <Multi_key> <r> <E> : "Ǝ"  U018E  # capital letter reversed E
