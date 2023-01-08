@@ -1,4 +1,4 @@
-; UltimateKEYS - Colemak (2x Backspace) (for AutoHotkey v1.1).ahk - 2023-01-06
+; UltimateKEYS - Colemak (2x Backspace) (for AutoHotkey v1.1).ahk - 2023-01-07
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -442,40 +442,6 @@ cmpDoubleAcute.item["O"] := "{u+0150}"  ; (Ő) O with double acute
 cmpDoubleAcute.item["u"] := "{u+0171}"  ; (ű) u with double acute
 cmpDoubleAcute.item["U"] := "{u+0170}"  ; (Ű) U with double acute
 cmpDoubleAcute.item[" "] := "{u+02dd}"  ; (˝) double acute accent
-
-
-; Compose :  Double Grave Accent (G)
-
-cmpDoubleGrave := ComObjCreate("Scripting.Dictionary")
-cmpDoubleGrave.item["a"] := "{u+0201}"  ; (ȁ) a with double grave
-cmpDoubleGrave.item["A"] := "{u+0200}"  ; (Ȁ) A with double grave
-cmpDoubleGrave.item["e"] := "{u+0205}"  ; (ȅ) e with double grave
-cmpDoubleGrave.item["E"] := "{u+0204}"  ; (Ȅ) E with double grave
-cmpDoubleGrave.item["i"] := "{u+0209}"  ; (ȉ) i with double grave
-cmpDoubleGrave.item["I"] := "{u+0208}"  ; (Ȉ) I with double grave
-cmpDoubleGrave.item["o"] := "{u+020d}"  ; (ȍ) o with double grave
-cmpDoubleGrave.item["O"] := "{u+020c}"  ; (Ȍ) O with double grave
-cmpDoubleGrave.item["r"] := "{u+0211}"  ; (ȑ) r with double grave
-cmpDoubleGrave.item["R"] := "{u+0210}"  ; (Ȑ) R with double grave
-cmpDoubleGrave.item["u"] := "{u+0215}"  ; (ȕ) u with double grave
-cmpDoubleGrave.item["U"] := "{u+0214}"  ; (Ȕ) U with double grave
-
-
-; Compose :  Inverted Breve (B)
-
-cmpInvertedBreve := ComObjCreate("Scripting.Dictionary")
-cmpInvertedBreve.item["a"] := "{u+0203}"  ; (ȃ) a with inverted breve
-cmpInvertedBreve.item["A"] := "{u+0202}"  ; (Ȃ) A with inverted breve
-cmpInvertedBreve.item["e"] := "{u+0207}"  ; (ȇ) e with inverted breve
-cmpInvertedBreve.item["E"] := "{u+0206}"  ; (Ȇ) E with inverted breve
-cmpInvertedBreve.item["i"] := "{u+020b}"  ; (ȋ) i with inverted breve
-cmpInvertedBreve.item["I"] := "{u+020a}"  ; (Ȋ) I with inverted breve
-cmpInvertedBreve.item["o"] := "{u+020f}"  ; (ȏ) o with inverted breve
-cmpInvertedBreve.item["O"] := "{u+020e}"  ; (Ȏ) O with inverted breve
-cmpInvertedBreve.item["r"] := "{u+0213}"  ; (ȓ) r with inverted breve
-cmpInvertedBreve.item["R"] := "{u+0212}"  ; (Ȓ) R with inverted breve
-cmpInvertedBreve.item["u"] := "{u+0217}"  ; (ȗ) u with inverted breve
-cmpInvertedBreve.item["U"] := "{u+0216}"  ; (Ȗ) U with inverted breve
 
 
 ; Compose :  Hook and Horn (h)
@@ -1089,6 +1055,115 @@ cmpGreaterThan.item["'"] := "{u+203a}"        ; (›) right-pointing single angl
 cmpAcuteAccent.item[">"] := "{u+203a}"        ; (›) right-pointing single angle quotation mark
 
 
+; Compose :  Double Grave Accent (G)
+
+cmpCapitalG := ComObjCreate("Scripting.Dictionary")
+cmpCapitalG.item["a"] := "{u+0201}"  ; (ȁ) a with double grave
+cmpCapitalG.item["A"] := "{u+0200}"  ; (Ȁ) A with double grave
+cmpCapitalG.item["e"] := "{u+0205}"  ; (ȅ) e with double grave
+cmpCapitalG.item["E"] := "{u+0204}"  ; (Ȅ) E with double grave
+cmpCapitalG.item["i"] := "{u+0209}"  ; (ȉ) i with double grave
+cmpCapitalG.item["I"] := "{u+0208}"  ; (Ȉ) I with double grave
+cmpCapitalG.item["o"] := "{u+020d}"  ; (ȍ) o with double grave
+cmpCapitalG.item["O"] := "{u+020c}"  ; (Ȍ) O with double grave
+cmpCapitalG.item["r"] := "{u+0211}"  ; (ȑ) r with double grave
+cmpCapitalG.item["R"] := "{u+0210}"  ; (Ȑ) R with double grave
+cmpCapitalG.item["u"] := "{u+0215}"  ; (ȕ) u with double grave
+cmpCapitalG.item["U"] := "{u+0214}"  ; (Ȕ) U with double grave
+
+
+; Compose :  Inverted Breve (B)
+
+cmpCapitalB := ComObjCreate("Scripting.Dictionary")
+cmpCapitalB.item["a"] := "{u+0203}"  ; (ȃ) a with inverted breve
+cmpCapitalB.item["A"] := "{u+0202}"  ; (Ȃ) A with inverted breve
+cmpCapitalB.item["e"] := "{u+0207}"  ; (ȇ) e with inverted breve
+cmpCapitalB.item["E"] := "{u+0206}"  ; (Ȇ) E with inverted breve
+cmpCapitalB.item["i"] := "{u+020b}"  ; (ȋ) i with inverted breve
+cmpCapitalB.item["I"] := "{u+020a}"  ; (Ȋ) I with inverted breve
+cmpCapitalB.item["o"] := "{u+020f}"  ; (ȏ) o with inverted breve
+cmpCapitalB.item["O"] := "{u+020e}"  ; (Ȏ) O with inverted breve
+cmpCapitalB.item["r"] := "{u+0213}"  ; (ȓ) r with inverted breve
+cmpCapitalB.item["R"] := "{u+0212}"  ; (Ȓ) R with inverted breve
+cmpCapitalB.item["u"] := "{u+0217}"  ; (ȗ) u with inverted breve
+cmpCapitalB.item["U"] := "{u+0216}"  ; (Ȗ) U with inverted breve
+
+
+; Compose :  Circumflex Below (I)
+
+cmpCapitalI.item["d"] := "{u+1e13}"  ; (ḓ) d with circumflex below
+cmpCapitalI.item["D"] := "{u+1e12}"  ; (Ḓ) D with circumflex below
+cmpCapitalI.item["e"] := "{u+1e19}"  ; (ḙ) e with circumflex below
+cmpCapitalI.item["E"] := "{u+1e18}"  ; (Ḙ) E with circumflex below
+cmpCapitalI.item["l"] := "{u+1e3d}"  ; (ḽ) l with circumflex below
+cmpCapitalI.item["L"] := "{u+1e3c}"  ; (Ḽ) L with circumflex below
+cmpCapitalI.item["n"] := "{u+1e4b}"  ; (ṋ) n with circumflex below
+cmpCapitalI.item["N"] := "{u+1e4a}"  ; (Ṋ) N with circumflex below
+cmpCapitalI.item["t"] := "{u+1e71}"  ; (ṱ) t with circumflex below
+cmpCapitalI.item["T"] := "{u+1e70}"  ; (Ṱ) T with circumflex below
+cmpCapitalI.item["u"] := "{u+1e77}"  ; (ṷ) u with circumflex below
+cmpCapitalI.item["U"] := "{u+1e76}"  ; (Ṷ) U with circumflex below
+
+
+; Compose :  Tilde Below (T)
+
+cmpCapitalT.item["e"] := "{u+1e1b}"  ; (ḛ) e with tilde below
+cmpCapitalT.item["E"] := "{u+1e1a}"  ; (Ḛ) E with tilde below
+cmpCapitalT.item["i"] := "{u+1e2d}"  ; (ḭ) i with tilde below
+cmpCapitalT.item["I"] := "{u+1e2c}"  ; (Ḭ) I with tilde below
+cmpCapitalT.item["u"] := "{u+1e75}"  ; (ṵ) u with tilde below
+cmpCapitalT.item["U"] := "{u+1e74}"  ; (Ṵ) U with tilde below
+
+
+; Compose :  Line Below (L)
+
+cmpCapitalL := ComObjCreate("Scripting.Dictionary")
+cmpCapitalL.item["b"] := "{u+1e07}"  ; (ḇ) b with line below
+cmpCapitalL.item["B"] := "{u+1e06}"  ; (Ḇ) B with line below
+cmpCapitalL.item["d"] := "{u+1e0f}"  ; (ḏ) d with line below
+cmpCapitalL.item["D"] := "{u+1e0e}"  ; (Ḏ) D with line below
+cmpCapitalL.item["h"] := "{u+1e96}"  ; (ẖ) h with line below
+cmpCapitalL.item["k"] := "{u+1e35}"  ; (ḵ) k with line below
+cmpCapitalL.item["K"] := "{u+1e34}"  ; (Ḵ) K with line below
+cmpCapitalL.item["l"] := "{u+1e3b}"  ; (ḻ) l with line below
+cmpCapitalL.item["L"] := "{u+1e3a}"  ; (Ḻ) L with line below
+cmpCapitalL.item["n"] := "{u+1e49}"  ; (ṉ) n with line below
+cmpCapitalL.item["N"] := "{u+1e48}"  ; (Ṉ) N with line below
+cmpCapitalL.item["r"] := "{u+1e5f}"  ; (ṟ) r with line below
+cmpCapitalL.item["R"] := "{u+1e5e}"  ; (Ṟ) R with line below
+cmpCapitalL.item["t"] := "{u+1e6f}"  ; (ṯ) t with line below
+cmpCapitalL.item["T"] := "{u+1e6e}"  ; (Ṯ) T with line below
+cmpCapitalL.item["z"] := "{u+1e95}"  ; (ẕ) z with line below
+cmpCapitalL.item["Z"] := "{u+1e94}"  ; (Ẕ) Z with line below
+
+
+; Compose :  Ring Below, Breve Below and Diaeresis Below (R)
+
+cmpCapitalR := ComObjCreate("Scripting.Dictionary")
+cmpCapitalR.item["a"] := "{u+1e01}"  ; (ḁ) a with ring below
+cmpCapitalR.item["A"] := "{u+1e00}"  ; (Ḁ) A with ring below
+cmpCapitalR.item["h"] := "{u+1e2b}"  ; (ḫ) h with breve below
+cmpCapitalR.item["H"] := "{u+1e2a}"  ; (Ḫ) H with breve below
+cmpCapitalR.item["u"] := "{u+1e73}"  ; (ṳ) u with diaeresis below
+cmpCapitalR.item["U"] := "{u+1e72}"  ; (Ṳ) U with diaeresis below
+
+
+; Compose :  Hook Above (<)
+
+cmpLessThan.item["a"] := "{u+1ea3}"  ; (ả) a with hook above
+cmpLessThan.item["A"] := "{u+1ea2}"  ; (Ả) A with hook above
+cmpLessThan.item["e"] := "{u+1ebb}"  ; (ẻ) e with hook above
+cmpLessThan.item["E"] := "{u+1eba}"  ; (Ẻ) E with hook above
+cmpLessThan.item["i"] := "{u+1ec9}"  ; (ỉ) i with hook above
+cmpLessThan.item["I"] := "{u+1ec8}"  ; (Ỉ) I with hook above
+cmpLessThan.item["o"] := "{u+1ecf}"  ; (ỏ) o with hook above
+cmpLessThan.item["O"] := "{u+1ece}"  ; (Ỏ) O with hook above
+cmpLessThan.item["u"] := "{u+1ee7}"  ; (ủ) u with hook above
+cmpLessThan.item["U"] := "{u+1ee6}"  ; (Ủ) U with hook above
+cmpLessThan.item["y"] := "{u+1ef7}"  ; (ỷ) y with hook above
+cmpLessThan.item["Y"] := "{u+1ef6}"  ; (Ỷ) Y with hook above
+
+
 ; Compose :  Dot Below (>)
 
 cmpGreaterThan.item["a"] := "{u+1ea1}"  ; (ạ) a with dot below
@@ -1129,88 +1204,6 @@ cmpGreaterThan.item["y"] := "{u+1ef5}"  ; (ỵ) y with dot below
 cmpGreaterThan.item["Y"] := "{u+1ef4}"  ; (Ỵ) Y with dot below
 cmpGreaterThan.item["z"] := "{u+1e93}"  ; (ẓ) z with dot below
 cmpGreaterThan.item["Z"] := "{u+1e92}"  ; (Ẓ) Z with dot below
-
-
-; Compose :  Ring Below and Dot Below (additional) (O)
-
-cmpCapitalO.item["a"] := "{u+1e01}"  ; (ḁ) a with ring below
-cmpCapitalO.item["A"] := "{u+1e00}"  ; (Ḁ) A with ring below
-
-
-; Compose :  Hook Above (<)
-
-cmpLessThan.item["a"] := "{u+1ea3}"  ; (ả) a with hook above
-cmpLessThan.item["A"] := "{u+1ea2}"  ; (Ả) A with hook above
-cmpLessThan.item["e"] := "{u+1ebb}"  ; (ẻ) e with hook above
-cmpLessThan.item["E"] := "{u+1eba}"  ; (Ẻ) E with hook above
-cmpLessThan.item["i"] := "{u+1ec9}"  ; (ỉ) i with hook above
-cmpLessThan.item["I"] := "{u+1ec8}"  ; (Ỉ) I with hook above
-cmpLessThan.item["o"] := "{u+1ecf}"  ; (ỏ) o with hook above
-cmpLessThan.item["O"] := "{u+1ece}"  ; (Ỏ) O with hook above
-cmpLessThan.item["u"] := "{u+1ee7}"  ; (ủ) u with hook above
-cmpLessThan.item["U"] := "{u+1ee6}"  ; (Ủ) U with hook above
-cmpLessThan.item["y"] := "{u+1ef7}"  ; (ỷ) y with hook above
-cmpLessThan.item["Y"] := "{u+1ef6}"  ; (Ỷ) Y with hook above
-
-
-; Compose :  Circumflex Below (I)
-
-cmpCapitalI.item["d"] := "{u+1e13}"  ; (ḓ) d with circumflex below
-cmpCapitalI.item["D"] := "{u+1e12}"  ; (Ḓ) D with circumflex below
-cmpCapitalI.item["e"] := "{u+1e19}"  ; (ḙ) e with circumflex below
-cmpCapitalI.item["E"] := "{u+1e18}"  ; (Ḙ) E with circumflex below
-cmpCapitalI.item["l"] := "{u+1e3d}"  ; (ḽ) l with circumflex below
-cmpCapitalI.item["L"] := "{u+1e3c}"  ; (Ḽ) L with circumflex below
-cmpCapitalI.item["n"] := "{u+1e4b}"  ; (ṋ) n with circumflex below
-cmpCapitalI.item["N"] := "{u+1e4a}"  ; (Ṋ) N with circumflex below
-cmpCapitalI.item["t"] := "{u+1e71}"  ; (ṱ) t with circumflex below
-cmpCapitalI.item["T"] := "{u+1e70}"  ; (Ṱ) T with circumflex below
-cmpCapitalI.item["u"] := "{u+1e77}"  ; (ṷ) u with circumflex below
-cmpCapitalI.item["U"] := "{u+1e76}"  ; (Ṷ) U with circumflex below
-
-
-; Compose :  Diaeresis Below (D)
-
-cmpCapitalD.item["u"] := "{u+1e73}"  ; (ṳ) u with diaeresis below
-cmpCapitalD.item["U"] := "{u+1e72}"  ; (Ṳ) U with diaeresis below
-
-
-; Compose :  Tilde Below (T)
-
-cmpCapitalT.item["e"] := "{u+1e1b}"  ; (ḛ) e with tilde below
-cmpCapitalT.item["E"] := "{u+1e1a}"  ; (Ḛ) E with tilde below
-cmpCapitalT.item["i"] := "{u+1e2d}"  ; (ḭ) i with tilde below
-cmpCapitalT.item["I"] := "{u+1e2c}"  ; (Ḭ) I with tilde below
-cmpCapitalT.item["u"] := "{u+1e75}"  ; (ṵ) u with tilde below
-cmpCapitalT.item["U"] := "{u+1e74}"  ; (Ṵ) U with tilde below
-
-
-; Compose :  Line Below (L)
-
-cmpCapitalL := ComObjCreate("Scripting.Dictionary")
-cmpCapitalL.item["b"] := "{u+1e07}"  ; (ḇ) b with line below
-cmpCapitalL.item["B"] := "{u+1e06}"  ; (Ḇ) B with line below
-cmpCapitalL.item["d"] := "{u+1e0f}"  ; (ḏ) d with line below
-cmpCapitalL.item["D"] := "{u+1e0e}"  ; (Ḏ) D with line below
-cmpCapitalL.item["h"] := "{u+1e96}"  ; (ẖ) h with line below
-cmpCapitalL.item["k"] := "{u+1e35}"  ; (ḵ) k with line below
-cmpCapitalL.item["K"] := "{u+1e34}"  ; (Ḵ) K with line below
-cmpCapitalL.item["l"] := "{u+1e3b}"  ; (ḻ) l with line below
-cmpCapitalL.item["L"] := "{u+1e3a}"  ; (Ḻ) L with line below
-cmpCapitalL.item["n"] := "{u+1e49}"  ; (ṉ) n with line below
-cmpCapitalL.item["N"] := "{u+1e48}"  ; (Ṉ) N with line below
-cmpCapitalL.item["r"] := "{u+1e5f}"  ; (ṟ) r with line below
-cmpCapitalL.item["R"] := "{u+1e5e}"  ; (Ṟ) R with line below
-cmpCapitalL.item["t"] := "{u+1e6f}"  ; (ṯ) t with line below
-cmpCapitalL.item["T"] := "{u+1e6e}"  ; (Ṯ) T with line below
-cmpCapitalL.item["z"] := "{u+1e95}"  ; (ẕ) z with line below
-cmpCapitalL.item["Z"] := "{u+1e94}"  ; (Ẕ) Z with line below
-
-
-; Compose :  Breve Below (B)
-
-cmpInvertedBreve.item["h"] := "{u+1e2b}"  ; (ḫ) h with breve below
-cmpInvertedBreve.item["H"] := "{u+1e2a}"  ; (Ḫ) H with breve below
 
 
 ; Compose :  Miscellaneous Symbols and Dingbats
@@ -1946,10 +1939,6 @@ CapsLock::Backspace  ; assigns 'Backspace' also to 'Caps Lock'
     Send % cmpBreveSpecial.item[keyB]
   else if (keyA == "=")
     Send % cmpDoubleAcute.item[keyB]
-  else if (keyA == "G")
-    Send % cmpDoubleGrave.item[keyB]
-  else if (keyA == "B")
-    Send % cmpInvertedBreve.item[keyB]
   else if (keyA == "h")
     Send % cmpSmallH.item[keyB]
   else if (keyA == "f")
@@ -2040,8 +2029,14 @@ CapsLock::Backspace  ; assigns 'Backspace' also to 'Caps Lock'
     Send % cmpBracketRight.item[keyB]
   else if (keyA == "\")
     Send % cmpBackslash.item[keyB]
+  else if (keyA == "G")
+    Send % cmpCapitalG.item[keyB]
+  else if (keyA == "B")
+    Send % cmpCapitalB.item[keyB]
   else if (keyA == "L")
     Send % cmpCapitalL.item[keyB]
+  else if (keyA == "R")
+    Send % cmpCapitalR.item[keyB]
   else if (keyA == "6")
     Send % cmpDigitSix.item[keyB]
   else if (keyA == "C")
