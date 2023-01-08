@@ -1,4 +1,4 @@
-# UltimateKEYS - 2023-01-06  (~/.XCompose)
+# UltimateKEYS - 2023-01-07  (~/.XCompose)
 
 # Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -417,38 +417,6 @@
 <Multi_key> <equal> <u> : "ű"  U0171  # u with double acute
 <Multi_key> <equal> <U> : "Ű"  U0170  # U with double acute
 <Multi_key> <equal> <space> : "˝"  U02DD  # double acute accent
-
-
-# Double Grave Accent
-
-<Multi_key> <G> <a> : "ȁ"  U0201  # a with double grave
-<Multi_key> <G> <A> : "Ȁ"  U0200  # A with double grave
-<Multi_key> <G> <e> : "ȅ"  U0205  # e with double grave
-<Multi_key> <G> <E> : "Ȅ"  U0204  # E with double grave
-<Multi_key> <G> <i> : "ȉ"  U0209  # i with double grave
-<Multi_key> <G> <I> : "Ȉ"  U0208  # I with double grave
-<Multi_key> <G> <o> : "ȍ"  U020D  # o with double grave
-<Multi_key> <G> <O> : "Ȍ"  U020C  # O with double grave
-<Multi_key> <G> <r> : "ȑ"  U0211  # r with double grave
-<Multi_key> <G> <R> : "Ȑ"  U0210  # R with double grave
-<Multi_key> <G> <u> : "ȕ"  U0215  # u with double grave
-<Multi_key> <G> <U> : "Ȕ"  U0214  # U with double grave
-
-
-# Inverted Breve
-
-<Multi_key> <B> <a> : "ȃ"  U0203  # a with inverted breve
-<Multi_key> <B> <A> : "Ȃ"  U0202  # A with inverted breve
-<Multi_key> <B> <e> : "ȇ"  U0207  # e with inverted breve
-<Multi_key> <B> <E> : "Ȇ"  U0206  # E with inverted breve
-<Multi_key> <B> <i> : "ȋ"  U020B  # i with inverted breve
-<Multi_key> <B> <I> : "Ȋ"  U020A  # I with inverted breve
-<Multi_key> <B> <o> : "ȏ"  U020F  # o with inverted breve
-<Multi_key> <B> <O> : "Ȏ"  U020E  # O with inverted breve
-<Multi_key> <B> <r> : "ȓ"  U0213  # r with inverted breve
-<Multi_key> <B> <R> : "Ȓ"  U0212  # R with inverted breve
-<Multi_key> <B> <u> : "ȗ"  U0217  # u with inverted breve
-<Multi_key> <B> <U> : "Ȗ"  U0216  # U with inverted breve
 
 
 # Hook and Horn
@@ -1017,6 +985,111 @@
 <Multi_key> <apostrophe> <greater>      : "›"  U203A  # right-pointing single angle quotation mark
 
 
+# Double Grave Accent
+
+<Multi_key> <G> <a> : "ȁ"  U0201  # a with double grave
+<Multi_key> <G> <A> : "Ȁ"  U0200  # A with double grave
+<Multi_key> <G> <e> : "ȅ"  U0205  # e with double grave
+<Multi_key> <G> <E> : "Ȅ"  U0204  # E with double grave
+<Multi_key> <G> <i> : "ȉ"  U0209  # i with double grave
+<Multi_key> <G> <I> : "Ȉ"  U0208  # I with double grave
+<Multi_key> <G> <o> : "ȍ"  U020D  # o with double grave
+<Multi_key> <G> <O> : "Ȍ"  U020C  # O with double grave
+<Multi_key> <G> <r> : "ȑ"  U0211  # r with double grave
+<Multi_key> <G> <R> : "Ȑ"  U0210  # R with double grave
+<Multi_key> <G> <u> : "ȕ"  U0215  # u with double grave
+<Multi_key> <G> <U> : "Ȕ"  U0214  # U with double grave
+
+
+# Inverted Breve
+
+<Multi_key> <B> <a> : "ȃ"  U0203  # a with inverted breve
+<Multi_key> <B> <A> : "Ȃ"  U0202  # A with inverted breve
+<Multi_key> <B> <e> : "ȇ"  U0207  # e with inverted breve
+<Multi_key> <B> <E> : "Ȇ"  U0206  # E with inverted breve
+<Multi_key> <B> <i> : "ȋ"  U020B  # i with inverted breve
+<Multi_key> <B> <I> : "Ȋ"  U020A  # I with inverted breve
+<Multi_key> <B> <o> : "ȏ"  U020F  # o with inverted breve
+<Multi_key> <B> <O> : "Ȏ"  U020E  # O with inverted breve
+<Multi_key> <B> <r> : "ȓ"  U0213  # r with inverted breve
+<Multi_key> <B> <R> : "Ȓ"  U0212  # R with inverted breve
+<Multi_key> <B> <u> : "ȗ"  U0217  # u with inverted breve
+<Multi_key> <B> <U> : "Ȗ"  U0216  # U with inverted breve
+
+
+# Circumflex Below
+
+<Multi_key> <I> <d> : "ḓ"  U1E13  # d with circumflex below
+<Multi_key> <I> <D> : "Ḓ"  U1E12  # D with circumflex below
+<Multi_key> <I> <e> : "ḙ"  U1E19  # e with circumflex below
+<Multi_key> <I> <E> : "Ḙ"  U1E18  # E with circumflex below
+<Multi_key> <I> <l> : "ḽ"  U1E3D  # l with circumflex below
+<Multi_key> <I> <L> : "Ḽ"  U1E3C  # L with circumflex below
+<Multi_key> <I> <n> : "ṋ"  U1E4B  # n with circumflex below
+<Multi_key> <I> <N> : "Ṋ"  U1E4A  # N with circumflex below
+<Multi_key> <I> <t> : "ṱ"  U1E71  # t with circumflex below
+<Multi_key> <I> <T> : "Ṱ"  U1E70  # T with circumflex below
+<Multi_key> <I> <u> : "ṷ"  U1E77  # u with circumflex below
+<Multi_key> <I> <U> : "Ṷ"  U1E76  # U with circumflex below
+
+
+# Tilde Below
+
+<Multi_key> <T> <e> : "ḛ"  U1E1B  # e with tilde below
+<Multi_key> <T> <E> : "Ḛ"  U1E1A  # E with tilde below
+<Multi_key> <T> <i> : "ḭ"  U1E2D  # i with tilde below
+<Multi_key> <T> <I> : "Ḭ"  U1E2C  # I with tilde below
+<Multi_key> <T> <u> : "ṵ"  U1E75  # u with tilde below
+<Multi_key> <T> <U> : "Ṵ"  U1E74  # U with tilde below
+
+
+# Line Below
+
+<Multi_key> <L> <b> : "ḇ"  U1E07  # b with line below
+<Multi_key> <L> <B> : "Ḇ"  U1E06  # B with line below
+<Multi_key> <L> <d> : "ḏ"  U1E0F  # d with line below
+<Multi_key> <L> <D> : "Ḏ"  U1E0E  # D with line below
+<Multi_key> <L> <h> : "ẖ"  U1E96  # h with line below
+<Multi_key> <L> <k> : "ḵ"  U1E35  # k with line below
+<Multi_key> <L> <K> : "Ḵ"  U1E34  # K with line below
+<Multi_key> <L> <l> : "ḻ"  U1E3B  # l with line below
+<Multi_key> <L> <L> : "Ḻ"  U1E3A  # L with line below
+<Multi_key> <L> <n> : "ṉ"  U1E49  # n with line below
+<Multi_key> <L> <N> : "Ṉ"  U1E48  # N with line below
+<Multi_key> <L> <r> : "ṟ"  U1E5F  # r with line below
+<Multi_key> <L> <R> : "Ṟ"  U1E5E  # R with line below
+<Multi_key> <L> <t> : "ṯ"  U1E6F  # t with line below
+<Multi_key> <L> <T> : "Ṯ"  U1E6E  # T with line below
+<Multi_key> <L> <z> : "ẕ"  U1E95  # z with line below
+<Multi_key> <L> <Z> : "Ẕ"  U1E94  # Z with line below
+
+
+# Ring Below, Breve Below and Diaeresis Below
+
+<Multi_key> <R> <a> : "ḁ"  U1E01  # a with ring below
+<Multi_key> <R> <A> : "Ḁ"  U1E00  # A with ring below
+<Multi_key> <R> <h> : "ḫ"  U1E2B  # h with breve below
+<Multi_key> <R> <H> : "Ḫ"  U1E2A  # H with breve below
+<Multi_key> <R> <u> : "ṳ"  U1E73  # u with diaeresis below
+<Multi_key> <R> <U> : "Ṳ"  U1E72  # U with diaeresis below
+
+
+# Hook Above
+
+<Multi_key> <less> <a> : "ả"  U1EA3  # a with hook above
+<Multi_key> <less> <A> : "Ả"  U1EA2  # A with hook above
+<Multi_key> <less> <e> : "ẻ"  U1EBB  # e with hook above
+<Multi_key> <less> <E> : "Ẻ"  U1EBA  # E with hook above
+<Multi_key> <less> <i> : "ỉ"  U1EC9  # i with hook above
+<Multi_key> <less> <I> : "Ỉ"  U1EC8  # I with hook above
+<Multi_key> <less> <o> : "ỏ"  U1ECF  # o with hook above
+<Multi_key> <less> <O> : "Ỏ"  U1ECE  # O with hook above
+<Multi_key> <less> <u> : "ủ"  U1EE7  # u with hook above
+<Multi_key> <less> <U> : "Ủ"  U1EE6  # U with hook above
+<Multi_key> <less> <y> : "ỷ"  U1EF7  # y with hook above
+<Multi_key> <less> <Y> : "Ỷ"  U1EF6  # Y with hook above
+
+
 # Dot Below
 
 <Multi_key> <greater> <a> : "ạ"  U1EA1  # a with dot below
@@ -1057,87 +1130,6 @@
 <Multi_key> <greater> <Y> : "Ỵ"  U1EF4  # Y with dot below
 <Multi_key> <greater> <z> : "ẓ"  U1E93  # z with dot below
 <Multi_key> <greater> <Z> : "Ẓ"  U1E92  # Z with dot below
-
-
-# Ring Below and Dot Below (additional)
-
-<Multi_key> <O> <a> : "ḁ"  U1E01  # a with ring below
-<Multi_key> <O> <A> : "Ḁ"  U1E00  # A with ring below
-
-
-# Hook Above
-
-<Multi_key> <less> <a> : "ả"  U1EA3  # a with hook above
-<Multi_key> <less> <A> : "Ả"  U1EA2  # A with hook above
-<Multi_key> <less> <e> : "ẻ"  U1EBB  # e with hook above
-<Multi_key> <less> <E> : "Ẻ"  U1EBA  # E with hook above
-<Multi_key> <less> <i> : "ỉ"  U1EC9  # i with hook above
-<Multi_key> <less> <I> : "Ỉ"  U1EC8  # I with hook above
-<Multi_key> <less> <o> : "ỏ"  U1ECF  # o with hook above
-<Multi_key> <less> <O> : "Ỏ"  U1ECE  # O with hook above
-<Multi_key> <less> <u> : "ủ"  U1EE7  # u with hook above
-<Multi_key> <less> <U> : "Ủ"  U1EE6  # U with hook above
-<Multi_key> <less> <y> : "ỷ"  U1EF7  # y with hook above
-<Multi_key> <less> <Y> : "Ỷ"  U1EF6  # Y with hook above
-
-
-# Circumflex Below
-
-<Multi_key> <I> <d> : "ḓ"  U1E13  # d with circumflex below
-<Multi_key> <I> <D> : "Ḓ"  U1E12  # D with circumflex below
-<Multi_key> <I> <e> : "ḙ"  U1E19  # e with circumflex below
-<Multi_key> <I> <E> : "Ḙ"  U1E18  # E with circumflex below
-<Multi_key> <I> <l> : "ḽ"  U1E3D  # l with circumflex below
-<Multi_key> <I> <L> : "Ḽ"  U1E3C  # L with circumflex below
-<Multi_key> <I> <n> : "ṋ"  U1E4B  # n with circumflex below
-<Multi_key> <I> <N> : "Ṋ"  U1E4A  # N with circumflex below
-<Multi_key> <I> <t> : "ṱ"  U1E71  # t with circumflex below
-<Multi_key> <I> <T> : "Ṱ"  U1E70  # T with circumflex below
-<Multi_key> <I> <u> : "ṷ"  U1E77  # u with circumflex below
-<Multi_key> <I> <U> : "Ṷ"  U1E76  # U with circumflex below
-
-
-# Diaeresis Below
-
-<Multi_key> <D> <u> : "ṳ"  U1E73  # u with diaeresis below
-<Multi_key> <D> <U> : "Ṳ"  U1E72  # U with diaeresis below
-
-
-# Tilde Below
-
-<Multi_key> <T> <e> : "ḛ"  U1E1B  # e with tilde below
-<Multi_key> <T> <E> : "Ḛ"  U1E1A  # E with tilde below
-<Multi_key> <T> <i> : "ḭ"  U1E2D  # i with tilde below
-<Multi_key> <T> <I> : "Ḭ"  U1E2C  # I with tilde below
-<Multi_key> <T> <u> : "ṵ"  U1E75  # u with tilde below
-<Multi_key> <T> <U> : "Ṵ"  U1E74  # U with tilde below
-
-
-# Line Below
-
-<Multi_key> <L> <b> : "ḇ"  U1E07  # b with line below
-<Multi_key> <L> <B> : "Ḇ"  U1E06  # B with line below
-<Multi_key> <L> <d> : "ḏ"  U1E0F  # d with line below
-<Multi_key> <L> <D> : "Ḏ"  U1E0E  # D with line below
-<Multi_key> <L> <h> : "ẖ"  U1E96  # h with line below
-<Multi_key> <L> <k> : "ḵ"  U1E35  # k with line below
-<Multi_key> <L> <K> : "Ḵ"  U1E34  # K with line below
-<Multi_key> <L> <l> : "ḻ"  U1E3B  # l with line below
-<Multi_key> <L> <L> : "Ḻ"  U1E3A  # L with line below
-<Multi_key> <L> <n> : "ṉ"  U1E49  # n with line below
-<Multi_key> <L> <N> : "Ṉ"  U1E48  # N with line below
-<Multi_key> <L> <r> : "ṟ"  U1E5F  # r with line below
-<Multi_key> <L> <R> : "Ṟ"  U1E5E  # R with line below
-<Multi_key> <L> <t> : "ṯ"  U1E6F  # t with line below
-<Multi_key> <L> <T> : "Ṯ"  U1E6E  # T with line below
-<Multi_key> <L> <z> : "ẕ"  U1E95  # z with line below
-<Multi_key> <L> <Z> : "Ẕ"  U1E94  # Z with line below
-
-
-# Breve Below
-
-<Multi_key> <B> <h> : "ḫ"  U1E2B  # h with breve below
-<Multi_key> <B> <H> : "Ḫ"  U1E2A  # H with breve below
 
 
 # Miscellaneous Symbols and Dingbats

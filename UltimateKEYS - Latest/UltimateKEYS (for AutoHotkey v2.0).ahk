@@ -1,4 +1,4 @@
-; UltimateKEYS (for AutoHotkey v2.0).ahk - 2023-01-06
+; UltimateKEYS (for AutoHotkey v2.0).ahk - 2023-01-07
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -444,40 +444,6 @@ cmpDoubleAcute["O"] := "{u+0150}"  ; (Ő) O with double acute
 cmpDoubleAcute["u"] := "{u+0171}"  ; (ű) u with double acute
 cmpDoubleAcute["U"] := "{u+0170}"  ; (Ű) U with double acute
 cmpDoubleAcute[" "] := "{u+02dd}"  ; (˝) double acute accent
-
-
-; Compose :  Double Grave Accent (G)
-
-global cmpDoubleGrave := Map()
-cmpDoubleGrave["a"] := "{u+0201}"  ; (ȁ) a with double grave
-cmpDoubleGrave["A"] := "{u+0200}"  ; (Ȁ) A with double grave
-cmpDoubleGrave["e"] := "{u+0205}"  ; (ȅ) e with double grave
-cmpDoubleGrave["E"] := "{u+0204}"  ; (Ȅ) E with double grave
-cmpDoubleGrave["i"] := "{u+0209}"  ; (ȉ) i with double grave
-cmpDoubleGrave["I"] := "{u+0208}"  ; (Ȉ) I with double grave
-cmpDoubleGrave["o"] := "{u+020d}"  ; (ȍ) o with double grave
-cmpDoubleGrave["O"] := "{u+020c}"  ; (Ȍ) O with double grave
-cmpDoubleGrave["r"] := "{u+0211}"  ; (ȑ) r with double grave
-cmpDoubleGrave["R"] := "{u+0210}"  ; (Ȑ) R with double grave
-cmpDoubleGrave["u"] := "{u+0215}"  ; (ȕ) u with double grave
-cmpDoubleGrave["U"] := "{u+0214}"  ; (Ȕ) U with double grave
-
-
-; Compose :  Inverted Breve (B)
-
-global cmpInvertedBreve := Map()
-cmpInvertedBreve["a"] := "{u+0203}"  ; (ȃ) a with inverted breve
-cmpInvertedBreve["A"] := "{u+0202}"  ; (Ȃ) A with inverted breve
-cmpInvertedBreve["e"] := "{u+0207}"  ; (ȇ) e with inverted breve
-cmpInvertedBreve["E"] := "{u+0206}"  ; (Ȇ) E with inverted breve
-cmpInvertedBreve["i"] := "{u+020b}"  ; (ȋ) i with inverted breve
-cmpInvertedBreve["I"] := "{u+020a}"  ; (Ȋ) I with inverted breve
-cmpInvertedBreve["o"] := "{u+020f}"  ; (ȏ) o with inverted breve
-cmpInvertedBreve["O"] := "{u+020e}"  ; (Ȏ) O with inverted breve
-cmpInvertedBreve["r"] := "{u+0213}"  ; (ȓ) r with inverted breve
-cmpInvertedBreve["R"] := "{u+0212}"  ; (Ȓ) R with inverted breve
-cmpInvertedBreve["u"] := "{u+0217}"  ; (ȗ) u with inverted breve
-cmpInvertedBreve["U"] := "{u+0216}"  ; (Ȗ) U with inverted breve
 
 
 ; Compose :  Hook and Horn (h)
@@ -1091,6 +1057,115 @@ cmpGreaterThan["'"] := "{u+203a}"        ; (›) right-pointing single angle quo
 cmpAcuteAccent[">"] := "{u+203a}"        ; (›) right-pointing single angle quotation mark
 
 
+; Compose :  Double Grave Accent (G)
+
+global cmpCapitalG := Map()
+cmpCapitalG["a"] := "{u+0201}"  ; (ȁ) a with double grave
+cmpCapitalG["A"] := "{u+0200}"  ; (Ȁ) A with double grave
+cmpCapitalG["e"] := "{u+0205}"  ; (ȅ) e with double grave
+cmpCapitalG["E"] := "{u+0204}"  ; (Ȅ) E with double grave
+cmpCapitalG["i"] := "{u+0209}"  ; (ȉ) i with double grave
+cmpCapitalG["I"] := "{u+0208}"  ; (Ȉ) I with double grave
+cmpCapitalG["o"] := "{u+020d}"  ; (ȍ) o with double grave
+cmpCapitalG["O"] := "{u+020c}"  ; (Ȍ) O with double grave
+cmpCapitalG["r"] := "{u+0211}"  ; (ȑ) r with double grave
+cmpCapitalG["R"] := "{u+0210}"  ; (Ȑ) R with double grave
+cmpCapitalG["u"] := "{u+0215}"  ; (ȕ) u with double grave
+cmpCapitalG["U"] := "{u+0214}"  ; (Ȕ) U with double grave
+
+
+; Compose :  Inverted Breve (B)
+
+global cmpCapitalB := Map()
+cmpCapitalB["a"] := "{u+0203}"  ; (ȃ) a with inverted breve
+cmpCapitalB["A"] := "{u+0202}"  ; (Ȃ) A with inverted breve
+cmpCapitalB["e"] := "{u+0207}"  ; (ȇ) e with inverted breve
+cmpCapitalB["E"] := "{u+0206}"  ; (Ȇ) E with inverted breve
+cmpCapitalB["i"] := "{u+020b}"  ; (ȋ) i with inverted breve
+cmpCapitalB["I"] := "{u+020a}"  ; (Ȋ) I with inverted breve
+cmpCapitalB["o"] := "{u+020f}"  ; (ȏ) o with inverted breve
+cmpCapitalB["O"] := "{u+020e}"  ; (Ȏ) O with inverted breve
+cmpCapitalB["r"] := "{u+0213}"  ; (ȓ) r with inverted breve
+cmpCapitalB["R"] := "{u+0212}"  ; (Ȓ) R with inverted breve
+cmpCapitalB["u"] := "{u+0217}"  ; (ȗ) u with inverted breve
+cmpCapitalB["U"] := "{u+0216}"  ; (Ȗ) U with inverted breve
+
+
+; Compose :  Circumflex Below (I)
+
+cmpCapitalI["d"] := "{u+1e13}"  ; (ḓ) d with circumflex below
+cmpCapitalI["D"] := "{u+1e12}"  ; (Ḓ) D with circumflex below
+cmpCapitalI["e"] := "{u+1e19}"  ; (ḙ) e with circumflex below
+cmpCapitalI["E"] := "{u+1e18}"  ; (Ḙ) E with circumflex below
+cmpCapitalI["l"] := "{u+1e3d}"  ; (ḽ) l with circumflex below
+cmpCapitalI["L"] := "{u+1e3c}"  ; (Ḽ) L with circumflex below
+cmpCapitalI["n"] := "{u+1e4b}"  ; (ṋ) n with circumflex below
+cmpCapitalI["N"] := "{u+1e4a}"  ; (Ṋ) N with circumflex below
+cmpCapitalI["t"] := "{u+1e71}"  ; (ṱ) t with circumflex below
+cmpCapitalI["T"] := "{u+1e70}"  ; (Ṱ) T with circumflex below
+cmpCapitalI["u"] := "{u+1e77}"  ; (ṷ) u with circumflex below
+cmpCapitalI["U"] := "{u+1e76}"  ; (Ṷ) U with circumflex below
+
+
+; Compose :  Tilde Below (T)
+
+cmpCapitalT["e"] := "{u+1e1b}"  ; (ḛ) e with tilde below
+cmpCapitalT["E"] := "{u+1e1a}"  ; (Ḛ) E with tilde below
+cmpCapitalT["i"] := "{u+1e2d}"  ; (ḭ) i with tilde below
+cmpCapitalT["I"] := "{u+1e2c}"  ; (Ḭ) I with tilde below
+cmpCapitalT["u"] := "{u+1e75}"  ; (ṵ) u with tilde below
+cmpCapitalT["U"] := "{u+1e74}"  ; (Ṵ) U with tilde below
+
+
+; Compose :  Line Below (L)
+
+global cmpCapitalL := Map()
+cmpCapitalL["b"] := "{u+1e07}"  ; (ḇ) b with line below
+cmpCapitalL["B"] := "{u+1e06}"  ; (Ḇ) B with line below
+cmpCapitalL["d"] := "{u+1e0f}"  ; (ḏ) d with line below
+cmpCapitalL["D"] := "{u+1e0e}"  ; (Ḏ) D with line below
+cmpCapitalL["h"] := "{u+1e96}"  ; (ẖ) h with line below
+cmpCapitalL["k"] := "{u+1e35}"  ; (ḵ) k with line below
+cmpCapitalL["K"] := "{u+1e34}"  ; (Ḵ) K with line below
+cmpCapitalL["l"] := "{u+1e3b}"  ; (ḻ) l with line below
+cmpCapitalL["L"] := "{u+1e3a}"  ; (Ḻ) L with line below
+cmpCapitalL["n"] := "{u+1e49}"  ; (ṉ) n with line below
+cmpCapitalL["N"] := "{u+1e48}"  ; (Ṉ) N with line below
+cmpCapitalL["r"] := "{u+1e5f}"  ; (ṟ) r with line below
+cmpCapitalL["R"] := "{u+1e5e}"  ; (Ṟ) R with line below
+cmpCapitalL["t"] := "{u+1e6f}"  ; (ṯ) t with line below
+cmpCapitalL["T"] := "{u+1e6e}"  ; (Ṯ) T with line below
+cmpCapitalL["z"] := "{u+1e95}"  ; (ẕ) z with line below
+cmpCapitalL["Z"] := "{u+1e94}"  ; (Ẕ) Z with line below
+
+
+; Compose :  Ring Below, Breve Below and Diaeresis Below (R)
+
+global cmpCapitalR := Map()
+cmpCapitalR["a"] := "{u+1e01}"  ; (ḁ) a with ring below
+cmpCapitalR["A"] := "{u+1e00}"  ; (Ḁ) A with ring below
+cmpCapitalR["h"] := "{u+1e2b}"  ; (ḫ) h with breve below
+cmpCapitalR["H"] := "{u+1e2a}"  ; (Ḫ) H with breve below
+cmpCapitalR["u"] := "{u+1e73}"  ; (ṳ) u with diaeresis below
+cmpCapitalR["U"] := "{u+1e72}"  ; (Ṳ) U with diaeresis below
+
+
+; Compose :  Hook Above (<)
+
+cmpLessThan["a"] := "{u+1ea3}"  ; (ả) a with hook above
+cmpLessThan["A"] := "{u+1ea2}"  ; (Ả) A with hook above
+cmpLessThan["e"] := "{u+1ebb}"  ; (ẻ) e with hook above
+cmpLessThan["E"] := "{u+1eba}"  ; (Ẻ) E with hook above
+cmpLessThan["i"] := "{u+1ec9}"  ; (ỉ) i with hook above
+cmpLessThan["I"] := "{u+1ec8}"  ; (Ỉ) I with hook above
+cmpLessThan["o"] := "{u+1ecf}"  ; (ỏ) o with hook above
+cmpLessThan["O"] := "{u+1ece}"  ; (Ỏ) O with hook above
+cmpLessThan["u"] := "{u+1ee7}"  ; (ủ) u with hook above
+cmpLessThan["U"] := "{u+1ee6}"  ; (Ủ) U with hook above
+cmpLessThan["y"] := "{u+1ef7}"  ; (ỷ) y with hook above
+cmpLessThan["Y"] := "{u+1ef6}"  ; (Ỷ) Y with hook above
+
+
 ; Compose :  Dot Below (>)
 
 cmpGreaterThan["a"] := "{u+1ea1}"  ; (ạ) a with dot below
@@ -1131,88 +1206,6 @@ cmpGreaterThan["y"] := "{u+1ef5}"  ; (ỵ) y with dot below
 cmpGreaterThan["Y"] := "{u+1ef4}"  ; (Ỵ) Y with dot below
 cmpGreaterThan["z"] := "{u+1e93}"  ; (ẓ) z with dot below
 cmpGreaterThan["Z"] := "{u+1e92}"  ; (Ẓ) Z with dot below
-
-
-; Compose :  Ring Below and Dot Below (additional) (O)
-
-cmpCapitalO["a"] := "{u+1e01}"  ; (ḁ) a with ring below
-cmpCapitalO["A"] := "{u+1e00}"  ; (Ḁ) A with ring below
-
-
-; Compose :  Hook Above (<)
-
-cmpLessThan["a"] := "{u+1ea3}"  ; (ả) a with hook above
-cmpLessThan["A"] := "{u+1ea2}"  ; (Ả) A with hook above
-cmpLessThan["e"] := "{u+1ebb}"  ; (ẻ) e with hook above
-cmpLessThan["E"] := "{u+1eba}"  ; (Ẻ) E with hook above
-cmpLessThan["i"] := "{u+1ec9}"  ; (ỉ) i with hook above
-cmpLessThan["I"] := "{u+1ec8}"  ; (Ỉ) I with hook above
-cmpLessThan["o"] := "{u+1ecf}"  ; (ỏ) o with hook above
-cmpLessThan["O"] := "{u+1ece}"  ; (Ỏ) O with hook above
-cmpLessThan["u"] := "{u+1ee7}"  ; (ủ) u with hook above
-cmpLessThan["U"] := "{u+1ee6}"  ; (Ủ) U with hook above
-cmpLessThan["y"] := "{u+1ef7}"  ; (ỷ) y with hook above
-cmpLessThan["Y"] := "{u+1ef6}"  ; (Ỷ) Y with hook above
-
-
-; Compose :  Circumflex Below (I)
-
-cmpCapitalI["d"] := "{u+1e13}"  ; (ḓ) d with circumflex below
-cmpCapitalI["D"] := "{u+1e12}"  ; (Ḓ) D with circumflex below
-cmpCapitalI["e"] := "{u+1e19}"  ; (ḙ) e with circumflex below
-cmpCapitalI["E"] := "{u+1e18}"  ; (Ḙ) E with circumflex below
-cmpCapitalI["l"] := "{u+1e3d}"  ; (ḽ) l with circumflex below
-cmpCapitalI["L"] := "{u+1e3c}"  ; (Ḽ) L with circumflex below
-cmpCapitalI["n"] := "{u+1e4b}"  ; (ṋ) n with circumflex below
-cmpCapitalI["N"] := "{u+1e4a}"  ; (Ṋ) N with circumflex below
-cmpCapitalI["t"] := "{u+1e71}"  ; (ṱ) t with circumflex below
-cmpCapitalI["T"] := "{u+1e70}"  ; (Ṱ) T with circumflex below
-cmpCapitalI["u"] := "{u+1e77}"  ; (ṷ) u with circumflex below
-cmpCapitalI["U"] := "{u+1e76}"  ; (Ṷ) U with circumflex below
-
-
-; Compose :  Diaeresis Below (D)
-
-cmpCapitalD["u"] := "{u+1e73}"  ; (ṳ) u with diaeresis below
-cmpCapitalD["U"] := "{u+1e72}"  ; (Ṳ) U with diaeresis below
-
-
-; Compose :  Tilde Below (T)
-
-cmpCapitalT["e"] := "{u+1e1b}"  ; (ḛ) e with tilde below
-cmpCapitalT["E"] := "{u+1e1a}"  ; (Ḛ) E with tilde below
-cmpCapitalT["i"] := "{u+1e2d}"  ; (ḭ) i with tilde below
-cmpCapitalT["I"] := "{u+1e2c}"  ; (Ḭ) I with tilde below
-cmpCapitalT["u"] := "{u+1e75}"  ; (ṵ) u with tilde below
-cmpCapitalT["U"] := "{u+1e74}"  ; (Ṵ) U with tilde below
-
-
-; Compose :  Line Below (L)
-
-global cmpCapitalL := Map()
-cmpCapitalL["b"] := "{u+1e07}"  ; (ḇ) b with line below
-cmpCapitalL["B"] := "{u+1e06}"  ; (Ḇ) B with line below
-cmpCapitalL["d"] := "{u+1e0f}"  ; (ḏ) d with line below
-cmpCapitalL["D"] := "{u+1e0e}"  ; (Ḏ) D with line below
-cmpCapitalL["h"] := "{u+1e96}"  ; (ẖ) h with line below
-cmpCapitalL["k"] := "{u+1e35}"  ; (ḵ) k with line below
-cmpCapitalL["K"] := "{u+1e34}"  ; (Ḵ) K with line below
-cmpCapitalL["l"] := "{u+1e3b}"  ; (ḻ) l with line below
-cmpCapitalL["L"] := "{u+1e3a}"  ; (Ḻ) L with line below
-cmpCapitalL["n"] := "{u+1e49}"  ; (ṉ) n with line below
-cmpCapitalL["N"] := "{u+1e48}"  ; (Ṉ) N with line below
-cmpCapitalL["r"] := "{u+1e5f}"  ; (ṟ) r with line below
-cmpCapitalL["R"] := "{u+1e5e}"  ; (Ṟ) R with line below
-cmpCapitalL["t"] := "{u+1e6f}"  ; (ṯ) t with line below
-cmpCapitalL["T"] := "{u+1e6e}"  ; (Ṯ) T with line below
-cmpCapitalL["z"] := "{u+1e95}"  ; (ẕ) z with line below
-cmpCapitalL["Z"] := "{u+1e94}"  ; (Ẕ) Z with line below
-
-
-; Compose :  Breve Below (B)
-
-cmpInvertedBreve["h"] := "{u+1e2b}"  ; (ḫ) h with breve below
-cmpInvertedBreve["H"] := "{u+1e2a}"  ; (Ḫ) H with breve below
 
 
 ; Compose :  Miscellaneous Symbols and Dingbats
@@ -1952,14 +1945,6 @@ cmpSmallN["0"] := "{u+277f}"  ; (❿) dingbat negative circled digit 10
     if cmpDoubleAcute.Has(ihB.Input)
       Send cmpDoubleAcute[ihB.Input]
   }
-  else if (ihA.Input == "G") {
-    if cmpDoubleGrave.Has(ihB.Input)
-      Send cmpDoubleGrave[ihB.Input]
-  }
-  else if (ihA.Input == "B") {
-    if cmpInvertedBreve.Has(ihB.Input)
-      Send cmpInvertedBreve[ihB.Input]
-  }
   else if (ihA.Input == "h") {
     if cmpSmallH.Has(ihB.Input)
       Send cmpSmallH[ihB.Input]
@@ -2140,9 +2125,21 @@ cmpSmallN["0"] := "{u+277f}"  ; (❿) dingbat negative circled digit 10
     if cmpBackslash.Has(ihB.Input)
       Send cmpBackslash[ihB.Input]
   }
+  else if (ihA.Input == "G") {
+    if cmpCapitalG.Has(ihB.Input)
+      Send cmpCapitalG[ihB.Input]
+  }
+  else if (ihA.Input == "B") {
+    if cmpCapitalB.Has(ihB.Input)
+      Send cmpCapitalB[ihB.Input]
+  }
   else if (ihA.Input == "L") {
     if cmpCapitalL.Has(ihB.Input)
       Send cmpCapitalL[ihB.Input]
+  }
+  else if (ihA.Input == "R") {
+    if cmpCapitalR.Has(ihB.Input)
+      Send cmpCapitalR[ihB.Input]
   }
   else if (ihA.Input == "6") {
     if cmpDigitSix.Has(ihB.Input)
