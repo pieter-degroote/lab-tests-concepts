@@ -512,5 +512,5 @@ sc056::Send <    ; less-than sign
 +sc056::Send >   ; greater-than sign
 >!sc056::Send \  ; reverse solidus (backslash)
 
->!space::Send {u+00a0}   ; non-breaking space
->!+space::Send {u+00a0}  ; non-breaking space
+>!space::Send {u+00a0}   ; non-breaking space (NBSP)
+>!+space::Send {u+00a0}  ; non-breaking space (NBSP)
