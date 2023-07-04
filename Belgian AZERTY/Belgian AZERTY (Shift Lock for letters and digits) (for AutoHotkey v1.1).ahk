@@ -1,3 +1,5 @@
+#Requires AutoHotkey v1.1
+
 ; Belgian AZERTY (Shift Lock for letters and digits) (for AutoHotkey v1.1).ahk - 2022-02-01
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
@@ -15,6 +17,7 @@
 
 
 
+#NoEnv          ; avoids checking empty variables to see if they are environment variables
 ListLines Off   ; omits recently executed lines from history (for privacy and security)
 #KeyHistory 0   ; disables the key history (for privacy and security)
 

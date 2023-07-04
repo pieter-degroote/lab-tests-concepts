@@ -1,3 +1,5 @@
+#Requires AutoHotkey v2.0
+
 ; Belgian AZERTY (Shift Lock for letters and digits) (for AutoHotkey v2.0).ahk - 2022-02-01
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
