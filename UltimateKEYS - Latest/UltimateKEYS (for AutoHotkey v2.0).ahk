@@ -1,3 +1,5 @@
+#Requires AutoHotkey v2.0
+
 ; UltimateKEYS (for AutoHotkey v2.0).ahk - 2023-04-18
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
