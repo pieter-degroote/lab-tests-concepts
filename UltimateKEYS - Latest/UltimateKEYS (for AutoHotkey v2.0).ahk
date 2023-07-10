@@ -1,4 +1,4 @@
-#Requires AutoHotkey v2.0
+#requires AutoHotkey v2.0
 
 ; UltimateKEYS (for AutoHotkey v2.0).ahk - 2023-07-10
 
