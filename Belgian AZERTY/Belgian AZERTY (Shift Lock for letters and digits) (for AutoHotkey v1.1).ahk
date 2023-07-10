@@ -1,4 +1,4 @@
-#Requires AutoHotkey v1.1
+#requires AutoHotkey v1.1
 
 ; Belgian AZERTY (Shift Lock for letters and digits) (for AutoHotkey v1.1).ahk - 2022-02-01
 
