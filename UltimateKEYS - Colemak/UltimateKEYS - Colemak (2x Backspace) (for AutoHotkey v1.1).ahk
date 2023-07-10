@@ -1,4 +1,4 @@
-#Requires AutoHotkey v1.1
+#requires AutoHotkey v1.1
 
 ; UltimateKEYS - Colemak (2x Backspace) (for AutoHotkey v1.1).ahk - 2023-07-10
 
