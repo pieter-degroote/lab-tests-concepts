@@ -23,12 +23,10 @@ Otherwise, it might be impossible to type any Unicode character higher than "Bas
 
 ## For official releases, please see&nbsp;:
 
-**UltimateKEYS - GitHub&nbsp;: &nbsp;https://github.com/pieter-degroote/UltimateKEYS**
-
-**Releases&nbsp;: &nbsp;https://github.com/pieter-degroote/UltimateKEYS/releases**
+**GitHub&nbsp;: &nbsp;https://github.com/pieter-degroote/UltimateKEYS** &emsp;[![GitHub Release](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS.svg)](https://github.com/pieter-degroote/UltimateKEYS/releases)
 
 **Websites&nbsp;: &nbsp;[www.ultimatekeys.info](https://pieter-degroote.github.io/UltimateKEYS/) ~ [www.pieter-degroote.info](https://pieter-degroote.github.io/)**
 
 ## Testing Repository - Additional experimental versions&nbsp;:
 
-**Testing&nbsp;: &nbsp;https://github.com/pieter-degroote/UltimateKEYS-testing**
+**Testing&nbsp;: &nbsp;https://github.com/pieter-degroote/UltimateKEYS-testing** &emsp;[![GitHub Testing](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS-testing.svg?label=testing)](https://github.com/pieter-degroote/UltimateKEYS-testing/releases)
