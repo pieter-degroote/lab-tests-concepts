@@ -14,21 +14,21 @@ Additional lab tests and concepts (mostly based on UltimateKEYS)
 
 ![UltimateKEYS - Keyboard Layout Image](UltimateKEYS%20-%20Latest/UltimateKEYS%20-%20Keyboard%20Layout%20Image.png)
 
-## Important - Security Warning :
+## Important - Security Warning&nbsp;:
 
 **=&gt; Win/Linux : &nbsp;Only use "BASIC LATIN" characters (codes 32 to 126) for the Windows, Microsoft Live and Linux passwords !**  
 Otherwise, it might be impossible to type any Unicode character higher than "Basic Latin" at the login screen/prompt (due to a different keyboard configuration) !&emsp;**=&gt;&emsp;ACCOUNT LOCKOUT**
 
 **=&gt; Win/Linux : &nbsp;ALWAYS make your system passwords VISIBLE during modification !**
 
-## For official releases, please see :
+## For official releases, please see&nbsp;:
 
-**UltimateKEYS - GitHub : &nbsp;https://github.com/pieter-degroote/UltimateKEYS**
+**UltimateKEYS - GitHub&nbsp;: &nbsp;https://github.com/pieter-degroote/UltimateKEYS**
 
-**Releases : &nbsp;https://github.com/pieter-degroote/UltimateKEYS/releases**
+**Releases&nbsp;: &nbsp;https://github.com/pieter-degroote/UltimateKEYS/releases**
 
-**Website : &nbsp;[ultimatekeys.info &nbsp;(pieter-degroote.info)](https://pieter-degroote.github.io/UltimateKEYS/)**
+**Websites&nbsp;: &nbsp;[www.ultimatekeys.info](https://pieter-degroote.github.io/UltimateKEYS/) ~ [www.pieter-degroote.info](https://pieter-degroote.github.io/)**
 
-## Testing Repository - Additional experimental versions :
+## Testing Repository - Additional experimental versions&nbsp;:
 
-**GitHub : &nbsp;https://github.com/pieter-degroote/UltimateKEYS-testing**
+**Testing&nbsp;: &nbsp;https://github.com/pieter-degroote/UltimateKEYS-testing**
