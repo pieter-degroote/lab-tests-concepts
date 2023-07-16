@@ -1,4 +1,4 @@
-# Belgian AZERTY for AutoHotkey v2.0/v1.1
+# Belgian AZERTY for AutoHotkey v2/v1.1
 
 Belgian AZERTY layout in AHK (overlay scripts for US QWERTY).  
 These scripts can also be used to learn about the different key remappings and assignments in AutoHotkey v2.0 and v1.1.
