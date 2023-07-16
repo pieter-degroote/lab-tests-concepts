@@ -1,6 +1,6 @@
-#requires AutoHotkey v2.0
+#requires AutoHotkey v2
 
-; Belgian AZERTY (Shift Lock for letters and digits) (for AutoHotkey v2.0).ahk - 2022-02-01
+; Belgian AZERTY (Shift Lock for letters and digits) (for AutoHotkey v2).ahk - 2022-02-01
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -13,7 +13,7 @@
 
 ; Keyboard layout (on Windows) :  US QWERTY
 
-; AutoHotkey v2.0 (www.autohotkey.com)
+; AutoHotkey v2 (www.autohotkey.com)
 
 
 
