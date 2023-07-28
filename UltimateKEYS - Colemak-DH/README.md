@@ -1,6 +1,6 @@
 # UltimateKEYS - Colemak-DH mod (concept)
 
-Colemak-DH mod of UltimateKEYS - For AutoHotkey v1.1/v2.0 (Win)
+Colemak-DH mod of UltimateKEYS - For AutoHotkey v2/v1.1 (Win)
 
 **Keyboard Layout Image - ANSI&nbsp;:**
 
@@ -10,7 +10,7 @@ Colemak-DH mod of UltimateKEYS - For AutoHotkey v1.1/v2.0 (Win)
 
 ![UltimateKEYS - Colemak-DH ISO mod - Keyboard Layout Image](UltimateKEYS%20-%20Colemak-DH%20ISO%20mod%20-%20Keyboard%20Layout%20Image.png)
 
-Prerequisite (for AutoHotkey v1.1/v2.0 on Windows)&nbsp;:
+Prerequisites (for AutoHotkey v2/v1.1 on Windows)&nbsp;:
 
 The base keyboard layout has to be configured as US QWERTY.
 
