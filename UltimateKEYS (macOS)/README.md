@@ -12,7 +12,8 @@ Unfortunately, the 'Press and Hold' functionality is not active on this keyboard
 
 ## Disclaimer&nbsp;:
 
-**=&gt; _Please note that this version has not been thoroughly tested yet, and might contain bugs, flaws, shortcomings..._**
+**=&gt; _Please note that this version has not been thoroughly tested yet, and might contain bugs, flaws, shortcomings..._**  
+**=&gt; _Install (rename and integrate) this '.keylayout' file at your own responsibility&nbsp;!_**
 
 **=&gt; _Be aware that installing a custom keyboard layout on macOS can make the given layout show up TWICE, due to a bug in macOS._**  
 **=&gt; _Removing that layout will only remove one entry, leaving that other entry behind as 'debris' on the system._**
