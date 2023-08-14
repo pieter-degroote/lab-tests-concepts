@@ -1,6 +1,6 @@
 #requires AutoHotkey v1.1
 
-; UltimateKEYS (for AutoHotkey v1.1).ahk - 2023-07-15
+; UltimateKEYS (for AutoHotkey v1.1).ahk - 2023-08-14
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -509,8 +509,6 @@ cmpSmallF.item["r"] := "{u+027e}"  ; (ɾ) r with fishhook
 cmpSmallF.item["t"] := "{u+0288}"  ; (ʈ) t with retroflex hook
 cmpSmallF.item["T"] := "{u+01ae}"  ; (Ʈ) T with retroflex hook
 cmpSmallF.item["v"] := "{u+2c71}"  ; (ⱱ) v with right hook
-cmpSmallF.item["w"] := "{u+2c73}"  ; (ⱳ) w with right hook
-cmpSmallF.item["W"] := "{u+2c72}"  ; (Ⱳ) W with right hook
 cmpSmallF.item["z"] := "{u+0290}"  ; (ʐ) z with retroflex hook
 
 
