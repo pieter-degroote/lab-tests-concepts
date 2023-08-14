@@ -1,6 +1,6 @@
 #requires AutoHotkey v2
 
-; UltimateKEYS - Colemak (2x Backspace) (for AutoHotkey v2).ahk - 2023-07-15
+; UltimateKEYS - Colemak (2x Backspace) (for AutoHotkey v2).ahk - 2023-08-14
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -510,8 +510,6 @@ cmpSmallF["r"] := "{u+027e}"  ; (ɾ) r with fishhook
 cmpSmallF["t"] := "{u+0288}"  ; (ʈ) t with retroflex hook
 cmpSmallF["T"] := "{u+01ae}"  ; (Ʈ) T with retroflex hook
 cmpSmallF["v"] := "{u+2c71}"  ; (ⱱ) v with right hook
-cmpSmallF["w"] := "{u+2c73}"  ; (ⱳ) w with right hook
-cmpSmallF["W"] := "{u+2c72}"  ; (Ⱳ) W with right hook
 cmpSmallF["z"] := "{u+0290}"  ; (ʐ) z with retroflex hook
 
 
