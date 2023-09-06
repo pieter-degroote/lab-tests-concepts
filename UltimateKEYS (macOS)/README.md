@@ -4,7 +4,7 @@ This folder contains a test version of a '.keylayout' file for macOS.
 
 Please note that this work is still in its testing stage (install/integrate at your own risk!).
 
-This is a slimmed-down version (without Compose key), just like the MSKLC edition.
+This is a slimmed-down version (without Compose Key), just like the MSKLC edition.
 
 This 'UltimateKEYS (macOS).keylayout' file has been created by Ukelele 3.5.7 and edited with a text editor afterwards to get the desired testing results.
 
