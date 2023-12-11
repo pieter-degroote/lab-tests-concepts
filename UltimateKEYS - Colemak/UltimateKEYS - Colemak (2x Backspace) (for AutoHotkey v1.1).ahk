@@ -1,6 +1,6 @@
 #requires AutoHotkey v1.1
 
-; UltimateKEYS - Colemak (2x Backspace) (for AutoHotkey v1.1).ahk - 2023-09-08
+; UltimateKEYS - Colemak (2x Backspace) (for AutoHotkey v1.1).ahk - 2023-12-12
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -766,7 +766,7 @@ cmpQuad.item["2"] := "{u+2000}"  ; en quad
 cmpQuad.item["3"] := "{u+2001}"  ; em quad
 
 
-; Compose :  Arrows and Pointers
+; Compose :  Pointing Triangles and Arrows
 
 cmpArrow := ComObjCreate("Scripting.Dictionary")
 cmpArrow.item["w"] := "{u+25b2}"  ; (▲) black up-pointing triangle
@@ -924,7 +924,6 @@ cmpCapitalT.item["H"] := "{u+00de}"   ; (Þ) capital letter thorn
 
 cmpDigitEight := ComObjCreate("Scripting.Dictionary")
 cmpCapitalP := ComObjCreate("Scripting.Dictionary")
-cmpSemicolon := ComObjCreate("Scripting.Dictionary")
 cmpAsterisk := ComObjCreate("Scripting.Dictionary")
 cmpExclam := ComObjCreate("Scripting.Dictionary")
 cmpQuestion := ComObjCreate("Scripting.Dictionary")
@@ -949,14 +948,6 @@ cmpSmallR.item["4"] := "{u+221c}"        ; (∜) fourth root
 cmpSymbols.item["o"] := "{u+00a7}"       ; (§) section sign
 cmpCapitalS.item["o"] := "{u+00a7}"      ; (§) section sign
 cmpSmallT.item["m"] := "{u+2122}"        ; (™) trademark symbol
-cmpSemicolon.item["b"] := "{u+2022}"     ; (•) bullet
-cmpSemicolon.item[";"] := "{u+2022}"     ; (•) bullet
-cmpSemicolon.item["t"] := "{u+2023}"     ; (‣) triangular bullet
-cmpSemicolon.item[">"] := "{u+2023}"     ; (‣) triangular bullet
-cmpSemicolon.item["h"] := "{u+2043}"     ; (⁃) hyphen bullet
-cmpSemicolon.item["-"] := "{u+2043}"     ; (⁃) hyphen bullet
-cmpSemicolon.item["w"] := "{u+25e6}"     ; (◦) white bullet
-cmpSemicolon.item["o"] := "{u+25e6}"     ; (◦) white bullet
 cmpAcuteAccent.item["1"] := "{u+2032}"   ; (′) prime
 cmpAcuteAccent.item["2"] := "{u+2033}"   ; (″) double prime
 cmpAcuteAccent.item["3"] := "{u+2034}"   ; (‴) triple prime
@@ -989,6 +980,26 @@ cmpGreaterThan.item["="] := "{u+2265}"   ; (≥) greater-than or equal to
 cmpLessThan.item["+"] := "{u+2a7d}"      ; (⩽) less-than or slanted equal to
 cmpGreaterThan.item["+"] := "{u+2a7e}"   ; (⩾) greater-than or slanted equal to
 cmpTilde.item["~"] := "{u+2248}"         ; (≈) almost equal to
+
+
+; Compose :  Bullets and Small Geometric Shapes (;)
+
+cmpSemicolon := ComObjCreate("Scripting.Dictionary")
+cmpSemicolon.item["b"] := "{u+2022}"  ; (•) bullet
+cmpSemicolon.item["o"] := "{u+25e6}"  ; (◦) white bullet
+cmpSemicolon.item["h"] := "{u+2043}"  ; (⁃) hyphen bullet
+cmpSemicolon.item["t"] := "{u+2023}"  ; (‣) triangular bullet
+cmpSemicolon.item["q"] := "{u+25aa}"  ; (▪) black small square
+cmpSemicolon.item["r"] := "{u+25ab}"  ; (▫) white small square
+cmpSemicolon.item["w"] := "{u+25b4}"  ; (▴) black up-pointing small triangle
+cmpSemicolon.item["a"] := "{u+25c2}"  ; (◂) black left-pointing small triangle
+cmpSemicolon.item["s"] := "{u+25be}"  ; (▾) black down-pointing small triangle
+cmpSemicolon.item["d"] := "{u+25b8}"  ; (▸) black right-pointing small triangle
+cmpSemicolon.item["i"] := "{u+25b5}"  ; (▵) white up-pointing small triangle
+cmpSemicolon.item["j"] := "{u+25c3}"  ; (◃) white left-pointing small triangle
+cmpSemicolon.item["k"] := "{u+25bf}"  ; (▿) white down-pointing small triangle
+cmpSemicolon.item["l"] := "{u+25b9}"  ; (▹) white right-pointing small triangle
+cmpSemicolon.item[";"] := "{u+2022}"  ; (•) bullet
 
 
 ; Compose :  Vulgar Fractions
@@ -1400,6 +1411,8 @@ cmpDigitEight.item["k"] := "{u+27bc}"  ; (➼) wedge-tailed rightwards arrow
 cmpDigitEight.item["l"] := "{u+27bd}"  ; (➽) heavy wedge-tailed rightwards arrow
 cmpDigitEight.item["m"] := "{u+27be}"  ; (➾) open-outlined rightwards arrow
 cmpDigitEight.item["n"] := "{u+27c1}"  ; (⟁) white triangle containing small white triangle
+cmpDigitEight.item["o"] := "{u+231a}"  ; (⌚) watch
+cmpDigitEight.item["p"] := "{u+231b}"  ; (⌛) hourglass
 
 
 ; Compose :  Chess Pieces and Playing Card Suit Symbols (C)
@@ -1907,7 +1920,9 @@ CapsLock::Backspace  ; assigns 'Backspace' also to 'Caps Lock'
 ; Configuration :  Compose Key Selector
 
 >!`::
+>!~::
 >!sc056::
+>!+sc056::
   Input, keyA, L1, {bs}{del}{esc}{home}{end}
   Input, keyB, L1, {bs}{del}{esc}{home}{end}
 
@@ -1989,8 +2004,6 @@ CapsLock::Backspace  ; assigns 'Backspace' also to 'Caps Lock'
     Send % cmpCapitalT.item[keyB]
   else if (keyA == "P")
     Send % cmpCapitalP.item[keyB]
-  else if (keyA == ";")
-    Send % cmpSemicolon.item[keyB]
   else if (keyA == "*")
     Send % cmpAsterisk.item[keyB]
   else if (keyA == "!")
@@ -2009,6 +2022,8 @@ CapsLock::Backspace  ; assigns 'Backspace' also to 'Caps Lock'
     Send % cmpLessThan.item[keyB]
   else if (keyA == ">")
     Send % cmpGreaterThan.item[keyB]
+  else if (keyA == ";")
+    Send % cmpSemicolon.item[keyB]
   else if (keyA == "1")
     Send % cmpDigitOne.item[keyB]
   else if (keyA == "2")

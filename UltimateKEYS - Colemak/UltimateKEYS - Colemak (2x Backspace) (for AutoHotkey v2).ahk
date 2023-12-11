@@ -1,6 +1,6 @@
 #requires AutoHotkey v2
 
-; UltimateKEYS - Colemak (2x Backspace) (for AutoHotkey v2).ahk - 2023-09-08
+; UltimateKEYS - Colemak (2x Backspace) (for AutoHotkey v2).ahk - 2023-12-12
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -767,7 +767,7 @@ cmpQuad["2"] := "{u+2000}"  ; en quad
 cmpQuad["3"] := "{u+2001}"  ; em quad
 
 
-; Compose :  Arrows and Pointers
+; Compose :  Pointing Triangles and Arrows
 
 global cmpArrow := Map()
 cmpArrow["w"] := "{u+25b2}"  ; (▲) black up-pointing triangle
@@ -925,7 +925,6 @@ cmpCapitalT["H"] := "{u+00de}"   ; (Þ) capital letter thorn
 
 global cmpDigitEight := Map()
 global cmpCapitalP := Map()
-global cmpSemicolon := Map()
 global cmpAsterisk := Map()
 global cmpExclam := Map()
 global cmpQuestion := Map()
@@ -950,14 +949,6 @@ cmpSmallR["4"] := "{u+221c}"        ; (∜) fourth root
 cmpSymbols["o"] := "{u+00a7}"       ; (§) section sign
 cmpCapitalS["o"] := "{u+00a7}"      ; (§) section sign
 cmpSmallT["m"] := "{u+2122}"        ; (™) trademark symbol
-cmpSemicolon["b"] := "{u+2022}"     ; (•) bullet
-cmpSemicolon[";"] := "{u+2022}"     ; (•) bullet
-cmpSemicolon["t"] := "{u+2023}"     ; (‣) triangular bullet
-cmpSemicolon[">"] := "{u+2023}"     ; (‣) triangular bullet
-cmpSemicolon["h"] := "{u+2043}"     ; (⁃) hyphen bullet
-cmpSemicolon["-"] := "{u+2043}"     ; (⁃) hyphen bullet
-cmpSemicolon["w"] := "{u+25e6}"     ; (◦) white bullet
-cmpSemicolon["o"] := "{u+25e6}"     ; (◦) white bullet
 cmpAcuteAccent["1"] := "{u+2032}"   ; (′) prime
 cmpAcuteAccent["2"] := "{u+2033}"   ; (″) double prime
 cmpAcuteAccent["3"] := "{u+2034}"   ; (‴) triple prime
@@ -990,6 +981,26 @@ cmpGreaterThan["="] := "{u+2265}"   ; (≥) greater-than or equal to
 cmpLessThan["+"] := "{u+2a7d}"      ; (⩽) less-than or slanted equal to
 cmpGreaterThan["+"] := "{u+2a7e}"   ; (⩾) greater-than or slanted equal to
 cmpTilde["~"] := "{u+2248}"         ; (≈) almost equal to
+
+
+; Compose :  Bullets and Small Geometric Shapes (;)
+
+global cmpSemicolon := Map()
+cmpSemicolon["b"] := "{u+2022}"  ; (•) bullet
+cmpSemicolon["o"] := "{u+25e6}"  ; (◦) white bullet
+cmpSemicolon["h"] := "{u+2043}"  ; (⁃) hyphen bullet
+cmpSemicolon["t"] := "{u+2023}"  ; (‣) triangular bullet
+cmpSemicolon["q"] := "{u+25aa}"  ; (▪) black small square
+cmpSemicolon["r"] := "{u+25ab}"  ; (▫) white small square
+cmpSemicolon["w"] := "{u+25b4}"  ; (▴) black up-pointing small triangle
+cmpSemicolon["a"] := "{u+25c2}"  ; (◂) black left-pointing small triangle
+cmpSemicolon["s"] := "{u+25be}"  ; (▾) black down-pointing small triangle
+cmpSemicolon["d"] := "{u+25b8}"  ; (▸) black right-pointing small triangle
+cmpSemicolon["i"] := "{u+25b5}"  ; (▵) white up-pointing small triangle
+cmpSemicolon["j"] := "{u+25c3}"  ; (◃) white left-pointing small triangle
+cmpSemicolon["k"] := "{u+25bf}"  ; (▿) white down-pointing small triangle
+cmpSemicolon["l"] := "{u+25b9}"  ; (▹) white right-pointing small triangle
+cmpSemicolon[";"] := "{u+2022}"  ; (•) bullet
 
 
 ; Compose :  Vulgar Fractions
@@ -1401,6 +1412,8 @@ cmpDigitEight["k"] := "{u+27bc}"  ; (➼) wedge-tailed rightwards arrow
 cmpDigitEight["l"] := "{u+27bd}"  ; (➽) heavy wedge-tailed rightwards arrow
 cmpDigitEight["m"] := "{u+27be}"  ; (➾) open-outlined rightwards arrow
 cmpDigitEight["n"] := "{u+27c1}"  ; (⟁) white triangle containing small white triangle
+cmpDigitEight["o"] := "{u+231a}"  ; (⌚) watch
+cmpDigitEight["p"] := "{u+231b}"  ; (⌛) hourglass
 
 
 ; Compose :  Chess Pieces and Playing Card Suit Symbols (C)
@@ -1908,7 +1921,9 @@ CapsLock::Backspace  ; assigns 'Backspace' also to 'Caps Lock'
 ; Configuration :  Compose Key Selector
 
 >!`::
->!sc056:: {
+>!~::
+>!sc056::
+>!+sc056:: {
   ihA := InputHook("L1", gEndKeys)
   ihA.Start()
   ihA.Wait()
@@ -2073,10 +2088,6 @@ CapsLock::Backspace  ; assigns 'Backspace' also to 'Caps Lock'
     if cmpCapitalP.Has(ihB.Input)
       Send cmpCapitalP[ihB.Input]
   }
-  else if (ihA.Input == ";") {
-    if cmpSemicolon.Has(ihB.Input)
-      Send cmpSemicolon[ihB.Input]
-  }
   else if (ihA.Input == "*") {
     if cmpAsterisk.Has(ihB.Input)
       Send cmpAsterisk[ihB.Input]
@@ -2112,6 +2123,10 @@ CapsLock::Backspace  ; assigns 'Backspace' also to 'Caps Lock'
   else if (ihA.Input == ">") {
     if cmpGreaterThan.Has(ihB.Input)
       Send cmpGreaterThan[ihB.Input]
+  }
+  else if (ihA.Input == ";") {
+    if cmpSemicolon.Has(ihB.Input)
+      Send cmpSemicolon[ihB.Input]
   }
   else if (ihA.Input == "1") {
     if cmpDigitOne.Has(ihB.Input)
