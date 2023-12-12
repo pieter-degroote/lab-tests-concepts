@@ -730,7 +730,7 @@ include "%L"
 <Multi_key> <q> <3> : " "  U2001  # em quad
 
 
-# Pointing Triangles and Arrows
+# Arrows and Pointing Triangles
 
 <Multi_key> <a> <w> : "▲"  U25B2  # black up-pointing triangle
 <Multi_key> <a> <a> : "◀"  U25C0  # black left-pointing triangle
@@ -1193,6 +1193,8 @@ include "%L"
 <Multi_key> <2> <t> : "⚠"  U26A0  # warning sign
 <Multi_key> <2> <u> : "⚡"  U26A1  # high voltage sign
 <Multi_key> <2> <v> : "⛔"  U26D4  # no entry
+<Multi_key> <2> <w> : "⌚"  U231A  # watch
+<Multi_key> <2> <x> : "⌛"  U231B  # hourglass
 
 <Multi_key> <3> <a> : "✁"  U2701  # upper blade scissors
 <Multi_key> <3> <b> : "✂"  U2702  # black scissors
@@ -1334,8 +1336,6 @@ include "%L"
 <Multi_key> <8> <l> : "➽"  U27BD  # heavy wedge-tailed rightwards arrow
 <Multi_key> <8> <m> : "➾"  U27BE  # open-outlined rightwards arrow
 <Multi_key> <8> <n> : "⟁"  U27C1  # white triangle containing small white triangle
-<Multi_key> <8> <o> : "⌚"  U231A  # watch
-<Multi_key> <8> <p> : "⌛"  U231B  # hourglass
 
 
 # Chess Pieces and Playing Card Suit Symbols
