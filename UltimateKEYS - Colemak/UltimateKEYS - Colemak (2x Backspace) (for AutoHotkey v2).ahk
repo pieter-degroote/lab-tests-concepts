@@ -767,7 +767,7 @@ cmpQuad["2"] := "{u+2000}"  ; en quad
 cmpQuad["3"] := "{u+2001}"  ; em quad
 
 
-; Compose :  Pointing Triangles and Arrows
+; Compose :  Arrows and Pointing Triangles
 
 global cmpArrow := Map()
 cmpArrow["w"] := "{u+25b2}"  ; (▲) black up-pointing triangle
@@ -1271,6 +1271,8 @@ cmpDigitTwo["s"] := "{u+2691}"  ; (⚑) black flag
 cmpDigitTwo["t"] := "{u+26a0}"  ; (⚠) warning sign
 cmpDigitTwo["u"] := "{u+26a1}"  ; (⚡) high voltage sign
 cmpDigitTwo["v"] := "{u+26d4}"  ; (⛔) no entry
+cmpDigitTwo["w"] := "{u+231a}"  ; (⌚) watch
+cmpDigitTwo["x"] := "{u+231b}"  ; (⌛) hourglass
 
 cmpDigitThree["a"] := "{u+2701}"  ; (✁) upper blade scissors
 cmpDigitThree["b"] := "{u+2702}"  ; (✂) black scissors
@@ -1412,8 +1414,6 @@ cmpDigitEight["k"] := "{u+27bc}"  ; (➼) wedge-tailed rightwards arrow
 cmpDigitEight["l"] := "{u+27bd}"  ; (➽) heavy wedge-tailed rightwards arrow
 cmpDigitEight["m"] := "{u+27be}"  ; (➾) open-outlined rightwards arrow
 cmpDigitEight["n"] := "{u+27c1}"  ; (⟁) white triangle containing small white triangle
-cmpDigitEight["o"] := "{u+231a}"  ; (⌚) watch
-cmpDigitEight["p"] := "{u+231b}"  ; (⌛) hourglass
 
 
 ; Compose :  Chess Pieces and Playing Card Suit Symbols (C)
