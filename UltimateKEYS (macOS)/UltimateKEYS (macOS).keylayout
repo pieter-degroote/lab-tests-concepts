@@ -1,6 +1,6 @@
 <?xml version="1.1" encoding="UTF-8"?>
 <!DOCTYPE keyboard SYSTEM "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
-<keyboard group="126" id="-18487" name="UltimateKEYS" maxout="1">
+<keyboard group="126" id="-30278" name="UltimateKEYS" maxout="1">
     <layouts>
         <layout first="0" last="17" mapSet="16c" modifiers="f4"/>
     </layouts>
@@ -520,7 +520,7 @@
             <key code="46" output="±"/>
             <key code="47" output="Ó"/>
             <key code="48" output="&#x0009;"/>
-            <key code="49" output=" "/>
+            <key code="49" output="•"/>
             <key code="50" output="≈"/>
             <key code="51" output="&#x0008;"/>
             <key code="52" output="&#x0003;"/>
