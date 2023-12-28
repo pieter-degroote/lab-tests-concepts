@@ -60,7 +60,7 @@ xkb_symbols "basic" {
     key <BKSL> { [ backslash,    bar,          enspace,              emspace              ] };
     key <CAPS> { [ BackSpace,    BackSpace,    BackSpace,            BackSpace            ] };
     key <LSGT> { [ backslash,    bar,          Multi_key,            Multi_key            ] };
-    key <SPCE> { [ space,        space,        nobreakspace,         nobreakspace         ] };
+    key <SPCE> { [ space,        space,        nobreakspace,         enfilledcircbullet   ] };
     key <TLDE> { [ grave,        asciitilde,   Multi_key,            Multi_key            ] };
     key <KPDL> { [ KP_Delete,    KP_Decimal                                               ] };
 
