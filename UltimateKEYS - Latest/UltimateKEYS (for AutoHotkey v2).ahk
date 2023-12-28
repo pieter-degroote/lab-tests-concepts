@@ -1,6 +1,6 @@
 #requires AutoHotkey v2
 
-; UltimateKEYS (for AutoHotkey v2).ahk - 2023-12-12
+; UltimateKEYS (for AutoHotkey v2).ahk - 2023-12-28
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -1885,8 +1885,8 @@ cmpSmallN["0"] := "{u+277f}"  ; (❿) dingbat negative circled digit 10
 >!/::Send "{u+00bf}"   ; (¿) inverted question mark
 >!?::Send "{u+2026}"   ; (…) horizontal ellipsis
 
->!space::Send "{u+00a0}"   ; non-breaking space (NBSP)
->!+space::Send "{u+00a0}"  ; non-breaking space (NBSP)
+>!space::Send "{u+00a0}"   ;     non-breaking space (NBSP)
+>!+space::Send "{u+2022}"  ; (•) bullet
 
 
 ; Configuration :  Compose Key Selector
