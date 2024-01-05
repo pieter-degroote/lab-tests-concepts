@@ -6,7 +6,6 @@ This experimental version features a keyboard layout on which the letters with a
 
 ![UltimateKEYS - Keyboard Layout Image](UltimateKEYS%20-%20Keyboard%20Layout%20Image.png)
 
-
 ## MacOS Version - Known Issues - Disclaimer&nbsp;:
 
 **=&gt; _Be aware that installing a custom keyboard layout on macOS can make the given layout show up TWICE, due to a bug in macOS._**  
@@ -14,3 +13,8 @@ This experimental version features a keyboard layout on which the letters with a
 
 **=&gt; _Please note that this version has not been thoroughly tested yet, and might contain bugs, flaws, shortcomings..._**  
 **=&gt; _Install (or integrate) this '.keylayout' file at your own caution and responsibility&nbsp;!_**
+
+## Bug(s) in MSKLC
+
+During testing, I found a smaller bug with the MSKLC version, as the capital character 'É' did not work correctly.  
+I believe that this is a bug in MSKLC rather than in this UltimateKEYS port.
