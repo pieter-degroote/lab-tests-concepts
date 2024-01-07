@@ -14,7 +14,7 @@ This experimental version features a keyboard layout on which the letters with a
 **=&gt; _Please note that this version has not been thoroughly tested yet, and might contain bugs, flaws, shortcomings..._**  
 **=&gt; _Install (or integrate) this '.keylayout' file at your own caution and responsibility&nbsp;!_**
 
-## Bug(s) in MSKLC
+## Bug(s) in MSKLC (and/or Windows)
 
-During testing, I found a smaller bug with the MSKLC version, as the capital character 'É' did not work correctly.  
-I believe that this is a bug in MSKLC rather than in this UltimateKEYS port.
+During testing, I found a smaller bug with the MSKLC version, as the capital character 'É' did not work correctly (using AltGr + Shift + F, though it worked by enabling Caps Lock and then AltGr + F).  
+I believe that this is a bug in MSKLC (and/or Windows) itself rather than in this UltimateKEYS port. Some testing with KbdEdit resulted in exactly the same problem.
