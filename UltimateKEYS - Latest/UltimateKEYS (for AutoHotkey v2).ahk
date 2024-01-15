@@ -1,6 +1,6 @@
 #requires AutoHotkey v2
 
-; UltimateKEYS (for AutoHotkey v2).ahk - 2023-12-28
+; UltimateKEYS (for AutoHotkey v2).ahk - 2024-01-15
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -957,8 +957,9 @@ cmpAsterisk["*"] := "{u+00d7}"      ; (×) multiplication sign
 cmpStroke["/"] := "{u+00f7}"        ; (÷) division sign
 cmpAsterisk["o"] := "{u+00b0}"      ; (°) degree sign
 cmpRingAbove["*"] := "{u+00b0}"     ; (°) degree sign
-cmpDotAbove["."] := "{u+00b7}"      ; (·) middle dot
+cmpDotAbove["-"] := "{u+00b7}"      ; (·) middle dot
 cmpDotAbove["3"] := "{u+2026}"      ; (…) horizontal ellipsis
+cmpDotAbove["."] := "{u+2026}"      ; (…) horizontal ellipsis
 cmpArrow["-"] := "{u+00aa}"         ; (ª) feminine ordinal indicator (Spanish, Portuguese, Italian, Galician)
 cmpRingAbove["-"] := "{u+00ba}"     ; (º) masculine ordinal indicator (Spanish, Portuguese, Italian, Galician)
 cmpExclam["!"] := "{u+00a1}"        ; (¡) inverted exclamation mark
@@ -1498,28 +1499,28 @@ cmpSmallN["0"] := "{u+277f}"  ; (❿) dingbat negative circled digit 10
 
 >!z:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00c0}"  ; (À) A with grave
+    Send "{u+00c1}"  ; (Á) A with acute
   else
-    Send "{u+00e0}"  ; (à) a with grave
+    Send "{u+00e1}"  ; (á) a with acute
 }
 >!+z:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00e0}"  ; (à) a with grave
+    Send "{u+00e1}"  ; (á) a with acute
   else
-    Send "{u+00c0}"  ; (À) A with grave
+    Send "{u+00c1}"  ; (Á) A with acute
 }
 
 >!x:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00c1}"  ; (Á) A with acute
+    Send "{u+00c0}"  ; (À) A with grave
   else
-    Send "{u+00e1}"  ; (á) a with acute
+    Send "{u+00e0}"  ; (à) a with grave
 }
 >!+x:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00e1}"  ; (á) a with acute
+    Send "{u+00e0}"  ; (à) a with grave
   else
-    Send "{u+00c1}"  ; (Á) A with acute
+    Send "{u+00c0}"  ; (À) A with grave
 }
 
 >!d:: {
@@ -1563,28 +1564,28 @@ cmpSmallN["0"] := "{u+277f}"  ; (❿) dingbat negative circled digit 10
 
 >!f:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00c8}"  ; (È) E with grave
+    Send "{u+00c9}"  ; (É) E with acute
   else
-    Send "{u+00e8}"  ; (è) e with grave
+    Send "{u+00e9}"  ; (é) e with acute
 }
 >!+f:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00e8}"  ; (è) e with grave
+    Send "{u+00e9}"  ; (é) e with acute
   else
-    Send "{u+00c8}"  ; (È) E with grave
+    Send "{u+00c9}"  ; (É) E with acute
 }
 
 >!g:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00c9}"  ; (É) E with acute
+    Send "{u+00c8}"  ; (È) E with grave
   else
-    Send "{u+00e9}"  ; (é) e with acute
+    Send "{u+00e8}"  ; (è) e with grave
 }
 >!+g:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00e9}"  ; (é) e with acute
+    Send "{u+00e8}"  ; (è) e with grave
   else
-    Send "{u+00c9}"  ; (É) E with acute
+    Send "{u+00c8}"  ; (È) E with grave
 }
 
 >!r:: {
@@ -1615,28 +1616,28 @@ cmpSmallN["0"] := "{u+277f}"  ; (❿) dingbat negative circled digit 10
 
 >!v:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00cc}"  ; (Ì) I with grave
+    Send "{u+00cd}"  ; (Í) I with acute
   else
-    Send "{u+00ec}"  ; (ì) i with grave
+    Send "{u+00ed}"  ; (í) i with acute
 }
 >!+v:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00ec}"  ; (ì) i with grave
+    Send "{u+00ed}"  ; (í) i with acute
   else
-    Send "{u+00cc}"  ; (Ì) I with grave
+    Send "{u+00cd}"  ; (Í) I with acute
 }
 
 >!b:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00cd}"  ; (Í) I with acute
+    Send "{u+00cc}"  ; (Ì) I with grave
   else
-    Send "{u+00ed}"  ; (í) i with acute
+    Send "{u+00ec}"  ; (ì) i with grave
 }
 >!+b:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00ed}"  ; (í) i with acute
+    Send "{u+00ec}"  ; (ì) i with grave
   else
-    Send "{u+00cd}"  ; (Í) I with acute
+    Send "{u+00cc}"  ; (Ì) I with grave
 }
 
 >!t:: {
@@ -1706,28 +1707,28 @@ cmpSmallN["0"] := "{u+277f}"  ; (❿) dingbat negative circled digit 10
 
 >!,:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00d2}"  ; (Ò) O with grave
+    Send "{u+00d3}"  ; (Ó) O with acute
   else
-    Send "{u+00f2}"  ; (ò) o with grave
+    Send "{u+00f3}"  ; (ó) o with acute
 }
 >!<:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00f2}"  ; (ò) o with grave
+    Send "{u+00f3}"  ; (ó) o with acute
   else
-    Send "{u+00d2}"  ; (Ò) O with grave
+    Send "{u+00d3}"  ; (Ó) O with acute
 }
 
 >!.:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00d3}"  ; (Ó) O with acute
+    Send "{u+00d2}"  ; (Ò) O with grave
   else
-    Send "{u+00f3}"  ; (ó) o with acute
+    Send "{u+00f2}"  ; (ò) o with grave
 }
 >!>:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00f3}"  ; (ó) o with acute
+    Send "{u+00f2}"  ; (ò) o with grave
   else
-    Send "{u+00d3}"  ; (Ó) O with acute
+    Send "{u+00d2}"  ; (Ò) O with grave
 }
 
 >!p:: {
@@ -1771,28 +1772,28 @@ cmpSmallN["0"] := "{u+277f}"  ; (❿) dingbat negative circled digit 10
 
 >!h:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00d9}"  ; (Ù) U with grave
+    Send "{u+00da}"  ; (Ú) U with acute
   else
-    Send "{u+00f9}"  ; (ù) u with grave
+    Send "{u+00fa}"  ; (ú) u with acute
 }
 >!+h:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00f9}"  ; (ù) u with grave
+    Send "{u+00fa}"  ; (ú) u with acute
   else
-    Send "{u+00d9}"  ; (Ù) U with grave
+    Send "{u+00da}"  ; (Ú) U with acute
 }
 
 >!j:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00da}"  ; (Ú) U with acute
+    Send "{u+00d9}"  ; (Ù) U with grave
   else
-    Send "{u+00fa}"  ; (ú) u with acute
+    Send "{u+00f9}"  ; (ù) u with grave
 }
 >!+j:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00fa}"  ; (ú) u with acute
+    Send "{u+00f9}"  ; (ù) u with grave
   else
-    Send "{u+00da}"  ; (Ú) U with acute
+    Send "{u+00d9}"  ; (Ù) U with grave
 }
 
 >!y:: {
@@ -1883,10 +1884,10 @@ cmpSmallN["0"] := "{u+277f}"  ; (❿) dingbat negative circled digit 10
 >!|::Send "{u+2003}"   ;     em space
 
 >!/::Send "{u+00bf}"   ; (¿) inverted question mark
->!?::Send "{u+2026}"   ; (…) horizontal ellipsis
+>!?::Send "{u+2022}"   ; (•) bullet
 
->!space::Send "{u+00a0}"   ;     non-breaking space (NBSP)
->!+space::Send "{u+2022}"  ; (•) bullet
+>!space::Send "{u+00a0}"   ; non-breaking space (NBSP)
+>!+space::Send "{u+00a0}"  ; non-breaking space (NBSP)
 
 
 ; Configuration :  Compose Key Selector

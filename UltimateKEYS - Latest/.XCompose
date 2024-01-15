@@ -1,6 +1,6 @@
 include "%L"
 
-# UltimateKEYS - 2023-12-28  (~/.XCompose)
+# UltimateKEYS - 2024-01-15  (~/.XCompose)
 
 # Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -807,8 +807,9 @@ include "%L"
 <Multi_key> <slash> <slash>           : "÷"  U00F7  # division sign
 <Multi_key> <asterisk> <o>            : "°"  U00B0  # degree sign
 <Multi_key> <o> <asterisk>            : "°"  U00B0  # degree sign
-<Multi_key> <period> <period>         : "·"  U00B7  # middle dot
+<Multi_key> <period> <minus>          : "·"  U00B7  # middle dot
 <Multi_key> <period> <3>              : "…"  U2026  # horizontal ellipsis
+<Multi_key> <period> <period>         : "…"  U2026  # horizontal ellipsis
 <Multi_key> <a> <minus>               : "ª"  U00AA  # feminine ordinal indicator (Spanish, Portuguese, Italian, Galician)
 <Multi_key> <o> <minus>               : "º"  U00BA  # masculine ordinal indicator (Spanish, Portuguese, Italian, Galician)
 <Multi_key> <exclam> <exclam>         : "¡"  U00A1  # inverted exclamation mark
