@@ -12,23 +12,23 @@ xkb_symbols "basic" {
 
     name[Group1] = "UltimateKEYS - Colemak (2x Backspace)";
 
-    key <AB01> { [ z,            Z,            agrave,               Agrave               ] };
-    key <AB02> { [ x,            X,            aacute,               Aacute               ] };
+    key <AB01> { [ z,            Z,            aacute,               Aacute               ] };
+    key <AB02> { [ x,            X,            agrave,               Agrave               ] };
     key <AB03> { [ c,            C,            ccedilla,             Ccedilla             ] };
-    key <AB04> { [ v,            V,            igrave,               Igrave               ] };
-    key <AB05> { [ b,            B,            iacute,               Iacute               ] };
+    key <AB04> { [ v,            V,            iacute,               Iacute               ] };
+    key <AB05> { [ b,            B,            igrave,               Igrave               ] };
     key <AB06> { [ k,            K,            ntilde,               Ntilde               ] };
     key <AB07> { [ m,            M,            mu,                   plusminus            ] };
-    key <AB08> { [ comma,        less,         ograve,               Ograve               ] };
-    key <AB09> { [ period,       greater,      oacute,               Oacute               ] };
-    key <AB10> { [ slash,        question,     questiondown,         ellipsis             ] };
+    key <AB08> { [ comma,        less,         oacute,               Oacute               ] };
+    key <AB09> { [ period,       greater,      ograve,               Ograve               ] };
+    key <AB10> { [ slash,        question,     questiondown,         enfilledcircbullet   ] };
     key <AC01> { [ a,            A,            adiaeresis,           Adiaeresis           ] };
     key <AC02> { [ r,            R,            ssharp,               U1E9E                ] };
     key <AC03> { [ s,            S,            acircumflex,          Acircumflex          ] };
-    key <AC04> { [ t,            T,            egrave,               Egrave               ] };
-    key <AC05> { [ d,            D,            eacute,               Eacute               ] };
-    key <AC06> { [ h,            H,            ugrave,               Ugrave               ] };
-    key <AC07> { [ n,            N,            uacute,               Uacute               ] };
+    key <AC04> { [ t,            T,            eacute,               Eacute               ] };
+    key <AC05> { [ d,            D,            egrave,               Egrave               ] };
+    key <AC06> { [ h,            H,            uacute,               Uacute               ] };
+    key <AC07> { [ n,            N,            ugrave,               Ugrave               ] };
     key <AC08> { [ e,            E,            oe,                   OE                   ] };
     key <AC09> { [ i,            I,            oslash,               Ooblique             ] };
     key <AC10> { [ o,            O,            degree,               periodcentered       ] };
@@ -60,7 +60,7 @@ xkb_symbols "basic" {
     key <BKSL> { [ backslash,    bar,          enspace,              emspace              ] };
     key <CAPS> { [ BackSpace,    BackSpace,    BackSpace,            BackSpace            ] };
     key <LSGT> { [ backslash,    bar,          Multi_key,            Multi_key            ] };
-    key <SPCE> { [ space,        space,        nobreakspace,         enfilledcircbullet   ] };
+    key <SPCE> { [ space,        space,        nobreakspace,         nobreakspace         ] };
     key <TLDE> { [ grave,        asciitilde,   Multi_key,            Multi_key            ] };
     key <KPDL> { [ KP_Delete,    KP_Decimal                                               ] };
 

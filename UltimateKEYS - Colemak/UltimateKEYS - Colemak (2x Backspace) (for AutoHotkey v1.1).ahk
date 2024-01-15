@@ -1,6 +1,6 @@
 #requires AutoHotkey v1.1
 
-; UltimateKEYS - Colemak (2x Backspace) (for AutoHotkey v1.1).ahk - 2023-12-28
+; UltimateKEYS - Colemak (2x Backspace) (for AutoHotkey v1.1).ahk - 2024-01-15
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -956,8 +956,9 @@ cmpAsterisk.item["*"] := "{u+00d7}"      ; (×) multiplication sign
 cmpStroke.item["/"] := "{u+00f7}"        ; (÷) division sign
 cmpAsterisk.item["o"] := "{u+00b0}"      ; (°) degree sign
 cmpRingAbove.item["*"] := "{u+00b0}"     ; (°) degree sign
-cmpDotAbove.item["."] := "{u+00b7}"      ; (·) middle dot
+cmpDotAbove.item["-"] := "{u+00b7}"      ; (·) middle dot
 cmpDotAbove.item["3"] := "{u+2026}"      ; (…) horizontal ellipsis
+cmpDotAbove.item["."] := "{u+2026}"      ; (…) horizontal ellipsis
 cmpArrow.item["-"] := "{u+00aa}"         ; (ª) feminine ordinal indicator (Spanish, Portuguese, Italian, Galician)
 cmpRingAbove.item["-"] := "{u+00ba}"     ; (º) masculine ordinal indicator (Spanish, Portuguese, Italian, Galician)
 cmpExclam.item["!"] := "{u+00a1}"        ; (¡) inverted exclamation mark
@@ -1526,28 +1527,28 @@ CapsLock::Backspace  ; assigns 'Backspace' also to 'Caps Lock'
 
 >!z::
   if GetKeyState("CapsLock", "T")
-    Send {u+00c0}  ; (À) A with grave
+    Send {u+00c1}  ; (Á) A with acute
   else
-    Send {u+00e0}  ; (à) a with grave
+    Send {u+00e1}  ; (á) a with acute
   return
 >!+z::
   if GetKeyState("CapsLock", "T")
-    Send {u+00e0}  ; (à) a with grave
+    Send {u+00e1}  ; (á) a with acute
   else
-    Send {u+00c0}  ; (À) A with grave
+    Send {u+00c1}  ; (Á) A with acute
   return
 
 >!x::
   if GetKeyState("CapsLock", "T")
-    Send {u+00c1}  ; (Á) A with acute
+    Send {u+00c0}  ; (À) A with grave
   else
-    Send {u+00e1}  ; (á) a with acute
+    Send {u+00e0}  ; (à) a with grave
   return
 >!+x::
   if GetKeyState("CapsLock", "T")
-    Send {u+00e1}  ; (á) a with acute
+    Send {u+00e0}  ; (à) a with grave
   else
-    Send {u+00c1}  ; (Á) A with acute
+    Send {u+00c0}  ; (À) A with grave
   return
 
 >!d::
@@ -1591,28 +1592,28 @@ CapsLock::Backspace  ; assigns 'Backspace' also to 'Caps Lock'
 
 >!f::
   if GetKeyState("CapsLock", "T")
-    Send {u+00c8}  ; (È) E with grave
+    Send {u+00c9}  ; (É) E with acute
   else
-    Send {u+00e8}  ; (è) e with grave
+    Send {u+00e9}  ; (é) e with acute
   return
 >!+f::
   if GetKeyState("CapsLock", "T")
-    Send {u+00e8}  ; (è) e with grave
+    Send {u+00e9}  ; (é) e with acute
   else
-    Send {u+00c8}  ; (È) E with grave
+    Send {u+00c9}  ; (É) E with acute
   return
 
 >!g::
   if GetKeyState("CapsLock", "T")
-    Send {u+00c9}  ; (É) E with acute
+    Send {u+00c8}  ; (È) E with grave
   else
-    Send {u+00e9}  ; (é) e with acute
+    Send {u+00e8}  ; (è) e with grave
   return
 >!+g::
   if GetKeyState("CapsLock", "T")
-    Send {u+00e9}  ; (é) e with acute
+    Send {u+00e8}  ; (è) e with grave
   else
-    Send {u+00c9}  ; (É) E with acute
+    Send {u+00c8}  ; (È) E with grave
   return
 
 >!r::
@@ -1643,28 +1644,28 @@ CapsLock::Backspace  ; assigns 'Backspace' also to 'Caps Lock'
 
 >!v::
   if GetKeyState("CapsLock", "T")
-    Send {u+00cc}  ; (Ì) I with grave
+    Send {u+00cd}  ; (Í) I with acute
   else
-    Send {u+00ec}  ; (ì) i with grave
+    Send {u+00ed}  ; (í) i with acute
   return
 >!+v::
   if GetKeyState("CapsLock", "T")
-    Send {u+00ec}  ; (ì) i with grave
+    Send {u+00ed}  ; (í) i with acute
   else
-    Send {u+00cc}  ; (Ì) I with grave
+    Send {u+00cd}  ; (Í) I with acute
   return
 
 >!b::
   if GetKeyState("CapsLock", "T")
-    Send {u+00cd}  ; (Í) I with acute
+    Send {u+00cc}  ; (Ì) I with grave
   else
-    Send {u+00ed}  ; (í) i with acute
+    Send {u+00ec}  ; (ì) i with grave
   return
 >!+b::
   if GetKeyState("CapsLock", "T")
-    Send {u+00ed}  ; (í) i with acute
+    Send {u+00ec}  ; (ì) i with grave
   else
-    Send {u+00cd}  ; (Í) I with acute
+    Send {u+00cc}  ; (Ì) I with grave
   return
 
 >!t::
@@ -1734,28 +1735,28 @@ CapsLock::Backspace  ; assigns 'Backspace' also to 'Caps Lock'
 
 >!,::
   if GetKeyState("CapsLock", "T")
-    Send {u+00d2}  ; (Ò) O with grave
+    Send {u+00d3}  ; (Ó) O with acute
   else
-    Send {u+00f2}  ; (ò) o with grave
+    Send {u+00f3}  ; (ó) o with acute
   return
 >!<::
   if GetKeyState("CapsLock", "T")
-    Send {u+00f2}  ; (ò) o with grave
+    Send {u+00f3}  ; (ó) o with acute
   else
-    Send {u+00d2}  ; (Ò) O with grave
+    Send {u+00d3}  ; (Ó) O with acute
   return
 
 >!.::
   if GetKeyState("CapsLock", "T")
-    Send {u+00d3}  ; (Ó) O with acute
+    Send {u+00d2}  ; (Ò) O with grave
   else
-    Send {u+00f3}  ; (ó) o with acute
+    Send {u+00f2}  ; (ò) o with grave
   return
 >!>::
   if GetKeyState("CapsLock", "T")
-    Send {u+00f3}  ; (ó) o with acute
+    Send {u+00f2}  ; (ò) o with grave
   else
-    Send {u+00d3}  ; (Ó) O with acute
+    Send {u+00d2}  ; (Ò) O with grave
   return
 
 >!p::
@@ -1799,28 +1800,28 @@ CapsLock::Backspace  ; assigns 'Backspace' also to 'Caps Lock'
 
 >!h::
   if GetKeyState("CapsLock", "T")
-    Send {u+00d9}  ; (Ù) U with grave
+    Send {u+00da}  ; (Ú) U with acute
   else
-    Send {u+00f9}  ; (ù) u with grave
+    Send {u+00fa}  ; (ú) u with acute
   return
 >!+h::
   if GetKeyState("CapsLock", "T")
-    Send {u+00f9}  ; (ù) u with grave
+    Send {u+00fa}  ; (ú) u with acute
   else
-    Send {u+00d9}  ; (Ù) U with grave
+    Send {u+00da}  ; (Ú) U with acute
   return
 
 >!j::
   if GetKeyState("CapsLock", "T")
-    Send {u+00da}  ; (Ú) U with acute
+    Send {u+00d9}  ; (Ù) U with grave
   else
-    Send {u+00fa}  ; (ú) u with acute
+    Send {u+00f9}  ; (ù) u with grave
   return
 >!+j::
   if GetKeyState("CapsLock", "T")
-    Send {u+00fa}  ; (ú) u with acute
+    Send {u+00f9}  ; (ù) u with grave
   else
-    Send {u+00da}  ; (Ú) U with acute
+    Send {u+00d9}  ; (Ù) U with grave
   return
 
 >!y::
@@ -1911,10 +1912,10 @@ CapsLock::Backspace  ; assigns 'Backspace' also to 'Caps Lock'
 >!|::Send {u+2003}   ;     em space
 
 >!/::Send {u+00bf}   ; (¿) inverted question mark
->!?::Send {u+2026}   ; (…) horizontal ellipsis
+>!?::Send {u+2022}   ; (•) bullet
 
->!space::Send {u+00a0}   ;     non-breaking space (NBSP)
->!+space::Send {u+2022}  ; (•) bullet
+>!space::Send {u+00a0}   ; non-breaking space (NBSP)
+>!+space::Send {u+00a0}  ; non-breaking space (NBSP)
 
 
 ; Configuration :  Compose Key Selector
