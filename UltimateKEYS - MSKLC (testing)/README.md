@@ -1,4 +1,4 @@
-# UltimateKEYS - MSKLC (testing - conceptual)
+# UltimateKEYS - MSKLC (testing)
 
 UltimateKEYS for Microsoft Keyboard Layout Creator (MSKLC) Version 1.4.
 
@@ -10,7 +10,7 @@ During testing, I found a smaller bug with the MSKLC version, as the capital cha
 The 'É' did not work via AltGr+Shift+F, although it worked fine when enabling Caps Lock and entering AltGr+F (without Shift).  
 I believe that this is a bug in MSKLC rather than in the UltimateKEYS port for MSKLC.
 
-## Issue with the SPACE KEY
+## 'Bk' version - Issue with the SPACE KEY
 
 **_Note that this version does not compile with MSKLC, since the bullet (•) on 'AltGr + Shift + Space' causes this strange malfunctioning._**
 
@@ -18,8 +18,9 @@ I believe that this is a bug in MSKLC rather than in the UltimateKEYS port for M
 
 **_Characters assigned to the SPACE KEY in any shift state must be spacing characters._**
 
-In that case, I am limited to MSKLC's actual functionality, since it does not allow this change.
+In that case, I was limited to MSKLC's actual functionality, since it does not allow this change.  
+Anyway, the current version is not affected, as the bullet (•) is now on AltGr+Shift+/.
 
-## Keyboard Layout Image (testing - conceptual)
+## Keyboard Layout Image (testing)
 
 ![UltimateKEYS (MSKLC) - Keyboard Layout Image](UltimateKEYS%20(MSKLC)%20-%20Keyboard%20Layout%20Image.png)
