@@ -1,4 +1,6 @@
-; Romanian Programmers Keyboard - SW (Scroll Lock).ahk - 2020-12-26
+#requires AutoHotkey v1.1
+
+; Romanian Programmers Keyboard - SW (Scroll Lock) (for AutoHotkey v1.1).ahk - 2020-12-26
 
 ; Created by :  Pieter Degroote
 
@@ -15,8 +17,9 @@
 
 
 
-ListLines Off   ; omits recently executed lines from history (for privacy and security)
+#NoEnv          ; avoids checking empty variables to see if they are environment variables
 #KeyHistory 0   ; disables the key history (for privacy and security)
+ListLines Off   ; omits recently executed lines from history (for privacy and security)
 
 SendMode Event  ; allows chaining of customized key combinations (default)
 
