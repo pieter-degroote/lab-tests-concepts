@@ -1,6 +1,6 @@
 #requires AutoHotkey v1.1
 
-; UltimateKEYS (for AutoHotkey v1.1).ahk - 2024-01-15
+; UltimateKEYS (for AutoHotkey v1.1).ahk - 2024-01-19
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -809,7 +809,8 @@ cmpSymbols.item["c"] := "{u+2105}"  ; (℅) care of
 cmpSymbols.item["d"] := "{u+22c4}"  ; (⋄) diamond operator
 cmpSymbols.item["e"] := "{u+212e}"  ; (℮) estimated symbol
 cmpSymbols.item["f"] := "{u+2640}"  ; (♀) female sign (Venus)
-cmpSymbols.item["h"] := "{u+2126}"  ; (Ω) ohm sign (backwards compatibility)
+cmpSymbols.item["h"] := "{u+2302}"  ; (⌂) house
+cmpSymbols.item["H"] := "{u+2126}"  ; (Ω) ohm sign (backwards compatibility)
 cmpSymbols.item["i"] := "{u+2300}"  ; (⌀) diameter sign
 cmpSymbols.item["l"] := "{u+2113}"  ; (ℓ) script small l
 cmpSymbols.item["L"] := "{u+2112}"  ; (ℒ) Laplace transform
