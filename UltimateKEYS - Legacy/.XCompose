@@ -1,6 +1,6 @@
 include "%L"
 
-# UltimateKEYS - 2024-01-15  (~/.XCompose)
+# UltimateKEYS - 2024-01-19  (~/.XCompose)
 
 # Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -862,7 +862,8 @@ include "%L"
 <Multi_key> <s> <d> : "⋄"  U22C4  # diamond operator
 <Multi_key> <s> <e> : "℮"  U212E  # estimated symbol
 <Multi_key> <s> <f> : "♀"  U2640  # female sign (Venus)
-<Multi_key> <s> <h> : "Ω"  U2126  # ohm sign (backwards compatibility)
+<Multi_key> <s> <h> : "⌂"  U2302  # house
+<Multi_key> <s> <H> : "Ω"  U2126  # ohm sign (backwards compatibility)
 <Multi_key> <s> <i> : "⌀"  U2300  # diameter sign
 <Multi_key> <s> <l> : "ℓ"  U2113  # script small l
 <Multi_key> <s> <L> : "ℒ"  U2112  # Laplace transform
