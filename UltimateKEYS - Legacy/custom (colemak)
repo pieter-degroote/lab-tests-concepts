@@ -10,7 +10,7 @@
 default partial alphanumeric_keys modifier_keys
 xkb_symbols "basic" {
 
-    name[Group1] = "UltimateKEYS - Colemak (2x Backspace)";
+    name[Group1] = "UltimateKEYS Legacy - Colemak (2x Backspace)";
 
     key <AB01> { [ z,            Z,            agrave,               Agrave               ] };
     key <AB02> { [ x,            X,            aacute,               Aacute               ] };
