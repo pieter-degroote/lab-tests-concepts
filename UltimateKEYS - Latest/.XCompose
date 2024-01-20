@@ -1,6 +1,6 @@
 include "%L"
 
-# UltimateKEYS - 2024-01-19  (~/.XCompose)
+# UltimateKEYS - 2024-01-20  (~/.XCompose)
 
 # Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -799,6 +799,7 @@ include "%L"
 <Multi_key> <s> <o> : "§"  U00A7  # section sign
 <Multi_key> <S> <o> : "§"  U00A7  # section sign
 <Multi_key> <t> <m> : "™"  U2122  # trademark symbol
+<Multi_key> <bar> <bar>               : "‖"  U2016  # double vertical line
 <Multi_key> <apostrophe> <1>          : "′"  U2032  # prime
 <Multi_key> <apostrophe> <2>          : "″"  U2033  # double prime
 <Multi_key> <apostrophe> <3>          : "‴"  U2034  # triple prime
@@ -850,6 +851,10 @@ include "%L"
 <Multi_key> <semicolon> <j> : "◃"  U25C3  # white left-pointing small triangle
 <Multi_key> <semicolon> <k> : "▿"  U25BF  # white down-pointing small triangle
 <Multi_key> <semicolon> <l> : "▹"  U25B9  # white right-pointing small triangle
+<Multi_key> <semicolon> <z> : "■"  U25A0  # black square
+<Multi_key> <semicolon> <x> : "□"  U25A1  # white square
+<Multi_key> <semicolon> <c> : "◆"  U25C6  # black diamond
+<Multi_key> <semicolon> <v> : "◇"  U25C7  # white diamond
 <Multi_key> <semicolon> <semicolon> : "•"  U2022  # bullet
 
 
