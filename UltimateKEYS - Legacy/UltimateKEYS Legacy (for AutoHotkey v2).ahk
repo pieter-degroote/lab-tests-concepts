@@ -1,6 +1,6 @@
 #requires AutoHotkey v2
 
-; UltimateKEYS Legacy (for AutoHotkey v2).ahk - 2024-01-19
+; UltimateKEYS Legacy (for AutoHotkey v2).ahk - 2024-01-20
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -926,6 +926,7 @@ cmpCapitalT["H"] := "{u+00de}"   ; (Þ) capital letter thorn
 
 global cmpDigitEight := Map()
 global cmpCapitalP := Map()
+global cmpVerticalLine := Map()
 global cmpAsterisk := Map()
 global cmpExclam := Map()
 global cmpQuestion := Map()
@@ -950,6 +951,7 @@ cmpSmallR["4"] := "{u+221c}"        ; (∜) fourth root
 cmpSymbols["o"] := "{u+00a7}"       ; (§) section sign
 cmpCapitalS["o"] := "{u+00a7}"      ; (§) section sign
 cmpSmallT["m"] := "{u+2122}"        ; (™) trademark symbol
+cmpVerticalLine["|"] := "{u+2016}"  ; (‖) double vertical line
 cmpAcuteAccent["1"] := "{u+2032}"   ; (′) prime
 cmpAcuteAccent["2"] := "{u+2033}"   ; (″) double prime
 cmpAcuteAccent["3"] := "{u+2034}"   ; (‴) triple prime
@@ -1002,6 +1004,10 @@ cmpSemicolon["i"] := "{u+25b5}"  ; (▵) white up-pointing small triangle
 cmpSemicolon["j"] := "{u+25c3}"  ; (◃) white left-pointing small triangle
 cmpSemicolon["k"] := "{u+25bf}"  ; (▿) white down-pointing small triangle
 cmpSemicolon["l"] := "{u+25b9}"  ; (▹) white right-pointing small triangle
+cmpSemicolon["z"] := "{u+25a0}"  ; (■) black square
+cmpSemicolon["x"] := "{u+25a1}"  ; (□) white square
+cmpSemicolon["c"] := "{u+25c6}"  ; (◆) black diamond
+cmpSemicolon["v"] := "{u+25c7}"  ; (◇) white diamond
 cmpSemicolon[";"] := "{u+2022}"  ; (•) bullet
 
 
@@ -2060,6 +2066,10 @@ cmpSmallN["0"] := "{u+277f}"  ; (❿) dingbat negative circled digit 10
   else if (ihA.Input == "P") {
     if cmpCapitalP.Has(ihB.Input)
       Send cmpCapitalP[ihB.Input]
+  }
+  else if (ihA.Input == "|") {
+    if cmpVerticalLine.Has(ihB.Input)
+      Send cmpVerticalLine[ihB.Input]
   }
   else if (ihA.Input == "*") {
     if cmpAsterisk.Has(ihB.Input)

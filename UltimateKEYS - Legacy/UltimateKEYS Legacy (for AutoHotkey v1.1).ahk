@@ -1,6 +1,6 @@
 #requires AutoHotkey v1.1
 
-; UltimateKEYS Legacy (for AutoHotkey v1.1).ahk - 2024-01-19
+; UltimateKEYS Legacy (for AutoHotkey v1.1).ahk - 2024-01-20
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -925,6 +925,7 @@ cmpCapitalT.item["H"] := "{u+00de}"   ; (Þ) capital letter thorn
 
 cmpDigitEight := ComObjCreate("Scripting.Dictionary")
 cmpCapitalP := ComObjCreate("Scripting.Dictionary")
+cmpVerticalLine := ComObjCreate("Scripting.Dictionary")
 cmpAsterisk := ComObjCreate("Scripting.Dictionary")
 cmpExclam := ComObjCreate("Scripting.Dictionary")
 cmpQuestion := ComObjCreate("Scripting.Dictionary")
@@ -949,6 +950,7 @@ cmpSmallR.item["4"] := "{u+221c}"        ; (∜) fourth root
 cmpSymbols.item["o"] := "{u+00a7}"       ; (§) section sign
 cmpCapitalS.item["o"] := "{u+00a7}"      ; (§) section sign
 cmpSmallT.item["m"] := "{u+2122}"        ; (™) trademark symbol
+cmpVerticalLine.item["|"] := "{u+2016}"  ; (‖) double vertical line
 cmpAcuteAccent.item["1"] := "{u+2032}"   ; (′) prime
 cmpAcuteAccent.item["2"] := "{u+2033}"   ; (″) double prime
 cmpAcuteAccent.item["3"] := "{u+2034}"   ; (‴) triple prime
@@ -1001,6 +1003,10 @@ cmpSemicolon.item["i"] := "{u+25b5}"  ; (▵) white up-pointing small triangle
 cmpSemicolon.item["j"] := "{u+25c3}"  ; (◃) white left-pointing small triangle
 cmpSemicolon.item["k"] := "{u+25bf}"  ; (▿) white down-pointing small triangle
 cmpSemicolon.item["l"] := "{u+25b9}"  ; (▹) white right-pointing small triangle
+cmpSemicolon.item["z"] := "{u+25a0}"  ; (■) black square
+cmpSemicolon.item["x"] := "{u+25a1}"  ; (□) white square
+cmpSemicolon.item["c"] := "{u+25c6}"  ; (◆) black diamond
+cmpSemicolon.item["v"] := "{u+25c7}"  ; (◇) white diamond
 cmpSemicolon.item[";"] := "{u+2022}"  ; (•) bullet
 
 
@@ -1977,6 +1983,8 @@ cmpSmallN.item["0"] := "{u+277f}"  ; (❿) dingbat negative circled digit 10
     Send % cmpCapitalT.item[keyB]
   else if (keyA == "P")
     Send % cmpCapitalP.item[keyB]
+  else if (keyA == "|")
+    Send % cmpVerticalLine.item[keyB]
   else if (keyA == "*")
     Send % cmpAsterisk.item[keyB]
   else if (keyA == "!")
