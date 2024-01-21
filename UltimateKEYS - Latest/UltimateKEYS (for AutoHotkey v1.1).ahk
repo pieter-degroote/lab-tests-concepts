@@ -1,6 +1,6 @@
 #requires AutoHotkey v1.1
 
-; UltimateKEYS (for AutoHotkey v1.1).ahk - 2024-01-20
+; UltimateKEYS (for AutoHotkey v1.1).ahk - 2024-01-21
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -879,11 +879,12 @@ cmpMathSymbols.item["4"] := "{u+2237}"  ; (∷) proportion sign
 cmpMathSymbols.item["6"] := "{u+2220}"  ; (∠) angle symbol
 cmpMathSymbols.item["9"] := "{u+221f}"  ; (∟) right angle
 cmpMathSymbols.item["0"] := "{u+2221}"  ; (∡) measured angle
+cmpMathSymbols.item["."] := "{u+2219}"  ; (∙) bullet operator
 cmpMathSymbols.item["+"] := "{u+2295}"  ; (⊕) circled plus
 cmpMathSymbols.item["-"] := "{u+2296}"  ; (⊖) circled minus
 cmpMathSymbols.item["*"] := "{u+2297}"  ; (⊗) circled times
 cmpMathSymbols.item["/"] := "{u+2298}"  ; (⊘) circled division slash
-cmpMathSymbols.item["."] := "{u+2299}"  ; (⊙) circled dot operator
+cmpMathSymbols.item[","] := "{u+2299}"  ; (⊙) circled dot operator
 cmpMathSymbols.item["="] := "{u+225d}"  ; (≝) equal to by definition
 cmpMathSymbols.item[";"] := "{u+2235}"  ; (∵) because sign
 cmpMathSymbols.item[":"] := "{u+2234}"  ; (∴) therefore sign
@@ -1872,7 +1873,7 @@ cmpSmallN.item["0"] := "{u+277f}"  ; (❿) dingbat negative circled digit 10
 >!_::Send {u+2014}   ; (—) em dash
 
 >!=::Send {u+00d7}   ; (×) multiplication sign
->!+=::Send {u+00f7}  ; (÷) division sign
+>!+::Send {u+00f7}   ; (÷) division sign
 
 >![::Send {u+00ab}   ; («) left-pointing double angle quotation mark
 >!{::Send {u+2039}   ; (‹) left-pointing single angle quotation mark
@@ -1883,8 +1884,8 @@ cmpSmallN.item["0"] := "{u+277f}"  ; (❿) dingbat negative circled digit 10
 >!;::Send {u+00b0}   ; (°) degree sign
 >!+;::Send {u+00b7}  ; (·) middle dot
 
->!'::Send {u+2020}   ; (†) dagger
->!"::Send {u+2021}   ; (‡) double dagger
+>!'::Send {u+266a}   ; (♪) eighth note
+>!"::Send {u+266b}   ; (♫) beamed eighth notes
 
 >!\::Send {u+2002}   ;     en space
 >!|::Send {u+2003}   ;     em space
