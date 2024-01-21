@@ -59,7 +59,7 @@ LAYOUT
 25	K		5	k	K	-1	0153	0152		// k, K, œ, Œ    letter k, letter K, ligature oe, ligature OE
 26	L		5	l	L	-1	00f8	00d8		// l, L, ø, Ø    letter l, letter L, o with stroke, O with stroke
 27	OEM_1		0	003b	003a	-1	00b0	00b7		// ;, :, °, ·    semicolon, colon, degree sign, middle dot
-28	OEM_7		0	0027	0022	-1	2020	2021		// ', ", †, ‡    apostrophe, quotation mark, dagger, double dagger
+28	OEM_7		0	0027	0022	-1	266a	266b		// ', ", ♪, ♫    apostrophe, quotation mark, eighth note, beamed eighth notes
 29	OEM_3		0	0060	007e	-1	2260	2248		// `, ~, ≠, ≈    grave accent, tilde, not equal to, almost equal to
 2b	OEM_5		0	005c	007c	001c	2002	2003		// \, |          reverse solidus (backslash), vertical line, en space, em space    information separator four (001c)
 2c	Z		5	z	Z	-1	00e1	00c1		// z, Z, á, Á    letter z, letter Z, a with acute, A with acute
