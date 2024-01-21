@@ -32,7 +32,7 @@ xkb_symbols "basic" {
     key <AC08> { [ e,            E,            oe,                   OE                   ] };
     key <AC09> { [ i,            I,            oslash,               Ooblique             ] };
     key <AC10> { [ o,            O,            degree,               periodcentered       ] };
-    key <AC11> { [ apostrophe,   quotedbl,     dagger,               doubledagger         ] };
+    key <AC11> { [ apostrophe,   quotedbl,     U266A,                U266B                ] };
     key <AD01> { [ q,            Q,            ae,                   AE                   ] };
     key <AD02> { [ w,            W,            aring,                Aring                ] };
     key <AD03> { [ f,            F,            ediaeresis,           Ediaeresis           ] };
