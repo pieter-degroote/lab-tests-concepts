@@ -1,6 +1,6 @@
 include "%L"
 
-# UltimateKEYS - 2024-01-21  (~/.XCompose)
+# UltimateKEYS - 2024-01-22  (~/.XCompose)
 
 # Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -936,12 +936,12 @@ include "%L"
 <Multi_key> <m> <6> : "∠"  U2220  # angle symbol
 <Multi_key> <m> <9> : "∟"  U221F  # right angle
 <Multi_key> <m> <0> : "∡"  U2221  # measured angle
-<Multi_key> <m> <period>    : "∙"  U2219  # bullet operator
+<Multi_key> <m> <comma>     : "∙"  U2219  # bullet operator
 <Multi_key> <m> <plus>      : "⊕"  U2295  # circled plus
 <Multi_key> <m> <minus>     : "⊖"  U2296  # circled minus
 <Multi_key> <m> <asterisk>  : "⊗"  U2297  # circled times
 <Multi_key> <m> <slash>     : "⊘"  U2298  # circled division slash
-<Multi_key> <m> <comma>     : "⊙"  U2299  # circled dot operator
+<Multi_key> <m> <period>    : "⊙"  U2299  # circled dot operator
 <Multi_key> <m> <equal>     : "≝"  U225D  # equal to by definition
 <Multi_key> <m> <semicolon> : "∵"  U2235  # because sign
 <Multi_key> <m> <colon>     : "∴"  U2234  # therefore sign
