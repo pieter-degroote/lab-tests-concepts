@@ -1,6 +1,6 @@
 #requires AutoHotkey v1.1
 
-; UltimateKEYS - Colemak (2x Backspace) (for AutoHotkey v1.1).ahk - 2024-01-21
+; UltimateKEYS - Colemak (2x Backspace) (for AutoHotkey v1.1).ahk - 2024-01-22
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
@@ -879,12 +879,12 @@ cmpMathSymbols.item["4"] := "{u+2237}"  ; (∷) proportion sign
 cmpMathSymbols.item["6"] := "{u+2220}"  ; (∠) angle symbol
 cmpMathSymbols.item["9"] := "{u+221f}"  ; (∟) right angle
 cmpMathSymbols.item["0"] := "{u+2221}"  ; (∡) measured angle
-cmpMathSymbols.item["."] := "{u+2219}"  ; (∙) bullet operator
+cmpMathSymbols.item[","] := "{u+2219}"  ; (∙) bullet operator
 cmpMathSymbols.item["+"] := "{u+2295}"  ; (⊕) circled plus
 cmpMathSymbols.item["-"] := "{u+2296}"  ; (⊖) circled minus
 cmpMathSymbols.item["*"] := "{u+2297}"  ; (⊗) circled times
 cmpMathSymbols.item["/"] := "{u+2298}"  ; (⊘) circled division slash
-cmpMathSymbols.item[","] := "{u+2299}"  ; (⊙) circled dot operator
+cmpMathSymbols.item["."] := "{u+2299}"  ; (⊙) circled dot operator
 cmpMathSymbols.item["="] := "{u+225d}"  ; (≝) equal to by definition
 cmpMathSymbols.item[";"] := "{u+2235}"  ; (∵) because sign
 cmpMathSymbols.item[":"] := "{u+2234}"  ; (∴) therefore sign
