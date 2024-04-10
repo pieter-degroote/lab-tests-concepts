@@ -1,6 +1,6 @@
 <?xml version="1.1" encoding="UTF-8"?>
 <!DOCTYPE keyboard SYSTEM "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
-<keyboard group="126" id="-30850" name="UltimateKEYS" maxout="1">
+<keyboard group="126" id="-24547" name="UltimateKEYS" maxout="1">
     <layouts>
         <layout first="0" last="17" mapSet="16c" modifiers="f4"/>
     </layouts>
@@ -401,7 +401,7 @@
             <key code="36" output="&#x000D;"/>
             <key code="37" output="ø"/>
             <key code="38" output="ù"/>
-            <key code="39" output="†"/>
+            <key code="39" output="♪"/>
             <key code="40" output="œ"/>
             <key code="41" output="°"/>
             <key code="42" output=" "/>
@@ -510,7 +510,7 @@
             <key code="36" output="&#x000D;"/>
             <key code="37" output="Ø"/>
             <key code="38" output="Ù"/>
-            <key code="39" output="‡"/>
+            <key code="39" output="♫"/>
             <key code="40" output="Œ"/>
             <key code="41" output="·"/>
             <key code="42" output=" "/>
@@ -619,7 +619,7 @@
             <key code="36" output="&#x000D;"/>
             <key code="37" output="Ø"/>
             <key code="38" output="Ù"/>
-            <key code="39" output="†"/>
+            <key code="39" output="♪"/>
             <key code="40" output="Œ"/>
             <key code="41" output="°"/>
             <key code="42" output=" "/>
