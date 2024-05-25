@@ -101,9 +101,9 @@ include "%L"
 <dead_grave> <question>     : "…"  U2026  # horizontal ellipsis
 <dead_grave> <apostrophe>   : "†"  U2020  # dagger
 <dead_grave> <quotedbl>     : "‡"  U2021  # double dagger
-<dead_grave> <backslash>    : " "  U2002}"  # en space
-<dead_grave> <bar>          : " "  U2003}"  # em space
-<dead_grave> <space>        : " "  U00A0}"  # non-breaking space
+<dead_grave> <backslash>    : " "  U2002  # en space
+<dead_grave> <bar>          : " "  U2003  # em space
+<dead_grave> <space>        : " "  U00A0  # non-breaking space
 <dead_grave> <asciitilde>   : "•"  U2022  # bullet
 <dead_grave> <dead_grave>   : "`"  U0060  # grave accent
 
