@@ -1,12 +1,12 @@
 #requires AutoHotkey v2
 
-; UltimateKEYS - Colemak-DH ISO mod (for AutoHotkey v2).ahk - 2023-09-08
+; UltimateKEYS - Colemak-DH ISO mod (for AutoHotkey v2).ahk - 2024-01-22
 
 ; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
 
 ; License :  GNU General Public License Version 3
 
-; GitHub :   github.com/pieter-degroote
+; GitHub :   github.com/pieter-degroote/lab-tests-concepts
 
 
 ; Requirements :
@@ -17,8 +17,8 @@
 
 
 
-ListLines False   ; omits recently executed lines from history (for privacy and security)
 KeyHistory 0      ; disables the key history (for privacy and security)
+ListLines False   ; omits recently executed lines from history (for privacy and security)
 
 SendMode "Event"  ; allows chaining of customized key combinations
 
@@ -767,7 +767,7 @@ cmpQuad["2"] := "{u+2000}"  ; en quad
 cmpQuad["3"] := "{u+2001}"  ; em quad
 
 
-; Compose :  Arrows and Pointers
+; Compose :  Arrows and Pointing Triangles
 
 global cmpArrow := Map()
 cmpArrow["w"] := "{u+25b2}"  ; (▲) black up-pointing triangle
@@ -810,7 +810,8 @@ cmpSymbols["c"] := "{u+2105}"  ; (℅) care of
 cmpSymbols["d"] := "{u+22c4}"  ; (⋄) diamond operator
 cmpSymbols["e"] := "{u+212e}"  ; (℮) estimated symbol
 cmpSymbols["f"] := "{u+2640}"  ; (♀) female sign (Venus)
-cmpSymbols["h"] := "{u+2126}"  ; (Ω) ohm sign (backwards compatibility)
+cmpSymbols["h"] := "{u+2302}"  ; (⌂) house
+cmpSymbols["H"] := "{u+2126}"  ; (Ω) ohm sign (backwards compatibility)
 cmpSymbols["i"] := "{u+2300}"  ; (⌀) diameter sign
 cmpSymbols["l"] := "{u+2113}"  ; (ℓ) script small l
 cmpSymbols["L"] := "{u+2112}"  ; (ℒ) Laplace transform
@@ -879,6 +880,7 @@ cmpMathSymbols["4"] := "{u+2237}"  ; (∷) proportion sign
 cmpMathSymbols["6"] := "{u+2220}"  ; (∠) angle symbol
 cmpMathSymbols["9"] := "{u+221f}"  ; (∟) right angle
 cmpMathSymbols["0"] := "{u+2221}"  ; (∡) measured angle
+cmpMathSymbols[","] := "{u+2219}"  ; (∙) bullet operator
 cmpMathSymbols["+"] := "{u+2295}"  ; (⊕) circled plus
 cmpMathSymbols["-"] := "{u+2296}"  ; (⊖) circled minus
 cmpMathSymbols["*"] := "{u+2297}"  ; (⊗) circled times
@@ -925,7 +927,7 @@ cmpCapitalT["H"] := "{u+00de}"   ; (Þ) capital letter thorn
 
 global cmpDigitEight := Map()
 global cmpCapitalP := Map()
-global cmpSemicolon := Map()
+global cmpVerticalLine := Map()
 global cmpAsterisk := Map()
 global cmpExclam := Map()
 global cmpQuestion := Map()
@@ -950,14 +952,7 @@ cmpSmallR["4"] := "{u+221c}"        ; (∜) fourth root
 cmpSymbols["o"] := "{u+00a7}"       ; (§) section sign
 cmpCapitalS["o"] := "{u+00a7}"      ; (§) section sign
 cmpSmallT["m"] := "{u+2122}"        ; (™) trademark symbol
-cmpSemicolon["b"] := "{u+2022}"     ; (•) bullet
-cmpSemicolon[";"] := "{u+2022}"     ; (•) bullet
-cmpSemicolon["t"] := "{u+2023}"     ; (‣) triangular bullet
-cmpSemicolon[">"] := "{u+2023}"     ; (‣) triangular bullet
-cmpSemicolon["h"] := "{u+2043}"     ; (⁃) hyphen bullet
-cmpSemicolon["-"] := "{u+2043}"     ; (⁃) hyphen bullet
-cmpSemicolon["w"] := "{u+25e6}"     ; (◦) white bullet
-cmpSemicolon["o"] := "{u+25e6}"     ; (◦) white bullet
+cmpVerticalLine["|"] := "{u+2016}"  ; (‖) double vertical line
 cmpAcuteAccent["1"] := "{u+2032}"   ; (′) prime
 cmpAcuteAccent["2"] := "{u+2033}"   ; (″) double prime
 cmpAcuteAccent["3"] := "{u+2034}"   ; (‴) triple prime
@@ -966,8 +961,9 @@ cmpAsterisk["*"] := "{u+00d7}"      ; (×) multiplication sign
 cmpStroke["/"] := "{u+00f7}"        ; (÷) division sign
 cmpAsterisk["o"] := "{u+00b0}"      ; (°) degree sign
 cmpRingAbove["*"] := "{u+00b0}"     ; (°) degree sign
-cmpDotAbove["."] := "{u+00b7}"      ; (·) middle dot
+cmpDotAbove["-"] := "{u+00b7}"      ; (·) middle dot
 cmpDotAbove["3"] := "{u+2026}"      ; (…) horizontal ellipsis
+cmpDotAbove["."] := "{u+2026}"      ; (…) horizontal ellipsis
 cmpArrow["-"] := "{u+00aa}"         ; (ª) feminine ordinal indicator (Spanish, Portuguese, Italian, Galician)
 cmpRingAbove["-"] := "{u+00ba}"     ; (º) masculine ordinal indicator (Spanish, Portuguese, Italian, Galician)
 cmpExclam["!"] := "{u+00a1}"        ; (¡) inverted exclamation mark
@@ -990,6 +986,30 @@ cmpGreaterThan["="] := "{u+2265}"   ; (≥) greater-than or equal to
 cmpLessThan["+"] := "{u+2a7d}"      ; (⩽) less-than or slanted equal to
 cmpGreaterThan["+"] := "{u+2a7e}"   ; (⩾) greater-than or slanted equal to
 cmpTilde["~"] := "{u+2248}"         ; (≈) almost equal to
+
+
+; Compose :  Bullets and Small Geometric Shapes (;)
+
+global cmpSemicolon := Map()
+cmpSemicolon["b"] := "{u+2022}"  ; (•) bullet
+cmpSemicolon["o"] := "{u+25e6}"  ; (◦) white bullet
+cmpSemicolon["h"] := "{u+2043}"  ; (⁃) hyphen bullet
+cmpSemicolon["t"] := "{u+2023}"  ; (‣) triangular bullet
+cmpSemicolon["q"] := "{u+25aa}"  ; (▪) black small square
+cmpSemicolon["u"] := "{u+25ab}"  ; (▫) white small square
+cmpSemicolon["w"] := "{u+25b4}"  ; (▴) black up-pointing small triangle
+cmpSemicolon["a"] := "{u+25c2}"  ; (◂) black left-pointing small triangle
+cmpSemicolon["s"] := "{u+25be}"  ; (▾) black down-pointing small triangle
+cmpSemicolon["d"] := "{u+25b8}"  ; (▸) black right-pointing small triangle
+cmpSemicolon["i"] := "{u+25b5}"  ; (▵) white up-pointing small triangle
+cmpSemicolon["j"] := "{u+25c3}"  ; (◃) white left-pointing small triangle
+cmpSemicolon["k"] := "{u+25bf}"  ; (▿) white down-pointing small triangle
+cmpSemicolon["l"] := "{u+25b9}"  ; (▹) white right-pointing small triangle
+cmpSemicolon["z"] := "{u+25a0}"  ; (■) black square
+cmpSemicolon["x"] := "{u+25a1}"  ; (□) white square
+cmpSemicolon["c"] := "{u+25c6}"  ; (◆) black diamond
+cmpSemicolon["v"] := "{u+25c7}"  ; (◇) white diamond
+cmpSemicolon[";"] := "{u+2022}"  ; (•) bullet
 
 
 ; Compose :  Vulgar Fractions
@@ -1260,6 +1280,8 @@ cmpDigitTwo["s"] := "{u+2691}"  ; (⚑) black flag
 cmpDigitTwo["t"] := "{u+26a0}"  ; (⚠) warning sign
 cmpDigitTwo["u"] := "{u+26a1}"  ; (⚡) high voltage sign
 cmpDigitTwo["v"] := "{u+26d4}"  ; (⛔) no entry
+cmpDigitTwo["w"] := "{u+231a}"  ; (⌚) watch
+cmpDigitTwo["x"] := "{u+231b}"  ; (⌛) hourglass
 
 cmpDigitThree["a"] := "{u+2701}"  ; (✁) upper blade scissors
 cmpDigitThree["b"] := "{u+2702}"  ; (✂) black scissors
@@ -1521,28 +1543,28 @@ CapsLock::Backspace  ; assigns 'Backspace' also to 'Caps Lock'
 
 >!z:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00c0}"  ; (À) A with grave
+    Send "{u+00c1}"  ; (Á) A with acute
   else
-    Send "{u+00e0}"  ; (à) a with grave
+    Send "{u+00e1}"  ; (á) a with acute
 }
 >!+z:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00e0}"  ; (à) a with grave
+    Send "{u+00e1}"  ; (á) a with acute
   else
-    Send "{u+00c0}"  ; (À) A with grave
+    Send "{u+00c1}"  ; (Á) A with acute
 }
 
 >!x:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00c1}"  ; (Á) A with acute
+    Send "{u+00c0}"  ; (À) A with grave
   else
-    Send "{u+00e1}"  ; (á) a with acute
+    Send "{u+00e0}"  ; (à) a with grave
 }
 >!+x:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00e1}"  ; (á) a with acute
+    Send "{u+00e0}"  ; (à) a with grave
   else
-    Send "{u+00c1}"  ; (Á) A with acute
+    Send "{u+00c0}"  ; (À) A with grave
 }
 
 >!d:: {
@@ -1586,28 +1608,28 @@ CapsLock::Backspace  ; assigns 'Backspace' also to 'Caps Lock'
 
 >!f:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00c8}"  ; (È) E with grave
+    Send "{u+00c9}"  ; (É) E with acute
   else
-    Send "{u+00e8}"  ; (è) e with grave
+    Send "{u+00e9}"  ; (é) e with acute
 }
 >!+f:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00e8}"  ; (è) e with grave
+    Send "{u+00e9}"  ; (é) e with acute
   else
-    Send "{u+00c8}"  ; (È) E with grave
+    Send "{u+00c9}"  ; (É) E with acute
 }
 
 >!g:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00c9}"  ; (É) E with acute
+    Send "{u+00c8}"  ; (È) E with grave
   else
-    Send "{u+00e9}"  ; (é) e with acute
+    Send "{u+00e8}"  ; (è) e with grave
 }
 >!+g:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00e9}"  ; (é) e with acute
+    Send "{u+00e8}"  ; (è) e with grave
   else
-    Send "{u+00c9}"  ; (É) E with acute
+    Send "{u+00c8}"  ; (È) E with grave
 }
 
 >!r:: {
@@ -1638,28 +1660,28 @@ CapsLock::Backspace  ; assigns 'Backspace' also to 'Caps Lock'
 
 >!v:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00cc}"  ; (Ì) I with grave
+    Send "{u+00cd}"  ; (Í) I with acute
   else
-    Send "{u+00ec}"  ; (ì) i with grave
+    Send "{u+00ed}"  ; (í) i with acute
 }
 >!+v:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00ec}"  ; (ì) i with grave
+    Send "{u+00ed}"  ; (í) i with acute
   else
-    Send "{u+00cc}"  ; (Ì) I with grave
+    Send "{u+00cd}"  ; (Í) I with acute
 }
 
 >!b:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00cd}"  ; (Í) I with acute
+    Send "{u+00cc}"  ; (Ì) I with grave
   else
-    Send "{u+00ed}"  ; (í) i with acute
+    Send "{u+00ec}"  ; (ì) i with grave
 }
 >!+b:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00ed}"  ; (í) i with acute
+    Send "{u+00ec}"  ; (ì) i with grave
   else
-    Send "{u+00cd}"  ; (Í) I with acute
+    Send "{u+00cc}"  ; (Ì) I with grave
 }
 
 >!t:: {
@@ -1729,28 +1751,28 @@ CapsLock::Backspace  ; assigns 'Backspace' also to 'Caps Lock'
 
 >!,:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00d2}"  ; (Ò) O with grave
+    Send "{u+00d3}"  ; (Ó) O with acute
   else
-    Send "{u+00f2}"  ; (ò) o with grave
+    Send "{u+00f3}"  ; (ó) o with acute
 }
 >!<:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00f2}"  ; (ò) o with grave
+    Send "{u+00f3}"  ; (ó) o with acute
   else
-    Send "{u+00d2}"  ; (Ò) O with grave
+    Send "{u+00d3}"  ; (Ó) O with acute
 }
 
 >!.:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00d3}"  ; (Ó) O with acute
+    Send "{u+00d2}"  ; (Ò) O with grave
   else
-    Send "{u+00f3}"  ; (ó) o with acute
+    Send "{u+00f2}"  ; (ò) o with grave
 }
 >!>:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00f3}"  ; (ó) o with acute
+    Send "{u+00f2}"  ; (ò) o with grave
   else
-    Send "{u+00d3}"  ; (Ó) O with acute
+    Send "{u+00d2}"  ; (Ò) O with grave
 }
 
 >!p:: {
@@ -1794,28 +1816,28 @@ CapsLock::Backspace  ; assigns 'Backspace' also to 'Caps Lock'
 
 >!h:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00d9}"  ; (Ù) U with grave
+    Send "{u+00da}"  ; (Ú) U with acute
   else
-    Send "{u+00f9}"  ; (ù) u with grave
+    Send "{u+00fa}"  ; (ú) u with acute
 }
 >!+h:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00f9}"  ; (ù) u with grave
+    Send "{u+00fa}"  ; (ú) u with acute
   else
-    Send "{u+00d9}"  ; (Ù) U with grave
+    Send "{u+00da}"  ; (Ú) U with acute
 }
 
 >!j:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00da}"  ; (Ú) U with acute
+    Send "{u+00d9}"  ; (Ù) U with grave
   else
-    Send "{u+00fa}"  ; (ú) u with acute
+    Send "{u+00f9}"  ; (ù) u with grave
 }
 >!+j:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00fa}"  ; (ú) u with acute
+    Send "{u+00f9}"  ; (ù) u with grave
   else
-    Send "{u+00da}"  ; (Ú) U with acute
+    Send "{u+00d9}"  ; (Ù) U with grave
 }
 
 >!y:: {
@@ -1888,7 +1910,7 @@ CapsLock::Backspace  ; assigns 'Backspace' also to 'Caps Lock'
 >!_::Send "{u+2014}"   ; (—) em dash
 
 >!=::Send "{u+00d7}"   ; (×) multiplication sign
->!+=::Send "{u+00f7}"  ; (÷) division sign
+>!+::Send "{u+00f7}"   ; (÷) division sign
 
 >![::Send "{u+00ab}"   ; («) left-pointing double angle quotation mark
 >!{::Send "{u+2039}"   ; (‹) left-pointing single angle quotation mark
@@ -1899,14 +1921,14 @@ CapsLock::Backspace  ; assigns 'Backspace' also to 'Caps Lock'
 >!;::Send "{u+00b0}"   ; (°) degree sign
 >!+;::Send "{u+00b7}"  ; (·) middle dot
 
->!'::Send "{u+2020}"   ; (†) dagger
->!+'::Send "{u+2021}"  ; (‡) double dagger
+>!'::Send "{u+266a}"   ; (♪) eighth note
+>!"::Send "{u+266b}"   ; (♫) beamed eighth notes
 
 >!\::Send "{u+2002}"   ;     en space
 >!|::Send "{u+2003}"   ;     em space
 
 >!/::Send "{u+00bf}"   ; (¿) inverted question mark
->!?::Send "{u+2026}"   ; (…) horizontal ellipsis
+>!?::Send "{u+2022}"   ; (•) bullet
 
 >!space::Send "{u+00a0}"   ; non-breaking space (NBSP)
 >!+space::Send "{u+00a0}"  ; non-breaking space (NBSP)
@@ -1915,7 +1937,9 @@ CapsLock::Backspace  ; assigns 'Backspace' also to 'Caps Lock'
 ; Configuration :  Compose Key Selector
 
 >!`::
->!sc056:: {
+>!~::
+>!sc056::
+>!+sc056:: {
   ihA := InputHook("L1", gEndKeys)
   ihA.Start()
   ihA.Wait()
@@ -2080,9 +2104,9 @@ CapsLock::Backspace  ; assigns 'Backspace' also to 'Caps Lock'
     if cmpCapitalP.Has(ihB.Input)
       Send cmpCapitalP[ihB.Input]
   }
-  else if (ihA.Input == ";") {
-    if cmpSemicolon.Has(ihB.Input)
-      Send cmpSemicolon[ihB.Input]
+  else if (ihA.Input == "|") {
+    if cmpVerticalLine.Has(ihB.Input)
+      Send cmpVerticalLine[ihB.Input]
   }
   else if (ihA.Input == "*") {
     if cmpAsterisk.Has(ihB.Input)
@@ -2119,6 +2143,10 @@ CapsLock::Backspace  ; assigns 'Backspace' also to 'Caps Lock'
   else if (ihA.Input == ">") {
     if cmpGreaterThan.Has(ihB.Input)
       Send cmpGreaterThan[ihB.Input]
+  }
+  else if (ihA.Input == ";") {
+    if cmpSemicolon.Has(ihB.Input)
+      Send cmpSemicolon[ihB.Input]
   }
   else if (ihA.Input == "1") {
     if cmpDigitOne.Has(ihB.Input)
