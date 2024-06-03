@@ -2,18 +2,16 @@
 
 ; Belgian AZERTY (Shift Lock for letters and digits) (for AutoHotkey v2).ahk - 2022-02-01
 
-; Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
+; Website :  https://pieter-degroote.github.io/UltimateKEYS/
+
+; GitHub :   https://github.com/pieter-degroote/UltimateKEYS-testing
 
 ; License :  GNU General Public License Version 3
 
-; GitHub :   github.com/pieter-degroote/UltimateKEYS-testing
 
-
-; Requirements :
+; Configuration :
 
 ; Keyboard layout (on Windows) :  US QWERTY
-
-; AutoHotkey v2 (www.autohotkey.com)
 
 
 
