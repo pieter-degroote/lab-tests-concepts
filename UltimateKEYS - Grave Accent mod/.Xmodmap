@@ -1,10 +1,10 @@
 ! UltimateKEYS - Grave Accent mod  (~/.Xmodmap)
 
-! Website :  www.ultimatekeys.info (pieter-degroote.github.io/UltimateKEYS/)
+! Website :  https://pieter-degroote.github.io/UltimateKEYS/
+
+! GitHub :   https://github.com/pieter-degroote/lab-tests-concepts
 
 ! License :  GNU General Public License Version 3
-
-! GitHub :   github.com/pieter-degroote/lab-tests-concepts
 
 
 keycode  10 = 1            exclam       exclamdown           onesuperior
