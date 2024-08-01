@@ -318,6 +318,6 @@ These modifications allow the scripts to work with "United States-International"
     $'::Send "' "     ; apostrophe
     $"::Send "`" "    ; quotation mark
 
-## 3. Replace all occurrences of ">!" by "<^>!"
+## 3. Replace all occurrences of ">!" with "<^>!"
 
-**Replace all occurrences of `>!` by `<^>!`.**
+**Replace all occurrences of `>!` with `<^>!`.**
