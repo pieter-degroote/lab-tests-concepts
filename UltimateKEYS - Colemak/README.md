@@ -1,6 +1,6 @@
-# UltimateKEYS - Colemak Edition (testing)
+# UltimateKEYS - Colemak Variant
 
-Colemak edition of UltimateKEYS - For AutoHotkey v2/v1.1 (Win) and XKB/Xmodmap (Linux)
+Colemak variant of UltimateKEYS - For AutoHotkey v2/v1.1 (Win) and XKB/Xmodmap (Linux)
 
 **Keyboard Layout Image&nbsp;:**
 
