@@ -461,7 +461,7 @@ include "%L"
 
 <Multi_key> <f> <d> : "ᶑ"  U1D91  # d with hook and tail
 <Multi_key> <f> <e> : "ɝ"  U025D  # small letter reversed open e with hook
-<Multi_key> <f> <f> : "ᶔ"  U1D94  # capital letter reversed open E with retroflex hook
+<Multi_key> <f> <f> : "ᶔ"  U1D94  # small letter reversed open e with retroflex hook
 <Multi_key> <f> <g> : "ꬶ"  UAB36  # small letter script g with crossed-tail
 <Multi_key> <f> <h> : "ꜧ"  UA727  # small letter heng
 <Multi_key> <f> <H> : "Ꜧ"  UA726  # capital letter heng
