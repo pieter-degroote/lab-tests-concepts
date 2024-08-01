@@ -6,7 +6,7 @@ Please note that this work is still in its testing stage (install/integrate at y
 
 This is a slimmed-down version (without Compose Key), just like the MSKLC edition.
 
-This 'UltimateKEYS (macOS).keylayout' file has been created by Ukelele 3.5.7 and edited with a text editor afterwards to get the desired results.
+This '.keylayout' file has been created by Ukelele 3.5.7 and edited with a text editor afterwards to get the desired results.
 
 Unfortunately, the 'Press and Hold' functionality is not active on this keyboard layout, since this requires an additional '.plist' file (integrated into the 'Press and Hold' application). That way, the popover (pop-up) with variants of specific letters does not work.
 
