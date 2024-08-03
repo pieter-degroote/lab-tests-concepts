@@ -1,6 +1,6 @@
 #requires AutoHotkey v2
 
-; UltimateKEYS (for AutoHotkey v2).ahk - 2024-07-31
+; UltimateKEYS (for AutoHotkey v2).ahk - 2024-08-03
 
 ; Website :  https://pieter-degroote.github.io/UltimateKEYS/
 
@@ -534,8 +534,6 @@ cmpSmallL["s"] := "{U+0283}"  ; (ʃ) Latin small letter esh
 cmpSmallL["S"] := "{U+01A9}"  ; (Ʃ) Latin capital letter esh
 cmpSmallL["u"] := "{U+028A}"  ; (ʊ) Latin small letter upsilon
 cmpSmallL["U"] := "{U+01B1}"  ; (Ʊ) Latin capital letter upsilon
-cmpSmallL["3"] := "{U+01B9}"  ; (ƹ) Latin small letter ezh reversed
-cmpSmallL["#"] := "{U+01B8}"  ; (Ƹ) Latin capital letter ezh reversed
 cmpSmallL["8"] := "{U+0223}"  ; (ȣ) small letter ou
 cmpSmallL["*"] := "{U+0222}"  ; (Ȣ) capital letter OU
 cmpSmallL["7"] := "{U+0242}"  ; (ɂ) small letter glottal stop
@@ -543,7 +541,7 @@ cmpSmallL["&"] := "{U+0241}"  ; (Ɂ) capital letter glottal stop
 cmpSmallL["?"] := "{U+0294}"  ; (ʔ) unicase letter glottal stop
 
 
-; Compose :  Turned Letters (r)
+; Compose :  Turned and Reversed Letters (r)
 
 global cmpSmallR := Map()
 cmpSmallR["a"] := "{U+0250}"  ; (ɐ) small letter turned a
@@ -577,6 +575,8 @@ cmpSmallR["w"] := "{U+028D}"  ; (ʍ) small letter turned w
 cmpSmallR["y"] := "{U+028E}"  ; (ʎ) small letter turned y
 cmpSmallR["z"] := "{U+0240}"  ; (ɀ) small letter z with swash tail
 cmpSmallR["Z"] := "{U+2C7F}"  ; (Ɀ) capital letter Z with swash tail
+cmpSmallR["5"] := "{U+01B9}"  ; (ƹ) Latin small letter ezh reversed
+cmpSmallR["%"] := "{U+01B8}"  ; (Ƹ) Latin capital letter ezh reversed
 
 
 ; Compose :  Currency Symbols ($)

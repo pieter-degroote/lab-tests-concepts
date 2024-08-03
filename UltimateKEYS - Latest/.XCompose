@@ -1,6 +1,6 @@
 include "%L"
 
-# UltimateKEYS - 2024-07-31  (~/.XCompose)
+# UltimateKEYS - 2024-08-03  (~/.XCompose)
 
 # Website :  https://pieter-degroote.github.io/UltimateKEYS/
 
@@ -506,16 +506,14 @@ include "%L"
 <Multi_key> <l> <S> : "Ʃ"  U01A9  # Latin capital letter esh
 <Multi_key> <l> <u> : "ʊ"  U028A  # Latin small letter upsilon
 <Multi_key> <l> <U> : "Ʊ"  U01B1  # Latin capital letter upsilon
-<Multi_key> <l> <3>          : "ƹ"  U01B9  # Latin small letter ezh reversed
-<Multi_key> <l> <numbersign> : "Ƹ"  U01B8  # Latin capital letter ezh reversed
-<Multi_key> <l> <8>          : "ȣ"  U0223  # small letter ou
-<Multi_key> <l> <asterisk>   : "Ȣ"  U0222  # capital letter OU
-<Multi_key> <l> <7>          : "ɂ"  U0242  # small letter glottal stop
-<Multi_key> <l> <ampersand>  : "Ɂ"  U0241  # capital letter glottal stop
-<Multi_key> <l> <question>   : "ʔ"  U0294  # unicase letter glottal stop
+<Multi_key> <l> <8>         : "ȣ"  U0223  # small letter ou
+<Multi_key> <l> <asterisk>  : "Ȣ"  U0222  # capital letter OU
+<Multi_key> <l> <7>         : "ɂ"  U0242  # small letter glottal stop
+<Multi_key> <l> <ampersand> : "Ɂ"  U0241  # capital letter glottal stop
+<Multi_key> <l> <question>  : "ʔ"  U0294  # unicase letter glottal stop
 
 
-# Turned Letters
+# Turned and Reversed Letters
 
 <Multi_key> <r> <a> : "ɐ"  U0250  # small letter turned a
 <Multi_key> <r> <A> : "Ɐ"  U2C6F  # capital letter turned A
@@ -548,6 +546,8 @@ include "%L"
 <Multi_key> <r> <y> : "ʎ"  U028E  # small letter turned y
 <Multi_key> <r> <z> : "ɀ"  U0240  # small letter z with swash tail
 <Multi_key> <r> <Z> : "Ɀ"  U2C7F  # capital letter Z with swash tail
+<Multi_key> <r> <5>       : "ƹ"  U01B9  # Latin small letter ezh reversed
+<Multi_key> <r> <percent> : "Ƹ"  U01B8  # Latin capital letter ezh reversed
 
 
 # Currency Symbols
