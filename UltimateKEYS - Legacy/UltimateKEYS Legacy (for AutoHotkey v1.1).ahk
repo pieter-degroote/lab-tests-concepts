@@ -1,6 +1,6 @@
 #requires AutoHotkey v1.1
 
-; UltimateKEYS Legacy (for AutoHotkey v1.1).ahk - 2024-07-31
+; UltimateKEYS Legacy (for AutoHotkey v1.1).ahk - 2024-08-03
 
 ; Website :  https://pieter-degroote.github.io/UltimateKEYS/
 
@@ -533,8 +533,6 @@ cmpSmallL.item["s"] := "{U+0283}"  ; (ʃ) Latin small letter esh
 cmpSmallL.item["S"] := "{U+01A9}"  ; (Ʃ) Latin capital letter esh
 cmpSmallL.item["u"] := "{U+028A}"  ; (ʊ) Latin small letter upsilon
 cmpSmallL.item["U"] := "{U+01B1}"  ; (Ʊ) Latin capital letter upsilon
-cmpSmallL.item["3"] := "{U+01B9}"  ; (ƹ) Latin small letter ezh reversed
-cmpSmallL.item["#"] := "{U+01B8}"  ; (Ƹ) Latin capital letter ezh reversed
 cmpSmallL.item["8"] := "{U+0223}"  ; (ȣ) small letter ou
 cmpSmallL.item["*"] := "{U+0222}"  ; (Ȣ) capital letter OU
 cmpSmallL.item["7"] := "{U+0242}"  ; (ɂ) small letter glottal stop
@@ -542,7 +540,7 @@ cmpSmallL.item["&"] := "{U+0241}"  ; (Ɂ) capital letter glottal stop
 cmpSmallL.item["?"] := "{U+0294}"  ; (ʔ) unicase letter glottal stop
 
 
-; Compose :  Turned Letters (r)
+; Compose :  Turned and Reversed Letters (r)
 
 cmpSmallR := ComObjCreate("Scripting.Dictionary")
 cmpSmallR.item["a"] := "{U+0250}"  ; (ɐ) small letter turned a
@@ -576,6 +574,8 @@ cmpSmallR.item["w"] := "{U+028D}"  ; (ʍ) small letter turned w
 cmpSmallR.item["y"] := "{U+028E}"  ; (ʎ) small letter turned y
 cmpSmallR.item["z"] := "{U+0240}"  ; (ɀ) small letter z with swash tail
 cmpSmallR.item["Z"] := "{U+2C7F}"  ; (Ɀ) capital letter Z with swash tail
+cmpSmallR.item["5"] := "{U+01B9}"  ; (ƹ) Latin small letter ezh reversed
+cmpSmallR.item["%"] := "{U+01B8}"  ; (Ƹ) Latin capital letter ezh reversed
 
 
 ; Compose :  Currency Symbols ($)
