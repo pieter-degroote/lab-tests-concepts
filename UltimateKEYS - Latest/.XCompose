@@ -1,6 +1,6 @@
 include "%L"
 
-# UltimateKEYS - 2024-08-03  (~/.XCompose)
+# UltimateKEYS - 2024-08-04  (~/.XCompose)
 
 # Website :  https://pieter-degroote.github.io/UltimateKEYS/
 
@@ -410,7 +410,7 @@ include "%L"
 <Multi_key> <equal> <U> : "Ű"  U0170  # U with double acute
 
 
-# Hook and Horn
+# Hook, Horn and Variations
 
 <Multi_key> <h> <b> : "ɓ"  U0253  # b with hook
 <Multi_key> <h> <B> : "Ɓ"  U0181  # B with hook
@@ -457,7 +457,7 @@ include "%L"
 <Multi_key> <h> <Z> : "Ȥ"  U0224  # Z with hook
 
 
-# Retroflex Hook, Right Hook, Crossed-Tail and Variations
+# Retroflex Hook and Variations
 
 <Multi_key> <f> <d> : "ᶑ"  U1D91  # d with hook and tail
 <Multi_key> <f> <e> : "ɝ"  U025D  # small letter reversed open e with hook
@@ -475,6 +475,14 @@ include "%L"
 <Multi_key> <f> <T> : "Ʈ"  U01AE  # T with retroflex hook
 <Multi_key> <f> <v> : "ⱱ"  U2C71  # v with right hook
 <Multi_key> <f> <z> : "ʐ"  U0290  # z with retroflex hook
+
+
+# Swash Tail
+
+<Multi_key> <t> <s> : "ȿ"  U023F  # s with swash tail
+<Multi_key> <t> <S> : "Ȿ"  U2C7E  # S with swash tail
+<Multi_key> <t> <z> : "ɀ"  U0240  # z with swash tail
+<Multi_key> <t> <Z> : "Ɀ"  U2C7F  # Z with swash tail
 
 
 # Latin Greek Letters and Variations
@@ -536,18 +544,14 @@ include "%L"
 <Multi_key> <r> <q> : "ɒ"  U0252  # Latin small letter turned alpha
 <Multi_key> <r> <Q> : "Ɒ"  U2C70  # Latin capital letter turned alpha
 <Multi_key> <r> <r> : "ɹ"  U0279  # small letter turned r
-<Multi_key> <r> <s> : "ȿ"  U023F  # small letter s with swash tail
-<Multi_key> <r> <S> : "Ȿ"  U2C7E  # capital letter S with swash tail
 <Multi_key> <r> <t> : "ʇ"  U0287  # small letter turned t
 <Multi_key> <r> <T> : "Ʇ"  UA7B1  # capital letter turned T
 <Multi_key> <r> <v> : "ʌ"  U028C  # small letter turned v
 <Multi_key> <r> <V> : "Ʌ"  U0245  # capital letter turned V
 <Multi_key> <r> <w> : "ʍ"  U028D  # small letter turned w
 <Multi_key> <r> <y> : "ʎ"  U028E  # small letter turned y
-<Multi_key> <r> <z> : "ɀ"  U0240  # small letter z with swash tail
-<Multi_key> <r> <Z> : "Ɀ"  U2C7F  # capital letter Z with swash tail
-<Multi_key> <r> <5>       : "ƹ"  U01B9  # Latin small letter ezh reversed
-<Multi_key> <r> <percent> : "Ƹ"  U01B8  # Latin capital letter ezh reversed
+<Multi_key> <r> <z> : "ƹ"  U01B9  # Latin small letter ezh reversed
+<Multi_key> <r> <Z> : "Ƹ"  U01B8  # Latin capital letter ezh reversed
 
 
 # Currency Symbols
