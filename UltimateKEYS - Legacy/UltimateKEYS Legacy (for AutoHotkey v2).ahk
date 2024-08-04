@@ -1,6 +1,6 @@
 #requires AutoHotkey v2
 
-; UltimateKEYS Legacy (for AutoHotkey v2).ahk - 2024-08-03
+; UltimateKEYS Legacy (for AutoHotkey v2).ahk - 2024-08-04
 
 ; Website :  https://pieter-degroote.github.io/UltimateKEYS/
 
@@ -435,7 +435,7 @@ cmpDoubleAcute["u"] := "{U+0171}"  ; (ű) u with double acute
 cmpDoubleAcute["U"] := "{U+0170}"  ; (Ű) U with double acute
 
 
-; Compose :  Hook and Horn (h)
+; Compose :  Hook, Horn and Variations (h)
 
 global cmpSmallH := Map()
 cmpSmallH["b"] := "{U+0253}"  ; (ɓ) b with hook
@@ -483,7 +483,7 @@ cmpSmallH["z"] := "{U+0225}"  ; (ȥ) z with hook
 cmpSmallH["Z"] := "{U+0224}"  ; (Ȥ) Z with hook
 
 
-; Compose :  Retroflex Hook, Right Hook, Crossed-Tail and Variations (f)
+; Compose :  Retroflex Hook and Variations (f)
 
 global cmpSmallF := Map()
 cmpSmallF["d"] := "{U+1D91}"  ; (ᶑ) d with hook and tail
@@ -502,6 +502,15 @@ cmpSmallF["t"] := "{U+0288}"  ; (ʈ) t with retroflex hook
 cmpSmallF["T"] := "{U+01AE}"  ; (Ʈ) T with retroflex hook
 cmpSmallF["v"] := "{U+2C71}"  ; (ⱱ) v with right hook
 cmpSmallF["z"] := "{U+0290}"  ; (ʐ) z with retroflex hook
+
+
+; Compose :  Swash Tail (t)
+
+global cmpSmallT := Map()
+cmpSmallT["s"] := "{U+023F}"  ; (ȿ) s with swash tail
+cmpSmallT["S"] := "{U+2C7E}"  ; (Ȿ) S with swash tail
+cmpSmallT["z"] := "{U+0240}"  ; (ɀ) z with swash tail
+cmpSmallT["Z"] := "{U+2C7F}"  ; (Ɀ) Z with swash tail
 
 
 ; Compose :  Latin Greek Letters and Variations (l)
@@ -565,18 +574,14 @@ cmpSmallR["o"] := "{U+0264}"  ; (ɤ) small letter ram's horn (baby gamma)
 cmpSmallR["q"] := "{U+0252}"  ; (ɒ) Latin small letter turned alpha
 cmpSmallR["Q"] := "{U+2C70}"  ; (Ɒ) Latin capital letter turned alpha
 cmpSmallR["r"] := "{U+0279}"  ; (ɹ) small letter turned r
-cmpSmallR["s"] := "{U+023F}"  ; (ȿ) small letter s with swash tail
-cmpSmallR["S"] := "{U+2C7E}"  ; (Ȿ) capital letter S with swash tail
 cmpSmallR["t"] := "{U+0287}"  ; (ʇ) small letter turned t
 cmpSmallR["T"] := "{U+A7B1}"  ; (Ʇ) small letter turned T
 cmpSmallR["v"] := "{U+028C}"  ; (ʌ) small letter turned v
 cmpSmallR["V"] := "{U+0245}"  ; (Ʌ) capital letter turned V
 cmpSmallR["w"] := "{U+028D}"  ; (ʍ) small letter turned w
 cmpSmallR["y"] := "{U+028E}"  ; (ʎ) small letter turned y
-cmpSmallR["z"] := "{U+0240}"  ; (ɀ) small letter z with swash tail
-cmpSmallR["Z"] := "{U+2C7F}"  ; (Ɀ) capital letter Z with swash tail
-cmpSmallR["5"] := "{U+01B9}"  ; (ƹ) Latin small letter ezh reversed
-cmpSmallR["%"] := "{U+01B8}"  ; (Ƹ) Latin capital letter ezh reversed
+cmpSmallR["z"] := "{U+01B9}"  ; (ƹ) Latin small letter ezh reversed
+cmpSmallR["Z"] := "{U+01B8}"  ; (Ƹ) Latin capital letter ezh reversed
 
 
 ; Compose :  Currency Symbols ($)
@@ -918,7 +923,6 @@ global cmpSmallN := Map()
 global cmpCapitalN := Map()
 global cmpCapitalO := Map()
 global cmpCapitalS := Map()
-global cmpSmallT := Map()
 global cmpCapitalT := Map()
 cmpArrow["e"] := "{U+00E6}"      ; (æ) letter ae
 cmpCapitalA["E"] := "{U+00C6}"   ; (Æ) letter AE
@@ -1990,6 +1994,10 @@ cmpSmallN["0"] := "{U+277F}"  ; (❿) dingbat negative circled digit 10
     if cmpSmallF.Has(ihB.Input)
       Send cmpSmallF[ihB.Input]
   }
+  else if (ihA.Input == "t") {
+    if cmpSmallT.Has(ihB.Input)
+      Send cmpSmallT[ihB.Input]
+  }
   else if (ihA.Input == "l") {
     if cmpSmallL.Has(ihB.Input)
       Send cmpSmallL[ihB.Input]
@@ -2069,10 +2077,6 @@ cmpSmallN["0"] := "{U+277F}"  ; (❿) dingbat negative circled digit 10
   else if (ihA.Input == "S") {
     if cmpCapitalS.Has(ihB.Input)
       Send cmpCapitalS[ihB.Input]
-  }
-  else if (ihA.Input == "t") {
-    if cmpSmallT.Has(ihB.Input)
-      Send cmpSmallT[ihB.Input]
   }
   else if (ihA.Input == "T") {
     if cmpCapitalT.Has(ihB.Input)
