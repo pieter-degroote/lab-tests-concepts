@@ -1,6 +1,6 @@
 include "%L"
 
-# UltimateKEYS - 2024-08-04  (~/.XCompose)
+# UltimateKEYS - 2024-08-05  (~/.XCompose)
 
 # Website :  https://pieter-degroote.github.io/UltimateKEYS/
 
@@ -477,8 +477,10 @@ include "%L"
 <Multi_key> <f> <z> : "ʐ"  U0290  # z with retroflex hook
 
 
-# Swash Tail
+# Swash Tail and Variations
 
+<Multi_key> <t> <l> : "ⱡ"  U2C61  # l with double bar
+<Multi_key> <t> <L> : "Ⱡ"  U2C60  # L with double bar
 <Multi_key> <t> <s> : "ȿ"  U023F  # s with swash tail
 <Multi_key> <t> <S> : "Ȿ"  U2C7E  # S with swash tail
 <Multi_key> <t> <z> : "ɀ"  U0240  # z with swash tail
