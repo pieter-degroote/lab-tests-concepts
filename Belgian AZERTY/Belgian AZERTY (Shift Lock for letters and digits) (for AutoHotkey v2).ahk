@@ -26,147 +26,147 @@ global gEndKeys := "{bs}{del}{esc}{home}{end}"  ; ends dead key input on specifi
 ; Dead Key :  Circumflex Accent
 
 global dkCircumflex := Map()
-dkCircumflex["a"] := "{U+00E2}"  ; (â) a with circumflex
-dkCircumflex["A"] := "{U+00C2}"  ; (Â) A with circumflex
-dkCircumflex["c"] := "{U+0109}"  ; (ĉ) c with circumflex
-dkCircumflex["C"] := "{U+0108}"  ; (Ĉ) C with circumflex
-dkCircumflex["e"] := "{U+00EA}"  ; (ê) e with circumflex
-dkCircumflex["E"] := "{U+00CA}"  ; (Ê) E with circumflex
-dkCircumflex["g"] := "{U+011D}"  ; (ĝ) g with circumflex
-dkCircumflex["G"] := "{U+011C}"  ; (Ĝ) G with circumflex
-dkCircumflex["h"] := "{U+0125}"  ; (ĥ) h with circumflex
-dkCircumflex["H"] := "{U+0124}"  ; (Ĥ) H with circumflex
-dkCircumflex["i"] := "{U+00EE}"  ; (î) i with circumflex
-dkCircumflex["I"] := "{U+00CE}"  ; (Î) I with circumflex
-dkCircumflex["j"] := "{U+0135}"  ; (ĵ) j with circumflex
-dkCircumflex["J"] := "{U+0134}"  ; (Ĵ) J with circumflex
-dkCircumflex["o"] := "{U+00F4}"  ; (ô) o with circumflex
-dkCircumflex["O"] := "{U+00D4}"  ; (Ô) O with circumflex
-dkCircumflex["s"] := "{U+015D}"  ; (ŝ) s with circumflex
-dkCircumflex["S"] := "{U+015C}"  ; (Ŝ) S with circumflex
-dkCircumflex["u"] := "{U+00FB}"  ; (û) u with circumflex
-dkCircumflex["U"] := "{U+00DB}"  ; (Û) U with circumflex
-dkCircumflex["w"] := "{U+0175}"  ; (ŵ) w with circumflex
-dkCircumflex["W"] := "{U+0174}"  ; (Ŵ) W with circumflex
-dkCircumflex["y"] := "{U+0177}"  ; (ŷ) y with circumflex
-dkCircumflex["Y"] := "{U+0176}"  ; (Ŷ) Y with circumflex
-dkCircumflex["z"] := "{U+1E91}"  ; (ẑ) z with circumflex
-dkCircumflex["Z"] := "{U+1E90}"  ; (Ẑ) Z with circumflex
+dkCircumflex["a"] := "{u+00e2}"  ; (â) a with circumflex
+dkCircumflex["A"] := "{u+00c2}"  ; (Â) A with circumflex
+dkCircumflex["c"] := "{u+0109}"  ; (ĉ) c with circumflex
+dkCircumflex["C"] := "{u+0108}"  ; (Ĉ) C with circumflex
+dkCircumflex["e"] := "{u+00ea}"  ; (ê) e with circumflex
+dkCircumflex["E"] := "{u+00ca}"  ; (Ê) E with circumflex
+dkCircumflex["g"] := "{u+011d}"  ; (ĝ) g with circumflex
+dkCircumflex["G"] := "{u+011c}"  ; (Ĝ) G with circumflex
+dkCircumflex["h"] := "{u+0125}"  ; (ĥ) h with circumflex
+dkCircumflex["H"] := "{u+0124}"  ; (Ĥ) H with circumflex
+dkCircumflex["i"] := "{u+00ee}"  ; (î) i with circumflex
+dkCircumflex["I"] := "{u+00ce}"  ; (Î) I with circumflex
+dkCircumflex["j"] := "{u+0135}"  ; (ĵ) j with circumflex
+dkCircumflex["J"] := "{u+0134}"  ; (Ĵ) J with circumflex
+dkCircumflex["o"] := "{u+00f4}"  ; (ô) o with circumflex
+dkCircumflex["O"] := "{u+00d4}"  ; (Ô) O with circumflex
+dkCircumflex["s"] := "{u+015d}"  ; (ŝ) s with circumflex
+dkCircumflex["S"] := "{u+015c}"  ; (Ŝ) S with circumflex
+dkCircumflex["u"] := "{u+00fb}"  ; (û) u with circumflex
+dkCircumflex["U"] := "{u+00db}"  ; (Û) U with circumflex
+dkCircumflex["w"] := "{u+0175}"  ; (ŵ) w with circumflex
+dkCircumflex["W"] := "{u+0174}"  ; (Ŵ) W with circumflex
+dkCircumflex["y"] := "{u+0177}"  ; (ŷ) y with circumflex
+dkCircumflex["Y"] := "{u+0176}"  ; (Ŷ) Y with circumflex
+dkCircumflex["z"] := "{u+1e91}"  ; (ẑ) z with circumflex
+dkCircumflex["Z"] := "{u+1e90}"  ; (Ẑ) Z with circumflex
 dkCircumflex[" "] := "{^}"       ;     circumflex accent
 
 
 ; Dead Key :  Acute Accent
 
 global dkAcuteAccent := Map()
-dkAcuteAccent["a"] := "{U+00E1}"  ; (á) a with acute
-dkAcuteAccent["A"] := "{U+00C1}"  ; (Á) A with acute
-dkAcuteAccent["c"] := "{U+0107}"  ; (ć) c with acute
-dkAcuteAccent["C"] := "{U+0106}"  ; (Ć) C with acute
-dkAcuteAccent["e"] := "{U+00E9}"  ; (é) e with acute
-dkAcuteAccent["E"] := "{U+00C9}"  ; (É) E with acute
-dkAcuteAccent["f"] := "{U+0192}"  ; (ƒ) f with hook
-dkAcuteAccent["F"] := "{U+0191}"  ; (Ƒ) F with hook
-dkAcuteAccent["g"] := "{U+01F5}"  ; (ǵ) g with acute
-dkAcuteAccent["G"] := "{U+01F4}"  ; (Ǵ) G with acute
-dkAcuteAccent["i"] := "{U+00ED}"  ; (í) i with acute
-dkAcuteAccent["I"] := "{U+00CD}"  ; (Í) I with acute
-dkAcuteAccent["j"] := "{U+0133}"  ; (ĳ) ligature ij
-dkAcuteAccent["J"] := "{U+0132}"  ; (Ĳ) ligature IJ
-dkAcuteAccent["k"] := "{U+1E31}"  ; (ḱ) k with acute
-dkAcuteAccent["K"] := "{U+1E30}"  ; (Ḱ) K with acute
-dkAcuteAccent["l"] := "{U+013A}"  ; (ĺ) l with acute
-dkAcuteAccent["L"] := "{U+0139}"  ; (Ĺ) L with acute
-dkAcuteAccent["m"] := "{U+1E3F}"  ; (ḿ) m with acute
-dkAcuteAccent["M"] := "{U+1E3E}"  ; (Ḿ) M with acute
-dkAcuteAccent["n"] := "{U+0144}"  ; (ń) n with acute
-dkAcuteAccent["N"] := "{U+0143}"  ; (Ń) N with acute
-dkAcuteAccent["o"] := "{U+00F3}"  ; (ó) o with acute
-dkAcuteAccent["O"] := "{U+00D3}"  ; (Ó) O with acute
-dkAcuteAccent["p"] := "{U+1E55}"  ; (ṕ) p with acute
-dkAcuteAccent["P"] := "{U+1E54}"  ; (Ṕ) P with acute
-dkAcuteAccent["r"] := "{U+0155}"  ; (ŕ) r with acute
-dkAcuteAccent["R"] := "{U+0154}"  ; (Ŕ) R with acute
-dkAcuteAccent["s"] := "{U+015B}"  ; (ś) s with acute
-dkAcuteAccent["S"] := "{U+015A}"  ; (Ś) S with acute
-dkAcuteAccent["u"] := "{U+00FA}"  ; (ú) u with acute
-dkAcuteAccent["U"] := "{U+00DA}"  ; (Ú) U with acute
-dkAcuteAccent["w"] := "{U+1E83}"  ; (ẃ) w with acute
-dkAcuteAccent["W"] := "{U+1E82}"  ; (Ẃ) W with acute
-dkAcuteAccent["y"] := "{U+00FD}"  ; (ý) y with acute
-dkAcuteAccent["Y"] := "{U+00DD}"  ; (Ý) Y with acute
-dkAcuteAccent["z"] := "{U+017A}"  ; (ź) z with acute
-dkAcuteAccent["Z"] := "{U+0179}"  ; (Ź) Z with acute
-dkAcuteAccent[" "] := "{U+00B4}"  ; (´) acute accent
+dkAcuteAccent["a"] := "{u+00e1}"  ; (á) a with acute
+dkAcuteAccent["A"] := "{u+00c1}"  ; (Á) A with acute
+dkAcuteAccent["c"] := "{u+0107}"  ; (ć) c with acute
+dkAcuteAccent["C"] := "{u+0106}"  ; (Ć) C with acute
+dkAcuteAccent["e"] := "{u+00e9}"  ; (é) e with acute
+dkAcuteAccent["E"] := "{u+00c9}"  ; (É) E with acute
+dkAcuteAccent["f"] := "{u+0192}"  ; (ƒ) f with hook
+dkAcuteAccent["F"] := "{u+0191}"  ; (Ƒ) F with hook
+dkAcuteAccent["g"] := "{u+01f5}"  ; (ǵ) g with acute
+dkAcuteAccent["G"] := "{u+01f4}"  ; (Ǵ) G with acute
+dkAcuteAccent["i"] := "{u+00ed}"  ; (í) i with acute
+dkAcuteAccent["I"] := "{u+00cd}"  ; (Í) I with acute
+dkAcuteAccent["j"] := "{u+0133}"  ; (ĳ) ligature ij
+dkAcuteAccent["J"] := "{u+0132}"  ; (Ĳ) ligature IJ
+dkAcuteAccent["k"] := "{u+1e31}"  ; (ḱ) k with acute
+dkAcuteAccent["K"] := "{u+1e30}"  ; (Ḱ) K with acute
+dkAcuteAccent["l"] := "{u+013a}"  ; (ĺ) l with acute
+dkAcuteAccent["L"] := "{u+0139}"  ; (Ĺ) L with acute
+dkAcuteAccent["m"] := "{u+1e3f}"  ; (ḿ) m with acute
+dkAcuteAccent["M"] := "{u+1e3e}"  ; (Ḿ) M with acute
+dkAcuteAccent["n"] := "{u+0144}"  ; (ń) n with acute
+dkAcuteAccent["N"] := "{u+0143}"  ; (Ń) N with acute
+dkAcuteAccent["o"] := "{u+00f3}"  ; (ó) o with acute
+dkAcuteAccent["O"] := "{u+00d3}"  ; (Ó) O with acute
+dkAcuteAccent["p"] := "{u+1e55}"  ; (ṕ) p with acute
+dkAcuteAccent["P"] := "{u+1e54}"  ; (Ṕ) P with acute
+dkAcuteAccent["r"] := "{u+0155}"  ; (ŕ) r with acute
+dkAcuteAccent["R"] := "{u+0154}"  ; (Ŕ) R with acute
+dkAcuteAccent["s"] := "{u+015b}"  ; (ś) s with acute
+dkAcuteAccent["S"] := "{u+015a}"  ; (Ś) S with acute
+dkAcuteAccent["u"] := "{u+00fa}"  ; (ú) u with acute
+dkAcuteAccent["U"] := "{u+00da}"  ; (Ú) U with acute
+dkAcuteAccent["w"] := "{u+1e83}"  ; (ẃ) w with acute
+dkAcuteAccent["W"] := "{u+1e82}"  ; (Ẃ) W with acute
+dkAcuteAccent["y"] := "{u+00fd}"  ; (ý) y with acute
+dkAcuteAccent["Y"] := "{u+00dd}"  ; (Ý) Y with acute
+dkAcuteAccent["z"] := "{u+017a}"  ; (ź) z with acute
+dkAcuteAccent["Z"] := "{u+0179}"  ; (Ź) Z with acute
+dkAcuteAccent[" "] := "{u+00b4}"  ; (´) acute accent
 
 
 ; Dead Key :  Diaeresis
 
 global dkDiaeresis := Map()
-dkDiaeresis["a"] := "{U+00E4}"  ; (ä) a with diaeresis
-dkDiaeresis["A"] := "{U+00C4}"  ; (Ä) A with diaeresis
-dkDiaeresis["e"] := "{U+00EB}"  ; (ë) e with diaeresis
-dkDiaeresis["E"] := "{U+00CB}"  ; (Ë) E with diaeresis
-dkDiaeresis["h"] := "{U+1E27}"  ; (ḧ) h with diaeresis
-dkDiaeresis["H"] := "{U+1E26}"  ; (Ḧ) H with diaeresis
-dkDiaeresis["i"] := "{U+00EF}"  ; (ï) i with diaeresis
-dkDiaeresis["I"] := "{U+00CF}"  ; (Ï) I with diaeresis
-dkDiaeresis["o"] := "{U+00F6}"  ; (ö) o with diaeresis
-dkDiaeresis["O"] := "{U+00D6}"  ; (Ö) O with diaeresis
-dkDiaeresis["t"] := "{U+1E97}"  ; (ẗ) t with diaeresis
-dkDiaeresis["u"] := "{U+00FC}"  ; (ü) u with diaeresis
-dkDiaeresis["U"] := "{U+00DC}"  ; (Ü) U with diaeresis
-dkDiaeresis["w"] := "{U+1E85}"  ; (ẅ) w with diaeresis
-dkDiaeresis["W"] := "{U+1E84}"  ; (Ẅ) W with diaeresis
-dkDiaeresis["x"] := "{U+1E8D}"  ; (ẍ) x with diaeresis
-dkDiaeresis["X"] := "{U+1E8C}"  ; (Ẍ) X with diaeresis
-dkDiaeresis["y"] := "{U+00FF}"  ; (ÿ) y with diaeresis
-dkDiaeresis["Y"] := "{U+0178}"  ; (Ÿ) Y with diaeresis
-dkDiaeresis[" "] := "{U+00A8}"  ; (¨) diaeresis
+dkDiaeresis["a"] := "{u+00e4}"  ; (ä) a with diaeresis
+dkDiaeresis["A"] := "{u+00c4}"  ; (Ä) A with diaeresis
+dkDiaeresis["e"] := "{u+00eb}"  ; (ë) e with diaeresis
+dkDiaeresis["E"] := "{u+00cb}"  ; (Ë) E with diaeresis
+dkDiaeresis["h"] := "{u+1e27}"  ; (ḧ) h with diaeresis
+dkDiaeresis["H"] := "{u+1e26}"  ; (Ḧ) H with diaeresis
+dkDiaeresis["i"] := "{u+00ef}"  ; (ï) i with diaeresis
+dkDiaeresis["I"] := "{u+00cf}"  ; (Ï) I with diaeresis
+dkDiaeresis["o"] := "{u+00f6}"  ; (ö) o with diaeresis
+dkDiaeresis["O"] := "{u+00d6}"  ; (Ö) O with diaeresis
+dkDiaeresis["t"] := "{u+1e97}"  ; (ẗ) t with diaeresis
+dkDiaeresis["u"] := "{u+00fc}"  ; (ü) u with diaeresis
+dkDiaeresis["U"] := "{u+00dc}"  ; (Ü) U with diaeresis
+dkDiaeresis["w"] := "{u+1e85}"  ; (ẅ) w with diaeresis
+dkDiaeresis["W"] := "{u+1e84}"  ; (Ẅ) W with diaeresis
+dkDiaeresis["x"] := "{u+1e8d}"  ; (ẍ) x with diaeresis
+dkDiaeresis["X"] := "{u+1e8c}"  ; (Ẍ) X with diaeresis
+dkDiaeresis["y"] := "{u+00ff}"  ; (ÿ) y with diaeresis
+dkDiaeresis["Y"] := "{u+0178}"  ; (Ÿ) Y with diaeresis
+dkDiaeresis[" "] := "{u+00a8}"  ; (¨) diaeresis
 
 
 ; Dead Key :  Grave Accent
 
 global dkGraveAccent := Map()
-dkGraveAccent["a"] := "{U+00E0}"  ; (à) a with grave
-dkGraveAccent["A"] := "{U+00C0}"  ; (À) A with grave
-dkGraveAccent["e"] := "{U+00E8}"  ; (è) e with grave
-dkGraveAccent["E"] := "{U+00C8}"  ; (È) E with grave
-dkGraveAccent["i"] := "{U+00EC}"  ; (ì) i with grave
-dkGraveAccent["I"] := "{U+00CC}"  ; (Ì) I with grave
-dkGraveAccent["n"] := "{U+01F9}"  ; (ǹ) n with grave
-dkGraveAccent["N"] := "{U+01F8}"  ; (Ǹ) N with grave
-dkGraveAccent["o"] := "{U+00F2}"  ; (ò) o with grave
-dkGraveAccent["O"] := "{U+00D2}"  ; (Ò) O with grave
-dkGraveAccent["u"] := "{U+00F9}"  ; (ù) u with grave
-dkGraveAccent["U"] := "{U+00D9}"  ; (Ù) U with grave
-dkGraveAccent["w"] := "{U+1E81}"  ; (ẁ) w with grave
-dkGraveAccent["W"] := "{U+1E80}"  ; (Ẁ) W with grave
-dkGraveAccent["y"] := "{U+1EF3}"  ; (ỳ) y with grave
-dkGraveAccent["Y"] := "{U+1EF2}"  ; (Ỳ) Y with grave
+dkGraveAccent["a"] := "{u+00e0}"  ; (à) a with grave
+dkGraveAccent["A"] := "{u+00c0}"  ; (À) A with grave
+dkGraveAccent["e"] := "{u+00e8}"  ; (è) e with grave
+dkGraveAccent["E"] := "{u+00c8}"  ; (È) E with grave
+dkGraveAccent["i"] := "{u+00ec}"  ; (ì) i with grave
+dkGraveAccent["I"] := "{u+00cc}"  ; (Ì) I with grave
+dkGraveAccent["n"] := "{u+01f9}"  ; (ǹ) n with grave
+dkGraveAccent["N"] := "{u+01f8}"  ; (Ǹ) N with grave
+dkGraveAccent["o"] := "{u+00f2}"  ; (ò) o with grave
+dkGraveAccent["O"] := "{u+00d2}"  ; (Ò) O with grave
+dkGraveAccent["u"] := "{u+00f9}"  ; (ù) u with grave
+dkGraveAccent["U"] := "{u+00d9}"  ; (Ù) U with grave
+dkGraveAccent["w"] := "{u+1e81}"  ; (ẁ) w with grave
+dkGraveAccent["W"] := "{u+1e80}"  ; (Ẁ) W with grave
+dkGraveAccent["y"] := "{u+1ef3}"  ; (ỳ) y with grave
+dkGraveAccent["Y"] := "{u+1ef2}"  ; (Ỳ) Y with grave
 dkGraveAccent[" "] := "``"        ;     grave accent
 
 
 ; Dead Key :  Tilde
 
 global dkTilde := Map()
-dkTilde["a"] := "{U+00E3}"  ; (ã) a with tilde
-dkTilde["A"] := "{U+00C3}"  ; (Ã) A with tilde
-dkTilde["e"] := "{U+1EBD}"  ; (ẽ) e with tilde
-dkTilde["E"] := "{U+1EBC}"  ; (Ẽ) E with tilde
-dkTilde["i"] := "{U+0129}"  ; (ĩ) i with tilde
-dkTilde["I"] := "{U+0128}"  ; (Ĩ) I with tilde
-dkTilde["l"] := "{U+026B}"  ; (ɫ) l with middle tilde
-dkTilde["L"] := "{U+2C62}"  ; (Ɫ) L with middle tilde
-dkTilde["n"] := "{U+00F1}"  ; (ñ) n with tilde
-dkTilde["N"] := "{U+00D1}"  ; (Ñ) N with tilde
-dkTilde["o"] := "{U+00F5}"  ; (õ) o with tilde
-dkTilde["O"] := "{U+00D5}"  ; (Õ) O with tilde
-dkTilde["u"] := "{U+0169}"  ; (ũ) u with tilde
-dkTilde["U"] := "{U+0168}"  ; (Ũ) U with tilde
-dkTilde["v"] := "{U+1E7D}"  ; (ṽ) v with tilde
-dkTilde["V"] := "{U+1E7C}"  ; (Ṽ) V with tilde
-dkTilde["y"] := "{U+1EF9}"  ; (ỹ) y with tilde
-dkTilde["Y"] := "{U+1EF8}"  ; (Ỹ) Y with tilde
+dkTilde["a"] := "{u+00e3}"  ; (ã) a with tilde
+dkTilde["A"] := "{u+00c3}"  ; (Ã) A with tilde
+dkTilde["e"] := "{u+1ebd}"  ; (ẽ) e with tilde
+dkTilde["E"] := "{u+1ebc}"  ; (Ẽ) E with tilde
+dkTilde["i"] := "{u+0129}"  ; (ĩ) i with tilde
+dkTilde["I"] := "{u+0128}"  ; (Ĩ) I with tilde
+dkTilde["l"] := "{u+026b}"  ; (ɫ) l with middle tilde
+dkTilde["L"] := "{u+2c62}"  ; (Ɫ) L with middle tilde
+dkTilde["n"] := "{u+00f1}"  ; (ñ) n with tilde
+dkTilde["N"] := "{u+00d1}"  ; (Ñ) N with tilde
+dkTilde["o"] := "{u+00f5}"  ; (õ) o with tilde
+dkTilde["O"] := "{u+00d5}"  ; (Õ) O with tilde
+dkTilde["u"] := "{u+0169}"  ; (ũ) u with tilde
+dkTilde["U"] := "{u+0168}"  ; (Ũ) U with tilde
+dkTilde["v"] := "{u+1e7d}"  ; (ṽ) v with tilde
+dkTilde["V"] := "{u+1e7c}"  ; (Ṽ) V with tilde
+dkTilde["y"] := "{u+1ef9}"  ; (ỹ) y with tilde
+dkTilde["Y"] := "{u+1ef8}"  ; (Ỹ) Y with tilde
 dkTilde[" "] := "~"         ;     tilde
 
 
@@ -197,11 +197,11 @@ $2:: {
   if GetKeyState("CapsLock", "T")
     Send "2"         ; digit 2
   else
-    Send "{U+00E9}"  ; (é) e with acute
+    Send "{u+00e9}"  ; (é) e with acute
 }
 $+2:: {
   if GetKeyState("CapsLock", "T")
-    Send "{U+00E9}"  ; (é) e with acute
+    Send "{u+00e9}"  ; (é) e with acute
   else
     Send "2"         ; digit 2
 }
@@ -251,17 +251,17 @@ $+5:: {
     Send "5"          ; digit 5
 }
 
->!5::Send "{U+20AC}"  ; (€) euro sign
+>!5::Send "{u+20ac}"  ; (€) euro sign
 
 $6:: {
   if GetKeyState("CapsLock", "T")
     Send "6"         ; digit 6
   else
-    Send "{U+00A7}"  ; (§) section sign
+    Send "{u+00a7}"  ; (§) section sign
 }
 $+6:: {
   if GetKeyState("CapsLock", "T")
-    Send "{U+00A7}"  ; (§) section sign
+    Send "{u+00a7}"  ; (§) section sign
   else
     Send "6"         ; digit 6
 }
@@ -272,11 +272,11 @@ $7:: {
   if GetKeyState("CapsLock", "T")
     Send "7"         ; digit 7
   else
-    Send "{U+00E8}"  ; (è) e with grave
+    Send "{u+00e8}"  ; (è) e with grave
 }
 $+7:: {
   if GetKeyState("CapsLock", "T")
-    Send "{U+00E8}"  ; (è) e with grave
+    Send "{u+00e8}"  ; (è) e with grave
   else
     Send "7"         ; digit 7
 }
@@ -298,11 +298,11 @@ $9:: {
   if GetKeyState("CapsLock", "T")
     Send "9"         ; digit 9
   else
-    Send "{U+00E7}"  ; (ç) c with cedilla
+    Send "{u+00e7}"  ; (ç) c with cedilla
 }
 $+9:: {
   if GetKeyState("CapsLock", "T")
-    Send "{U+00E7}"  ; (ç) c with cedilla
+    Send "{u+00e7}"  ; (ç) c with cedilla
   else
     Send "9"         ; digit 9
 }
@@ -313,11 +313,11 @@ $0:: {
   if GetKeyState("CapsLock", "T")
     Send "0"         ; digit 0
   else
-    Send "{U+00E0}"  ; (à) a with grave
+    Send "{u+00e0}"  ; (à) a with grave
 }
 $+0:: {
   if GetKeyState("CapsLock", "T")
-    Send "{U+00E0}"  ; (à) a with grave
+    Send "{u+00e0}"  ; (à) a with grave
   else
     Send "0"         ; digit 0
 }
@@ -325,11 +325,11 @@ $+0:: {
 >!0::Send "{}}"      ; right curly bracket
 
 $-::Send ")"         ; right parenthesis
-$_::Send "{U+00B0}"  ; (°) degree sign
+$_::Send "{u+00b0}"  ; (°) degree sign
 
 $=::Send "-"          ; hyphen-minus
 $+::Send "_"          ; underscore
->!=::Send "{U+00C7}"  ; (Ç) C with cedilla
+>!=::Send "{u+00c7}"  ; (Ç) C with cedilla
 
 $m::Send ","   ; comma
 $+m::Send "?"  ; question mark
@@ -356,124 +356,124 @@ $?::Send "{+}"  ; plus sign
 
 >!q:: {
   if GetKeyState("CapsLock", "T")
-    Send "{U+00C6}"  ; (Æ) letter AE
+    Send "{u+00c6}"  ; (Æ) letter AE
   else
-    Send "{U+00E6}"  ; (æ) letter ae
+    Send "{u+00e6}"  ; (æ) letter ae
 }
 >!+q:: {
   if GetKeyState("CapsLock", "T")
-    Send "{U+00E6}"  ; (æ) letter ae
+    Send "{u+00e6}"  ; (æ) letter ae
   else
-    Send "{U+00C6}"  ; (Æ) letter AE
+    Send "{u+00c6}"  ; (Æ) letter AE
 }
 
 >!w:: {
   if GetKeyState("CapsLock", "T")
-    Send "{U+00C5}"  ; (Å) A with ring above
+    Send "{u+00c5}"  ; (Å) A with ring above
   else
-    Send "{U+00E5}"  ; (å) a with ring above
+    Send "{u+00e5}"  ; (å) a with ring above
 }
 >!+w:: {
   if GetKeyState("CapsLock", "T")
-    Send "{U+00E5}"  ; (å) a with ring above
+    Send "{u+00e5}"  ; (å) a with ring above
   else
-    Send "{U+00C5}"  ; (Å) A with ring above
+    Send "{u+00c5}"  ; (Å) A with ring above
 }
 
 >!c:: {
   if GetKeyState("CapsLock", "T")
-    Send "{U+00C7}"  ; (Ç) C with cedilla
+    Send "{u+00c7}"  ; (Ç) C with cedilla
   else
-    Send "{U+00E7}"  ; (ç) c with cedilla
+    Send "{u+00e7}"  ; (ç) c with cedilla
 }
 >!+c:: {
   if GetKeyState("CapsLock", "T")
-    Send "{U+00E7}"  ; (ç) c with cedilla
+    Send "{u+00e7}"  ; (ç) c with cedilla
   else
-    Send "{U+00C7}"  ; (Ç) C with cedilla
+    Send "{u+00c7}"  ; (Ç) C with cedilla
 }
 
 >!d:: {
   if GetKeyState("CapsLock", "T")
-    Send "{U+00D0}"  ; (Ð) capital letter eth
+    Send "{u+00d0}"  ; (Ð) capital letter eth
   else
-    Send "{U+00F0}"  ; (ð) small letter eth
+    Send "{u+00f0}"  ; (ð) small letter eth
 }
 >!+d:: {
   if GetKeyState("CapsLock", "T")
-    Send "{U+00F0}"  ; (ð) small letter eth
+    Send "{u+00f0}"  ; (ð) small letter eth
   else
-    Send "{U+00D0}"  ; (Ð) capital letter eth
+    Send "{u+00d0}"  ; (Ð) capital letter eth
 }
 
 >!n:: {
   if GetKeyState("CapsLock", "T")
-    Send "{U+00D1}"  ; (Ñ) N with tilde
+    Send "{u+00d1}"  ; (Ñ) N with tilde
   else
-    Send "{U+00F1}"  ; (ñ) n with tilde
+    Send "{u+00f1}"  ; (ñ) n with tilde
 }
 >!+n:: {
   if GetKeyState("CapsLock", "T")
-    Send "{U+00F1}"  ; (ñ) n with tilde
+    Send "{u+00f1}"  ; (ñ) n with tilde
   else
-    Send "{U+00D1}"  ; (Ñ) N with tilde
+    Send "{u+00d1}"  ; (Ñ) N with tilde
 }
 
 >!k:: {
   if GetKeyState("CapsLock", "T")
-    Send "{U+0152}"  ; (Œ) ligature OE
+    Send "{u+0152}"  ; (Œ) ligature OE
   else
-    Send "{U+0153}"  ; (œ) ligature oe
+    Send "{u+0153}"  ; (œ) ligature oe
 }
 >!+k:: {
   if GetKeyState("CapsLock", "T")
-    Send "{U+0153}"  ; (œ) ligature oe
+    Send "{u+0153}"  ; (œ) ligature oe
   else
-    Send "{U+0152}"  ; (Œ) ligature OE
+    Send "{u+0152}"  ; (Œ) ligature OE
 }
 
 >!l:: {
   if GetKeyState("CapsLock", "T")
-    Send "{U+00D8}"  ; (Ø) O with stroke
+    Send "{u+00d8}"  ; (Ø) O with stroke
   else
-    Send "{U+00F8}"  ; (ø) o with stroke
+    Send "{u+00f8}"  ; (ø) o with stroke
 }
 >!+l:: {
   if GetKeyState("CapsLock", "T")
-    Send "{U+00F8}"  ; (ø) o with stroke
+    Send "{u+00f8}"  ; (ø) o with stroke
   else
-    Send "{U+00D8}"  ; (Ø) O with stroke
+    Send "{u+00d8}"  ; (Ø) O with stroke
 }
 
 >!s:: {
   if GetKeyState("CapsLock", "T")
-    Send "{U+1E9E}"  ; (ẞ) capital sharp S (capital Eszett)
+    Send "{u+1e9e}"  ; (ẞ) capital sharp S (capital Eszett)
   else
-    Send "{U+00DF}"  ; (ß) small sharp s (Eszett)
+    Send "{u+00df}"  ; (ß) small sharp s (Eszett)
 }
 >!+s:: {
   if GetKeyState("CapsLock", "T")
-    Send "{U+00DF}"  ; (ß) small sharp s (Eszett)
+    Send "{u+00df}"  ; (ß) small sharp s (Eszett)
   else
-    Send "{U+1E9E}"  ; (ẞ) capital sharp S (capital Eszett)
+    Send "{u+1e9e}"  ; (ẞ) capital sharp S (capital Eszett)
 }
 
 >!t:: {
   if GetKeyState("CapsLock", "T")
-    Send "{U+00DE}"  ; (Þ) capital letter thorn
+    Send "{u+00de}"  ; (Þ) capital letter thorn
   else
-    Send "{U+00FE}"  ; (þ) small letter thorn
+    Send "{u+00fe}"  ; (þ) small letter thorn
 }
 >!+t:: {
   if GetKeyState("CapsLock", "T")
-    Send "{U+00FE}"  ; (þ) small letter thorn
+    Send "{u+00fe}"  ; (þ) small letter thorn
   else
-    Send "{U+00DE}"  ; (Þ) capital letter thorn
+    Send "{u+00de}"  ; (Þ) capital letter thorn
 }
 
->!e::Send "{U+20AC}"  ; (€) euro sign
+>!e::Send "{u+20ac}"  ; (€) euro sign
 
-$'::Send "{U+00F9}"  ; (ù) u with grave
+$'::Send "{u+00f9}"  ; (ù) u with grave
 $"::Send "%"         ; percent sign
 
 >!':: {
@@ -506,8 +506,8 @@ $}::Send "*"   ; asterisk
 
 >!]::Send "]"  ; right square bracket
 
-$\::Send "{U+00B5}"  ; (µ) micro sign
-$|::Send "{U+00A3}"  ; (£) pound sign
+$\::Send "{u+00b5}"  ; (µ) micro sign
+$|::Send "{u+00a3}"  ; (£) pound sign
 
 >!\:: {
   ih := InputHook("L1", gEndKeys)
@@ -517,12 +517,12 @@ $|::Send "{U+00A3}"  ; (£) pound sign
     Send dkGraveAccent[ih.Input]
 }
 
-$`::Send "{U+00B2}"  ; (²) superscript 2
-$~::Send "{U+00B3}"  ; (³) superscript 3
+$`::Send "{u+00b2}"  ; (²) superscript 2
+$~::Send "{u+00b3}"  ; (³) superscript 3
 
 sc056::Send "<"    ; less-than sign
 +sc056::Send ">"   ; greater-than sign
 >!sc056::Send "\"  ; reverse solidus (backslash)
 
->!space::Send "{U+00A0}"   ; non-breaking space (NBSP)
->!+space::Send "{U+00A0}"  ; non-breaking space (NBSP)
+>!space::Send "{u+00a0}"   ; non-breaking space (NBSP)
+>!+space::Send "{u+00a0}"  ; non-breaking space (NBSP)
