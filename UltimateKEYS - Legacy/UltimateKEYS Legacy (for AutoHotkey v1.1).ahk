@@ -1,6 +1,6 @@
 #requires AutoHotkey v1.1
 
-; UltimateKEYS Legacy (for AutoHotkey v1.1).ahk - 2024-08-04
+; UltimateKEYS Legacy (for AutoHotkey v1.1).ahk - 2024-08-05
 
 ; Website :  https://pieter-degroote.github.io/UltimateKEYS/
 
@@ -503,9 +503,11 @@ cmpSmallF.item["v"] := "{u+2c71}"  ; (ⱱ) v with right hook
 cmpSmallF.item["z"] := "{u+0290}"  ; (ʐ) z with retroflex hook
 
 
-; Compose :  Swash Tail (t)
+; Compose :  Swash Tail and Variations (t)
 
 cmpSmallT := ComObjCreate("Scripting.Dictionary")
+cmpSmallT.item["l"] := "{u+2c61}"  ; (ⱡ) l with double bar
+cmpSmallT.item["L"] := "{u+2c60}"  ; (Ⱡ) L with double bar
 cmpSmallT.item["s"] := "{u+023f}"  ; (ȿ) s with swash tail
 cmpSmallT.item["S"] := "{u+2c7e}"  ; (Ȿ) S with swash tail
 cmpSmallT.item["z"] := "{u+0240}"  ; (ɀ) z with swash tail
