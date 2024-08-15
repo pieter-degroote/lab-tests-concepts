@@ -4,8 +4,8 @@ This '.reg' file allows you to extend the use of Manifest V2 extensions, like uB
 
 This policy applies to the following Chromium-based browsers&nbsp;:
 
-- Chromium
 - Brave Browser
+- Chromium
 - Google Chrome
 - Microsoft Edge
 - Vivaldi
