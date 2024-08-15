@@ -1,6 +1,8 @@
-# ExtensionManifestV2Availability = 2 (Windows)
+# ExtensionManifestV2Availability = 2
 
-This '.reg' file allows you to extend the use of Manifest V2 extensions, like uBlock Origin, beyond the phase-out date.
+## Chromium-based browsers on Windows
+
+The '.reg' file allows you to extend the use of Manifest V2 extensions, like uBlock Origin, beyond the phase-out date.
 
 This policy applies to the following Chromium-based browsers&nbsp;:
 
@@ -12,3 +14,15 @@ This policy applies to the following Chromium-based browsers&nbsp;:
 - Yandex Browser
 
 Note that the Opera browsers cannot be centrally managed this way.
+
+## Chromium and Chrome on Linux
+
+Chromium&nbsp;: &nbsp;Execute the following command in a terminal&nbsp;:
+
+    sudo mkdir -p /etc/chromium/policies/managed
+
+Chrome&nbsp;: &nbsp;Execute the following command in a terminal&nbsp;:
+
+    sudo mkdir -p /etc/opt/chrome/policies/managed
+
+Next step&nbsp;: &nbsp;Copy the file "policy.json" into this newly created directory.
