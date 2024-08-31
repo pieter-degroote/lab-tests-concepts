@@ -1,8 +1,8 @@
 # ExtensionManifestV2Availability = 2
 
-## Chromium-based browsers on Windows
+These '.reg' and 'policy.json' files (inside the ZIP archives) allow you to extend the use of Manifest V2 (MV2) extensions, like uBlock Origin, beyond the phase-out date.
 
-The '.reg' file allows you to extend the use of Manifest V2 extensions, like uBlock Origin, beyond the phase-out date.
+## Chromium-based browsers on Windows
 
 This policy applies to the following Chromium-based browsers&nbsp;:
 
@@ -15,8 +15,6 @@ This policy applies to the following Chromium-based browsers&nbsp;:
 
 Note that the Opera browsers cannot be centrally managed this way.
 
-**_=&gt; Please also note that the 'Secure DNS' setting in those Chromium-based browsers will be grayed out, since this policy coincidentally interferes with it._**
-
 ## Chromium and Chrome on Linux
 
 Chromium&nbsp;: &nbsp;Execute the following command in a terminal&nbsp;:
@@ -27,6 +25,9 @@ Chrome&nbsp;: &nbsp;Execute the following command in a terminal&nbsp;:
 
     sudo mkdir -p /etc/opt/chrome/policies/managed
 
-Next step&nbsp;: &nbsp;Copy the file "policy.json" into this newly created directory.
+Next step&nbsp;: &nbsp;Copy one of the files "policy.json" into this newly created directory.
 
-**_=&gt; Please also note that the 'Secure DNS' setting in Chromium/Chrome will be grayed out, since this policy coincidentally interferes with it._**
+## Difference between both ZIP archives
+
+- Custom Policies for Chromium-based Browsers.zip&nbsp;: &nbsp;The 'Secure DNS' (DoH) setting in those Chromium-based browsers will be set to 'Google Public DNS'. Support for MV2 extensions will also be extended.
+- ExtensionManifestV2Availability = 2.zip&nbsp;: &nbsp;Only extends support for MV2 extensions. The 'Secure DNS' (DoH) setting in those Chromium-based browsers will be disabled and grayed out, since this 'managed' policy also disables 'Secure DNS'.
