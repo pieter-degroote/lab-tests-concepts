@@ -1,7 +1,9 @@
 # EurKEY - AutoHotkey Scripts for v2/v1.1 (testing)
 
 This folder contains the unofficial AHK scripts for EurKEY v1.1 to v1.3.  
-Note that these test versions slightly differ from those at&nbsp;: &nbsp;https://github.com/pieter-degroote/EurKEY-clone
+Note that these test versions slightly differ from those at&nbsp;: &nbsp;https://github.com/pieter-degroote/EurKEY-clone  
+The EurKEY scripts are simply targeted towards more 'conservative' users (meeting their basic needs).  
+On the other hand, UltimateKEYS generally takes a more dynamic and advanced approach instead.
 
 ## Prerequisites
 
