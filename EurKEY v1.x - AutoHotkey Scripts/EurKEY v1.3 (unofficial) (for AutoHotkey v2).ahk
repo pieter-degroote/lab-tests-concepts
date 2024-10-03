@@ -1,6 +1,6 @@
 #requires AutoHotkey v2
 
-; EurKEY v1.3 (unofficial) (for AutoHotkey v2).ahk - 2024-09-24
+; EurKEY v1.3 (unofficial) (for AutoHotkey v2).ahk - 2024-10-03
 
 ; GitHub :   https://github.com/pieter-degroote/EurKEY-clone
 
@@ -304,6 +304,8 @@ dkTilde["e"] := "{u+1ebd}"  ; (ẽ) e with tilde
 dkTilde["E"] := "{u+1ebc}"  ; (Ẽ) E with tilde
 dkTilde["i"] := "{u+0129}"  ; (ĩ) i with tilde
 dkTilde["I"] := "{u+0128}"  ; (Ĩ) I with tilde
+dkTilde["l"] := "{u+026b}"  ; (ɫ) l with middle tilde
+dkTilde["L"] := "{u+2c62}"  ; (Ɫ) L with middle tilde
 dkTilde["n"] := "{u+00f1}"  ; (ñ) n with tilde
 dkTilde["N"] := "{u+00d1}"  ; (Ñ) N with tilde
 dkTilde["o"] := "{u+00f5}"  ; (õ) o with tilde
