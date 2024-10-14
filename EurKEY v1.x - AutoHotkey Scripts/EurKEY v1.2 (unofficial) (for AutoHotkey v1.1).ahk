@@ -1,6 +1,6 @@
 #requires AutoHotkey v1.1
 
-; EurKEY v1.2 (unofficial) (for AutoHotkey v1.1).ahk - 2024-10-03
+; EurKEY v1.2 (unofficial) (for AutoHotkey v1.1).ahk - 2024-10-14
 
 ; GitHub :   https://github.com/pieter-degroote/EurKEY-clone
 
@@ -333,6 +333,7 @@ dkSymbols.item["t"] := "{u+2122}"  ; (™) trademark symbol
 dkSymbols.item["T"] := "{u+2122}"  ; (™) trademark symbol
 dkSymbols.item["b"] := "{u+2022}"  ; (•) bullet
 dkSymbols.item["B"] := "{u+2022}"  ; (•) bullet
+dkSymbols.item["."] := "{u+2022}"  ; (•) bullet
 dkSymbols.item["d"] := "{u+2020}"  ; (†) dagger
 dkSymbols.item["D"] := "{u+2021}"  ; (‡) double dagger
 dkSymbols.item["q"] := "{u+00b6}"  ; (¶) pilcrow sign
