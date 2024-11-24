@@ -23,7 +23,7 @@ xkb_symbols "basic" {
     key <AB09> { [ period,       greater,      ograve,               Ograve               ] };
     key <AB10> { [ slash,        question,     questiondown,         enfilledcircbullet   ] };
     key <AC01> { [ a,            A,            adiaeresis,           Adiaeresis           ] };
-    key <AC02> { [ r,            R,            ssharp,               U1E9E                ] };
+    key <AC02> { [ r,            R,            ssharp,               U1E9E                ] };  // ẞ
     key <AC03> { [ s,            S,            acircumflex,          Acircumflex          ] };
     key <AC04> { [ t,            T,            eacute,               Eacute               ] };
     key <AC05> { [ d,            D,            egrave,               Egrave               ] };
@@ -32,7 +32,7 @@ xkb_symbols "basic" {
     key <AC08> { [ e,            E,            oe,                   OE                   ] };
     key <AC09> { [ i,            I,            oslash,               Ooblique             ] };
     key <AC10> { [ o,            O,            degree,               periodcentered       ] };
-    key <AC11> { [ apostrophe,   quotedbl,     U266A,                U266B                ] };
+    key <AC11> { [ apostrophe,   quotedbl,     U266A,                U266B                ] };  // ♪ ♫
     key <AD01> { [ q,            Q,            ae,                   AE                   ] };
     key <AD02> { [ w,            W,            aring,                Aring                ] };
     key <AD03> { [ f,            F,            ediaeresis,           Ediaeresis           ] };
@@ -43,11 +43,11 @@ xkb_symbols "basic" {
     key <AD08> { [ u,            U,            idiaeresis,           Idiaeresis           ] };
     key <AD09> { [ y,            Y,            odiaeresis,           Odiaeresis           ] };
     key <AD10> { [ semicolon,    colon,        ocircumflex,          Ocircumflex          ] };
-    key <AD11> { [ bracketleft,  braceleft,    guillemotleft,        U2039                ] };
-    key <AD12> { [ bracketright, braceright,   guillemotright,       U203A                ] };
+    key <AD11> { [ bracketleft,  braceleft,    guillemotleft,        U2039                ] };  // ‹
+    key <AD12> { [ bracketright, braceright,   guillemotright,       U203A                ] };  // ›
     key <AE01> { [ 1,            exclam,       exclamdown,           onesuperior          ] };
-    key <AE02> { [ 2,            at,           U2264,                twosuperior          ] };
-    key <AE03> { [ 3,            numbersign,   U2265,                threesuperior        ] };
+    key <AE02> { [ 2,            at,           U2264,                twosuperior          ] };  // ≤
+    key <AE03> { [ 3,            numbersign,   U2265,                threesuperior        ] };  // ≥
     key <AE04> { [ 4,            dollar,       sterling,             yen                  ] };
     key <AE05> { [ 5,            percent,      EuroSign,             cent                 ] };
     key <AE06> { [ 6,            asciicircum,  atilde,               Atilde               ] };
