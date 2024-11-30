@@ -1,6 +1,6 @@
 #requires AutoHotkey v2
 
-; UltimateKEYS (for AutoHotkey v2).ahk - 2024-11-20
+; UltimateKEYS (for AutoHotkey v2).ahk - 2024-11-30
 
 ; Website :  https://pieter-degroote.github.io/UltimateKEYS/
 
@@ -904,13 +904,12 @@ cmpMathSymbols["4"] := "{u+2237}"  ; (∷) proportion sign
 cmpMathSymbols["6"] := "{u+2220}"  ; (∠) angle symbol
 cmpMathSymbols["9"] := "{u+221f}"  ; (∟) right angle
 cmpMathSymbols["0"] := "{u+2221}"  ; (∡) measured angle
-cmpMathSymbols[","] := "{u+2219}"  ; (∙) bullet operator
+cmpMathSymbols["."] := "{u+22c5}"  ; (⋅) dot operator
+cmpMathSymbols["="] := "{u+225d}"  ; (≝) equal to by definition
 cmpMathSymbols["+"] := "{u+2295}"  ; (⊕) circled plus
 cmpMathSymbols["-"] := "{u+2296}"  ; (⊖) circled minus
 cmpMathSymbols["*"] := "{u+2297}"  ; (⊗) circled times
 cmpMathSymbols["/"] := "{u+2298}"  ; (⊘) circled division slash
-cmpMathSymbols["."] := "{u+2299}"  ; (⊙) circled dot operator
-cmpMathSymbols["="] := "{u+225d}"  ; (≝) equal to by definition
 cmpMathSymbols[";"] := "{u+2235}"  ; (∵) because sign
 cmpMathSymbols[":"] := "{u+2234}"  ; (∴) therefore sign
 cmpMathSymbols["&"] := "{u+2227}"  ; (∧) logical and
