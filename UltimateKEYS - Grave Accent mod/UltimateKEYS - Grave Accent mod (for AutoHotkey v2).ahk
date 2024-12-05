@@ -1,6 +1,6 @@
 #requires AutoHotkey v2
 
-; UltimateKEYS - Grave Accent mod (for AutoHotkey v2).ahk - 2024-06-04
+; UltimateKEYS - Grave Accent mod (for AutoHotkey v2).ahk - 2024-11-30
 
 ; Website :  https://pieter-degroote.github.io/UltimateKEYS/
 
@@ -11,7 +11,7 @@
 
 ; Configuration :
 
-; Keyboard layout (on Windows) :  US QWERTY
+; Keyboard layout (on Windows) :  US / Romanian (Programmers)
 
 
 
@@ -535,7 +535,7 @@ cmpDoubleAcute["u"] := "{u+0171}"  ; (ű) u with double acute
 cmpDoubleAcute["U"] := "{u+0170}"  ; (Ű) U with double acute
 
 
-; Compose :  Hook and Horn (h)
+; Compose :  Hook, Horn and Variations (h)
 
 global cmpSmallH := Map()
 cmpSmallH["b"] := "{u+0253}"  ; (ɓ) b with hook
@@ -554,6 +554,8 @@ cmpSmallH["H"] := "{u+a7aa}"  ; (Ɦ) H with hook
 cmpSmallH["j"] := "{u+0267}"  ; (ɧ) small letter heng with hook
 cmpSmallH["k"] := "{u+0199}"  ; (ƙ) k with hook
 cmpSmallH["K"] := "{u+0198}"  ; (Ƙ) K with hook
+cmpSmallH["l"] := "{u+026c}"  ; (ɬ) l with belt
+cmpSmallH["L"] := "{u+a7ad}"  ; (Ɬ) L with belt
 cmpSmallH["m"] := "{u+0271}"  ; (ɱ) m with hook
 cmpSmallH["M"] := "{u+2c6e}"  ; (Ɱ) M with hook
 cmpSmallH["n"] := "{u+0272}"  ; (ɲ) n with left hook
@@ -581,15 +583,17 @@ cmpSmallH["z"] := "{u+0225}"  ; (ȥ) z with hook
 cmpSmallH["Z"] := "{u+0224}"  ; (Ȥ) Z with hook
 
 
-; Compose :  Retroflex Hook, Right Hook, Crossed-Tail and Variations (f)
+; Compose :  Retroflex Hook and Variations (f)
 
 global cmpSmallF := Map()
 cmpSmallF["d"] := "{u+1d91}"  ; (ᶑ) d with hook and tail
 cmpSmallF["e"] := "{u+025d}"  ; (ɝ) small letter reversed open e with hook
+cmpSmallF["f"] := "{u+1d94}"  ; (ᶔ) small letter reversed open e with retroflex hook
 cmpSmallF["g"] := "{u+ab36}"  ; (ꬶ) small letter script g with crossed-tail
 cmpSmallF["h"] := "{u+a727}"  ; (ꜧ) small letter heng
 cmpSmallF["H"] := "{u+a726}"  ; (Ꜧ) capital letter heng
 cmpSmallF["j"] := "{u+029d}"  ; (ʝ) j with crossed-tail
+cmpSmallF["J"] := "{u+a7b2}"  ; (Ʝ) J with crossed-tail
 cmpSmallF["l"] := "{u+026d}"  ; (ɭ) l with retroflex hook
 cmpSmallF["n"] := "{u+0273}"  ; (ɳ) n with retroflex hook
 cmpSmallF["q"] := "{u+02a0}"  ; (ʠ) q with hook
@@ -598,6 +602,17 @@ cmpSmallF["t"] := "{u+0288}"  ; (ʈ) t with retroflex hook
 cmpSmallF["T"] := "{u+01ae}"  ; (Ʈ) T with retroflex hook
 cmpSmallF["v"] := "{u+2c71}"  ; (ⱱ) v with right hook
 cmpSmallF["z"] := "{u+0290}"  ; (ʐ) z with retroflex hook
+
+
+; Compose :  Swash Tail and Variations (t)
+
+global cmpSmallT := Map()
+cmpSmallT["l"] := "{u+2c61}"  ; (ⱡ) l with double bar
+cmpSmallT["L"] := "{u+2c60}"  ; (Ⱡ) L with double bar
+cmpSmallT["s"] := "{u+023f}"  ; (ȿ) s with swash tail
+cmpSmallT["S"] := "{u+2c7e}"  ; (Ȿ) S with swash tail
+cmpSmallT["z"] := "{u+0240}"  ; (ɀ) z with swash tail
+cmpSmallT["Z"] := "{u+2c7f}"  ; (Ɀ) Z with swash tail
 
 
 ; Compose :  Latin Greek Letters and Variations (l)
@@ -637,12 +652,13 @@ cmpSmallL["&"] := "{u+0241}"  ; (Ɂ) capital letter glottal stop
 cmpSmallL["?"] := "{u+0294}"  ; (ʔ) unicase letter glottal stop
 
 
-; Compose :  Turned Letters (r)
+; Compose :  Turned and Reversed Letters (r)
 
 global cmpSmallR := Map()
 cmpSmallR["a"] := "{u+0250}"  ; (ɐ) small letter turned a
 cmpSmallR["A"] := "{u+2c6f}"  ; (Ɐ) capital letter turned A
 cmpSmallR["b"] := "{u+025c}"  ; (ɜ) small letter reversed open e
+cmpSmallR["B"] := "{u+a7ab}"  ; (Ɜ) capital letter reversed open E
 cmpSmallR["d"] := "{u+018d}"  ; (ƍ) Latin small letter turned delta
 cmpSmallR["e"] := "{u+01dd}"  ; (ǝ) small letter turned e
 cmpSmallR["E"] := "{u+018e}"  ; (Ǝ) capital letter reversed E
@@ -661,10 +677,13 @@ cmpSmallR["q"] := "{u+0252}"  ; (ɒ) Latin small letter turned alpha
 cmpSmallR["Q"] := "{u+2c70}"  ; (Ɒ) Latin capital letter turned alpha
 cmpSmallR["r"] := "{u+0279}"  ; (ɹ) small letter turned r
 cmpSmallR["t"] := "{u+0287}"  ; (ʇ) small letter turned t
+cmpSmallR["T"] := "{u+a7b1}"  ; (Ʇ) small letter turned T
 cmpSmallR["v"] := "{u+028c}"  ; (ʌ) small letter turned v
 cmpSmallR["V"] := "{u+0245}"  ; (Ʌ) capital letter turned V
 cmpSmallR["w"] := "{u+028d}"  ; (ʍ) small letter turned w
 cmpSmallR["y"] := "{u+028e}"  ; (ʎ) small letter turned y
+cmpSmallR["z"] := "{u+01b9}"  ; (ƹ) Latin small letter ezh reversed
+cmpSmallR["Z"] := "{u+01b8}"  ; (Ƹ) Latin capital letter ezh reversed
 
 
 ; Compose :  Currency Symbols ($)
@@ -901,7 +920,7 @@ cmpDoubleAcute["0"] := "{u+21d4}"  ; (⇔) left right double arrow
 ; Compose :  Various Symbols (s)
 
 global cmpSymbols := Map()
-cmpSymbols["a"] := "{u+214d}"  ; (⅍) aktieselskab
+cmpSymbols["a"] := "{u+2100}"  ; (℀) account of
 cmpSymbols["b"] := "{u+203d}"  ; (‽) interrobang
 cmpSymbols["B"] := "{u+2e18}"  ; (⸘) inverted interrobang
 cmpSymbols["c"] := "{u+2105}"  ; (℅) care of
@@ -911,6 +930,8 @@ cmpSymbols["f"] := "{u+2640}"  ; (♀) female sign (Venus)
 cmpSymbols["h"] := "{u+2302}"  ; (⌂) house
 cmpSymbols["H"] := "{u+2126}"  ; (Ω) ohm sign (backwards compatibility)
 cmpSymbols["i"] := "{u+2300}"  ; (⌀) diameter sign
+cmpSymbols["j"] := "{u+2101}"  ; (℁) addressed to the subject
+cmpSymbols["k"] := "{u+214d}"  ; (⅍) aktieselskab
 cmpSymbols["l"] := "{u+2113}"  ; (ℓ) script small l
 cmpSymbols["L"] := "{u+2112}"  ; (ℒ) Laplace transform
 cmpSymbols["m"] := "{u+2642}"  ; (♂) male sign (Mars)
@@ -919,6 +940,7 @@ cmpSymbols["p"] := "{u+211e}"  ; (℞) prescription take (Recipere)
 cmpSymbols["P"] := "{u+211e}"  ; (℞) prescription take (Recipere)
 cmpSymbols["r"] := "{u+211f}"  ; (℟) response (liturgy)
 cmpSymbols["R"] := "{u+211f}"  ; (℟) response (liturgy)
+cmpSymbols["u"] := "{u+2106}"  ; (℆) cada una (each one)
 cmpSymbols["v"] := "{u+2123}"  ; (℣) versicle (liturgy)
 cmpSymbols["V"] := "{u+2123}"  ; (℣) versicle (liturgy)
 cmpSymbols["x"] := "{u+203b}"  ; (※) reference mark
@@ -982,13 +1004,12 @@ cmpMathSymbols["4"] := "{u+2237}"  ; (∷) proportion sign
 cmpMathSymbols["6"] := "{u+2220}"  ; (∠) angle symbol
 cmpMathSymbols["9"] := "{u+221f}"  ; (∟) right angle
 cmpMathSymbols["0"] := "{u+2221}"  ; (∡) measured angle
-cmpMathSymbols[","] := "{u+2219}"  ; (∙) bullet operator
+cmpMathSymbols["."] := "{u+22c5}"  ; (⋅) dot operator
+cmpMathSymbols["="] := "{u+225d}"  ; (≝) equal to by definition
 cmpMathSymbols["+"] := "{u+2295}"  ; (⊕) circled plus
 cmpMathSymbols["-"] := "{u+2296}"  ; (⊖) circled minus
 cmpMathSymbols["*"] := "{u+2297}"  ; (⊗) circled times
 cmpMathSymbols["/"] := "{u+2298}"  ; (⊘) circled division slash
-cmpMathSymbols["."] := "{u+2299}"  ; (⊙) circled dot operator
-cmpMathSymbols["="] := "{u+225d}"  ; (≝) equal to by definition
 cmpMathSymbols[";"] := "{u+2235}"  ; (∵) because sign
 cmpMathSymbols[":"] := "{u+2234}"  ; (∴) therefore sign
 cmpMathSymbols["&"] := "{u+2227}"  ; (∧) logical and
@@ -1006,7 +1027,6 @@ global cmpSmallN := Map()
 global cmpCapitalN := Map()
 global cmpCapitalO := Map()
 global cmpCapitalS := Map()
-global cmpSmallT := Map()
 global cmpCapitalT := Map()
 cmpArrow["e"] := "{u+00e6}"      ; (æ) letter ae
 cmpCapitalA["E"] := "{u+00c6}"   ; (Æ) letter AE
@@ -1566,443 +1586,584 @@ cmpSmallN["9"] := "{u+277e}"  ; (❾) dingbat negative circled digit 9
 cmpSmallN["0"] := "{u+277f}"  ; (❿) dingbat negative circled digit 10
 
 
-; Configuration :  'Right Alt' and 'Right Alt + Shift' on US QWERTY
+; Configuration :  'AltGr (RAlt)' and 'AltGr (RAlt) + Shift' modifiers
 
->!a:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00c4}"  ; (Ä) A with diaeresis
-  else
-    Send "{u+00e4}"  ; (ä) a with diaeresis
-}
->!+a:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00e4}"  ; (ä) a with diaeresis
-  else
-    Send "{u+00c4}"  ; (Ä) A with diaeresis
-}
+; Key :  1
+>!sc002::
+<^>!sc002::Send "{u+00a1}"   ; (¡) inverted exclamation mark
+>!+sc002::
+<^>!+sc002::Send "{u+00b9}"  ; (¹) superscript 1
 
->!q:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00c6}"  ; (Æ) letter AE
-  else
-    Send "{u+00e6}"  ; (æ) letter ae
-}
->!+q:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00e6}"  ; (æ) letter ae
-  else
-    Send "{u+00c6}"  ; (Æ) letter AE
-}
+; Key :  2
+>!sc003::
+<^>!sc003::Send "{u+2264}"   ; (≤) less-than or equal to
+>!+sc003::
+<^>!+sc003::Send "{u+00b2}"  ; (²) superscript 2
 
->!w:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00c5}"  ; (Å) A with ring above
-  else
-    Send "{u+00e5}"  ; (å) a with ring above
-}
->!+w:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00e5}"  ; (å) a with ring above
-  else
-    Send "{u+00c5}"  ; (Å) A with ring above
-}
+; Key :  3
+>!sc004::
+<^>!sc004::Send "{u+2265}"   ; (≥) greater-than or equal to
+>!+sc004::
+<^>!+sc004::Send "{u+00b3}"  ; (³) superscript 3
 
->!z:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00c1}"  ; (Á) A with acute
-  else
-    Send "{u+00e1}"  ; (á) a with acute
-}
->!+z:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00e1}"  ; (á) a with acute
-  else
-    Send "{u+00c1}"  ; (Á) A with acute
-}
+; Key :  4
+>!sc005::
+<^>!sc005::Send "{u+00a3}"   ; (£) pound sign
+>!+sc005::
+<^>!+sc005::Send "{u+00a5}"  ; (¥) yen sign
 
->!x:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00c0}"  ; (À) A with grave
-  else
-    Send "{u+00e0}"  ; (à) a with grave
-}
->!+x:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00e0}"  ; (à) a with grave
-  else
-    Send "{u+00c0}"  ; (À) A with grave
-}
+; Key :  5
+>!sc006::
+<^>!sc006::Send "{u+20ac}"   ; (€) euro sign
+>!+sc006::
+<^>!+sc006::Send "{u+00a2}"  ; (¢) cent sign (dollar)
 
->!d:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00c2}"  ; (Â) A with circumflex
-  else
-    Send "{u+00e2}"  ; (â) a with circumflex
-}
->!+d:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00e2}"  ; (â) a with circumflex
-  else
-    Send "{u+00c2}"  ; (Â) A with circumflex
-}
-
->!c:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00c7}"  ; (Ç) C with cedilla
-  else
-    Send "{u+00e7}"  ; (ç) c with cedilla
-}
->!+c:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00e7}"  ; (ç) c with cedilla
-  else
-    Send "{u+00c7}"  ; (Ç) C with cedilla
-}
-
->!e:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00cb}"  ; (Ë) E with diaeresis
-  else
-    Send "{u+00eb}"  ; (ë) e with diaeresis
-}
->!+e:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00eb}"  ; (ë) e with diaeresis
-  else
-    Send "{u+00cb}"  ; (Ë) E with diaeresis
-}
-
->!f:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00c9}"  ; (É) E with acute
-  else
-    Send "{u+00e9}"  ; (é) e with acute
-}
->!+f:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00e9}"  ; (é) e with acute
-  else
-    Send "{u+00c9}"  ; (É) E with acute
-}
-
->!g:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00c8}"  ; (È) E with grave
-  else
-    Send "{u+00e8}"  ; (è) e with grave
-}
->!+g:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00e8}"  ; (è) e with grave
-  else
-    Send "{u+00c8}"  ; (È) E with grave
-}
-
->!r:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00ca}"  ; (Ê) E with circumflex
-  else
-    Send "{u+00ea}"  ; (ê) e with circumflex
-}
->!+r:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00ea}"  ; (ê) e with circumflex
-  else
-    Send "{u+00ca}"  ; (Ê) E with circumflex
-}
-
->!i:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00cf}"  ; (Ï) I with diaeresis
-  else
-    Send "{u+00ef}"  ; (ï) i with diaeresis
-}
->!+i:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00ef}"  ; (ï) i with diaeresis
-  else
-    Send "{u+00cf}"  ; (Ï) I with diaeresis
-}
-
->!v:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00cd}"  ; (Í) I with acute
-  else
-    Send "{u+00ed}"  ; (í) i with acute
-}
->!+v:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00ed}"  ; (í) i with acute
-  else
-    Send "{u+00cd}"  ; (Í) I with acute
-}
-
->!b:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00cc}"  ; (Ì) I with grave
-  else
-    Send "{u+00ec}"  ; (ì) i with grave
-}
->!+b:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00ec}"  ; (ì) i with grave
-  else
-    Send "{u+00cc}"  ; (Ì) I with grave
-}
-
->!t:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00ce}"  ; (Î) I with circumflex
-  else
-    Send "{u+00ee}"  ; (î) i with circumflex
-}
->!+t:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00ee}"  ; (î) i with circumflex
-  else
-    Send "{u+00ce}"  ; (Î) I with circumflex
-}
-
->!n:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00d1}"  ; (Ñ) N with tilde
-  else
-    Send "{u+00f1}"  ; (ñ) n with tilde
-}
->!+n:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00f1}"  ; (ñ) n with tilde
-  else
-    Send "{u+00d1}"  ; (Ñ) N with tilde
-}
-
->!o:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00d6}"  ; (Ö) O with diaeresis
-  else
-    Send "{u+00f6}"  ; (ö) o with diaeresis
-}
->!+o:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00f6}"  ; (ö) o with diaeresis
-  else
-    Send "{u+00d6}"  ; (Ö) O with diaeresis
-}
-
->!k:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+0152}"  ; (Œ) ligature OE
-  else
-    Send "{u+0153}"  ; (œ) ligature oe
-}
->!+k:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+0153}"  ; (œ) ligature oe
-  else
-    Send "{u+0152}"  ; (Œ) ligature OE
-}
-
->!l:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00d8}"  ; (Ø) O with stroke
-  else
-    Send "{u+00f8}"  ; (ø) o with stroke
-}
->!+l:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00f8}"  ; (ø) o with stroke
-  else
-    Send "{u+00d8}"  ; (Ø) O with stroke
-}
-
->!,:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00d3}"  ; (Ó) O with acute
-  else
-    Send "{u+00f3}"  ; (ó) o with acute
-}
->!<:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00f3}"  ; (ó) o with acute
-  else
-    Send "{u+00d3}"  ; (Ó) O with acute
-}
-
->!.:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00d2}"  ; (Ò) O with grave
-  else
-    Send "{u+00f2}"  ; (ò) o with grave
-}
->!>:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00f2}"  ; (ò) o with grave
-  else
-    Send "{u+00d2}"  ; (Ò) O with grave
-}
-
->!p:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00d4}"  ; (Ô) O with circumflex
-  else
-    Send "{u+00f4}"  ; (ô) o with circumflex
-}
->!+p:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00f4}"  ; (ô) o with circumflex
-  else
-    Send "{u+00d4}"  ; (Ô) O with circumflex
-}
-
->!s:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+1e9e}"  ; (ẞ) capital sharp S (capital Eszett)
-  else
-    Send "{u+00df}"  ; (ß) small sharp s (Eszett)
-}
->!+s:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00df}"  ; (ß) small sharp s (Eszett)
-  else
-    Send "{u+1e9e}"  ; (ẞ) capital sharp S (capital Eszett)
-}
-
->!u:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00dc}"  ; (Ü) U with diaeresis
-  else
-    Send "{u+00fc}"  ; (ü) u with diaeresis
-}
->!+u:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00fc}"  ; (ü) u with diaeresis
-  else
-    Send "{u+00dc}"  ; (Ü) U with diaeresis
-}
-
->!h:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00da}"  ; (Ú) U with acute
-  else
-    Send "{u+00fa}"  ; (ú) u with acute
-}
->!+h:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00fa}"  ; (ú) u with acute
-  else
-    Send "{u+00da}"  ; (Ú) U with acute
-}
-
->!j:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00d9}"  ; (Ù) U with grave
-  else
-    Send "{u+00f9}"  ; (ù) u with grave
-}
->!+j:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00f9}"  ; (ù) u with grave
-  else
-    Send "{u+00d9}"  ; (Ù) U with grave
-}
-
->!y:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00db}"  ; (Û) U with circumflex
-  else
-    Send "{u+00fb}"  ; (û) u with circumflex
-}
->!+y:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00fb}"  ; (û) u with circumflex
-  else
-    Send "{u+00db}"  ; (Û) U with circumflex
-}
-
->!6:: {
+; Key :  6
+>!sc007::
+<^>!sc007:: {
   if GetKeyState("CapsLock", "T")
     Send "{u+00c3}"  ; (Ã) A with tilde
   else
     Send "{u+00e3}"  ; (ã) a with tilde
 }
->!+6:: {
+>!+sc007::
+<^>!+sc007:: {
   if GetKeyState("CapsLock", "T")
     Send "{u+00e3}"  ; (ã) a with tilde
   else
     Send "{u+00c3}"  ; (Ã) A with tilde
 }
 
->!7:: {
+; Key :  7
+>!sc008::
+<^>!sc008:: {
   if GetKeyState("CapsLock", "T")
     Send "{u+00d5}"  ; (Õ) O with tilde
   else
     Send "{u+00f5}"  ; (õ) o with tilde
 }
->!+7:: {
+>!+sc008::
+<^>!+sc008:: {
   if GetKeyState("CapsLock", "T")
     Send "{u+00f5}"  ; (õ) o with tilde
   else
     Send "{u+00d5}"  ; (Õ) O with tilde
 }
 
->!m::Send "{u+00b5}"   ; (µ) micro sign
->!+m::Send "{u+00b1}"  ; (±) plus-minus sign
+; Key :  8
+>!sc009::
+<^>!sc009::Send "{u+201e}"   ; („) double low-9 quotation mark
+>!+sc009::
+<^>!+sc009::Send "{u+00a7}"  ; (§) section sign
 
->!1::Send "{u+00a1}"   ; (¡) inverted exclamation mark
->!+1::Send "{u+00b9}"  ; (¹) superscript 1
+; Key :  9
+>!sc00A::
+<^>!sc00A::Send "{u+201c}"   ; (“) left double quotation mark
+>!+sc00A::
+<^>!+sc00A::Send "{u+2018}"  ; (‘) left single quotation mark
 
->!2::Send "{u+2264}"   ; (≤) less-than or equal to
->!+2::Send "{u+00b2}"  ; (²) superscript 2
+; Key :  0
+>!sc00B::
+<^>!sc00B::Send "{u+201d}"   ; (”) right double quotation mark
+>!+sc00B::
+<^>!+sc00B::Send "{u+2019}"  ; (’) right single quotation mark
 
->!3::Send "{u+2265}"   ; (≥) greater-than or equal to
->!+3::Send "{u+00b3}"  ; (³) superscript 3
+; Key :  - / _ (hyphen-minus / underscore)
+>!sc00C::
+<^>!sc00C::Send "{u+2013}"   ; (–) en dash
+>!+sc00C::
+<^>!+sc00C::Send "{u+2014}"  ; (—) em dash
 
->!4::Send "{u+00a3}"   ; (£) pound sign
->!+4::Send "{u+00a5}"  ; (¥) yen sign
+; Key :  = / + (equals sign / plus sign)
+>!sc00D::
+<^>!sc00D::Send "{u+00d7}"   ; (×) multiplication sign
+>!+sc00D::
+<^>!+sc00D::Send "{u+00f7}"  ; (÷) division sign
 
->!5::Send "{u+20ac}"   ; (€) euro sign
->!+5::Send "{u+00a2}"  ; (¢) cent sign (dollar)
+; Key :  Q
+>!sc010::
+<^>!sc010:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00c6}"  ; (Æ) letter AE
+  else
+    Send "{u+00e6}"  ; (æ) letter ae
+}
+>!+sc010::
+<^>!+sc010:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00e6}"  ; (æ) letter ae
+  else
+    Send "{u+00c6}"  ; (Æ) letter AE
+}
 
->!8::Send "{u+201e}"   ; („) double low-9 quotation mark
->!+8::Send "{u+00a7}"  ; (§) section sign
+; Key :  W
+>!sc011::
+<^>!sc011:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00c5}"  ; (Å) A with ring above
+  else
+    Send "{u+00e5}"  ; (å) a with ring above
+}
+>!+sc011::
+<^>!+sc011:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00e5}"  ; (å) a with ring above
+  else
+    Send "{u+00c5}"  ; (Å) A with ring above
+}
 
->!9::Send "{u+201c}"   ; (“) left double quotation mark
->!+9::Send "{u+2018}"  ; (‘) left single quotation mark
+; Key :  E
+>!sc012::
+<^>!sc012:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00cb}"  ; (Ë) E with diaeresis
+  else
+    Send "{u+00eb}"  ; (ë) e with diaeresis
+}
+>!+sc012::
+<^>!+sc012:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00eb}"  ; (ë) e with diaeresis
+  else
+    Send "{u+00cb}"  ; (Ë) E with diaeresis
+}
 
->!0::Send "{u+201d}"   ; (”) right double quotation mark
->!+0::Send "{u+2019}"  ; (’) right single quotation mark
+; Key :  R
+>!sc013::
+<^>!sc013:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00ca}"  ; (Ê) E with circumflex
+  else
+    Send "{u+00ea}"  ; (ê) e with circumflex
+}
+>!+sc013::
+<^>!+sc013:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00ea}"  ; (ê) e with circumflex
+  else
+    Send "{u+00ca}"  ; (Ê) E with circumflex
+}
 
->!-::Send "{u+2013}"   ; (–) en dash
->!_::Send "{u+2014}"   ; (—) em dash
+; Key :  T
+>!sc014::
+<^>!sc014:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00ce}"  ; (Î) I with circumflex
+  else
+    Send "{u+00ee}"  ; (î) i with circumflex
+}
+>!+sc014::
+<^>!+sc014:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00ee}"  ; (î) i with circumflex
+  else
+    Send "{u+00ce}"  ; (Î) I with circumflex
+}
 
->!=::Send "{u+00d7}"   ; (×) multiplication sign
->!+::Send "{u+00f7}"   ; (÷) division sign
+; Key :  Y
+>!sc015::
+<^>!sc015:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00db}"  ; (Û) U with circumflex
+  else
+    Send "{u+00fb}"  ; (û) u with circumflex
+}
+>!+sc015::
+<^>!+sc015:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00fb}"  ; (û) u with circumflex
+  else
+    Send "{u+00db}"  ; (Û) U with circumflex
+}
 
->![::Send "{u+00ab}"   ; («) left-pointing double angle quotation mark
->!{::Send "{u+2039}"   ; (‹) left-pointing single angle quotation mark
+; Key :  U
+>!sc016::
+<^>!sc016:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00dc}"  ; (Ü) U with diaeresis
+  else
+    Send "{u+00fc}"  ; (ü) u with diaeresis
+}
+>!+sc016::
+<^>!+sc016:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00fc}"  ; (ü) u with diaeresis
+  else
+    Send "{u+00dc}"  ; (Ü) U with diaeresis
+}
 
->!]::Send "{u+00bb}"   ; (») right-pointing double angle quotation mark
->!}::Send "{u+203a}"   ; (›) right-pointing single angle quotation mark
+; Key :  I
+>!sc017::
+<^>!sc017:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00cf}"  ; (Ï) I with diaeresis
+  else
+    Send "{u+00ef}"  ; (ï) i with diaeresis
+}
+>!+sc017::
+<^>!+sc017:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00ef}"  ; (ï) i with diaeresis
+  else
+    Send "{u+00cf}"  ; (Ï) I with diaeresis
+}
 
->!;::Send "{u+00b0}"   ; (°) degree sign
->!+;::Send "{u+00b7}"  ; (·) middle dot
+; Key :  O
+>!sc018::
+<^>!sc018:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00d6}"  ; (Ö) O with diaeresis
+  else
+    Send "{u+00f6}"  ; (ö) o with diaeresis
+}
+>!+sc018::
+<^>!+sc018:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00f6}"  ; (ö) o with diaeresis
+  else
+    Send "{u+00d6}"  ; (Ö) O with diaeresis
+}
 
->!'::Send "{u+266a}"   ; (♪) eighth note
->!"::Send "{u+266b}"   ; (♫) beamed eighth notes
+; Key :  P
+>!sc019::
+<^>!sc019:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00d4}"  ; (Ô) O with circumflex
+  else
+    Send "{u+00f4}"  ; (ô) o with circumflex
+}
+>!+sc019::
+<^>!+sc019:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00f4}"  ; (ô) o with circumflex
+  else
+    Send "{u+00d4}"  ; (Ô) O with circumflex
+}
 
->!\::Send "{u+2002}"   ;     en space
->!|::Send "{u+2003}"   ;     em space
+; Key :  [ / { (left square bracket / left curly bracket)
+>!sc01A::
+<^>!sc01A::Send "{u+00ab}"   ; («) left-pointing double angle quotation mark
+>!+sc01A::
+<^>!+sc01A::Send "{u+2039}"  ; (‹) left-pointing single angle quotation mark
 
->!/::Send "{u+00bf}"   ; (¿) inverted question mark
->!?::Send "{u+2022}"   ; (•) bullet
+; Key :  ] / } (right square bracket / right curly bracket)
+>!sc01B::
+<^>!sc01B::Send "{u+00bb}"   ; (») right-pointing double angle quotation mark
+>!+sc01B::
+<^>!+sc01B::Send "{u+203a}"  ; (›) right-pointing single angle quotation mark
 
->!space::Send "{u+00a0}"   ; non-breaking space (NBSP)
->!+space::Send "{u+00a0}"  ; non-breaking space (NBSP)
+; Key :  A
+>!sc01E::
+<^>!sc01E:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00c4}"  ; (Ä) A with diaeresis
+  else
+    Send "{u+00e4}"  ; (ä) a with diaeresis
+}
+>!+sc01E::
+<^>!+sc01E:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00e4}"  ; (ä) a with diaeresis
+  else
+    Send "{u+00c4}"  ; (Ä) A with diaeresis
+}
+
+; Key :  S
+>!sc01F::
+<^>!sc01F:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+1e9e}"  ; (ẞ) capital sharp S (capital Eszett)
+  else
+    Send "{u+00df}"  ; (ß) small sharp s (Eszett)
+}
+>!+sc01F::
+<^>!+sc01F:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00df}"  ; (ß) small sharp s (Eszett)
+  else
+    Send "{u+1e9e}"  ; (ẞ) capital sharp S (capital Eszett)
+}
+
+; Key :  D
+>!sc020::
+<^>!sc020:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00c2}"  ; (Â) A with circumflex
+  else
+    Send "{u+00e2}"  ; (â) a with circumflex
+}
+>!+sc020::
+<^>!+sc020:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00e2}"  ; (â) a with circumflex
+  else
+    Send "{u+00c2}"  ; (Â) A with circumflex
+}
+
+; Key :  F
+>!sc021::
+<^>!sc021:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00c9}"  ; (É) E with acute
+  else
+    Send "{u+00e9}"  ; (é) e with acute
+}
+>!+sc021::
+<^>!+sc021:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00e9}"  ; (é) e with acute
+  else
+    Send "{u+00c9}"  ; (É) E with acute
+}
+
+; Key :  G
+>!sc022::
+<^>!sc022:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00c8}"  ; (È) E with grave
+  else
+    Send "{u+00e8}"  ; (è) e with grave
+}
+>!+sc022::
+<^>!+sc022:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00e8}"  ; (è) e with grave
+  else
+    Send "{u+00c8}"  ; (È) E with grave
+}
+
+; Key :  H
+>!sc023::
+<^>!sc023:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00da}"  ; (Ú) U with acute
+  else
+    Send "{u+00fa}"  ; (ú) u with acute
+}
+>!+sc023::
+<^>!+sc023:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00fa}"  ; (ú) u with acute
+  else
+    Send "{u+00da}"  ; (Ú) U with acute
+}
+
+; Key :  J
+>!sc024::
+<^>!sc024:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00d9}"  ; (Ù) U with grave
+  else
+    Send "{u+00f9}"  ; (ù) u with grave
+}
+>!+sc024::
+<^>!+sc024:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00f9}"  ; (ù) u with grave
+  else
+    Send "{u+00d9}"  ; (Ù) U with grave
+}
+
+; Key :  K
+>!sc025::
+<^>!sc025:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+0152}"  ; (Œ) ligature OE
+  else
+    Send "{u+0153}"  ; (œ) ligature oe
+}
+>!+sc025::
+<^>!+sc025:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+0153}"  ; (œ) ligature oe
+  else
+    Send "{u+0152}"  ; (Œ) ligature OE
+}
+
+; Key :  L
+>!sc026::
+<^>!sc026:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00d8}"  ; (Ø) O with stroke
+  else
+    Send "{u+00f8}"  ; (ø) o with stroke
+}
+>!+sc026::
+<^>!+sc026:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00f8}"  ; (ø) o with stroke
+  else
+    Send "{u+00d8}"  ; (Ø) O with stroke
+}
+
+; Key :  ; / : (semicolon / colon)
+>!sc027::
+<^>!sc027::Send "{u+00b0}"   ; (°) degree sign
+>!+sc027::
+<^>!+sc027::Send "{u+00b7}"  ; (·) middle dot
+
+; Key :  ' / " (apostrophe / quotation mark)
+>!sc028::
+<^>!sc028::Send "{u+266a}"   ; (♪) eighth note
+>!+sc028::
+<^>!+sc028::Send "{u+266b}"  ; (♫) beamed eighth notes
+
+; Key :  \ / | (backslash / vertical line)
+>!sc02B::
+<^>!sc02B::Send "{u+2002}"   ; en space
+>!+sc02B::
+<^>!+sc02B::Send "{u+2003}"  ; em space
+
+; Key :  Z
+>!sc02C::
+<^>!sc02C::{
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00c1}"  ; (Á) A with acute
+  else
+    Send "{u+00e1}"  ; (á) a with acute
+}
+>!+sc02C::
+<^>!+sc02C:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00e1}"  ; (á) a with acute
+  else
+    Send "{u+00c1}"  ; (Á) A with acute
+}
+
+; Key :  X
+>!sc02D::
+<^>!sc02D:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00c0}"  ; (À) A with grave
+  else
+    Send "{u+00e0}"  ; (à) a with grave
+}
+>!+sc02D::
+<^>!+sc02D:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00e0}"  ; (à) a with grave
+  else
+    Send "{u+00c0}"  ; (À) A with grave
+}
+
+; Key :  C
+>!sc02E::
+<^>!sc02E:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00c7}"  ; (Ç) C with cedilla
+  else
+    Send "{u+00e7}"  ; (ç) c with cedilla
+}
+>!+sc02E::
+<^>!+sc02E:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00e7}"  ; (ç) c with cedilla
+  else
+    Send "{u+00c7}"  ; (Ç) C with cedilla
+}
+
+; Key :  V
+>!sc02F::
+<^>!sc02F:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00cd}"  ; (Í) I with acute
+  else
+    Send "{u+00ed}"  ; (í) i with acute
+}
+>!+sc02F::
+<^>!+sc02F:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00ed}"  ; (í) i with acute
+  else
+    Send "{u+00cd}"  ; (Í) I with acute
+}
+
+; Key :  B
+>!sc030::
+<^>!sc030:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00cc}"  ; (Ì) I with grave
+  else
+    Send "{u+00ec}"  ; (ì) i with grave
+}
+>!+sc030::
+<^>!+sc030:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00ec}"  ; (ì) i with grave
+  else
+    Send "{u+00cc}"  ; (Ì) I with grave
+}
+
+; Key :  N
+>!sc031::
+<^>!sc031:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00d1}"  ; (Ñ) N with tilde
+  else
+    Send "{u+00f1}"  ; (ñ) n with tilde
+}
+>!+sc031::
+<^>!+sc031:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00f1}"  ; (ñ) n with tilde
+  else
+    Send "{u+00d1}"  ; (Ñ) N with tilde
+}
+
+; Key :  M
+>!sc032::
+<^>!sc032::Send "{u+00b5}"   ; (µ) micro sign
+>!+sc032::
+<^>!+sc032::Send "{u+00b1}"  ; (±) plus-minus sign
+
+; Key :  , / < (comma / less-than sign)
+>!sc033::
+<^>!sc033:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00d3}"  ; (Ó) O with acute
+  else
+    Send "{u+00f3}"  ; (ó) o with acute
+}
+>!+sc033::
+<^>!+sc033:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00f3}"  ; (ó) o with acute
+  else
+    Send "{u+00d3}"  ; (Ó) O with acute
+}
+
+; Key :  . / > (period / greater-than sign)
+>!sc034::
+<^>!sc034:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00d2}"  ; (Ò) O with grave
+  else
+    Send "{u+00f2}"  ; (ò) o with grave
+}
+>!+sc034::
+<^>!+sc034:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00f2}"  ; (ò) o with grave
+  else
+    Send "{u+00d2}"  ; (Ò) O with grave
+}
+
+; Key :  / / ? (slash / question mark)
+>!sc035::
+<^>!sc035::Send "{u+00bf}"   ; (¿) inverted question mark
+>!+sc035::
+<^>!+sc035::Send "{u+2022}"  ; (•) bullet
+
+; Key :  (space)
+>!sc039::
+<^>!sc039::Send "{u+00a0}"   ; non-breaking space (NBSP)
+>!+sc039::
+<^>!+sc039::Send "{u+00a0}"  ; non-breaking space (NBSP)
 
 
 ; Configuration :  'Grave Accent' and optional ISO key as alternate keys for 'Right Alt'
 
-`::
+vkC0::
 vkE2:: {
   ih := InputHook("L1", gEndKeys)
   ih.Start()
@@ -2014,10 +2175,14 @@ vkE2:: {
 
 ; Configuration :  Compose Key Selector
 
->!`::
->!~::
+>!sc029::
+>!+sc029::
+<^>!sc029::
+<^>!+sc029::
 >!sc056::
->!+sc056:: {
+>!+sc056::
+<^>!sc056::
+<^>!+sc056:: {
   ihA := InputHook("L1", gEndKeys)
   ihA.Start()
   ihA.Wait()
@@ -2089,6 +2254,10 @@ vkE2:: {
   else if (ihA.Input == "f") {
     if cmpSmallF.Has(ihB.Input)
       Send cmpSmallF[ihB.Input]
+  }
+  else if (ihA.Input == "t") {
+    if cmpSmallT.Has(ihB.Input)
+      Send cmpSmallT[ihB.Input]
   }
   else if (ihA.Input == "l") {
     if cmpSmallL.Has(ihB.Input)
@@ -2169,10 +2338,6 @@ vkE2:: {
   else if (ihA.Input == "S") {
     if cmpCapitalS.Has(ihB.Input)
       Send cmpCapitalS[ihB.Input]
-  }
-  else if (ihA.Input == "t") {
-    if cmpSmallT.Has(ihB.Input)
-      Send cmpSmallT[ihB.Input]
   }
   else if (ihA.Input == "T") {
     if cmpCapitalT.Has(ihB.Input)
