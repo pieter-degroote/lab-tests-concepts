@@ -2016,7 +2016,7 @@ cmpSmallN["0"] := "{u+277f}"  ; (❿) dingbat negative circled digit 10
 
 ; Key :  Z
 >!sc02C::
-<^>!sc02C::{
+<^>!sc02C:: {
   if GetKeyState("CapsLock", "T")
     Send "{u+00c1}"  ; (Á) A with acute
   else
