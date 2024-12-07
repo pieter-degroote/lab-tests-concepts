@@ -1,6 +1,6 @@
 #requires AutoHotkey v1.1
 
-; EurKEY v1.1 (unofficial) (for AutoHotkey v1.1).ahk - 2024-10-14
+; EurKEY v1.1 (unofficial) (for AutoHotkey v1.1).ahk - 2024-11-30
 
 ; GitHub :   https://github.com/pieter-degroote/EurKEY-clone
 
@@ -943,7 +943,7 @@ dkMathSymbols.item[" "] := "{u+221a}"  ; (√) square root
   key := ""
   return
 >!+sc028::
-<^>!+sc028::Send {u+2020}   ; (†) dagger
+<^>!+sc028::Send {u+2020}  ; (†) dagger
 
 ; Key :  ` / ~ (grave accent / tilde)
 >!sc029::

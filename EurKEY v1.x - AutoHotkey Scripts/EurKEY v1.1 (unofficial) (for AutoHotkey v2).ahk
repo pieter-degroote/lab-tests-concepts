@@ -1,6 +1,6 @@
 #requires AutoHotkey v2
 
-; EurKEY v1.1 (unofficial) (for AutoHotkey v2).ahk - 2024-10-14
+; EurKEY v1.1 (unofficial) (for AutoHotkey v2).ahk - 2024-11-30
 
 ; GitHub :   https://github.com/pieter-degroote/EurKEY-clone
 
@@ -958,7 +958,7 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
     Send dkAcuteAccent[ih.Input]
 }
 >!+sc028::
-<^>!+sc028::Send "{u+2020}"   ; (†) dagger
+<^>!+sc028::Send "{u+2020}"  ; (†) dagger
 
 ; Key :  ` / ~ (grave accent / tilde)
 >!sc029::
@@ -1002,7 +1002,7 @@ dkMathSymbols[" "] := "{u+221a}"  ; (√) square root
 
 ; Key :  X
 >!sc02D::
-<^>!sc02D::{
+<^>!sc02D:: {
   if GetKeyState("CapsLock", "T")
     Send "{u+00c1}"  ; (Á) A with acute
   else

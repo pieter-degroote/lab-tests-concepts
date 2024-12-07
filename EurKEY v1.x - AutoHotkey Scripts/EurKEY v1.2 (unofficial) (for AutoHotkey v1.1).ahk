@@ -1,6 +1,6 @@
 #requires AutoHotkey v1.1
 
-; EurKEY v1.2 (unofficial) (for AutoHotkey v1.1).ahk - 2024-10-14
+; EurKEY v1.2 (unofficial) (for AutoHotkey v1.1).ahk - 2024-11-30
 
 ; GitHub :   https://github.com/pieter-degroote/EurKEY-clone
 
