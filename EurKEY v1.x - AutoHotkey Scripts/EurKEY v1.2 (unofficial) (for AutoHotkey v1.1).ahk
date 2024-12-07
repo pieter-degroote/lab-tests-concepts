@@ -9,7 +9,7 @@
 
 ; Configuration :
 
-; Keyboard layout (on Windows) :  US / Romanian (Programmers)
+; Keyboard layout :  US QWERTY
 
 
 
