@@ -1,13 +1,10 @@
-// UltimateKEYS SW  (/usr/share/X11/xkb/symbols/custom)
+// UltimateKEYS SW (Public Domain)
 
 // Website :  https://pieter-degroote.github.io/UltimateKEYS/
 
 // GitHub :   https://github.com/pieter-degroote/UltimateKEYS-testing
 
-// License :  GNU General Public License Version 3
-
-
-default  partial alphanumeric_keys modifier_keys
+default partial alphanumeric_keys modifier_keys
 xkb_symbols "basic" {
 
     name[Group1] = "UltimateKEYS SW";

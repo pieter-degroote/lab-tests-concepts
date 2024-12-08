@@ -1,11 +1,8 @@
-! UltimateKEYS SW  (~/.Xmodmap)
+! UltimateKEYS SW (Public Domain)
 
 ! Website :  https://pieter-degroote.github.io/UltimateKEYS/
 
 ! GitHub :   https://github.com/pieter-degroote/UltimateKEYS-testing
-
-! License :  GNU General Public License Version 3
-
 
 keycode  10 = exclam       1            exclamdown           onesuperior
 keycode  11 = at           2            U2264                twosuperior
