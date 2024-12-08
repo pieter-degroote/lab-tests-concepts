@@ -6,7 +6,7 @@ Additional lab tests and concepts (mostly based on UltimateKEYS)
 
 **UltimateKEYS - Colemak Edition - Keyboard Layout Image&nbsp;:**
 
-![UltimateKEYS - Keyboard Layout Image](UltimateKEYS%20-%20Colemak/UltimateKEYS%20-%20Colemak%20(2x%20Backspace)%20-%20Keyboard%20Layout%20Image.png)
+![UltimateKEYS - Colemak - Keyboard Layout Image](UltimateKEYS%20-%20Colemak/UltimateKEYS%20-%20Colemak%20(2x%20Backspace)%20-%20Keyboard%20Layout%20Image.png)
 
 **UltimateKEYS - Latest - Keyboard Layout Image&nbsp;:**
 
