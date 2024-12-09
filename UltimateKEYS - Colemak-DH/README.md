@@ -10,7 +10,7 @@ Colemak-DH mod of UltimateKEYS - For AutoHotkey v2/v1.1 (Win)
 
 ![UltimateKEYS - Colemak-DH ISO mod - Keyboard Layout Image](UltimateKEYS%20-%20Colemak-DH%20ISO%20mod%20-%20Keyboard%20Layout%20Image.png)
 
-## Prerequisites
+## Prerequisites (for AutoHotkey v2/v1.1)
 
 These AutoHotkey scripts are highly customizable editions of UltimateKEYS. To work properly, the Windows main/base keyboard layout has to be set to either&nbsp;:
 
