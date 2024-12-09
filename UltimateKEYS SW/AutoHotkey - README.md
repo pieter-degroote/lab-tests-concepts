@@ -20,130 +20,140 @@ This means that when Scroll Lock is on, the symbols !, @, #, $, %, ^, &, \*, (, 
 
     ; Configuration :  Switch positions of symbols and digits with Scroll Lock
     
-    $1::
+    ; Key :  1
+    sc002::
       if GetKeyState("ScrollLock", "T")
         Send {!}  ; exclamation mark
       else
         Send 1    ; digit 1
       return
-    $+1::
+    +sc002::
       if GetKeyState("ScrollLock", "T")
         Send 1    ; digit 1
       else
         Send {!}  ; exclamation mark
       return
     
-    $2::
+    ; Key :  2
+    sc003::
       if GetKeyState("ScrollLock", "T")
         Send @  ; at sign
       else
         Send 2  ; digit 2
       return
-    $+2::
+    +sc003::
       if GetKeyState("ScrollLock", "T")
         Send 2  ; digit 2
       else
         Send @  ; at sign
       return
     
-    $3::
+    ; Key :  3
+    sc004::
       if GetKeyState("ScrollLock", "T")
         Send {#}  ; number sign
       else
         Send 3    ; digit 3
       return
-    $+3::
+    +sc004::
       if GetKeyState("ScrollLock", "T")
         Send 3    ; digit 3
       else
         Send {#}  ; number sign
       return
     
-    $4::
+    ; Key :  4
+    sc005::
       if GetKeyState("ScrollLock", "T")
         Send $  ; dollar sign
       else
         Send 4  ; digit 4
       return
-    $+4::
+    +sc005::
       if GetKeyState("ScrollLock", "T")
         Send 4  ; digit 4
       else
         Send $  ; dollar sign
       return
     
-    $5::
+    ; Key :  5
+    sc006::
       if GetKeyState("ScrollLock", "T")
         Send `%  ; percent sign
       else
         Send 5   ; digit 5
       return
-    $+5::
+    +sc006::
       if GetKeyState("ScrollLock", "T")
         Send 5   ; digit 5
       else
         Send `%  ; percent sign
       return
     
-    $6::
+    ; Key :  6
+    sc007::
       if GetKeyState("ScrollLock", "T")
         Send {^}  ; circumflex accent
       else
         Send 6    ; digit 6
       return
-    $+6::
+    +sc007::
       if GetKeyState("ScrollLock", "T")
         Send 6    ; digit 6
       else
         Send {^}  ; circumflex accent
       return
     
-    $7::
+    ; Key :  7
+    sc008::
       if GetKeyState("ScrollLock", "T")
         Send &  ; ampersand
       else
         Send 7  ; digit 7
       return
-    $+7::
+    +sc008::
       if GetKeyState("ScrollLock", "T")
         Send 7  ; digit 7
       else
         Send &  ; ampersand
       return
     
-    $8::
+    ; Key :  8
+    sc009::
       if GetKeyState("ScrollLock", "T")
         Send *  ; asterisk
       else
         Send 8  ; digit 8
       return
-    $+8::
+    +sc009::
       if GetKeyState("ScrollLock", "T")
         Send 8  ; digit 8
       else
         Send *  ; asterisk
       return
     
-    $9::
+    ; Key :  9
+    sc00A::
       if GetKeyState("ScrollLock", "T")
         Send (  ; left parenthesis
       else
         Send 9  ; digit 9
       return
-    $+9::
+    +sc00A::
       if GetKeyState("ScrollLock", "T")
         Send 9  ; digit 9
       else
         Send (  ; left parenthesis
       return
     
-    $0::
+    ; Key :  0
+    sc00B::
       if GetKeyState("ScrollLock", "T")
         Send )  ; right parenthesis
       else
         Send 0  ; digit 0
       return
-    $+0::
+    +sc00B::
       if GetKeyState("ScrollLock", "T")
         Send 0  ; digit 0
       else
@@ -154,130 +164,140 @@ This means that when Scroll Lock is on, the symbols !, @, #, $, %, ^, &, \*, (, 
 
     ; Configuration :  Switch positions of symbols and digits with Scroll Lock
     
-    $1:: {
+    ; Key :  1
+    sc002:: {
       if GetKeyState("ScrollLock", "T")
         Send "{!}"  ; exclamation mark
       else
         Send "1"    ; digit 1
     }
-    $+1:: {
+    +sc002:: {
       if GetKeyState("ScrollLock", "T")
         Send "1"    ; digit 1
       else
         Send "{!}"  ; exclamation mark
     }
     
-    $2:: {
+    ; Key :  2
+    sc003:: {
       if GetKeyState("ScrollLock", "T")
         Send "@"  ; at sign
       else
         Send "2"  ; digit 2
     }
-    $+2:: {
+    +sc003:: {
       if GetKeyState("ScrollLock", "T")
         Send "2"  ; digit 2
       else
         Send "@"  ; at sign
     }
     
-    $3:: {
+    ; Key :  3
+    sc004:: {
       if GetKeyState("ScrollLock", "T")
         Send "{#}"  ; number sign
       else
         Send "3"    ; digit 3
     }
-    $+3:: {
+    +sc004:: {
       if GetKeyState("ScrollLock", "T")
         Send "3"    ; digit 3
       else
         Send "{#}"  ; number sign
     }
     
-    $4:: {
+    ; Key :  4
+    sc005:: {
       if GetKeyState("ScrollLock", "T")
         Send "$"  ; dollar sign
       else
         Send "4"  ; digit 4
     }
-    $+4:: {
+    +sc005:: {
       if GetKeyState("ScrollLock", "T")
         Send "4"  ; digit 4
       else
         Send "$"  ; dollar sign
     }
     
-    $5:: {
+    ; Key :  5
+    sc006:: {
       if GetKeyState("ScrollLock", "T")
         Send "%"  ; percent sign
       else
         Send "5"  ; digit 5
     }
-    $+5:: {
+    +sc006:: {
       if GetKeyState("ScrollLock", "T")
         Send "5"  ; digit 5
       else
         Send "%"  ; percent sign
     }
     
-    $6:: {
+    ; Key :  6
+    sc007:: {
       if GetKeyState("ScrollLock", "T")
         Send "{^}"  ; circumflex accent
       else
         Send "6"    ; digit 6
     }
-    $+6:: {
+    +sc007:: {
       if GetKeyState("ScrollLock", "T")
         Send "6"    ; digit 6
       else
         Send "{^}"  ; circumflex accent
     }
     
-    $7:: {
+    ; Key :  7
+    sc008:: {
       if GetKeyState("ScrollLock", "T")
         Send "&"  ; ampersand
       else
         Send "7"  ; digit 7
     }
-    $+7:: {
+    +sc008:: {
       if GetKeyState("ScrollLock", "T")
         Send "7"  ; digit 7
       else
         Send "&"  ; ampersand
     }
     
-    $8:: {
+    ; Key :  8
+    sc009:: {
       if GetKeyState("ScrollLock", "T")
         Send "*"  ; asterisk
       else
         Send "8"  ; digit 8
     }
-    $+8:: {
+    +sc009:: {
       if GetKeyState("ScrollLock", "T")
         Send "8"  ; digit 8
       else
         Send "*"  ; asterisk
     }
     
-    $9:: {
+    ; Key :  9
+    sc00A:: {
       if GetKeyState("ScrollLock", "T")
         Send "("  ; left parenthesis
       else
         Send "9"  ; digit 9
     }
-    $+9:: {
+    +sc00A:: {
       if GetKeyState("ScrollLock", "T")
         Send "9"  ; digit 9
       else
         Send "("  ; left parenthesis
     }
     
-    $0:: {
+    ; Key :  0
+    sc00B:: {
       if GetKeyState("ScrollLock", "T")
         Send ")"  ; right parenthesis
       else
         Send "0"  ; digit 0
     }
-    $+0:: {
+    +sc00B:: {
       if GetKeyState("ScrollLock", "T")
         Send "0"  ; digit 0
       else
