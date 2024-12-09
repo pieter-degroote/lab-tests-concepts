@@ -1,6 +1,6 @@
 # UltimateKEYS - Colemak-DH mod (concept)
 
-Colemak-DH mod of UltimateKEYS - For AutoHotkey v2/v1.1 (Win)
+Colemak-DH mod of UltimateKEYS - For AutoHotkey v2/v1.1 (Win) and XKB/Xmodmap (Linux)
 
 **Keyboard Layout Image - ANSI&nbsp;:**
 
