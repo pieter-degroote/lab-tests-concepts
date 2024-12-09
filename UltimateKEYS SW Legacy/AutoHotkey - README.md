@@ -18,7 +18,7 @@ This means that when Scroll Lock is on, the symbols !, @, #, $, %, ^, &, \*, (, 
 
 **AutoHotkey v1.1&nbsp;:**
 
-    ; Configuration :  Switch positions of symbols and digits with Scroll Lock
+    ; Configuration :  Switch positions of symbols and digits via Scroll Lock
     
     ; Key :  1
     sc002::
@@ -162,7 +162,7 @@ This means that when Scroll Lock is on, the symbols !, @, #, $, %, ^, &, \*, (, 
 
 **AutoHotkey v2&nbsp;:**
 
-    ; Configuration :  Switch positions of symbols and digits with Scroll Lock
+    ; Configuration :  Switch positions of symbols and digits via Scroll Lock
     
     ; Key :  1
     sc002:: {
