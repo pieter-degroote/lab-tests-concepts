@@ -12,7 +12,7 @@ Colemak-DH mod of UltimateKEYS - For AutoHotkey v2/v1.1 (Win)
 
 ## Prerequisites (for AutoHotkey v2/v1.1)
 
-These AutoHotkey scripts are highly customizable editions of UltimateKEYS. To work properly, the Windows main/base keyboard layout has to be set to either&nbsp;:
+See `AutoHotkey - README.md` for detailed instructions. To work properly, the Windows main/base keyboard layout has to be set to either&nbsp;:
 
 - **Hausa (Latin - Nigeria)** =&gt; AltGr assigned to UltimateKEYS (best layout, based on US QWERTY).
 - **United States (US)** =&gt; Right Alt assigned to UltimateKEYS (second best layout).
