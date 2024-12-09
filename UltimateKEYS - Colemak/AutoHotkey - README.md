@@ -18,23 +18,23 @@ This modification features a Colemak variant of UltimateKEYS (for AutoHotkey v2/
 
     ; Configuration :  Switch letters to Colemak
 
-    e::f
-    r::p
-    t::g
-    y::j
-    u::l
-    i::u
-    o::y
-    p::;
-    s::r
-    d::s
-    f::t
-    g::d
-    j::n
-    k::e
-    l::i
-    `;::o
-    n::k
+    sc012::sc021  ; E becomes F
+    sc013::sc019  ; R becomes P
+    sc014::sc022  ; T becomes G
+    sc015::sc024  ; Y becomes J
+    sc016::sc026  ; U becomes L
+    sc017::sc016  ; I becomes U
+    sc018::sc015  ; O becomes Y
+    sc019::sc027  ; P becomes ;
+    sc01F::sc013  ; S becomes R
+    sc020::sc01F  ; D becomes S
+    sc021::sc014  ; F becomes T
+    sc022::sc020  ; G becomes D
+    sc024::sc031  ; J becomes N
+    sc025::sc012  ; K becomes E
+    sc026::sc017  ; L becomes I
+    sc027::sc018  ; ; becomes O
+    sc031::sc025  ; N becomes K
 
 
     ; Configuration :  Assign 'Caps Lock' to both 'Shift' keys and 'Backspace' also to 'Caps Lock'
