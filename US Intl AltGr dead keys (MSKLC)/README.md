@@ -2,7 +2,8 @@
 
 **US-International keyboard layout with AltGr dead keys.**  
 This layout simply moves all dead keys to the AltGr (+ Shift) layer, and eliminates some other minor annoyances (e.g. `ç/Ç` on its logical key).  
-This MSKLC implementation is targeted towards more 'conservative' users (meeting their basic needs).
+This MSKLC implementation is targeted towards more 'conservative' users (meeting their basic needs).  
+Note that it only has minimal differences from 'US-International' to achieve the desired results.
 
 ## Keyboard Layout Image
 
