@@ -1,10 +1,10 @@
 #requires AutoHotkey v1.1
 
-; Belgian AZERTY (Shift Lock for letters and digits) (for AutoHotkey v1.1).ahk - 2022-02-01
+; Belgian AZERTY (Shift Lock for letters and digits) (for AutoHotkey v1.1).ahk - 2024-11-30
 
 ; Website :  https://pieter-degroote.github.io/UltimateKEYS/
 
-; GitHub :   https://github.com/pieter-degroote/UltimateKEYS-testing
+; GitHub :   https://github.com/pieter-degroote/lab-tests-concepts
 
 ; License :  GNU General Public License Version 3
 
@@ -169,349 +169,409 @@ dkTilde.item["Y"] := "{u+1ef8}"  ; (Ỹ) Y with tilde
 dkTilde.item[" "] := "~"         ;     tilde
 
 
-; Configuration :  Convert US QWERTY to Belgian AZERTY
+; Configuration :  Swap keys to Belgian AZERTY
 
-q::a   ; assign 'A' to 'Q'
-w::z   ; assign 'Z' to 'W'
-a::q   ; assign 'Q' to 'A'
-z::w   ; assign 'W' to 'Z'
-`;::m  ; assign 'M' to ';/:'
+sc00D::sc00C  ; = becomes -
+sc010::sc01E  ; Q becomes A
+sc011::sc02C  ; W becomes Z
+sc01E::sc010  ; A becomes Q
+sc027::sc032  ; ; becomes M
+sc02C::sc011  ; Z becomes W
+sc035::sc00D  ; / becomes =
 
-$1::
+
+; Configuration :  Detailed conversion to Belgian AZERTY
+
+; Key :  1
+sc002::
   if GetKeyState("CapsLock", "T")
-    Send 1   ; digit 1
+    Send 1  ; digit 1
   else
-    Send &   ; ampersand
+    Send &  ; ampersand
   return
-$+1::
++sc002::
   if GetKeyState("CapsLock", "T")
-    Send &   ; ampersand
+    Send &  ; ampersand
   else
-    Send 1   ; digit 1
+    Send 1  ; digit 1
   return
+>!sc002::
+<^>!sc002::Send |  ; vertical line
 
->!1::Send |  ; vertical line
-
-$2::
+; Key :  2
+sc003::
   if GetKeyState("CapsLock", "T")
     Send 2         ; digit 2
   else
     Send {u+00e9}  ; (é) e with acute
   return
-$+2::
++sc003::
   if GetKeyState("CapsLock", "T")
     Send {u+00e9}  ; (é) e with acute
   else
     Send 2         ; digit 2
   return
+>!sc003::
+<^>!sc003::Send @  ; at sign
 
->!2::Send @        ; at sign
-
-$3::
+; Key :  3
+sc004::
   if GetKeyState("CapsLock", "T")
-    Send 3     ; digit 3
+    Send 3   ; digit 3
   else
-    Send `"    ; quotation mark
+    Send `"  ; quotation mark
   return
-$+3::
++sc004::
   if GetKeyState("CapsLock", "T")
-    Send `"    ; quotation mark
+    Send `"  ; quotation mark
   else
-    Send 3     ; digit 3
+    Send 3   ; digit 3
   return
+>!sc004::
+<^>!sc004::Send {#}  ; number sign
 
->!3::Send {#}  ; number sign
-
-$4::
+; Key :  4
+sc005::
   if GetKeyState("CapsLock", "T")
-    Send 4     ; digit 4
+    Send 4  ; digit 4
   else
-    Send '     ; apostrophe
+    Send '  ; apostrophe
   return
-$+4::
++sc005::
   if GetKeyState("CapsLock", "T")
-    Send '     ; apostrophe
+    Send '  ; apostrophe
   else
-    Send 4     ; digit 4
+    Send 4  ; digit 4
   return
+>!sc005::
+<^>!sc005::Send {{}  ; left curly bracket
 
->!4::Send {{}  ; left curly bracket
-
-$5::
+; Key :  5
+sc006::
   if GetKeyState("CapsLock", "T")
-    Send 5          ; digit 5
+    Send 5  ; digit 5
   else
-    Send (          ; left parenthesis
+    Send (  ; left parenthesis
   return
-$+5::
++sc006::
   if GetKeyState("CapsLock", "T")
-    Send (          ; left parenthesis
+    Send (  ; left parenthesis
   else
-    Send 5          ; digit 5
+    Send 5  ; digit 5
   return
+>!sc006::
+<^>!sc006::Send {u+20ac}  ; (€) euro sign
 
->!5::Send {u+20ac}  ; (€) euro sign
-
-$6::
+; Key :  6
+sc007::
   if GetKeyState("CapsLock", "T")
     Send 6         ; digit 6
   else
     Send {u+00a7}  ; (§) section sign
   return
-$+6::
++sc007::
   if GetKeyState("CapsLock", "T")
     Send {u+00a7}  ; (§) section sign
   else
     Send 6         ; digit 6
   return
+>!sc007::
+<^>!sc007::Send {^}  ; circumflex accent
 
->!6::Send {^}      ; circumflex accent
-
-$7::
+; Key :  7
+sc008::
   if GetKeyState("CapsLock", "T")
     Send 7         ; digit 7
   else
     Send {u+00e8}  ; (è) e with grave
   return
-$+7::
++sc008::
   if GetKeyState("CapsLock", "T")
     Send {u+00e8}  ; (è) e with grave
   else
     Send 7         ; digit 7
   return
 
-$8::
+; Key :  8
+sc009::
   if GetKeyState("CapsLock", "T")
     Send 8    ; digit 8
   else
     Send {!}  ; exclamation mark
   return
-$+8::
++sc009::
   if GetKeyState("CapsLock", "T")
     Send {!}  ; exclamation mark
   else
     Send 8    ; digit 8
   return
 
-$9::
+; Key :  9
+sc00A::
   if GetKeyState("CapsLock", "T")
     Send 9         ; digit 9
   else
     Send {u+00e7}  ; (ç) c with cedilla
   return
-$+9::
++sc00A::
   if GetKeyState("CapsLock", "T")
     Send {u+00e7}  ; (ç) c with cedilla
   else
     Send 9         ; digit 9
   return
+>!sc00A::
+<^>!sc00A::Send {{}  ; left curly bracket
 
->!9::Send {{}      ; left curly bracket
-
-$0::
+; Key :  0
+sc00B::
   if GetKeyState("CapsLock", "T")
     Send 0         ; digit 0
   else
     Send {u+00e0}  ; (à) a with grave
   return
-$+0::
++sc00B::
   if GetKeyState("CapsLock", "T")
     Send {u+00e0}  ; (à) a with grave
   else
     Send 0         ; digit 0
   return
+>!sc00B::
+<^>!sc00B::Send {}}  ; right curly bracket
 
->!0::Send {}}      ; right curly bracket
+; Key :  - / _ (hyphen-minus / underscore)
+sc00C::Send )          ; right parenthesis
++sc00C::Send {u+00b0}  ; (°) degree sign
 
-$-::Send )         ; right parenthesis
-$_::Send {u+00b0}  ; (°) degree sign
+; Key :  = / + (equals sign / plus sign)
+>!sc00D::
+<^>!sc00D::Send {u+00c7}  ; (Ç) C with cedilla
 
-$=::Send -          ; hyphen-minus
-$+::Send _          ; underscore
->!=::Send {u+00c7}  ; (Ç) C with cedilla
+; Key :  Q
+>!sc010::
+<^>!sc010::
+  if GetKeyState("CapsLock", "T")
+    Send {u+00c6}  ; (Æ) letter AE
+  else
+    Send {u+00e6}  ; (æ) letter ae
+  return
+>!+sc010::
+<^>!+sc010::
+  if GetKeyState("CapsLock", "T")
+    Send {u+00e6}  ; (æ) letter ae
+  else
+    Send {u+00c6}  ; (Æ) letter AE
+  return
 
-$m::Send `,  ; comma
-$+m::Send ?  ; question mark
->!m::Send \  ; reverse solidus (backslash)
+; Key :  W
+>!sc011::
+<^>!sc011::
+  if GetKeyState("CapsLock", "T")
+    Send {u+00c5}  ; (Å) A with ring above
+  else
+    Send {u+00e5}  ; (å) a with ring above
+  return
+>!+sc011::
+<^>!+sc011::
+  if GetKeyState("CapsLock", "T")
+    Send {u+00e5}  ; (å) a with ring above
+  else
+    Send {u+00c5}  ; (Å) A with ring above
+  return
 
-$,::Send `;  ; semicolon
-$<::Send .   ; full stop (period)
->!,::Send <  ; less-than sign
+; Key :  E
+>!sc012::
+<^>!sc012::Send {u+20ac}  ; (€) euro sign
 
-$.::Send :   ; colon
-$>::Send /   ; solidus (slash)
->!.::Send >  ; greater-than sign
+; Key :  T
+>!sc014::
+<^>!sc014::
+  if GetKeyState("CapsLock", "T")
+    Send {u+00de}  ; (Þ) capital letter thorn
+  else
+    Send {u+00fe}  ; (þ) small letter thorn
+  return
+>!+sc014::
+<^>!+sc014::
+  if GetKeyState("CapsLock", "T")
+    Send {u+00fe}  ; (þ) small letter thorn
+  else
+    Send {u+00de}  ; (Þ) capital letter thorn
+  return
 
-$/::Send {=}  ; equals sign
-$?::Send {+}  ; plus sign
-
->!/::
+; Key :  [ / { (left square bracket / left curly bracket)
+sc01A::
   Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkTilde.item[key]
+  Send % dkCircumflex.item[key]
   key := ""  ; avoids leaking content via debug properties
   return
++sc01A::
+  Input, key, L1, {bs}{del}{esc}{home}{end}
+  Send % dkDiaeresis.item[key]
+  key := ""  ; avoids leaking content via debug properties
+  return
+>!sc01A::
+<^>!sc01A::Send [  ; left square bracket
 
->!q::
-  if GetKeyState("CapsLock", "T")
-    Send {u+00c6}  ; (Æ) letter AE
-  else
-    Send {u+00e6}  ; (æ) letter ae
-  return
->!+q::
-  if GetKeyState("CapsLock", "T")
-    Send {u+00e6}  ; (æ) letter ae
-  else
-    Send {u+00c6}  ; (Æ) letter AE
-  return
+; Key :  ] / } (right square bracket / right curly bracket)
+sc01B::Send $   ; dollar sign
++sc01B::Send *  ; asterisk
+>!sc01B::
+<^>!sc01B::Send ]  ; right square bracket
 
->!w::
-  if GetKeyState("CapsLock", "T")
-    Send {u+00c5}  ; (Å) A with ring above
-  else
-    Send {u+00e5}  ; (å) a with ring above
-  return
->!+w::
-  if GetKeyState("CapsLock", "T")
-    Send {u+00e5}  ; (å) a with ring above
-  else
-    Send {u+00c5}  ; (Å) A with ring above
-  return
-
->!c::
-  if GetKeyState("CapsLock", "T")
-    Send {u+00c7}  ; (Ç) C with cedilla
-  else
-    Send {u+00e7}  ; (ç) c with cedilla
-  return
->!+c::
-  if GetKeyState("CapsLock", "T")
-    Send {u+00e7}  ; (ç) c with cedilla
-  else
-    Send {u+00c7}  ; (Ç) C with cedilla
-  return
-
->!d::
-  if GetKeyState("CapsLock", "T")
-    Send {u+00d0}  ; (Ð) capital letter eth
-  else
-    Send {u+00f0}  ; (ð) small letter eth
-  return
->!+d::
-  if GetKeyState("CapsLock", "T")
-    Send {u+00f0}  ; (ð) small letter eth
-  else
-    Send {u+00d0}  ; (Ð) capital letter eth
-  return
-
->!n::
-  if GetKeyState("CapsLock", "T")
-    Send {u+00d1}  ; (Ñ) N with tilde
-  else
-    Send {u+00f1}  ; (ñ) n with tilde
-  return
->!+n::
-  if GetKeyState("CapsLock", "T")
-    Send {u+00f1}  ; (ñ) n with tilde
-  else
-    Send {u+00d1}  ; (Ñ) N with tilde
-  return
-
->!k::
-  if GetKeyState("CapsLock", "T")
-    Send {u+0152}  ; (Œ) ligature OE
-  else
-    Send {u+0153}  ; (œ) ligature oe
-  return
->!+k::
-  if GetKeyState("CapsLock", "T")
-    Send {u+0153}  ; (œ) ligature oe
-  else
-    Send {u+0152}  ; (Œ) ligature OE
-  return
-
->!l::
-  if GetKeyState("CapsLock", "T")
-    Send {u+00d8}  ; (Ø) O with stroke
-  else
-    Send {u+00f8}  ; (ø) o with stroke
-  return
->!+l::
-  if GetKeyState("CapsLock", "T")
-    Send {u+00f8}  ; (ø) o with stroke
-  else
-    Send {u+00d8}  ; (Ø) O with stroke
-  return
-
->!s::
+; Key :  S
+>!sc01F::
+<^>!sc01F::
   if GetKeyState("CapsLock", "T")
     Send {u+1e9e}  ; (ẞ) capital sharp S (capital Eszett)
   else
     Send {u+00df}  ; (ß) small sharp s (Eszett)
   return
->!+s::
+>!+sc01F::
+<^>!+sc01F::
   if GetKeyState("CapsLock", "T")
     Send {u+00df}  ; (ß) small sharp s (Eszett)
   else
     Send {u+1e9e}  ; (ẞ) capital sharp S (capital Eszett)
   return
 
->!t::
+; Key :  D
+>!sc020::
+<^>!sc020::
   if GetKeyState("CapsLock", "T")
-    Send {u+00de}  ; (Þ) capital letter thorn
+    Send {u+00d0}  ; (Ð) capital letter eth
   else
-    Send {u+00fe}  ; (þ) small letter thorn
+    Send {u+00f0}  ; (ð) small letter eth
   return
->!+t::
+>!+sc020::
+<^>!+sc020::
   if GetKeyState("CapsLock", "T")
-    Send {u+00fe}  ; (þ) small letter thorn
+    Send {u+00f0}  ; (ð) small letter eth
   else
-    Send {u+00de}  ; (Þ) capital letter thorn
+    Send {u+00d0}  ; (Ð) capital letter eth
   return
 
->!e::Send {u+20ac}  ; (€) euro sign
+; Key :  K
+>!sc025::
+<^>!sc025::
+  if GetKeyState("CapsLock", "T")
+    Send {u+0152}  ; (Œ) ligature OE
+  else
+    Send {u+0153}  ; (œ) ligature oe
+  return
+>!+sc025::
+<^>!+sc025::
+  if GetKeyState("CapsLock", "T")
+    Send {u+0153}  ; (œ) ligature oe
+  else
+    Send {u+0152}  ; (Œ) ligature OE
+  return
 
-$'::Send {u+00f9}  ; (ù) u with grave
-$"::Send `%        ; percent sign
+; Key :  L
+>!sc026::
+<^>!sc026::
+  if GetKeyState("CapsLock", "T")
+    Send {u+00d8}  ; (Ø) O with stroke
+  else
+    Send {u+00f8}  ; (ø) o with stroke
+  return
+>!+sc026::
+<^>!+sc026::
+  if GetKeyState("CapsLock", "T")
+    Send {u+00f8}  ; (ø) o with stroke
+  else
+    Send {u+00d8}  ; (Ø) O with stroke
+  return
 
->!'::
+; Key :  ' / " (apostrophe / quotation mark)
+sc028::Send {u+00f9}  ; (ù) u with grave
++sc028::Send `%       ; percent sign
+>!sc028::
+<^>!sc028::
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkAcuteAccent.item[key]
   key := ""  ; avoids leaking content via debug properties
   return
 
-$[::
-  Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkCircumflex.item[key]
-  key := ""
-  return
-${::
-  Input, key, L1, {bs}{del}{esc}{home}{end}
-  Send % dkDiaeresis.item[key]
-  key := ""
-  return
+; Key :  ` / ~ (grave accent / tilde)
+sc029::Send {u+00b2}   ; (²) superscript 2
++sc029::Send {u+00b3}  ; (³) superscript 3
 
->![::Send [  ; left square bracket
-
-$]::Send $   ; dollar sign
-$}::Send *   ; asterisk
-
->!]::Send ]  ; right square bracket
-
-$\::Send {u+00b5}  ; (µ) micro sign
-$|::Send {u+00a3}  ; (£) pound sign
-
->!\::
+; Key :  \ / | (backslash / vertical line)
+sc02B::Send {u+00b5}   ; (µ) micro sign
++sc02B::Send {u+00a3}  ; (£) pound sign
+>!sc02B::
+<^>!sc02B::
   Input, key, L1, {bs}{del}{esc}{home}{end}
   Send % dkGraveAccent.item[key]
-  key := ""
+  key := ""  ; avoids leaking content via debug properties
   return
 
-$`::Send {u+00b2}  ; (²) superscript 2
-$~::Send {u+00b3}  ; (³) superscript 3
+; Key :  C
+>!sc02E::
+<^>!sc02E::
+  if GetKeyState("CapsLock", "T")
+    Send {u+00c7}  ; (Ç) C with cedilla
+  else
+    Send {u+00e7}  ; (ç) c with cedilla
+  return
+>!+sc02E::
+<^>!+sc02E::
+  if GetKeyState("CapsLock", "T")
+    Send {u+00e7}  ; (ç) c with cedilla
+  else
+    Send {u+00c7}  ; (Ç) C with cedilla
+  return
 
-sc056::Send <    ; less-than sign
-+sc056::Send >   ; greater-than sign
->!sc056::Send \  ; reverse solidus (backslash)
+; Key :  N
+>!sc031::
+<^>!sc031::
+  if GetKeyState("CapsLock", "T")
+    Send {u+00d1}  ; (Ñ) N with tilde
+  else
+    Send {u+00f1}  ; (ñ) n with tilde
+  return
+>!+sc031::
+<^>!+sc031::
+  if GetKeyState("CapsLock", "T")
+    Send {u+00f1}  ; (ñ) n with tilde
+  else
+    Send {u+00d1}  ; (Ñ) N with tilde
+  return
 
->!space::Send {u+00a0}   ; non-breaking space (NBSP)
->!+space::Send {u+00a0}  ; non-breaking space (NBSP)
+; Key :  M
+sc032::Send `,  ; comma
++sc032::Send ?  ; question mark
+>!sc032::
+<^>!sc032::Send \  ; reverse solidus (backslash)
+
+; Key :  , / < (comma / less-than sign)
+sc033::Send `;  ; semicolon
++sc033::Send .  ; full stop (period)
+>!sc033::
+<^>!sc033::Send <  ; less-than sign
+
+; Key :  . / > (period / greater-than sign)
+sc034::Send :   ; colon
++sc034::Send /  ; solidus (slash)
+>!sc034::
+<^>!sc034::Send >  ; greater-than sign
+
+; Key :  / / ? (slash / question mark)
+>!sc035::
+<^>!sc035::
+  Input, key, L1, {bs}{del}{esc}{home}{end}
+  Send % dkTilde.item[key]
+  key := ""  ; avoids leaking content via debug properties
+  return
+
+; Key :  (space)
+>!sc039::
+<^>!sc039::Send {u+00a0}   ; non-breaking space (NBSP)
+>!+sc039::
+<^>!+sc039::Send {u+00a0}  ; non-breaking space (NBSP)
+
+; Key :  ISO key
+sc056::Send <   ; less-than sign
++sc056::Send >  ; greater-than sign
+>!sc056::
+<^>!sc056::Send \  ; reverse solidus (backslash)
