@@ -1487,15 +1487,15 @@ cmpSmallN.item["0"] := "{u+277f}"  ; (❿) dingbat negative circled digit 10
 
 ; Configuration :  US QWERTY assignments
 
-+sc007::Send {u+005e}     ; circumflex accent
++sc007::Send {u+005e}     ; (^) circumflex accent
 
-sc028::Send {u+0027}      ; apostrophe
-+sc028::Send {u+0022}     ; quotation mark
+sc028::Send {u+0027}      ; (') apostrophe
++sc028::Send {u+0022}     ; (") quotation mark
 
-sc029::Send {u+0060}      ; grave accent
-+sc029::Send {u+007e}     ; tilde
+sc029::Send {u+0060}      ; (`) grave accent
++sc029::Send {u+007e}     ; (~) tilde
 
-NumpadDot::Send {u+002e}  ; period
+NumpadDot::Send {u+002e}  ; (.) period
 
 
 ; Configuration :  'AltGr (RAlt)' and 'AltGr (RAlt) + Shift' modifiers
