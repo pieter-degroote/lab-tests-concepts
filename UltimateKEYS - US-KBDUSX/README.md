@@ -18,26 +18,26 @@ These modifications allow the scripts to work on both "US QWERTY" and "US-Intern
 
     ; Configuration :  US QWERTY assignments
 
-    +sc007::Send "{u+005e}"     ; circumflex accent
+    +sc007::Send "{u+005e}"     ; (^) circumflex accent
 
-    sc028::Send "{u+0027}"      ; apostrophe
-    +sc028::Send "{u+0022}"     ; quotation mark
+    sc028::Send "{u+0027}"      ; (') apostrophe
+    +sc028::Send "{u+0022}"     ; (") quotation mark
 
-    sc029::Send "{u+0060}"      ; grave accent
-    +sc029::Send "{u+007e}"     ; tilde
+    sc029::Send "{u+0060}"      ; (`) grave accent
+    +sc029::Send "{u+007e}"     ; (~) tilde
 
-    NumpadDot::Send "{u+002e}"  ; period
+    NumpadDot::Send "{u+002e}"  ; (.) period
 
 **AutoHotkey v1.1&nbsp;:**
 
     ; Configuration :  US QWERTY assignments
 
-    +sc007::Send {u+005e}     ; circumflex accent
+    +sc007::Send {u+005e}     ; (^) circumflex accent
 
-    sc028::Send {u+0027}      ; apostrophe
-    +sc028::Send {u+0022}     ; quotation mark
+    sc028::Send {u+0027}      ; (') apostrophe
+    +sc028::Send {u+0022}     ; (") quotation mark
 
-    sc029::Send {u+0060}      ; grave accent
-    +sc029::Send {u+007e}     ; tilde
+    sc029::Send {u+0060}      ; (`) grave accent
+    +sc029::Send {u+007e}     ; (~) tilde
 
-    NumpadDot::Send {u+002e}  ; period
+    NumpadDot::Send {u+002e}  ; (.) period
