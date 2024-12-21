@@ -51,7 +51,7 @@ dkCircumflex.item["y"] := "{u+0177}"  ; (ŷ) y with circumflex
 dkCircumflex.item["Y"] := "{u+0176}"  ; (Ŷ) Y with circumflex
 dkCircumflex.item["z"] := "{u+1e91}"  ; (ẑ) z with circumflex
 dkCircumflex.item["Z"] := "{u+1e90}"  ; (Ẑ) Z with circumflex
-dkCircumflex.item[" "] := "{^}"       ;     circumflex accent
+dkCircumflex.item[" "] := "{u+005e}"  ; (^) circumflex accent
 
 
 ; Dead Key :  Acute Accent
@@ -142,7 +142,7 @@ dkGraveAccent.item["w"] := "{u+1e81}"  ; (ẁ) w with grave
 dkGraveAccent.item["W"] := "{u+1e80}"  ; (Ẁ) W with grave
 dkGraveAccent.item["y"] := "{u+1ef3}"  ; (ỳ) y with grave
 dkGraveAccent.item["Y"] := "{u+1ef2}"  ; (Ỳ) Y with grave
-dkGraveAccent.item[" "] := "``"        ;     grave accent
+dkGraveAccent.item[" "] := "{u+0060}"  ; (`) grave accent
 
 
 ; Dead Key :  Tilde
@@ -166,7 +166,7 @@ dkTilde.item["v"] := "{u+1e7d}"  ; (ṽ) v with tilde
 dkTilde.item["V"] := "{u+1e7c}"  ; (Ṽ) V with tilde
 dkTilde.item["y"] := "{u+1ef9}"  ; (ỹ) y with tilde
 dkTilde.item["Y"] := "{u+1ef8}"  ; (Ỹ) Y with tilde
-dkTilde.item[" "] := "~"         ;     tilde
+dkTilde.item[" "] := "{u+007e}"  ; (~) tilde
 
 
 ; Configuration :  Swap keys to Belgian AZERTY
@@ -179,29 +179,31 @@ sc027::sc032  ; ; becomes M
 sc02C::sc011  ; Z becomes W
 sc035::sc00D  ; / becomes =
 
+NumpadDot::Send {u+002e}  ; (.) period
+
 
 ; Configuration :  Detailed conversion to Belgian AZERTY
 
 ; Key :  1
 sc002::
   if GetKeyState("CapsLock", "T")
-    Send 1  ; digit 1
+    Send {u+0031}  ; (1) digit 1
   else
-    Send &  ; ampersand
+    Send {u+0026}  ; (&) ampersand
   return
 +sc002::
   if GetKeyState("CapsLock", "T")
-    Send &  ; ampersand
+    Send {u+0026}  ; (&) ampersand
   else
-    Send 1  ; digit 1
+    Send {u+0031}  ; (1) digit 1
   return
 >!sc002::
-<^>!sc002::Send |  ; vertical line
+<^>!sc002::Send {u+007c}  ; (|) vertical line
 
 ; Key :  2
 sc003::
   if GetKeyState("CapsLock", "T")
-    Send 2         ; digit 2
+    Send {u+0032}  ; (2) digit 2
   else
     Send {u+00e9}  ; (é) e with acute
   return
@@ -209,55 +211,55 @@ sc003::
   if GetKeyState("CapsLock", "T")
     Send {u+00e9}  ; (é) e with acute
   else
-    Send 2         ; digit 2
+    Send {u+0032}  ; (2) digit 2
   return
 >!sc003::
-<^>!sc003::Send @  ; at sign
+<^>!sc003::Send {u+0040}  ; (@) at sign
 
 ; Key :  3
 sc004::
   if GetKeyState("CapsLock", "T")
-    Send 3   ; digit 3
+    Send {u+0033}  ; (3) digit 3
   else
-    Send `"  ; quotation mark
+    Send {u+0022}  ; (") quotation mark
   return
 +sc004::
   if GetKeyState("CapsLock", "T")
-    Send `"  ; quotation mark
+    Send {u+0022}  ; (") quotation mark
   else
-    Send 3   ; digit 3
+    Send {u+0033}  ; (3) digit 3
   return
 >!sc004::
-<^>!sc004::Send {#}  ; number sign
+<^>!sc004::Send {u+0023}  ; (#) number sign
 
 ; Key :  4
 sc005::
   if GetKeyState("CapsLock", "T")
-    Send 4  ; digit 4
+    Send {u+0034}  ; (4) digit 4
   else
-    Send '  ; apostrophe
+    Send {u+0027}  ; (') apostrophe
   return
 +sc005::
   if GetKeyState("CapsLock", "T")
-    Send '  ; apostrophe
+    Send {u+0027}  ; (') apostrophe
   else
-    Send 4  ; digit 4
+    Send {u+0034}  ; (4) digit 4
   return
 >!sc005::
-<^>!sc005::Send {{}  ; left curly bracket
+<^>!sc005::Send {u+007b}  ; ({) left curly bracket
 
 ; Key :  5
 sc006::
   if GetKeyState("CapsLock", "T")
-    Send 5  ; digit 5
+    Send {u+0035}  ; (5) digit 5
   else
-    Send (  ; left parenthesis
+    Send {u+0028}  ; (()left parenthesis
   return
 +sc006::
   if GetKeyState("CapsLock", "T")
-    Send (  ; left parenthesis
+    Send {u+0028}  ; (() left parenthesis
   else
-    Send 5  ; digit 5
+    Send {u+0035}  ; (5) digit 5
   return
 >!sc006::
 <^>!sc006::Send {u+20ac}  ; (€) euro sign
@@ -265,7 +267,7 @@ sc006::
 ; Key :  6
 sc007::
   if GetKeyState("CapsLock", "T")
-    Send 6         ; digit 6
+    Send {u+0036}  ; (6) digit 6
   else
     Send {u+00a7}  ; (§) section sign
   return
@@ -273,15 +275,15 @@ sc007::
   if GetKeyState("CapsLock", "T")
     Send {u+00a7}  ; (§) section sign
   else
-    Send 6         ; digit 6
+    Send {u+0036}  ; (6) digit 6
   return
 >!sc007::
-<^>!sc007::Send {^}  ; circumflex accent
+<^>!sc007::Send {u+005e}  ; (^) circumflex accent
 
 ; Key :  7
 sc008::
   if GetKeyState("CapsLock", "T")
-    Send 7         ; digit 7
+    Send {u+0037}  ; (7) digit 7
   else
     Send {u+00e8}  ; (è) e with grave
   return
@@ -289,27 +291,27 @@ sc008::
   if GetKeyState("CapsLock", "T")
     Send {u+00e8}  ; (è) e with grave
   else
-    Send 7         ; digit 7
+    Send {u+0037}  ; (7) digit 7
   return
 
 ; Key :  8
 sc009::
   if GetKeyState("CapsLock", "T")
-    Send 8    ; digit 8
+    Send {u+0038}  ; (8) digit 8
   else
-    Send {!}  ; exclamation mark
+    Send {u+0021}  ; (!) exclamation mark
   return
 +sc009::
   if GetKeyState("CapsLock", "T")
-    Send {!}  ; exclamation mark
+    Send {u+0021}  ; (!) exclamation mark
   else
-    Send 8    ; digit 8
+    Send {u+0038}  ; (8) digit 8
   return
 
 ; Key :  9
 sc00A::
   if GetKeyState("CapsLock", "T")
-    Send 9         ; digit 9
+    Send {u+0039}  ; (9) digit 9
   else
     Send {u+00e7}  ; (ç) c with cedilla
   return
@@ -317,15 +319,15 @@ sc00A::
   if GetKeyState("CapsLock", "T")
     Send {u+00e7}  ; (ç) c with cedilla
   else
-    Send 9         ; digit 9
+    Send {u+0039}  ; (9) digit 9
   return
 >!sc00A::
-<^>!sc00A::Send {{}  ; left curly bracket
+<^>!sc00A::Send {u+007b}  ; ({) left curly bracket
 
 ; Key :  0
 sc00B::
   if GetKeyState("CapsLock", "T")
-    Send 0         ; digit 0
+    Send {u+0030}  ; (0) digit 0
   else
     Send {u+00e0}  ; (à) a with grave
   return
@@ -333,13 +335,13 @@ sc00B::
   if GetKeyState("CapsLock", "T")
     Send {u+00e0}  ; (à) a with grave
   else
-    Send 0         ; digit 0
+    Send {u+0030}  ; (0) digit 0
   return
 >!sc00B::
-<^>!sc00B::Send {}}  ; right curly bracket
+<^>!sc00B::Send {u+007d}  ; (}) right curly bracket
 
 ; Key :  - / _ (hyphen-minus / underscore)
-sc00C::Send )          ; right parenthesis
+sc00C::Send {u+0029}   ; ()) right parenthesis
 +sc00C::Send {u+00b0}  ; (°) degree sign
 
 ; Key :  = / + (equals sign / plus sign)
@@ -410,13 +412,13 @@ sc01A::
   key := ""  ; avoids leaking content via debug properties
   return
 >!sc01A::
-<^>!sc01A::Send [  ; left square bracket
+<^>!sc01A::Send {u+005b}  ; ([) left square bracket
 
 ; Key :  ] / } (right square bracket / right curly bracket)
-sc01B::Send $   ; dollar sign
-+sc01B::Send *  ; asterisk
+sc01B::Send {u+0024}   ; ($) dollar sign
++sc01B::Send {u+002a}  ; (*) asterisk
 >!sc01B::
-<^>!sc01B::Send ]  ; right square bracket
+<^>!sc01B::Send {u+005d}  ; (]) right square bracket
 
 ; Key :  S
 >!sc01F::
@@ -483,8 +485,8 @@ sc01B::Send $   ; dollar sign
   return
 
 ; Key :  ' / " (apostrophe / quotation mark)
-sc028::Send {u+00f9}  ; (ù) u with grave
-+sc028::Send `%       ; percent sign
+sc028::Send {u+00f9}   ; (ù) u with grave
++sc028::Send {u+0025}  ; (%) percent sign
 >!sc028::
 <^>!sc028::
   Input, key, L1, {bs}{del}{esc}{home}{end}
@@ -539,22 +541,22 @@ sc02B::Send {u+00b5}   ; (µ) micro sign
   return
 
 ; Key :  M
-sc032::Send `,  ; comma
-+sc032::Send ?  ; question mark
+sc032::Send {u+002c}   ; (,) comma
++sc032::Send {u+003f}  ; (?) question mark
 >!sc032::
-<^>!sc032::Send \  ; reverse solidus (backslash)
+<^>!sc032::Send {u+005c}  ; (\) backslash
 
 ; Key :  , / < (comma / less-than sign)
-sc033::Send `;  ; semicolon
-+sc033::Send .  ; full stop (period)
+sc033::Send {u+003b}   ; (;) semicolon
++sc033::Send {u+002e}  ; (.) period
 >!sc033::
-<^>!sc033::Send <  ; less-than sign
+<^>!sc033::Send {u+003c}  ; (<) less-than sign
 
 ; Key :  . / > (period / greater-than sign)
-sc034::Send :   ; colon
-+sc034::Send /  ; solidus (slash)
+sc034::Send {u+003a}   ; (:) colon
++sc034::Send {u+002f}  ; (/) slash
 >!sc034::
-<^>!sc034::Send >  ; greater-than sign
+<^>!sc034::Send {u+003e}  ; (>) greater-than sign
 
 ; Key :  / / ? (slash / question mark)
 >!sc035::
@@ -571,7 +573,7 @@ sc034::Send :   ; colon
 <^>!+sc039::Send {u+00a0}  ; non-breaking space (NBSP)
 
 ; Key :  ISO key
-sc056::Send <   ; less-than sign
-+sc056::Send >  ; greater-than sign
+sc056::Send {u+003c}   ; (<) less-than sign
++sc056::Send {u+003e}  ; (>) greater-than sign
 >!sc056::
-<^>!sc056::Send \  ; reverse solidus (backslash)
+<^>!sc056::Send {u+005c}  ; (\) backslash
