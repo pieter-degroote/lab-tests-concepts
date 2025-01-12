@@ -1,6 +1,6 @@
 include "%L"
 
-# UltimateKEYS Compose Key Sequences - 2024-11-30
+# UltimateKEYS Compose Key Sequences - 2025-01-12
 
 # Website :  https://pieter-degroote.github.io/UltimateKEYS/
 
@@ -474,8 +474,12 @@ include "%L"
 <Multi_key> <f> <z> : "ʐ"  U0290  # z with retroflex hook
 
 
-# Swash Tail and Variations
+# Swash Tail and Other Variations
 
+<Multi_key> <t> <c> : "ꞓ"  UA793  # c with bar
+<Multi_key> <t> <C> : "Ꞓ"  UA792  # C with bar
+<Multi_key> <t> <f> : "ꞙ"  UA799  # f with stroke
+<Multi_key> <t> <F> : "Ꞙ"  UA798  # F with stroke
 <Multi_key> <t> <l> : "ⱡ"  U2C61  # l with double bar
 <Multi_key> <t> <L> : "Ⱡ"  U2C60  # L with double bar
 <Multi_key> <t> <s> : "ȿ"  U023F  # s with swash tail
@@ -731,9 +735,9 @@ include "%L"
 <Multi_key> <space> <8> : " "  U200A  # hair space
 <Multi_key> <space> <9> : " "  U2007  # figure space
 <Multi_key> <space> <0> : "​"  U200B  # zero-width space (ZWSP)
+<Multi_key> <space> <b> : " "  U00A0  # non-breaking space (NBSP)
 <Multi_key> <space> <m> : " "  U205F  # medium mathematical space (MMSP)
 <Multi_key> <space> <n> : " "  U202F  # narrow no-break space (NNBSP)
-<Multi_key> <space> <space> : " "  U00A0  # non-breaking space (NBSP)
 <Multi_key> <minus> <2> : "–"  U2013  # en dash
 <Multi_key> <minus> <3> : "—"  U2014  # em dash
 <Multi_key> <minus> <4> : "―"  U2015  # horizontal bar
@@ -1169,6 +1173,30 @@ include "%L"
 <Multi_key> <greater> <Y> : "Ỵ"  U1EF4  # Y with dot below
 <Multi_key> <greater> <z> : "ẓ"  U1E93  # z with dot below
 <Multi_key> <greater> <Z> : "Ẓ"  U1E92  # Z with dot below
+
+
+# Accented Letters with Dot Below
+
+<Multi_key> <question> <a> : "ậ"  U1EAD  # a with circumflex and dot below
+<Multi_key> <question> <A> : "Ậ"  U1EAC  # A with circumflex and dot below
+<Multi_key> <question> <b> : "ặ"  U1EB7  # a with breve and dot below
+<Multi_key> <question> <B> : "Ặ"  U1EB6  # A with breve and dot below
+<Multi_key> <question> <e> : "ệ"  U1EC7  # e with circumflex and dot below
+<Multi_key> <question> <E> : "Ệ"  U1EC6  # E with circumflex and dot below
+<Multi_key> <question> <f> : "ḝ"  U1E1D  # e with cedilla and breve
+<Multi_key> <question> <F> : "Ḝ"  U1E1C  # E with cedilla and breve
+<Multi_key> <question> <l> : "ḹ"  U1E39  # l with dot below and macron
+<Multi_key> <question> <L> : "Ḹ"  U1E38  # L with dot below and macron
+<Multi_key> <question> <o> : "ộ"  U1ED9  # o with circumflex and dot below
+<Multi_key> <question> <O> : "Ộ"  U1ED8  # O with circumflex and dot below
+<Multi_key> <question> <r> : "ṝ"  U1E5D  # r with dot below and macron
+<Multi_key> <question> <R> : "Ṝ"  U1E5C  # R with dot below and macron
+<Multi_key> <question> <s> : "ṩ"  U1E69  # s with dot below and dot above
+<Multi_key> <question> <S> : "Ṩ"  U1E68  # S with dot below and dot above
+<Multi_key> <question> <t> : "ợ"  U1EE3  # o with horn and dot below
+<Multi_key> <question> <T> : "Ợ"  U1EE2  # O with horn and dot below
+<Multi_key> <question> <u> : "ự"  U1EF1  # u with horn and dot below
+<Multi_key> <question> <U> : "Ự"  U1EF0  # U with horn and dot below
 
 
 # Miscellaneous Symbols and Dingbats

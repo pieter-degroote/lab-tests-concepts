@@ -1,6 +1,6 @@
 #requires AutoHotkey v2
 
-; UltimateKEYS (for AutoHotkey v2).ahk - 2024-11-30
+; UltimateKEYS (for AutoHotkey v2).ahk - 2025-01-12
 
 ; Website :  https://pieter-degroote.github.io/UltimateKEYS/
 
@@ -504,9 +504,13 @@ cmpSmallF["v"] := "{u+2c71}"  ; (ⱱ) v with right hook
 cmpSmallF["z"] := "{u+0290}"  ; (ʐ) z with retroflex hook
 
 
-; Compose :  Swash Tail and Variations (t)
+; Compose :  Swash Tail and Other Variations (t)
 
 global cmpSmallT := Map()
+cmpSmallT["c"] := "{u+a793}"  ; (ꞓ) c with bar
+cmpSmallT["C"] := "{u+a792}"  ; (Ꞓ) C with bar
+cmpSmallT["f"] := "{u+a799}"  ; (ꞙ) f with stroke
+cmpSmallT["F"] := "{u+a798}"  ; (Ꞙ) F with stroke
 cmpSmallT["l"] := "{u+2c61}"  ; (ⱡ) l with double bar
 cmpSmallT["L"] := "{u+2c60}"  ; (Ⱡ) L with double bar
 cmpSmallT["s"] := "{u+023f}"  ; (ȿ) s with swash tail
@@ -770,9 +774,9 @@ cmpSpace["7"] := "{u+2009}"  ; thin space
 cmpSpace["8"] := "{u+200a}"  ; hair space
 cmpSpace["9"] := "{u+2007}"  ; figure space
 cmpSpace["0"] := "{u+200b}"  ; zero-width space (ZWSP)
+cmpSpace["b"] := "{u+00a0}"  ; non-breaking space (NBSP)
 cmpSpace["m"] := "{u+205f}"  ; medium mathematical space (MMSP)
 cmpSpace["n"] := "{u+202f}"  ; narrow no-break space (NNBSP)
-cmpSpace[" "] := "{u+00a0}"  ; non-breaking space (NBSP)
 cmpMacronStroke["2"] := "{u+2013}"  ; (–) en dash
 cmpMacronStroke["3"] := "{u+2014}"  ; (—) em dash
 cmpMacronStroke["4"] := "{u+2015}"  ; (―) horizontal bar
@@ -1247,6 +1251,30 @@ cmpGreaterThan["y"] := "{u+1ef5}"  ; (ỵ) y with dot below
 cmpGreaterThan["Y"] := "{u+1ef4}"  ; (Ỵ) Y with dot below
 cmpGreaterThan["z"] := "{u+1e93}"  ; (ẓ) z with dot below
 cmpGreaterThan["Z"] := "{u+1e92}"  ; (Ẓ) Z with dot below
+
+
+; Accented Letters with Dot Below (?)
+
+cmpQuestion["a"] := "{u+1ead}"  ; (ậ) a with circumflex and dot below
+cmpQuestion["A"] := "{u+1eac}"  ; (Ậ) A with circumflex and dot below
+cmpQuestion["b"] := "{u+1eb7}"  ; (ặ) a with breve and dot below
+cmpQuestion["B"] := "{u+1eb6}"  ; (Ặ) A with breve and dot below
+cmpQuestion["e"] := "{u+1ec7}"  ; (ệ) e with circumflex and dot below
+cmpQuestion["E"] := "{u+1ec6}"  ; (Ệ) E with circumflex and dot below
+cmpQuestion["f"] := "{u+1e1d}"  ; (ḝ) e with cedilla and breve
+cmpQuestion["F"] := "{u+1e1c}"  ; (Ḝ) E with cedilla and breve
+cmpQuestion["l"] := "{u+1e39}"  ; (ḹ) l with dot below and macron
+cmpQuestion["L"] := "{u+1e38}"  ; (Ḹ) L with dot below and macron
+cmpQuestion["o"] := "{u+1ed9}"  ; (ộ) o with circumflex and dot below
+cmpQuestion["O"] := "{u+1ed8}"  ; (Ộ) O with circumflex and dot below
+cmpQuestion["r"] := "{u+1e5d}"  ; (ṝ) r with dot below and macron
+cmpQuestion["R"] := "{u+1e5c}"  ; (Ṝ) R with dot below and macron
+cmpQuestion["s"] := "{u+1e69}"  ; (ṩ) s with dot below and dot above
+cmpQuestion["S"] := "{u+1e68}"  ; (Ṩ) S with dot below and dot above
+cmpQuestion["t"] := "{u+1ee3}"  ; (ợ) o with horn and dot below
+cmpQuestion["T"] := "{u+1ee2}"  ; (Ợ) O with horn and dot below
+cmpQuestion["u"] := "{u+1ef1}"  ; (ự) u with horn and dot below
+cmpQuestion["U"] := "{u+1ef0}"  ; (Ự) U with horn and dot below
 
 
 ; Compose :  Miscellaneous Symbols and Dingbats
