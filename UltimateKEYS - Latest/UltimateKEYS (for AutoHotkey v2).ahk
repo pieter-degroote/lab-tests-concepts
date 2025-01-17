@@ -1,6 +1,6 @@
 #requires AutoHotkey v2
 
-; UltimateKEYS (for AutoHotkey v2).ahk - 2025-01-12
+; UltimateKEYS (for AutoHotkey v2).ahk - 2025-01-15
 
 ; Website :  https://pieter-degroote.github.io/UltimateKEYS/
 
@@ -777,6 +777,7 @@ cmpSpace["0"] := "{u+200b}"  ; zero-width space (ZWSP)
 cmpSpace["b"] := "{u+00a0}"  ; non-breaking space (NBSP)
 cmpSpace["m"] := "{u+205f}"  ; medium mathematical space (MMSP)
 cmpSpace["n"] := "{u+202f}"  ; narrow no-break space (NNBSP)
+cmpSpace["."] := "{u+2008}"  ; punctuation space
 cmpMacronStroke["2"] := "{u+2013}"  ; (–) en dash
 cmpMacronStroke["3"] := "{u+2014}"  ; (—) em dash
 cmpMacronStroke["4"] := "{u+2015}"  ; (―) horizontal bar
@@ -851,6 +852,8 @@ cmpSymbols["x"] := "{u+203b}"  ; (※) reference mark
 cmpSymbols["2"] := "{u+266b}"  ; (♫) beamed eighth notes
 cmpSymbols["3"] := "{u+2042}"  ; (⁂) asterism
 cmpSymbols["4"] := "{u+203b}"  ; (※) reference mark
+cmpSymbols["5"] := "{u+2605}"  ; (★) black star
+cmpSymbols["6"] := "{u+2606}"  ; (☆) white star
 cmpSymbols["8"] := "{u+266a}"  ; (♪) eighth note
 cmpSymbols["!"] := "{u+203c}"  ; (‼) double exclamation mark
 cmpSymbols["?"] := "{u+2e2e}"  ; (⸮) reversed question mark
@@ -953,6 +956,8 @@ cmpCapitalT["H"] := "{u+00de}"   ; (Þ) capital letter thorn
 
 global cmpDigitEight := Map()
 global cmpCapitalP := Map()
+global cmpSmallY := Map()
+global cmpSmallX := Map()
 global cmpVerticalLine := Map()
 global cmpAsterisk := Map()
 global cmpExclam := Map()
@@ -962,6 +967,7 @@ global cmpPlus := Map()
 global cmpPercent := Map()
 global cmpLessThan := Map()
 global cmpGreaterThan := Map()
+global cmpBracketLeft := Map()
 cmpSmallD["d"] := "{u+2020}"        ; (†) dagger
 cmpCapitalD["D"] := "{u+2021}"      ; (‡) double dagger
 cmpSmallI["i"] := "{u+221e}"        ; (∞) infinity symbol
@@ -978,6 +984,9 @@ cmpSmallR["4"] := "{u+221c}"        ; (∜) fourth root
 cmpSymbols["o"] := "{u+00a7}"       ; (§) section sign
 cmpCapitalS["o"] := "{u+00a7}"      ; (§) section sign
 cmpSmallT["m"] := "{u+2122}"        ; (™) trademark symbol
+cmpCaron["v"] := "{u+2713}"         ; (✓) check mark
+cmpSmallY["y"] := "{u+2713}"        ; (✓) check mark
+cmpSmallX["x"] := "{u+2717}"        ; (✗) ballot x
 cmpVerticalLine["|"] := "{u+2016}"  ; (‖) double vertical line
 cmpAcuteAccent["1"] := "{u+2032}"   ; (′) prime
 cmpAcuteAccent["2"] := "{u+2033}"   ; (″) double prime
@@ -1012,6 +1021,10 @@ cmpGreaterThan["="] := "{u+2265}"   ; (≥) greater-than or equal to
 cmpLessThan["+"] := "{u+2a7d}"      ; (⩽) less-than or slanted equal to
 cmpGreaterThan["+"] := "{u+2a7e}"   ; (⩾) greater-than or slanted equal to
 cmpTilde["~"] := "{u+2248}"         ; (≈) almost equal to
+cmpBracketLeft["]"] := "{u+2610}"   ; (☐) ballot box
+cmpBracketLeft["v"] := "{u+2611}"   ; (☑) ballot box with check
+cmpBracketLeft["y"] := "{u+2611}"   ; (☑) ballot box with check
+cmpBracketLeft["x"] := "{u+2612}"   ; (☒) ballot box with x
 
 
 ; Compose :  Bullets and Small Geometric Shapes (;)
@@ -1070,7 +1083,6 @@ cmpDigitZero["3"] := "{u+2189}"   ; (↉) vulgar fraction 0/3
 
 ; Compose :  Quotation Marks
 
-global cmpBracketLeft := Map()
 global cmpBracketRight := Map()
 global cmpBackslash := Map()
 cmpCedillaOgonek[chr(34)] := "{u+201e}"  ; („) double low-9 quotation mark
@@ -1100,6 +1112,31 @@ cmpLessThan["'"] := "{u+2039}"           ; (‹) left-pointing single angle quot
 cmpAcuteAccent["<"] := "{u+2039}"        ; (‹) left-pointing single angle quotation mark
 cmpGreaterThan["'"] := "{u+203a}"        ; (›) right-pointing single angle quotation mark
 cmpAcuteAccent[">"] := "{u+203a}"        ; (›) right-pointing single angle quotation mark
+
+
+; Compose :  Chess Pieces and Playing Card Suit Symbols (C)
+
+global cmpCapitalC := Map()
+cmpCapitalC["k"] := "{u+2654}"  ; (♔) white chess king
+cmpCapitalC["q"] := "{u+2655}"  ; (♕) white chess queen
+cmpCapitalC["r"] := "{u+2656}"  ; (♖) white chess rook
+cmpCapitalC["b"] := "{u+2657}"  ; (♗) white chess bishop
+cmpCapitalC["n"] := "{u+2658}"  ; (♘) white chess knight
+cmpCapitalC["p"] := "{u+2659}"  ; (♙) white chess pawn
+cmpCapitalC["K"] := "{u+265a}"  ; (♚) black chess king
+cmpCapitalC["Q"] := "{u+265b}"  ; (♛) black chess queen
+cmpCapitalC["R"] := "{u+265c}"  ; (♜) black chess rook
+cmpCapitalC["B"] := "{u+265d}"  ; (♝) black chess bishop
+cmpCapitalC["N"] := "{u+265e}"  ; (♞) black chess knight
+cmpCapitalC["P"] := "{u+265f}"  ; (♟) black chess pawn
+cmpCapitalC["c"] := "{u+2667}"  ; (♧) white club suit
+cmpCapitalC["C"] := "{u+2663}"  ; (♣) black club suit
+cmpCapitalC["d"] := "{u+2662}"  ; (♢) white diamond suit
+cmpCapitalC["D"] := "{u+2666}"  ; (♦) black diamond suit
+cmpCapitalC["h"] := "{u+2661}"  ; (♡) white heart suit
+cmpCapitalC["H"] := "{u+2665}"  ; (♥) black heart suit
+cmpCapitalC["s"] := "{u+2664}"  ; (♤) white spade suit
+cmpCapitalC["S"] := "{u+2660}"  ; (♠) black spade suit
 
 
 ; Compose :  Double Grave Accent (G)
@@ -1473,31 +1510,6 @@ cmpDigitEight["k"] := "{u+27bc}"  ; (➼) wedge-tailed rightwards arrow
 cmpDigitEight["l"] := "{u+27bd}"  ; (➽) heavy wedge-tailed rightwards arrow
 cmpDigitEight["m"] := "{u+27be}"  ; (➾) open-outlined rightwards arrow
 cmpDigitEight["n"] := "{u+27c1}"  ; (⟁) white triangle containing small white triangle
-
-
-; Compose :  Chess Pieces and Playing Card Suit Symbols (C)
-
-global cmpCapitalC := Map()
-cmpCapitalC["k"] := "{u+2654}"  ; (♔) white chess king
-cmpCapitalC["q"] := "{u+2655}"  ; (♕) white chess queen
-cmpCapitalC["r"] := "{u+2656}"  ; (♖) white chess rook
-cmpCapitalC["b"] := "{u+2657}"  ; (♗) white chess bishop
-cmpCapitalC["n"] := "{u+2658}"  ; (♘) white chess knight
-cmpCapitalC["p"] := "{u+2659}"  ; (♙) white chess pawn
-cmpCapitalC["K"] := "{u+265a}"  ; (♚) black chess king
-cmpCapitalC["Q"] := "{u+265b}"  ; (♛) black chess queen
-cmpCapitalC["R"] := "{u+265c}"  ; (♜) black chess rook
-cmpCapitalC["B"] := "{u+265d}"  ; (♝) black chess bishop
-cmpCapitalC["N"] := "{u+265e}"  ; (♞) black chess knight
-cmpCapitalC["P"] := "{u+265f}"  ; (♟) black chess pawn
-cmpCapitalC["c"] := "{u+2667}"  ; (♧) white club suit
-cmpCapitalC["C"] := "{u+2663}"  ; (♣) black club suit
-cmpCapitalC["d"] := "{u+2662}"  ; (♢) white diamond suit
-cmpCapitalC["D"] := "{u+2666}"  ; (♦) black diamond suit
-cmpCapitalC["h"] := "{u+2661}"  ; (♡) white heart suit
-cmpCapitalC["H"] := "{u+2665}"  ; (♥) black heart suit
-cmpCapitalC["s"] := "{u+2664}"  ; (♤) white spade suit
-cmpCapitalC["S"] := "{u+2660}"  ; (♠) black spade suit
 
 
 ; Compose :  Dingbat Negative Circled Digits (n)
@@ -2263,6 +2275,14 @@ cmpSmallN["0"] := "{u+277f}"  ; (❿) dingbat negative circled digit 10
     if cmpCapitalP.Has(ihB.Input)
       Send cmpCapitalP[ihB.Input]
   }
+  else if (ihA.Input == "y") {
+    if cmpSmallY.Has(ihB.Input)
+      Send cmpSmallY[ihB.Input]
+  }
+  else if (ihA.Input == "x") {
+    if cmpSmallX.Has(ihB.Input)
+      Send cmpSmallX[ihB.Input]
+  }
   else if (ihA.Input == "|") {
     if cmpVerticalLine.Has(ihB.Input)
       Send cmpVerticalLine[ihB.Input]
@@ -2303,6 +2323,10 @@ cmpSmallN["0"] := "{u+277f}"  ; (❿) dingbat negative circled digit 10
     if cmpGreaterThan.Has(ihB.Input)
       Send cmpGreaterThan[ihB.Input]
   }
+  else if (ihA.Input == "[") {
+    if cmpBracketLeft.Has(ihB.Input)
+      Send cmpBracketLeft[ihB.Input]
+  }
   else if (ihA.Input == ";") {
     if cmpSemicolon.Has(ihB.Input)
       Send cmpSemicolon[ihB.Input]
@@ -2335,10 +2359,6 @@ cmpSmallN["0"] := "{u+277f}"  ; (❿) dingbat negative circled digit 10
     if cmpDigitZero.Has(ihB.Input)
       Send cmpDigitZero[ihB.Input]
   }
-  else if (ihA.Input == "[") {
-    if cmpBracketLeft.Has(ihB.Input)
-      Send cmpBracketLeft[ihB.Input]
-  }
   else if (ihA.Input == "]") {
     if cmpBracketRight.Has(ihB.Input)
       Send cmpBracketRight[ihB.Input]
@@ -2346,6 +2366,10 @@ cmpSmallN["0"] := "{u+277f}"  ; (❿) dingbat negative circled digit 10
   else if (ihA.Input == "\") {
     if cmpBackslash.Has(ihB.Input)
       Send cmpBackslash[ihB.Input]
+  }
+  else if (ihA.Input == "C") {
+    if cmpCapitalC.Has(ihB.Input)
+      Send cmpCapitalC[ihB.Input]
   }
   else if (ihA.Input == "G") {
     if cmpCapitalG.Has(ihB.Input)
@@ -2366,9 +2390,5 @@ cmpSmallN["0"] := "{u+277f}"  ; (❿) dingbat negative circled digit 10
   else if (ihA.Input == "6") {
     if cmpDigitSix.Has(ihB.Input)
       Send cmpDigitSix[ihB.Input]
-  }
-  else if (ihA.Input == "C") {
-    if cmpCapitalC.Has(ihB.Input)
-      Send cmpCapitalC[ihB.Input]
   }
 }

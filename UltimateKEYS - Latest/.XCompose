@@ -1,6 +1,6 @@
 include "%L"
 
-# UltimateKEYS Compose Key Sequences - 2025-01-12
+# UltimateKEYS Compose Key Sequences - 2025-01-15
 
 # Website :  https://pieter-degroote.github.io/UltimateKEYS/
 
@@ -738,6 +738,7 @@ include "%L"
 <Multi_key> <space> <b> : " "  U00A0  # non-breaking space (NBSP)
 <Multi_key> <space> <m> : " "  U205F  # medium mathematical space (MMSP)
 <Multi_key> <space> <n> : " "  U202F  # narrow no-break space (NNBSP)
+<Multi_key> <space> <period> : " "  U2008  # punctuation space
 <Multi_key> <minus> <2> : "–"  U2013  # en dash
 <Multi_key> <minus> <3> : "—"  U2014  # em dash
 <Multi_key> <minus> <4> : "―"  U2015  # horizontal bar
@@ -818,6 +819,9 @@ include "%L"
 <Multi_key> <s> <o> : "§"  U00A7  # section sign
 <Multi_key> <S> <o> : "§"  U00A7  # section sign
 <Multi_key> <t> <m> : "™"  U2122  # trademark symbol
+<Multi_key> <v> <v> : "✓"  U2713  # check mark
+<Multi_key> <y> <y> : "✓"  U2713  # check mark
+<Multi_key> <x> <x> : "✗"  U2717  # ballot x
 <Multi_key> <bar> <bar>               : "‖"  U2016  # double vertical line
 <Multi_key> <apostrophe> <1>          : "′"  U2032  # prime
 <Multi_key> <apostrophe> <2>          : "″"  U2033  # double prime
@@ -852,6 +856,10 @@ include "%L"
 <Multi_key> <less> <plus>             : "⩽"  U2A7D  # less-than or slanted equal to
 <Multi_key> <greater> <plus>          : "⩾"  U2A7E  # greater-than or slanted equal to
 <Multi_key> <asciitilde> <asciitilde> : "≈"  U2248  # almost equal to
+<Multi_key> <bracketleft> <bracketright> : "☐"  U2610  # ballot box
+<Multi_key> <bracketleft> <v>            : "☑"  U2611  # ballot box with check
+<Multi_key> <bracketleft> <y>            : "☑"  U2611  # ballot box with check
+<Multi_key> <bracketleft> <x>            : "☒"  U2612  # ballot box with x
 
 
 # Bullets and Small Geometric Shapes
@@ -906,6 +914,8 @@ include "%L"
 <Multi_key> <s> <2> : "♫"  U266B  # beamed eighth notes
 <Multi_key> <s> <3> : "⁂"  U2042  # asterism
 <Multi_key> <s> <4> : "※"  U203B  # reference mark
+<Multi_key> <s> <5> : "★"  U2605  # black star
+<Multi_key> <s> <6> : "☆"  U2606  # white star
 <Multi_key> <s> <8> : "♪"  U266A  # eighth note
 <Multi_key> <s> <exclam>   : "‼"  U203C  # double exclamation mark
 <Multi_key> <s> <question> : "⸮"  U2E2E  # reversed question mark
@@ -1026,6 +1036,30 @@ include "%L"
 <Multi_key> <apostrophe> <less>         : "‹"  U2039  # left-pointing single angle quotation mark
 <Multi_key> <greater> <apostrophe>      : "›"  U203A  # right-pointing single angle quotation mark
 <Multi_key> <apostrophe> <greater>      : "›"  U203A  # right-pointing single angle quotation mark
+
+
+# Chess Pieces and Playing Card Suit Symbols
+
+<Multi_key> <C> <k> : "♔"  U2654  # white chess king
+<Multi_key> <C> <q> : "♕"  U2655  # white chess queen
+<Multi_key> <C> <r> : "♖"  U2656  # white chess rook
+<Multi_key> <C> <b> : "♗"  U2657  # white chess bishop
+<Multi_key> <C> <n> : "♘"  U2658  # white chess knight
+<Multi_key> <C> <p> : "♙"  U2659  # white chess pawn
+<Multi_key> <C> <K> : "♚"  U265A  # black chess king
+<Multi_key> <C> <Q> : "♛"  U265B  # black chess queen
+<Multi_key> <C> <R> : "♜"  U265C  # black chess rook
+<Multi_key> <C> <B> : "♝"  U265D  # black chess bishop
+<Multi_key> <C> <N> : "♞"  U265E  # black chess knight
+<Multi_key> <C> <P> : "♟"  U265F  # black chess pawn
+<Multi_key> <C> <c> : "♧"  U2667  # white club suit
+<Multi_key> <C> <C> : "♣"  U2663  # black club suit
+<Multi_key> <C> <d> : "♢"  U2662  # white diamond suit
+<Multi_key> <C> <D> : "♦"  U2666  # black diamond suit
+<Multi_key> <C> <h> : "♡"  U2661  # white heart suit
+<Multi_key> <C> <H> : "♥"  U2665  # black heart suit
+<Multi_key> <C> <s> : "♤"  U2664  # white spade suit
+<Multi_key> <C> <S> : "♠"  U2660  # black spade suit
 
 
 # Double Grave Accent
@@ -1393,30 +1427,6 @@ include "%L"
 <Multi_key> <8> <l> : "➽"  U27BD  # heavy wedge-tailed rightwards arrow
 <Multi_key> <8> <m> : "➾"  U27BE  # open-outlined rightwards arrow
 <Multi_key> <8> <n> : "⟁"  U27C1  # white triangle containing small white triangle
-
-
-# Chess Pieces and Playing Card Suit Symbols
-
-<Multi_key> <C> <k> : "♔"  U2654  # white chess king
-<Multi_key> <C> <q> : "♕"  U2655  # white chess queen
-<Multi_key> <C> <r> : "♖"  U2656  # white chess rook
-<Multi_key> <C> <b> : "♗"  U2657  # white chess bishop
-<Multi_key> <C> <n> : "♘"  U2658  # white chess knight
-<Multi_key> <C> <p> : "♙"  U2659  # white chess pawn
-<Multi_key> <C> <K> : "♚"  U265A  # black chess king
-<Multi_key> <C> <Q> : "♛"  U265B  # black chess queen
-<Multi_key> <C> <R> : "♜"  U265C  # black chess rook
-<Multi_key> <C> <B> : "♝"  U265D  # black chess bishop
-<Multi_key> <C> <N> : "♞"  U265E  # black chess knight
-<Multi_key> <C> <P> : "♟"  U265F  # black chess pawn
-<Multi_key> <C> <c> : "♧"  U2667  # white club suit
-<Multi_key> <C> <C> : "♣"  U2663  # black club suit
-<Multi_key> <C> <d> : "♢"  U2662  # white diamond suit
-<Multi_key> <C> <D> : "♦"  U2666  # black diamond suit
-<Multi_key> <C> <h> : "♡"  U2661  # white heart suit
-<Multi_key> <C> <H> : "♥"  U2665  # black heart suit
-<Multi_key> <C> <s> : "♤"  U2664  # white spade suit
-<Multi_key> <C> <S> : "♠"  U2660  # black spade suit
 
 
 # Dingbat Negative Circled Digits
