@@ -772,6 +772,8 @@ include "%L"
 <Multi_key> <a> <U> : "▫"  U25AB  # white small square
 <Multi_key> <a> <z> : "◆"  U25C6  # black diamond
 <Multi_key> <a> <m> : "◇"  U25C7  # white diamond
+<Multi_key> <a> <Z> : "⬥"  U2B25  # black medium diamond
+<Multi_key> <a> <M> : "⬦"  U2B26  # white medium diamond
 <Multi_key> <a> <1> : "↙"  U2199  # south west arrow
 <Multi_key> <a> <2> : "↓"  U2193  # downwards arrow
 <Multi_key> <a> <3> : "↘"  U2198  # south east arrow
