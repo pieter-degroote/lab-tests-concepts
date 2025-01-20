@@ -1,6 +1,6 @@
 #requires AutoHotkey v1.1
 
-; UltimateKEYS (for AutoHotkey v1.1).ahk - 2025-01-15
+; UltimateKEYS (for AutoHotkey v1.1).ahk - 2025-01-20
 
 ; Website :  https://pieter-degroote.github.io/UltimateKEYS/
 
@@ -762,30 +762,27 @@ cmpSubscript.item[")"] := "{u+208e}"  ; (₎) subscript )
 ; Compose :  Spacing Characters and Dashes
 
 cmpSpace := ComObjCreate("Scripting.Dictionary")
-cmpQuad := ComObjCreate("Scripting.Dictionary")
 cmpSpace.item["1"] := "{u+2004}"  ; three-per-em space
 cmpSpace.item["2"] := "{u+2002}"  ; en space
 cmpSpace.item["3"] := "{u+2003}"  ; em space
 cmpSpace.item["4"] := "{u+2005}"  ; four-per-em space
-cmpSpace.item["5"] := "{u+2008}"  ; punctuation space
 cmpSpace.item["6"] := "{u+2006}"  ; six-per-em space
-cmpSpace.item["7"] := "{u+2009}"  ; thin space
-cmpSpace.item["8"] := "{u+200a}"  ; hair space
 cmpSpace.item["9"] := "{u+2007}"  ; figure space
 cmpSpace.item["0"] := "{u+200b}"  ; zero-width space (ZWSP)
 cmpSpace.item["b"] := "{u+00a0}"  ; non-breaking space (NBSP)
 cmpSpace.item["m"] := "{u+205f}"  ; medium mathematical space (MMSP)
 cmpSpace.item["n"] := "{u+202f}"  ; narrow no-break space (NNBSP)
+cmpSpace.item["p"] := "{u+2008}"  ; punctuation space
+cmpSpace.item["t"] := "{u+2009}"  ; thin space
+cmpSpace.item["h"] := "{u+200a}"  ; hair space
 cmpSpace.item["."] := "{u+2008}"  ; punctuation space
+cmpMacronStroke.item["1"] := "{u+2010}"  ; (‐) hyphen
 cmpMacronStroke.item["2"] := "{u+2013}"  ; (–) en dash
 cmpMacronStroke.item["3"] := "{u+2014}"  ; (—) em dash
 cmpMacronStroke.item["4"] := "{u+2015}"  ; (―) horizontal bar
-cmpMacronStroke.item["5"] := "{u+2010}"  ; (‐) hyphen
 cmpMacronStroke.item["9"] := "{u+2012}"  ; (‒) figure dash
 cmpMacronStroke.item["0"] := "{u+00ad}"  ; (­) soft hyphen (SHY)
 cmpMacronStroke.item["-"] := "{u+2011}"  ; (‑) non-breaking hyphen
-cmpQuad.item["2"] := "{u+2000}"  ; en quad
-cmpQuad.item["3"] := "{u+2001}"  ; em quad
 
 
 ; Compose :  Arrows and Pointing Triangles
@@ -799,6 +796,20 @@ cmpArrow.item["i"] := "{u+25b3}"  ; (△) white up-pointing triangle
 cmpArrow.item["j"] := "{u+25c1}"  ; (◁) white left-pointing triangle
 cmpArrow.item["k"] := "{u+25bd}"  ; (▽) white down-pointing triangle
 cmpArrow.item["l"] := "{u+25b7}"  ; (▷) white right-pointing triangle
+cmpArrow.item["W"] := "{u+25b4}"  ; (▴) black up-pointing small triangle
+cmpArrow.item["A"] := "{u+25c2}"  ; (◂) black left-pointing small triangle
+cmpArrow.item["S"] := "{u+25be}"  ; (▾) black down-pointing small triangle
+cmpArrow.item["D"] := "{u+25b8}"  ; (▸) black right-pointing small triangle
+cmpArrow.item["I"] := "{u+25b5}"  ; (▵) white up-pointing small triangle
+cmpArrow.item["J"] := "{u+25c3}"  ; (◃) white left-pointing small triangle
+cmpArrow.item["K"] := "{u+25bf}"  ; (▿) white down-pointing small triangle
+cmpArrow.item["L"] := "{u+25b9}"  ; (▹) white right-pointing small triangle
+cmpArrow.item["q"] := "{u+25a0}"  ; (■) black square
+cmpArrow.item["u"] := "{u+25a1}"  ; (□) white square
+cmpArrow.item["Q"] := "{u+25aa}"  ; (▪) black small square
+cmpArrow.item["U"] := "{u+25ab}"  ; (▫) white small square
+cmpArrow.item["z"] := "{u+25c6}"  ; (◆) black diamond
+cmpArrow.item["m"] := "{u+25c7}"  ; (◇) white diamond
 cmpArrow.item["1"] := "{u+2199}"  ; (↙) south west arrow
 cmpArrow.item["2"] := "{u+2193}"  ; (↓) downwards arrow
 cmpArrow.item["3"] := "{u+2198}"  ; (↘) south east arrow
@@ -966,6 +977,7 @@ cmpPlus := ComObjCreate("Scripting.Dictionary")
 cmpPercent := ComObjCreate("Scripting.Dictionary")
 cmpLessThan := ComObjCreate("Scripting.Dictionary")
 cmpGreaterThan := ComObjCreate("Scripting.Dictionary")
+cmpSemicolon := ComObjCreate("Scripting.Dictionary")
 cmpBracketLeft := ComObjCreate("Scripting.Dictionary")
 cmpSmallD.item["d"] := "{u+2020}"        ; (†) dagger
 cmpCapitalD.item["D"] := "{u+2021}"      ; (‡) double dagger
@@ -1020,34 +1032,16 @@ cmpGreaterThan.item["="] := "{u+2265}"   ; (≥) greater-than or equal to
 cmpLessThan.item["+"] := "{u+2a7d}"      ; (⩽) less-than or slanted equal to
 cmpGreaterThan.item["+"] := "{u+2a7e}"   ; (⩾) greater-than or slanted equal to
 cmpTilde.item["~"] := "{u+2248}"         ; (≈) almost equal to
+cmpSemicolon.item["b"] := "{u+2022}"     ; (•) bullet
+cmpSemicolon.item["o"] := "{u+25e6}"     ; (◦) white bullet
+cmpSemicolon.item["w"] := "{u+25e6}"     ; (◦) white bullet
+cmpSemicolon.item["h"] := "{u+2043}"     ; (⁃) hyphen bullet
+cmpSemicolon.item["t"] := "{u+2023}"     ; (‣) triangular bullet
+cmpSemicolon.item[";"] := "{u+2022}"     ; (•) bullet
 cmpBracketLeft.item["]"] := "{u+2610}"   ; (☐) ballot box
 cmpBracketLeft.item["v"] := "{u+2611}"   ; (☑) ballot box with check
 cmpBracketLeft.item["y"] := "{u+2611}"   ; (☑) ballot box with check
 cmpBracketLeft.item["x"] := "{u+2612}"   ; (☒) ballot box with x
-
-
-; Compose :  Bullets and Small Geometric Shapes (;)
-
-cmpSemicolon := ComObjCreate("Scripting.Dictionary")
-cmpSemicolon.item["b"] := "{u+2022}"  ; (•) bullet
-cmpSemicolon.item["o"] := "{u+25e6}"  ; (◦) white bullet
-cmpSemicolon.item["h"] := "{u+2043}"  ; (⁃) hyphen bullet
-cmpSemicolon.item["t"] := "{u+2023}"  ; (‣) triangular bullet
-cmpSemicolon.item["q"] := "{u+25aa}"  ; (▪) black small square
-cmpSemicolon.item["u"] := "{u+25ab}"  ; (▫) white small square
-cmpSemicolon.item["w"] := "{u+25b4}"  ; (▴) black up-pointing small triangle
-cmpSemicolon.item["a"] := "{u+25c2}"  ; (◂) black left-pointing small triangle
-cmpSemicolon.item["s"] := "{u+25be}"  ; (▾) black down-pointing small triangle
-cmpSemicolon.item["d"] := "{u+25b8}"  ; (▸) black right-pointing small triangle
-cmpSemicolon.item["i"] := "{u+25b5}"  ; (▵) white up-pointing small triangle
-cmpSemicolon.item["j"] := "{u+25c3}"  ; (◃) white left-pointing small triangle
-cmpSemicolon.item["k"] := "{u+25bf}"  ; (▿) white down-pointing small triangle
-cmpSemicolon.item["l"] := "{u+25b9}"  ; (▹) white right-pointing small triangle
-cmpSemicolon.item["z"] := "{u+25a0}"  ; (■) black square
-cmpSemicolon.item["x"] := "{u+25a1}"  ; (□) white square
-cmpSemicolon.item["c"] := "{u+25c6}"  ; (◆) black diamond
-cmpSemicolon.item["v"] := "{u+25c7}"  ; (◇) white diamond
-cmpSemicolon.item[";"] := "{u+2022}"  ; (•) bullet
 
 
 ; Compose :  Vulgar Fractions
@@ -2161,8 +2155,6 @@ cmpSmallN.item["0"] := "{u+277f}"  ; (❿) dingbat negative circled digit 10
     Send % cmpSubscript.item[keyB]
   else if (keyA == " ")
     Send % cmpSpace.item[keyB]
-  else if (keyA == "q")
-    Send % cmpQuad.item[keyB]
   else if (keyA == "a")
     Send % cmpArrow.item[keyB]
   else if (keyA == "s")

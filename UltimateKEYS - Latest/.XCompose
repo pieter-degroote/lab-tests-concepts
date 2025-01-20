@@ -1,6 +1,6 @@
 include "%L"
 
-# UltimateKEYS Compose Key Sequences - 2025-01-15
+# UltimateKEYS Compose Key Sequences - 2025-01-20
 
 # Website :  https://pieter-degroote.github.io/UltimateKEYS/
 
@@ -729,25 +729,23 @@ include "%L"
 <Multi_key> <space> <2> : " "  U2002  # en space
 <Multi_key> <space> <3> : " "  U2003  # em space
 <Multi_key> <space> <4> : " "  U2005  # four-per-em space
-<Multi_key> <space> <5> : " "  U2008  # punctuation space
 <Multi_key> <space> <6> : " "  U2006  # six-per-em space
-<Multi_key> <space> <7> : " "  U2009  # thin space
-<Multi_key> <space> <8> : " "  U200A  # hair space
 <Multi_key> <space> <9> : " "  U2007  # figure space
 <Multi_key> <space> <0> : "​"  U200B  # zero-width space (ZWSP)
 <Multi_key> <space> <b> : " "  U00A0  # non-breaking space (NBSP)
 <Multi_key> <space> <m> : " "  U205F  # medium mathematical space (MMSP)
 <Multi_key> <space> <n> : " "  U202F  # narrow no-break space (NNBSP)
+<Multi_key> <space> <p> : " "  U2008  # punctuation space
+<Multi_key> <space> <t> : " "  U2009  # thin space
+<Multi_key> <space> <h> : " "  U200A  # hair space
 <Multi_key> <space> <period> : " "  U2008  # punctuation space
+<Multi_key> <minus> <1> : "‐"  U2010  # hyphen
 <Multi_key> <minus> <2> : "–"  U2013  # en dash
 <Multi_key> <minus> <3> : "—"  U2014  # em dash
 <Multi_key> <minus> <4> : "―"  U2015  # horizontal bar
-<Multi_key> <minus> <5> : "‐"  U2010  # hyphen
 <Multi_key> <minus> <9> : "‒"  U2012  # figure dash
 <Multi_key> <minus> <0> : "­"  U00AD  # soft hyphen (SHY)
 <Multi_key> <minus> <minus> : "‑"  U2011  # non-breaking hyphen
-<Multi_key> <q> <2> : " "  U2000  # en quad
-<Multi_key> <q> <3> : " "  U2001  # em quad
 
 
 # Arrows and Pointing Triangles
@@ -760,6 +758,20 @@ include "%L"
 <Multi_key> <a> <j> : "◁"  U25C1  # white left-pointing triangle
 <Multi_key> <a> <k> : "▽"  U25BD  # white down-pointing triangle
 <Multi_key> <a> <l> : "▷"  U25B7  # white right-pointing triangle
+<Multi_key> <a> <W> : "▴"  U25B4  # black up-pointing small triangle
+<Multi_key> <a> <A> : "◂"  U25C2  # black left-pointing small triangle
+<Multi_key> <a> <S> : "▾"  U25BE  # black down-pointing small triangle
+<Multi_key> <a> <D> : "▸"  U25B8  # black right-pointing small triangle
+<Multi_key> <a> <I> : "▵"  U25B5  # white up-pointing small triangle
+<Multi_key> <a> <J> : "◃"  U25C3  # white left-pointing small triangle
+<Multi_key> <a> <K> : "▿"  U25BF  # white down-pointing small triangle
+<Multi_key> <a> <L> : "▹"  U25B9  # white right-pointing small triangle
+<Multi_key> <a> <q> : "■"  U25A0  # black square
+<Multi_key> <a> <u> : "□"  U25A1  # white square
+<Multi_key> <a> <Q> : "▪"  U25AA  # black small square
+<Multi_key> <a> <U> : "▫"  U25AB  # white small square
+<Multi_key> <a> <z> : "◆"  U25C6  # black diamond
+<Multi_key> <a> <m> : "◇"  U25C7  # white diamond
 <Multi_key> <a> <1> : "↙"  U2199  # south west arrow
 <Multi_key> <a> <2> : "↓"  U2193  # downwards arrow
 <Multi_key> <a> <3> : "↘"  U2198  # south east arrow
@@ -856,33 +868,16 @@ include "%L"
 <Multi_key> <less> <plus>             : "⩽"  U2A7D  # less-than or slanted equal to
 <Multi_key> <greater> <plus>          : "⩾"  U2A7E  # greater-than or slanted equal to
 <Multi_key> <asciitilde> <asciitilde> : "≈"  U2248  # almost equal to
+<Multi_key> <semicolon> <b>           : "•"  U2022  # bullet
+<Multi_key> <semicolon> <o>           : "◦"  U25E6  # white bullet
+<Multi_key> <semicolon> <w>           : "◦"  U25E6  # white bullet
+<Multi_key> <semicolon> <h>           : "⁃"  U2043  # hyphen bullet
+<Multi_key> <semicolon> <t>           : "‣"  U2023  # triangular bullet
+<Multi_key> <semicolon> <semicolon>   : "•"  U2022  # bullet
 <Multi_key> <bracketleft> <bracketright> : "☐"  U2610  # ballot box
 <Multi_key> <bracketleft> <v>            : "☑"  U2611  # ballot box with check
 <Multi_key> <bracketleft> <y>            : "☑"  U2611  # ballot box with check
 <Multi_key> <bracketleft> <x>            : "☒"  U2612  # ballot box with x
-
-
-# Bullets and Small Geometric Shapes
-
-<Multi_key> <semicolon> <b> : "•"  U2022  # bullet
-<Multi_key> <semicolon> <o> : "◦"  U25E6  # white bullet
-<Multi_key> <semicolon> <h> : "⁃"  U2043  # hyphen bullet
-<Multi_key> <semicolon> <t> : "‣"  U2023  # triangular bullet
-<Multi_key> <semicolon> <q> : "▪"  U25AA  # black small square
-<Multi_key> <semicolon> <u> : "▫"  U25AB  # white small square
-<Multi_key> <semicolon> <w> : "▴"  U25B4  # black up-pointing small triangle
-<Multi_key> <semicolon> <a> : "◂"  U25C2  # black left-pointing small triangle
-<Multi_key> <semicolon> <s> : "▾"  U25BE  # black down-pointing small triangle
-<Multi_key> <semicolon> <d> : "▸"  U25B8  # black right-pointing small triangle
-<Multi_key> <semicolon> <i> : "▵"  U25B5  # white up-pointing small triangle
-<Multi_key> <semicolon> <j> : "◃"  U25C3  # white left-pointing small triangle
-<Multi_key> <semicolon> <k> : "▿"  U25BF  # white down-pointing small triangle
-<Multi_key> <semicolon> <l> : "▹"  U25B9  # white right-pointing small triangle
-<Multi_key> <semicolon> <z> : "■"  U25A0  # black square
-<Multi_key> <semicolon> <x> : "□"  U25A1  # white square
-<Multi_key> <semicolon> <c> : "◆"  U25C6  # black diamond
-<Multi_key> <semicolon> <v> : "◇"  U25C7  # white diamond
-<Multi_key> <semicolon> <semicolon> : "•"  U2022  # bullet
 
 
 # Various Symbols

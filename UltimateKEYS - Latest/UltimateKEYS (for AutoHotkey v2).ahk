@@ -1,6 +1,6 @@
 #requires AutoHotkey v2
 
-; UltimateKEYS (for AutoHotkey v2).ahk - 2025-01-15
+; UltimateKEYS (for AutoHotkey v2).ahk - 2025-01-20
 
 ; Website :  https://pieter-degroote.github.io/UltimateKEYS/
 
@@ -763,30 +763,27 @@ cmpSubscript[")"] := "{u+208e}"  ; (₎) subscript )
 ; Compose :  Spacing Characters and Dashes
 
 global cmpSpace := Map()
-global cmpQuad := Map()
 cmpSpace["1"] := "{u+2004}"  ; three-per-em space
 cmpSpace["2"] := "{u+2002}"  ; en space
 cmpSpace["3"] := "{u+2003}"  ; em space
 cmpSpace["4"] := "{u+2005}"  ; four-per-em space
-cmpSpace["5"] := "{u+2008}"  ; punctuation space
 cmpSpace["6"] := "{u+2006}"  ; six-per-em space
-cmpSpace["7"] := "{u+2009}"  ; thin space
-cmpSpace["8"] := "{u+200a}"  ; hair space
 cmpSpace["9"] := "{u+2007}"  ; figure space
 cmpSpace["0"] := "{u+200b}"  ; zero-width space (ZWSP)
 cmpSpace["b"] := "{u+00a0}"  ; non-breaking space (NBSP)
 cmpSpace["m"] := "{u+205f}"  ; medium mathematical space (MMSP)
 cmpSpace["n"] := "{u+202f}"  ; narrow no-break space (NNBSP)
+cmpSpace["p"] := "{u+2008}"  ; punctuation space
+cmpSpace["t"] := "{u+2009}"  ; thin space
+cmpSpace["h"] := "{u+200a}"  ; hair space
 cmpSpace["."] := "{u+2008}"  ; punctuation space
+cmpMacronStroke["1"] := "{u+2010}"  ; (‐) hyphen
 cmpMacronStroke["2"] := "{u+2013}"  ; (–) en dash
 cmpMacronStroke["3"] := "{u+2014}"  ; (—) em dash
 cmpMacronStroke["4"] := "{u+2015}"  ; (―) horizontal bar
-cmpMacronStroke["5"] := "{u+2010}"  ; (‐) hyphen
 cmpMacronStroke["9"] := "{u+2012}"  ; (‒) figure dash
 cmpMacronStroke["0"] := "{u+00ad}"  ; (­) soft hyphen (SHY)
 cmpMacronStroke["-"] := "{u+2011}"  ; (‑) non-breaking hyphen
-cmpQuad["2"] := "{u+2000}"  ; en quad
-cmpQuad["3"] := "{u+2001}"  ; em quad
 
 
 ; Compose :  Arrows and Pointing Triangles
@@ -800,6 +797,20 @@ cmpArrow["i"] := "{u+25b3}"  ; (△) white up-pointing triangle
 cmpArrow["j"] := "{u+25c1}"  ; (◁) white left-pointing triangle
 cmpArrow["k"] := "{u+25bd}"  ; (▽) white down-pointing triangle
 cmpArrow["l"] := "{u+25b7}"  ; (▷) white right-pointing triangle
+cmpArrow["W"] := "{u+25b4}"  ; (▴) black up-pointing small triangle
+cmpArrow["A"] := "{u+25c2}"  ; (◂) black left-pointing small triangle
+cmpArrow["S"] := "{u+25be}"  ; (▾) black down-pointing small triangle
+cmpArrow["D"] := "{u+25b8}"  ; (▸) black right-pointing small triangle
+cmpArrow["I"] := "{u+25b5}"  ; (▵) white up-pointing small triangle
+cmpArrow["J"] := "{u+25c3}"  ; (◃) white left-pointing small triangle
+cmpArrow["K"] := "{u+25bf}"  ; (▿) white down-pointing small triangle
+cmpArrow["L"] := "{u+25b9}"  ; (▹) white right-pointing small triangle
+cmpArrow["q"] := "{u+25a0}"  ; (■) black square
+cmpArrow["u"] := "{u+25a1}"  ; (□) white square
+cmpArrow["Q"] := "{u+25aa}"  ; (▪) black small square
+cmpArrow["U"] := "{u+25ab}"  ; (▫) white small square
+cmpArrow["z"] := "{u+25c6}"  ; (◆) black diamond
+cmpArrow["m"] := "{u+25c7}"  ; (◇) white diamond
 cmpArrow["1"] := "{u+2199}"  ; (↙) south west arrow
 cmpArrow["2"] := "{u+2193}"  ; (↓) downwards arrow
 cmpArrow["3"] := "{u+2198}"  ; (↘) south east arrow
@@ -967,6 +978,7 @@ global cmpPlus := Map()
 global cmpPercent := Map()
 global cmpLessThan := Map()
 global cmpGreaterThan := Map()
+global cmpSemicolon := Map()
 global cmpBracketLeft := Map()
 cmpSmallD["d"] := "{u+2020}"        ; (†) dagger
 cmpCapitalD["D"] := "{u+2021}"      ; (‡) double dagger
@@ -1021,34 +1033,16 @@ cmpGreaterThan["="] := "{u+2265}"   ; (≥) greater-than or equal to
 cmpLessThan["+"] := "{u+2a7d}"      ; (⩽) less-than or slanted equal to
 cmpGreaterThan["+"] := "{u+2a7e}"   ; (⩾) greater-than or slanted equal to
 cmpTilde["~"] := "{u+2248}"         ; (≈) almost equal to
+cmpSemicolon["b"] := "{u+2022}"     ; (•) bullet
+cmpSemicolon["o"] := "{u+25e6}"     ; (◦) white bullet
+cmpSemicolon["w"] := "{u+25e6}"     ; (◦) white bullet
+cmpSemicolon["h"] := "{u+2043}"     ; (⁃) hyphen bullet
+cmpSemicolon["t"] := "{u+2023}"     ; (‣) triangular bullet
+cmpSemicolon[";"] := "{u+2022}"     ; (•) bullet
 cmpBracketLeft["]"] := "{u+2610}"   ; (☐) ballot box
 cmpBracketLeft["v"] := "{u+2611}"   ; (☑) ballot box with check
 cmpBracketLeft["y"] := "{u+2611}"   ; (☑) ballot box with check
 cmpBracketLeft["x"] := "{u+2612}"   ; (☒) ballot box with x
-
-
-; Compose :  Bullets and Small Geometric Shapes (;)
-
-global cmpSemicolon := Map()
-cmpSemicolon["b"] := "{u+2022}"  ; (•) bullet
-cmpSemicolon["o"] := "{u+25e6}"  ; (◦) white bullet
-cmpSemicolon["h"] := "{u+2043}"  ; (⁃) hyphen bullet
-cmpSemicolon["t"] := "{u+2023}"  ; (‣) triangular bullet
-cmpSemicolon["q"] := "{u+25aa}"  ; (▪) black small square
-cmpSemicolon["u"] := "{u+25ab}"  ; (▫) white small square
-cmpSemicolon["w"] := "{u+25b4}"  ; (▴) black up-pointing small triangle
-cmpSemicolon["a"] := "{u+25c2}"  ; (◂) black left-pointing small triangle
-cmpSemicolon["s"] := "{u+25be}"  ; (▾) black down-pointing small triangle
-cmpSemicolon["d"] := "{u+25b8}"  ; (▸) black right-pointing small triangle
-cmpSemicolon["i"] := "{u+25b5}"  ; (▵) white up-pointing small triangle
-cmpSemicolon["j"] := "{u+25c3}"  ; (◃) white left-pointing small triangle
-cmpSemicolon["k"] := "{u+25bf}"  ; (▿) white down-pointing small triangle
-cmpSemicolon["l"] := "{u+25b9}"  ; (▹) white right-pointing small triangle
-cmpSemicolon["z"] := "{u+25a0}"  ; (■) black square
-cmpSemicolon["x"] := "{u+25a1}"  ; (□) white square
-cmpSemicolon["c"] := "{u+25c6}"  ; (◆) black diamond
-cmpSemicolon["v"] := "{u+25c7}"  ; (◇) white diamond
-cmpSemicolon[";"] := "{u+2022}"  ; (•) bullet
 
 
 ; Compose :  Vulgar Fractions
@@ -2214,10 +2208,6 @@ cmpSmallN["0"] := "{u+277f}"  ; (❿) dingbat negative circled digit 10
   else if (ihA.Input == " ") {
     if cmpSpace.Has(ihB.Input)
       Send cmpSpace[ihB.Input]
-  }
-  else if (ihA.Input == "q") {
-    if cmpQuad.Has(ihB.Input)
-      Send cmpQuad[ihB.Input]
   }
   else if (ihA.Input == "a") {
     if cmpArrow.Has(ihB.Input)
