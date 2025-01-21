@@ -1,6 +1,6 @@
 #requires AutoHotkey v2
 
-; UltimateKEYS (for AutoHotkey v2).ahk - 2025-01-20
+; UltimateKEYS (for AutoHotkey v2).ahk - 2025-01-21
 
 ; Website :  https://pieter-degroote.github.io/UltimateKEYS/
 
@@ -970,7 +970,10 @@ cmpCapitalT["H"] := "{u+00de}"   ; (Þ) capital letter thorn
 global cmpDigitEight := Map()
 global cmpCapitalP := Map()
 global cmpSmallY := Map()
+global cmpCapitalV := Map()
+global cmpCapitalY := Map()
 global cmpSmallX := Map()
+global cmpCapitalX := Map()
 global cmpVerticalLine := Map()
 global cmpAsterisk := Map()
 global cmpExclam := Map()
@@ -1000,7 +1003,10 @@ cmpCapitalS["o"] := "{u+00a7}"      ; (§) section sign
 cmpSmallT["m"] := "{u+2122}"        ; (™) trademark symbol
 cmpCaron["v"] := "{u+2713}"         ; (✓) check mark
 cmpSmallY["y"] := "{u+2713}"        ; (✓) check mark
+cmpCapitalV["V"] := "{u+2714}"      ; (✔) heavy check mark
+cmpCapitalY["Y"] := "{u+2714}"      ; (✔) heavy check mark
 cmpSmallX["x"] := "{u+2717}"        ; (✗) ballot x
+cmpCapitalX["X"] := "{u+2718}"      ; (✘) heavy ballot x
 cmpVerticalLine["|"] := "{u+2016}"  ; (‖) double vertical line
 cmpAcuteAccent["1"] := "{u+2032}"   ; (′) prime
 cmpAcuteAccent["2"] := "{u+2033}"   ; (″) double prime
@@ -2271,9 +2277,21 @@ cmpSmallN["0"] := "{u+277f}"  ; (❿) dingbat negative circled digit 10
     if cmpSmallY.Has(ihB.Input)
       Send cmpSmallY[ihB.Input]
   }
+  else if (ihA.Input == "V") {
+    if cmpCapitalV.Has(ihB.Input)
+      Send cmpCapitalV[ihB.Input]
+  }
+  else if (ihA.Input == "Y") {
+    if cmpCapitalY.Has(ihB.Input)
+      Send cmpCapitalY[ihB.Input]
+  }
   else if (ihA.Input == "x") {
     if cmpSmallX.Has(ihB.Input)
       Send cmpSmallX[ihB.Input]
+  }
+  else if (ihA.Input == "X") {
+    if cmpCapitalX.Has(ihB.Input)
+      Send cmpCapitalX[ihB.Input]
   }
   else if (ihA.Input == "|") {
     if cmpVerticalLine.Has(ihB.Input)

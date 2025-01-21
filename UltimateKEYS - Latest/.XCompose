@@ -1,6 +1,6 @@
 include "%L"
 
-# UltimateKEYS Compose Key Sequences - 2025-01-20
+# UltimateKEYS Compose Key Sequences - 2025-01-21
 
 # Website :  https://pieter-degroote.github.io/UltimateKEYS/
 
@@ -835,7 +835,10 @@ include "%L"
 <Multi_key> <t> <m> : "™"  U2122  # trademark symbol
 <Multi_key> <v> <v> : "✓"  U2713  # check mark
 <Multi_key> <y> <y> : "✓"  U2713  # check mark
+<Multi_key> <V> <V> : "✔"  U2714  # heavy check mark
+<Multi_key> <Y> <Y> : "✔"  U2714  # heavy check mark
 <Multi_key> <x> <x> : "✗"  U2717  # ballot x
+<Multi_key> <X> <X> : "✘"  U2718  # heavy ballot x
 <Multi_key> <bar> <bar>               : "‖"  U2016  # double vertical line
 <Multi_key> <apostrophe> <1>          : "′"  U2032  # prime
 <Multi_key> <apostrophe> <2>          : "″"  U2033  # double prime

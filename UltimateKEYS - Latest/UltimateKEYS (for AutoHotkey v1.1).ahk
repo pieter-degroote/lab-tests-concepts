@@ -1,6 +1,6 @@
 #requires AutoHotkey v1.1
 
-; UltimateKEYS (for AutoHotkey v1.1).ahk - 2025-01-20
+; UltimateKEYS (for AutoHotkey v1.1).ahk - 2025-01-21
 
 ; Website :  https://pieter-degroote.github.io/UltimateKEYS/
 
@@ -969,7 +969,10 @@ cmpCapitalT.item["H"] := "{u+00de}"   ; (Þ) capital letter thorn
 cmpDigitEight := ComObjCreate("Scripting.Dictionary")
 cmpCapitalP := ComObjCreate("Scripting.Dictionary")
 cmpSmallY := ComObjCreate("Scripting.Dictionary")
+cmpCapitalV := ComObjCreate("Scripting.Dictionary")
+cmpCapitalY := ComObjCreate("Scripting.Dictionary")
 cmpSmallX := ComObjCreate("Scripting.Dictionary")
+cmpCapitalX := ComObjCreate("Scripting.Dictionary")
 cmpVerticalLine := ComObjCreate("Scripting.Dictionary")
 cmpAsterisk := ComObjCreate("Scripting.Dictionary")
 cmpExclam := ComObjCreate("Scripting.Dictionary")
@@ -999,7 +1002,10 @@ cmpCapitalS.item["o"] := "{u+00a7}"      ; (§) section sign
 cmpSmallT.item["m"] := "{u+2122}"        ; (™) trademark symbol
 cmpCaron.item["v"] := "{u+2713}"         ; (✓) check mark
 cmpSmallY.item["y"] := "{u+2713}"        ; (✓) check mark
+cmpCapitalV.item["V"] := "{u+2714}"      ; (✔) heavy check mark
+cmpCapitalY.item["Y"] := "{u+2714}"      ; (✔) heavy check mark
 cmpSmallX.item["x"] := "{u+2717}"        ; (✗) ballot x
+cmpCapitalX.item["X"] := "{u+2718}"      ; (✘) heavy ballot x
 cmpVerticalLine.item["|"] := "{u+2016}"  ; (‖) double vertical line
 cmpAcuteAccent.item["1"] := "{u+2032}"   ; (′) prime
 cmpAcuteAccent.item["2"] := "{u+2033}"   ; (″) double prime
@@ -2187,8 +2193,14 @@ cmpSmallN.item["0"] := "{u+277f}"  ; (❿) dingbat negative circled digit 10
     Send % cmpCapitalP.item[keyB]
   else if (keyA == "y")
     Send % cmpSmallY.item[keyB]
+  else if (keyA == "V")
+    Send % cmpCapitalV.item[keyB]
+  else if (keyA == "Y")
+    Send % cmpCapitalY.item[keyB]
   else if (keyA == "x")
     Send % cmpSmallX.item[keyB]
+  else if (keyA == "X")
+    Send % cmpCapitalX.item[keyB]
   else if (keyA == "|")
     Send % cmpVerticalLine.item[keyB]
   else if (keyA == "*")
