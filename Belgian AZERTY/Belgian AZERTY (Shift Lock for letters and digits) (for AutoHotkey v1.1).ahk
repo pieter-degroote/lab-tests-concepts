@@ -253,7 +253,7 @@ sc006::
   if GetKeyState("CapsLock", "T")
     Send {u+0035}  ; (5) digit 5
   else
-    Send {u+0028}  ; (()left parenthesis
+    Send {u+0028}  ; (() left parenthesis
   return
 +sc006::
   if GetKeyState("CapsLock", "T")
