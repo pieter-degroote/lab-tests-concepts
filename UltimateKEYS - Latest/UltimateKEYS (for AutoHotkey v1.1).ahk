@@ -1,6 +1,6 @@
 #requires AutoHotkey v1.1
 
-; UltimateKEYS (for AutoHotkey v1.1).ahk - 2025-01-22
+; UltimateKEYS (for AutoHotkey v1.1).ahk - 2025-01-29
 
 ; Website :  https://pieter-degroote.github.io/UltimateKEYS/
 
@@ -67,7 +67,6 @@ cmpDigit2 := ComObjCreate("Scripting.Dictionary")
 cmpDigit3 := ComObjCreate("Scripting.Dictionary")
 cmpDigit4 := ComObjCreate("Scripting.Dictionary")
 cmpDigit5 := ComObjCreate("Scripting.Dictionary")
-cmpDigit6 := ComObjCreate("Scripting.Dictionary")
 cmpDigit7 := ComObjCreate("Scripting.Dictionary")
 cmpDigit8 := ComObjCreate("Scripting.Dictionary")
 cmpSpace := ComObjCreate("Scripting.Dictionary")
@@ -1301,8 +1300,6 @@ cmpGreater.item["Z"] := "{u+1e92}"  ; (Ẓ) Z with dot below
 
 cmpQuestion.item["a"] := "{u+1ead}"  ; (ậ) a with circumflex and dot below
 cmpQuestion.item["A"] := "{u+1eac}"  ; (Ậ) A with circumflex and dot below
-cmpQuestion.item["b"] := "{u+1eb7}"  ; (ặ) a with breve and dot below
-cmpQuestion.item["B"] := "{u+1eb6}"  ; (Ặ) A with breve and dot below
 cmpQuestion.item["e"] := "{u+1ec7}"  ; (ệ) e with circumflex and dot below
 cmpQuestion.item["E"] := "{u+1ec6}"  ; (Ệ) E with circumflex and dot below
 cmpQuestion.item["f"] := "{u+1e1d}"  ; (ḝ) e with cedilla and breve
@@ -1311,224 +1308,16 @@ cmpQuestion.item["l"] := "{u+1e39}"  ; (ḹ) l with dot below and macron
 cmpQuestion.item["L"] := "{u+1e38}"  ; (Ḹ) L with dot below and macron
 cmpQuestion.item["o"] := "{u+1ed9}"  ; (ộ) o with circumflex and dot below
 cmpQuestion.item["O"] := "{u+1ed8}"  ; (Ộ) O with circumflex and dot below
+cmpQuestion.item["p"] := "{u+1ee3}"  ; (ợ) o with horn and dot below
+cmpQuestion.item["P"] := "{u+1ee2}"  ; (Ợ) O with horn and dot below
+cmpQuestion.item["q"] := "{u+1eb7}"  ; (ặ) a with breve and dot below
+cmpQuestion.item["Q"] := "{u+1eb6}"  ; (Ặ) A with breve and dot below
 cmpQuestion.item["r"] := "{u+1e5d}"  ; (ṝ) r with dot below and macron
 cmpQuestion.item["R"] := "{u+1e5c}"  ; (Ṝ) R with dot below and macron
 cmpQuestion.item["s"] := "{u+1e69}"  ; (ṩ) s with dot below and dot above
 cmpQuestion.item["S"] := "{u+1e68}"  ; (Ṩ) S with dot below and dot above
-cmpQuestion.item["t"] := "{u+1ee3}"  ; (ợ) o with horn and dot below
-cmpQuestion.item["T"] := "{u+1ee2}"  ; (Ợ) O with horn and dot below
 cmpQuestion.item["u"] := "{u+1ef1}"  ; (ự) u with horn and dot below
 cmpQuestion.item["U"] := "{u+1ef0}"  ; (Ự) U with horn and dot below
-
-
-; Compose :  Miscellaneous Symbols and Dingbats
-
-cmpDigit1.item["a"] := "{u+2600}"  ; (☀) black sun with rays
-cmpDigit1.item["b"] := "{u+2601}"  ; (☁) cloud
-cmpDigit1.item["c"] := "{u+2602}"  ; (☂) umbrella
-cmpDigit1.item["d"] := "{u+2603}"  ; (☃) snowman
-cmpDigit1.item["e"] := "{u+2604}"  ; (☄) comet
-cmpDigit1.item["f"] := "{u+2605}"  ; (★) black star
-cmpDigit1.item["g"] := "{u+2606}"  ; (☆) white star
-cmpDigit1.item["h"] := "{u+260e}"  ; (☎) black telephone
-cmpDigit1.item["i"] := "{u+260f}"  ; (☏) white telephone
-cmpDigit1.item["j"] := "{u+2610}"  ; (☐) ballot box
-cmpDigit1.item["k"] := "{u+2611}"  ; (☑) ballot box with check
-cmpDigit1.item["l"] := "{u+2612}"  ; (☒) ballot box with x
-cmpDigit1.item["m"] := "{u+2619}"  ; (☙) reversed rotated floral heart bullet
-cmpDigit1.item["n"] := "{u+261a}"  ; (☚) black left-pointing index
-cmpDigit1.item["o"] := "{u+261b}"  ; (☛) black right-pointing index
-cmpDigit1.item["p"] := "{u+261c}"  ; (☜) white left-pointing index
-cmpDigit1.item["q"] := "{u+261d}"  ; (☝) white up-pointing index
-cmpDigit1.item["r"] := "{u+261e}"  ; (☞) white right-pointing index
-cmpDigit1.item["s"] := "{u+261f}"  ; (☟) white down-pointing index
-cmpDigit1.item["t"] := "{u+2620}"  ; (☠) skull and crossbones
-cmpDigit1.item["u"] := "{u+2621}"  ; (☡) caution sign
-cmpDigit1.item["v"] := "{u+2622}"  ; (☢) radioactive sign
-cmpDigit1.item["w"] := "{u+2623}"  ; (☣) biohazard sign
-cmpDigit1.item["x"] := "{u+2639}"  ; (☹) white frowning face
-cmpDigit1.item["y"] := "{u+263a}"  ; (☺) white smiling face
-cmpDigit1.item["z"] := "{u+263b}"  ; (☻) black smiling face
-
-cmpDigit2.item["a"] := "{u+263c}"  ; (☼) white sun with rays
-cmpDigit2.item["b"] := "{u+263d}"  ; (☽) first quarter moon
-cmpDigit2.item["c"] := "{u+263e}"  ; (☾) last quarter moon
-cmpDigit2.item["d"] := "{u+2640}"  ; (♀) female sign (Venus)
-cmpDigit2.item["e"] := "{u+2642}"  ; (♂) male sign (Mars)
-cmpDigit2.item["f"] := "{u+2668}"  ; (♨) hot springs
-cmpDigit2.item["g"] := "{u+2669}"  ; (♩) quarter note
-cmpDigit2.item["h"] := "{u+266a}"  ; (♪) eighth note
-cmpDigit2.item["i"] := "{u+266b}"  ; (♫) beamed eighth notes
-cmpDigit2.item["j"] := "{u+266c}"  ; (♬) beamed sixteenth notes
-cmpDigit2.item["k"] := "{u+266d}"  ; (♭) music flat sign
-cmpDigit2.item["l"] := "{u+266e}"  ; (♮) music natural sign
-cmpDigit2.item["m"] := "{u+266f}"  ; (♯) music sharp sign
-cmpDigit2.item["n"] := "{u+2672}"  ; (♲) universal recycling symbol
-cmpDigit2.item["o"] := "{u+267a}"  ; (♺) recycling symbol for generic materials
-cmpDigit2.item["p"] := "{u+267b}"  ; (♻) black universal recycling symbol
-cmpDigit2.item["q"] := "{u+267f}"  ; (♿) wheelchair symbol
-cmpDigit2.item["r"] := "{u+2690}"  ; (⚐) white flag
-cmpDigit2.item["s"] := "{u+2691}"  ; (⚑) black flag
-cmpDigit2.item["t"] := "{u+26a0}"  ; (⚠) warning sign
-cmpDigit2.item["u"] := "{u+26a1}"  ; (⚡) high voltage sign
-cmpDigit2.item["v"] := "{u+26d4}"  ; (⛔) no entry
-cmpDigit2.item["w"] := "{u+231a}"  ; (⌚) watch
-cmpDigit2.item["x"] := "{u+231b}"  ; (⌛) hourglass
-
-cmpDigit3.item["a"] := "{u+2701}"  ; (✁) upper blade scissors
-cmpDigit3.item["b"] := "{u+2702}"  ; (✂) black scissors
-cmpDigit3.item["c"] := "{u+2703}"  ; (✃) lower blade scissors
-cmpDigit3.item["d"] := "{u+2704}"  ; (✄) white scissors
-cmpDigit3.item["e"] := "{u+2706}"  ; (✆) telephone location sign
-cmpDigit3.item["f"] := "{u+2707}"  ; (✇) tape drive
-cmpDigit3.item["g"] := "{u+2708}"  ; (✈) airplane
-cmpDigit3.item["h"] := "{u+2709}"  ; (✉) envelope
-cmpDigit3.item["i"] := "{u+270a}"  ; (✊) raised fist
-cmpDigit3.item["j"] := "{u+270b}"  ; (✋) raised hand
-cmpDigit3.item["k"] := "{u+270c}"  ; (✌) victory hand
-cmpDigit3.item["l"] := "{u+270d}"  ; (✍) writing hand
-cmpDigit3.item["m"] := "{u+270e}"  ; (✎) lower right pencil
-cmpDigit3.item["n"] := "{u+270f}"  ; (✏) pencil
-cmpDigit3.item["o"] := "{u+2710}"  ; (✐) upper right pencil
-cmpDigit3.item["p"] := "{u+2711}"  ; (✑) white nib
-cmpDigit3.item["q"] := "{u+2712}"  ; (✒) black nib
-cmpDigit3.item["r"] := "{u+2713}"  ; (✓) check mark
-cmpDigit3.item["s"] := "{u+2714}"  ; (✔) heavy check mark
-cmpDigit3.item["t"] := "{u+2715}"  ; (✕) multiplication x
-cmpDigit3.item["u"] := "{u+2716}"  ; (✖) heavy multiplication x
-cmpDigit3.item["v"] := "{u+2717}"  ; (✗) ballot x
-cmpDigit3.item["w"] := "{u+2718}"  ; (✘) heavy ballot x
-cmpDigit3.item["x"] := "{u+2719}"  ; (✙) outlined Greek cross
-cmpDigit3.item["y"] := "{u+271a}"  ; (✚) heavy Greek cross
-cmpDigit3.item["z"] := "{u+271b}"  ; (✛) open centre cross
-
-cmpDigit4.item["a"] := "{u+271c}"  ; (✜) heavy open centre cross
-cmpDigit4.item["b"] := "{u+271d}"  ; (✝) Latin cross
-cmpDigit4.item["c"] := "{u+271e}"  ; (✞) shadowed white Latin cross
-cmpDigit4.item["d"] := "{u+271f}"  ; (✟) outlined Latin cross
-cmpDigit4.item["e"] := "{u+2720}"  ; (✠) Maltese cross
-cmpDigit4.item["f"] := "{u+2721}"  ; (✡) star of David
-cmpDigit4.item["g"] := "{u+2722}"  ; (✢) four teardrop-spoked asterisk
-cmpDigit4.item["h"] := "{u+2723}"  ; (✣) four balloon-spoked asterisk
-cmpDigit4.item["i"] := "{u+2724}"  ; (✤) heavy four balloon-spoked asterisk
-cmpDigit4.item["j"] := "{u+2725}"  ; (✥) four club-spoked asterisk
-cmpDigit4.item["k"] := "{u+2726}"  ; (✦) black four-pointed star
-cmpDigit4.item["l"] := "{u+2727}"  ; (✧) white four-pointed star
-cmpDigit4.item["m"] := "{u+2729}"  ; (✩) stress outlined white star
-cmpDigit4.item["n"] := "{u+272a}"  ; (✪) circled white star
-cmpDigit4.item["o"] := "{u+272b}"  ; (✫) open centre black star
-cmpDigit4.item["p"] := "{u+272c}"  ; (✬) black centre white star
-cmpDigit4.item["q"] := "{u+272d}"  ; (✭) outlined black star
-cmpDigit4.item["r"] := "{u+272e}"  ; (✮) heavy outlined black star
-cmpDigit4.item["s"] := "{u+272f}"  ; (✯) pinwheel star
-cmpDigit4.item["t"] := "{u+2730}"  ; (✰) shadowed white star
-cmpDigit4.item["u"] := "{u+2731}"  ; (✱) heavy asterisk
-cmpDigit4.item["v"] := "{u+2732}"  ; (✲) open centre asterisk
-cmpDigit4.item["w"] := "{u+2733}"  ; (✳) eight-spoked asterisk
-cmpDigit4.item["x"] := "{u+2734}"  ; (✴) eight-pointed black star
-cmpDigit4.item["y"] := "{u+2735}"  ; (✵) eight-pointed pinwheel star
-cmpDigit4.item["z"] := "{u+2736}"  ; (✶) six-pointed black star
-
-cmpDigit5.item["a"] := "{u+2737}"  ; (✷) eight-pointed rectilinear black star
-cmpDigit5.item["b"] := "{u+2738}"  ; (✸) heavy eight-pointed rectilinear black star
-cmpDigit5.item["c"] := "{u+2739}"  ; (✹) twelve pointed black star
-cmpDigit5.item["d"] := "{u+273a}"  ; (✺) sixteen-pointed asterisk
-cmpDigit5.item["e"] := "{u+273b}"  ; (✻) teardrop-spoked asterisk
-cmpDigit5.item["f"] := "{u+273c}"  ; (✼) open centre teardrop-spoked asterisk
-cmpDigit5.item["g"] := "{u+273d}"  ; (✽) heavy teardrop-spoked asterisk
-cmpDigit5.item["h"] := "{u+273e}"  ; (✾) six-petalled black and white florette
-cmpDigit5.item["i"] := "{u+273f}"  ; (✿) black florette
-cmpDigit5.item["j"] := "{u+2740}"  ; (❀) white florette
-cmpDigit5.item["k"] := "{u+2741}"  ; (❁) eight-petalled outlined black florette
-cmpDigit5.item["l"] := "{u+2742}"  ; (❂) circled open centre eight-pointed star
-cmpDigit5.item["m"] := "{u+2743}"  ; (❃) heavy teardrop-spoked pinwheel asterisk
-cmpDigit5.item["n"] := "{u+2744}"  ; (❄) snowflake
-cmpDigit5.item["o"] := "{u+2745}"  ; (❅) tight trifoliate snowflake
-cmpDigit5.item["p"] := "{u+2746}"  ; (❆) heavy chevron snowflake
-cmpDigit5.item["q"] := "{u+2747}"  ; (❇) sparkle
-cmpDigit5.item["r"] := "{u+2748}"  ; (❈) heavy sparkle
-cmpDigit5.item["s"] := "{u+2749}"  ; (❉) balloon-spoked asterisk
-cmpDigit5.item["t"] := "{u+274a}"  ; (❊) eight teardrop-spoked propeller asterisk
-cmpDigit5.item["u"] := "{u+274b}"  ; (❋) heavy eight teardrop-spoked propeller asterisk
-cmpDigit5.item["v"] := "{u+274d}"  ; (❍) shadowed white circle
-cmpDigit5.item["w"] := "{u+274f}"  ; (❏) lower right drop-shadowed white square
-cmpDigit5.item["x"] := "{u+2750}"  ; (❐) upper right drop-shadowed white square
-cmpDigit5.item["y"] := "{u+2751}"  ; (❑) lower right shadowed white square
-cmpDigit5.item["z"] := "{u+2752}"  ; (❒) upper right shadowed white square
-
-cmpDigit6.item["a"] := "{u+2756}"  ; (❖) black diamond minus white x
-cmpDigit6.item["b"] := "{u+2758}"  ; (❘) light vertical bar
-cmpDigit6.item["c"] := "{u+2759}"  ; (❙) medium vertical bar
-cmpDigit6.item["d"] := "{u+275a}"  ; (❚) heavy vertical bar
-cmpDigit6.item["e"] := "{u+275b}"  ; (❛) heavy single turned comma quotation mark ornament
-cmpDigit6.item["f"] := "{u+275c}"  ; (❜) heavy single comma quotation mark ornament
-cmpDigit6.item["g"] := "{u+275d}"  ; (❝) heavy double turned comma quotation mark ornament
-cmpDigit6.item["h"] := "{u+275e}"  ; (❞) heavy double comma quotation mark ornament
-cmpDigit6.item["i"] := "{u+275f}"  ; (❟) heavy low single comma quotation mark ornament
-cmpDigit6.item["j"] := "{u+2760}"  ; (❠) heavy low double comma quotation mark ornament
-cmpDigit6.item["k"] := "{u+2761}"  ; (❡) curved stem paragraph sign ornament
-cmpDigit6.item["l"] := "{u+2762}"  ; (❢) heavy exclamation mark ornament
-cmpDigit6.item["m"] := "{u+2763}"  ; (❣) heavy heart exclamation mark ornament
-cmpDigit6.item["n"] := "{u+2764}"  ; (❤) heavy black heart
-cmpDigit6.item["o"] := "{u+2765}"  ; (❥) rotated heavy black heart bullet
-cmpDigit6.item["p"] := "{u+2766}"  ; (❦) floral heart
-cmpDigit6.item["q"] := "{u+2767}"  ; (❧) rotated floral heart bullet
-
-cmpDigit7.item["a"] := "{u+2794}"  ; (➔) heavy wide-headed rightwards arrow
-cmpDigit7.item["b"] := "{u+2798}"  ; (➘) heavy south east arrow
-cmpDigit7.item["c"] := "{u+2799}"  ; (➙) heavy rightwards arrow
-cmpDigit7.item["d"] := "{u+279a}"  ; (➚) heavy north east arrow
-cmpDigit7.item["e"] := "{u+279b}"  ; (➛) drafting point rightwards arrow
-cmpDigit7.item["f"] := "{u+279c}"  ; (➜) heavy round-tipped rightwards arrow
-cmpDigit7.item["g"] := "{u+279d}"  ; (➝) triangle-headed rightwards arrow
-cmpDigit7.item["h"] := "{u+279e}"  ; (➞) heavy triangle-headed rightwards arrow
-cmpDigit7.item["i"] := "{u+279f}"  ; (➟) dashed triangle-headed rightwards arrow
-cmpDigit7.item["j"] := "{u+27a0}"  ; (➠) heavy dashed triangle-headed rightwards arrow
-cmpDigit7.item["k"] := "{u+27a1}"  ; (➡) black rightwards arrow
-cmpDigit7.item["l"] := "{u+27a2}"  ; (➢) 3d top-lighted rightwards arrowhead
-cmpDigit7.item["m"] := "{u+27a3}"  ; (➣) 3d bottom-lighted rightwards arrowhead
-cmpDigit7.item["n"] := "{u+27a4}"  ; (➤) black rightwards arrowhead
-cmpDigit7.item["o"] := "{u+27a5}"  ; (➥) heavy black curved downwards and rightwards arrow
-cmpDigit7.item["p"] := "{u+27a6}"  ; (➦) heavy black curved upwards and rightwards arrow
-cmpDigit7.item["q"] := "{u+27a7}"  ; (➧) squat black rightwards arrow
-cmpDigit7.item["r"] := "{u+27a8}"  ; (➨) heavy concave-pointed black rightwards arrow
-cmpDigit7.item["s"] := "{u+27a9}"  ; (➩) right-shaded white rightwards arrow
-cmpDigit7.item["t"] := "{u+27aa}"  ; (➪) left-shaded white rightwards arrow
-cmpDigit7.item["u"] := "{u+27ab}"  ; (➫) back-tilted shadowed white rightwards arrow
-cmpDigit7.item["v"] := "{u+27ac}"  ; (➬) front-tilted shadowed white rightwards arrow
-cmpDigit7.item["w"] := "{u+27ad}"  ; (➭) heavy lower right-shadowed white rightwards arrow
-cmpDigit7.item["x"] := "{u+27ae}"  ; (➮) heavy upper right-shadowed white rightwards arrow
-cmpDigit7.item["y"] := "{u+27af}"  ; (➯) notched lower right-shadowed white rightwards arrow
-cmpDigit7.item["z"] := "{u+27b1}"  ; (➱) notched upper right-shadowed white rightwards arrow
-
-cmpDigit8.item["a"] := "{u+27b2}"  ; (➲) circled heavy white rightwards arrow
-cmpDigit8.item["b"] := "{u+27b3}"  ; (➳) white-feathered rightwards arrow
-cmpDigit8.item["c"] := "{u+27b4}"  ; (➴) black-feathered south east arrow
-cmpDigit8.item["d"] := "{u+27b5}"  ; (➵) black-feathered rightwards arrow
-cmpDigit8.item["e"] := "{u+27b6}"  ; (➶) black-feathered north east arrow
-cmpDigit8.item["f"] := "{u+27b7}"  ; (➷) heavy black-feathered south east arrow
-cmpDigit8.item["g"] := "{u+27b8}"  ; (➸) heavy black-feathered rightwards arrow
-cmpDigit8.item["h"] := "{u+27b9}"  ; (➹) heavy black-feathered north east arrow
-cmpDigit8.item["i"] := "{u+27ba}"  ; (➺) teardrop-barbed rightwards arrow
-cmpDigit8.item["j"] := "{u+27bb}"  ; (➻) heavy teardrop-shanked rightwards arrow
-cmpDigit8.item["k"] := "{u+27bc}"  ; (➼) wedge-tailed rightwards arrow
-cmpDigit8.item["l"] := "{u+27bd}"  ; (➽) heavy wedge-tailed rightwards arrow
-cmpDigit8.item["m"] := "{u+27be}"  ; (➾) open-outlined rightwards arrow
-cmpDigit8.item["n"] := "{u+27c1}"  ; (⟁) white triangle containing small white triangle
-
-
-; Compose :  Dingbat Negative Circled Digits (n)
-
-cmpSmallN.item["1"] := "{u+2776}"  ; (❶) dingbat negative circled digit 1
-cmpSmallN.item["2"] := "{u+2777}"  ; (❷) dingbat negative circled digit 2
-cmpSmallN.item["3"] := "{u+2778}"  ; (❸) dingbat negative circled digit 3
-cmpSmallN.item["4"] := "{u+2779}"  ; (❹) dingbat negative circled digit 4
-cmpSmallN.item["5"] := "{u+277a}"  ; (❺) dingbat negative circled digit 5
-cmpSmallN.item["6"] := "{u+277b}"  ; (❻) dingbat negative circled digit 6
-cmpSmallN.item["7"] := "{u+277c}"  ; (❼) dingbat negative circled digit 7
-cmpSmallN.item["8"] := "{u+277d}"  ; (❽) dingbat negative circled digit 8
-cmpSmallN.item["9"] := "{u+277e}"  ; (❾) dingbat negative circled digit 9
-cmpSmallN.item["0"] := "{u+277f}"  ; (❿) dingbat negative circled digit 10
 
 
 ; Configuration :  'AltGr (RAlt)' and 'AltGr (RAlt) + Shift' modifiers
@@ -2205,8 +1994,6 @@ cmpSmallN.item["0"] := "{u+277f}"  ; (❿) dingbat negative circled digit 10
     Send % cmpDigit4.item[keyB]
   else if (keyA == "5")
     Send % cmpDigit5.item[keyB]
-  else if (keyA == "6")
-    Send % cmpDigit6.item[keyB]
   else if (keyA == "7")
     Send % cmpDigit7.item[keyB]
   else if (keyA == "8")
