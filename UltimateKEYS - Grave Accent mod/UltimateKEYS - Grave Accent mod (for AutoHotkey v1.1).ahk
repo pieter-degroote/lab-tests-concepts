@@ -1925,29 +1925,29 @@ compose.item["?U"] := "{u+1ef0}"  ; (Ự) U with horn and dot below
 <^>!+sc039::Send {u+00a0}  ; non-breaking space (NBSP)
 
 
-; Configuration :  'Grave Accent' as alternate key for 'Right Alt'
+; Configuration :  'Grave Accent' (dead key) as alternate key for 'Right Alt'
 
 vkC0::
-  deadkey := InputHook("L1", "{esc}")
-  deadkey.Start()
-  deadkey.Wait()
-  if (deadkey.Input == " ")
+  dead := InputHook("L1", "{esc}")
+  dead.Start()
+  dead.Wait()
+  if (dead.Input == " ")
     Send {u+0060}  ; (`) grave accent
   else
-    Send % dkGrave.item[deadkey.Input]
+    Send % dkGrave.item[dead.Input]
   return
 
 
-; Configuration :  Optional 'ISO Key' as alternate key for 'Right Alt'
+; Configuration :  Optional 'ISO Key' (dead key) as alternate key for 'Right Alt'
 
 vkE2::
-  deadkey := InputHook("L1", "{esc}")
-  deadkey.Start()
-  deadkey.Wait()
-  if (deadkey.Input == " ")
+  dead := InputHook("L1", "{esc}")
+  dead.Start()
+  dead.Wait()
+  if (dead.Input == " ")
     Send {u+005c}  ; (\) backslash
   else
-    Send % dkGrave.item[deadkey.Input]
+    Send % dkGrave.item[dead.Input]
   return
 
 
