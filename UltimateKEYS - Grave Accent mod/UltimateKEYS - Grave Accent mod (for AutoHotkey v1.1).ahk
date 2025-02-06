@@ -1,6 +1,6 @@
 #requires AutoHotkey v1.1
 
-; UltimateKEYS - Grave Accent mod (for AutoHotkey v1.1).ahk - 2025-01-29
+; UltimateKEYS - Grave Accent mod (for AutoHotkey v1.1).ahk - 2025-02-06
 
 ; Website :  https://pieter-degroote.github.io/UltimateKEYS/
 
@@ -21,10 +21,12 @@ ListLines Off   ; omits recently executed lines from history (for privacy and se
 
 SendMode Input  ; optimizes for faster and more reliable input
 
+global gEndKeys := "{bs}{esc}"  ; ends dead key input on Backspace or Escape
+
 
 ; Dead Key :  Grave Accent (`)
 
-dkGrave := ComObjCreate("Scripting.Dictionary")
+global dkGrave := ComObjCreate("Scripting.Dictionary")
 dkGrave.item["a"] := "{u+00e4}"  ; (ä) a with diaeresis
 dkGrave.item["A"] := "{u+00c4}"  ; (Ä) A with diaeresis
 dkGrave.item["z"] := "{u+00e1}"  ; (á) a with acute
@@ -123,7 +125,7 @@ dkGrave.item["?"] := "{u+2022}"  ; (•) bullet
 
 ; Compose Key Sequences (declaration)
 
-compose := ComObjCreate("Scripting.Dictionary")
+global compose := ComObjCreate("Scripting.Dictionary")
 
 
 ; Compose :  Acute Accent
@@ -1928,7 +1930,7 @@ compose.item["?U"] := "{u+1ef0}"  ; (Ự) U with horn and dot below
 ; Configuration :  'Grave Accent' (dead key) as alternate key for 'Right Alt'
 
 vkC0::
-  dead := InputHook("L1", "{esc}")
+  dead := InputHook("L1", gEndKeys)
   dead.Start()
   dead.Wait()
   if (dead.Input == " ")
@@ -1941,7 +1943,7 @@ vkC0::
 ; Configuration :  Optional 'ISO Key' (dead key) as alternate key for 'Right Alt'
 
 vkE2::
-  dead := InputHook("L1", "{esc}")
+  dead := InputHook("L1", gEndKeys)
   dead.Start()
   dead.Wait()
   if (dead.Input == " ")
@@ -1957,7 +1959,7 @@ vkE2::
 >!sc056::    ; Right Alt + ISO Key
 <^>!sc029::  ; AltGr + Grave Accent
 <^>!sc056::  ; AltGr + ISO Key
-  keys := InputHook("L2", "{esc}")
+  keys := InputHook("L2", gEndKeys)
   keys.Start()
   keys.Wait()
   Send % compose.item[keys.Input]

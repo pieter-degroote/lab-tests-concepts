@@ -1,6 +1,6 @@
 #requires AutoHotkey v2
 
-; UltimateKEYS - Grave Accent mod (for AutoHotkey v2).ahk - 2025-01-29
+; UltimateKEYS - Grave Accent mod (for AutoHotkey v2).ahk - 2025-02-06
 
 ; Website :  https://pieter-degroote.github.io/UltimateKEYS/
 
@@ -19,6 +19,8 @@ KeyHistory 0      ; disables the key history (for privacy and security)
 ListLines False   ; omits recently executed lines from history (for privacy and security)
 
 SendMode "Input"  ; optimizes for faster and more reliable input
+
+global gEndKeys := "{bs}{esc}"  ; ends dead key input on Backspace or Escape
 
 
 ; Dead Key :  Grave Accent (`)
@@ -1927,7 +1929,7 @@ compose["?U"] := "{u+1ef0}"  ; (Ự) U with horn and dot below
 ; Configuration :  'Grave Accent' (dead key) as alternate key for 'Right Alt'
 
 vkC0:: {
-  dead := InputHook("L1", "{esc}")
+  dead := InputHook("L1", gEndKeys)
   dead.Start()
   dead.Wait()
   if (dead.Input == " ")
@@ -1940,7 +1942,7 @@ vkC0:: {
 ; Configuration :  Optional 'ISO Key' (dead key) as alternate key for 'Right Alt'
 
 vkE2:: {
-  dead := InputHook("L1", "{esc}")
+  dead := InputHook("L1", gEndKeys)
   dead.Start()
   dead.Wait()
   if (dead.Input == " ")
@@ -1956,7 +1958,7 @@ vkE2:: {
 >!sc056::      ; Right Alt + ISO Key
 <^>!sc029::    ; AltGr + Grave Accent
 <^>!sc056:: {  ; AltGr + ISO Key
-  keys := InputHook("L2", "{esc}")
+  keys := InputHook("L2", gEndKeys)
   keys.Start()
   keys.Wait()
   if compose.Has(keys.Input)
