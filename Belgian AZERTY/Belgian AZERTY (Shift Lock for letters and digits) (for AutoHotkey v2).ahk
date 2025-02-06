@@ -1,6 +1,6 @@
 #requires AutoHotkey v2
 
-; Belgian AZERTY (Shift Lock for letters and digits) (for AutoHotkey v2).ahk - 2025-01-29
+; Belgian AZERTY (Shift Lock for letters and digits) (for AutoHotkey v2).ahk - 2025-02-06
 
 ; Website :  https://pieter-degroote.github.io/UltimateKEYS/
 
@@ -19,6 +19,8 @@ KeyHistory 0      ; disables the key history (for privacy and security)
 ListLines False   ; omits recently executed lines from history (for privacy and security)
 
 SendMode "Event"  ; allows chaining of customized key combinations
+
+global gEndKeys := "{bs}{esc}"  ; ends dead key input on Backspace or Escape
 
 
 ; Dead Key :  Acute Accent
@@ -401,14 +403,14 @@ sc00C::Send "{u+0029}"   ; ()) right parenthesis
 
 ; Key :  [ / { (left square bracket / left curly bracket)
 sc01A:: {
-  dead := InputHook("L1", "{esc}")
+  dead := InputHook("L1", gEndKeys)
   dead.Start()
   dead.Wait()
   if dkCircumflex.Has(dead.Input)
     Send dkCircumflex[dead.Input]
 }
 +sc01A:: {
-  dead := InputHook("L1", "{esc}")
+  dead := InputHook("L1", gEndKeys)
   dead.Start()
   dead.Wait()
   if dkDiaeresis.Has(dead.Input)
@@ -493,7 +495,7 @@ sc028::Send "{u+00f9}"   ; (ù) u with grave
 
 >!sc028::
 <^>!sc028:: {
-  dead := InputHook("L1", "{esc}")
+  dead := InputHook("L1", gEndKeys)
   dead.Start()
   dead.Wait()
   if dkAcute.Has(dead.Input)
@@ -509,7 +511,7 @@ sc02B::Send "{u+00b5}"   ; (µ) micro sign
 +sc02B::Send "{u+00a3}"  ; (£) pound sign
 >!sc02B::
 <^>!sc02B:: {
-  dead := InputHook("L1", "{esc}")
+  dead := InputHook("L1", gEndKeys)
   dead.Start()
   dead.Wait()
   if dkGrave.Has(dead.Input)
@@ -569,7 +571,7 @@ sc034::Send "{u+003a}"   ; (:) colon
 ; Key :  / / ? (slash / question mark)
 >!sc035::
 <^>!sc035:: {
-  dead := InputHook("L1", "{esc}")
+  dead := InputHook("L1", gEndKeys)
   dead.Start()
   dead.Wait()
   if dkTilde.Has(dead.Input)

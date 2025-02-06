@@ -1,6 +1,6 @@
 #requires AutoHotkey v1.1
 
-; Belgian AZERTY (Shift Lock for letters and digits) (for AutoHotkey v1.1).ahk - 2025-01-29
+; Belgian AZERTY (Shift Lock for letters and digits) (for AutoHotkey v1.1).ahk - 2025-02-06
 
 ; Website :  https://pieter-degroote.github.io/UltimateKEYS/
 
@@ -21,10 +21,12 @@ ListLines Off   ; omits recently executed lines from history (for privacy and se
 
 SendMode Event  ; allows chaining of customized key combinations
 
+global gEndKeys := "{bs}{esc}"  ; ends dead key input on Backspace or Escape
+
 
 ; Dead Key :  Acute Accent
 
-dkAcute := ComObjCreate("Scripting.Dictionary")
+global dkAcute := ComObjCreate("Scripting.Dictionary")
 dkAcute.item["a"] := "{u+00e1}"  ; (á) a with acute
 dkAcute.item["A"] := "{u+00c1}"  ; (Á) A with acute
 dkAcute.item["c"] := "{u+0107}"  ; (ć) c with acute
@@ -68,7 +70,7 @@ dkAcute.item[" "] := "{u+00b4}"  ; (´) acute accent
 
 ; Dead Key :  Grave Accent
 
-dkGrave := ComObjCreate("Scripting.Dictionary")
+global dkGrave := ComObjCreate("Scripting.Dictionary")
 dkGrave.item["a"] := "{u+00e0}"  ; (à) a with grave
 dkGrave.item["A"] := "{u+00c0}"  ; (À) A with grave
 dkGrave.item["e"] := "{u+00e8}"  ; (è) e with grave
@@ -90,7 +92,7 @@ dkGrave.item[" "] := "{u+0060}"  ; (`) grave accent
 
 ; Dead Key :  Circumflex Accent
 
-dkCircumflex := ComObjCreate("Scripting.Dictionary")
+global dkCircumflex := ComObjCreate("Scripting.Dictionary")
 dkCircumflex.item["a"] := "{u+00e2}"  ; (â) a with circumflex
 dkCircumflex.item["A"] := "{u+00c2}"  ; (Â) A with circumflex
 dkCircumflex.item["c"] := "{u+0109}"  ; (ĉ) c with circumflex
@@ -122,7 +124,7 @@ dkCircumflex.item[" "] := "{u+005e}"  ; (^) circumflex accent
 
 ; Dead Key :  Diaeresis
 
-dkDiaeresis := ComObjCreate("Scripting.Dictionary")
+global dkDiaeresis := ComObjCreate("Scripting.Dictionary")
 dkDiaeresis.item["a"] := "{u+00e4}"  ; (ä) a with diaeresis
 dkDiaeresis.item["A"] := "{u+00c4}"  ; (Ä) A with diaeresis
 dkDiaeresis.item["e"] := "{u+00eb}"  ; (ë) e with diaeresis
@@ -147,7 +149,7 @@ dkDiaeresis.item[" "] := "{u+00a8}"  ; (¨) diaeresis
 
 ; Dead Key :  Tilde
 
-dkTilde := ComObjCreate("Scripting.Dictionary")
+global dkTilde := ComObjCreate("Scripting.Dictionary")
 dkTilde.item["a"] := "{u+00e3}"  ; (ã) a with tilde
 dkTilde.item["A"] := "{u+00c3}"  ; (Ã) A with tilde
 dkTilde.item["e"] := "{u+1ebd}"  ; (ẽ) e with tilde
@@ -402,13 +404,13 @@ sc00C::Send {u+0029}   ; ()) right parenthesis
 
 ; Key :  [ / { (left square bracket / left curly bracket)
 sc01A::
-  dead := InputHook("L1", "{esc}")
+  dead := InputHook("L1", gEndKeys)
   dead.Start()
   dead.Wait()
   Send % dkCircumflex.item[dead.Input]
   return
 +sc01A::
-  dead := InputHook("L1", "{esc}")
+  dead := InputHook("L1", gEndKeys)
   dead.Start()
   dead.Wait()
   Send % dkDiaeresis.item[dead.Input]
@@ -491,7 +493,7 @@ sc028::Send {u+00f9}   ; (ù) u with grave
 +sc028::Send {u+0025}  ; (%) percent sign
 >!sc028::
 <^>!sc028::
-  dead := InputHook("L1", "{esc}")
+  dead := InputHook("L1", gEndKeys)
   dead.Start()
   dead.Wait()
   Send % dkAcute.item[dead.Input]
@@ -506,7 +508,7 @@ sc02B::Send {u+00b5}   ; (µ) micro sign
 +sc02B::Send {u+00a3}  ; (£) pound sign
 >!sc02B::
 <^>!sc02B::
-  dead := InputHook("L1", "{esc}")
+  dead := InputHook("L1", gEndKeys)
   dead.Start()
   dead.Wait()
   Send % dkGrave.item[dead.Input]
@@ -565,7 +567,7 @@ sc034::Send {u+003a}   ; (:) colon
 ; Key :  / / ? (slash / question mark)
 >!sc035::
 <^>!sc035::
-  dead := InputHook("L1", "{esc}")
+  dead := InputHook("L1", gEndKeys)
   dead.Start()
   dead.Wait()
   Send % dkTilde.item[dead.Input]
