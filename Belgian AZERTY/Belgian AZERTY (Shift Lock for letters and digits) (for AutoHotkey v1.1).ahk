@@ -1,6 +1,6 @@
 #requires AutoHotkey v1.1
 
-; Belgian AZERTY (Shift Lock for letters and digits) (for AutoHotkey v1.1).ahk - 2025-02-06
+; Belgian AZERTY (Shift Lock for letters and digits) (for AutoHotkey v1.1).ahk - 2025-02-10
 
 ; Website :  https://pieter-degroote.github.io/UltimateKEYS/
 
@@ -404,16 +404,14 @@ sc00C::Send {u+0029}   ; ()) right parenthesis
 
 ; Key :  [ / { (left square bracket / left curly bracket)
 sc01A::
-  dead := InputHook("L1", gEndKeys)
-  dead.Start()
-  dead.Wait()
-  Send % dkCircumflex.item[dead.Input]
+  ih := InputHook("L1", gEndKeys)
+  ih.Start(), ih.Wait()
+  Send % dkCircumflex.item[ih.Input]
   return
 +sc01A::
-  dead := InputHook("L1", gEndKeys)
-  dead.Start()
-  dead.Wait()
-  Send % dkDiaeresis.item[dead.Input]
+  ih := InputHook("L1", gEndKeys)
+  ih.Start(), ih.Wait()
+  Send % dkDiaeresis.item[ih.Input]
   return
 >!sc01A::
 <^>!sc01A::Send {u+005b}  ; ([) left square bracket
@@ -493,10 +491,9 @@ sc028::Send {u+00f9}   ; (ù) u with grave
 +sc028::Send {u+0025}  ; (%) percent sign
 >!sc028::
 <^>!sc028::
-  dead := InputHook("L1", gEndKeys)
-  dead.Start()
-  dead.Wait()
-  Send % dkAcute.item[dead.Input]
+  ih := InputHook("L1", gEndKeys)
+  ih.Start(), ih.Wait()
+  Send % dkAcute.item[ih.Input]
   return
 
 ; Key :  ` / ~ (grave accent / tilde)
@@ -508,10 +505,9 @@ sc02B::Send {u+00b5}   ; (µ) micro sign
 +sc02B::Send {u+00a3}  ; (£) pound sign
 >!sc02B::
 <^>!sc02B::
-  dead := InputHook("L1", gEndKeys)
-  dead.Start()
-  dead.Wait()
-  Send % dkGrave.item[dead.Input]
+  ih := InputHook("L1", gEndKeys)
+  ih.Start(), ih.Wait()
+  Send % dkGrave.item[ih.Input]
   return
 
 ; Key :  C
@@ -567,10 +563,9 @@ sc034::Send {u+003a}   ; (:) colon
 ; Key :  / / ? (slash / question mark)
 >!sc035::
 <^>!sc035::
-  dead := InputHook("L1", gEndKeys)
-  dead.Start()
-  dead.Wait()
-  Send % dkTilde.item[dead.Input]
+  ih := InputHook("L1", gEndKeys)
+  ih.Start(), ih.Wait()
+  Send % dkTilde.item[ih.Input]
   return
 
 ; Key :  (space)

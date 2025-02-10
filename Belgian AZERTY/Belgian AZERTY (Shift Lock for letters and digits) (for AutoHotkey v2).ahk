@@ -1,6 +1,6 @@
 #requires AutoHotkey v2
 
-; Belgian AZERTY (Shift Lock for letters and digits) (for AutoHotkey v2).ahk - 2025-02-06
+; Belgian AZERTY (Shift Lock for letters and digits) (for AutoHotkey v2).ahk - 2025-02-10
 
 ; Website :  https://pieter-degroote.github.io/UltimateKEYS/
 
@@ -403,18 +403,16 @@ sc00C::Send "{u+0029}"   ; ()) right parenthesis
 
 ; Key :  [ / { (left square bracket / left curly bracket)
 sc01A:: {
-  dead := InputHook("L1", gEndKeys)
-  dead.Start()
-  dead.Wait()
-  if dkCircumflex.Has(dead.Input)
-    Send dkCircumflex[dead.Input]
+  ih := InputHook("L1", gEndKeys)
+  ih.Start(), ih.Wait()
+  if dkCircumflex.Has(ih.Input)
+    Send dkCircumflex[ih.Input]
 }
 +sc01A:: {
-  dead := InputHook("L1", gEndKeys)
-  dead.Start()
-  dead.Wait()
-  if dkDiaeresis.Has(dead.Input)
-    Send dkDiaeresis[dead.Input]
+  ih := InputHook("L1", gEndKeys)
+  ih.Start(), ih.Wait()
+  if dkDiaeresis.Has(ih.Input)
+    Send dkDiaeresis[ih.Input]
 }
 >!sc01A::
 <^>!sc01A::Send "{u+005b}"  ; ([) left square bracket
@@ -495,11 +493,10 @@ sc028::Send "{u+00f9}"   ; (ù) u with grave
 
 >!sc028::
 <^>!sc028:: {
-  dead := InputHook("L1", gEndKeys)
-  dead.Start()
-  dead.Wait()
-  if dkAcute.Has(dead.Input)
-    Send dkAcute[dead.Input]
+  ih := InputHook("L1", gEndKeys)
+  ih.Start(), ih.Wait()
+  if dkAcute.Has(ih.Input)
+    Send dkAcute[ih.Input]
 }
 
 ; Key :  ` / ~ (grave accent / tilde)
@@ -511,11 +508,10 @@ sc02B::Send "{u+00b5}"   ; (µ) micro sign
 +sc02B::Send "{u+00a3}"  ; (£) pound sign
 >!sc02B::
 <^>!sc02B:: {
-  dead := InputHook("L1", gEndKeys)
-  dead.Start()
-  dead.Wait()
-  if dkGrave.Has(dead.Input)
-    Send dkGrave[dead.Input]
+  ih := InputHook("L1", gEndKeys)
+  ih.Start(), ih.Wait()
+  if dkGrave.Has(ih.Input)
+    Send dkGrave[ih.Input]
 }
 
 ; Key :  C
@@ -571,11 +567,10 @@ sc034::Send "{u+003a}"   ; (:) colon
 ; Key :  / / ? (slash / question mark)
 >!sc035::
 <^>!sc035:: {
-  dead := InputHook("L1", gEndKeys)
-  dead.Start()
-  dead.Wait()
-  if dkTilde.Has(dead.Input)
-    Send dkTilde[dead.Input]
+  ih := InputHook("L1", gEndKeys)
+  ih.Start(), ih.Wait()
+  if dkTilde.Has(ih.Input)
+    Send dkTilde[ih.Input]
 }
 
 ; Key :  (space)
