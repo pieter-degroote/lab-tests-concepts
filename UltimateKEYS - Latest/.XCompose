@@ -980,7 +980,7 @@ include "%L"
 <Multi_key> <semicolon> <semicolon>   : "•"  U2022  # bullet
 <Multi_key> <colon> <parenleft>       : "☹"  U2639  # white frowning face
 <Multi_key> <colon> <parenright>      : "☺"  U263A  # white smiling face
-<Multi_key> <semicolon> <parenleft>   : "☻"  U263B  # black smiling face
+<Multi_key> <semicolon> <parenright>  : "☻"  U263B  # black smiling face
 <Multi_key> <less> <3>                : "♥"  U2665  # black heart suit
 <Multi_key> <bracketleft> <bracketright> : "☐"  U2610  # ballot box
 <Multi_key> <bracketleft> <v>            : "☑"  U2611  # ballot box with check
