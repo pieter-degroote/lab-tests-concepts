@@ -10,18 +10,22 @@ Add one of the following code snippets to the end of the script (identical for A
 
 **'Caps Lock' as 'AltGr' (Right Alt)&nbsp;:**
 
-    ; Configuration :  Assign 'Caps Lock' to both 'Shift' keys and 'AltGr' (Right Alt) also to 'Caps Lock'
+```autohotkey
+; Configuration :  Assign 'Caps Lock' to both 'Shift' keys and 'AltGr' (Right Alt) also to 'Caps Lock'
 
-    LShift & RShift::CapsLock  ; assigns 'Caps Lock' to 'Left Shift' and 'Right Shift'
-    RShift & LShift::CapsLock  ; assigns 'Caps Lock' to 'Right Shift' and 'Left Shift'
+LShift & RShift::CapsLock  ; assigns 'Caps Lock' to 'Left Shift' and 'Right Shift'
+RShift & LShift::CapsLock  ; assigns 'Caps Lock' to 'Right Shift' and 'Left Shift'
 
-    CapsLock::vkA5  ; assigns 'AltGr' (Right Alt) also to 'Caps Lock'
+CapsLock::vkA5  ; assigns 'AltGr' (Right Alt) also to 'Caps Lock'
+```
 
 **'Caps Lock' as 'Backspace'&nbsp;:**
 
-    ; Configuration :  Assign 'Caps Lock' to both 'Shift' keys and 'Backspace' also to 'Caps Lock'
+```autohotkey
+; Configuration :  Assign 'Caps Lock' to both 'Shift' keys and 'Backspace' also to 'Caps Lock'
 
-    LShift & RShift::CapsLock  ; assigns 'Caps Lock' to 'Left Shift' and 'Right Shift'
-    RShift & LShift::CapsLock  ; assigns 'Caps Lock' to 'Right Shift' and 'Left Shift'
+LShift & RShift::CapsLock  ; assigns 'Caps Lock' to 'Left Shift' and 'Right Shift'
+RShift & LShift::CapsLock  ; assigns 'Caps Lock' to 'Right Shift' and 'Left Shift'
 
-    CapsLock::Backspace  ; assigns 'Backspace' also to 'Caps Lock'
+CapsLock::Backspace  ; assigns 'Backspace' also to 'Caps Lock'
+```
