@@ -19,7 +19,7 @@ See `AutoHotkey - README.md` for detailed instructions. To work properly, the Wi
 - **English (India)** =&gt; AltGr assigned to UltimateKEYS (based on US QWERTY).
 - **United States (US)** =&gt; Right Alt assigned to UltimateKEYS (secondary choice).
 
-  (Notes: "Romanian (Programmers)" does not contain some special control codes (Ctrl+\[: u+001b, Ctrl+\\: u+001c, Ctrl+\]: 001d), but I could not find any specific use cases requiring these mappings. "English (India)" also emits an Indian rupee sign (₹) via Ctrl+Shift+4.)
+  (Notes: "Romanian (Programmers)" does not contain some special control codes (Ctrl+\[: u+001b, Ctrl+\\: u+001c, Ctrl+\]: u+001d), but I could not find any specific use cases requiring these mappings. "English (India)" also emits an Indian rupee sign (₹) via Ctrl+Shift+4.)
 
 **_Note about the standard base US layout&nbsp;:_**
 
