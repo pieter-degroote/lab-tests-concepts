@@ -1,6 +1,6 @@
 include "%L"
 
-# UltimateKEYS Compose Key Sequences - 2025-02-25
+# UltimateKEYS Compose Key Sequences - 2025-03-08
 
 # Website :  https://pieter-degroote.github.io/UltimateKEYS/
 
@@ -470,9 +470,10 @@ include "%L"
 
 # Latin Greek Letters and Variations
 
-<Multi_key> <l> <a> : "ɑ"  U0251  # Latin small letter alpha
-<Multi_key> <l> <A> : "Ɑ"  U2C6D  # Latin capital letter alpha
-<Multi_key> <l> <b> : "ɞ"  U025E  # small letter closed reversed open e
+<Multi_key> <l> <a> : "ɑ"  U0251  # Latin small letter alpha (script a)
+<Multi_key> <l> <A> : "Ɑ"  U2C6D  # Latin capital letter alpha (script A)
+<Multi_key> <l> <b> : "ꞵ"  UA7B5  # Latin small letter beta
+<Multi_key> <l> <B> : "Ꞵ"  UA7B4  # Latin capital letter beta
 <Multi_key> <l> <d> : "ẟ"  U1E9F  # Latin small letter delta
 <Multi_key> <l> <e> : "ɛ"  U025B  # small letter open e (Latin small epsilon)
 <Multi_key> <l> <E> : "Ɛ"  U0190  # capital letter open E (Latin capital epsilon)
@@ -514,6 +515,7 @@ include "%L"
 <Multi_key> <r> <A> : "Ɐ"  U2C6F  # capital letter turned A
 <Multi_key> <r> <b> : "ɜ"  U025C  # small letter reversed open e
 <Multi_key> <r> <B> : "Ɜ"  UA7AB  # capital letter reversed open E
+<Multi_key> <r> <c> : "ɞ"  U025E  # small letter closed reversed open e
 <Multi_key> <r> <d> : "ƍ"  U018D  # Latin small letter turned delta
 <Multi_key> <r> <e> : "ǝ"  U01DD  # small letter turned e
 <Multi_key> <r> <E> : "Ǝ"  U018E  # capital letter reversed E
@@ -528,8 +530,8 @@ include "%L"
 <Multi_key> <r> <m> : "ɯ"  U026F  # small letter turned m
 <Multi_key> <r> <M> : "Ɯ"  U019C  # capital letter turned M
 <Multi_key> <r> <o> : "ɤ"  U0264  # small letter ram's horn (baby gamma)
-<Multi_key> <r> <q> : "ɒ"  U0252  # Latin small letter turned alpha
-<Multi_key> <r> <Q> : "Ɒ"  U2C70  # Latin capital letter turned alpha
+<Multi_key> <r> <q> : "ɒ"  U0252  # Latin small letter turned alpha (turned script a)
+<Multi_key> <r> <Q> : "Ɒ"  U2C70  # Latin capital letter turned alpha (turned script A)
 <Multi_key> <r> <r> : "ɹ"  U0279  # small letter turned r
 <Multi_key> <r> <t> : "ʇ"  U0287  # small letter turned t
 <Multi_key> <r> <T> : "Ʇ"  UA7B1  # capital letter turned T

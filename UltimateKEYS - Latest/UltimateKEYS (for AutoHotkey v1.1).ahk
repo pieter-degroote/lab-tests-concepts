@@ -1,6 +1,6 @@
 #requires AutoHotkey v1.1
 
-; UltimateKEYS (for AutoHotkey v1.1).ahk - 2025-02-25
+; UltimateKEYS (for AutoHotkey v1.1).ahk - 2025-03-08
 
 ; Website :  https://pieter-degroote.github.io/UltimateKEYS/
 
@@ -490,9 +490,10 @@ compose.item["fz"] := "{u+0290}"  ; (ʐ) z with retroflex hook
 
 ; Compose :  Latin Greek Letters and Variations
 
-compose.item["la"] := "{u+0251}"  ; (ɑ) Latin small letter alpha
-compose.item["lA"] := "{u+2c6d}"  ; (Ɑ) Latin capital letter alpha
-compose.item["lb"] := "{u+025e}"  ; (ɞ) small letter closed reversed open e
+compose.item["la"] := "{u+0251}"  ; (ɑ) Latin small letter alpha (script a)
+compose.item["lA"] := "{u+2c6d}"  ; (Ɑ) Latin capital letter alpha (script A)
+compose.item["lb"] := "{u+a7b5}"  ; (ꞵ) Latin small letter beta
+compose.item["lB"] := "{u+a7b4}"  ; (Ꞵ) Latin capital letter beta
 compose.item["ld"] := "{u+1e9f}"  ; (ẟ) Latin small letter delta
 compose.item["le"] := "{u+025b}"  ; (ɛ) small letter open e (Latin small epsilon)
 compose.item["lE"] := "{u+0190}"  ; (Ɛ) capital letter open E (Latin capital epsilon)
@@ -534,6 +535,7 @@ compose.item["ra"] := "{u+0250}"  ; (ɐ) small letter turned a
 compose.item["rA"] := "{u+2c6f}"  ; (Ɐ) capital letter turned A
 compose.item["rb"] := "{u+025c}"  ; (ɜ) small letter reversed open e
 compose.item["rB"] := "{u+a7ab}"  ; (Ɜ) capital letter reversed open E
+compose.item["rc"] := "{u+025e}"  ; (ɞ) small letter closed reversed open e
 compose.item["rd"] := "{u+018d}"  ; (ƍ) Latin small letter turned delta
 compose.item["re"] := "{u+01dd}"  ; (ǝ) small letter turned e
 compose.item["rE"] := "{u+018e}"  ; (Ǝ) capital letter reversed E
@@ -548,8 +550,8 @@ compose.item["rK"] := "{u+a7b0}"  ; (Ʞ) capital letter turned K
 compose.item["rm"] := "{u+026f}"  ; (ɯ) small letter turned m
 compose.item["rM"] := "{u+019c}"  ; (Ɯ) capital letter turned M
 compose.item["ro"] := "{u+0264}"  ; (ɤ) small letter ram's horn (baby gamma)
-compose.item["rq"] := "{u+0252}"  ; (ɒ) Latin small letter turned alpha
-compose.item["rQ"] := "{u+2c70}"  ; (Ɒ) Latin capital letter turned alpha
+compose.item["rq"] := "{u+0252}"  ; (ɒ) Latin small letter turned alpha (turned script a)
+compose.item["rQ"] := "{u+2c70}"  ; (Ɒ) Latin capital letter turned alpha (turned script A)
 compose.item["rr"] := "{u+0279}"  ; (ɹ) small letter turned r
 compose.item["rt"] := "{u+0287}"  ; (ʇ) small letter turned t
 compose.item["rT"] := "{u+a7b1}"  ; (Ʇ) small letter turned T
