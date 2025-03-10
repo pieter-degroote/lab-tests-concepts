@@ -1,6 +1,6 @@
 #requires AutoHotkey v1.1
 
-; UltimateKEYS (for AutoHotkey v1.1).ahk - 2025-03-08
+; UltimateKEYS (for AutoHotkey v1.1).ahk - 2025-03-10
 
 ; Website :  https://pieter-degroote.github.io/UltimateKEYS/
 
@@ -527,6 +527,8 @@ compose.item["l*"] := "{u+0222}"  ; (Ȣ) capital letter OU
 compose.item["l7"] := "{u+0242}"  ; (ɂ) small letter glottal stop
 compose.item["l&"] := "{u+0241}"  ; (Ɂ) capital letter glottal stop
 compose.item["l?"] := "{u+0294}"  ; (ʔ) unicase letter glottal stop
+compose.item["l;"] := "{u+02bb}"  ; (ʻ) modifier letter turned comma
+compose.item["l'"] := "{u+02bc}"  ; (ʼ) modifier letter apostrophe
 
 
 ; Compose :  Turned and Reversed Letters
@@ -1118,6 +1120,28 @@ compose.item["Br"] := "{u+0213}"  ; (ȓ) r with inverted breve
 compose.item["BR"] := "{u+0212}"  ; (Ȓ) R with inverted breve
 compose.item["Bu"] := "{u+0217}"  ; (ȗ) u with inverted breve
 compose.item["BU"] := "{u+0216}"  ; (Ȗ) U with inverted breve
+
+
+; Compose :  Letters with Two Diacritical Marks
+
+compose.item["Ma"] := "{u+01df}"  ; (ǟ) a with diaeresis and macron
+compose.item["MA"] := "{u+01de}"  ; (Ǟ) A with diaeresis and macron
+compose.item["Mq"] := "{u+01e1}"  ; (ǡ) a with dot above and macron
+compose.item["MQ"] := "{u+01e0}"  ; (Ǡ) A with dot above and macron
+compose.item["Mo"] := "{u+022b}"  ; (ȫ) o with diaeresis and macron
+compose.item["MO"] := "{u+022a}"  ; (Ȫ) O with diaeresis and macron
+compose.item["Mk"] := "{u+022d}"  ; (ȭ) o with tilde and macron
+compose.item["MK"] := "{u+022c}"  ; (Ȭ) O with tilde and macron
+compose.item["Ml"] := "{u+0231}"  ; (ȱ) o with dot above and macron
+compose.item["ML"] := "{u+0230}"  ; (Ȱ) O with dot above and macron
+compose.item["Mu"] := "{u+01d6}"  ; (ǖ) u with diaeresis and macron
+compose.item["MU"] := "{u+01d5}"  ; (Ǖ) U with diaeresis and macron
+compose.item["Mh"] := "{u+01d8}"  ; (ǘ) u with diaeresis and acute
+compose.item["MH"] := "{u+01d7}"  ; (Ǘ) U with diaeresis and acute
+compose.item["My"] := "{u+01da}"  ; (ǚ) u with diaeresis and caron
+compose.item["MY"] := "{u+01d9}"  ; (Ǚ) U with diaeresis and caron
+compose.item["Mj"] := "{u+01dc}"  ; (ǜ) u with diaeresis and grave
+compose.item["MJ"] := "{u+01db}"  ; (Ǜ) U with diaeresis and grave
 
 
 ; Compose :  Circumflex Below

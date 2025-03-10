@@ -1,6 +1,6 @@
 include "%L"
 
-# UltimateKEYS Compose Key Sequences - 2025-03-08
+# UltimateKEYS Compose Key Sequences - 2025-03-10
 
 # Website :  https://pieter-degroote.github.io/UltimateKEYS/
 
@@ -502,11 +502,13 @@ include "%L"
 <Multi_key> <l> <W> : "Ƿ"  U01F7  # capital letter wynn
 <Multi_key> <l> <y> : "ȝ"  U021D  # small letter yogh
 <Multi_key> <l> <Y> : "Ȝ"  U021C  # capital letter yogh
-<Multi_key> <l> <8>         : "ȣ"  U0223  # small letter ou
-<Multi_key> <l> <asterisk>  : "Ȣ"  U0222  # capital letter OU
-<Multi_key> <l> <7>         : "ɂ"  U0242  # small letter glottal stop
-<Multi_key> <l> <ampersand> : "Ɂ"  U0241  # capital letter glottal stop
-<Multi_key> <l> <question>  : "ʔ"  U0294  # unicase letter glottal stop
+<Multi_key> <l> <8>          : "ȣ"  U0223  # small letter ou
+<Multi_key> <l> <asterisk>   : "Ȣ"  U0222  # capital letter OU
+<Multi_key> <l> <7>          : "ɂ"  U0242  # small letter glottal stop
+<Multi_key> <l> <ampersand>  : "Ɂ"  U0241  # capital letter glottal stop
+<Multi_key> <l> <question>   : "ʔ"  U0294  # unicase letter glottal stop
+<Multi_key> <l> <semicolon>  : "ʻ"  U02BB  # modifier letter turned comma
+<Multi_key> <l> <apostrophe> : "ʼ"  U02BC  # modifier letter apostrophe
 
 
 # Turned and Reversed Letters
@@ -1098,6 +1100,28 @@ include "%L"
 <Multi_key> <B> <R> : "Ȓ"  U0212  # R with inverted breve
 <Multi_key> <B> <u> : "ȗ"  U0217  # u with inverted breve
 <Multi_key> <B> <U> : "Ȗ"  U0216  # U with inverted breve
+
+
+# Letters with Two Diacritical Marks
+
+<Multi_key> <M> <a> : "ǟ"  U01DF  # a with diaeresis and macron
+<Multi_key> <M> <A> : "Ǟ"  U01DE  # A with diaeresis and macron
+<Multi_key> <M> <q> : "ǡ"  U01E1  # a with dot above and macron
+<Multi_key> <M> <Q> : "Ǡ"  U01E0  # A with dot above and macron
+<Multi_key> <M> <o> : "ȫ"  U022B  # o with diaeresis and macron
+<Multi_key> <M> <O> : "Ȫ"  U022A  # O with diaeresis and macron
+<Multi_key> <M> <k> : "ȭ"  U022D  # o with tilde and macron
+<Multi_key> <M> <K> : "Ȭ"  U022C  # O with tilde and macron
+<Multi_key> <M> <l> : "ȱ"  U0231  # o with dot above and macron
+<Multi_key> <M> <L> : "Ȱ"  U0230  # O with dot above and macron
+<Multi_key> <M> <u> : "ǖ"  U01D6  # u with diaeresis and macron
+<Multi_key> <M> <U> : "Ǖ"  U01D5  # U with diaeresis and macron
+<Multi_key> <M> <h> : "ǘ"  U01D8  # u with diaeresis and acute
+<Multi_key> <M> <H> : "Ǘ"  U01D7  # U with diaeresis and acute
+<Multi_key> <M> <y> : "ǚ"  U01DA  # u with diaeresis and caron
+<Multi_key> <M> <Y> : "Ǚ"  U01D9  # U with diaeresis and caron
+<Multi_key> <M> <j> : "ǜ"  U01DC  # u with diaeresis and grave
+<Multi_key> <M> <J> : "Ǜ"  U01DB  # U with diaeresis and grave
 
 
 # Circumflex Below
