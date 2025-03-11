@@ -1140,23 +1140,17 @@ include "%L"
 <Multi_key> <I> <U> : "Ṷ"  U1E76  # U with circumflex below
 
 
-# Tilde Below
-
-<Multi_key> <T> <e> : "ḛ"  U1E1B  # e with tilde below
-<Multi_key> <T> <E> : "Ḛ"  U1E1A  # E with tilde below
-<Multi_key> <T> <i> : "ḭ"  U1E2D  # i with tilde below
-<Multi_key> <T> <I> : "Ḭ"  U1E2C  # I with tilde below
-<Multi_key> <T> <u> : "ṵ"  U1E75  # u with tilde below
-<Multi_key> <T> <U> : "Ṵ"  U1E74  # U with tilde below
-
-
-# Line Below
+# Line Below and Tilde Below
 
 <Multi_key> <L> <b> : "ḇ"  U1E07  # b with line below
 <Multi_key> <L> <B> : "Ḇ"  U1E06  # B with line below
 <Multi_key> <L> <d> : "ḏ"  U1E0F  # d with line below
 <Multi_key> <L> <D> : "Ḏ"  U1E0E  # D with line below
+<Multi_key> <L> <e> : "ḛ"  U1E1B  # e with tilde below
+<Multi_key> <L> <E> : "Ḛ"  U1E1A  # E with tilde below
 <Multi_key> <L> <h> : "ẖ"  U1E96  # h with line below
+<Multi_key> <L> <i> : "ḭ"  U1E2D  # i with tilde below
+<Multi_key> <L> <I> : "Ḭ"  U1E2C  # I with tilde below
 <Multi_key> <L> <k> : "ḵ"  U1E35  # k with line below
 <Multi_key> <L> <K> : "Ḵ"  U1E34  # K with line below
 <Multi_key> <L> <l> : "ḻ"  U1E3B  # l with line below
@@ -1167,6 +1161,8 @@ include "%L"
 <Multi_key> <L> <R> : "Ṟ"  U1E5E  # R with line below
 <Multi_key> <L> <t> : "ṯ"  U1E6F  # t with line below
 <Multi_key> <L> <T> : "Ṯ"  U1E6E  # T with line below
+<Multi_key> <L> <u> : "ṵ"  U1E75  # u with tilde below
+<Multi_key> <L> <U> : "Ṵ"  U1E74  # U with tilde below
 <Multi_key> <L> <z> : "ẕ"  U1E95  # z with line below
 <Multi_key> <L> <Z> : "Ẕ"  U1E94  # Z with line below
 

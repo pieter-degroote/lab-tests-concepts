@@ -1160,23 +1160,17 @@ compose.item["Iu"] := "{u+1e77}"  ; (ṷ) u with circumflex below
 compose.item["IU"] := "{u+1e76}"  ; (Ṷ) U with circumflex below
 
 
-; Compose :  Tilde Below
-
-compose.item["Te"] := "{u+1e1b}"  ; (ḛ) e with tilde below
-compose.item["TE"] := "{u+1e1a}"  ; (Ḛ) E with tilde below
-compose.item["Ti"] := "{u+1e2d}"  ; (ḭ) i with tilde below
-compose.item["TI"] := "{u+1e2c}"  ; (Ḭ) I with tilde below
-compose.item["Tu"] := "{u+1e75}"  ; (ṵ) u with tilde below
-compose.item["TU"] := "{u+1e74}"  ; (Ṵ) U with tilde below
-
-
-; Compose :  Line Below
+; Compose :  Line Below and Tilde Below
 
 compose.item["Lb"] := "{u+1e07}"  ; (ḇ) b with line below
 compose.item["LB"] := "{u+1e06}"  ; (Ḇ) B with line below
 compose.item["Ld"] := "{u+1e0f}"  ; (ḏ) d with line below
 compose.item["LD"] := "{u+1e0e}"  ; (Ḏ) D with line below
+compose.item["Le"] := "{u+1e1b}"  ; (ḛ) e with tilde below
+compose.item["LE"] := "{u+1e1a}"  ; (Ḛ) E with tilde below
 compose.item["Lh"] := "{u+1e96}"  ; (ẖ) h with line below
+compose.item["Li"] := "{u+1e2d}"  ; (ḭ) i with tilde below
+compose.item["LI"] := "{u+1e2c}"  ; (Ḭ) I with tilde below
 compose.item["Lk"] := "{u+1e35}"  ; (ḵ) k with line below
 compose.item["LK"] := "{u+1e34}"  ; (Ḵ) K with line below
 compose.item["Ll"] := "{u+1e3b}"  ; (ḻ) l with line below
@@ -1187,6 +1181,8 @@ compose.item["Lr"] := "{u+1e5f}"  ; (ṟ) r with line below
 compose.item["LR"] := "{u+1e5e}"  ; (Ṟ) R with line below
 compose.item["Lt"] := "{u+1e6f}"  ; (ṯ) t with line below
 compose.item["LT"] := "{u+1e6e}"  ; (Ṯ) T with line below
+compose.item["Lu"] := "{u+1e75}"  ; (ṵ) u with tilde below
+compose.item["LU"] := "{u+1e74}"  ; (Ṵ) U with tilde below
 compose.item["Lz"] := "{u+1e95}"  ; (ẕ) z with line below
 compose.item["LZ"] := "{u+1e94}"  ; (Ẕ) Z with line below
 
