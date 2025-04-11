@@ -1,7 +1,7 @@
 # US QWERTY (Euro) - MSKLC (Windows)
 
 **US QWERTY with Euro Sign (€) on 'AltGr + 5'.**  
-This keyboard layout can be set as a base layout while running UltimateKEYS as an AutoHotkey script.
+This keyboard layout can be set as base layout when running UltimateKEYS as an AutoHotkey script.
 
 ## Keyboard Layout Image
 
