@@ -25,11 +25,17 @@ Chrome&nbsp;: &nbsp;Execute the following command in a terminal&nbsp;:
 
     sudo mkdir -p /etc/opt/chrome/policies/managed
 
-Next step&nbsp;: &nbsp;Copy one of the files "policy.json" into this newly created directory.
+Next step&nbsp;: &nbsp;Copy the file "policy.json" into this newly created directory.
 
-## Difference between both ZIP archives
+## Differences between those ZIP archives
 
-- Custom Policies for Chromium-based Browsers.zip&nbsp;: &nbsp;Enables the following policies&nbsp;:
+- Custom Policies for Chromium-based Browsers - AdGuard DNS, Prompt for Download Location, Extended MV2.zip&nbsp;:  
+  Enables the following policies&nbsp;:
+  - The 'Secure DNS' (DoH) setting in those Chromium-based browsers will be set to 'AdGuard DNS'.
+  - The setting "Ask where to save each file before downloading" will be enabled for reasons of security.
+  - Support for MV2 extensions will be extended.
+- Custom Policies for Chromium-based Browsers - Google DNS, Prompt for Download Location, Extended MV2.zip&nbsp;:  
+  Enables the following policies&nbsp;:
   - The 'Secure DNS' (DoH) setting in those Chromium-based browsers will be set to 'Google Public DNS'.
   - The setting "Ask where to save each file before downloading" will be enabled for reasons of security.
   - Support for MV2 extensions will be extended.
