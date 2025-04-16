@@ -39,4 +39,5 @@ Next step&nbsp;: &nbsp;Copy the file "policy.json" into this newly created direc
   - The 'Secure DNS' (DoH) setting in those Chromium-based browsers will be set to 'Google Public DNS'.
   - The setting "Ask where to save each file before downloading" will be enabled for security reasons.
   - Support for MV2 extensions will be extended.
-- ExtensionManifestV2Availability = 2.zip&nbsp;: &nbsp;Only extends support for MV2 extensions. The 'Secure DNS' (DoH) setting in those Chromium-based browsers will be disabled and grayed out, since this 'managed' policy also disables 'Secure DNS'.
+- ExtensionManifestV2Availability = 2.zip&nbsp;:  
+  Only extends support for MV2 extensions. The 'Secure DNS' (DoH) setting in those Chromium-based browsers will be disabled and grayed out, since this 'managed' policy also disables 'Secure DNS'.
