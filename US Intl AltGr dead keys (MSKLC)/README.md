@@ -2,7 +2,7 @@
 
 **US-International keyboard layout with AltGr (Right Alt) dead keys.**  
 This layout simply moves all dead keys to the AltGr layer, and eliminates some other minor annoyances (e.g., `ç/Ç` now on its logical C key).  
-This MSKLC implementation is targeted towards more 'conservative' users (meeting their basic needs).  
+This MSKLC implementation is targeted towards more 'conservative' users (meeting basic needs).  
 Note that it only has minimal differences from 'US-International' to achieve the desired results.
 
 ## Keyboard Layout Image
@@ -17,4 +17,4 @@ Note that it only has minimal differences from 'US-International' to achieve the
 
 UltimateKEYS - GitHub&nbsp;: &nbsp;https://github.com/pieter-degroote/UltimateKEYS
 
-Websites&nbsp;: &nbsp;[www.ultimatekeys.info](https://pieter-degroote.github.io/UltimateKEYS/) ~ [www.pieter-degroote.info](https://pieter-degroote.github.io/)
+Website&nbsp;: &nbsp;https://pieter-degroote.github.io/
