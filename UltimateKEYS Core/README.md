@@ -5,7 +5,7 @@ This layout is based on US QWERTY, and has borrowed some aspects from EurKEY and
 
 This folder only contains the main keyboard layout of UltimateKEYS.
 
-The additional customized Compose Key sequences (Multi_key) have not been included, since these may change more frequently over time. That way, only pre-defined Compose Key sequences on the Linux installation are applicable (plus user-defined sequences).
+The additional Compose Key sequences (Multi_key) have not been included, since these may change more frequently over time.
 
 **Also note that the MSKLC version (for Windows) does not have the Compose Key, since MSKLC does not support multiple keystrokes as a sequence for a dead key.**
 
