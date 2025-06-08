@@ -31,7 +31,11 @@ Next step&nbsp;: &nbsp;Copy the file "policy.json" into this newly created direc
 
 - Custom Policies for Chromium-based Browsers - AdGuard DNS.zip&nbsp;:  
   Enables the following policies&nbsp;:
-  - The 'Secure DNS' (DoH) setting in those Chromium-based browsers will be set to 'AdGuard DNS'.
+  - The 'Secure DNS' (DoH) setting in those Chromium-based browsers will be set to 'AdGuard DNS' (blocks ads, trackers and malicious domains).
+  - The setting "Ask where to save each file before downloading" will be enabled for security reasons.
+  - Support for MV2 extensions will be extended.
+- Custom Policies for Chromium-based Browsers - DNS4EU.zip&nbsp;:
+  - The 'Secure DNS' (DoH) setting in those Chromium-based browsers will be set to 'DNS4EU Public Service' (blocks ads, trackers and malicious domains).
   - The setting "Ask where to save each file before downloading" will be enabled for security reasons.
   - Support for MV2 extensions will be extended.
 - Custom Policies for Chromium-based Browsers - Google DNS.zip&nbsp;:  
