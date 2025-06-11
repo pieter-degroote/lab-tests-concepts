@@ -17,11 +17,11 @@ Note that the Opera browsers cannot be centrally managed this way.
 
 ## Chromium and Chrome on Linux
 
-Chromium&nbsp;: &nbsp;Execute the following command in a terminal&nbsp;:
+Chromium&nbsp;: &nbsp;Execute the following command in a terminal (via sudo)&nbsp;:
 
     sudo mkdir -p /etc/chromium/policies/managed
 
-Chrome&nbsp;: &nbsp;Execute the following command in a terminal&nbsp;:
+Chrome&nbsp;: &nbsp;Execute the following command in a terminal (via sudo)&nbsp;:
 
     sudo mkdir -p /etc/opt/chrome/policies/managed
 
@@ -58,7 +58,7 @@ In the same folder (directory) where "firefox.exe" is located (usually: c:\Progr
 
 ## Firefox on Linux
 
-Execute the following command in a terminal&nbsp;:
+Execute the following command in a terminal (via sudo)&nbsp;:
 
     sudo mkdir -p /etc/firefox/policies
 
@@ -72,6 +72,6 @@ Next step&nbsp;: &nbsp;Copy the file "policies.json" into this newly created dir
 - Custom Policies for Firefox - DNS4EU.zip&nbsp;:
   - The 'Secure DNS' (DoH) setting will be set to 'DNS4EU Public Service' (noads.joindns4.eu) (blocks ads, trackers and malicious domains).
   - The setting "Always ask you where to save files" will be enabled for security reasons.
-- Custom Policies for Firefix - Mullvad DNS (base).zip&nbsp;:
+- Custom Policies for Firefox - Mullvad DNS (base).zip&nbsp;:
   - The 'Secure DNS' (DoH) setting will be set to 'Mullvad DNS' (base.dns.mullvad.net) (blocks ads, trackers and malicious domains).
   - The setting "Always ask you where to save files" will be enabled for security reasons.
