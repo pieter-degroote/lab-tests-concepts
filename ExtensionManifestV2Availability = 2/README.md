@@ -1,4 +1,4 @@
-# ExtensionManifestV2Availability = 2
+# Custom Policies for Chromium-based Browsers
 
 These '.reg' and 'policy.json' files (inside the ZIP archives) allow you to extend the use of Manifest V2 (MV2) extensions, like uBlock Origin, beyond the phase-out date.
 
@@ -30,22 +30,48 @@ Next step&nbsp;: &nbsp;Copy the file "policy.json" into this newly created direc
 ## Differences between those ZIP archives
 
 - Custom Policies for Chromium-based Browsers - AdGuard DNS.zip&nbsp;:  
-  Enables the following policies&nbsp;:
-  - The 'Secure DNS' (DoH) setting in those Chromium-based browsers will be set to 'AdGuard DNS' (blocks ads, trackers and malicious domains) (dns.adguard-dns.com).
+  - The 'Secure DNS' (DoH) setting in those Chromium-based browsers will be set to 'AdGuard DNS' (dns.adguard-dns.com) (blocks ads, trackers and malicious domains).
   - The setting "Ask where to save each file before downloading" will be enabled for security reasons.
   - Support for MV2 extensions will be extended.
 - Custom Policies for Chromium-based Browsers - DNS4EU.zip&nbsp;:
-  - The 'Secure DNS' (DoH) setting in those Chromium-based browsers will be set to 'DNS4EU Public Service' (blocks ads, trackers and malicious domains) (noads.joindns4.eu).
+  - The 'Secure DNS' (DoH) setting in those Chromium-based browsers will be set to 'DNS4EU Public Service' (noads.joindns4.eu) (blocks ads, trackers and malicious domains).
   - The setting "Ask where to save each file before downloading" will be enabled for security reasons.
   - Support for MV2 extensions will be extended.
 - Custom Policies for Chromium-based Browsers - Mullvad DNS.zip&nbsp;:
-  - The 'Secure DNS' (DoH) setting in those Chromium-based browsers will be set to 'Mullvad DNS' (blocks ads, trackers and malicious domains) (base.dns.mullvad.net).
+  - The 'Secure DNS' (DoH) setting in those Chromium-based browsers will be set to 'Mullvad DNS' (base.dns.mullvad.net) (blocks ads, trackers and malicious domains).
   - The setting "Ask where to save each file before downloading" will be enabled for security reasons.
   - Support for MV2 extensions will be extended.
 - Custom Policies for Chromium-based Browsers - Google DNS.zip&nbsp;:  
-  Enables the following policies&nbsp;:
-  - The 'Secure DNS' (DoH) setting in those Chromium-based browsers will be set to 'Google Public DNS' (dns.google).
+  - The 'Secure DNS' (DoH) setting in those Chromium-based browsers will be set to 'Google Public DNS' (dns.google) (note that all blocking at the DNS level will be disabled).
   - The setting "Ask where to save each file before downloading" will be enabled for security reasons.
   - Support for MV2 extensions will be extended.
 - ExtensionManifestV2Availability = 2.zip&nbsp;:  
-  Only extends support for MV2 extensions. The 'Secure DNS' (DoH) setting in those Chromium-based browsers will be disabled and grayed out, since this 'managed' policy also disables 'Secure DNS'.
+  - Only extends support for MV2 extensions. The 'Secure DNS' (DoH) setting in those Chromium-based browsers will be disabled and grayed out, since this 'managed' policy also disables 'Secure DNS'.
+
+# Custom Policies for Firefox
+
+The "policies.json" file (inside the ZIP archives) allow you to customize some general settings on Mozilla Firefox.
+
+## Firefox on Windows
+
+In the same folder (directory) where "firefox.exe" is located (usually: c:\Program Files\Mozilla Firefox), create a new folder `distribution`. Then put "policies.json" in that newly created folder.
+
+## Firefox on Linux
+
+Execute the following command in a terminal&nbsp;:
+
+    sudo mkdir -p /etc/firefox/policies
+
+Next step&nbsp;: &nbsp;Copy the file "policies.json" into this newly created directory.
+
+## Differences between those ZIP archives
+
+- Custom Policies for Firefox - AdGuard DNS.zip&nbsp;:  
+  - The 'Secure DNS' (DoH) setting will be set to 'AdGuard DNS' (dns.adguard-dns.com) (blocks ads, trackers and malicious domains).
+  - The setting "Always ask you where to save files" will be enabled for security reasons.
+- Custom Policies for Firefox - DNS4EU.zip&nbsp;:
+  - The 'Secure DNS' (DoH) setting will be set to 'DNS4EU Public Service' (noads.joindns4.eu) (blocks ads, trackers and malicious domains).
+  - The setting "Always ask you where to save files" will be enabled for security reasons.
+- Custom Policies for Firefix - Mullvad DNS (base).zip&nbsp;:
+  - The 'Secure DNS' (DoH) setting will be set to 'Mullvad DNS' (base.dns.mullvad.net) (blocks ads, trackers and malicious domains).
+  - The setting "Always ask you where to save files" will be enabled for security reasons.
