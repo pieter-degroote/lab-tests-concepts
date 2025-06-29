@@ -11,7 +11,7 @@ This policy applies to the following Chromium-based browsers&nbsp;:
 - Google Chrome
 - Microsoft Edge
 - Vivaldi
-- Yandex Browser
+- (Yandex Browser - PUP/PUA: PLEASE DO NOT INSTALL OR USE)
 
 Note that the Opera browsers cannot be centrally managed this way.
 
