@@ -50,7 +50,7 @@ Next step&nbsp;: &nbsp;Copy the file "policy.json" into this newly created direc
 
 # Custom Policies for Firefox
 
-The "policies.json" file (inside the ZIP archives) allow you to customize some general settings on Mozilla Firefox.
+The "policies.json" file (inside the ZIP archives) allows you to customize some general settings on Mozilla Firefox.
 
 ## Firefox on Windows
 
