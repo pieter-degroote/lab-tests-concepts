@@ -6,4 +6,4 @@ See also&nbsp;: &nbsp;https://github.com/OneDeadKey/x-keyboard
 
 ## Keyboard Layout Image
 
-![UltimateKEYS - Keyboard Layout Image](https://raw.githubusercontent.com/pieter-degroote/lab-tests-concepts/master/UltimateKEYS%20-%20MSKLC%20(testing)/UltimateKEYS%20(MSKLC)%20-%20Keyboard%20Layout%20Image.png)
+![UltimateKEYS - Keyboard Layout Image](https://raw.githubusercontent.com/pieter-degroote/lab-tests-concepts/master/UltimateKEYS%20Core/UltimateKEYS%20(MSKLC)%20-%20Keyboard%20Layout%20Image.png)
