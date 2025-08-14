@@ -20,6 +20,8 @@ The additional Compose Key sequences (Multi_key) have not been included, since t
 
 ![UltimateKEYS - Keyboard Layout Image](UltimateKEYS%20(MSKLC)%20-%20Keyboard%20Layout%20Image.png)
 
+=&gt; Without Compose Key, since MSKLC does not support multiple keystrokes as a sequence for a dead key.
+
 ## Important Notice - Security
 
 **=&gt; Win/Linux&nbsp;: &nbsp;Only use "BASIC LATIN" characters (codes 32 to 126) for your Windows, Microsoft Live and Linux passwords&nbsp;!**  
