@@ -1,6 +1,6 @@
 <?xml version="1.1" encoding="UTF-8"?>
 <!DOCTYPE keyboard SYSTEM "file://localhost/System/Library/DTDs/KeyboardLayout.dtd">
-<keyboard group="126" id="-24547" name="UltimateKEYS" maxout="1">
+<keyboard group="126" id="-7448" name="UltimateKEYS" maxout="1">
     <layouts>
         <layout first="0" last="17" mapSet="16c" modifiers="f4"/>
     </layouts>
@@ -381,8 +381,8 @@
             <key code="16" output="û"/>
             <key code="17" output="î"/>
             <key code="18" output="¡"/>
-            <key code="19" output="≤"/>
-            <key code="20" output="≥"/>
+            <key code="19" output="²"/>
+            <key code="20" output="³"/>
             <key code="21" output="£"/>
             <key code="22" output="ã"/>
             <key code="23" output="€"/>
@@ -401,7 +401,7 @@
             <key code="36" output="&#x000D;"/>
             <key code="37" output="ø"/>
             <key code="38" output="ù"/>
-            <key code="39" output="♪"/>
+            <key code="39" output="·"/>
             <key code="40" output="œ"/>
             <key code="41" output="°"/>
             <key code="42" output=" "/>
@@ -490,8 +490,8 @@
             <key code="16" output="Û"/>
             <key code="17" output="Î"/>
             <key code="18" output="¹"/>
-            <key code="19" output="²"/>
-            <key code="20" output="³"/>
+            <key code="19" output="♫"/>
+            <key code="20" output="§"/>
             <key code="21" output="¥"/>
             <key code="22" output="Ã"/>
             <key code="23" output="¢"/>
@@ -499,7 +499,7 @@
             <key code="25" output="‘"/>
             <key code="26" output="Õ"/>
             <key code="27" output="—"/>
-            <key code="28" output="§"/>
+            <key code="28" output="♪"/>
             <key code="29" output="’"/>
             <key code="30" output="›"/>
             <key code="31" output="Ö"/>
@@ -510,9 +510,9 @@
             <key code="36" output="&#x000D;"/>
             <key code="37" output="Ø"/>
             <key code="38" output="Ù"/>
-            <key code="39" output="♫"/>
+            <key code="39" output="≥"/>
             <key code="40" output="Œ"/>
-            <key code="41" output="·"/>
+            <key code="41" output="≤"/>
             <key code="42" output=" "/>
             <key code="43" output="Ó"/>
             <key code="44" output="•"/>
@@ -599,8 +599,8 @@
             <key code="16" output="Û"/>
             <key code="17" output="Î"/>
             <key code="18" output="¡"/>
-            <key code="19" output="≤"/>
-            <key code="20" output="≥"/>
+            <key code="19" output="²"/>
+            <key code="20" output="³"/>
             <key code="21" output="£"/>
             <key code="22" output="Ã"/>
             <key code="23" output="€"/>
@@ -619,7 +619,7 @@
             <key code="36" output="&#x000D;"/>
             <key code="37" output="Ø"/>
             <key code="38" output="Ù"/>
-            <key code="39" output="♪"/>
+            <key code="39" output="·"/>
             <key code="40" output="Œ"/>
             <key code="41" output="°"/>
             <key code="42" output=" "/>
