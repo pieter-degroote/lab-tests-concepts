@@ -16,6 +16,10 @@ The additional Compose Key sequences (Multi_key) have not been included, since t
 =&gt; CP key (blue) : &nbsp;Compose Key (Multi_key), in combination with AltGr (Right Alt) (only with AutoHotkey and Linux).  
 =&gt; Note that the ISO key (next to Left Shift) is not present on standard ANSI keyboards.
 
+## Keyboard Layout Image - MSKLC
+
+![UltimateKEYS - Keyboard Layout Image](UltimateKEYS%20(MSKLC)%20-%20Keyboard%20Layout%20Image.png)
+
 ## Important Notice - Security
 
 **=&gt; Win/Linux&nbsp;: &nbsp;Only use "BASIC LATIN" characters (codes 32 to 126) for your Windows, Microsoft Live and Linux passwords&nbsp;!**  
