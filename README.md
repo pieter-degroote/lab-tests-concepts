@@ -8,10 +8,10 @@ Additional lab tests and concepts (mostly based on UltimateKEYS)
 
 ![UltimateKEYS - Keyboard Layout Image](UltimateKEYS%20-%20Latest/UltimateKEYS%20-%20Keyboard%20Layout%20Image.png)
 
-## Important - Security Warning&nbsp;:
+## Important Notice - Security
 
 **=&gt; Win/Linux : &nbsp;Only use "BASIC LATIN" characters (codes 32 to 126) for the Windows, Microsoft Live and Linux passwords !**  
-Otherwise, it might be impossible to type any Unicode character higher than "Basic Latin" at the login screen/prompt (due to a different keyboard configuration) !&emsp;**=&gt;&emsp;ACCOUNT LOCKOUT**
+Otherwise, it might be impossible to type any Unicode character higher than "Basic Latin" at the login screen/prompt (due to a different keyboard configuration)&nbsp;!&emsp;**=&gt;&emsp;ACCOUNT LOCKOUT**
 
 **=&gt; Win/Linux : &nbsp;ALWAYS make your system passwords VISIBLE during modification !**
 
