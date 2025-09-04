@@ -1,0 +1,55 @@
+! UltimateKEYS Keyboard Layout (Public Domain)
+
+! GitHub :  https://github.com/pieter-degroote/UltimateKEYS-core
+
+keycode  10 = 1            exclam       exclamdown           onesuperior
+keycode  11 = 2            at           twosuperior          U266B
+keycode  12 = 3            numbersign   threesuperior        section
+keycode  13 = 4            dollar       sterling             yen
+keycode  14 = 5            percent      EuroSign             cent
+keycode  15 = 6            asciicircum  iacute               Iacute
+keycode  16 = 7            ampersand    igrave               Igrave
+keycode  17 = 8            asterisk     doublelowquotemark   U266A
+keycode  18 = 9            parenleft    leftdoublequotemark  leftsinglequotemark
+keycode  19 = 0            parenright   rightdoublequotemark rightsinglequotemark
+keycode  20 = minus        underscore   endash               emdash
+keycode  21 = equal        plus         multiply             division
+keycode  24 = q            Q            ae                   AE
+keycode  25 = w            W            aring                Aring
+keycode  26 = e            E            ediaeresis           Ediaeresis
+keycode  27 = r            R            ecircumflex          Ecircumflex
+keycode  28 = t            T            icircumflex          Icircumflex
+keycode  29 = y            Y            ucircumflex          Ucircumflex
+keycode  30 = u            U            udiaeresis           Udiaeresis
+keycode  31 = i            I            idiaeresis           Idiaeresis
+keycode  32 = o            O            odiaeresis           Odiaeresis
+keycode  33 = p            P            ocircumflex          Ocircumflex
+keycode  34 = bracketleft  braceleft    guillemotleft        U2039
+keycode  35 = bracketright braceright   guillemotright       U203A
+keycode  38 = a            A            adiaeresis           Adiaeresis
+keycode  39 = s            S            ssharp               U1E9E
+keycode  40 = d            D            acircumflex          Acircumflex
+keycode  41 = f            F            eacute               Eacute
+keycode  42 = g            G            egrave               Egrave
+keycode  43 = h            H            uacute               Uacute
+keycode  44 = j            J            ugrave               Ugrave
+keycode  45 = k            K            oe                   OE
+keycode  46 = l            L            oslash               Ooblique
+keycode  47 = semicolon    colon        oacute               Oacute
+keycode  48 = apostrophe   quotedbl     ograve               Ograve
+keycode  49 = grave        asciitilde   Multi_key            Multi_key
+keycode  51 = backslash    bar          enspace              emspace
+keycode  52 = z            Z            aacute               Aacute
+keycode  53 = x            X            agrave               Agrave
+keycode  54 = c            C            ccedilla             Ccedilla
+keycode  55 = v            V            atilde               Atilde
+keycode  56 = b            B            otilde               Otilde
+keycode  57 = n            N            ntilde               Ntilde
+keycode  58 = m            M            mu                   plusminus
+keycode  59 = comma        less         degree               U2264
+keycode  60 = period       greater      periodcentered       U2265
+keycode  61 = slash        question     questiondown         enfilledcircbullet
+keycode  65 = space        space        nobreakspace         nobreakspace
+keycode  91 = KP_Delete    KP_Decimal
+keycode  94 = backslash    bar          Multi_key            Multi_key
+keycode 108 = Mode_switch  Mode_switch
