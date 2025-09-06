@@ -1,6 +1,6 @@
 #requires AutoHotkey v1.1
 
-; UltimateKEYS (for AutoHotkey v1.1).ahk - 2025-09-04
+; UltimateKEYS (for AutoHotkey v1.1).ahk
 
 ; Website :  https://pieter-degroote.github.io/UltimateKEYS/
 
