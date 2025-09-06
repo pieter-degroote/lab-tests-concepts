@@ -1,10 +1,10 @@
 #requires AutoHotkey v2
 
-; UltimateKEYS - Grave Accent mod (for AutoHotkey v2).ahk - 2025-02-11
+; UltimateKEYS - Grave Accent mod (for AutoHotkey v2).ahk - 2025-09-04
 
 ; Website :  https://pieter-degroote.github.io/UltimateKEYS/
 
-; GitHub :   https://github.com/pieter-degroote/lab-tests-concepts
+; GitHub :   https://github.com/pieter-degroote/UltimateKEYS
 
 ; License :  GNU General Public License Version 3
 
@@ -21,105 +21,6 @@ ListLines False   ; omits recently executed lines from history (for privacy and 
 SendMode "Input"  ; optimizes for faster and more reliable input
 
 global gEndKeys := "{bs}{esc}"  ; ends dead key input on Backspace or Escape
-
-
-; Dead Key :  Grave Accent (`)
-
-global dkGrave := Map()
-dkGrave["a"] := "{u+00e4}"  ; (ä) a with diaeresis
-dkGrave["A"] := "{u+00c4}"  ; (Ä) A with diaeresis
-dkGrave["z"] := "{u+00e1}"  ; (á) a with acute
-dkGrave["Z"] := "{u+00c1}"  ; (Á) A with acute
-dkGrave["x"] := "{u+00e0}"  ; (à) a with grave
-dkGrave["X"] := "{u+00c0}"  ; (À) A with grave
-dkGrave["d"] := "{u+00e2}"  ; (â) a with circumflex
-dkGrave["D"] := "{u+00c2}"  ; (Â) A with circumflex
-dkGrave["q"] := "{u+00e6}"  ; (æ) letter ae
-dkGrave["Q"] := "{u+00c6}"  ; (Æ) letter AE
-dkGrave["w"] := "{u+00e5}"  ; (å) a with ring above
-dkGrave["W"] := "{u+00c5}"  ; (Å) A with ring above
-dkGrave["c"] := "{u+00e7}"  ; (ç) c with cedilla
-dkGrave["C"] := "{u+00c7}"  ; (Ç) C with cedilla
-dkGrave["e"] := "{u+00eb}"  ; (ë) e with diaeresis
-dkGrave["E"] := "{u+00cb}"  ; (Ë) E with diaeresis
-dkGrave["f"] := "{u+00e9}"  ; (é) e with acute
-dkGrave["F"] := "{u+00c9}"  ; (É) E with acute
-dkGrave["g"] := "{u+00e8}"  ; (è) e with grave
-dkGrave["G"] := "{u+00c8}"  ; (È) E with grave
-dkGrave["r"] := "{u+00ea}"  ; (ê) e with circumflex
-dkGrave["R"] := "{u+00ca}"  ; (Ê) E with circumflex
-dkGrave["i"] := "{u+00ef}"  ; (ï) i with diaeresis
-dkGrave["I"] := "{u+00cf}"  ; (Ï) I with diaeresis
-dkGrave["v"] := "{u+00ed}"  ; (í) i with acute
-dkGrave["V"] := "{u+00cd}"  ; (Í) I with acute
-dkGrave["b"] := "{u+00ec}"  ; (ì) i with grave
-dkGrave["B"] := "{u+00cc}"  ; (Ì) I with grave
-dkGrave["t"] := "{u+00ee}"  ; (î) i with circumflex
-dkGrave["T"] := "{u+00ce}"  ; (Î) I with circumflex
-dkGrave["n"] := "{u+00f1}"  ; (ñ) n with tilde
-dkGrave["N"] := "{u+00d1}"  ; (Ñ) N with tilde
-dkGrave["o"] := "{u+00f6}"  ; (ö) o with diaeresis
-dkGrave["O"] := "{u+00d6}"  ; (Ö) O with diaeresis
-dkGrave[","] := "{u+00f3}"  ; (ó) o with acute
-dkGrave["<"] := "{u+00d3}"  ; (Ó) O with acute
-dkGrave["."] := "{u+00f2}"  ; (ò) o with grave
-dkGrave[">"] := "{u+00d2}"  ; (Ò) O with grave
-dkGrave["p"] := "{u+00f4}"  ; (ô) o with circumflex
-dkGrave["P"] := "{u+00d4}"  ; (Ô) O with circumflex
-dkGrave["k"] := "{u+0153}"  ; (œ) ligature oe
-dkGrave["K"] := "{u+0152}"  ; (Œ) ligature OE
-dkGrave["l"] := "{u+00f8}"  ; (ø) o with stroke
-dkGrave["L"] := "{u+00d8}"  ; (Ø) O with stroke
-dkGrave["s"] := "{u+00df}"  ; (ß) small sharp s (Eszett)
-dkGrave["S"] := "{u+1e9e}"  ; (ẞ) capital sharp S (capital Eszett)
-dkGrave["u"] := "{u+00fc}"  ; (ü) u with diaeresis
-dkGrave["U"] := "{u+00dc}"  ; (Ü) U with diaeresis
-dkGrave["h"] := "{u+00fa}"  ; (ú) u with acute
-dkGrave["H"] := "{u+00da}"  ; (Ú) U with acute
-dkGrave["j"] := "{u+00f9}"  ; (ù) u with grave
-dkGrave["J"] := "{u+00d9}"  ; (Ù) U with grave
-dkGrave["y"] := "{u+00fb}"  ; (û) u with circumflex
-dkGrave["Y"] := "{u+00db}"  ; (Û) U with circumflex
-dkGrave["m"] := "{u+00b5}"  ; (µ) micro sign
-dkGrave["M"] := "{u+00b1}"  ; (±) plus-minus sign
-dkGrave["1"] := "{u+00a1}"  ; (¡) inverted exclamation mark
-dkGrave["!"] := "{u+00b9}"  ; (¹) superscript 1
-dkGrave["2"] := "{u+2264}"  ; (≤) less-than or equal to
-dkGrave["@"] := "{u+00b2}"  ; (²) superscript 2
-dkGrave["3"] := "{u+2265}"  ; (≥) greater-than or equal to
-dkGrave["#"] := "{u+00b3}"  ; (³) superscript 3
-dkGrave["4"] := "{u+00a3}"  ; (£) pound sign
-dkGrave["$"] := "{u+00a5}"  ; (¥) yen sign
-dkGrave["5"] := "{u+20ac}"  ; (€) euro sign
-dkGrave["%"] := "{u+00a2}"  ; (¢) cent sign (dollar)
-dkGrave["6"] := "{u+00e3}"  ; (ã) a with tilde
-dkGrave["^"] := "{u+00c3}"  ; (Ã) A with tilde
-dkGrave["7"] := "{u+00f5}"  ; (õ) o with tilde
-dkGrave["&"] := "{u+00d5}"  ; (Õ) O with tilde
-dkGrave["8"] := "{u+201e}"  ; („) double low-9 quotation mark
-dkGrave["*"] := "{u+00a7}"  ; (§) section sign
-dkGrave["9"] := "{u+201c}"  ; (“) left double quotation mark
-dkGrave["("] := "{u+2018}"  ; (‘) left single quotation mark
-dkGrave["0"] := "{u+201d}"  ; (”) right double quotation mark
-dkGrave[")"] := "{u+2019}"  ; (’) right single quotation mark
-dkGrave["-"] := "{u+2013}"  ; (–) en dash
-dkGrave["_"] := "{u+2014}"  ; (—) em dash
-dkGrave["="] := "{u+00d7}"  ; (×) multiplication sign
-dkGrave["+"] := "{u+00f7}"  ; (÷) division sign
-dkGrave["["] := "{u+00ab}"  ; («) left-pointing double angle quotation mark
-dkGrave["]"] := "{u+00bb}"  ; (») right-pointing double angle quotation mark
-dkGrave["{"] := "{u+2039}"  ; (‹) left-pointing single angle quotation mark
-dkGrave["}"] := "{u+203a}"  ; (›) right-pointing single angle quotation mark
-dkGrave[";"] := "{u+00b0}"  ; (°) degree sign
-dkGrave[":"] := "{u+00b7}"  ; (·) middle dot
-dkGrave["'"] := "{u+266a}"  ; (♪) eighth note
-dkGrave["`""] := "{u+266b}" ; (♫) beamed eighth notes
-dkGrave["``"] := "{u+0060}" ; (`) grave accent
-dkGrave["~"] := "{u+00a0}"  ;     non-breaking space
-dkGrave["\"] := "{u+005c}"  ; (\) backslash
-dkGrave["|"] := "{u+007c}"  ; (|) vertical line
-dkGrave["/"] := "{u+00bf}"  ; (¿) inverted question mark
-dkGrave["?"] := "{u+2022}"  ; (•) bullet
 
 
 ; Compose Key Sequences (declaration)
@@ -361,8 +262,8 @@ compose[".g"] := "{u+0121}"  ; (ġ) g with dot above
 compose[".G"] := "{u+0120}"  ; (Ġ) G with dot above
 compose[".h"] := "{u+1e23}"  ; (ḣ) h with dot above
 compose[".H"] := "{u+1e22}"  ; (Ḣ) H with dot above
-compose[".i"] := "{u+0131}"  ; (ı) dotless i (Turkish, Azerbaijani)
-compose[".I"] := "{u+0130}"  ; (İ) I with dot above (Turkish, Azerbaijani)
+compose[".i"] := "{u+0131}"  ; (ı) dotless i
+compose[".I"] := "{u+0130}"  ; (İ) I with dot above
 compose[".j"] := "{u+0237}"  ; (ȷ) dotless j
 compose[".l"] := "{u+0140}"  ; (ŀ) l with middle dot
 compose[".L"] := "{u+013f}"  ; (Ŀ) L with middle dot
@@ -374,7 +275,6 @@ compose[".o"] := "{u+022f}"  ; (ȯ) o with dot above
 compose[".O"] := "{u+022e}"  ; (Ȯ) O with dot above
 compose[".p"] := "{u+1e57}"  ; (ṗ) p with dot above
 compose[".P"] := "{u+1e56}"  ; (Ṗ) P with dot above
-compose[".q"] := "{u+1e9b}"  ; (ẛ) long s with dot above
 compose[".r"] := "{u+1e59}"  ; (ṙ) r with dot above
 compose[".R"] := "{u+1e58}"  ; (Ṙ) R with dot above
 compose[".s"] := "{u+1e61}"  ; (ṡ) s with dot above
@@ -413,10 +313,10 @@ compose["-d"] := "{u+0111}"  ; (đ) d with stroke
 compose["-D"] := "{u+0110}"  ; (Đ) D with stroke
 compose["-e"] := "{u+0113}"  ; (ē) e with macron
 compose["-E"] := "{u+0112}"  ; (Ē) E with macron
-compose["-g"] := "{u+01e5}"  ; (ǥ) g with stroke (Skolt Sami)
-compose["-G"] := "{u+01e4}"  ; (Ǥ) G with stroke (Skolt Sami)
-compose["-h"] := "{u+0127}"  ; (ħ) h with stroke (Maltese)
-compose["-H"] := "{u+0126}"  ; (Ħ) H with stroke (Maltese)
+compose["-g"] := "{u+01e5}"  ; (ǥ) g with stroke
+compose["-G"] := "{u+01e4}"  ; (Ǥ) G with stroke
+compose["-h"] := "{u+0127}"  ; (ħ) h with stroke
+compose["-H"] := "{u+0126}"  ; (Ħ) H with stroke
 compose["-i"] := "{u+012b}"  ; (ī) i with macron
 compose["-I"] := "{u+012a}"  ; (Ī) I with macron
 compose["-j"] := "{u+0249}"  ; (ɉ) j with stroke
@@ -443,7 +343,6 @@ compose["-Z"] := "{u+01b5}"  ; (Ƶ) Z with stroke
 
 ; Compose :  Macron and Stroke (additional)
 
-compose["_f"] := "{u+1e9d}"  ; (ẝ) long s with high stroke
 compose["_g"] := "{u+1e21}"  ; (ḡ) g with macron
 compose["_G"] := "{u+1e20}"  ; (Ḡ) G with macron
 compose["_i"] := "{u+0268}"  ; (ɨ) i with stroke
@@ -501,10 +400,10 @@ compose["bi"] := "{u+012d}"  ; (ĭ) i with breve
 compose["bI"] := "{u+012c}"  ; (Ĭ) I with breve
 compose["bo"] := "{u+014f}"  ; (ŏ) o with breve
 compose["bO"] := "{u+014e}"  ; (Ŏ) O with breve
-compose["bs"] := "{u+0219}"  ; (ș) s with comma below (Romanian)
-compose["bS"] := "{u+0218}"  ; (Ș) S with comma below (Romanian)
-compose["bt"] := "{u+021b}"  ; (ț) t with comma below (Romanian)
-compose["bT"] := "{u+021a}"  ; (Ț) T with comma below (Romanian)
+compose["bs"] := "{u+0219}"  ; (ș) s with comma below
+compose["bS"] := "{u+0218}"  ; (Ș) S with comma below
+compose["bt"] := "{u+021b}"  ; (ț) t with comma below
+compose["bT"] := "{u+021a}"  ; (Ț) T with comma below
 compose["bu"] := "{u+016d}"  ; (ŭ) u with breve
 compose["bU"] := "{u+016c}"  ; (Ŭ) U with breve
 compose["b3"] := "{u+0292}"  ; (ʒ) small letter ezh
@@ -583,28 +482,17 @@ compose["fr"] := "{u+027e}"  ; (ɾ) r with fishhook
 compose["ft"] := "{u+0288}"  ; (ʈ) t with retroflex hook
 compose["fT"] := "{u+01ae}"  ; (Ʈ) T with retroflex hook
 compose["fv"] := "{u+2c71}"  ; (ⱱ) v with right hook
+compose["fy"] := "{u+1eff}"  ; (ỿ) y with loop
+compose["fY"] := "{u+1efe}"  ; (Ỿ) Y with loop
 compose["fz"] := "{u+0290}"  ; (ʐ) z with retroflex hook
-
-
-; Compose :  Swash Tail and Other Variations
-
-compose["tc"] := "{u+a793}"  ; (ꞓ) c with bar
-compose["tC"] := "{u+a792}"  ; (Ꞓ) C with bar
-compose["tf"] := "{u+a799}"  ; (ꞙ) f with stroke
-compose["tF"] := "{u+a798}"  ; (Ꞙ) F with stroke
-compose["tl"] := "{u+2c61}"  ; (ⱡ) l with double bar
-compose["tL"] := "{u+2c60}"  ; (Ⱡ) L with double bar
-compose["ts"] := "{u+023f}"  ; (ȿ) s with swash tail
-compose["tS"] := "{u+2c7e}"  ; (Ȿ) S with swash tail
-compose["tz"] := "{u+0240}"  ; (ɀ) z with swash tail
-compose["tZ"] := "{u+2c7f}"  ; (Ɀ) Z with swash tail
 
 
 ; Compose :  Latin Greek Letters and Variations
 
-compose["la"] := "{u+0251}"  ; (ɑ) Latin small letter alpha
-compose["lA"] := "{u+2c6d}"  ; (Ɑ) Latin capital letter alpha
-compose["lb"] := "{u+025e}"  ; (ɞ) small letter closed reversed open e
+compose["la"] := "{u+0251}"  ; (ɑ) Latin small letter alpha (script a)
+compose["lA"] := "{u+2c6d}"  ; (Ɑ) Latin capital letter alpha (script A)
+compose["lb"] := "{u+a7b5}"  ; (ꞵ) Latin small letter beta
+compose["lB"] := "{u+a7b4}"  ; (Ꞵ) Latin capital letter beta
 compose["ld"] := "{u+1e9f}"  ; (ẟ) Latin small letter delta
 compose["le"] := "{u+025b}"  ; (ɛ) small letter open e (Latin small epsilon)
 compose["lE"] := "{u+0190}"  ; (Ɛ) capital letter open E (Latin capital epsilon)
@@ -638,6 +526,8 @@ compose["l*"] := "{u+0222}"  ; (Ȣ) capital letter OU
 compose["l7"] := "{u+0242}"  ; (ɂ) small letter glottal stop
 compose["l&"] := "{u+0241}"  ; (Ɂ) capital letter glottal stop
 compose["l?"] := "{u+0294}"  ; (ʔ) unicase letter glottal stop
+compose["l;"] := "{u+02bb}"  ; (ʻ) modifier letter turned comma
+compose["l'"] := "{u+02bc}"  ; (ʼ) modifier letter apostrophe
 
 
 ; Compose :  Turned and Reversed Letters
@@ -646,6 +536,7 @@ compose["ra"] := "{u+0250}"  ; (ɐ) small letter turned a
 compose["rA"] := "{u+2c6f}"  ; (Ɐ) capital letter turned A
 compose["rb"] := "{u+025c}"  ; (ɜ) small letter reversed open e
 compose["rB"] := "{u+a7ab}"  ; (Ɜ) capital letter reversed open E
+compose["rc"] := "{u+025e}"  ; (ɞ) small letter closed reversed open e
 compose["rd"] := "{u+018d}"  ; (ƍ) Latin small letter turned delta
 compose["re"] := "{u+01dd}"  ; (ǝ) small letter turned e
 compose["rE"] := "{u+018e}"  ; (Ǝ) capital letter reversed E
@@ -660,8 +551,8 @@ compose["rK"] := "{u+a7b0}"  ; (Ʞ) capital letter turned K
 compose["rm"] := "{u+026f}"  ; (ɯ) small letter turned m
 compose["rM"] := "{u+019c}"  ; (Ɯ) capital letter turned M
 compose["ro"] := "{u+0264}"  ; (ɤ) small letter ram's horn (baby gamma)
-compose["rq"] := "{u+0252}"  ; (ɒ) Latin small letter turned alpha
-compose["rQ"] := "{u+2c70}"  ; (Ɒ) Latin capital letter turned alpha
+compose["rq"] := "{u+0252}"  ; (ɒ) Latin small letter turned alpha (turned script a)
+compose["rQ"] := "{u+2c70}"  ; (Ɒ) Latin capital letter turned alpha (turned script A)
 compose["rr"] := "{u+0279}"  ; (ɹ) small letter turned r
 compose["rt"] := "{u+0287}"  ; (ʇ) small letter turned t
 compose["rT"] := "{u+a7b1}"  ; (Ʇ) small letter turned T
@@ -671,6 +562,20 @@ compose["rw"] := "{u+028d}"  ; (ʍ) small letter turned w
 compose["ry"] := "{u+028e}"  ; (ʎ) small letter turned y
 compose["rz"] := "{u+01b9}"  ; (ƹ) Latin small letter ezh reversed
 compose["rZ"] := "{u+01b8}"  ; (Ƹ) Latin capital letter ezh reversed
+
+
+; Compose :  Swash Tail and Other Variations
+
+compose["tc"] := "{u+a793}"  ; (ꞓ) c with bar
+compose["tC"] := "{u+a792}"  ; (Ꞓ) C with bar
+compose["tf"] := "{u+a799}"  ; (ꞙ) f with stroke
+compose["tF"] := "{u+a798}"  ; (Ꞙ) F with stroke
+compose["tl"] := "{u+2c61}"  ; (ⱡ) l with double bar
+compose["tL"] := "{u+2c60}"  ; (Ⱡ) L with double bar
+compose["ts"] := "{u+023f}"  ; (ȿ) s with swash tail
+compose["tS"] := "{u+2c7e}"  ; (Ȿ) S with swash tail
+compose["tz"] := "{u+0240}"  ; (ɀ) z with swash tail
+compose["tZ"] := "{u+2c7f}"  ; (Ɀ) Z with swash tail
 
 
 ; Compose :  Currency Symbols
@@ -946,6 +851,8 @@ compose["s!"] := "{u+203c}"  ; (‼) double exclamation mark
 compose["s?"] := "{u+2e2e}"  ; (⸮) reversed question mark
 compose["s/"] := "{u+205e}"  ; (⁞) vertical four dots
 compose["s|"] := "{u+00a6}"  ; (¦) broken bar
+compose["s["] := "{u+2045}"  ; (⁅) left square bracket with quill
+compose["s]"] := "{u+2046}"  ; (⁆) right square bracket with quill
 
 
 ; Compose :  Math Symbols
@@ -1066,8 +973,8 @@ compose["o*"] := "{u+00b0}"  ; (°) degree sign
 compose[".-"] := "{u+00b7}"  ; (·) middle dot
 compose[".3"] := "{u+2026}"  ; (…) horizontal ellipsis
 compose[".."] := "{u+2026}"  ; (…) horizontal ellipsis
-compose["a-"] := "{u+00aa}"  ; (ª) feminine ordinal indicator (Spanish, Portuguese, Italian, Galician)
-compose["o-"] := "{u+00ba}"  ; (º) masculine ordinal indicator (Spanish, Portuguese, Italian, Galician)
+compose["a-"] := "{u+00aa}"  ; (ª) feminine ordinal indicator
+compose["o-"] := "{u+00ba}"  ; (º) masculine ordinal indicator
 compose["!!"] := "{u+00a1}"  ; (¡) inverted exclamation mark
 compose["??"] := "{u+00bf}"  ; (¿) inverted question mark
 compose["!?"] := "{u+203d}"  ; (‽) interrobang
@@ -1216,6 +1123,28 @@ compose["Bu"] := "{u+0217}"  ; (ȗ) u with inverted breve
 compose["BU"] := "{u+0216}"  ; (Ȗ) U with inverted breve
 
 
+; Compose :  Letters with Two Diacritical Marks
+
+compose["Ma"] := "{u+01df}"  ; (ǟ) a with diaeresis and macron
+compose["MA"] := "{u+01de}"  ; (Ǟ) A with diaeresis and macron
+compose["Mq"] := "{u+01e1}"  ; (ǡ) a with dot above and macron
+compose["MQ"] := "{u+01e0}"  ; (Ǡ) A with dot above and macron
+compose["Mo"] := "{u+022b}"  ; (ȫ) o with diaeresis and macron
+compose["MO"] := "{u+022a}"  ; (Ȫ) O with diaeresis and macron
+compose["Mk"] := "{u+022d}"  ; (ȭ) o with tilde and macron
+compose["MK"] := "{u+022c}"  ; (Ȭ) O with tilde and macron
+compose["Ml"] := "{u+0231}"  ; (ȱ) o with dot above and macron
+compose["ML"] := "{u+0230}"  ; (Ȱ) O with dot above and macron
+compose["Mu"] := "{u+01d6}"  ; (ǖ) u with diaeresis and macron
+compose["MU"] := "{u+01d5}"  ; (Ǖ) U with diaeresis and macron
+compose["Mh"] := "{u+01d8}"  ; (ǘ) u with diaeresis and acute
+compose["MH"] := "{u+01d7}"  ; (Ǘ) U with diaeresis and acute
+compose["My"] := "{u+01da}"  ; (ǚ) u with diaeresis and caron
+compose["MY"] := "{u+01d9}"  ; (Ǚ) U with diaeresis and caron
+compose["Mj"] := "{u+01dc}"  ; (ǜ) u with diaeresis and grave
+compose["MJ"] := "{u+01db}"  ; (Ǜ) U with diaeresis and grave
+
+
 ; Compose :  Circumflex Below
 
 compose["Id"] := "{u+1e13}"  ; (ḓ) d with circumflex below
@@ -1232,23 +1161,17 @@ compose["Iu"] := "{u+1e77}"  ; (ṷ) u with circumflex below
 compose["IU"] := "{u+1e76}"  ; (Ṷ) U with circumflex below
 
 
-; Compose :  Tilde Below
-
-compose["Te"] := "{u+1e1b}"  ; (ḛ) e with tilde below
-compose["TE"] := "{u+1e1a}"  ; (Ḛ) E with tilde below
-compose["Ti"] := "{u+1e2d}"  ; (ḭ) i with tilde below
-compose["TI"] := "{u+1e2c}"  ; (Ḭ) I with tilde below
-compose["Tu"] := "{u+1e75}"  ; (ṵ) u with tilde below
-compose["TU"] := "{u+1e74}"  ; (Ṵ) U with tilde below
-
-
-; Compose :  Line Below
+; Compose :  Line Below and Tilde Below
 
 compose["Lb"] := "{u+1e07}"  ; (ḇ) b with line below
 compose["LB"] := "{u+1e06}"  ; (Ḇ) B with line below
 compose["Ld"] := "{u+1e0f}"  ; (ḏ) d with line below
 compose["LD"] := "{u+1e0e}"  ; (Ḏ) D with line below
+compose["Le"] := "{u+1e1b}"  ; (ḛ) e with tilde below
+compose["LE"] := "{u+1e1a}"  ; (Ḛ) E with tilde below
 compose["Lh"] := "{u+1e96}"  ; (ẖ) h with line below
+compose["Li"] := "{u+1e2d}"  ; (ḭ) i with tilde below
+compose["LI"] := "{u+1e2c}"  ; (Ḭ) I with tilde below
 compose["Lk"] := "{u+1e35}"  ; (ḵ) k with line below
 compose["LK"] := "{u+1e34}"  ; (Ḵ) K with line below
 compose["Ll"] := "{u+1e3b}"  ; (ḻ) l with line below
@@ -1259,6 +1182,8 @@ compose["Lr"] := "{u+1e5f}"  ; (ṟ) r with line below
 compose["LR"] := "{u+1e5e}"  ; (Ṟ) R with line below
 compose["Lt"] := "{u+1e6f}"  ; (ṯ) t with line below
 compose["LT"] := "{u+1e6e}"  ; (Ṯ) T with line below
+compose["Lu"] := "{u+1e75}"  ; (ṵ) u with tilde below
+compose["LU"] := "{u+1e74}"  ; (Ṵ) U with tilde below
 compose["Lz"] := "{u+1e95}"  ; (ẕ) z with line below
 compose["LZ"] := "{u+1e94}"  ; (Ẕ) Z with line below
 
@@ -1355,6 +1280,127 @@ compose["?u"] := "{u+1ef1}"  ; (ự) u with horn and dot below
 compose["?U"] := "{u+1ef0}"  ; (Ự) U with horn and dot below
 
 
+; Dead Key :  Grave Accent (`)
+
+global dkGrave := Map()
+dkGrave["``"] := "{u+0060}" ; (`) grave accent
+dkGrave["~"] := "{u+00a0}"  ;     non-breaking space
+dkGrave["1"] := "{u+00a1}"  ; (¡) inverted exclamation mark
+dkGrave["!"] := "{u+00b9}"  ; (¹) superscript 1
+dkGrave["2"] := "{u+00b2}"  ; (²) superscript 2
+dkGrave["@"] := "{u+266b}"  ; (♫) beamed eighth notes
+dkGrave["3"] := "{u+00b3}"  ; (³) superscript 3
+dkGrave["#"] := "{u+00a7}"  ; (§) section sign
+dkGrave["4"] := "{u+00a3}"  ; (£) pound sign
+dkGrave["$"] := "{u+00a5}"  ; (¥) yen sign
+dkGrave["5"] := "{u+20ac}"  ; (€) euro sign
+dkGrave["%"] := "{u+00a2}"  ; (¢) cent sign (dollar)
+dkGrave["6"] := "{u+00ed}"  ; (í) i with acute
+dkGrave["^"] := "{u+00cd}"  ; (Í) I with acute
+dkGrave["7"] := "{u+00ec}"  ; (ì) i with grave
+dkGrave["&"] := "{u+00cc}"  ; (Ì) I with grave
+dkGrave["8"] := "{u+201e}"  ; („) double low-9 quotation mark
+dkGrave["*"] := "{u+266a}"  ; (♪) eighth note
+dkGrave["9"] := "{u+201c}"  ; (“) left double quotation mark
+dkGrave["("] := "{u+2018}"  ; (‘) left single quotation mark
+dkGrave["0"] := "{u+201d}"  ; (”) right double quotation mark
+dkGrave[")"] := "{u+2019}"  ; (’) right single quotation mark
+dkGrave["-"] := "{u+2013}"  ; (–) en dash
+dkGrave["_"] := "{u+2014}"  ; (—) em dash
+dkGrave["="] := "{u+00d7}"  ; (×) multiplication sign
+dkGrave["+"] := "{u+00f7}"  ; (÷) division sign
+dkGrave["q"] := "{u+00e6}"  ; (æ) letter ae
+dkGrave["Q"] := "{u+00c6}"  ; (Æ) letter AE
+dkGrave["w"] := "{u+00e5}"  ; (å) a with ring above
+dkGrave["W"] := "{u+00c5}"  ; (Å) A with ring above
+dkGrave["e"] := "{u+00eb}"  ; (ë) e with diaeresis
+dkGrave["E"] := "{u+00cb}"  ; (Ë) E with diaeresis
+dkGrave["r"] := "{u+00ea}"  ; (ê) e with circumflex
+dkGrave["R"] := "{u+00ca}"  ; (Ê) E with circumflex
+dkGrave["t"] := "{u+00ee}"  ; (î) i with circumflex
+dkGrave["T"] := "{u+00ce}"  ; (Î) I with circumflex
+dkGrave["y"] := "{u+00fb}"  ; (û) u with circumflex
+dkGrave["Y"] := "{u+00db}"  ; (Û) U with circumflex
+dkGrave["u"] := "{u+00fc}"  ; (ü) u with diaeresis
+dkGrave["U"] := "{u+00dc}"  ; (Ü) U with diaeresis
+dkGrave["i"] := "{u+00ef}"  ; (ï) i with diaeresis
+dkGrave["I"] := "{u+00cf}"  ; (Ï) I with diaeresis
+dkGrave["o"] := "{u+00f6}"  ; (ö) o with diaeresis
+dkGrave["O"] := "{u+00d6}"  ; (Ö) O with diaeresis
+dkGrave["p"] := "{u+00f4}"  ; (ô) o with circumflex
+dkGrave["P"] := "{u+00d4}"  ; (Ô) O with circumflex
+dkGrave["["] := "{u+00ab}"  ; («) left-pointing double angle quotation mark
+dkGrave["{"] := "{u+2039}"  ; (‹) left-pointing single angle quotation mark
+dkGrave["]"] := "{u+00bb}"  ; (») right-pointing double angle quotation mark
+dkGrave["}"] := "{u+203a}"  ; (›) right-pointing single angle quotation mark
+dkGrave["a"] := "{u+00e4}"  ; (ä) a with diaeresis
+dkGrave["A"] := "{u+00c4}"  ; (Ä) A with diaeresis
+dkGrave["s"] := "{u+00df}"  ; (ß) small sharp s (Eszett)
+dkGrave["S"] := "{u+1e9e}"  ; (ẞ) capital sharp S (capital Eszett)
+dkGrave["d"] := "{u+00e2}"  ; (â) a with circumflex
+dkGrave["D"] := "{u+00c2}"  ; (Â) A with circumflex
+dkGrave["f"] := "{u+00e9}"  ; (é) e with acute
+dkGrave["F"] := "{u+00c9}"  ; (É) E with acute
+dkGrave["g"] := "{u+00e8}"  ; (è) e with grave
+dkGrave["G"] := "{u+00c8}"  ; (È) E with grave
+dkGrave["h"] := "{u+00fa}"  ; (ú) u with acute
+dkGrave["H"] := "{u+00da}"  ; (Ú) U with acute
+dkGrave["j"] := "{u+00f9}"  ; (ù) u with grave
+dkGrave["J"] := "{u+00d9}"  ; (Ù) U with grave
+dkGrave["k"] := "{u+0153}"  ; (œ) ligature oe
+dkGrave["K"] := "{u+0152}"  ; (Œ) ligature OE
+dkGrave["l"] := "{u+00f8}"  ; (ø) o with stroke
+dkGrave["L"] := "{u+00d8}"  ; (Ø) O with stroke
+dkGrave[";"] := "{u+00f3}"  ; (ó) o with acute
+dkGrave[":"] := "{u+00d3}"  ; (Ó) O with acute
+dkGrave["'"] := "{u+00f2}"  ; (ò) o with grave
+dkGrave["`""] := "{u+00d2}" ; (Ò) O with grave
+dkGrave["z"] := "{u+00e1}"  ; (á) a with acute
+dkGrave["Z"] := "{u+00c1}"  ; (Á) A with acute
+dkGrave["x"] := "{u+00e0}"  ; (à) a with grave
+dkGrave["X"] := "{u+00c0}"  ; (À) A with grave
+dkGrave["c"] := "{u+00e7}"  ; (ç) c with cedilla
+dkGrave["C"] := "{u+00c7}"  ; (Ç) C with cedilla
+dkGrave["v"] := "{u+00e3}"  ; (ã) a with tilde
+dkGrave["V"] := "{u+00c3}"  ; (Ã) A with tilde
+dkGrave["b"] := "{u+00f5}"  ; (õ) o with tilde
+dkGrave["B"] := "{u+00d5}"  ; (Õ) O with tilde
+dkGrave["n"] := "{u+00f1}"  ; (ñ) n with tilde
+dkGrave["N"] := "{u+00d1}"  ; (Ñ) N with tilde
+dkGrave["m"] := "{u+00b5}"  ; (µ) micro sign
+dkGrave["M"] := "{u+00b1}"  ; (±) plus-minus sign
+dkGrave[","] := "{u+00b0}"  ; (°) degree sign
+dkGrave["<"] := "{u+2264}"  ; (≤) less-than or equal to
+dkGrave["."] := "{u+00b7}"  ; (·) middle dot
+dkGrave[">"] := "{u+2265}"  ; (≥) greater-than or equal to
+dkGrave["/"] := "{u+00bf}"  ; (¿) inverted question mark
+dkGrave["?"] := "{u+2022}"  ; (•) bullet
+dkGrave["\"] := "{u+005c}"  ; (\) backslash
+dkGrave["|"] := "{u+007c}"  ; (|) vertical line
+
+; Configuration :  'Grave Accent' (dead key) as alternate key for 'Right Alt'
+
+vkC0:: {
+  ih := InputHook("L1", gEndKeys)
+  ih.Start(), ih.Wait()
+  if (ih.Input == " ")
+    Send "{u+0060}"  ; (`) grave accent
+  else if dkGrave.Has(ih.Input)
+    Send dkGrave[ih.Input]
+}
+
+; Configuration :  Optional 'ISO Key' (dead key) as alternate key for 'Right Alt'
+
+vkE2:: {
+  ih := InputHook("L1", gEndKeys)
+  ih.Start(), ih.Wait()
+  if (ih.Input == " ")
+    Send "{u+005c}"  ; (\) backslash
+  else if dkGrave.Has(ih.Input)
+    Send dkGrave[ih.Input]
+}
+
+
 ; Configuration :  'AltGr (RAlt)' and 'AltGr (RAlt) + Shift' modifiers
 
 ; Key :  1
@@ -1365,15 +1411,15 @@ compose["?U"] := "{u+1ef0}"  ; (Ự) U with horn and dot below
 
 ; Key :  2
 >!sc003::
-<^>!sc003::Send "{u+2264}"   ; (≤) less-than or equal to
+<^>!sc003::Send "{u+00b2}"   ; (²) superscript 2
 >!+sc003::
-<^>!+sc003::Send "{u+00b2}"  ; (²) superscript 2
+<^>!+sc003::Send "{u+266b}"  ; (♫) beamed eighth notes
 
 ; Key :  3
 >!sc004::
-<^>!sc004::Send "{u+2265}"   ; (≥) greater-than or equal to
+<^>!sc004::Send "{u+00b3}"   ; (³) superscript 3
 >!+sc004::
-<^>!+sc004::Send "{u+00b3}"  ; (³) superscript 3
+<^>!+sc004::Send "{u+00a7}"  ; (§) section sign
 
 ; Key :  4
 >!sc005::
@@ -1391,39 +1437,39 @@ compose["?U"] := "{u+1ef0}"  ; (Ự) U with horn and dot below
 >!sc007::
 <^>!sc007:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00c3}"  ; (Ã) A with tilde
+    Send "{u+00cd}"  ; (Í) I with acute
   else
-    Send "{u+00e3}"  ; (ã) a with tilde
+    Send "{u+00ed}"  ; (í) i with acute
 }
 >!+sc007::
 <^>!+sc007:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00e3}"  ; (ã) a with tilde
+    Send "{u+00ed}"  ; (í) i with acute
   else
-    Send "{u+00c3}"  ; (Ã) A with tilde
+    Send "{u+00cd}"  ; (Í) I with acute
 }
 
 ; Key :  7
 >!sc008::
 <^>!sc008:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00d5}"  ; (Õ) O with tilde
+    Send "{u+00cc}"  ; (Ì) I with grave
   else
-    Send "{u+00f5}"  ; (õ) o with tilde
+    Send "{u+00ec}"  ; (ì) i with grave
 }
 >!+sc008::
 <^>!+sc008:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00f5}"  ; (õ) o with tilde
+    Send "{u+00ec}"  ; (ì) i with grave
   else
-    Send "{u+00d5}"  ; (Õ) O with tilde
+    Send "{u+00cc}"  ; (Ì) I with grave
 }
 
 ; Key :  8
 >!sc009::
 <^>!sc009::Send "{u+201e}"   ; („) double low-9 quotation mark
 >!+sc009::
-<^>!+sc009::Send "{u+00a7}"  ; (§) section sign
+<^>!+sc009::Send "{u+266a}"  ; (♪) eighth note
 
 ; Key :  9
 >!sc00A::
@@ -1767,15 +1813,35 @@ compose["?U"] := "{u+1ef0}"  ; (Ự) U with horn and dot below
 
 ; Key :  ; / : (semicolon / colon)
 >!sc027::
-<^>!sc027::Send "{u+00b0}"   ; (°) degree sign
+<^>!sc027:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00d3}"  ; (Ó) O with acute
+  else
+    Send "{u+00f3}"  ; (ó) o with acute
+}
 >!+sc027::
-<^>!+sc027::Send "{u+00b7}"  ; (·) middle dot
+<^>!+sc027:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00f3}"  ; (ó) o with acute
+  else
+    Send "{u+00d3}"  ; (Ó) O with acute
+}
 
 ; Key :  ' / " (apostrophe / quotation mark)
 >!sc028::
-<^>!sc028::Send "{u+266a}"   ; (♪) eighth note
+<^>!sc028:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00d2}"  ; (Ò) O with grave
+  else
+    Send "{u+00f2}"  ; (ò) o with grave
+}
 >!+sc028::
-<^>!+sc028::Send "{u+266b}"  ; (♫) beamed eighth notes
+<^>!+sc028:: {
+  if GetKeyState("CapsLock", "T")
+    Send "{u+00f2}"  ; (ò) o with grave
+  else
+    Send "{u+00d2}"  ; (Ò) O with grave
+}
 
 ; Key :  \ / | (backslash / vertical line)
 >!sc02B::
@@ -1835,32 +1901,32 @@ compose["?U"] := "{u+1ef0}"  ; (Ự) U with horn and dot below
 >!sc02F::
 <^>!sc02F:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00cd}"  ; (Í) I with acute
+    Send "{u+00c3}"  ; (Ã) A with tilde
   else
-    Send "{u+00ed}"  ; (í) i with acute
+    Send "{u+00e3}"  ; (ã) a with tilde
 }
 >!+sc02F::
 <^>!+sc02F:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00ed}"  ; (í) i with acute
+    Send "{u+00e3}"  ; (ã) a with tilde
   else
-    Send "{u+00cd}"  ; (Í) I with acute
+    Send "{u+00c3}"  ; (Ã) A with tilde
 }
 
 ; Key :  B
 >!sc030::
 <^>!sc030:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00cc}"  ; (Ì) I with grave
+    Send "{u+00d5}"  ; (Õ) O with tilde
   else
-    Send "{u+00ec}"  ; (ì) i with grave
+    Send "{u+00f5}"  ; (õ) o with tilde
 }
 >!+sc030::
 <^>!+sc030:: {
   if GetKeyState("CapsLock", "T")
-    Send "{u+00ec}"  ; (ì) i with grave
+    Send "{u+00f5}"  ; (õ) o with tilde
   else
-    Send "{u+00cc}"  ; (Ì) I with grave
+    Send "{u+00d5}"  ; (Õ) O with tilde
 }
 
 ; Key :  N
@@ -1887,35 +1953,15 @@ compose["?U"] := "{u+1ef0}"  ; (Ự) U with horn and dot below
 
 ; Key :  , / < (comma / less-than sign)
 >!sc033::
-<^>!sc033:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00d3}"  ; (Ó) O with acute
-  else
-    Send "{u+00f3}"  ; (ó) o with acute
-}
+<^>!sc033::Send "{u+00b0}"   ; (°) degree sign
 >!+sc033::
-<^>!+sc033:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00f3}"  ; (ó) o with acute
-  else
-    Send "{u+00d3}"  ; (Ó) O with acute
-}
+<^>!+sc033::Send "{u+2264}"  ; (≤) less-than or equal to
 
 ; Key :  . / > (period / greater-than sign)
 >!sc034::
-<^>!sc034:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00d2}"  ; (Ò) O with grave
-  else
-    Send "{u+00f2}"  ; (ò) o with grave
-}
+<^>!sc034::Send "{u+00b7}"   ; (·) middle dot
 >!+sc034::
-<^>!+sc034:: {
-  if GetKeyState("CapsLock", "T")
-    Send "{u+00f2}"  ; (ò) o with grave
-  else
-    Send "{u+00d2}"  ; (Ò) O with grave
-}
+<^>!+sc034::Send "{u+2265}"  ; (≥) greater-than or equal to
 
 ; Key :  / / ? (slash / question mark)
 >!sc035::
@@ -1928,30 +1974,6 @@ compose["?U"] := "{u+1ef0}"  ; (Ự) U with horn and dot below
 <^>!sc039::Send "{u+00a0}"   ; non-breaking space (NBSP)
 >!+sc039::
 <^>!+sc039::Send "{u+00a0}"  ; non-breaking space (NBSP)
-
-
-; Configuration :  'Grave Accent' (dead key) as alternate key for 'Right Alt'
-
-vkC0:: {
-  ih := InputHook("L1", gEndKeys)
-  ih.Start(), ih.Wait()
-  if (ih.Input == " ")
-    Send "{u+0060}"  ; (`) grave accent
-  else if dkGrave.Has(ih.Input)
-    Send dkGrave[ih.Input]
-}
-
-
-; Configuration :  Optional 'ISO Key' (dead key) as alternate key for 'Right Alt'
-
-vkE2:: {
-  ih := InputHook("L1", gEndKeys)
-  ih.Start(), ih.Wait()
-  if (ih.Input == " ")
-    Send "{u+005c}"  ; (\) backslash
-  else if dkGrave.Has(ih.Input)
-    Send dkGrave[ih.Input]
-}
 
 
 ; Configuration :  Compose Key Selector
