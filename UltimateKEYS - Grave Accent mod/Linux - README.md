@@ -4,7 +4,7 @@ This version features a dead key on the grave accent (upper-left key) and on the
 
 These keys allow the user to enter most of the diacritics and symbols as the AltGr (Right Alt) modifier already does (for the main layout).
 
-## 1. Append the following code to the regular ".XCompose" from UltimateKEYS
+## 1. Add the following code to the top or bottom of the regular ".XCompose" from UltimateKEYS
 
 ```
 # Dead Key :  Grave Accent
@@ -214,4 +214,4 @@ or put the file ".Xmodmap" into the user's home directory (~) to use the layout.
 
 When using the file "custom", activate the layout on your desktop via the keyboard settings by selecting "A user-defined custom Layout".
 
-Note that Xmodmap is no longer supported on GNOME.
+Note that Xmodmap is deprecated, and is no longer supported on GNOME.
