@@ -4,16 +4,16 @@ These modifications allow the AutoHotkey scripts to work on both "US QWERTY" and
 
 ## 1. Change "SendMode" from "Input" to "Event"
 
-**AutoHotkey v1.1&nbsp;: &nbsp;Change `SendMode Input` to&nbsp;:**
-
-```autohotkey
-SendMode Event  ; allows chaining of customized key combinations
-```
-
 **AutoHotkey v2&nbsp;: &nbsp;Change `SendMode "Input"` to&nbsp;:**
 
 ```autohotkey
 SendMode "Event"  ; allows chaining of customized key combinations
+```
+
+**AutoHotkey v1.1&nbsp;: &nbsp;Change `SendMode Input` to&nbsp;:**
+
+```autohotkey
+SendMode Event  ; allows chaining of customized key combinations
 ```
 
 ## 2. Append the following code to the regular script(s)
