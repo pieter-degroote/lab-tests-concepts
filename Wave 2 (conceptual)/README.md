@@ -7,3 +7,7 @@ With this conceptual image, the keyboard layout is more aligned with 'US-Interna
 **Keyboard Layout Image&nbsp;:**
 
 ![UltimateKEYS - Wave 2 - Keyboard Layout Image](UltimateKEYS%20-%20Wave%202%20-%20Keyboard%20Layout%20Image.png)
+
+**MSKLC - Keyboard Layout Image&nbsp;:**
+
+![UltimateKEYS (MSKLC) - Wave 2 - Keyboard Layout Image](UltimateKEYS%20(MSKLC)%20-%20Wave%202%20-%20Keyboard%20Layout%20Image.png)
