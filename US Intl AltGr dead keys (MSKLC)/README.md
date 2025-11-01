@@ -5,6 +5,8 @@ This layout simply moves all dead keys to the AltGr layer, and eliminates some o
 This MSKLC implementation is targeted towards more 'conservative' users (meeting basic needs).  
 Note that it only has minimal differences from 'US-International' to achieve the desired results.
 
+**See also&nbsp;: &nbsp;https://github.com/pieter-degroote/us-intl-altgr-dk** &emsp;[![Release](https://img.shields.io/github/release/pieter-degroote/us-intl-altgr-dk.svg)](https://github.com/pieter-degroote/us-intl-altgr-dk/releases)
+
 ## Keyboard Layout Image
 
 ![US Intl AltGr dead keys - Keyboard Layout Image](US%20Intl%20AltGr%20dead%20keys%20-%20Keyboard%20Layout%20Image.png)
