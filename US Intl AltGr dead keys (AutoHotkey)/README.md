@@ -19,9 +19,9 @@ These AutoHotkey scripts are highly customizable. To work properly, the Windows 
 - Czech Programmers
 - Polish (Programmers)
 - Maori (NZ Aotearoa)
-- Latvian QWERTY
 - Hawaiian
 - Greek Latin
+- Latvian QWERTY (on Windows 11)
 
 **_Note about the standard base US layout&nbsp;:_**
 
