@@ -1,7 +1,10 @@
 # US Intl AltGr dead keys - AutoHotkey v2/v1.1
 
-US Intl AltGr dead keys layout in AHK (overlay scripts for US QWERTY / US-International / ...).  
-These scripts can also be used to learn about the different key remappings and assignments in AutoHotkey v2 and v1.1.
+US Intl AltGr dead keys layout in AHK (overlay scripts for US QWERTY / US-International / ...).
+
+Note that these scripts are based on (instead of UltimateKEYS)&nbsp;:
+
+**https://github.com/pieter-degroote/us-intl-altgr-dk**
 
 ## Keyboard Layout Image
 
@@ -29,5 +32,12 @@ When two or more languages/keyboards are installed on the system, the default 'A
 To avoid this, you can disable the interfering key sequences at&nbsp;:  
 *Settings -&gt; Time &amp; Language -&gt; Language -&gt; Spelling, typing &amp; keyboard settings (on the right) -&gt; Advanced keyboard settings -&gt; Input language hot keys*  
 Please note that on the standard US QWERTY, the sequence 'Left Alt + Shift' also gets mistakenly triggered by 'Right Alt + Shift', resulting in an unexpected keyboard layout change.
+
+## Important Notice - Security
+
+**=&gt; Win/Linux&nbsp;: &nbsp;Only use "BASIC LATIN" characters (codes 32 to 126) for your Windows, Microsoft Live and Linux passwords&nbsp;!**  
+Otherwise, it might be impossible to type any Unicode character higher than "Basic Latin" at the login screen/prompt (due to a different keyboard configuration)&nbsp;!&emsp;**=&gt;&emsp;ACCOUNT LOCKOUT**
+
+**=&gt; Win/Linux&nbsp;: &nbsp;ALWAYS make your system passwords VISIBLE during modification&nbsp;!**
 
 **License&nbsp;: &nbsp;The AutoHotkey scripts are licensed as GNU General Public License Version 3.**
