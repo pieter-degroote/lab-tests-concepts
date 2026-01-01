@@ -8,7 +8,3 @@ This is a set of files for customizing Linux.
 
 `mc.keymap`&nbsp;: &nbsp;Allows to go back to the parent directory via Backspace (for Midnight Commander).  
 =&gt; Usual location&nbsp;: &nbsp;"~/.config/mc/"
-
-`chromium-flags.conf` and `chrome-flags.conf`&nbsp;: &nbsp;Forces the dark mode in the Chromium Browser and Google Chrome.  
-=&gt; Usual location&nbsp;: &nbsp;"~/.config/"  
-=&gt; Note that as for now, most Linux distributions and Desktop Environments should already 'honor' the 'preferred color scheme', making this setting (mostly) redundant.
