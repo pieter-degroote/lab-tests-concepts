@@ -830,8 +830,6 @@ include "%L"
 <Multi_key> <s> <5> : "★"  U2605  # black star
 <Multi_key> <s> <6> : "☆"  U2606  # white star
 <Multi_key> <s> <8> : "♪"  U266A  # eighth note
-<Multi_key> <s> <exclam>   : "‼"  U203C  # double exclamation mark
-<Multi_key> <s> <question> : "⸮"  U2E2E  # reversed question mark
 <Multi_key> <s> <slash>    : "⁞"  U205E  # vertical four dots
 <Multi_key> <s> <bar>      : "¦"  U00A6  # broken bar
 <Multi_key> <s> <bracketleft>  : "⁅"  U2045  # left square bracket with quill
@@ -956,14 +954,19 @@ include "%L"
 <Multi_key> <asterisk> <o>            : "°"  U00B0  # degree sign
 <Multi_key> <o> <asterisk>            : "°"  U00B0  # degree sign
 <Multi_key> <period> <minus>          : "·"  U00B7  # middle dot
+<Multi_key> <period> <asciicircum>    : "·"  U00B7  # middle dot
+<Multi_key> <asciicircum> <period>    : "·"  U00B7  # middle dot
 <Multi_key> <period> <3>              : "…"  U2026  # horizontal ellipsis
 <Multi_key> <period> <period>         : "…"  U2026  # horizontal ellipsis
 <Multi_key> <a> <minus>               : "ª"  U00AA  # feminine ordinal indicator
 <Multi_key> <o> <minus>               : "º"  U00BA  # masculine ordinal indicator
 <Multi_key> <exclam> <exclam>         : "¡"  U00A1  # inverted exclamation mark
 <Multi_key> <question> <question>     : "¿"  U00BF  # inverted question mark
+<Multi_key> <2> <exclam>              : "‼"  U203C  # double exclamation mark
+<Multi_key> <exclam> <2>              : "‼"  U203C  # double exclamation mark
 <Multi_key> <exclam> <question>       : "‽"  U203D  # interrobang
 <Multi_key> <question> <exclam>       : "⸘"  U2E18  # inverted interrobang
+<Multi_key> <r> <question>            : "⸮"  U2E2E  # reversed question mark
 <Multi_key> <o> <c>                   : "©"  U00A9  # copyright sign
 <Multi_key> <parenleft> <c>           : "©"  U00A9  # copyright sign
 <Multi_key> <o> <p>                   : "℗"  U2117  # sound recording copyright
