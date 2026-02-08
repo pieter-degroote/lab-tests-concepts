@@ -6,6 +6,9 @@ Note that these scripts are based on (instead of UltimateKEYS)&nbsp;:
 
 **https://github.com/pieter-degroote/us-intl-altgr-dk**
 
+=&gt; This part is also mirrored at&nbsp;:  
+https://github.com/pieter-degroote/UltimateKEYS-testing/tree/master/us-intl-altgr-dk-ahk
+
 ## Keyboard Layout Image
 
 ![US Intl AltGr dead keys - Keyboard Layout Image](US%20Intl%20AltGr%20dead%20keys%20-%20Keyboard%20Layout%20Image.png)
