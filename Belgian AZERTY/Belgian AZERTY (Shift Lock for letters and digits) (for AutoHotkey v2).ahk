@@ -276,7 +276,7 @@ sc007:: {
   if GetKeyState("CapsLock", "T")
     Send "{u+00a7}"  ; (§) section sign
   else
-    Send "{u+0031}"  ; (6) digit 6
+    Send "{u+0036}"  ; (6) digit 6
 }
 >!sc007::
 <^>!sc007::Send "{u+005e}"  ; (^) circumflex accent
