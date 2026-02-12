@@ -22,7 +22,6 @@ To work properly, the Windows main/base keyboard layout has to be set to US QWER
 - English (India)
 - Czech Programmers
 - Polish (Programmers)
-- Maori (NZ Aotearoa)
 - Hawaiian
 - Greek Latin
 - Igbo
@@ -32,6 +31,7 @@ To work properly, the Windows main/base keyboard layout has to be set to US QWER
 **=&gt; Right Alt assigned to EurKEY (secondary choice)**
 
 - United States (US)
+- Maori (NZ Aotearoa)
 
 **_Note about the standard base US layout&nbsp;:_**
 
