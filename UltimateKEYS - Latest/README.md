@@ -22,7 +22,7 @@ These AutoHotkey scripts are highly customizable editions of UltimateKEYS. To wo
 - Greek Latin
 - Igbo
 - Latvian QWERTY (on Windows 11)
-- or any other layout that is fully based on US QWERTY
+- or any other variant that is fully based on US QWERTY
 
 **=&gt; Right Alt assigned to UltimateKEYS (secondary choice)**
 
