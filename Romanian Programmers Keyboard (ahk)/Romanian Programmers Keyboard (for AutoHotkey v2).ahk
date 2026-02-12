@@ -1,6 +1,6 @@
 #requires AutoHotkey v2
 
-; Romanian Programmers Keyboard (for AutoHotkey v2).ahk - 2025-02-23
+; Romanian Programmers Keyboard (for AutoHotkey v2).ahk
 
 ; GitHub :   https://github.com/pieter-degroote/lab-tests-concepts
 
@@ -9,7 +9,7 @@
 
 ; Configuration :
 
-; Keyboard layout :  US QWERTY
+; Keyboard layout :  US QWERTY / KBDUSX
 
 
 
@@ -335,6 +335,19 @@ dkCedilla["S"] := "{u+015e}"  ; (Ş) S with cedilla
 dkCedilla["t"] := "{u+0163}"  ; (ţ) t with cedilla
 dkCedilla["T"] := "{u+0162}"  ; (Ţ) T with cedilla
 dkCedilla[" "] := "{u+00b8}"  ; (¸) cedilla
+
+
+; Configuration :  US QWERTY re-assignments (KBDUSX)
+
++sc007::Send "{u+005e}"     ; (^) circumflex accent
+
+sc028::Send "{u+0027}"      ; (') apostrophe
++sc028::Send "{u+0022}"     ; (") quotation mark
+
+sc029::Send "{u+0060}"      ; (`) grave accent
++sc029::Send "{u+007e}"     ; (~) tilde
+
+NumpadDot::Send "{u+002e}"  ; (.) period
 
 
 ; Configuration :  'AltGr (RAlt)' and 'AltGr (RAlt) + Shift' modifiers
