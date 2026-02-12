@@ -19,7 +19,6 @@ These AutoHotkey scripts are highly customizable. To work properly, the Windows 
 - English (India)
 - Czech Programmers
 - Polish (Programmers)
-- Maori (NZ Aotearoa)
 - Hawaiian
 - Greek Latin
 - Igbo
@@ -29,6 +28,7 @@ These AutoHotkey scripts are highly customizable. To work properly, the Windows 
 **=&gt; Right Alt assigned to UltimateKEYS (secondary choice)**
 
 - United States (US)
+- Maori (NZ Aotearoa)
 
 **_Note about the standard base US layout&nbsp;:_**
 
