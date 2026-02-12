@@ -11,7 +11,7 @@ These scripts can also be used to learn about the different key remappings and a
 
 These AutoHotkey scripts are highly customizable. To work properly, the Windows main/base keyboard layout has to be set to US QWERTY or a variant&nbsp;:
 
-**=&gt; AltGr assigned to UltimateKEYS**
+**=&gt; AltGr assigned as usual**
 
 - [UltimateKEYS (MSKLC implementation)](https://pieter-degroote.github.io/UltimateKEYS/integration-msklc.html)&emsp;[![Core Release](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS-core.svg?label=core)](https://github.com/pieter-degroote/UltimateKEYS-core/releases)
 - [US QWERTY (Euro)](https://github.com/pieter-degroote/us-qwerty-euro)&emsp;[![GitHub Release](https://img.shields.io/github/release/pieter-degroote/us-qwerty-euro.svg)](https://github.com/pieter-degroote/us-qwerty-euro/releases)
@@ -29,7 +29,7 @@ These AutoHotkey scripts are highly customizable. To work properly, the Windows 
 - Latvian QWERTY (on Windows 11)
 - or any other layout that is fully based on US QWERTY
 
-**=&gt; Right Alt assigned to UltimateKEYS (secondary choice)**
+**=&gt; Right Alt assigned as AltGr (secondary choice)**
 
 - United States (US)
 
