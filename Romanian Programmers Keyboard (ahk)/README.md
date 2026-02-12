@@ -9,14 +9,26 @@ These scripts can also be used to learn about the different key remappings and a
 
 ## Prerequisites
 
-These AutoHotkey scripts are highly customizable. To work properly, the Windows main/base keyboard layout has to be set to either&nbsp;:
+These AutoHotkey scripts are highly customizable. To work properly, the Windows main/base keyboard layout has to be set to US QWERTY or a variant&nbsp;:
 
-- **Hausa (Latin, Nigeria)** =&gt; AltGr assigned to the layout (based on US QWERTY).
-- **Romanian (Programmers)** =&gt; AltGr assigned to the layout (based on US QWERTY).
-- **English (India)** =&gt; AltGr assigned to the layout (based on US QWERTY).
-- **United States (US)** =&gt; Right Alt assigned to layout (secondary choice).
+**=&gt; AltGr assigned to UltimateKEYS**
 
-  (Notes: "Romanian (Programmers)" does not contain some special control codes (Ctrl+\[: u+001b, Ctrl+\\: u+001c, Ctrl+\]: u+001d), but I could not find any specific use cases requiring these mappings. "English (India)" also emits an Indian rupee sign (₹) via Ctrl+Shift+4.)
+- US-International (KBDUSX)
+- Hausa (Latin, Nigeria)
+- Romanian (Programmers)
+- English (India)
+- Czech Programmers
+- Polish (Programmers)
+- Maori (NZ Aotearoa)
+- Hawaiian
+- Greek Latin
+- Igbo
+- Latvian QWERTY (on Windows 11)
+- or any other variant that is fully based on US QWERTY
+
+**=&gt; Right Alt assigned to UltimateKEYS (secondary choice)**
+
+- United States (US)
 
 **_Note about the standard base US layout&nbsp;:_**
 
