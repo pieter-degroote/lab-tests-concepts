@@ -17,7 +17,7 @@ https://github.com/pieter-degroote/UltimateKEYS-testing/tree/master/us-intl-altg
 
 These AutoHotkey scripts are highly customizable. To work properly, the Windows main/base keyboard layout has to be set to US QWERTY or a variant&nbsp;:
 
-**=&gt; AltGr assigned to UltimateKEYS**
+**=&gt; AltGr assigned to the AutoHotkey script**
 
 - US-International (KBDUSX)
 - Hausa (Latin, Nigeria)
@@ -32,7 +32,7 @@ These AutoHotkey scripts are highly customizable. To work properly, the Windows 
 - Latvian QWERTY (on Windows 11)
 - or any other variant that is fully based on US QWERTY
 
-**=&gt; Right Alt assigned to UltimateKEYS (secondary choice)**
+**=&gt; Right Alt assigned to the AutoHotkey script (secondary choice)**
 
 - United States (US)
 
