@@ -15,10 +15,11 @@ https://github.com/pieter-degroote/UltimateKEYS-testing/tree/master/us-intl-altg
 
 ## Prerequisites
 
-These AutoHotkey scripts are highly customizable. To work properly, the Windows main/base keyboard layout has to be set to either&nbsp;:
+These AutoHotkey scripts are highly customizable. To work properly, the Windows main/base keyboard layout has to be set to US QWERTY or a variant&nbsp;:
 
-- United States (US)
-- US-International
+**=&gt; AltGr assigned to UltimateKEYS**
+
+- US-International (KBDUSX)
 - Hausa (Latin, Nigeria)
 - Romanian (Programmers)
 - English (India)
@@ -29,7 +30,11 @@ These AutoHotkey scripts are highly customizable. To work properly, the Windows 
 - Greek Latin
 - Igbo
 - Latvian QWERTY (on Windows 11)
-- or any other layout that is fully based on US QWERTY
+- or any other variant that is fully based on US QWERTY
+
+**=&gt; Right Alt assigned to UltimateKEYS (secondary choice)**
+
+- United States (US)
 
 **_Note about the standard base US layout&nbsp;:_**
 
