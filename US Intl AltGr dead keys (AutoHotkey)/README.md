@@ -27,7 +27,9 @@ These AutoHotkey scripts are highly customizable. To work properly, the Windows 
 - Maori (NZ Aotearoa)
 - Hawaiian
 - Greek Latin
+- Igbo
 - Latvian QWERTY (on Windows 11)
+- or any other layout that is fully based on US QWERTY
 
 **_Note about the standard base US layout&nbsp;:_**
 
