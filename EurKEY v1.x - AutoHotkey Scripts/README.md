@@ -8,7 +8,7 @@ On the other hand, UltimateKEYS generally takes a more dynamic and advanced appr
 
 ## Prerequisites
 
-To work properly, the Windows main/base keyboard layout has to be set to&nbsp;:
+To work properly, the Windows main/base keyboard layout has to be set to US QWERTY or a variant&nbsp;:
 
 **=&gt; AltGr assigned to EurKEY**
 
@@ -16,16 +16,22 @@ To work properly, the Windows main/base keyboard layout has to be set to&nbsp;:
 - [US Intl AltGr dead keys](https://github.com/pieter-degroote/us-intl-altgr-dk)&emsp;[![Core Release](https://img.shields.io/github/release/pieter-degroote/us-intl-altgr-dk.svg)](https://github.com/pieter-degroote/us-intl-altgr-dk/releases)
 - EurKEY Keyboard Layout (MSKLC, any version)
 - [UltimateKEYS (MSKLC implementation)](https://pieter-degroote.github.io/UltimateKEYS/integration-msklc.html)&emsp;[![Core Release](https://img.shields.io/github/release/pieter-degroote/UltimateKEYS-core.svg?label=core)](https://github.com/pieter-degroote/UltimateKEYS-core/releases)
-- Hausa (Latin, Nigeria) (based on US QWERTY, see settings)
-- Romanian (Programmers) (based on US QWERTY, see settings)
-- English (India) (based on US QWERTY, see settings)
-- or any other layout that is fully based on US QWERTY
+- US-International (KBDUSX)
+- Hausa (Latin, Nigeria)
+- Romanian (Programmers)
+- English (India)
+- Czech Programmers
+- Polish (Programmers)
+- Maori (NZ Aotearoa)
+- Hawaiian
+- Greek Latin
+- Igbo
+- Latvian QWERTY (on Windows 11)
+- or any other variant that is fully based on US QWERTY
 
 **=&gt; Right Alt assigned to EurKEY (secondary choice)**
 
 - United States (US)
-
-Notes&nbsp;: &nbsp;"Romanian (Programmers)" does not contain some special control codes (Ctrl+\[: u+001b, Ctrl+\\: u+001c, Ctrl+\]: u+001d), but I could not find any specific use cases requiring these mappings. "English (India)" also emits an Indian rupee sign (₹) via Ctrl+Shift+4.
 
 **_Note about the standard base US layout&nbsp;:_**
 
