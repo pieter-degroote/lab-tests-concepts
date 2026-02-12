@@ -9,7 +9,7 @@
 
 ; Configuration :
 
-; Keyboard layout :  US QWERTY
+; Keyboard layout :  US QWERTY / KBDUSX
 
 
 
