@@ -17,7 +17,6 @@ These AutoHotkey scripts are highly customizable editions of UltimateKEYS. To wo
 - English (India)
 - Czech Programmers
 - Polish (Programmers)
-- Maori (NZ Aotearoa)
 - Hawaiian
 - Greek Latin
 - Igbo
@@ -27,6 +26,7 @@ These AutoHotkey scripts are highly customizable editions of UltimateKEYS. To wo
 **=&gt; Right Alt assigned to UltimateKEYS (secondary choice)**
 
 - United States (US)
+- Maori (NZ Aotearoa)
 
 **_Note about the standard base US layout&nbsp;:_**
 
