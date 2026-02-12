@@ -1,8 +1,6 @@
 #requires AutoHotkey v2
 
-; Belgian AZERTY (Shift Lock for letters and digits) (for AutoHotkey v2).ahk - 2025-02-10
-
-; Website :  https://pieter-degroote.github.io/UltimateKEYS/
+; Belgian AZERTY (Shift Lock for letters and digits) (for AutoHotkey v2).ahk
 
 ; GitHub :   https://github.com/pieter-degroote/lab-tests-concepts
 
@@ -11,7 +9,7 @@
 
 ; Configuration :
 
-; Keyboard layout (on Windows) :  US QWERTY
+; Keyboard layout (on Windows) :  US QWERTY / KBDUSX
 
 
 
