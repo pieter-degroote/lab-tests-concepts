@@ -22,7 +22,7 @@ SendMode Event  ; allows chaining of customized key combinations
 **AutoHotkey v2&nbsp;:**
 
 ```autohotkey
-; Configuration :  US QWERTY assignments
+; Configuration :  US QWERTY re-assignments (KBDUSX)
 
 +sc007::Send "{u+005e}"     ; (^) circumflex accent
 
@@ -38,7 +38,7 @@ NumpadDot::Send "{u+002e}"  ; (.) period
 **AutoHotkey v1.1&nbsp;:**
 
 ```autohotkey
-; Configuration :  US QWERTY assignments
+; Configuration :  US QWERTY re-assignments (KBDUSX)
 
 +sc007::Send {u+005e}     ; (^) circumflex accent
 
