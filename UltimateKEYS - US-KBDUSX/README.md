@@ -1,6 +1,7 @@
 # UltimateKEYS - US-KBDUSX (AutoHotkey v2/v1.1)
 
-These modifications allow the AutoHotkey scripts to work on both "US QWERTY" and "US-International" as base layouts.
+These modifications allow the AutoHotkey scripts to work on both "US QWERTY" and "US-International" as base layouts, as well as others.  
+Note that the period (.) is explicitly assigned to the 'numpad dot' to make the scripts even better compatible with more US-based layouts.
 
 ## 1. Change "SendMode" from "Input" to "Event"
 
