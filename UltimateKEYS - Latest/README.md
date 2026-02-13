@@ -20,6 +20,7 @@ These AutoHotkey scripts are highly customizable editions of UltimateKEYS. To wo
 - Hawaiian
 - Greek Latin
 - Igbo
+- Sesotho sa Leboa / Setswana
 - Latvian QWERTY (on Windows 11)
 - or any other variant that is fully based on US QWERTY
 
