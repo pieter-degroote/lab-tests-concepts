@@ -11,7 +11,7 @@ These scripts can also be used to learn about the different key remappings and a
 
 These AutoHotkey scripts are highly customizable. To work properly, the Windows main/base keyboard layout has to be set to US QWERTY or a variant&nbsp;:
 
-**=&gt; AltGr assigned as usual**
+**=&gt; AltGr assigned to the AutoHotkey script**
 
 - US-International (KBDUSX)
 - Hausa (Latin, Nigeria)
@@ -26,7 +26,7 @@ These AutoHotkey scripts are highly customizable. To work properly, the Windows 
 - Latvian QWERTY (on Windows 11)
 - or any other variant that is fully based on US QWERTY
 
-**=&gt; Right Alt assigned as AltGr (secondary choice)**
+**=&gt; Right Alt assigned to the AutoHotkey script (secondary choice)**
 
 - United States (US)
 - Maori (NZ Aotearoa)
