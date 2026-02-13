@@ -11,7 +11,7 @@ These scripts can also be used to learn about the different key remappings and a
 
 These AutoHotkey scripts are highly customizable. To work properly, the Windows main/base keyboard layout has to be set to US QWERTY or a variant&nbsp;:
 
-**=&gt; AltGr assigned to UltimateKEYS**
+**=&gt; AltGr assigned as usual**
 
 - US-International (KBDUSX)
 - Hausa (Latin, Nigeria)
@@ -22,10 +22,11 @@ These AutoHotkey scripts are highly customizable. To work properly, the Windows 
 - Hawaiian
 - Greek Latin
 - Igbo
+- Sesotho sa Leboa / Setswana
 - Latvian QWERTY (on Windows 11)
 - or any other variant that is fully based on US QWERTY
 
-**=&gt; Right Alt assigned to UltimateKEYS (secondary choice)**
+**=&gt; Right Alt assigned as AltGr (secondary choice)**
 
 - United States (US)
 - Maori (NZ Aotearoa)
@@ -34,5 +35,6 @@ These AutoHotkey scripts are highly customizable. To work properly, the Windows 
 
 When two or more languages/keyboards are installed on the system, the default 'Alt + Shift' sequence will interfere with the AHK scripts.  
 To avoid this, you can disable the interfering key sequences at&nbsp;:  
-*Settings -&gt; Time &amp; Language -&gt; Language -&gt; Spelling, typing &amp; keyboard settings (on the right) -&gt; Advanced keyboard settings -&gt; Input language hot keys*  
+Win 11&nbsp;: &nbsp;*Settings -&gt; Time &amp; Language -&gt; Typing -&gt; Advanced keyboard settings -&gt; Input language hot keys*  
+Win 10&nbsp;: &nbsp;*Settings -&gt; Time &amp; Language -&gt; Language -&gt; Spelling, typing &amp; keyboard settings (on the right) -&gt; Advanced keyboard settings -&gt; Input language hot keys*  
 Please note that on the standard US QWERTY, the sequence 'Left Alt + Shift' also gets mistakenly triggered by 'Right Alt + Shift', resulting in an unexpected keyboard layout change.
