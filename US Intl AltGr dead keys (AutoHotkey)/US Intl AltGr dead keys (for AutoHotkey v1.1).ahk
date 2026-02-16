@@ -2,7 +2,7 @@
 
 ; US Intl AltGr dead keys (for AutoHotkey v1.1).ahk
 
-; GitHub :   https://github.com/pieter-degroote/UltimateKEYS-testing
+; GitHub :   https://github.com/pieter-degroote/UltimateKEYS
 
 ; License :  GNU General Public License Version 3
 
