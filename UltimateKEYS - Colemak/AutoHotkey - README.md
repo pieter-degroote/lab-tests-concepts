@@ -2,15 +2,15 @@
 
 This modification features a Colemak variant of UltimateKEYS (for AutoHotkey v2/v1.1).
 
-## 1. Change "SendMode" from "Input" to "Event"
+## 1. Verify that "SendMode" is set to "Event"
 
-**AutoHotkey v2&nbsp;: &nbsp;Change `SendMode "Input"` to&nbsp;:**
+**AutoHotkey v2&nbsp;:**
 
 ```autohotkey
 SendMode "Event"  ; allows chaining of customized key combinations
 ```
 
-**AutoHotkey v1.1&nbsp;: &nbsp;Change `SendMode Input` to&nbsp;:**
+**AutoHotkey v1.1&nbsp;:**
 
 ```autohotkey
 SendMode Event  ; allows chaining of customized key combinations
