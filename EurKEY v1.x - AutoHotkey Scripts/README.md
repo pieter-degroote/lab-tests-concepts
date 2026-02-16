@@ -1,4 +1,4 @@
-# EurKEY - AutoHotkey Scripts for v2/v1.1 (testing)
+# EurKEY - Scripts for AutoHotkey v2/v1.1 (testing)
 
 This folder contains the unofficial AHK scripts for EurKEY v1.1 to v1.3.  
 The EurKEY scripts are simply targeted towards more 'conservative' users (meeting their basic needs).  
