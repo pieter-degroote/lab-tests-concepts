@@ -18,7 +18,7 @@ ListLines False   ; omits recently executed lines from history (for privacy and 
 
 SendMode "Event"  ; allows chaining of customized key combinations
 
-global gEndKeys := "{bs}{esc}"  ; ends dead key input on Backspace or Escape
+global gEndKeys := "{bs}{del}{esc}"  ; ends dead key input on Backspace, Delete or Escape
 
 
 ; Compose Key Sequences (declaration)
