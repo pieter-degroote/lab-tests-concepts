@@ -1,6 +1,6 @@
 include "%L"
 
-# UltimateKEYS Compose Key Sequences - Grave Accent mod - 2025-09-04
+# UltimateKEYS Compose Key Sequences - Grave Accent mod
 
 # Website :  https://pieter-degroote.github.io/UltimateKEYS/
 
@@ -557,6 +557,8 @@ include "%L"
 <Multi_key> <t> <S> : "Ȿ"  U2C7E  # S with swash tail
 <Multi_key> <t> <z> : "ɀ"  U0240  # z with swash tail
 <Multi_key> <t> <Z> : "Ɀ"  U2C7F  # Z with swash tail
+<Multi_key> <t> <7>         : "⁊"  U204A  # Tironian sign et
+<Multi_key> <t> <ampersand> : "⹒"  U2E52  # Tironian sign capital et
 
 
 # Currency Symbols
@@ -828,17 +830,15 @@ include "%L"
 <Multi_key> <s> <5> : "★"  U2605  # black star
 <Multi_key> <s> <6> : "☆"  U2606  # white star
 <Multi_key> <s> <8> : "♪"  U266A  # eighth note
-<Multi_key> <s> <exclam>   : "‼"  U203C  # double exclamation mark
-<Multi_key> <s> <question> : "⸮"  U2E2E  # reversed question mark
-<Multi_key> <s> <slash>    : "⁞"  U205E  # vertical four dots
-<Multi_key> <s> <bar>      : "¦"  U00A6  # broken bar
+<Multi_key> <s> <bar>          : "¦"  U00A6  # broken bar
+<Multi_key> <s> <exclam>       : "⁞"  U205E  # vertical four dots
 <Multi_key> <s> <bracketleft>  : "⁅"  U2045  # left square bracket with quill
 <Multi_key> <s> <bracketright> : "⁆"  U2046  # right square bracket with quill
 
 
 # Math Symbols
 
-<Multi_key> <m> <a> : "∀"  U2200  # for all
+<Multi_key> <m> <a> : "∠"  U2220  # angle symbol
 <Multi_key> <m> <A> : "∀"  U2200  # for all
 <Multi_key> <m> <b> : "⊆"  U2286  # subset of or equal to
 <Multi_key> <m> <B> : "⊇"  U2287  # superset of or equal to
@@ -870,6 +870,7 @@ include "%L"
 <Multi_key> <m> <p> : "∂"  U2202  # partial differential
 <Multi_key> <m> <P> : "ℙ"  U2119  # prime numbers
 <Multi_key> <m> <Q> : "ℚ"  U211A  # rational numbers
+<Multi_key> <m> <r> : "∟"  U221F  # right angle
 <Multi_key> <m> <R> : "ℝ"  U211D  # real numbers
 <Multi_key> <m> <s> : "∩"  U2229  # set intersection
 <Multi_key> <m> <S> : "∫"  U222B  # integral symbol
@@ -878,23 +879,25 @@ include "%L"
 <Multi_key> <m> <u> : "∪"  U222A  # set union
 <Multi_key> <m> <U> : "∖"  U2216  # set minus
 <Multi_key> <m> <w> : "℘"  U2118  # Weierstrass elliptic function
+<Multi_key> <m> <x> : "⋅"  U22C5  # dot operator
+<Multi_key> <m> <X> : "∙"  U2219  # bullet operator
 <Multi_key> <m> <z> : "↯"  U21AF  # downwards zigzag arrow
 <Multi_key> <m> <Z> : "ℤ"  U2124  # whole numbers
 <Multi_key> <m> <2> : "∶"  U2236  # ratio symbol
 <Multi_key> <m> <4> : "∷"  U2237  # proportion sign
-<Multi_key> <m> <6> : "∠"  U2220  # angle symbol
 <Multi_key> <m> <9> : "∟"  U221F  # right angle
 <Multi_key> <m> <0> : "∡"  U2221  # measured angle
-<Multi_key> <m> <period>    : "⋅"  U22C5  # dot operator
-<Multi_key> <m> <equal>     : "≝"  U225D  # equal to by definition
-<Multi_key> <m> <plus>      : "⊕"  U2295  # circled plus
-<Multi_key> <m> <minus>     : "⊖"  U2296  # circled minus
-<Multi_key> <m> <asterisk>  : "⊗"  U2297  # circled times
-<Multi_key> <m> <slash>     : "⊘"  U2298  # circled division slash
-<Multi_key> <m> <semicolon> : "∵"  U2235  # because sign
-<Multi_key> <m> <colon>     : "∴"  U2234  # therefore sign
-<Multi_key> <m> <ampersand> : "∧"  U2227  # logical and
-<Multi_key> <m> <bar>       : "∨"  U2228  # logical or
+<Multi_key> <m> <exclam>      : "¬"  U00AC  # not sign
+<Multi_key> <m> <6>           : "∧"  U2227  # logical and
+<Multi_key> <m> <asciicircum> : "∨"  U2228  # logical or
+<Multi_key> <m> <colon>       : "∴"  U2234  # therefore sign
+<Multi_key> <m> <semicolon>   : "∵"  U2235  # because sign
+<Multi_key> <m> <equal>       : "≝"  U225D  # equal to by definition
+<Multi_key> <m> <plus>        : "⊕"  U2295  # circled plus
+<Multi_key> <m> <minus>       : "⊖"  U2296  # circled minus
+<Multi_key> <m> <asterisk>    : "⊗"  U2297  # circled times
+<Multi_key> <m> <slash>       : "⊘"  U2298  # circled division slash
+<Multi_key> <m> <period>      : "⊙"  U2299  # circled dot operator
 
 
 # Special Letters/Characters
@@ -927,6 +930,7 @@ include "%L"
 <Multi_key> <m> <i> : "µ"  U00B5  # micro sign
 <Multi_key> <n> <o> : "№"  U2116  # numero sign
 <Multi_key> <N> <o> : "№"  U2116  # numero sign
+<Multi_key> <o> <o> : "°"  U00B0  # degree sign
 <Multi_key> <o> <x> : "¤"  U00A4  # currency sign
 <Multi_key> <p> <p> : "¶"  U00B6  # pilcrow sign
 <Multi_key> <P> <P> : "¶"  U00B6  # pilcrow sign
@@ -949,9 +953,8 @@ include "%L"
 <Multi_key> <apostrophe> <4>          : "⁗"  U2057  # quadruple prime
 <Multi_key> <asterisk> <asterisk>     : "×"  U00D7  # multiplication sign
 <Multi_key> <slash> <slash>           : "÷"  U00F7  # division sign
-<Multi_key> <asterisk> <o>            : "°"  U00B0  # degree sign
-<Multi_key> <o> <asterisk>            : "°"  U00B0  # degree sign
 <Multi_key> <period> <minus>          : "·"  U00B7  # middle dot
+<Multi_key> <period> <asciicircum>    : "·"  U00B7  # middle dot
 <Multi_key> <period> <3>              : "…"  U2026  # horizontal ellipsis
 <Multi_key> <period> <period>         : "…"  U2026  # horizontal ellipsis
 <Multi_key> <a> <minus>               : "ª"  U00AA  # feminine ordinal indicator
@@ -960,6 +963,7 @@ include "%L"
 <Multi_key> <question> <question>     : "¿"  U00BF  # inverted question mark
 <Multi_key> <exclam> <question>       : "‽"  U203D  # interrobang
 <Multi_key> <question> <exclam>       : "⸘"  U2E18  # inverted interrobang
+<Multi_key> <r> <question>            : "⸮"  U2E2E  # reversed question mark
 <Multi_key> <o> <c>                   : "©"  U00A9  # copyright sign
 <Multi_key> <parenleft> <c>           : "©"  U00A9  # copyright sign
 <Multi_key> <o> <p>                   : "℗"  U2117  # sound recording copyright
@@ -984,14 +988,7 @@ include "%L"
 <Multi_key> <semicolon> <h>           : "⁃"  U2043  # hyphen bullet
 <Multi_key> <semicolon> <t>           : "‣"  U2023  # triangular bullet
 <Multi_key> <semicolon> <semicolon>   : "•"  U2022  # bullet
-<Multi_key> <colon> <parenleft>       : "☹"  U2639  # white frowning face
-<Multi_key> <colon> <parenright>      : "☺"  U263A  # white smiling face
-<Multi_key> <semicolon> <parenright>  : "☻"  U263B  # black smiling face
 <Multi_key> <less> <3>                : "♥"  U2665  # black heart suit
-<Multi_key> <bracketleft> <bracketright> : "☐"  U2610  # ballot box
-<Multi_key> <bracketleft> <v>            : "☑"  U2611  # ballot box with check
-<Multi_key> <bracketleft> <y>            : "☑"  U2611  # ballot box with check
-<Multi_key> <bracketleft> <x>            : "☒"  U2612  # ballot box with x
 
 
 # Vulgar Fractions
@@ -1181,84 +1178,60 @@ include "%L"
 
 # Hook Above
 
-<Multi_key> <less> <a> : "ả"  U1EA3  # a with hook above
-<Multi_key> <less> <A> : "Ả"  U1EA2  # A with hook above
-<Multi_key> <less> <e> : "ẻ"  U1EBB  # e with hook above
-<Multi_key> <less> <E> : "Ẻ"  U1EBA  # E with hook above
-<Multi_key> <less> <i> : "ỉ"  U1EC9  # i with hook above
-<Multi_key> <less> <I> : "Ỉ"  U1EC8  # I with hook above
-<Multi_key> <less> <o> : "ỏ"  U1ECF  # o with hook above
-<Multi_key> <less> <O> : "Ỏ"  U1ECE  # O with hook above
-<Multi_key> <less> <u> : "ủ"  U1EE7  # u with hook above
-<Multi_key> <less> <U> : "Ủ"  U1EE6  # U with hook above
-<Multi_key> <less> <y> : "ỷ"  U1EF7  # y with hook above
-<Multi_key> <less> <Y> : "Ỷ"  U1EF6  # Y with hook above
+<Multi_key> <question> <a> : "ả"  U1EA3  # a with hook above
+<Multi_key> <question> <A> : "Ả"  U1EA2  # A with hook above
+<Multi_key> <question> <e> : "ẻ"  U1EBB  # e with hook above
+<Multi_key> <question> <E> : "Ẻ"  U1EBA  # E with hook above
+<Multi_key> <question> <i> : "ỉ"  U1EC9  # i with hook above
+<Multi_key> <question> <I> : "Ỉ"  U1EC8  # I with hook above
+<Multi_key> <question> <o> : "ỏ"  U1ECF  # o with hook above
+<Multi_key> <question> <O> : "Ỏ"  U1ECE  # O with hook above
+<Multi_key> <question> <u> : "ủ"  U1EE7  # u with hook above
+<Multi_key> <question> <U> : "Ủ"  U1EE6  # U with hook above
+<Multi_key> <question> <y> : "ỷ"  U1EF7  # y with hook above
+<Multi_key> <question> <Y> : "Ỷ"  U1EF6  # Y with hook above
 
 
 # Dot Below
 
-<Multi_key> <greater> <a> : "ạ"  U1EA1  # a with dot below
-<Multi_key> <greater> <A> : "Ạ"  U1EA0  # A with dot below
-<Multi_key> <greater> <b> : "ḅ"  U1E05  # b with dot below
-<Multi_key> <greater> <B> : "Ḅ"  U1E04  # B with dot below
-<Multi_key> <greater> <d> : "ḍ"  U1E0D  # d with dot below
-<Multi_key> <greater> <D> : "Ḍ"  U1E0C  # D with dot below
-<Multi_key> <greater> <e> : "ẹ"  U1EB9  # e with dot below
-<Multi_key> <greater> <E> : "Ẹ"  U1EB8  # E with dot below
-<Multi_key> <greater> <h> : "ḥ"  U1E25  # h with dot below
-<Multi_key> <greater> <H> : "Ḥ"  U1E24  # H with dot below
-<Multi_key> <greater> <i> : "ị"  U1ECB  # i with dot below
-<Multi_key> <greater> <I> : "Ị"  U1ECA  # I with dot below
-<Multi_key> <greater> <k> : "ḳ"  U1E33  # k with dot below
-<Multi_key> <greater> <K> : "Ḳ"  U1E32  # K with dot below
-<Multi_key> <greater> <l> : "ḷ"  U1E37  # l with dot below
-<Multi_key> <greater> <L> : "Ḷ"  U1E36  # L with dot below
-<Multi_key> <greater> <m> : "ṃ"  U1E43  # m with dot below
-<Multi_key> <greater> <M> : "Ṃ"  U1E42  # M with dot below
-<Multi_key> <greater> <n> : "ṇ"  U1E47  # n with dot below
-<Multi_key> <greater> <N> : "Ṇ"  U1E46  # N with dot below
-<Multi_key> <greater> <o> : "ọ"  U1ECD  # o with dot below
-<Multi_key> <greater> <O> : "Ọ"  U1ECC  # O with dot below
-<Multi_key> <greater> <r> : "ṛ"  U1E5B  # r with dot below
-<Multi_key> <greater> <R> : "Ṛ"  U1E5A  # R with dot below
-<Multi_key> <greater> <s> : "ṣ"  U1E63  # s with dot below
-<Multi_key> <greater> <S> : "Ṣ"  U1E62  # S with dot below
-<Multi_key> <greater> <t> : "ṭ"  U1E6D  # t with dot below
-<Multi_key> <greater> <T> : "Ṭ"  U1E6C  # T with dot below
-<Multi_key> <greater> <u> : "ụ"  U1EE5  # u with dot below
-<Multi_key> <greater> <U> : "Ụ"  U1EE4  # U with dot below
-<Multi_key> <greater> <v> : "ṿ"  U1E7F  # v with dot below
-<Multi_key> <greater> <V> : "Ṿ"  U1E7E  # V with dot below
-<Multi_key> <greater> <w> : "ẉ"  U1E89  # w with dot below
-<Multi_key> <greater> <W> : "Ẉ"  U1E88  # W with dot below
-<Multi_key> <greater> <y> : "ỵ"  U1EF5  # y with dot below
-<Multi_key> <greater> <Y> : "Ỵ"  U1EF4  # Y with dot below
-<Multi_key> <greater> <z> : "ẓ"  U1E93  # z with dot below
-<Multi_key> <greater> <Z> : "Ẓ"  U1E92  # Z with dot below
-
-
-# Accented Letters with Dot Below
-
-<Multi_key> <question> <a> : "ậ"  U1EAD  # a with circumflex and dot below
-<Multi_key> <question> <A> : "Ậ"  U1EAC  # A with circumflex and dot below
-<Multi_key> <question> <e> : "ệ"  U1EC7  # e with circumflex and dot below
-<Multi_key> <question> <E> : "Ệ"  U1EC6  # E with circumflex and dot below
-<Multi_key> <question> <f> : "ḝ"  U1E1D  # e with cedilla and breve
-<Multi_key> <question> <F> : "Ḝ"  U1E1C  # E with cedilla and breve
-<Multi_key> <question> <l> : "ḹ"  U1E39  # l with dot below and macron
-<Multi_key> <question> <L> : "Ḹ"  U1E38  # L with dot below and macron
-<Multi_key> <question> <o> : "ộ"  U1ED9  # o with circumflex and dot below
-<Multi_key> <question> <O> : "Ộ"  U1ED8  # O with circumflex and dot below
-<Multi_key> <question> <p> : "ợ"  U1EE3  # o with horn and dot below
-<Multi_key> <question> <P> : "Ợ"  U1EE2  # O with horn and dot below
-<Multi_key> <question> <q> : "ặ"  U1EB7  # a with breve and dot below
-<Multi_key> <question> <Q> : "Ặ"  U1EB6  # A with breve and dot below
-<Multi_key> <question> <r> : "ṝ"  U1E5D  # r with dot below and macron
-<Multi_key> <question> <R> : "Ṝ"  U1E5C  # R with dot below and macron
-<Multi_key> <question> <s> : "ṩ"  U1E69  # s with dot below and dot above
-<Multi_key> <question> <S> : "Ṩ"  U1E68  # S with dot below and dot above
-<Multi_key> <question> <u> : "ự"  U1EF1  # u with horn and dot below
-<Multi_key> <question> <U> : "Ự"  U1EF0  # U with horn and dot below
+<Multi_key> <exclam> <a> : "ạ"  U1EA1  # a with dot below
+<Multi_key> <exclam> <A> : "Ạ"  U1EA0  # A with dot below
+<Multi_key> <exclam> <b> : "ḅ"  U1E05  # b with dot below
+<Multi_key> <exclam> <B> : "Ḅ"  U1E04  # B with dot below
+<Multi_key> <exclam> <d> : "ḍ"  U1E0D  # d with dot below
+<Multi_key> <exclam> <D> : "Ḍ"  U1E0C  # D with dot below
+<Multi_key> <exclam> <e> : "ẹ"  U1EB9  # e with dot below
+<Multi_key> <exclam> <E> : "Ẹ"  U1EB8  # E with dot below
+<Multi_key> <exclam> <h> : "ḥ"  U1E25  # h with dot below
+<Multi_key> <exclam> <H> : "Ḥ"  U1E24  # H with dot below
+<Multi_key> <exclam> <i> : "ị"  U1ECB  # i with dot below
+<Multi_key> <exclam> <I> : "Ị"  U1ECA  # I with dot below
+<Multi_key> <exclam> <k> : "ḳ"  U1E33  # k with dot below
+<Multi_key> <exclam> <K> : "Ḳ"  U1E32  # K with dot below
+<Multi_key> <exclam> <l> : "ḷ"  U1E37  # l with dot below
+<Multi_key> <exclam> <L> : "Ḷ"  U1E36  # L with dot below
+<Multi_key> <exclam> <m> : "ṃ"  U1E43  # m with dot below
+<Multi_key> <exclam> <M> : "Ṃ"  U1E42  # M with dot below
+<Multi_key> <exclam> <n> : "ṇ"  U1E47  # n with dot below
+<Multi_key> <exclam> <N> : "Ṇ"  U1E46  # N with dot below
+<Multi_key> <exclam> <o> : "ọ"  U1ECD  # o with dot below
+<Multi_key> <exclam> <O> : "Ọ"  U1ECC  # O with dot below
+<Multi_key> <exclam> <r> : "ṛ"  U1E5B  # r with dot below
+<Multi_key> <exclam> <R> : "Ṛ"  U1E5A  # R with dot below
+<Multi_key> <exclam> <s> : "ṣ"  U1E63  # s with dot below
+<Multi_key> <exclam> <S> : "Ṣ"  U1E62  # S with dot below
+<Multi_key> <exclam> <t> : "ṭ"  U1E6D  # t with dot below
+<Multi_key> <exclam> <T> : "Ṭ"  U1E6C  # T with dot below
+<Multi_key> <exclam> <u> : "ụ"  U1EE5  # u with dot below
+<Multi_key> <exclam> <U> : "Ụ"  U1EE4  # U with dot below
+<Multi_key> <exclam> <v> : "ṿ"  U1E7F  # v with dot below
+<Multi_key> <exclam> <V> : "Ṿ"  U1E7E  # V with dot below
+<Multi_key> <exclam> <w> : "ẉ"  U1E89  # w with dot below
+<Multi_key> <exclam> <W> : "Ẉ"  U1E88  # W with dot below
+<Multi_key> <exclam> <y> : "ỵ"  U1EF5  # y with dot below
+<Multi_key> <exclam> <Y> : "Ỵ"  U1EF4  # Y with dot below
+<Multi_key> <exclam> <z> : "ẓ"  U1E93  # z with dot below
+<Multi_key> <exclam> <Z> : "Ẓ"  U1E92  # Z with dot below
 
 
 # Dead Key :  Grave Accent

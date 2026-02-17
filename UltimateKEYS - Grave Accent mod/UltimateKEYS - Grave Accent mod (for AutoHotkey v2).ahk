@@ -1,10 +1,8 @@
 #requires AutoHotkey v2
 
-; UltimateKEYS - Grave Accent mod (for AutoHotkey v2).ahk - 2025-09-04
+; UltimateKEYS - Grave Accent mod (for AutoHotkey v2).ahk
 
-; Website :  https://pieter-degroote.github.io/UltimateKEYS/
-
-; GitHub :   https://github.com/pieter-degroote/UltimateKEYS
+; GitHub :   https://github.com/pieter-degroote/UltimateKEYS-testing
 
 ; License :  GNU General Public License Version 3
 
@@ -20,7 +18,7 @@ ListLines False   ; omits recently executed lines from history (for privacy and 
 
 SendMode "Input"  ; optimizes for faster and more reliable input
 
-global gEndKeys := "{bs}{esc}"  ; ends dead key input on Backspace or Escape
+global gEndKeys := "{bs}{del}{esc}"  ; ends dead key input on Backspace, Delete or Escape
 
 
 ; Compose Key Sequences (declaration)
@@ -576,6 +574,8 @@ compose["ts"] := "{u+023f}"  ; (ȿ) s with swash tail
 compose["tS"] := "{u+2c7e}"  ; (Ȿ) S with swash tail
 compose["tz"] := "{u+0240}"  ; (ɀ) z with swash tail
 compose["tZ"] := "{u+2c7f}"  ; (Ɀ) Z with swash tail
+compose["t7"] := "{u+204a}"  ; (⁊) Tironian sign et
+compose["t&"] := "{u+2e52}"  ; (⹒) Tironian sign capital et
 
 
 ; Compose :  Currency Symbols
@@ -847,17 +847,15 @@ compose["s4"] := "{u+203b}"  ; (※) reference mark
 compose["s5"] := "{u+2605}"  ; (★) black star
 compose["s6"] := "{u+2606}"  ; (☆) white star
 compose["s8"] := "{u+266a}"  ; (♪) eighth note
-compose["s!"] := "{u+203c}"  ; (‼) double exclamation mark
-compose["s?"] := "{u+2e2e}"  ; (⸮) reversed question mark
-compose["s/"] := "{u+205e}"  ; (⁞) vertical four dots
 compose["s|"] := "{u+00a6}"  ; (¦) broken bar
+compose["s!"] := "{u+205e}"  ; (⁞) vertical four dots
 compose["s["] := "{u+2045}"  ; (⁅) left square bracket with quill
 compose["s]"] := "{u+2046}"  ; (⁆) right square bracket with quill
 
 
 ; Compose :  Math Symbols
 
-compose["ma"] := "{u+2200}"  ; (∀) for all
+compose["ma"] := "{u+2220}"  ; (∠) angle symbol
 compose["mA"] := "{u+2200}"  ; (∀) for all
 compose["mb"] := "{u+2286}"  ; (⊆) subset of or equal to
 compose["mB"] := "{u+2287}"  ; (⊇) superset of or equal to
@@ -889,6 +887,7 @@ compose["mO"] := "{u+2205}"  ; (∅) empty set
 compose["mp"] := "{u+2202}"  ; (∂) partial differential
 compose["mP"] := "{u+2119}"  ; (ℙ) prime numbers
 compose["mQ"] := "{u+211a}"  ; (ℚ) rational numbers
+compose["mr"] := "{u+221f}"  ; (∟) right angle
 compose["mR"] := "{u+211d}"  ; (ℝ) real numbers
 compose["ms"] := "{u+2229}"  ; (∩) set intersection
 compose["mS"] := "{u+222b}"  ; (∫) integral symbol
@@ -897,23 +896,25 @@ compose["mT"] := "{u+2262}"  ; (≢) not identical to
 compose["mu"] := "{u+222a}"  ; (∪) set union
 compose["mU"] := "{u+2216}"  ; (∖) set minus
 compose["mw"] := "{u+2118}"  ; (℘) Weierstrass elliptic function
+compose["mx"] := "{u+22c5}"  ; (⋅) dot operator
+compose["mX"] := "{u+2219}"  ; (∙) bullet operator
 compose["mz"] := "{u+21af}"  ; (↯) downwards zigzag arrow
 compose["mZ"] := "{u+2124}"  ; (ℤ) whole numbers
 compose["m2"] := "{u+2236}"  ; (∶) ratio symbol
 compose["m4"] := "{u+2237}"  ; (∷) proportion sign
-compose["m6"] := "{u+2220}"  ; (∠) angle symbol
 compose["m9"] := "{u+221f}"  ; (∟) right angle
 compose["m0"] := "{u+2221}"  ; (∡) measured angle
-compose["m."] := "{u+22c5}"  ; (⋅) dot operator
+compose["m!"] := "{u+00ac}"  ; (¬) not sign
+compose["m6"] := "{u+2227}"  ; (∧) logical and
+compose["m^"] := "{u+2228}"  ; (∨) logical or
+compose["m:"] := "{u+2234}"  ; (∴) therefore sign
+compose["m;"] := "{u+2235}"  ; (∵) because sign
 compose["m="] := "{u+225d}"  ; (≝) equal to by definition
 compose["m+"] := "{u+2295}"  ; (⊕) circled plus
 compose["m-"] := "{u+2296}"  ; (⊖) circled minus
 compose["m*"] := "{u+2297}"  ; (⊗) circled times
 compose["m/"] := "{u+2298}"  ; (⊘) circled division slash
-compose["m;"] := "{u+2235}"  ; (∵) because sign
-compose["m:"] := "{u+2234}"  ; (∴) therefore sign
-compose["m&"] := "{u+2227}"  ; (∧) logical and
-compose["m|"] := "{u+2228}"  ; (∨) logical or
+compose["m."] := "{u+2299}"  ; (⊙) circled dot operator
 
 
 ; Compose :  Special Letters/Characters
@@ -946,6 +947,7 @@ compose["88"] := "{u+221e}"  ; (∞) infinity symbol
 compose["mi"] := "{u+00b5}"  ; (µ) micro sign
 compose["no"] := "{u+2116}"  ; (№) numero sign
 compose["No"] := "{u+2116}"  ; (№) numero sign
+compose["oo"] := "{u+00b0}"  ; (°) degree sign
 compose["ox"] := "{u+00a4}"  ; (¤) currency sign
 compose["pp"] := "{u+00b6}"  ; (¶) pilcrow sign
 compose["PP"] := "{u+00b6}"  ; (¶) pilcrow sign
@@ -968,9 +970,8 @@ compose["'3"] := "{u+2034}"  ; (‴) triple prime
 compose["'4"] := "{u+2057}"  ; (⁗) quadruple prime
 compose["**"] := "{u+00d7}"  ; (×) multiplication sign
 compose["//"] := "{u+00f7}"  ; (÷) division sign
-compose["*o"] := "{u+00b0}"  ; (°) degree sign
-compose["o*"] := "{u+00b0}"  ; (°) degree sign
 compose[".-"] := "{u+00b7}"  ; (·) middle dot
+compose[".^"] := "{u+00b7}"  ; (·) middle dot
 compose[".3"] := "{u+2026}"  ; (…) horizontal ellipsis
 compose[".."] := "{u+2026}"  ; (…) horizontal ellipsis
 compose["a-"] := "{u+00aa}"  ; (ª) feminine ordinal indicator
@@ -979,6 +980,7 @@ compose["!!"] := "{u+00a1}"  ; (¡) inverted exclamation mark
 compose["??"] := "{u+00bf}"  ; (¿) inverted question mark
 compose["!?"] := "{u+203d}"  ; (‽) interrobang
 compose["?!"] := "{u+2e18}"  ; (⸘) inverted interrobang
+compose["r?"] := "{u+2e2e}"  ; (⸮) reversed question mark
 compose["oc"] := "{u+00a9}"  ; (©) copyright sign
 compose["(c"] := "{u+00a9}"  ; (©) copyright sign
 compose["op"] := "{u+2117}"  ; (℗) sound recording copyright
@@ -1003,14 +1005,7 @@ compose[";w"] := "{u+25e6}"  ; (◦) white bullet
 compose[";h"] := "{u+2043}"  ; (⁃) hyphen bullet
 compose[";t"] := "{u+2023}"  ; (‣) triangular bullet
 compose[";;"] := "{u+2022}"  ; (•) bullet
-compose[":("] := "{u+2639}"  ; (☹) white frowning face
-compose[":)"] := "{u+263a}"  ; (☺) white smiling face
-compose[";)"] := "{u+263b}"  ; (☻) black smiling face
 compose["<3"] := "{u+2665}"  ; (♥) black heart suit
-compose["[]"] := "{u+2610}"  ; (☐) ballot box
-compose["[v"] := "{u+2611}"  ; (☑) ballot box with check
-compose["[y"] := "{u+2611}"  ; (☑) ballot box with check
-compose["[x"] := "{u+2612}"  ; (☒) ballot box with x
 
 
 ; Compose :  Vulgar Fractions
@@ -1200,84 +1195,60 @@ compose["RU"] := "{u+1e72}"  ; (Ṳ) U with diaeresis below
 
 ; Compose :  Hook Above
 
-compose["<a"] := "{u+1ea3}"  ; (ả) a with hook above
-compose["<A"] := "{u+1ea2}"  ; (Ả) A with hook above
-compose["<e"] := "{u+1ebb}"  ; (ẻ) e with hook above
-compose["<E"] := "{u+1eba}"  ; (Ẻ) E with hook above
-compose["<i"] := "{u+1ec9}"  ; (ỉ) i with hook above
-compose["<I"] := "{u+1ec8}"  ; (Ỉ) I with hook above
-compose["<o"] := "{u+1ecf}"  ; (ỏ) o with hook above
-compose["<O"] := "{u+1ece}"  ; (Ỏ) O with hook above
-compose["<u"] := "{u+1ee7}"  ; (ủ) u with hook above
-compose["<U"] := "{u+1ee6}"  ; (Ủ) U with hook above
-compose["<y"] := "{u+1ef7}"  ; (ỷ) y with hook above
-compose["<Y"] := "{u+1ef6}"  ; (Ỷ) Y with hook above
+compose["?a"] := "{u+1ea3}"  ; (ả) a with hook above
+compose["?A"] := "{u+1ea2}"  ; (Ả) A with hook above
+compose["?e"] := "{u+1ebb}"  ; (ẻ) e with hook above
+compose["?E"] := "{u+1eba}"  ; (Ẻ) E with hook above
+compose["?i"] := "{u+1ec9}"  ; (ỉ) i with hook above
+compose["?I"] := "{u+1ec8}"  ; (Ỉ) I with hook above
+compose["?o"] := "{u+1ecf}"  ; (ỏ) o with hook above
+compose["?O"] := "{u+1ece}"  ; (Ỏ) O with hook above
+compose["?u"] := "{u+1ee7}"  ; (ủ) u with hook above
+compose["?U"] := "{u+1ee6}"  ; (Ủ) U with hook above
+compose["?y"] := "{u+1ef7}"  ; (ỷ) y with hook above
+compose["?Y"] := "{u+1ef6}"  ; (Ỷ) Y with hook above
 
 
 ; Compose :  Dot Below
 
-compose[">a"] := "{u+1ea1}"  ; (ạ) a with dot below
-compose[">A"] := "{u+1ea0}"  ; (Ạ) A with dot below
-compose[">b"] := "{u+1e05}"  ; (ḅ) b with dot below
-compose[">B"] := "{u+1e04}"  ; (Ḅ) B with dot below
-compose[">d"] := "{u+1e0d}"  ; (ḍ) d with dot below
-compose[">D"] := "{u+1e0c}"  ; (Ḍ) D with dot below
-compose[">e"] := "{u+1eb9}"  ; (ẹ) e with dot below
-compose[">E"] := "{u+1eb8}"  ; (Ẹ) E with dot below
-compose[">h"] := "{u+1e25}"  ; (ḥ) h with dot below
-compose[">H"] := "{u+1e24}"  ; (Ḥ) H with dot below
-compose[">i"] := "{u+1ecb}"  ; (ị) i with dot below
-compose[">I"] := "{u+1eca}"  ; (Ị) I with dot below
-compose[">k"] := "{u+1e33}"  ; (ḳ) k with dot below
-compose[">K"] := "{u+1e32}"  ; (Ḳ) K with dot below
-compose[">l"] := "{u+1e37}"  ; (ḷ) l with dot below
-compose[">L"] := "{u+1e36}"  ; (Ḷ) L with dot below
-compose[">m"] := "{u+1e43}"  ; (ṃ) m with dot below
-compose[">M"] := "{u+1e42}"  ; (Ṃ) M with dot below
-compose[">n"] := "{u+1e47}"  ; (ṇ) n with dot below
-compose[">N"] := "{u+1e46}"  ; (Ṇ) N with dot below
-compose[">o"] := "{u+1ecd}"  ; (ọ) o with dot below
-compose[">O"] := "{u+1ecc}"  ; (Ọ) O with dot below
-compose[">r"] := "{u+1e5b}"  ; (ṛ) r with dot below
-compose[">R"] := "{u+1e5a}"  ; (Ṛ) R with dot below
-compose[">s"] := "{u+1e63}"  ; (ṣ) s with dot below
-compose[">S"] := "{u+1e62}"  ; (Ṣ) S with dot below
-compose[">t"] := "{u+1e6d}"  ; (ṭ) t with dot below
-compose[">T"] := "{u+1e6c}"  ; (Ṭ) T with dot below
-compose[">u"] := "{u+1ee5}"  ; (ụ) u with dot below
-compose[">U"] := "{u+1ee4}"  ; (Ụ) U with dot below
-compose[">v"] := "{u+1e7f}"  ; (ṿ) v with dot below
-compose[">V"] := "{u+1e7e}"  ; (Ṿ) V with dot below
-compose[">w"] := "{u+1e89}"  ; (ẉ) w with dot below
-compose[">W"] := "{u+1e88}"  ; (Ẉ) W with dot below
-compose[">y"] := "{u+1ef5}"  ; (ỵ) y with dot below
-compose[">Y"] := "{u+1ef4}"  ; (Ỵ) Y with dot below
-compose[">z"] := "{u+1e93}"  ; (ẓ) z with dot below
-compose[">Z"] := "{u+1e92}"  ; (Ẓ) Z with dot below
-
-
-; Accented Letters with Dot Below
-
-compose["?a"] := "{u+1ead}"  ; (ậ) a with circumflex and dot below
-compose["?A"] := "{u+1eac}"  ; (Ậ) A with circumflex and dot below
-compose["?e"] := "{u+1ec7}"  ; (ệ) e with circumflex and dot below
-compose["?E"] := "{u+1ec6}"  ; (Ệ) E with circumflex and dot below
-compose["?f"] := "{u+1e1d}"  ; (ḝ) e with cedilla and breve
-compose["?F"] := "{u+1e1c}"  ; (Ḝ) E with cedilla and breve
-compose["?l"] := "{u+1e39}"  ; (ḹ) l with dot below and macron
-compose["?L"] := "{u+1e38}"  ; (Ḹ) L with dot below and macron
-compose["?o"] := "{u+1ed9}"  ; (ộ) o with circumflex and dot below
-compose["?O"] := "{u+1ed8}"  ; (Ộ) O with circumflex and dot below
-compose["?p"] := "{u+1ee3}"  ; (ợ) o with horn and dot below
-compose["?P"] := "{u+1ee2}"  ; (Ợ) O with horn and dot below
-compose["?q"] := "{u+1eb7}"  ; (ặ) a with breve and dot below
-compose["?Q"] := "{u+1eb6}"  ; (Ặ) A with breve and dot below
-compose["?r"] := "{u+1e5d}"  ; (ṝ) r with dot below and macron
-compose["?R"] := "{u+1e5c}"  ; (Ṝ) R with dot below and macron
-compose["?s"] := "{u+1e69}"  ; (ṩ) s with dot below and dot above
-compose["?S"] := "{u+1e68}"  ; (Ṩ) S with dot below and dot above
-compose["?u"] := "{u+1ef1}"  ; (ự) u with horn and dot below
-compose["?U"] := "{u+1ef0}"  ; (Ự) U with horn and dot below
+compose["!a"] := "{u+1ea1}"  ; (ạ) a with dot below
+compose["!A"] := "{u+1ea0}"  ; (Ạ) A with dot below
+compose["!b"] := "{u+1e05}"  ; (ḅ) b with dot below
+compose["!B"] := "{u+1e04}"  ; (Ḅ) B with dot below
+compose["!d"] := "{u+1e0d}"  ; (ḍ) d with dot below
+compose["!D"] := "{u+1e0c}"  ; (Ḍ) D with dot below
+compose["!e"] := "{u+1eb9}"  ; (ẹ) e with dot below
+compose["!E"] := "{u+1eb8}"  ; (Ẹ) E with dot below
+compose["!h"] := "{u+1e25}"  ; (ḥ) h with dot below
+compose["!H"] := "{u+1e24}"  ; (Ḥ) H with dot below
+compose["!i"] := "{u+1ecb}"  ; (ị) i with dot below
+compose["!I"] := "{u+1eca}"  ; (Ị) I with dot below
+compose["!k"] := "{u+1e33}"  ; (ḳ) k with dot below
+compose["!K"] := "{u+1e32}"  ; (Ḳ) K with dot below
+compose["!l"] := "{u+1e37}"  ; (ḷ) l with dot below
+compose["!L"] := "{u+1e36}"  ; (Ḷ) L with dot below
+compose["!m"] := "{u+1e43}"  ; (ṃ) m with dot below
+compose["!M"] := "{u+1e42}"  ; (Ṃ) M with dot below
+compose["!n"] := "{u+1e47}"  ; (ṇ) n with dot below
+compose["!N"] := "{u+1e46}"  ; (Ṇ) N with dot below
+compose["!o"] := "{u+1ecd}"  ; (ọ) o with dot below
+compose["!O"] := "{u+1ecc}"  ; (Ọ) O with dot below
+compose["!r"] := "{u+1e5b}"  ; (ṛ) r with dot below
+compose["!R"] := "{u+1e5a}"  ; (Ṛ) R with dot below
+compose["!s"] := "{u+1e63}"  ; (ṣ) s with dot below
+compose["!S"] := "{u+1e62}"  ; (Ṣ) S with dot below
+compose["!t"] := "{u+1e6d}"  ; (ṭ) t with dot below
+compose["!T"] := "{u+1e6c}"  ; (Ṭ) T with dot below
+compose["!u"] := "{u+1ee5}"  ; (ụ) u with dot below
+compose["!U"] := "{u+1ee4}"  ; (Ụ) U with dot below
+compose["!v"] := "{u+1e7f}"  ; (ṿ) v with dot below
+compose["!V"] := "{u+1e7e}"  ; (Ṿ) V with dot below
+compose["!w"] := "{u+1e89}"  ; (ẉ) w with dot below
+compose["!W"] := "{u+1e88}"  ; (Ẉ) W with dot below
+compose["!y"] := "{u+1ef5}"  ; (ỵ) y with dot below
+compose["!Y"] := "{u+1ef4}"  ; (Ỵ) Y with dot below
+compose["!z"] := "{u+1e93}"  ; (ẓ) z with dot below
+compose["!Z"] := "{u+1e92}"  ; (Ẓ) Z with dot below
 
 
 ; Dead Key :  Grave Accent (`)
@@ -1378,6 +1349,7 @@ dkGrave["?"] := "{u+2022}"  ; (•) bullet
 dkGrave["\"] := "{u+005c}"  ; (\) backslash
 dkGrave["|"] := "{u+007c}"  ; (|) vertical line
 
+
 ; Configuration :  'Grave Accent' (dead key) as alternate key for 'Right Alt'
 
 vkC0:: {
@@ -1388,6 +1360,7 @@ vkC0:: {
   else if dkGrave.Has(ih.Input)
     Send dkGrave[ih.Input]
 }
+
 
 ; Configuration :  Optional 'ISO Key' (dead key) as alternate key for 'Right Alt'
 
@@ -1978,11 +1951,15 @@ vkE2:: {
 
 ; Configuration :  Compose Key Selector
 
->!sc029::      ; Right Alt + Grave Accent
->!sc056::      ; Right Alt + ISO Key
-<^>!sc029::    ; AltGr + Grave Accent
-<^>!sc056:: {  ; AltGr + ISO Key
-  ih := InputHook("L2", gEndKeys)
+>!sc029::     ; Right Alt + Grave Accent
+>!sc056::     ; Right Alt + ISO Key
+<^>!sc029::   ; AltGr + Grave Accent
+<^>!sc056::   ; AltGr + ISO Key
+>!+sc029::    ; Right Alt + Shift + Grave Accent
+>!+sc056::    ; Right Alt + Shift + ISO Key
+<^>!+sc029::  ; AltGr + Shift + Grave Accent
+<^>!+sc056::  ; AltGr + Shift + ISO Key
+{ ih := InputHook("L2", gEndKeys)
   ih.Start(), ih.Wait()
   if compose.Has(ih.Input)
     Send compose[ih.Input]
