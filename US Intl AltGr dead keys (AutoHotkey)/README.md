@@ -6,8 +6,10 @@ Note that these scripts are based on (instead of UltimateKEYS)&nbsp;:
 
 **https://github.com/pieter-degroote/us-intl-altgr-dk**
 
-=&gt; This part is also mirrored at&nbsp;:  
+**See also at&nbsp;:**  
+https://github.com/pieter-degroote/UltimateKEYS/tree/master/us-intl-altgr-dk-ahk  
 https://github.com/pieter-degroote/UltimateKEYS-testing/tree/master/us-intl-altgr-dk-ahk
+
 
 ## Keyboard Layout Image
 
