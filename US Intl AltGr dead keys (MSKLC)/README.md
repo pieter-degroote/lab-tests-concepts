@@ -13,6 +13,13 @@ Note that it only has minimal differences from 'US-International' to achieve the
 
 =\> Blue keys&nbsp;: &nbsp;dead keys in combination with AltGr (+ Shift).
 
+## Important Notice - Security
+
+**=\> Win/Linux&nbsp;: &nbsp;Only use "BASIC LATIN" characters (codes 32 to 126) for your Windows, Microsoft Live and Linux passwords&nbsp;!**  
+Otherwise, it might be impossible to type any Unicode character higher than "Basic Latin" at the login screen/prompt (due to a different keyboard configuration)&nbsp;!&emsp;**=\>&emsp;ACCOUNT LOCKOUT**
+
+**=\> Win/Linux&nbsp;: &nbsp;ALWAYS make your system passwords VISIBLE during modification&nbsp;!**
+
 &nbsp;
 
 **For a more in-depth (or advanced) approach, please also see&nbsp;:**
