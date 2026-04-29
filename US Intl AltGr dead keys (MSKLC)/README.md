@@ -11,7 +11,7 @@ Note that it only has minimal differences from 'US-International' to achieve the
 
 ![US Intl AltGr dead keys - Keyboard Layout Image](US%20Intl%20AltGr%20dead%20keys%20-%20Keyboard%20Layout%20Image.png)
 
-=&gt; Blue keys&nbsp;: &nbsp;dead keys in combination with AltGr (+ Shift).
+=\> Blue keys&nbsp;: &nbsp;dead keys in combination with AltGr (+ Shift).
 
 &nbsp;
 
