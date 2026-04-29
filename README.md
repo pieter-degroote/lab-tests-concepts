@@ -10,10 +10,10 @@ Additional lab tests and concepts (mostly based on UltimateKEYS)
 
 ## Important Notice - Security
 
-**=&gt; Win/Linux : &nbsp;Only use "BASIC LATIN" characters (codes 32 to 126) for the Windows, Microsoft Live and Linux passwords !**  
-Otherwise, it might be impossible to type any Unicode character higher than "Basic Latin" at the login screen/prompt (due to a different keyboard configuration)&nbsp;!&emsp;**=&gt;&emsp;ACCOUNT LOCKOUT**
+**=\> Win/Linux : &nbsp;Only use "BASIC LATIN" characters (codes 32 to 126) for the Windows, Microsoft Live and Linux passwords !**  
+Otherwise, it might be impossible to type any Unicode character higher than "Basic Latin" at the login screen/prompt (due to a different keyboard configuration)&nbsp;!&emsp;**=\>&emsp;ACCOUNT LOCKOUT**
 
-**=&gt; Win/Linux : &nbsp;ALWAYS make your system passwords VISIBLE during modification !**
+**=\> Win/Linux : &nbsp;ALWAYS make your system passwords VISIBLE during modification !**
 
 ## For official releases, please see&nbsp;:
 
