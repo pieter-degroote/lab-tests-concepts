@@ -5,7 +5,7 @@ This layout simply moves all dead keys to the AltGr layer, and eliminates some o
 This MSKLC implementation is targeted towards more 'conservative' users (meeting basic needs).  
 Note that it only has minimal differences from 'US-International' to achieve the desired results.
 
-**See also&nbsp;: &nbsp;https://github.com/pieter-degroote/us-intl-altgr-dk** &emsp;[![Release](https://img.shields.io/github/release/pieter-degroote/us-intl-altgr-dk.svg)](https://github.com/pieter-degroote/us-intl-altgr-dk/releases)
+**See also&nbsp;: &nbsp;<https://github.com/pieter-degroote/us-intl-altgr-dk>** &emsp;[![Release](https://img.shields.io/github/release/pieter-degroote/us-intl-altgr-dk.svg)](https://github.com/pieter-degroote/us-intl-altgr-dk/releases)
 
 ## Keyboard Layout Image
 
@@ -24,8 +24,8 @@ Otherwise, it might be impossible to type any Unicode character higher than "Bas
 
 **For a more in-depth (or advanced) approach, please also see&nbsp;:**
 
-UltimateKEYS&nbsp;: &nbsp;https://github.com/pieter-degroote/UltimateKEYS
+UltimateKEYS&nbsp;: &nbsp;<https://github.com/pieter-degroote/UltimateKEYS>
 
-UltimateKEYS Core&nbsp;: &nbsp;https://github.com/pieter-degroote/UltimateKEYS-core
+UltimateKEYS Core&nbsp;: &nbsp;<https://github.com/pieter-degroote/UltimateKEYS-core>
 
-Website&nbsp;: &nbsp;https://pieter-degroote.github.io/
+Website&nbsp;: &nbsp;<https://pieter-degroote.github.io/>
