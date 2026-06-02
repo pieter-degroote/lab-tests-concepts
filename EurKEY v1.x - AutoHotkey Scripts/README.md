@@ -4,7 +4,7 @@ This folder contains the unofficial AHK scripts for EurKEY v1.1 to v1.3.
 The EurKEY scripts are simply targeted towards more 'conservative' users (meeting their basic needs).  
 On the other hand, UltimateKEYS generally takes a more dynamic and advanced approach instead.
 
-**See also at&nbsp;: &nbsp;https://github.com/pieter-degroote/EurKEY-clone**
+**See also at&nbsp;: &nbsp;<https://github.com/pieter-degroote/EurKEY-clone>**&emsp;[![EurKEY Clone Release](https://img.shields.io/github/release/pieter-degroote/EurKEY-clone.svg)](https://github.com/pieter-degroote/EurKEY-clone/releases)
 
 ## Prerequisites
 
