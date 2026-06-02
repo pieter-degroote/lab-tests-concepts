@@ -31,10 +31,10 @@ Otherwise, it might be impossible to type any Unicode character higher than "Bas
 
 ## Website and Documentation
 
-Website&nbsp;: &nbsp;https://pieter-degroote.github.io/
+Website&nbsp;: &nbsp;<https://pieter-degroote.github.io/>
 
-GitHub&nbsp;: &nbsp;https://github.com/pieter-degroote/UltimateKEYS-core
+GitHub&nbsp;: &nbsp;<https://github.com/pieter-degroote/UltimateKEYS-core>
 
-GitHub&nbsp;: &nbsp;https://github.com/pieter-degroote/UltimateKEYS
+GitHub&nbsp;: &nbsp;<https://github.com/pieter-degroote/UltimateKEYS>
 
 License of UltimateKEYS Core&nbsp;: &nbsp;Public Domain
