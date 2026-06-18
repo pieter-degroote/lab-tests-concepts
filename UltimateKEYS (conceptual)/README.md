@@ -1,6 +1,6 @@
 # UltimateKEYS (conceptual)
 
-In this version the cent sign (¢) has been replaced with the per mille sign (‰).
+In this version the 'cent sign' (¢) has been replaced with the 'per mille sign' (‰).
 
 The cent sign is represented as '¢', but sometimes also as 'c'. The cent sign has largely fallen into disuse since the mid-20th century.  
 However, the cent sign is still more often used than the per mille sign in daily life, hence this version is conceptual.
