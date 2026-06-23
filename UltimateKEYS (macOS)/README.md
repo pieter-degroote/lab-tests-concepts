@@ -12,12 +12,12 @@ Unfortunately, the 'Press and Hold' functionality is not active on this keyboard
 
 ## Known Issues - Disclaimer
 
-**=\> _Be aware that installing a custom keyboard layout on macOS can make the given layout show up TWICE, due to a bug._**  
-**=\> _Removing that layout will only remove one entry, leaving that other entry behind as 'debris' on the system._**  
-**=\> _Tested on&nbsp;: &nbsp;macOS 10.13 High Sierra_**
+**=\> *Be aware that installing a custom keyboard layout on macOS can make the given layout show up TWICE, due to a bug.***  
+**=\> *Removing that layout will only remove one entry, leaving that other entry behind as 'debris' on the system.***  
+**=\> *Tested on&nbsp;: &nbsp;macOS 10.13 High Sierra***
 
-**=\> _Please note that this version has not been thoroughly tested yet, and might contain bugs, flaws, shortcomings..._**  
-**=\> _Install (or integrate) this '.keylayout' file at your own caution and responsibility&nbsp;!_**
+**=\> *Please note that this version has not been thoroughly tested yet, and might contain bugs, flaws, shortcomings...***  
+**=\> *Install (or integrate) this '.keylayout' file at your own caution and responsibility&nbsp;!***
 
 ## Keyboard Layout Image
 
