@@ -3,7 +3,7 @@
 In this version the 'cent sign' (¢) has been replaced with the 'per mille sign' (‰).
 
 The cent sign is represented as '¢', but sometimes also as 'c'. The cent sign has largely fallen into disuse since the mid-20th century.  
-However, the cent sign is still more often used than the per mille sign in daily life, hence this version is conceptual.
+The cent sign is still more often used than the per mille sign in daily life, but I consider the 'per mille sign' (‰) as more universal.
 
 ## Keyboard Layout Image
 
